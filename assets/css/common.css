@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  font-family: "Noto Sans KR", "NanumSquare", "NanumSquareRound", dotum, "돋움", Arial, Sans-serif;
+  font-size: 18px;
+  color: #343A40;
+}
+
+body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table {
+  line-height: 1.5;
+  font: inherit;
+  color: inherit;
+}
+
+html, body, div, form, input, select, button, textarea, legend, fieldset, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, blockquote, address, p, th, td, caption {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img, fieldset {
+  vertical-align: middle;
+  border: 0 none;
+}
+
+input, select, textarea {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+hr {
+  display: none;
+}
+
+legend, .hide {
+  position: absolute;
+  left: -9999px;
+}
+
+table caption {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* common */
+select.select {
+  padding: 5px 20px 5px 10px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 1px solid #c9c9c9;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select.select::-ms-expand {
+  display: none;
+}
+
+button.btn {
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border-radius: 1px;
+}
+
+a.link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=common.css.map */

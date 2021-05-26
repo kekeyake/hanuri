@@ -1,0 +1,4 @@
+@mixin link ( $width, $height : auto ) {
+    width : $width;
+    height : $height;
+}

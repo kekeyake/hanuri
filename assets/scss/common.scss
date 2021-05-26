@@ -1,0 +1,41 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+
+// @import 'layout/header';
+// @import 'layout/sidebar';
+// @import 'layout/footer';
+
+// @import 'pages/customer/noitce';
+// @import 'pages/customer/notice_view';
+// @import 'pages/customer/support';
+// @import 'pages/customer/guide';
+// @import 'pages/customer/policy';
+// @import 'pages/customer/privacy';
+
+/* common */
+select.select {
+	padding: 5px 20px 5px 10px;
+	border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: 1px solid #c9c9c9;
+}
+/* IE 에서 Select box 화살표 제거 */
+select.select::-ms-expand {
+	display: none;
+}
+button.btn {
+	border: 0 none;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+	border-radius: 1px;
+}
+a.link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include link ( $full );
+}
