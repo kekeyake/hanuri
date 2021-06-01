@@ -856,7 +856,7 @@ header.header .__top .logo img {
 header.header .__top ._menu {
   width: 5.5vw;
   height: 4.167vw;
-  background: url(../img/btn_m_menu.svg) no-repeat 0 0/cover;
+  background: url(../img/btn_m_menu.png) no-repeat 0 0/cover;
 }
 
 header.header .__top .login {
