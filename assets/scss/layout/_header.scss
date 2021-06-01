@@ -1,10 +1,15 @@
 header.header {
     .inner {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;  
+        font-family: 'NanumSquare';      
     }
     .__top {
+        padding-left:6.250vw;
+        padding-right: 5.917vw;
+        
         .logo {
             img {
                 width: 35vw;
@@ -15,9 +20,82 @@ header.header {
             height: 4.167vw;
             background: url(../img/btn_m_menu.png) no-repeat 0 0 / cover;
         }
-        .login {
+        ._login {
             width: 5.167vw;
             height: 6.500vw;
+            background: url(../img/btn_mypage.png) no-repeat 0 0 / cover;
+        }
+    }
+    .__nav {
+        margin-top: 3.083vw;
+        border-top: 0.250vw solid #ddd;
+        padding-top: 2.917vw;
+        padding-bottom: 2.833vw;
+        overflow-x: auto;
+        width: 100%;
+        & > ul {
+            display: flex;
+            width: max-content;
+            padding:0 4.750vw;
+            position: relative;
+            li {
+                width: max-content;
+                margin-right: 8.333vw;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.on {
+                    a {
+                        color:#ee4500;
+                    }
+                }
+            }
+            a {
+                font-weight: 900;
+                color:#333;
+                font-size: 4.167vw;
+            }
+        }
+    }
+    .__sub_bg {
+        overflow-x: auto;
+        width: 100%;
+        height: 8.333vw;
+        border-top: 0.250vw solid #ddd;
+        background: #ededed;
+        
+        padding-top: 1.083vw;
+        padding-bottom: 1.167vw;
+        .__snav {
+            display: none;
+            &.on {
+                display: flex;
+                width: max-content;
+                padding-left: 5.167vw;
+                padding-right: 5.167vw;
+            }
+            a {
+                display: inline-flex;
+                font-size: 3.667vw;
+                line-height: 1.36;
+                color:#333;
+                
+                font-weight: 700;
+                margin-right: 7.500vw;
+                border-radius: 2.667vw;
+                background: #ededed;
+                width: max-content;
+                height: 6.083vw;
+                justify-content: center;
+                align-items: center;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.on {
+                    padding:0 2.500vw;
+                    background-color: #fff;
+                }
+            }
         }
     }
 }
