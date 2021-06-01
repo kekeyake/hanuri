@@ -18,7 +18,7 @@
 <div id="wrap">
   <header class="header">
     <section class="inner __top">
-      <button class="m btn _menu"></button>
+      <button id="btnMobile" class="m btn _menu"></button>
       <h1 class="logo">
         <a href="#a"><img src="../assets/img/logo_m.png" alt="한우리 독서지도사"></a>
       </h1>
@@ -93,18 +93,18 @@
 <button class="btn __top"></button>
 <aside class="side_nav">
     <div class="side_header">
-        <p>안녕하세요. 한우리입니다.</p>
+        <p class="tit">안녕하세요. 한우리입니다.</p>
         <ul class="quick_menu_list"><!-- login 전 -->
-            <li><a href="#a">로그인</a></li>
-            <li><a href="#a">회원가입</a></li>
-            <li><a href="#a">로그인정보</a></li>
-            <li><a href="#a">이용안내</a></li>
+            <li><a href="#a"><span>로그인</span></a></li>
+            <li><a href="#a"><span>회원가입</span></a></li>
+            <li><a href="#a"><span>로그인정보</span></a></li>
+            <li><a href="#a"><span>이용안내</span></a></li>
         </ul>
         <ul class="quick_menu_list __after"><!-- login 후 -->
             <li><a href="#a">로그아웃</a></li>
-            <li><a href="#a">회원가입</a></li>
-            <li><a href="#a">로그인정보</a></li>
-            <li><a href="#a">이용안내</a></li>
+            <li><a href="#a">정보수정</a></li>
+            <li><a href="#a">결제대기</a></li>
+            <li><a href="#a">내 강의실</a></li>
         </ul>
         <nav>
             <ul class="snb_list">
@@ -171,8 +171,7 @@
                 </li>
             </ul>
         </nav>
-        <buton class="btn __closed"></buton>
-        <a href="" class="link">로그인</a>
+        <buton id="btnClosed" class="btn __closed"></buton>
     </div>
 </aside>
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
