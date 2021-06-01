@@ -837,6 +837,33 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+header.header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.header .__top .logo img {
+  width: 35vw;
+}
+
+header.header .__top ._menu {
+  width: 5.5vw;
+  height: 4.167vw;
+  background: url(../img/btn_m_menu.svg) no-repeat 0 0/cover;
+}
+
+header.header .__top .login {
+  width: 5.167vw;
+  height: 6.500vw;
+}
+
 .side_nav {
   position: fixed;
   top: -1px;
