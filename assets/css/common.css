@@ -837,6 +837,14 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+header.header.sticky {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
 header.header .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,6 +863,7 @@ header.header .inner {
 header.header .__top {
   padding-left: 6.250vw;
   padding-right: 5.917vw;
+  padding-top: 2.167vw;
 }
 
 header.header .__top .logo img {
@@ -994,6 +1003,71 @@ header.header .__sub_bg .__snav a.on {
   width: 100%;
 }
 
+footer.footer {
+  background: #f5f5f5;
+  padding-bottom: 15.917vw;
+  text-align: center;
+}
+
+footer.footer .foot_list {
+  width: 100%;
+  font-family: 'NanumSquare';
+  background: #9a9a9a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer.footer .foot_list li {
+  width: 32.333vw;
+}
+
+footer.footer .foot_list li:nth-child(2) {
+  width: 32.500vw;
+  border-left: 0.167vw solid #fff;
+  border-right: 0.167vw solid #fff;
+}
+
+footer.footer .foot_list li:nth-child(3) {
+  width: 35.167vw;
+}
+
+footer.footer .foot_list a {
+  width: 100%;
+  font-size: 3.333vw;
+  padding: 2.500vw 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer.footer .footer_logo {
+  margin-top: 4.417vw;
+  margin-bottom: 3.417vw;
+}
+
+footer.footer .footer_logo img {
+  width: 24.583vw;
+}
+
+footer.footer .t1 {
+  line-height: 1.44;
+  letter-spacing: -0.9px;
+  color: #333;
+  font-size: 3vw;
+}
+
+footer.footer .t1:last-child {
+  margin-top: 1vw;
+}
+
 /* common */
 select.select {
   padding: 5px 20px 5px 10px;
@@ -1032,5 +1106,15 @@ a.link {
           align-items: center;
   width: 100%;
   height: auto;
+}
+
+.btn.__top {
+  position: fixed;
+  right: 3.917vw;
+  bottom: 35.333vw;
+  width: 7.167vw;
+  height: 7.167vw;
+  background: #fff url(../img/btn_top.png) no-repeat 50% 50%/4vw 2.5vw;
+  border: 0.167vw solid #777;
 }
 /*# sourceMappingURL=common.css.map */

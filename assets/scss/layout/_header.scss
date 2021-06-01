@@ -1,4 +1,10 @@
 header.header {
+    &.sticky {
+        width: 100%;
+        position: sticky;
+        left: 0;
+        top:0;
+    }
     .inner {
         display: flex;
         flex-wrap: wrap;
@@ -9,6 +15,7 @@ header.header {
     .__top {
         padding-left:6.250vw;
         padding-right: 5.917vw;
+        padding-top: 2.167vw;
         
         .logo {
             img {

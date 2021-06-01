@@ -9,7 +9,7 @@
 
 @import 'layout/header';
 @import 'layout/sidebar';
-// @import 'layout/footer';
+@import 'layout/footer';
 
 // @import 'pages/customer/noitce';
 // @import 'pages/customer/notice_view';
@@ -45,4 +45,15 @@ a.link {
     justify-content: center;
     align-items: center;
     @include link ( $full );
+}
+.btn {
+	&.__top {
+		position: fixed;
+		right: 3.917vw;
+		bottom:35.333vw;
+		width: 7.167vw;
+		height: 7.167vw;
+		background:#fff url(../img/btn_top.png) no-repeat 50% 50% / 4vw 2.5vw;
+		border: 0.167vw solid #777;
+	}
 }
