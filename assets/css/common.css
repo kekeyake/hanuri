@@ -1114,6 +1114,9 @@ header.header .__sub_bg .__snav a.on {
 
 .side_nav .snb_list li > div {
   margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .side_nav .snb_list li strong {
@@ -1126,7 +1129,8 @@ header.header .__sub_bg .__snav a.on {
   font-size: 3.667vw;
   font-weight: 700;
   color: #000;
-  margin-right: 1.167vw;
+  margin-right: 3.3vw;
+  letter-spacing: -0.167vw;
 }
 
 .side_nav .snb_list li a:last-child {

@@ -101,6 +101,7 @@
       }
       & > div {
         margin-top: 1vw;
+        display: flex;
       }
       strong {
         font-weight: 900;
@@ -111,7 +112,8 @@
         font-size: 3.667vw;
         font-weight: 700;
         color:#000;
-        margin-right: 1.167vw;
+        margin-right: 3.3vw;
+        letter-spacing: -0.167vw;
         &:last-child {
           margin-right: 0;
         }
