@@ -38,19 +38,15 @@ header.header {
         border-top: 0.250vw solid #ddd;
         padding-top: 2.917vw;
         padding-bottom: 2.833vw;
-        overflow-x: auto;
         width: 100%;
         & > ul {
+            width: 100%;
             display: flex;
-            width: max-content;
+            justify-content: space-between;
             padding:0 4.750vw;
             position: relative;
             li {
-                width: max-content;
-                margin-right: 8.333vw;
-                &:last-child {
-                    margin-right: 0;
-                }
+                width: max-content;                
                 &.on {
                     a {
                         color:#ee4500;
@@ -85,9 +81,9 @@ header.header {
                 font-size: 3.667vw;
                 line-height: 1.36;
                 color:#333;
-                
+                letter-spacing: -0.167vw;
                 font-weight: 400;
-                margin-right: 7.500vw;
+                margin-right: 3.250vw;
                 border-radius: 2.667vw;
                 background: #ededed;
                 width: max-content;

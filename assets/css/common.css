@@ -887,17 +887,17 @@ header.header .__nav {
   border-top: 0.250vw solid #ddd;
   padding-top: 2.917vw;
   padding-bottom: 2.833vw;
-  overflow-x: auto;
   width: 100%;
 }
 
 header.header .__nav > ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 4.750vw;
   position: relative;
 }
@@ -906,11 +906,6 @@ header.header .__nav > ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-right: 8.333vw;
-}
-
-header.header .__nav > ul li:last-child {
-  margin-right: 0;
 }
 
 header.header .__nav > ul li.on a {
@@ -959,8 +954,9 @@ header.header .__sub_bg .__snav a {
   font-size: 3.667vw;
   line-height: 1.36;
   color: #333;
+  letter-spacing: -0.167vw;
   font-weight: 400;
-  margin-right: 7.500vw;
+  margin-right: 3.250vw;
   border-radius: 2.667vw;
   background: #ededed;
   width: -webkit-max-content;
