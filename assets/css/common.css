@@ -1103,6 +1103,10 @@ header.header .__sub_bg .__snav a.on {
   background: url(../img/quick_icon_a04.png) no-repeat 50% 3.083vw/7.333vw 6.5vw;
 }
 
+.side_nav .snb_list {
+  background-color: #fff;
+}
+
 .side_nav .snb_list li {
   border-bottom: 0.167vw solid #999;
   padding: 5vw;
