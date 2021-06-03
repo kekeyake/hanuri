@@ -926,7 +926,7 @@ header.header .__nav > ul a {
 header.header .__sub_bg {
   overflow-x: auto;
   width: 100%;
-  height: 8.333vw;
+  height: 9.333vw;
   border-top: 0.250vw solid #ddd;
   background: #ededed;
   display: -webkit-box;
