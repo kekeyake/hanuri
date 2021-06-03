@@ -70,9 +70,8 @@ header.header {
         height: 8.333vw;
         border-top: 0.250vw solid #ddd;
         background: #ededed;
-        
-        padding-top: 1.083vw;
-        padding-bottom: 1.167vw;
+        display: flex;
+        align-items: center;
         .__snav {
             display: none;
             &.on {

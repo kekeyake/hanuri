@@ -57,3 +57,10 @@ a.link {
 		border: 0.167vw solid #777;
 	}
 }
+.noscroll {
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.noscroll::-webkit-scrollbar {
+    display: none;
+}
