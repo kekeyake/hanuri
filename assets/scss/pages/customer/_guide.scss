@@ -1,0 +1,145 @@
+.guide {
+    h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color:#333;
+        letter-spacing: -0.250vw;
+        text-align: center;
+        padding-top: 6.667vw;  
+        padding-bottom: 6.083vw;
+    }
+    .nav_menu {
+        overflow-x: auto;
+        background: #f3f3f3;
+        ul {
+            width: max-content;
+            display: flex;
+            padding:0 5.167vw;
+            li {
+                position: relative;
+                margin:0 1.250vw;
+                a {
+                    display: block;
+                    padding:3.167vw 1.167vw;
+                    font-size: 3.667vw;
+                    font-weight: 500;
+                    letter-spacing: -0.183vw;
+                    color:#666;
+                }
+                &.on::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 0.667vw;
+                    background-color: #787878;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                }
+                &.on a {
+                    color:#333;
+                }
+            }
+        }
+    }
+    .__wrap_top {
+        padding-top: 6.75vw;  
+        padding-bottom: 6.5vw;
+        text-align: center;
+        border-bottom: 0.167vw solid #bcbcbc;
+        .search_box {
+            margin:0 auto;
+            border-radius: 4.167vw;
+            border: solid 0.5vw #ddd;
+            background-color: #fff;
+            width: 66.667vw;
+            height: 8.333vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 3.333vw;
+            input {
+                border: 0 solid #000;
+                background: transparent;
+                font-size: 3.333vw;
+                font-weight: 700;
+                &::placeholder {
+                    color:#bbb;
+                }
+            }
+            button {
+                width: 4.167vw;
+                height: 4.167vw;
+                background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
+            }
+        }
+    }
+    .qa_list {
+        .question {
+            padding: 2.833vw 5vw 3.333vw;
+            border-bottom: 0.167vw solid #cecece;
+            background: url(../img/btn_guide.png) no-repeat right 5vw top 50% / 4.167vw;
+            span {
+                font-size: 3.333vw;
+                color:#ccc;
+                font-weight: 700;
+                letter-spacing: -0.167vw;
+            }
+            p {
+               font-size: 3.667vw; 
+               font-weight: 500;
+               letter-spacing: -0.167vw;
+               line-height: 1.36;
+               margin-top: 1.667vw;
+               width: 80vw;
+            }
+        }
+        .answer {
+            display: none;
+            margin-top: -0.167vw;
+            padding:5vw;
+            font-size: 3.500vw;
+            color:#333;
+            letter-spacing: -0.175vw;
+            line-height: 1.43;
+            background: #f9f9f9;
+            border-top: 0.167vw solid #e0e0e0;
+            border-bottom: 0.167vw solid #e0e0e0;
+            &.open {
+                display: block;
+            }
+        }
+    }
+    .btn_more {
+        display: flex;
+        justify-content: center;
+        margin: 8vw auto;
+        font-size: 3.667vw;
+        font-weight: 700;
+        color: #929292;
+        padding-right: 6.667vw;
+        background: url(../img/btn_more.png) no-repeat 100% 50% / 4.167vw 2.500vw;
+    }
+    .btn_contact {
+        display: block;
+        width: 90vw;
+        height: 10.083vw;
+        color:#fff;
+        font-weight: 700;
+        letter-spacing: -0.208vw;
+        font-size: 4.167vw;
+        background: #ee4500;
+        margin:0 auto 1.917vw;
+    }
+    .btn_consultation {
+        display: block;
+        width: 90vw;
+        height: 10.083vw;
+        color:#fff;
+        font-weight: 700;
+        letter-spacing: -0.208vw;
+        font-size: 4.167vw;
+        background: #999;
+        margin:0 auto 7.500vw;
+    }
+}

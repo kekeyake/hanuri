@@ -1,0 +1,156 @@
+.notice {
+    .__wrap_top {
+      padding-top: 6.667vw;  
+      padding-bottom: 7.167vw;
+      text-align: center;
+      h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color:#333;
+        letter-spacing: -0.250vw;
+        & + .search_box {
+            margin: 5.917vw auto 0;
+            border-radius: 4.167vw;
+            border: solid 0.667vw #ddd;
+            background-color: #fff;
+            width: 66.667vw;
+            height: 8.333vw;
+            display: flex;
+            align-items: center;
+            padding:0 3.333vw;
+            input {
+                border: 0 solid #000;
+                background: transparent;
+                font-size: 3.667vw;
+                font-weight: 700;
+                &::placeholder {
+                    color:#bbb;
+                }
+            }
+            button {
+                width: 4.167vw;
+                height: 4.167vw;
+                background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
+            }
+        }
+      }
+    }
+    i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11.417vw;
+        height: 5.167vw;
+        border-radius: 0.833vw;
+        background: #999;
+        color:#fff;
+        font-size: 3.333vw;
+        letter-spacing: -0.167vw;
+        &.new {
+            background: #ee4500;;
+        }
+    }
+    .__list {
+        border-top: 0.167vw solid #b6b6b6;
+        li {
+            border-bottom: 0.167vw solid #b6b6b6;
+            
+            a {
+                display: flex;
+                padding:3.333vw 4.917vw;
+            }
+            p {
+                font-size: 3.833vw;
+                letter-spacing: -0.192vw;
+                color:#333;
+                font-weight: 500;
+                width: 72.333vw;
+                margin-left: 2.250vw;
+                .date {
+                    font-size: 3.333vw;
+                    color:#999;
+                    letter-spacing: -0.167vw;
+                    font-weight: 400;
+                    margin-left: 2.250vw;
+                }
+            }
+        }
+    }
+    .btn_more {
+        display: flex;
+        justify-content: center;
+        margin: 8vw auto;
+        font-size: 3.667vw;
+        font-weight: 700;
+        color: #929292;
+        padding-right: 6.667vw;
+        background: url(../img/btn_more.png) no-repeat 100% 50% / 4.167vw 2.500vw;
+    }
+    .btn_list {
+        width: 43.333vw;
+        height: 15vw;
+        background-color: #666;
+        border-radius: 0.500vw;
+        color:#fff;
+        font-weight: 700;
+        font-size: 7.333vw;
+        display: flex;
+        justify-content: center;
+        margin:10.333vw auto;
+    }
+    .__view {
+        .tit {
+            display: flex;
+            padding:5.333vw 5vw;
+            background: #f9f9f9;
+            border-bottom: 0.167vw solid #a3a3a3;
+            p {
+                width: 72.750vw;
+                margin-left: 2.250vw;
+                font-size: 4.500vw;
+                font-weight: 500;
+                color:#333;
+                letter-spacing: -0.225vw;
+                line-height: 1.3;
+                .date {
+                    font-size: 3.333vw;
+                    font-weight: 400;
+                    color:#999;
+                    letter-spacing: -0.167vw;
+                    margin-left: 2.250vw;
+                }
+            }
+        }
+        .stit {
+            display: flex;
+            border-bottom: 0.167vw solid #c2c2c2;
+            padding:3vw 5vw;
+            p {
+                width: 72.750vw;
+                margin-left: 2.250vw;
+            }
+            a {
+                color:#666;
+                &:hover {
+                    color:#ee4500;
+                }
+            }
+        }
+        .t1 {
+            font-size: 3.667vw;
+            letter-spacing: -0.183vw;
+        }
+        .t2 {
+            font-size: 3vw;
+            letter-spacing: -0.150vw;
+        }
+        .text_box {
+            padding:6vw 4.750vw 8vw;
+            font-size: 3.667vw;
+            font-weight: 500;
+            letter-spacing: -0.183vw;
+            color:#666;
+            border-bottom: 0.167vw solid #c2c2c2;
+        }
+    }
+}

@@ -4,8 +4,10 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
             $('header').addClass('sticky');
+            $('.main').addClass('sticky');
         } else {
             $('header').removeClass('sticky')
+            $('.main').removeClass('sticky');
         }
     });
 
@@ -14,6 +16,10 @@ $(function () {
     });
     $("#btnClosed").off().on('click',function(){
         $('.side_nav').removeClass('open');
+    });
+
+    $('.question').on('click',function(){
+        $(this).next('.answer').toggleClass('open');
     });
 });
 

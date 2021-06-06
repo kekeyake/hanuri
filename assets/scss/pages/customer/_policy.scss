@@ -1,0 +1,133 @@
+.policy {
+    padding:0 5vw 5vw;
+    h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color:#333;
+        letter-spacing: -0.250vw;
+        text-align: center;
+        padding-top: 9.667vw;  
+        margin-bottom: 9vw;
+    }
+    h2 {
+        font-size: 4.167vw;
+        font-weight: 500;
+        letter-spacing: -0.083vw;
+        padding-bottom: 2.750vw;
+        border-bottom: 0.167vw solid #c6c6c6;
+        margin-top: 6.667vw;
+    }
+    h3 {
+        font-size: 3.667vw;
+        color:#333;
+        font-weight: 500;
+        letter-spacing: -0.073vw;
+        margin-bottom: 3.333vw;
+        margin-top: 5.500vw;
+    }
+    p {
+        font-size: 3.333vw;
+        line-height: 1.5;
+        letter-spacing: -0.167vw;
+        color:#666;
+    }
+    .t1 {
+        font-size: 3.333vw;
+        line-height: 1.5;
+        letter-spacing: -0.167vw;
+        color:#666;
+        position: relative;
+        padding-left:4vw;
+        &::before {
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        &.n1:before {
+            content: '1) ';
+        }
+        &.n2:before {
+            content: '2) ';
+        }
+        &.n3:before {
+            content: '3) ';
+        }
+        &.n4:before {
+            content: '4) ';
+        }
+        &.n5:before {
+            content: '5) ';
+        }
+        b {
+            font-weight: 700;
+        }
+    }
+    .t2 {
+        margin-left: 4vw;
+        font-size: 3.333vw;
+        line-height: 1.5;
+        letter-spacing: -0.167vw;
+        color:#666;
+        padding-left:4vw;
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        &.n1::before {
+            content: '가. ';
+        }
+        &.n2::before {
+            content: '니. ';
+        }
+        &.n3::before {
+            content: '다. ';
+        }
+        &.n4::before {
+            content: '라. ';
+        }
+        &.n5::before {
+            content: '마. ';
+        }
+        &.n6::before {
+            content: '바. ';
+        }
+        &.n7::before {
+            content: '사. ';
+        }
+        &.n8::before {
+            content: '아. ';
+        }
+        &.n9::before {
+            content: '자. ';
+        }
+    }
+    .t3 {
+        font-size: 3.333vw;
+        line-height: 1.5;
+        letter-spacing: -0.167vw;
+        color:#666;
+        margin-left: 8vw;
+        padding-left:2vw;
+        position: relative;
+        &:before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+    }
+    a {
+        display: block;
+        font-size: 3.667vw;
+        font-weight: 500;
+        color:#333;
+        letter-spacing: -0.173vw;
+        margin-top: 5.333vw;
+        &:hover {
+            color:#ee5400;
+            text-decoration: underline;
+        }
+    }
+}

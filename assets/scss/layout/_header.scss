@@ -4,6 +4,8 @@ header.header {
         position: sticky;
         left: 0;
         top:0;
+        background-color: #fff;
+        z-index: 100;
     }
     .inner {
         display: flex;
@@ -100,5 +102,27 @@ header.header {
                 }
             }
         }
+    }
+}
+.sub_header {
+    padding:3.833vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 0.167vw solid #a3a3a3;
+    .__back {
+        width: 2.500vw;
+        height: 4.167vw;
+        position: absolute;
+        left: 3.833vw;
+        top:3.833vw;
+        background: url(../img/btn_back.png) no-repeat 0 0 / cover;
+    }
+    h1 {
+        font-size:3.667vw;
+        color:#333;
+        letter-spacing: -0.183vw;
+        font-weight: 500;
+        color:#333;
     }
 }

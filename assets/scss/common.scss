@@ -11,12 +11,11 @@
 @import 'layout/sidebar';
 @import 'layout/footer';
 
-// @import 'pages/customer/noitce';
-// @import 'pages/customer/notice_view';
-// @import 'pages/customer/support';
-// @import 'pages/customer/guide';
-// @import 'pages/customer/policy';
-// @import 'pages/customer/privacy';
+@import 'pages/customer/notice';
+@import 'pages/customer/support';
+@import 'pages/customer/guide';
+@import 'pages/customer/policy';
+@import 'pages/customer/privacy';
 
 /* common */
 select.select {
@@ -29,6 +28,9 @@ select.select {
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
 	display: none;
+}
+input {
+	outline: none;
 }
 button.btn {
 	border: 0 none;
@@ -63,4 +65,7 @@ a.link {
 }
 .noscroll::-webkit-scrollbar {
     display: none;
+}
+.main.sticky {
+	padding-top: 30.583vw;
 }
