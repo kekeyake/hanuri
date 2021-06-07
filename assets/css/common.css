@@ -1810,6 +1810,10 @@ footer.footer .t1:last-child {
   margin-top: 6.667vw;
 }
 
+.policy h2:nth-child(2) {
+  margin-top: 0;
+}
+
 .policy h3 {
   font-size: 3.667vw;
   color: #333;

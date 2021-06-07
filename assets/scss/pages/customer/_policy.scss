@@ -16,6 +16,9 @@
         padding-bottom: 2.750vw;
         border-bottom: 0.167vw solid #c6c6c6;
         margin-top: 6.667vw;
+        &:nth-child(2) {
+            margin-top: 0;
+        }
     }
     h3 {
         font-size: 3.667vw;
