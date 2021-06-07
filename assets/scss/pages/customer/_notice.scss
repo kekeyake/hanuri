@@ -41,6 +41,7 @@
         justify-content: center;
         width: 11.417vw;
         height: 5.167vw;
+        font-weight: 700;
         border-radius: 0.833vw;
         background: #999;
         color:#fff;
@@ -87,6 +88,9 @@
         background: url(../img/btn_more.png) no-repeat 100% 50% / 4.167vw 2.500vw;
     }
     .btn_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 43.333vw;
         height: 15vw;
         background-color: #666;

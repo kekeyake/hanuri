@@ -78,20 +78,22 @@
         .question {
             padding: 2.833vw 5vw 3.333vw;
             border-bottom: 0.167vw solid #cecece;
-            background: url(../img/btn_guide.png) no-repeat right 5vw top 50% / 4.167vw;
+            
             span {
-                font-size: 3.333vw;
+                font-size: 3.667vw; 
                 color:#ccc;
                 font-weight: 700;
                 letter-spacing: -0.167vw;
             }
             p {
-               font-size: 3.667vw; 
-               font-weight: 500;
-               letter-spacing: -0.167vw;
-               line-height: 1.36;
-               margin-top: 1.667vw;
-               width: 80vw;
+                font-size: 3.667vw; 
+                font-weight: 500;
+                letter-spacing: -0.167vw;
+                line-height: 1.36;
+                margin-top: 1.667vw;
+                width: 100%;
+                padding-right: 10vw;
+                background: url(../img/btn_guide.png) no-repeat 100% 1.5vw / 4.167vw;
             }
         }
         .answer {

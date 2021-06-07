@@ -119,10 +119,12 @@ header.header {
         background: url(../img/btn_back.png) no-repeat 0 0 / cover;
     }
     h1 {
-        font-size:3.667vw;
-        color:#333;
+        font-size:3.667vw;        
         letter-spacing: -0.183vw;
         font-weight: 500;
+        color:#333;
+    }
+    a {
         color:#333;
     }
 }
