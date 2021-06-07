@@ -1,12 +1,8 @@
 header.header {
-    &.sticky {
-        width: 100%;
-        position: sticky;
-        left: 0;
-        top:0;
-        background-color: #fff;
-        z-index: 100;
-    }
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    
     .inner {
         display: flex;
         flex-wrap: wrap;
@@ -15,10 +11,11 @@ header.header {
         font-family: 'NanumSquare';      
     }
     .__top {
+        
         padding-left:6.250vw;
         padding-right: 5.917vw;
         padding-top: 2.167vw;
-        
+        padding-bottom: 3.083vw;
         .logo {
             img {
                 width: 35vw;
@@ -35,8 +32,15 @@ header.header {
             background: url(../img/btn_mypage.png) no-repeat 0 0 / cover;
         }
     }
+}
+nav {
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
     .__nav {
-        margin-top: 3.083vw;
+        
         border-top: 0.250vw solid #ddd;
         padding-top: 2.917vw;
         padding-bottom: 2.833vw;

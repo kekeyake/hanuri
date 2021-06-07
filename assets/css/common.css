@@ -837,12 +837,8 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-header.header.sticky {
+header.header {
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  left: 0;
-  top: 0;
   background-color: #fff;
   z-index: 100;
 }
@@ -866,6 +862,7 @@ header.header .__top {
   padding-left: 6.250vw;
   padding-right: 5.917vw;
   padding-top: 2.167vw;
+  padding-bottom: 3.083vw;
 }
 
 header.header .__top .logo img {
@@ -884,15 +881,23 @@ header.header .__top ._login {
   background: url(../img/btn_mypage.png) no-repeat 0 0/cover;
 }
 
-header.header .__nav {
-  margin-top: 3.083vw;
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+nav .__nav {
   border-top: 0.250vw solid #ddd;
   padding-top: 2.917vw;
   padding-bottom: 2.833vw;
   width: 100%;
 }
 
-header.header .__nav > ul {
+nav .__nav > ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,23 +909,23 @@ header.header .__nav > ul {
   position: relative;
 }
 
-header.header .__nav > ul li {
+nav .__nav > ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-header.header .__nav > ul li.on a {
+nav .__nav > ul li.on a {
   color: #ee4500;
 }
 
-header.header .__nav > ul a {
+nav .__nav > ul a {
   font-weight: 900;
   color: #333;
   font-size: 4.167vw;
 }
 
-header.header .__sub_bg {
+nav .__sub_bg {
   overflow-x: auto;
   width: 100%;
   height: 9.333vw;
@@ -935,11 +940,11 @@ header.header .__sub_bg {
           align-items: center;
 }
 
-header.header .__sub_bg .__snav {
+nav .__sub_bg .__snav {
   display: none;
 }
 
-header.header .__sub_bg .__snav.on {
+nav .__sub_bg .__snav.on {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,7 +955,7 @@ header.header .__sub_bg .__snav.on {
   padding-right: 5.167vw;
 }
 
-header.header .__sub_bg .__snav a {
+nav .__sub_bg .__snav a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -974,11 +979,11 @@ header.header .__sub_bg .__snav a {
           align-items: center;
 }
 
-header.header .__sub_bg .__snav a:last-child {
+nav .__sub_bg .__snav a:last-child {
   margin-right: 0;
 }
 
-header.header .__sub_bg .__snav a.on {
+nav .__sub_bg .__snav a.on {
   padding: 0 2.500vw;
   background-color: #fff;
 }
@@ -2118,9 +2123,5 @@ a.link {
 
 .noscroll::-webkit-scrollbar {
   display: none;
-}
-
-.main.sticky {
-  padding-top: 30.583vw;
 }
 /*# sourceMappingURL=common.css.map */

@@ -3,11 +3,11 @@ $(function () {
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
-            $('header').addClass('sticky');
-            $('.main').addClass('sticky');
+            // $('header').addClass('sticky');
+            // $('.main').addClass('sticky');
         } else {
-            $('header').removeClass('sticky')
-            $('.main').removeClass('sticky');
+            // $('header').removeClass('sticky')
+            // $('.main').removeClass('sticky');
         }
     });
 
