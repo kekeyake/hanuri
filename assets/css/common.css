@@ -1376,13 +1376,13 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 43.333vw;
-  height: 15vw;
+  width: 21.667vw;
+  height: 7.500vw;
   background-color: #666;
   border-radius: 0.500vw;
   color: #fff;
   font-weight: 700;
-  font-size: 7.333vw;
+  font-size: 3.667vw;
   display: flex;
   justify-content: center;
   margin: 10.333vw auto;
