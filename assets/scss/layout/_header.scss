@@ -39,6 +39,13 @@ nav {
     width: 100%;
     background-color: #fff;
     z-index: 100;
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;  
+        font-family: 'NanumSquare';      
+    }
     .__nav {
         
         border-top: 0.250vw solid #ddd;
