@@ -1272,54 +1272,6 @@ footer.footer .t1:last-child {
 
 .notice .__wrap_top h1 + .search_box {
   margin: 5.917vw auto 0;
-  border-radius: 4.167vw;
-  border: solid 0.667vw #ddd;
-  background-color: #fff;
-  width: 66.667vw;
-  height: 8.333vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 3.333vw;
-  position: relative;
-}
-
-.notice .__wrap_top h1 + .search_box input {
-  border: 0 solid #000;
-  background: transparent;
-  font-size: 3.667vw;
-  font-weight: 700;
-  width: 100%;
-}
-
-.notice .__wrap_top h1 + .search_box input::-webkit-input-placeholder {
-  color: #bbb;
-}
-
-.notice .__wrap_top h1 + .search_box input:-ms-input-placeholder {
-  color: #bbb;
-}
-
-.notice .__wrap_top h1 + .search_box input::-ms-input-placeholder {
-  color: #bbb;
-}
-
-.notice .__wrap_top h1 + .search_box input::placeholder {
-  color: #bbb;
-}
-
-.notice .__wrap_top h1 + .search_box button {
-  position: absolute;
-  right: 3.333vw;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 4.167vw;
-  height: 4.167vw;
-  background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
 }
 
 .notice i {
@@ -1510,66 +1462,15 @@ footer.footer .t1:last-child {
   background: #f9f9f9;
 }
 
+.support .__wrap_top .search_box {
+  margin: 3.5vw auto 0;
+}
+
 .support .__wrap_top p {
   font-size: 4vw;
   line-height: 1.42;
   letter-spacing: -0.2vw;
   font-weight: 500;
-}
-
-.support .__wrap_top .search_box {
-  margin: 3.5vw auto 0;
-  border-radius: 4.167vw;
-  border: solid 0.5vw #ddd;
-  background-color: #fff;
-  width: 66.667vw;
-  height: 8.333vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 3.333vw;
-  position: relative;
-}
-
-.support .__wrap_top .search_box input {
-  border: 0 solid #000;
-  background: transparent;
-  font-size: 3.333vw;
-  font-weight: 700;
-  width: 100%;
-}
-
-.support .__wrap_top .search_box input::-webkit-input-placeholder {
-  color: #bbb;
-}
-
-.support .__wrap_top .search_box input:-ms-input-placeholder {
-  color: #bbb;
-}
-
-.support .__wrap_top .search_box input::-ms-input-placeholder {
-  color: #bbb;
-}
-
-.support .__wrap_top .search_box input::placeholder {
-  color: #bbb;
-}
-
-.support .__wrap_top .search_box button {
-  position: absolute;
-  right: 3.333vw;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 4.167vw;
-  height: 4.167vw;
-  background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
 }
 
 .support .__list {
@@ -1697,61 +1598,6 @@ footer.footer .t1:last-child {
   padding-bottom: 6.5vw;
   text-align: center;
   border-bottom: 0.167vw solid #bcbcbc;
-}
-
-.guide .__wrap_top .search_box {
-  margin: 0 auto;
-  border-radius: 4.167vw;
-  border: solid 0.5vw #ddd;
-  background-color: #fff;
-  width: 66.667vw;
-  height: 8.333vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 3.333vw;
-  position: relative;
-}
-
-.guide .__wrap_top .search_box input {
-  border: 0 solid #000;
-  background: transparent;
-  font-size: 3.333vw;
-  font-weight: 700;
-  width: 100%;
-}
-
-.guide .__wrap_top .search_box input::-webkit-input-placeholder {
-  color: #bbb;
-}
-
-.guide .__wrap_top .search_box input:-ms-input-placeholder {
-  color: #bbb;
-}
-
-.guide .__wrap_top .search_box input::-ms-input-placeholder {
-  color: #bbb;
-}
-
-.guide .__wrap_top .search_box input::placeholder {
-  color: #bbb;
-}
-
-.guide .__wrap_top .search_box button {
-  position: absolute;
-  right: 3.333vw;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 4.167vw;
-  height: 4.167vw;
-  background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
 }
 
 .guide .qa_list .question {
@@ -2172,5 +2018,60 @@ a.link {
 
 .noscroll::-webkit-scrollbar {
   display: none;
+}
+
+.search_box {
+  margin: 0 auto;
+  border-radius: 4.167vw;
+  border: solid 0.5vw #ddd;
+  background-color: #fff;
+  width: 66.667vw;
+  height: 8.333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3.333vw;
+  position: relative;
+}
+
+.search_box input {
+  border: 0 solid #000;
+  background: transparent;
+  font-size: 3.333vw;
+  font-weight: 700;
+  width: 100%;
+}
+
+.search_box input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.search_box input:-ms-input-placeholder {
+  color: #bbb;
+}
+
+.search_box input::-ms-input-placeholder {
+  color: #bbb;
+}
+
+.search_box input::placeholder {
+  color: #bbb;
+}
+
+.search_box button {
+  position: absolute;
+  right: 3.333vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4.167vw;
+  height: 4.167vw;
+  background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
 }
 /*# sourceMappingURL=common.css.map */
