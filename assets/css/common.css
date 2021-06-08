@@ -1283,10 +1283,8 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 0 3.333vw;
+  position: relative;
 }
 
 .notice .__wrap_top h1 + .search_box input {
@@ -1294,6 +1292,7 @@ footer.footer .t1:last-child {
   background: transparent;
   font-size: 3.667vw;
   font-weight: 700;
+  width: 100%;
 }
 
 .notice .__wrap_top h1 + .search_box input::-webkit-input-placeholder {
@@ -1313,6 +1312,9 @@ footer.footer .t1:last-child {
 }
 
 .notice .__wrap_top h1 + .search_box button {
+  position: absolute;
+  right: 3.333vw;
+  top: 2.083vw;
   width: 4.167vw;
   height: 4.167vw;
   background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
@@ -1530,6 +1532,7 @@ footer.footer .t1:last-child {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 3.333vw;
+  position: relative;
 }
 
 .support .__wrap_top .search_box input {
@@ -1537,6 +1540,7 @@ footer.footer .t1:last-child {
   background: transparent;
   font-size: 3.333vw;
   font-weight: 700;
+  width: 100%;
 }
 
 .support .__wrap_top .search_box input::-webkit-input-placeholder {
@@ -1556,6 +1560,9 @@ footer.footer .t1:last-child {
 }
 
 .support .__wrap_top .search_box button {
+  position: absolute;
+  right: 3.333vw;
+  top: 2.083vw;
   width: 4.167vw;
   height: 4.167vw;
   background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
