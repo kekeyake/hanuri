@@ -1358,6 +1358,10 @@ footer.footer .t1:last-child {
   padding: 3.333vw 4.917vw;
 }
 
+.notice .__list li a i {
+  margin-top: 0.334vw;
+}
+
 .notice .__list li p {
   font-size: 3.833vw;
   letter-spacing: -0.192vw;
