@@ -1,0 +1,152 @@
+.join {
+    padding:0 5vw 5vw;
+    h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color:#333;
+        letter-spacing: -0.250vw;
+        text-align: center;
+        padding-top: 9vw;  
+        padding-bottom: 1.333vw;
+    }
+    .join_wrap {
+        
+        .error {
+            margin-top: vw(22.5);
+            font-size: vw(22);
+            color:#ee5400;
+        }
+        .join_box {
+            padding-top: vw(23.5);
+            position: relative;
+            &.__cert {
+                .btn_cert {
+                    position: absolute;
+                    right:0;
+                    bottom:vw(1);
+                    width: vw(141);
+                    height: vw(50.5);
+                    background: #666;
+                    border-radius: vw(3);
+                    color:#fff;
+                    font-size: vw(22);
+                    font-weight: 700;
+                    letter-spacing: vw(-1.1);
+                }
+                input {
+                    width: vw(385.5);
+                }
+            }
+            > label {
+                font-size: vw(22);
+                color:#999;
+                letter-spacing: vw(-0.44);
+                line-height: 1;
+            }
+            > input {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height:vw(54);
+                font-size: vw(24);
+                letter-spacing: vw(-0.48);
+                border: 0 solid #000;
+                border-bottom: vw(1) solid #d4d4d4;
+            }
+            .radio_box {
+                label {
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: vw(20);
+                }
+                span {
+                    font-size: vw(24);
+                    line-height: vw(1);
+                }
+            }
+            .btn_reset {
+                position: absolute;
+                right:vw(10);
+                bottom:vw(13);
+                width: vw(28);
+                height: vw(28);
+                img {
+                    width: $full;
+                    display: block;
+                }
+            }
+            
+            .btn_toggle {
+                position: absolute;
+                right:0;
+                bottom:vw(13.5);
+                width: vw(44);
+                height: vw(30);
+                img {
+                    width: $full;
+                    display: block;
+                }
+            }
+            
+        }
+        .check_wrap {
+            margin-top: vw(50.5);
+            display: flex;
+            justify-content: center;
+            label {
+                display: inline-flex;
+                align-items: center;
+                margin-right: vw(20.5);
+                &:last-child {
+                    margin-right: 0;
+                }
+                font-size: vw(22);
+                letter-spacing: vw(-0.44);
+            }
+            .checkbox {
+                display: inline-flex;
+                width: vw(25);
+                height: vw(25);
+                background: url( #{$url}/ico_checkbox.png ) no-repeat 50% 50% / 99%;
+                border: 0 solid #000;
+                margin-right: vw(9.5);
+                &:checked {
+                    background: url( #{$url}/ico_checkbox_on.png ) no-repeat 50% 50% / 99%;
+                }
+            }
+        }
+        
+    }
+    .agree_box {
+        margin-top: vw(40.5);
+        background-color: #f6f6f6;
+        font-size: vw(22);
+        color:#333;
+        letter-spacing: vw(-0.44);
+        border: vw(0.5) solid #666;
+        div {
+            padding:vw(21);
+            display: flex;
+            align-items: center;
+            &:first-child {
+                border-bottom: vw(1) solid #666;
+            }
+        }
+        a {
+            color:#ee5400;
+            text-decoration: underline;
+        }
+    }
+    .btn_join {                    
+        margin-top: vw(39.5);
+        width: 100%;
+        font-weight: 700;
+        font-size: vw(30);
+        letter-spacing: vw(-1.5);
+        height: vw(66.5);
+        margin-bottom: vw(17.5);
+        color:#fff;
+        background-color: #ee5400;
+    }
+
+}

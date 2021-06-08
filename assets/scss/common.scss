@@ -19,6 +19,7 @@
 @import 'pages/customer/privacy';
 
 @import 'pages/member/login';
+@import 'pages/member/join';
 
 /* common */
 select.select {
@@ -100,5 +101,28 @@ a.link {
 		width: 4.167vw;
 		height: 4.167vw;
 		background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
+	}
+}
+
+.checkbox {
+	display: inline-flex;
+	width: vw(25);
+	height: vw(25);
+	background: url( #{$url}/ico_checkbox.png ) no-repeat 50% 50% / 99%;
+	border: 0 solid #000;
+	margin-right: vw(9.5);
+	&:checked {
+		background: url( #{$url}/ico_checkbox_on.png ) no-repeat 50% 50% / 99%;
+	}
+}
+.radio {
+	display: inline-flex;
+	width: vw(25);
+	height: vw(25);
+	background: url( #{$url}/ico_radio.png ) no-repeat 50% 50% / 99%;
+	border: 0 solid #000;
+	margin-right: vw(9.5);
+	&:checked {
+		background: url( #{$url}/ico_radio_on.png ) no-repeat 50% 50% / 99%;
 	}
 }

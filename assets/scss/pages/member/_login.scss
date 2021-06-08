@@ -105,17 +105,6 @@
                 font-size: vw(22);
                 letter-spacing: vw(-0.44);
             }
-            .checkbox {
-                display: inline-flex;
-                width: vw(25);
-                height: vw(25);
-                background: url( #{$url}/ico_checkbox.png ) no-repeat 0 0 / cover;
-                border: 0 solid #000;
-                margin-right: vw(9.5);
-                &:checked {
-                    background: url( #{$url}/ico_checkbox_on.png ) no-repeat 0 0 / cover;
-                }
-            }
         }
         
     }
