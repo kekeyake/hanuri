@@ -1460,11 +1460,10 @@ footer.footer .t1:last-child {
   border-top: 0.167vw solid #bcbcbc;
   border-bottom: 0.167vw solid #bcbcbc;
   background: #f9f9f9;
-  margin: 3.5vw auto 0;
 }
 
 .support .__wrap_top .search_box {
-  margin: 0 auto;
+  margin: 3.5vw auto 0;
 }
 
 .support .__wrap_top p {
