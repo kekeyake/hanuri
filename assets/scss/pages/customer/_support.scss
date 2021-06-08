@@ -47,7 +47,8 @@
             button {
                 position: absolute;
                 right:3.333vw;
-                top:2.083vw;
+                top:50%;
+                transform: translateY(-50%);
                 width: 4.167vw;
                 height: 4.167vw;
                 background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
