@@ -1460,10 +1460,11 @@ footer.footer .t1:last-child {
   border-top: 0.167vw solid #bcbcbc;
   border-bottom: 0.167vw solid #bcbcbc;
   background: #f9f9f9;
+  margin: 3.5vw auto 0;
 }
 
 .support .__wrap_top .search_box {
-  margin: 3.5vw auto 0;
+  margin: 0 auto;
 }
 
 .support .__wrap_top p {
@@ -2023,16 +2024,13 @@ a.link {
 .search_box {
   margin: 0 auto;
   border-radius: 4.167vw;
-  border: solid 0.5vw #ddd;
+  border: solid 0.667vw #ddd;
   background-color: #fff;
   width: 66.667vw;
   height: 8.333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2043,7 +2041,7 @@ a.link {
 .search_box input {
   border: 0 solid #000;
   background: transparent;
-  font-size: 3.333vw;
+  font-size: 3.667vw;
   font-weight: 700;
   width: 100%;
 }
