@@ -1716,6 +1716,7 @@ footer.footer .t1:last-child {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 3.333vw;
+  position: relative;
 }
 
 .guide .__wrap_top .search_box input {
@@ -1723,6 +1724,7 @@ footer.footer .t1:last-child {
   background: transparent;
   font-size: 3.333vw;
   font-weight: 700;
+  width: 100%;
 }
 
 .guide .__wrap_top .search_box input::-webkit-input-placeholder {
@@ -1742,6 +1744,11 @@ footer.footer .t1:last-child {
 }
 
 .guide .__wrap_top .search_box button {
+  position: absolute;
+  right: 3.333vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 4.167vw;
   height: 4.167vw;
   background: url(../img/ico_serarch.png) no-repeat 0 0/cover;

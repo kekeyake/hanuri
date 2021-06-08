@@ -58,18 +58,25 @@
             justify-content: space-between;
             align-items: center;
             padding:0 3.333vw;
+            position: relative;
             input {
                 border: 0 solid #000;
                 background: transparent;
                 font-size: 3.333vw;
                 font-weight: 700;
+                width: 100%;
                 &::placeholder {
                     color:#bbb;
                 }
             }
             button {
+                position: absolute;
+                right:3.333vw;
+                top:50%;
+                transform: translateY(-50%);
                 width: 4.167vw;
                 height: 4.167vw;
+
                 background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
             }
         }
