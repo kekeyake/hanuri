@@ -42,6 +42,7 @@
         justify-content: center;
         width: 11.417vw;
         height: 5.167vw;
+        line-height: 5.167vw;
         font-weight: 700;
         border-radius: 0.833vw;
         background: #999;
@@ -68,12 +69,15 @@
                 font-weight: 500;
                 width: 72.333vw;
                 margin-left: 2.250vw;
+                span {
+                    margin-right: 2.250vw;
+                }
                 .date {
                     font-size: 3.333vw;
                     color:#999;
                     letter-spacing: -0.167vw;
                     font-weight: 400;
-                    margin-left: 2.250vw;
+                    margin-left: 0;
                 }
             }
         }

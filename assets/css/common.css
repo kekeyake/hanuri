@@ -1330,6 +1330,7 @@ footer.footer .t1:last-child {
           justify-content: center;
   width: 11.417vw;
   height: 5.167vw;
+  line-height: 5.167vw;
   font-weight: 700;
   border-radius: 0.833vw;
   background: #999;
@@ -1366,12 +1367,16 @@ footer.footer .t1:last-child {
   margin-left: 2.250vw;
 }
 
+.notice .__list li p span {
+  margin-right: 2.250vw;
+}
+
 .notice .__list li p .date {
   font-size: 3.333vw;
   color: #999;
   letter-spacing: -0.167vw;
   font-weight: 400;
-  margin-left: 2.250vw;
+  margin-left: 0;
 }
 
 .notice .btn_more {
