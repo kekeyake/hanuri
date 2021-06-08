@@ -1,5 +1,6 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'helpers/functions';
 
 @import 'base/reset';
 @import 'base/font';
@@ -17,9 +18,12 @@
 @import 'pages/customer/policy';
 @import 'pages/customer/privacy';
 
+@import 'pages/member/login';
+
 /* common */
 select.select {
-	padding: 5px 20px 5px 10px;
+	// padding: 5px 20px 5px 10px;
+	padding: vw(5) vw(20) vw(5) vw(10);
 	border-radius: 0;
 	-webkit-appearance: none;
 	border-radius: 0;

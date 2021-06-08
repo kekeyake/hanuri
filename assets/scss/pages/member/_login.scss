@@ -1,0 +1,123 @@
+.login {
+    padding:0 5vw 5vw;
+    h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color:#333;
+        letter-spacing: -0.250vw;
+        text-align: center;
+        padding-top: 9vw;  
+        padding-bottom: 1.333vw;
+    }
+    .login_wrap {
+        &__btn {
+            margin-top: vw(53);
+            button {
+                width: 100%;
+                font-weight: 700;
+                font-size: vw(30);
+                letter-spacing: vw(-1.5);
+                height: vw(66.5);
+                margin-bottom: vw(17.5);
+                &.btn_login {                    
+                    color:#fff;
+                    background-color: #ee5400;
+                    
+                    &__kakao {
+                        background-color: #fee500;
+                        img {
+                            width: vw(33.7);
+                            margin-right: vw(14);
+                        }    
+                    }
+                    &__naver {
+                        color:#fff;
+                        background-color: #1ec800;
+                        margin-bottom: 0;
+                        img {
+                            width: vw(33.7);
+                            margin-right: vw(15);
+                            transform: translateY(vw(-4));
+                        }
+                    }
+                }                
+            }
+        }
+        &__btn_join {
+            margin-top: vw(43);
+            display: flex;
+            justify-content: space-between;
+            a {
+                display: flex;
+                width: vw(263.5);
+                justify-content: center;
+                align-items: center;
+                height: vw(66.5);
+                font-size: vw(25);
+                font-weight: 700;
+                letter-spacing: vw(-1.25);
+                color:#fff;
+                background-color: #666;
+            }
+        }
+        .login_box {
+            padding-top: 3.917vw;
+            label {
+                font-size: vw(22);
+                color:#999;
+                letter-spacing: -0.073vw;
+            }
+            input {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height:vw(54);
+                font-size: vw(24);
+                border: 0 solid #000;
+                border-bottom: vw(1) solid #d4d4d4;
+            }
+            &._password {
+                position: relative;
+                .btn_toggle {
+                    position: absolute;
+                    right:0;
+                    bottom:vw(13.5);
+                    width: vw(44);
+                    height: vw(30);
+                    img {
+                        width: $full;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .check_wrap {
+            margin-top: vw(50.5);
+            display: flex;
+            justify-content: center;
+            label {
+                display: inline-flex;
+                align-items: center;
+                margin-right: vw(20.5);
+                &:last-child {
+                    margin-right: 0;
+                }
+                font-size: vw(22);
+                letter-spacing: vw(-0.44);
+            }
+            .checkbox {
+                display: inline-flex;
+                width: vw(25);
+                height: vw(25);
+                background: url( #{$url}/ico_checkbox.png ) no-repeat 0 0 / cover;
+                border: 0 solid #000;
+                margin-right: vw(9.5);
+                &:checked {
+                    background: url( #{$url}/ico_checkbox_on.png ) no-repeat 0 0 / cover;
+                }
+            }
+        }
+        
+    }
+
+}

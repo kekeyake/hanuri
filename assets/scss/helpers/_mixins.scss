@@ -1,3 +1,4 @@
+/// px, vw ,% ... 수치 입력
 @mixin link ( $width, $height : auto ) {
     width : $width;
     height : $height;
