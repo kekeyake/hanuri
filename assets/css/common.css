@@ -856,6 +856,30 @@ header.header .inner {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'NanumSquare';
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  header.header .inner {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 106px;
+    border-bottom: 2px solid #ddd;
+  }
+}
+
+header.header .pc {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  header.header .m {
+    display: none;
+  }
+  header.header .pc {
+    display: block;
+  }
 }
 
 header.header .__top {
@@ -865,8 +889,30 @@ header.header .__top {
   padding-bottom: 3vw;
 }
 
+@media (min-width: 1200px) {
+  header.header .__top {
+    padding: 20px 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.header .__top .logo {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 header.header .__top .logo img {
   width: 35vw;
+}
+
+@media (min-width: 1200px) {
+  header.header .__top .logo img {
+    width: 188px;
+  }
 }
 
 header.header .__top ._menu {
@@ -881,7 +927,16 @@ header.header .__top ._login {
   background: url(../img/btn_mypage.svg) no-repeat 50%/99%;
 }
 
-nav {
+header.header .__top a {
+  font-size: 16px;
+  color: #999;
+}
+
+header.header .__top div a {
+  margin-left: 29px;
+}
+
+nav.main_menu {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -890,7 +945,13 @@ nav {
   z-index: 100;
 }
 
-nav .inner {
+@media (min-width: 1200px) {
+  nav.main_menu {
+    display: none;
+  }
+}
+
+nav.main_menu .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,14 +966,14 @@ nav .inner {
   font-family: 'NanumSquare';
 }
 
-nav .__nav {
+nav.main_menu .__nav {
   border-top: 0.33333vw solid #ddd;
   padding-top: 3vw;
   padding-bottom: 2.83333vw;
   width: 100%;
 }
 
-nav .__nav > ul {
+nav.main_menu .__nav > ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,23 +985,23 @@ nav .__nav > ul {
   position: relative;
 }
 
-nav .__nav > ul li {
+nav.main_menu .__nav > ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-nav .__nav > ul li.on a {
+nav.main_menu .__nav > ul li.on a {
   color: #ee4500;
 }
 
-nav .__nav > ul a {
+nav.main_menu .__nav > ul a {
   font-weight: 900;
   color: #333;
   font-size: 4.16667vw;
 }
 
-nav .__sub_bg {
+nav.main_menu .__sub_bg {
   overflow-x: auto;
   width: 100%;
   height: 9.33333vw;
@@ -955,11 +1016,11 @@ nav .__sub_bg {
           align-items: center;
 }
 
-nav .__sub_bg .__snav {
+nav.main_menu .__sub_bg .__snav {
   display: none;
 }
 
-nav .__sub_bg .__snav.on {
+nav.main_menu .__sub_bg .__snav.on {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,7 +1031,7 @@ nav .__sub_bg .__snav.on {
   padding-right: 4.16667vw;
 }
 
-nav .__sub_bg .__snav a {
+nav.main_menu .__sub_bg .__snav a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -994,13 +1055,35 @@ nav .__sub_bg .__snav a {
           align-items: center;
 }
 
-nav .__sub_bg .__snav a:last-child {
+nav.main_menu .__sub_bg .__snav a:last-child {
   margin-right: 0;
 }
 
-nav .__sub_bg .__snav a.on {
+nav.main_menu .__sub_bg .__snav a.on {
   padding: 0 2.5vw;
   background-color: #fff;
+}
+
+nav.pc_menu {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  nav.pc_menu {
+    display: block;
+    position: relative;
+  }
+}
+
+nav.pc_menu.sticky {
+  position: fixed;
+  top: 0;
+}
+
+nav.pc_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sub_header {
@@ -2295,6 +2378,13 @@ select.select {
   border: 0.16667vw solid #c9c9c9;
 }
 
+@media (min-width: 1200px) {
+  select.select {
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #c9c9c9;
+  }
+}
+
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
   display: none;
@@ -2310,6 +2400,12 @@ button.btn {
   cursor: pointer;
   outline: none;
   border-radius: 0.16667vw;
+}
+
+@media (min-width: 1200px) {
+  button.btn {
+    border-radius: 3px;
+  }
 }
 
 a {
@@ -2430,5 +2526,11 @@ a.link {
 
 .radio:checked {
   background: url(../img/ico_radio_on.svg) no-repeat 50% 50%/99%;
+}
+
+@media (min-width: 1200px) {
+  main.main {
+    padding-top: 62px;
+  }
 }
 /*# sourceMappingURL=common.css.map */

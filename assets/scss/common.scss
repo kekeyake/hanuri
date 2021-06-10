@@ -20,6 +20,7 @@
 @import 'pages/member/login';
 @import 'pages/member/join';
 
+
 /* common */
 select.select {
 	// padding: 5px 20px 5px 10px;
@@ -28,6 +29,10 @@ select.select {
 	-webkit-appearance: none;
 	border-radius: 0;
 	border: vw(1) solid #c9c9c9;
+	@include desktop {
+		padding: px(5) px(20) px(5) px(10);
+		border: px(0.5) solid #c9c9c9;
+	}
 }
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
@@ -42,6 +47,9 @@ button.btn {
 	cursor: pointer;
 	outline: none;
 	border-radius: vw(1);
+	@include desktop {
+		border-radius: px(1.5);
+	}
 }
 a {
 	text-decoration: none;
@@ -124,5 +132,10 @@ a.link {
 	margin-right: vw(9.5);
 	&:checked {
 		background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
+	}
+}
+main.main {
+	@include desktop {
+		padding-top: px(31);
 	}
 }

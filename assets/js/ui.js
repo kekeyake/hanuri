@@ -1,13 +1,12 @@
-var $winW, $winH, $isMobile;
+var $winW, $winH, $isMobile, $headerHeight;
 $(function () {
+    $headerHeight = $('header.header').innerHeight();
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            // $('header').addClass('sticky');
-            // $('.main').addClass('sticky');
+        if ($(window).scrollTop() > $headerHeight) {
+            $('.pc_menu').addClass('sticky');
         } else {
-            // $('header').removeClass('sticky')
-            // $('.main').removeClass('sticky');
+            $('.pc_menu').removeClass('sticky');
         }
     });
 

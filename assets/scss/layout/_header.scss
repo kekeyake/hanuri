@@ -8,7 +8,24 @@ header.header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;  
-        font-family: 'NanumSquare';      
+        font-family: 'NanumSquare';
+        position: relative;
+        @include desktop {
+            align-items:flex-end;
+            height: px(53);
+            border-bottom: px(1) solid #ddd;
+        }
+    }
+    .pc {
+        display: none;
+    }
+    @include desktop {
+        .m {
+            display: none;
+        }
+        .pc {
+            display: block;
+        }
     }
     .__top {
         
@@ -16,9 +33,21 @@ header.header {
         padding-right: vw(36);
         padding-top: vw(13);
         padding-bottom: vw(18);
+        @include desktop {
+            padding: px(10) px(16);
+        }
         .logo {
+            @include desktop {
+                position: absolute;
+                left: 50%;
+                top:px(12);
+                transform: translateX(-50%);
+            }
             img {
                 width: vw(210);
+                @include desktop {
+                    width: px(94);
+                }
             }
         }
         ._menu {
@@ -31,87 +60,116 @@ header.header {
             height: vw(39);
             background: url(../img/btn_mypage.svg) no-repeat 50% / 99%;
         }
-    }
-}
-nav {
-    position: sticky;
-    top:0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 100;
-    .inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;  
-        font-family: 'NanumSquare';      
-    }
-    .__nav {
-        
-        border-top: vw(2) solid #ddd;
-        padding-top: vw(18);
-        padding-bottom: vw(17);
-        width: 100%;
-        & > ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding:0 vw(29);
-            position: relative;
-            li {
-                width: max-content;                
-                &.on {
-                    a {
-                        color:#ee4500;
-                    }
-                }
-            }
+        a {
+            font-size: px(8);
+            color:#999;
+        }
+        div {
             a {
-                font-weight: 900;
-                color:#333;
-                font-size: vw(25);
+                margin-left:px(14.5);
             }
         }
     }
-    .__sub_bg {
-        overflow-x: auto;
+}
+nav {
+    &.main_menu {
+        position: sticky;
+        top:0;
         width: 100%;
-        height: vw(56);
-        padding-bottom: vw(2);
-        border-top: vw(2) solid #ddd;
-        background: #ededed;
-        display: flex;
-        align-items: center;
-        .__snav {
+        background-color: #fff;
+        z-index: 100;
+        @include desktop {
             display: none;
-            &.on {
+        }
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;  
+            font-family: 'NanumSquare';      
+        }
+        .__nav {
+            
+            border-top: vw(2) solid #ddd;
+            padding-top: vw(18);
+            padding-bottom: vw(17);
+            width: 100%;
+            & > ul {
+                width: 100%;
                 display: flex;
-                width: max-content;
-                padding-left: vw(25);
-                padding-right: vw(25);
-            }
-            a {
-                display: inline-flex;
-                font-size: vw(22);
-                line-height: 1.36;
-                color:#333;
-                letter-spacing: vw(-1);
-                font-weight: 400;
-                margin-right: vw(20);
-                border-radius: vw(16);
-                background: #ededed;
-                width: max-content;
-                height: vw(36);
-                justify-content: center;
-                align-items: center;
-                &:last-child {
-                    margin-right: 0;
+                justify-content: space-between;
+                padding:0 vw(29);
+                position: relative;
+                li {
+                    width: max-content;                
+                    &.on {
+                        a {
+                            color:#ee4500;
+                        }
+                    }
                 }
+                a {
+                    font-weight: 900;
+                    color:#333;
+                    font-size: vw(25);
+                }
+            }
+        }
+        .__sub_bg {
+            overflow-x: auto;
+            width: 100%;
+            height: vw(56);
+            padding-bottom: vw(2);
+            border-top: vw(2) solid #ddd;
+            background: #ededed;
+            display: flex;
+            align-items: center;
+            .__snav {
+                display: none;
                 &.on {
-                    padding:0 vw(15);
-                    background-color: #fff;
+                    display: flex;
+                    width: max-content;
+                    padding-left: vw(25);
+                    padding-right: vw(25);
+                }
+                a {
+                    display: inline-flex;
+                    font-size: vw(22);
+                    line-height: 1.36;
+                    color:#333;
+                    letter-spacing: vw(-1);
+                    font-weight: 400;
+                    margin-right: vw(20);
+                    border-radius: vw(16);
+                    background: #ededed;
+                    width: max-content;
+                    height: vw(36);
+                    justify-content: center;
+                    align-items: center;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.on {
+                        padding:0 vw(15);
+                        background-color: #fff;
+                    }
                 }
             }
+        }
+    }
+    &.pc_menu {
+        display: none;
+        
+        @include desktop {
+            display: block;
+            position: relative;
+        }
+        &.sticky {
+            position: fixed;
+            top:0;
+        }
+        ul {
+            display: flex;
         }
     }
 }
