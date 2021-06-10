@@ -5,15 +5,15 @@
         color:#333;
         letter-spacing: vw(-2);
         text-align: center;
-        padding-top: 6.667vw;  
+        padding-top: vw(40);  
         padding-bottom: vw(36);
     }
     .__wrap_top {
         padding-top: vw(36);  
-        padding-bottom: 7.083vw;
+        padding-bottom: vw(42);
         text-align: center;
-        border-top: 0.167vw solid #bcbcbc;
-        border-bottom: 0.167vw solid #bcbcbc;
+        border-top: vw(1) solid #bcbcbc;
+        border-bottom: vw(1) solid #bcbcbc;
         background: #f9f9f9;
         .search_box {
             margin:vw(30) auto 0;
@@ -22,29 +22,29 @@
         p {
             font-size: vw(24);
             line-height: 1.42;
-            letter-spacing: -0.2vw;
+            letter-spacing: vw(-1);
             font-weight: 500;
         }
     }
     .__list {
-        margin-bottom: 15vw;
+        margin-bottom: vw(90);
         li {
             display: flex;
-            padding:6.667vw 0 6.667vw vw(30);
-            border-bottom: 0.167vw solid #bcbcbc;
+            padding:vw(40) 0 vw(40) vw(30);
+            border-bottom: vw(1) solid #bcbcbc;
             font-size: vw(22);
             font-weight: 500;
             line-height: 1.36;
             letter-spacing: vw(-1);
             &:last-child {
-                border-bottom: 0.167vw solid #bcbcbc;
+                border-bottom: vw(1) solid #bcbcbc;
             }
             &::before {
                 content: '';
                 display: block;
                 width: vw(136);
-                height: 20.500vw;
-                border-radius: 1.667vw;
+                height: vw(123);
+                border-radius: vw(10);
             }
             &:nth-child(1)::before {
                 background:#f4f4f4 url(../img/support_01.svg) no-repeat 50% 50% / vw(51);
@@ -57,19 +57,19 @@
             }
             div {
                 width: vw(377);
-                margin-left: 4.083vw;
+                margin-left: vw(24);
                 word-break: keep-all;
                 a {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 38.833vw;
-                    height:8vw;
+                    width: vw(233);
+                    height:vw(48);
                     background: #ee4500;
                     border-radius: vw(24);
                     color:#fff;
                     font-size: vw(25);
-                    letter-spacing: -0.208vw;
+                    letter-spacing: vw(-1);
                     margin-top: vw(15);
                 }
             }

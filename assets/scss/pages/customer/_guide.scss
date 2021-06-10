@@ -5,7 +5,7 @@
         color:#333;
         letter-spacing: vw(-2);
         text-align: center;
-        padding-top: 6.667vw;  
+        padding-top: vw(40);  
         padding-bottom: vw(36);
     }
     .nav_menu {
@@ -43,15 +43,15 @@
         }
     }
     .__wrap_top {
-        padding-top: 6.75vw;  
-        padding-bottom: 6.5vw;
+        padding-top: vw(41);  
+        padding-bottom: vw(39);
         text-align: center;
-        border-bottom: 0.167vw solid #bcbcbc;
+        border-bottom: vw(1) solid #bcbcbc;
     }
     .qa_list {
         .question {
             padding: vw(17) vw(30) vw(20);
-            border-bottom: 0.167vw solid #cecece;
+            border-bottom: vw(1) solid #cecece;
             
             span {
                 font-size: vw(22); 
@@ -73,13 +73,13 @@
             display: none;
             margin-top: vw(-1);
             padding:vw(30);
-            font-size: 3.500vw;
+            font-size: vw(21);
             color:#333;
-            letter-spacing: -0.175vw;
+            letter-spacing: vw(-1);
             line-height: 1.43;
             background: #f9f9f9;
-            border-top: 0.167vw solid #e0e0e0;
-            border-bottom: 0.167vw solid #e0e0e0;
+            border-top: vw(1) solid #e0e0e0;
+            border-bottom: vw(1) solid #e0e0e0;
             &.open {
                 display: block;
             }
@@ -88,7 +88,7 @@
     .btn_more {
         display: flex;
         justify-content: center;
-        margin: 8vw auto;
+        margin: vw(48) auto;
         font-size: vw(22);
         font-weight: 700;
         color: #929292;
@@ -97,24 +97,24 @@
     }
     .btn_contact {
         display: block;
-        width: 90vw;
-        height: 10.083vw;
+        width: vw(540);
+        height: vw(60);
         color:#fff;
         font-weight: 700;
-        letter-spacing: -0.208vw;
+        letter-spacing: vw(-1);
         font-size: vw(25);
         background: #ee4500;
-        margin:0 auto 1.917vw;
+        margin:0 auto vw(12);
     }
     .btn_consultation {
         display: block;
-        width: 90vw;
-        height: 10.083vw;
+        width: vw(540);
+        height: vw(60);
         color:#fff;
         font-weight: 700;
-        letter-spacing: -0.208vw;
+        letter-spacing: vw(-1);
         font-size: vw(25);
         background: #999;
-        margin:0 auto 7.500vw;
+        margin:0 auto vw(45);
     }
 }

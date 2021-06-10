@@ -1,6 +1,6 @@
 footer.footer {
     background: #f5f5f5;
-    padding-bottom: 5.833vw;
+    padding-bottom: vw(35);
     text-align: center;
     .foot_list {
         width: 100%;
@@ -8,14 +8,14 @@ footer.footer {
         background: #9a9a9a;
         display: flex;
         li {
-            width: 32.333vw;
+            width: vw(194);
             &:nth-child(2) {
                 width: vw(195);
-                border-left: 0.167vw solid #fff;
-                border-right: 0.167vw solid #fff;
+                border-left: vw(1) solid #fff;
+                border-right: vw(1) solid #fff;
             }
             &:nth-child(3) {
-                width: 35.167vw;
+                width: vw(211);
             }
         }
         a {
@@ -29,19 +29,19 @@ footer.footer {
         }
     }
     .footer_logo {
-        margin-top: 4.417vw;
-        margin-bottom: 3.417vw;
+        margin-top: vw(27);
+        margin-bottom: vw(21);
         img {
-            width: 24.583vw;
+            width: vw(147);
         }            
     }
     .t1 {
         line-height: 1.44;
-        letter-spacing: -0.9px;
+        letter-spacing: vw(-0.9);
         color: #333;
-        font-size: 3vw;
+        font-size: vw(18);
         &:last-child {
-            margin-top: 1vw;
+            margin-top: vw(6);
         }
     }
 }
