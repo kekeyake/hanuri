@@ -27,7 +27,7 @@ select.select {
 	border-radius: 0;
 	-webkit-appearance: none;
 	border-radius: 0;
-	border: 1px solid #c9c9c9;
+	border: vw(1) solid #c9c9c9;
 }
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
@@ -41,7 +41,7 @@ button.btn {
 	background: transparent;
 	cursor: pointer;
 	outline: none;
-	border-radius: 1px;
+	border-radius: vw(1);
 }
 a {
 	text-decoration: none;
@@ -55,11 +55,11 @@ a.link {
 .btn {
 	&.__top {
 		position: fixed;
-		right: 3.917vw;
-		bottom:35.333vw;
-		width: 7.167vw;
-		height: 7.167vw;
-		background:#fff url(../img/btn_top.png) no-repeat 50% 50% / 4vw 2.5vw;
+		right: vw(24);
+		bottom:vw(212);
+		width: vw(43);
+		height: vw(43);
+		background:#fff url(../img/btn_top.png) no-repeat 50% 50% / vw(24) vw(15);
 		border: 0.167vw solid #777;
 	}
 }
@@ -73,19 +73,19 @@ a.link {
 
 .search_box {
 	margin:0 auto;
-	border-radius: 4.167vw;
-	border: solid 0.667vw #ddd;
+	border-radius: vw(25);
+	border: solid vw(4) #ddd;
 	background-color: #fff;
-	width: 66.667vw;
-	height: 8.333vw;
+	width: vw(400);
+	height: vw(50);
 	display: flex;
 	align-items: center;
-	padding:0 3.333vw;
+	padding:0 vw(20);
 	position: relative;
 	input {
 		border: 0 solid #000;
 		background: transparent;
-		font-size: 3.667vw;
+		font-size: vw(22);
 		font-weight: 700;
 		width: 100%;
 		&::placeholder {
@@ -94,11 +94,11 @@ a.link {
 	}
 	button {
 		position: absolute;
-		right:3.333vw;
+		right:vw(20);
 		top:50%;
 		transform: translateY(-50%);
-		width: 4.167vw;
-		height: 4.167vw;
+		width: vw(25);
+		height: vw(25);
 		background: url(../img/ico_search.svg) no-repeat 0 0 / cover;
 		opacity: 0.4;
 	}

@@ -10,7 +10,7 @@ footer.footer {
         li {
             width: 32.333vw;
             &:nth-child(2) {
-                width: 32.500vw;
+                width: vw(195);
                 border-left: 0.167vw solid #fff;
                 border-right: 0.167vw solid #fff;
             }
@@ -20,8 +20,8 @@ footer.footer {
         }
         a {
             width: 100%;
-            font-size: 3.333vw;
-            padding:2.500vw 0;
+            font-size: vw(20);
+            padding:vw(15) 0;
             color:#fff;
             display: flex;
             justify-content: center;

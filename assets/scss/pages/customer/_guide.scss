@@ -1,12 +1,12 @@
 .guide {
     h1 {
-        font-size: 5vw;
+        font-size: vw(30);
         font-weight: 700;
         color:#333;
-        letter-spacing: -0.250vw;
+        letter-spacing: vw(-2);
         text-align: center;
         padding-top: 6.667vw;  
-        padding-bottom: 6.083vw;
+        padding-bottom: vw(36);
     }
     .nav_menu {
         overflow-x: auto;
@@ -14,23 +14,23 @@
         ul {
             width: max-content;
             display: flex;
-            padding:0 5.167vw;
+            padding:0 vw(25);
             li {
                 position: relative;
-                margin:0 1.250vw;
+                margin:0 vw(8);
                 a {
                     display: block;
-                    padding:3.167vw 1.167vw;
-                    font-size: 3.667vw;
+                    padding:vw(19) vw(7);
+                    font-size: vw(22);
                     font-weight: 500;
-                    letter-spacing: -0.183vw;
+                    letter-spacing: vw(-1);
                     color:#666;
                 }
                 &.on::before {
                     content: '';
                     display: block;
                     width: 100%;
-                    height: 0.667vw;
+                    height: vw(4);
                     background-color: #787878;
                     position: absolute;
                     left: 0;
@@ -50,19 +50,19 @@
     }
     .qa_list {
         .question {
-            padding: 2.833vw 5vw 3.333vw;
+            padding: vw(17) vw(30) vw(20);
             border-bottom: 0.167vw solid #cecece;
             
             span {
-                font-size: 3.667vw; 
+                font-size: vw(22); 
                 color:#ccc;
                 font-weight: 700;
-                letter-spacing: -0.167vw;
+                letter-spacing: vw(-1);
             }
             p {
-                font-size: 3.667vw; 
+                font-size: vw(22); 
                 font-weight: 500;
-                letter-spacing: -0.167vw;
+                letter-spacing: vw(-1);
                 line-height: 1.36;
                 width: 100%;
                 padding-right: 10vw;
@@ -71,8 +71,8 @@
         }
         .answer {
             display: none;
-            margin-top: -0.167vw;
-            padding:5vw;
+            margin-top: vw(-1);
+            padding:vw(30);
             font-size: 3.500vw;
             color:#333;
             letter-spacing: -0.175vw;
@@ -89,7 +89,7 @@
         display: flex;
         justify-content: center;
         margin: 8vw auto;
-        font-size: 3.667vw;
+        font-size: vw(22);
         font-weight: 700;
         color: #929292;
         padding-right: vw(27.5);
@@ -102,7 +102,7 @@
         color:#fff;
         font-weight: 700;
         letter-spacing: -0.208vw;
-        font-size: 4.167vw;
+        font-size: vw(25);
         background: #ee4500;
         margin:0 auto 1.917vw;
     }
@@ -113,7 +113,7 @@
         color:#fff;
         font-weight: 700;
         letter-spacing: -0.208vw;
-        font-size: 4.167vw;
+        font-size: vw(25);
         background: #999;
         margin:0 auto 7.500vw;
     }

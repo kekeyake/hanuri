@@ -12,23 +12,23 @@ header.header {
     }
     .__top {
         
-        padding-left:6.250vw;
-        padding-right: 5.917vw;
-        padding-top: 2.167vw;
-        padding-bottom: 3.083vw;
+        padding-left: vw(38);
+        padding-right: vw(36);
+        padding-top: vw(13);
+        padding-bottom: vw(18);
         .logo {
             img {
-                width: 35vw;
+                width: vw(210);
             }
         }
         ._menu {
-            width: 5.5vw;
-            height: 4.167vw;
+            width: vw(33);
+            height: vw(25);
             background: url(../img/btn_m_menu.png) no-repeat 0 0 / cover;
         }
         ._login {
-            width: 5.167vw;
-            height: 6.500vw;
+            width: vw(25);
+            height: vw(39);
             background: url(../img/btn_mypage.svg) no-repeat 0 0 / cover;
         }
     }
@@ -48,15 +48,15 @@ nav {
     }
     .__nav {
         
-        border-top: 0.250vw solid #ddd;
-        padding-top: 2.917vw;
-        padding-bottom: 2.833vw;
+        border-top: vw(2) solid #ddd;
+        padding-top: vw(18);
+        padding-bottom: vw(17);
         width: 100%;
         & > ul {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding:0 4.750vw;
+            padding:0 vw(29);
             position: relative;
             li {
                 width: max-content;                
@@ -69,16 +69,16 @@ nav {
             a {
                 font-weight: 900;
                 color:#333;
-                font-size: 4.167vw;
+                font-size: vw(25);
             }
         }
     }
     .__sub_bg {
         overflow-x: auto;
         width: 100%;
-        height: 9.333vw;
+        height: vw(56);
         padding-bottom: 2px;
-        border-top: 0.250vw solid #ddd;
+        border-top: vw(2) solid #ddd;
         background: #ededed;
         display: flex;
         align-items: center;
@@ -87,28 +87,28 @@ nav {
             &.on {
                 display: flex;
                 width: max-content;
-                padding-left: 5.167vw;
-                padding-right: 5.167vw;
+                padding-left: vw(25);
+                padding-right: vw(25);
             }
             a {
                 display: inline-flex;
-                font-size: 3.667vw;
+                font-size: vw(22);
                 line-height: 1.36;
                 color:#333;
-                letter-spacing: -0.167vw;
+                letter-spacing: vw(-1);
                 font-weight: 400;
-                margin-right: 3.250vw;
-                border-radius: 2.667vw;
+                margin-right: vw(20);
+                border-radius: vw(16);
                 background: #ededed;
                 width: max-content;
-                height: 6.083vw;
+                height: vw(36);
                 justify-content: center;
                 align-items: center;
                 &:last-child {
                     margin-right: 0;
                 }
                 &.on {
-                    padding:0 2.500vw;
+                    padding:0 vw(15);
                     background-color: #fff;
                 }
             }
@@ -116,24 +116,24 @@ nav {
     }
 }
 .sub_header {
-    padding:3.833vw;
+    padding:vw(23);
     display: flex;
     justify-content: center;
     position: relative;
     border-bottom: 0.167vw solid #a3a3a3;
     .__back {
-        width: 2.500vw;
-        height: 4.167vw;
+        width: vw(15);
+        height: vw(25);
         position: absolute;
-        left: 3.833vw;
-        top:3.833vw;
+        left: vw(23);
+        top:vw(23);
         background: url(../img/btn_back.svg) no-repeat 50% 50% / cover;
         transform: rotate(180deg);
         opacity: .5;
     }
     h1 {
-        font-size:3.667vw;        
-        letter-spacing: -0.183vw;
+        font-size:vw(22);        
+        letter-spacing: vw(-1);
         font-weight: 500;
         color:#333;
     }

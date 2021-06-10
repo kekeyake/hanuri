@@ -1,13 +1,13 @@
 .login {
-    padding:0 5vw 5vw;
+    padding:0 vw(30) vw(30);
     h1 {
-        font-size: 5vw;
+        font-size: vw(30);
         font-weight: 700;
         color:#333;
-        letter-spacing: -0.250vw;
+        letter-spacing: vw(-2);
         text-align: center;
-        padding-top: 9vw;  
-        padding-bottom: 1.333vw;
+        padding-top: vw(54);  
+        padding-bottom: vw(8);
     }
     .login_wrap {
         &__btn {
@@ -61,7 +61,7 @@
             }
         }
         .login_box {
-            padding-top: 3.917vw;
+            padding-top: vw(24);
             label {
                 font-size: vw(22);
                 color:#999;

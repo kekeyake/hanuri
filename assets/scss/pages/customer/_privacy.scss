@@ -1,44 +1,44 @@
 .privacy {
-    padding:0 5vw 5vw;
+    padding:0 vw(30) vw(30);
     h1 {
-        font-size: 5vw;
+        font-size: vw(30);
         font-weight: 700;
         color:#333;
-        letter-spacing: -0.250vw;
+        letter-spacing: vw(-2);
         text-align: center;
         padding-top: 6.667vw;  
-        padding-bottom: 6.083vw;
+        padding-bottom: vw(36);
     }
     h2 {
-        font-size: 4.167vw;
+        font-size: vw(25);
         font-weight: 500;
         letter-spacing: -0.083vw;
         padding-bottom: 2.750vw;
         border-bottom: 0.167vw solid #c6c6c6;
         margin-top: 6.667vw;
-        margin-bottom: 3.333vw;
+        margin-bottom: vw(20);
     }
     h3 {
-        font-size: 3.667vw;
+        font-size: vw(22);
         color:#333;
         font-weight: 500;
         letter-spacing: -0.073vw;
-        margin-bottom: 3.333vw;
+        margin-bottom: vw(20);
         margin-top: 5.500vw;
     }
     p {
-        font-size: 3.333vw;
+        font-size: vw(20);
         line-height: 1.5;
-        letter-spacing: -0.167vw;
+        letter-spacing: vw(-1);
         color:#666;
     }
     .t1 {
-        font-size: 3.333vw;
+        font-size: vw(20);
         line-height: 1.5;
-        letter-spacing: -0.167vw;
+        letter-spacing: vw(-1);
         color:#666;
         position: relative;
-        padding-left:4vw;
+        padding-left:vw(24);
         &::before {
             position: absolute;
             left: 0;
@@ -65,11 +65,11 @@
     }
     
     .t2 {
-        font-size: 3.333vw;
+        font-size: vw(20);
         line-height: 1.5;
-        letter-spacing: -0.167vw;
+        letter-spacing: vw(-1);
         color:#666;
-        margin-left: 4vw;
+        margin-left: vw(24);
         padding-left:2vw;
         position: relative;
         &:before {
@@ -86,7 +86,7 @@
     }
     a {
         display: block;
-        font-size: 3.667vw;
+        font-size: vw(22);
         font-weight: 500;
         color:#333;
         letter-spacing: -0.173vw;

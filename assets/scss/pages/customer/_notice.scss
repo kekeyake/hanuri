@@ -1,13 +1,13 @@
 .notice {
     .__wrap_top {
       padding-top: 6.667vw;  
-      padding-bottom: 7.167vw;
+      padding-bottom: vw(43);
       text-align: center;
       h1 {
-        font-size: 5vw;
+        font-size: vw(30);
         font-weight: 700;
         color:#333;
-        letter-spacing: -0.250vw;
+        letter-spacing: vw(-2);
         & + .search_box {
             margin: 5.917vw auto 0;
         }
@@ -18,14 +18,14 @@
         align-items: center;
         justify-content: center;
         width: 11.417vw;
-        height: 5.167vw;
-        line-height: 5.167vw;
+        height: vw(25);
+        line-height: vw(25);
         font-weight: 700;
         border-radius: 0.833vw;
         background: #999;
         color:#fff;
-        font-size: 3.333vw;
-        letter-spacing: -0.167vw;
+        font-size: vw(20);
+        letter-spacing: vw(-1);
         &.new {
             background: #ee4500;;
         }
@@ -37,13 +37,13 @@
             
             a {
                 display: flex;
-                padding:3.333vw 4.917vw;
+                padding:vw(20) 4.917vw;
                 i {
-                    margin-top: 0.334vw;
+                    margin-top: 0.33vw(24);
                 }
             }
             p {
-                font-size: 3.833vw;
+                font-size: vw(23);
                 letter-spacing: -0.192vw;
                 color:#333;
                 font-weight: 500;
@@ -53,9 +53,9 @@
                     margin-right: 2.250vw;
                 }
                 .date {
-                    font-size: 3.333vw;
+                    font-size: vw(20);
                     color:#999;
-                    letter-spacing: -0.167vw;
+                    letter-spacing: vw(-1);
                     font-weight: 400;
                     margin-left: 0;
                 }
@@ -66,11 +66,11 @@
         display: flex;
         justify-content: center;
         margin: 8vw auto;
-        font-size: 3.667vw;
+        font-size: vw(22);
         font-weight: 700;
         color: #929292;
         padding-right: 6.667vw;
-        background: url(../img/btn_more.png) no-repeat 100% 50% / 4.167vw 2.500vw;
+        background: url(../img/btn_more.png) no-repeat 100% 50% / vw(25) vw(15);
     }
     .btn_list {
         display: flex;
@@ -82,7 +82,7 @@
         border-radius: 0.500vw;
         color:#fff;
         font-weight: 700;
-        font-size: 3.667vw;
+        font-size: vw(22);
         display: flex;
         justify-content: center;
         margin:5.166vw auto 10.333vw;
@@ -90,7 +90,7 @@
     .__view {
         .tit {
             display: flex;
-            padding:5.333vw 5vw;
+            padding:5.333vw vw(30);
             background: #f9f9f9;
             border-bottom: 0.167vw solid #a3a3a3;
             p {
@@ -102,10 +102,10 @@
                 letter-spacing: -0.225vw;
                 line-height: 1.3;
                 .date {
-                    font-size: 3.333vw;
+                    font-size: vw(20);
                     font-weight: 400;
                     color:#999;
-                    letter-spacing: -0.167vw;
+                    letter-spacing: vw(-1);
                     margin-left: 2.250vw;
                 }
             }
@@ -113,7 +113,7 @@
         .stit {
             display: flex;
             border-bottom: 0.167vw solid #c2c2c2;
-            padding:3vw 5vw;
+            padding:3vw vw(30);
             p {
                 width: 72.750vw;
                 margin-left: 2.250vw;
@@ -126,18 +126,18 @@
             }
         }
         .t1 {
-            font-size: 3.667vw;
-            letter-spacing: -0.183vw;
+            font-size: vw(22);
+            letter-spacing: vw(-1);
         }
         .t2 {
             font-size: 3vw;
             letter-spacing: -0.150vw;
         }
         .text_box {
-            padding:6vw 4.750vw 8vw;
-            font-size: 3.667vw;
+            padding:6vw vw(29) 8vw;
+            font-size: vw(22);
             font-weight: 500;
-            letter-spacing: -0.183vw;
+            letter-spacing: vw(-1);
             color:#666;
             border-bottom: 0.167vw solid #c2c2c2;
         }

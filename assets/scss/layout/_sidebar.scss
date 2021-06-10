@@ -23,7 +23,7 @@
     width: 100%;
     padding:5.083vw 5.167vw 4.5vw;
     color:#fff;
-    font-size: 4.167vw;
+    font-size: vw(25);
     font-weight: 700;
     line-height: 1.27;
     background: #ea5404;
@@ -32,7 +32,7 @@
     &.__closed {
       position: absolute;
       right:1.583vw;
-      top:3.833vw;
+      top:vw(23);
       width: 6vw;
       height: 5.667vw;
       background: url(../img/btn_closed.svg) no-repeat 0 0 / cover;
@@ -49,27 +49,27 @@
         border-right: 0 solid #000;
       }
       &:nth-child(1) {
-        background: url(../img/quick_icon_01.png) no-repeat 50%  2.833vw / 5.333vw 7vw;
+        background: url(../img/quick_icon_01.png) no-repeat 50%  vw(17) / 5.333vw 7vw;
       }
       &:nth-child(2) {
-        background: url(../img/quick_icon_02.png) no-repeat 50%  3.667vw / 7.333vw 5.333vw;
+        background: url(../img/quick_icon_02.png) no-repeat 50%  vw(22) / 7.333vw 5.333vw;
       }
       &:nth-child(3) {
-        background: url(../img/quick_icon_03.png) no-repeat 50%  3.333vw / 6.667vw 6vw;
+        background: url(../img/quick_icon_03.png) no-repeat 50%  vw(20) / 6.667vw 6vw;
       }
       &:nth-child(4) {
-        background: url(../img/quick_icon_04.png) no-repeat 50%  3.167vw / 6.667vw 6vw;
+        background: url(../img/quick_icon_04.png) no-repeat 50%  vw(19) / 6.667vw 6vw;
       }
       a {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 100%;
-        font-size: 3.333vw;
+        font-size: vw(20);
         color:#999;
         font-weight: 700;
         position: relative;
-        padding-top: 11.250vw;
+        padding-top: 1vw(8);
         box-sizing: border-box;
       }
     }
@@ -77,16 +77,16 @@
       width: 100%;
       li {
         &:nth-child(1) {
-          background: url(../img/quick_icon_a01.png) no-repeat 50%  3.333vw / 6vw;
+          background: url(../img/quick_icon_a01.png) no-repeat 50%  vw(20) / 6vw;
         }
         &:nth-child(2) {
           background: url(../img/quick_icon_a02.png) no-repeat 50%  3vw / 6.667vw;
         }
         &:nth-child(3) {
-          background: url(../img/quick_icon_a03.png) no-repeat 50%  3.333vw / 6.667vw 6vw;
+          background: url(../img/quick_icon_a03.png) no-repeat 50%  vw(20) / 6.667vw 6vw;
         }
         &:nth-child(4) {
-          background: url(../img/quick_icon_a04.png) no-repeat 50%  3.083vw / 7.333vw 6.500vw;
+          background: url(../img/quick_icon_a04.png) no-repeat 50%  3.083vw / 7.333vw vw(39);
         }
       }
     }
@@ -95,7 +95,7 @@
     background-color: #fff;
     li {
       border-bottom: 0.167vw solid #999;
-      padding:5vw;
+      padding:vw(30);
       &:nth-child(-n + 4) {
         background: #f3f3f3;
       }
@@ -109,11 +109,11 @@
         color:#000;
       }
       a {
-        font-size: 3.667vw;
+        font-size: vw(22);
         font-weight: 700;
         color:#000;
         margin-right: 3vw;
-        letter-spacing: -0.167vw;
+        letter-spacing: vw(-1);
         &:last-child {
           margin-right: 0;
         }

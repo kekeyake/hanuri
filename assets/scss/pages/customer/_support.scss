@@ -1,26 +1,26 @@
 .support {
     h1 {
-        font-size: 5vw;
+        font-size: vw(30);
         font-weight: 700;
         color:#333;
-        letter-spacing: -0.250vw;
+        letter-spacing: vw(-2);
         text-align: center;
         padding-top: 6.667vw;  
-        padding-bottom: 6.083vw;
+        padding-bottom: vw(36);
     }
     .__wrap_top {
-        padding-top: 6.083vw;  
+        padding-top: vw(36);  
         padding-bottom: 7.083vw;
         text-align: center;
         border-top: 0.167vw solid #bcbcbc;
         border-bottom: 0.167vw solid #bcbcbc;
         background: #f9f9f9;
         .search_box {
-            margin:3.5vw auto 0;
+            margin:vw(30) auto 0;
         }
         
         p {
-            font-size: 4vw;
+            font-size: vw(24);
             line-height: 1.42;
             letter-spacing: -0.2vw;
             font-weight: 500;
@@ -30,19 +30,19 @@
         margin-bottom: 15vw;
         li {
             display: flex;
-            padding:6.667vw 0 6.667vw 5vw;
+            padding:6.667vw 0 6.667vw vw(30);
             border-bottom: 0.167vw solid #bcbcbc;
-            font-size: 3.667vw;
+            font-size: vw(22);
             font-weight: 500;
             line-height: 1.36;
-            letter-spacing: -0.183vw;
+            letter-spacing: vw(-1);
             &:last-child {
                 border-bottom: 0.167vw solid #bcbcbc;
             }
             &::before {
                 content: '';
                 display: block;
-                width: 22.667vw;
+                width: vw(136);
                 height: 20.500vw;
                 border-radius: 1.667vw;
             }
@@ -56,7 +56,7 @@
                 background:#f4f4f4 url(../img/support_03.svg) no-repeat 50% 50% / vw(90);
             }
             div {
-                width: 62.833vw;
+                width: vw(377);
                 margin-left: 4.083vw;
                 word-break: keep-all;
                 a {
@@ -66,11 +66,11 @@
                     width: 38.833vw;
                     height:8vw;
                     background: #ee4500;
-                    border-radius: 4vw;
+                    border-radius: vw(24);
                     color:#fff;
-                    font-size: 4.167vw;
+                    font-size: vw(25);
                     letter-spacing: -0.208vw;
-                    margin-top: 2.500vw;
+                    margin-top: vw(15);
                 }
             }
         }
