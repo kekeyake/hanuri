@@ -66,7 +66,7 @@
                 line-height: 1.36;
                 width: 100%;
                 padding-right: 10vw;
-                background: url(../img/btn_guide.png) no-repeat 100% 1.5vw / 4.167vw;
+                background: url(../img/btn_guide.svg) no-repeat 100% 1.5vw / vw(31);
             }
         }
         .answer {
@@ -92,8 +92,8 @@
         font-size: 3.667vw;
         font-weight: 700;
         color: #929292;
-        padding-right: 6.667vw;
-        background: url(../img/btn_more.png) no-repeat 100% 50% / 4.167vw 2.500vw;
+        padding-right: vw(27.5);
+        background: url(../img/btn_more.svg) no-repeat 100% 50% / vw(19.5);
     }
     .btn_contact {
         display: block;

@@ -7,7 +7,6 @@
 
 @import 'vendors/swiper';
 
-
 @import 'layout/header';
 @import 'layout/sidebar';
 @import 'layout/footer';
@@ -100,7 +99,8 @@ a.link {
 		transform: translateY(-50%);
 		width: 4.167vw;
 		height: 4.167vw;
-		background: url(../img/ico_serarch.png) no-repeat 0 0 / cover;
+		background: url(../img/ico_search.svg) no-repeat 0 0 / cover;
+		opacity: 0.4;
 	}
 }
 
@@ -108,21 +108,21 @@ a.link {
 	display: inline-flex;
 	width: vw(25);
 	height: vw(25);
-	background: url( #{$url}/ico_checkbox.png ) no-repeat 50% 50% / 99%;
+	background: url( #{$url}/ico_checkbox.svg ) no-repeat 50% 50% / 99%;
 	border: 0 solid #000;
 	margin-right: vw(9.5);
 	&:checked {
-		background: url( #{$url}/ico_checkbox_on.png ) no-repeat 50% 50% / 99%;
+		background: url( #{$url}/ico_checkbox_on.svg ) no-repeat 50% 50% / 99%;
 	}
 }
 .radio {
 	display: inline-flex;
 	width: vw(25);
 	height: vw(25);
-	background: url( #{$url}/ico_radio.png ) no-repeat 50% 50% / 99%;
+	background: url( #{$url}/ico_radio.svg ) no-repeat 50% 50% / 99%;
 	border: 0 solid #000;
 	margin-right: vw(9.5);
 	&:checked {
-		background: url( #{$url}/ico_radio_on.png ) no-repeat 50% 50% / 99%;
+		background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
 	}
 }

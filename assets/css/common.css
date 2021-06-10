@@ -878,7 +878,7 @@ header.header .__top ._menu {
 header.header .__top ._login {
   width: 5.167vw;
   height: 6.500vw;
-  background: url(../img/btn_mypage.png) no-repeat 0 0/cover;
+  background: url(../img/btn_mypage.svg) no-repeat 0 0/cover;
 }
 
 nav {
@@ -1021,7 +1021,10 @@ nav .__sub_bg .__snav a.on {
   position: absolute;
   left: 3.833vw;
   top: 3.833vw;
-  background: url(../img/btn_back.png) no-repeat 0 0/cover;
+  background: url(../img/btn_back.svg) no-repeat 50% 50%/cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: .5;
 }
 
 .sub_header h1 {
@@ -1080,7 +1083,7 @@ nav .__sub_bg .__snav a.on {
   top: 3.833vw;
   width: 6vw;
   height: 5.667vw;
-  background: url(../img/btn_closed.png) no-repeat 0 0/cover;
+  background: url(../img/btn_closed.svg) no-repeat 0 0/cover;
 }
 
 .side_nav .quick_menu_list {
@@ -1502,15 +1505,15 @@ footer.footer .t1:last-child {
 }
 
 .support .__list li:nth-child(1)::before {
-  background: #f4f4f4 url(../img/support_01.png) no-repeat 50% 50%/8.5vw;
+  background: #f4f4f4 url(../img/support_01.svg) no-repeat 50% 50%/8.5vw;
 }
 
 .support .__list li:nth-child(2)::before {
-  background: #f4f4f4 url(../img/support_02.png) no-repeat 50% 50%/11.333vw;
+  background: #f4f4f4 url(../img/support_02.svg) no-repeat 50% 50%/11.33333vw;
 }
 
 .support .__list li:nth-child(3)::before {
-  background: #f4f4f4 url(../img/support_03.png) no-repeat 50% 50%/15.083vw;
+  background: #f4f4f4 url(../img/support_03.svg) no-repeat 50% 50%/15vw;
 }
 
 .support .__list li div {
@@ -1619,7 +1622,7 @@ footer.footer .t1:last-child {
   line-height: 1.36;
   width: 100%;
   padding-right: 10vw;
-  background: url(../img/btn_guide.png) no-repeat 100% 1.5vw/4.167vw;
+  background: url(../img/btn_guide.svg) no-repeat 100% 1.5vw/5.16667vw;
 }
 
 .guide .qa_list .answer {
@@ -1650,8 +1653,8 @@ footer.footer .t1:last-child {
   font-size: 3.667vw;
   font-weight: 700;
   color: #929292;
-  padding-right: 6.667vw;
-  background: url(../img/btn_more.png) no-repeat 100% 50%/4.167vw 2.5vw;
+  padding-right: 4.58333vw;
+  background: url(../img/btn_more.svg) no-repeat 100% 50%/3.25vw;
 }
 
 .guide .btn_contact {
@@ -2172,6 +2175,10 @@ footer.footer .t1:last-child {
   border-bottom: 0.16667vw solid #d4d4d4;
 }
 
+.join .join_wrap .join_box .radio_box {
+  margin-top: 1.66667vw;
+}
+
 .join .join_wrap .join_box .radio_box label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2237,21 +2244,6 @@ footer.footer .t1:last-child {
 
 .join .join_wrap .check_wrap label:last-child {
   margin-right: 0;
-}
-
-.join .join_wrap .check_wrap .checkbox {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 4.16667vw;
-  height: 4.16667vw;
-  background: url(../img/ico_checkbox.png) no-repeat 50% 50%/99%;
-  border: 0 solid #000;
-  margin-right: 1.58333vw;
-}
-
-.join .join_wrap .check_wrap .checkbox:checked {
-  background: url(../img/ico_checkbox_on.png) no-repeat 50% 50%/99%;
 }
 
 .join .agree_box {
@@ -2406,7 +2398,8 @@ a.link {
           transform: translateY(-50%);
   width: 4.167vw;
   height: 4.167vw;
-  background: url(../img/ico_serarch.png) no-repeat 0 0/cover;
+  background: url(../img/ico_search.svg) no-repeat 0 0/cover;
+  opacity: 0.4;
 }
 
 .checkbox {
@@ -2415,13 +2408,13 @@ a.link {
   display: inline-flex;
   width: 4.16667vw;
   height: 4.16667vw;
-  background: url(../img/ico_checkbox.png) no-repeat 50% 50%/99%;
+  background: url(../img/ico_checkbox.svg) no-repeat 50% 50%/99%;
   border: 0 solid #000;
   margin-right: 1.58333vw;
 }
 
 .checkbox:checked {
-  background: url(../img/ico_checkbox_on.png) no-repeat 50% 50%/99%;
+  background: url(../img/ico_checkbox_on.svg) no-repeat 50% 50%/99%;
 }
 
 .radio {
@@ -2430,12 +2423,12 @@ a.link {
   display: inline-flex;
   width: 4.16667vw;
   height: 4.16667vw;
-  background: url(../img/ico_radio.png) no-repeat 50% 50%/99%;
+  background: url(../img/ico_radio.svg) no-repeat 50% 50%/99%;
   border: 0 solid #000;
   margin-right: 1.58333vw;
 }
 
 .radio:checked {
-  background: url(../img/ico_radio_on.png) no-repeat 50% 50%/99%;
+  background: url(../img/ico_radio_on.svg) no-repeat 50% 50%/99%;
 }
 /*# sourceMappingURL=common.css.map */

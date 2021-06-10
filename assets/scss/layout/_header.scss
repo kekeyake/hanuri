@@ -29,7 +29,7 @@ header.header {
         ._login {
             width: 5.167vw;
             height: 6.500vw;
-            background: url(../img/btn_mypage.png) no-repeat 0 0 / cover;
+            background: url(../img/btn_mypage.svg) no-repeat 0 0 / cover;
         }
     }
 }
@@ -127,7 +127,9 @@ nav {
         position: absolute;
         left: 3.833vw;
         top:3.833vw;
-        background: url(../img/btn_back.png) no-repeat 0 0 / cover;
+        background: url(../img/btn_back.svg) no-repeat 50% 50% / cover;
+        transform: rotate(180deg);
+        opacity: .5;
     }
     h1 {
         font-size:3.667vw;        

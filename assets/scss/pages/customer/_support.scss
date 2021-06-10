@@ -47,13 +47,13 @@
                 border-radius: 1.667vw;
             }
             &:nth-child(1)::before {
-                background:#f4f4f4 url(../img/support_01.png) no-repeat 50% 50% / 8.500vw;
+                background:#f4f4f4 url(../img/support_01.svg) no-repeat 50% 50% / vw(51);
             }
             &:nth-child(2)::before {
-                background:#f4f4f4 url(../img/support_02.png) no-repeat 50% 50% / 11.333vw;
+                background:#f4f4f4 url(../img/support_02.svg) no-repeat 50% 50% / vw(68);
             }
             &:nth-child(3)::before {
-                background:#f4f4f4 url(../img/support_03.png) no-repeat 50% 50% / 15.083vw;
+                background:#f4f4f4 url(../img/support_03.svg) no-repeat 50% 50% / vw(90);
             }
             div {
                 width: 62.833vw;
