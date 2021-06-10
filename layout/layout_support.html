@@ -1,0 +1,56 @@
+<!--@include(layout/header.html)-->
+
+<body>
+<!--@execute(../main/session.jsp)-->
+<!--@include(layout/sitemap.html)-->
+<div id="wrapper">
+
+	<!--@include(layout/top.html)-->
+
+	<!--@execute(../main/top_login.jsp?menu=support&returl={{SYS_PAGE_URL}})-->
+
+	<article class="sub_wrap"><!-- sub_wrap s -->
+		<div class="field_center">
+			<div id="lnb"><!-- lnb s -->
+				<h2>고객센터</h2>
+				<div class="lnb_box">
+					<ul class="dep1">
+			 			<li class="dep1_li first"><a href="/support/learning_program.jsp" class="{{lnb_01}} dep1_lia">학습지원센터</a>
+							<!--<ul>
+								<li><a href="/support/learning_program.jsp" class="{{lnb_sub0101}}">학습프로그램</a></li>
+								
+								<li><a href="/support/video_info.jsp" class="{{lnb_sub0102}}">동영상 학습창 설치</a></li>
+								<li><a href="/support/video_error.jsp" class="{{lnb_sub0103}}">동영상 오류 해결</a></li>
+								<!-- li><a href="/support/new_members.jsp" class="{{lnb_sub0104}}">신규 회원 가이드</a></li
+								<li><a href="/support/remote_info.jsp" class="{{lnb_sub0105}}">원격지원</a></li>
+							</ul> -->
+						</li>
+						<li class="dep1_li"><a href="../board/index.jsp?code=campus" class="{{lnb_02}} dep1_lia">캠퍼스 소식</a></li>
+						<li class="dep1_li"><a href="../board/index.jsp?code=hanuri" class="{{lnb_03}} dep1_lia">한우리 소식</a></li>
+						<li class="dep1_li"><a href="../board/index.jsp?code=event" class="{{lnb_04}} dep1_lia">이벤트 소식</a></li>
+						<li class="dep1_li"><a href="../board/index.jsp?s_category_id=F05&code=faq" class="{{lnb_05}} dep1_lia">자주 묻는 질문</a></li>
+						<li class="dep1_li"><a href="/support/qna_list.jsp" class="{{lnb_06}} dep1_lia">묻고 답하기</a></li>
+                        <li class="dep1_li"><a href="/support/discount_provision.jsp" class="{{lnb_09}} dep1_lia">수강료 할인규정</a></li>
+						<li class="dep1_li"><a href="/support/refund.jsp" class="{{lnb_07}} dep1_lia">환불·연기·포인트 정책</a></li>
+						<li class="dep1_li"><a href="/support/share_prohibition.jsp" class="{{lnb_08}} dep1_lia">아이디 공유금지 정책</a></li>
+						
+						<li class="dep1_li"><a href="/support/partners_info.jsp" class="{{lnb_10}} dep1_lia">제휴 안내</a></li>
+					</ul>
+					<!--@include(layout/customer_center.html)-->
+				</div>
+
+				<!--@execute(../main/lnb_banner.jsp)-->
+
+			</div><!-- lnb e -->
+
+			<!--@include(BODY)-->
+
+		</div>
+	</article><!-- sub_wrap e -->
+
+
+<!--@include(layout/footer.html)-->
+</div>
+
+</body>
+</html>

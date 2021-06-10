@@ -1,6 +1,24 @@
-/// px to vw
+
 @function vw($pixels) {
     @return #{
-        ($pixels * 100) / $viewport
-    }vw;
+        $pixels * 2
+    }px;
 }
+
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+//     /// px to vw
+//     @function vw($pixels) {
+//         @return #{
+//             ($pixels * 100) / $viewport
+//         }vw;
+//     }
+// }
+// @media (max-width: 767px) {
+//     /// px to vw
+//     @function vw($pixels) {
+//         @return #{
+//             ($pixels * 100) / $viewport
+//         }vw;
+//     }
+// }

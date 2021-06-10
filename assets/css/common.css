@@ -1972,16 +1972,16 @@ footer.footer .t1:last-child {
 }
 
 .login .login_wrap__btn {
-  margin-top: 8.83333vw;
+  margin-top: 106px;
 }
 
 .login .login_wrap__btn button {
   width: 100%;
   font-weight: 700;
-  font-size: 5vw;
-  letter-spacing: -0.25vw;
-  height: 11.08333vw;
-  margin-bottom: 2.91667vw;
+  font-size: 60px;
+  letter-spacing: -3px;
+  height: 133px;
+  margin-bottom: 35px;
 }
 
 .login .login_wrap__btn button.btn_login {
@@ -1994,8 +1994,8 @@ footer.footer .t1:last-child {
 }
 
 .login .login_wrap__btn button.btn_login__kakao img {
-  width: 5.61667vw;
-  margin-right: 2.33333vw;
+  width: 67.4px;
+  margin-right: 28px;
 }
 
 .login .login_wrap__btn button.btn_login__naver {
@@ -2005,14 +2005,14 @@ footer.footer .t1:last-child {
 }
 
 .login .login_wrap__btn button.btn_login__naver img {
-  width: 5.61667vw;
-  margin-right: 2.5vw;
-  -webkit-transform: translateY(-0.66667vw);
-          transform: translateY(-0.66667vw);
+  width: 67.4px;
+  margin-right: 30px;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .login .login_wrap__btn_join {
-  margin-top: 7.16667vw;
+  margin-top: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2025,17 +2025,17 @@ footer.footer .t1:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 43.91667vw;
+  width: 527px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 11.08333vw;
-  font-size: 4.16667vw;
+  height: 133px;
+  font-size: 50px;
   font-weight: 700;
-  letter-spacing: -0.20833vw;
+  letter-spacing: -2.5px;
   color: #fff;
   background-color: #666;
 }
@@ -2045,7 +2045,7 @@ footer.footer .t1:last-child {
 }
 
 .login .login_wrap .login_box label {
-  font-size: 3.66667vw;
+  font-size: 44px;
   color: #999;
   letter-spacing: -0.073vw;
 }
@@ -2058,10 +2058,10 @@ footer.footer .t1:last-child {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 9vw;
-  font-size: 4vw;
+  height: 108px;
+  font-size: 48px;
   border: 0 solid #000;
-  border-bottom: 0.16667vw solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
 }
 
 .login .login_wrap .login_box._password {
@@ -2071,9 +2071,9 @@ footer.footer .t1:last-child {
 .login .login_wrap .login_box._password .btn_toggle {
   position: absolute;
   right: 0;
-  bottom: 2.25vw;
-  width: 7.33333vw;
-  height: 5vw;
+  bottom: 27px;
+  width: 88px;
+  height: 60px;
 }
 
 .login .login_wrap .login_box._password .btn_toggle img {
@@ -2082,7 +2082,7 @@ footer.footer .t1:last-child {
 }
 
 .login .login_wrap .check_wrap {
-  margin-top: 8.41667vw;
+  margin-top: 101px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2098,9 +2098,9 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 3.41667vw;
-  font-size: 3.66667vw;
-  letter-spacing: -0.07333vw;
+  margin-right: 41px;
+  font-size: 44px;
+  letter-spacing: -0.88px;
 }
 
 .login .login_wrap .check_wrap label:last-child {
@@ -2122,38 +2122,38 @@ footer.footer .t1:last-child {
 }
 
 .join .join_wrap .error {
-  margin-top: 3.75vw;
-  font-size: 3.66667vw;
+  margin-top: 45px;
+  font-size: 44px;
   color: #ee5400;
 }
 
 .join .join_wrap .join_box {
-  padding-top: 3.91667vw;
+  padding-top: 47px;
   position: relative;
 }
 
 .join .join_wrap .join_box.__cert .btn_cert {
   position: absolute;
   right: 0;
-  bottom: 0.16667vw;
-  width: 23.5vw;
-  height: 8.41667vw;
+  bottom: 2px;
+  width: 282px;
+  height: 101px;
   background: #666;
-  border-radius: 0.5vw;
+  border-radius: 6px;
   color: #fff;
-  font-size: 3.66667vw;
+  font-size: 44px;
   font-weight: 700;
-  letter-spacing: -0.18333vw;
+  letter-spacing: -2.2px;
 }
 
 .join .join_wrap .join_box.__cert input {
-  width: 64.25vw;
+  width: 771px;
 }
 
 .join .join_wrap .join_box > label {
-  font-size: 3.66667vw;
+  font-size: 44px;
   color: #999;
-  letter-spacing: -0.07333vw;
+  letter-spacing: -0.88px;
   line-height: 1;
 }
 
@@ -2165,11 +2165,11 @@ footer.footer .t1:last-child {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 9vw;
-  font-size: 4vw;
-  letter-spacing: -0.08vw;
+  height: 108px;
+  font-size: 48px;
+  letter-spacing: -0.96px;
   border: 0 solid #000;
-  border-bottom: 0.16667vw solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
 }
 
 .join .join_wrap .join_box .radio_box label {
@@ -2179,20 +2179,20 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 3.33333vw;
+  margin-right: 40px;
 }
 
 .join .join_wrap .join_box .radio_box span {
-  font-size: 4vw;
-  line-height: 0.16667vw;
+  font-size: 48px;
+  line-height: 2px;
 }
 
 .join .join_wrap .join_box .btn_reset {
   position: absolute;
-  right: 1.66667vw;
-  bottom: 2.16667vw;
-  width: 4.66667vw;
-  height: 4.66667vw;
+  right: 20px;
+  bottom: 26px;
+  width: 56px;
+  height: 56px;
 }
 
 .join .join_wrap .join_box .btn_reset img {
@@ -2203,9 +2203,9 @@ footer.footer .t1:last-child {
 .join .join_wrap .join_box .btn_toggle {
   position: absolute;
   right: 0;
-  bottom: 2.25vw;
-  width: 7.33333vw;
-  height: 5vw;
+  bottom: 27px;
+  width: 88px;
+  height: 60px;
 }
 
 .join .join_wrap .join_box .btn_toggle img {
@@ -2214,7 +2214,7 @@ footer.footer .t1:last-child {
 }
 
 .join .join_wrap .check_wrap {
-  margin-top: 8.41667vw;
+  margin-top: 101px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2230,9 +2230,9 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 3.41667vw;
-  font-size: 3.66667vw;
-  letter-spacing: -0.07333vw;
+  margin-right: 41px;
+  font-size: 44px;
+  letter-spacing: -0.88px;
 }
 
 .join .join_wrap .check_wrap label:last-child {
@@ -2243,11 +2243,11 @@ footer.footer .t1:last-child {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 4.16667vw;
-  height: 4.16667vw;
+  width: 50px;
+  height: 50px;
   background: url(../img/ico_checkbox.png) no-repeat 50% 50%/99%;
   border: 0 solid #000;
-  margin-right: 1.58333vw;
+  margin-right: 19px;
 }
 
 .join .join_wrap .check_wrap .checkbox:checked {
@@ -2255,16 +2255,16 @@ footer.footer .t1:last-child {
 }
 
 .join .agree_box {
-  margin-top: 6.75vw;
+  margin-top: 81px;
   background-color: #f6f6f6;
-  font-size: 3.66667vw;
+  font-size: 44px;
   color: #333;
-  letter-spacing: -0.07333vw;
-  border: 0.08333vw solid #666;
+  letter-spacing: -0.88px;
+  border: 1px solid #666;
 }
 
 .join .agree_box div {
-  padding: 3.5vw;
+  padding: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2274,7 +2274,7 @@ footer.footer .t1:last-child {
 }
 
 .join .agree_box div:first-child {
-  border-bottom: 0.16667vw solid #666;
+  border-bottom: 2px solid #666;
 }
 
 .join .agree_box a {
@@ -2283,20 +2283,20 @@ footer.footer .t1:last-child {
 }
 
 .join .btn_join {
-  margin-top: 6.58333vw;
+  margin-top: 79px;
   width: 100%;
   font-weight: 700;
-  font-size: 5vw;
-  letter-spacing: -0.25vw;
-  height: 11.08333vw;
-  margin-bottom: 2.91667vw;
+  font-size: 60px;
+  letter-spacing: -3px;
+  height: 133px;
+  margin-bottom: 35px;
   color: #fff;
   background-color: #ee5400;
 }
 
 /* common */
 select.select {
-  padding: 0.83333vw 3.33333vw 0.83333vw 1.66667vw;
+  padding: 10px 40px 10px 20px;
   border-radius: 0;
   -webkit-appearance: none;
   border-radius: 0;
@@ -2413,11 +2413,11 @@ a.link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 4.16667vw;
-  height: 4.16667vw;
+  width: 50px;
+  height: 50px;
   background: url(../img/ico_checkbox.png) no-repeat 50% 50%/99%;
   border: 0 solid #000;
-  margin-right: 1.58333vw;
+  margin-right: 19px;
 }
 
 .checkbox:checked {
@@ -2428,11 +2428,11 @@ a.link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 4.16667vw;
-  height: 4.16667vw;
+  width: 50px;
+  height: 50px;
   background: url(../img/ico_radio.png) no-repeat 50% 50%/99%;
   border: 0 solid #000;
-  margin-right: 1.58333vw;
+  margin-right: 19px;
 }
 
 .radio:checked {
