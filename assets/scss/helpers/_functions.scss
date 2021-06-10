@@ -1,9 +1,13 @@
-
 @function vw($pixels) {
     @return #{
-        $pixels * 2
-    }px;
+        ($pixels * 100) / $viewport
+    }vw;
 }
+// @function vw($pixels) {
+//     @return #{
+//         $pixels * 2
+//     }px;
+// }
 
 
 // @media (min-width: 768px) and (max-width: 1024px) {
