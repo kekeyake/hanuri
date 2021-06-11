@@ -16,17 +16,7 @@ header.header {
             border-bottom: px(1) solid #ddd;
         }
     }
-    .pc {
-        display: none;
-    }
-    @include desktop {
-        .m {
-            display: none;
-        }
-        .pc {
-            display: block;
-        }
-    }
+    
     .__top {
         
         padding-left: vw(38);
@@ -53,7 +43,7 @@ header.header {
         ._menu {
             width: vw(33);
             height: vw(25);
-            background: url(../img/btn_m_menu.png) no-repeat 50% / 99%;
+            background: url(../img/btn_m_menu.svg) no-repeat 50% / 99%;
         }
         ._login {
             width: vw(31);
@@ -163,13 +153,18 @@ nav {
         @include desktop {
             display: block;
             position: relative;
+            z-index: 100;
+            position: relative;
         }
         &.sticky {
             position: fixed;
             top:0;
+            width: 100%;            
         }
         ul {
             display: flex;
+            background-color: #fff;
+            position: absolute;
         }
     }
 }

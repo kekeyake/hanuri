@@ -1,5 +1,8 @@
 .login {
     padding:0 vw(30) vw(30);
+    @include desktop {
+        padding:0;    
+    }
     h1 {
         font-size: vw(30);
         font-weight: 700;
@@ -8,6 +11,12 @@
         text-align: center;
         padding-top: vw(54);  
         padding-bottom: vw(8);
+        @include desktop {
+            font-size: px(15);
+            letter-spacing: px(-0.75);
+            padding-top: px(19.5);  
+            padding-bottom: px(20.5);
+        }
     }
     .login_wrap {
         &__btn {

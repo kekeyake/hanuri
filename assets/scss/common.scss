@@ -28,11 +28,7 @@ select.select {
 	border-radius: 0;
 	-webkit-appearance: none;
 	border-radius: 0;
-	border: vw(1) solid #c9c9c9;
-	@include desktop {
-		padding: px(5) px(20) px(5) px(10);
-		border: px(0.5) solid #c9c9c9;
-	}
+	border: vw(1) solid #c9c9c9;	
 }
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
@@ -47,9 +43,6 @@ button.btn {
 	cursor: pointer;
 	outline: none;
 	border-radius: vw(1);
-	@include desktop {
-		border-radius: px(1.5);
-	}
 }
 a {
 	text-decoration: none;
@@ -67,7 +60,7 @@ a.link {
 		bottom:vw(212);
 		width: vw(43);
 		height: vw(43);
-		background:#fff url(../img/btn_top.png) no-repeat 50% 50% / vw(24) vw(15);
+		background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / vw(24) vw(15);
 		border: vw(1) solid #777;
 	}
 }
@@ -134,8 +127,39 @@ a.link {
 		background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
 	}
 }
-main.main {
-	@include desktop {
+.pc {
+	display: none;
+}
+.m {
+	display: block;
+}
+
+/* pc layout common */
+@include desktop {
+	.m {
+		display: none;
+	}
+	.pc {
+		display: block;
+	}
+
+	main.main {
 		padding-top: px(31);
+	}
+
+	.card {
+		width: px(360);
+		margin:0 auto;
+		border: 1px solid #ccc;
+		padding:px(35.5) px(45) px(20.5);
+	}
+
+	select.select {
+		padding: px(5) px(20) px(5) px(10);
+		border: px(0.5) solid #c9c9c9;		
+	}
+
+	button.btn {
+		border-radius: px(1.5);
 	}
 }

@@ -17,6 +17,9 @@ footer.footer {
             &:nth-child(3) {
                 width: vw(211);
             }
+            &:nth-child(n+4) {
+                display: none;
+            }
         }
         a {
             width: 100%;
@@ -42,6 +45,88 @@ footer.footer {
         font-size: vw(18);
         &:last-child {
             margin-top: vw(6);
+        }
+    }
+}
+@include desktop {
+    footer.footer {
+        padding-bottom: vw(35);
+        .foot_list {
+            justify-content: space-between;
+            li {
+                width: calc(100% / 6);
+                text-align: center;
+                border-right: px(0.5) solid #fff;
+                &:first-child {
+                    border-left: px(0.5) solid #fff;
+                }
+                &:nth-child(2) {
+                    width: calc(100% / 6);
+                    border: 0 solid #fff;
+                    border-right: px(0.5) solid #fff;
+                }
+                &:nth-child(3) {
+                    width: calc(100% / 6);
+                }
+                &:nth-child(n+4) {
+                    display: block;
+                }
+            }
+            a {
+                width: 100%;
+                font-size: px(8.5);
+                padding:px(8) 0;
+                color:#fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .inner {
+            display: flex;
+            padding:px(20) px(26);
+        }
+        .footer_logo {
+            margin:0;
+            img {
+                width: px(62);
+            }            
+        }
+        .t1 {
+            line-height: 1.44;
+            letter-spacing: px(-0.4);
+            color: #333;
+            font-size: px(8);
+            &:last-child {
+                margin-top: px(5);
+            }
+        }
+        ._txt {
+            text-align: left;
+            margin-left: px(32);
+            strong {
+                font-weight: bold;
+                display: inline-flex;
+                &::after {
+                    content:'|';
+                    margin:0 px(5);
+                    color:#999;
+                    transform: translateY(-1px);
+                    font-weight: normal;
+                }
+            }
+            span {
+                display: inline-flex;
+                &::after {
+                    content:'|';
+                    margin:0 px(5);
+                    color:#999;
+                    transform: translateY(-1px);
+                }
+                &:last-child::after {
+                    display: none;
+                }
+            }
         }
     }
 }

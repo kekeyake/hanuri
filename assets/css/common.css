@@ -869,19 +869,6 @@ header.header .inner {
   }
 }
 
-header.header .pc {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  header.header .m {
-    display: none;
-  }
-  header.header .pc {
-    display: block;
-  }
-}
-
 header.header .__top {
   padding-left: 6.33333vw;
   padding-right: 6vw;
@@ -918,7 +905,7 @@ header.header .__top .logo img {
 header.header .__top ._menu {
   width: 5.5vw;
   height: 4.16667vw;
-  background: url(../img/btn_m_menu.png) no-repeat 50%/99%;
+  background: url(../img/btn_m_menu.svg) no-repeat 50%/99%;
 }
 
 header.header .__top ._login {
@@ -1072,18 +1059,23 @@ nav.pc_menu {
   nav.pc_menu {
     display: block;
     position: relative;
+    z-index: 100;
+    position: relative;
   }
 }
 
 nav.pc_menu.sticky {
   position: fixed;
   top: 0;
+  width: 100%;
 }
 
 nav.pc_menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
+  position: absolute;
 }
 
 .sub_header {
@@ -1307,6 +1299,10 @@ footer.footer .foot_list li:nth-child(3) {
   width: 35.16667vw;
 }
 
+footer.footer .foot_list li:nth-child(n+4) {
+  display: none;
+}
+
 footer.footer .foot_list a {
   width: 100%;
   font-size: 3.33333vw;
@@ -1341,6 +1337,105 @@ footer.footer .t1 {
 
 footer.footer .t1:last-child {
   margin-top: 1vw;
+}
+
+@media (min-width: 1200px) {
+  footer.footer {
+    padding-bottom: 5.83333vw;
+  }
+  footer.footer .foot_list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer.footer .foot_list li {
+    width: calc(100% / 6);
+    text-align: center;
+    border-right: 1px solid #fff;
+  }
+  footer.footer .foot_list li:first-child {
+    border-left: 1px solid #fff;
+  }
+  footer.footer .foot_list li:nth-child(2) {
+    width: calc(100% / 6);
+    border: 0 solid #fff;
+    border-right: 1px solid #fff;
+  }
+  footer.footer .foot_list li:nth-child(3) {
+    width: calc(100% / 6);
+  }
+  footer.footer .foot_list li:nth-child(n+4) {
+    display: block;
+  }
+  footer.footer .foot_list a {
+    width: 100%;
+    font-size: 17px;
+    padding: 16px 0;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer.footer .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 52px;
+  }
+  footer.footer .footer_logo {
+    margin: 0;
+  }
+  footer.footer .footer_logo img {
+    width: 124px;
+  }
+  footer.footer .t1 {
+    line-height: 1.44;
+    letter-spacing: -0.8px;
+    color: #333;
+    font-size: 16px;
+  }
+  footer.footer .t1:last-child {
+    margin-top: 10px;
+  }
+  footer.footer ._txt {
+    text-align: left;
+    margin-left: 64px;
+  }
+  footer.footer ._txt strong {
+    font-weight: bold;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  footer.footer ._txt strong::after {
+    content: '|';
+    margin: 0 10px;
+    color: #999;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    font-weight: normal;
+  }
+  footer.footer ._txt span {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  footer.footer ._txt span::after {
+    content: '|';
+    margin: 0 10px;
+    color: #999;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  footer.footer ._txt span:last-child::after {
+    display: none;
+  }
 }
 
 .notice .__wrap_top {
@@ -2047,6 +2142,12 @@ footer.footer .t1:last-child {
   padding: 0 5vw 5vw;
 }
 
+@media (min-width: 1200px) {
+  .login {
+    padding: 0;
+  }
+}
+
 .login h1 {
   font-size: 5vw;
   font-weight: 700;
@@ -2055,6 +2156,15 @@ footer.footer .t1:last-child {
   text-align: center;
   padding-top: 9vw;
   padding-bottom: 1.33333vw;
+}
+
+@media (min-width: 1200px) {
+  .login h1 {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    padding-top: 39px;
+    padding-bottom: 41px;
+  }
 }
 
 .login .login_wrap__btn {
@@ -2378,13 +2488,6 @@ select.select {
   border: 0.16667vw solid #c9c9c9;
 }
 
-@media (min-width: 1200px) {
-  select.select {
-    padding: 10px 40px 10px 20px;
-    border: 1px solid #c9c9c9;
-  }
-}
-
 /* IE 에서 Select box 화살표 제거 */
 select.select::-ms-expand {
   display: none;
@@ -2400,12 +2503,6 @@ button.btn {
   cursor: pointer;
   outline: none;
   border-radius: 0.16667vw;
-}
-
-@media (min-width: 1200px) {
-  button.btn {
-    border-radius: 3px;
-  }
 }
 
 a {
@@ -2432,7 +2529,7 @@ a.link {
   bottom: 35.33333vw;
   width: 7.16667vw;
   height: 7.16667vw;
-  background: #fff url(../img/btn_top.png) no-repeat 50% 50%/4vw 2.5vw;
+  background: #fff url(../img/btn_top.svg) no-repeat 50% 50%/4vw 2.5vw;
   border: 0.16667vw solid #777;
 }
 
@@ -2528,9 +2625,37 @@ a.link {
   background: url(../img/ico_radio_on.svg) no-repeat 50% 50%/99%;
 }
 
+.pc {
+  display: none;
+}
+
+.m {
+  display: block;
+}
+
+/* pc layout common */
 @media (min-width: 1200px) {
+  .m {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
   main.main {
     padding-top: 62px;
+  }
+  .card {
+    width: 720px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 71px 90px 41px;
+  }
+  select.select {
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #c9c9c9;
+  }
+  button.btn {
+    border-radius: 3px;
   }
 }
 /*# sourceMappingURL=common.css.map */
