@@ -13,7 +13,7 @@ header.header {
         @include desktop {
             align-items:flex-end;
             height: px(53);
-            border-bottom: px(1) solid #ddd;
+            
         }
     }
     
@@ -24,7 +24,9 @@ header.header {
         padding-top: vw(13);
         padding-bottom: vw(18);
         @include desktop {
-            padding: px(10) px(16);
+            padding: px(10);
+            width: 1200px;
+            margin:0 auto;
         }
         .logo {
             @include desktop {
@@ -155,6 +157,9 @@ nav {
             position: relative;
             z-index: 100;
             position: relative;
+            padding-bottom: px(32.5);
+            border-bottom: px(1) solid #ddd;
+            background-color: #fff;
         }
         &.sticky {
             position: fixed;
@@ -163,9 +168,10 @@ nav {
         }
         ul {
             display: flex;
-            background-color: #fff;
             position: absolute;
-        }
+            width: 1200px;
+            margin:0 auto;
+        }        
     }
 }
 .sub_header {
@@ -192,5 +198,76 @@ nav {
     }
     a {
         color:#333;
+    }
+}
+@include desktop {
+    header.header {
+        height: px(54);
+        border-bottom: px(1) solid #ddd;
+    }
+    .pc_menu {
+        > div {
+            width: 1200px;
+            margin:0 auto;
+        }
+        ul {            
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: calc(100% / 7);
+                > a {
+                    display: block;
+                    text-align: center;
+                    padding:px(9) px(10);
+                    font-size: px(11);
+                    line-height: 1.36;
+                    color:#333;
+                    font-family: 'NanumSquare';
+                    font-weight: 700;
+                }
+                &:first-child > a{
+                    text-align: left;
+                }
+                &:last-child > a{
+                    text-align: right;
+                }
+            
+            }
+        }
+        .pc_sub_menu {        
+            // display: none;
+            position: absolute;
+            width: 100%;
+            top:67px;
+            background: #f3f3f3;
+            &.on {
+                display: block;
+            }
+            .inner {
+                width: 1200px;
+                margin:0 auto;
+                display: flex;
+                .sub_menu {
+                    width: calc(100% / 7);
+                    text-align: center;
+                    a {
+                        display: block;
+                        font-size: px(8.5);
+                        letter-spacing: px(-0.43);
+                        color:#333;
+                        &.on {
+                            background-color: #fff;
+                            border-radius: px(8);
+                        }
+                    }
+                    &:first-child {
+                        padding-right: px(10);
+                    }
+                    &:last-child {
+                        padding-left: px(25);
+                    }
+                }
+            }
+        }
     }
 }
