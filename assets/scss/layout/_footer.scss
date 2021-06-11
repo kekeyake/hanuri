@@ -51,8 +51,29 @@ footer.footer {
 @include desktop {
     footer.footer {
         padding-bottom: vw(35);
+        overflow-x: hidden;
+        .inner {
+            width: 1200px;
+            margin:0 auto;
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: '';
+                display: block;
+                width: 200%;
+                height: 51px;
+                background: #9a9a9a;
+                position: absolute;
+                left:-50%;
+                top:0;
+                z-index: -1;
+            }
+        }
         .foot_list {
+            font-family: 'NanumSquare';
+            font-weight: 700;
             justify-content: space-between;
+            position: relative;
             li {
                 width: calc(100% / 6);
                 text-align: center;
@@ -82,7 +103,7 @@ footer.footer {
                 align-items: center;
             }
         }
-        .inner {
+        .txt_wrap {
             display: flex;
             padding:px(20) px(26);
         }
@@ -104,6 +125,7 @@ footer.footer {
         ._txt {
             text-align: left;
             margin-left: px(32);
+            font-family: 'NanumSquare';
             strong {
                 font-weight: bold;
                 display: inline-flex;

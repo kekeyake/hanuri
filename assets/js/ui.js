@@ -1,9 +1,9 @@
 var $winW, $winH, $isMobile, $headerHeight;
 $(function () {
-    $headerHeight = $('header.header').innerHeight();
+    $headerHeight = $('.header').innerHeight();
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $headerHeight) {
+        if ($(window).scrollTop() > 106) {
             $('.pc_menu').addClass('sticky');
         } else {
             $('.pc_menu').removeClass('sticky');
