@@ -20,5 +20,18 @@ $(function () {
     $('.question').on('click',function(){
         $(this).next('.answer').toggleClass('open');
     });
+    $('.depth1 > ul').hover(function(){
+        subUp();
+    });
+    $('.pc_menu').mouseleave(function(){
+        subDown();
+    });
+
+    function subUp() {
+        $('.pc_sub_menu').slideDown();
+    }
+    function subDown() {
+        $('.pc_sub_menu').slideUp();
+    }
 });
 

@@ -1,8 +1,5 @@
 .login {
     padding:0 vw(30) vw(30);
-    @include desktop {
-        padding:0;    
-    }
     h1 {
         font-size: vw(30);
         font-weight: 700;
@@ -11,12 +8,6 @@
         text-align: center;
         padding-top: vw(54);  
         padding-bottom: vw(8);
-        @include desktop {
-            font-size: px(15);
-            letter-spacing: px(-0.75);
-            padding-top: px(19.5);  
-            padding-bottom: px(20.5);
-        }
     }
     .login_wrap {
         &__btn {
@@ -118,4 +109,104 @@
         
     }
 
+}
+
+@include desktop {
+    .login {
+        padding:0;    
+        .card {
+            margin-bottom: px(19.5);
+            padding-bottom: px(44.5);
+            padding-top: px(24) ;
+        }
+        h1 {
+            font-size: px(15);
+            letter-spacing: px(-0.75);
+            padding-top: px(0);  
+            padding-bottom: px(20.5);
+        }
+        .login_wrap {
+            &__btn {
+                margin-top: px(26.5);
+                button {
+                    font-size: px(15);
+                    letter-spacing: px(-0.75);
+                    height: px(33.5);
+                    margin-bottom: px(8.5);
+                    &.btn_login {                    
+                        &__kakao {
+                            img {
+                                width: px(17);
+                                margin-right: px(6.5);
+                            }    
+                        }
+                        &__naver {
+                            img {
+                                width: px(17.5);
+                                margin-right: px(7);
+                                transform: translateY(px(-2));
+                            }
+                        }
+                    }                
+                }
+            }
+            &__btn_join {
+                margin-top: px(21.5);
+                a {
+                    width: px(132);
+                    height: px(33.5);
+                    font-size: px(12.5);
+                    letter-spacing: px(-0.63);
+                }
+            }
+            .login_box {
+                padding-top: px(12.5);
+                label {
+                    font-size: px(10);
+                    letter-spacing: px(-0.2);
+                }
+                input {
+                    color:#333;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height:px(25);
+                    font-size: px(12);
+                    border: 0 solid #000;
+                    border-bottom: px(0.5) solid #ccc;
+                }
+                &._password {
+                    position: relative;
+                    .btn_toggle {
+                        position: absolute;
+                        right:px(4);
+                        bottom:px(6.5);
+                        width: px(22);
+                        height: px(15);
+                        img {
+                            width: $full;
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .check_wrap {
+                margin-top: px(25);
+                label {
+                    margin-right: px(16);
+                    color:#666;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    font-size: px(10.5);
+                    letter-spacing: px(-0.21);
+                    input {
+                        margin-right: px(4);
+                    }
+                }
+            }
+            
+        }
+
+    }
 }

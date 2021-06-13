@@ -162,4 +162,26 @@ a.link {
 	button.btn {
 		border-radius: px(1.5);
 	}
+
+	.checkbox {
+		width: px(11);
+		height: px(11);
+		background: url( #{$url}/ico_checkbox.svg ) no-repeat 50% 50% / 99%;
+		border: 0 solid #000;
+		margin-right: px(6);
+		&:checked {
+			background: url( #{$url}/ico_checkbox_on.svg ) no-repeat 50% 50% / 99%;
+		}
+	}
+	.radio {
+		display: inline-flex;
+		width: px(11);
+		height: px(11);
+		background: url( #{$url}/ico_radio.svg ) no-repeat 50% 50% / 99%;
+		border: 0 solid #000;
+		margin-right: px(6);
+		&:checked {
+			background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
+		}
+	}
 }
