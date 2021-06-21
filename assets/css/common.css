@@ -2465,12 +2465,12 @@ footer.footer .t1:last-child {
 
 @media (min-width: 1200px) {
   .login {
-    padding: 0;
+    padding: 0 0 39px;
   }
   .login .card {
-    margin-bottom: 39px;
     padding-bottom: 89px;
     padding-top: 48px;
+    background-color: #fff;
   }
   .login h1 {
     font-size: 30px;
@@ -2479,7 +2479,7 @@ footer.footer .t1:last-child {
     padding-bottom: 41px;
   }
   .login .login_wrap .error {
-    margin-top: 24px;
+    margin-top: 12px;
     font-size: 20px;
   }
   .login .login_wrap__btn {
@@ -2756,9 +2756,10 @@ footer.footer .t1:last-child {
     margin: 39px auto 60px;
     border: 1px solid #ccc;
     padding: 72px 90px;
+    background-color: #fff;
   }
   .join .join_wrap .error {
-    margin-top: 24px;
+    margin-top: 12px;
     font-size: 20px;
   }
   .join .join_wrap .join_box {
@@ -3012,6 +3013,9 @@ a.link {
   main.main {
     padding-top: 62px;
   }
+  main.bg_grey {
+    background: #f5f5f5;
+  }
   .card {
     width: 720px;
     margin: 0 auto;
@@ -3028,7 +3032,7 @@ a.link {
   .checkbox {
     width: 22px;
     height: 22px;
-    background: url(../img/ico_checkbox.svg) no-repeat 50% 50%/99%;
+    background: #fff url(../img/ico_checkbox.svg) no-repeat 50% 50%/99%;
     border: 0 solid #000;
     margin-right: 12px;
   }

@@ -119,11 +119,12 @@
 
 @include desktop {
     .login {
-        padding:0;    
+        padding:0 0 px(19.5);    
         .card {
-            margin-bottom: px(19.5);
+            
             padding-bottom: px(44.5);
             padding-top: px(24) ;
+            background-color: #fff;
         }
         h1 {
             font-size: px(15);
@@ -133,7 +134,7 @@
         }
         .login_wrap {
             .error {
-                margin-top: px(12);
+                margin-top: px(6);
                 font-size: px(10);
             }
             &__btn {
