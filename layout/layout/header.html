@@ -22,10 +22,15 @@
     <header class="header">
         <section class="inner __top">
             <button id="btnMobile" class="m btn _menu"></button>
+            <a href="#a" class="pc">전체메뉴</a>
             <h1 class="logo">
-                <a href="#a"><img src="../assets/img/logo_m.png" alt="한우리 독서지도사"></a>
+                <a href="#a"><img src="../assets/img/logo_m.svg" alt="한우리 독서지도사"></a>
             </h1>
             <button class="m btn _login"></button>
+            <div class="pc">
+                <a href="#a">회원가입</a>
+                <a href="#a">로그인</a>
+            </div>
         </section>        
     </header>
     <!--// header -->
@@ -33,41 +38,99 @@
     <nav class="main_menu">
         <section class="inner __nav">
             <ul>
-                <li>
-                <a href="#a">독서지도사</a>          
-                </li>
-                <li class="on">
-                <a href="#a">수강신청</a>          
-                </li>
-                <li>
-                <a href="#a">자격시험</a>
-                </li>
-                <li>
-                <a href="#a">한우리교사</a>
-                </li>        
+                <li class="{{lnb_01}}"><a href="#a">독서지도사</a></li>
+                <li class="{{lnb_02}}"><a href="#a">수강신청</a></li>
+                <li class="{{lnb_03}}"><a href="#a">자격시험</a></li>
+                <li class="{{lnb_04}}"><a href="#a">한우리교사</a></li>        
             </ul>      
         </section>
         <section class="__sub_bg noscroll">
+			<!--@if(lnb_01_block)-->
             <div class="__snav on">
-                <a href="#a">왜 독서지도사인가?</a>
-                <a href="#a" class="on">독서지도사는 한우리</a>
-                <a href="#a">활동후기</a>
+                <a href="#a" class="{{lnb_sub_01}}">왜 독서지도사인가?</a>
+                <a href="#a" class="{{lnb_sub_02}}">독서지도사는 한우리</a>
+                <a href="#a" class="{{lnb_sub_03}}">활동후기</a>
             </div>
-            <div class="__snav">
-                <a href="#a">독서지도사과정</a>
-                <a href="#a">전체과정</a>
-                <a href="#a">단체위탁과정</a>
+			<!--/if(lnb_01_block)-->
+			<!--@if(lnb_02_block)-->
+            <div class="__snav on">
+                <a href="#a" class="{{lnb_sub_01}}">독서지도사과정</a>
+                <a href="#a" class="{{lnb_sub_02}}">전체과정</a>
+                <a href="#a" class="{{lnb_sub_03}}">단체위탁과정</a>
             </div>
-            <div class="__snav">
-                <a href="#a">시험안내</a>
-                <a href="#a">시험접수</a>
-                <a href="#a">응시결과</a>
-                <a href="#a">자격증신청</a>
-                <a href="#a">보수교육</a>
+			<!--/if(lnb_02_block)-->
+			<!--@if(lnb_03_block)-->
+            <div class="__snav on">
+                <a href="#a" class="{{lnb_sub_01}}">시험안내</a>
+                <a href="#a" class="{{lnb_sub_02}}">시험접수</a>
+                <a href="#a" class="{{lnb_sub_03}}">응시결과</a>
+                <a href="#a" class="{{lnb_sub_04}}">자격증신청</a>
+                <a href="#a" class="{{lnb_sub_05}}">보수교육</a>
             </div>
-            <div class="__snav">
-                <a href="#a">한우리교사안내</a>
-                <a href="#a">입문과정</a>
+			<!--/if(lnb_03_block)-->
+			<!--@if(lnb_04_block)-->
+            <div class="__snav on">
+                <a href="#a" class="{{lnb_sub_01}}">한우리교사안내</a>
+                <a href="#a" class="{{lnb_sub_02}}">입문과정</a>
             </div>      
+			<!--/if(lnb_04_block)-->
         </section>
+    </nav>
+
+    <nav class="pc pc_menu">
+        <div class="depth1">
+            <ul>
+                <li><a href="#a">독서지도사</a></li>
+                <li class="on"><a href="#a">수강신청</a></li>
+                <li><a href="#a">자격시험</a></li>
+                <li><a href="#a">한우리교사</a></li>
+                <li><a href="#a">한우리캠퍼스</a></li>
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">내 강의실</a></li>
+            </ul>
+        </div>
+        <div class="pc_sub_menu">
+            <div class="inner">
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_11}}">왜 독서지도사인가?</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_12}}">독서지도사는 한우리</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_13}}">활동후기</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_21}}">독서지도사과정</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_22}}">전체과정</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_23}}">단체위탁과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_31}}">시험안내</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_32}}">시험접수</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_33}}">응시결과</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_34}}">자격증신청</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_351}}">보수교육</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_41}}">한우리교사안내</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_42}}">입문과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_51}}">인사말</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_52}}">설립목적</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_53}}">연혁</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_54}}">위치안내</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_61}}">공지사항</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_62}}">학습지원</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_63}}">이용안내</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_64}}">이용약관</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a" class="{{lnb_pc_sub_71}}">수강과정</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_72}}">결제대기</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_73}}">시험이력</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_74}}">자격이력</a></li>
+                    <li><a href="#a" class="{{lnb_pc_sub_75}}">나의상담</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>

@@ -877,7 +877,7 @@ header.header .__top {
 
 @media (min-width: 1200px) {
   header.header .__top {
-    padding: 20px;
+    padding: 20px 44px;
     width: 1200px;
     margin: 0 auto;
   }
@@ -933,6 +933,10 @@ header.header .__top div a {
 @media (min-width: 1200px) {
   header.header .__top div a {
     font-weight: 700;
+  }
+  header.header .__top div a:hover {
+    text-decoration: underline;
+    color: #333;
   }
 }
 
@@ -1099,6 +1103,34 @@ nav.pc_menu .depth1 ul li.on a {
   color: #ee4500;
 }
 
+nav.pc_menu .depth1 ul li:nth-child(1) {
+  width: 186px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(2) {
+  width: 152px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(3) {
+  width: 164px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(4) {
+  width: 174px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(5) {
+  width: 200px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(6) {
+  width: 156px;
+}
+
+nav.pc_menu .depth1 ul li:nth-child(7) {
+  width: 168px;
+}
+
 .sub_header {
   padding: 3.83333vw;
   display: -webkit-box;
@@ -1165,12 +1197,6 @@ nav.pc_menu .depth1 ul li.on a {
     font-family: 'NanumSquare';
     font-weight: 700;
   }
-  .pc_menu .depth1 li:first-child > a {
-    text-align: left;
-  }
-  .pc_menu .depth1 li:last-child > a {
-    text-align: right;
-  }
   .pc_menu .pc_sub_menu {
     display: none;
     position: absolute;
@@ -1182,7 +1208,7 @@ nav.pc_menu .depth1 ul li.on a {
     display: block;
   }
   .pc_menu .pc_sub_menu .inner {
-    width: 1220px;
+    width: 1200px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1190,8 +1216,28 @@ nav.pc_menu .depth1 ul li.on a {
     padding: 16px 0;
   }
   .pc_menu .pc_sub_menu .inner .sub_menu {
-    width: calc(100% / 7);
     text-align: center;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(1) {
+    width: 186px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(2) {
+    width: 152px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(3) {
+    width: 164px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(4) {
+    width: 174px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(5) {
+    width: 200px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(6) {
+    width: 156px;
+  }
+  .pc_menu .pc_sub_menu .inner .sub_menu:nth-child(7) {
+    width: 168px;
   }
   .pc_menu .pc_sub_menu .inner .sub_menu li {
     display: block;
@@ -1210,13 +1256,6 @@ nav.pc_menu .depth1 ul li.on a {
     border-radius: 16px;
     color: #e35000;
     font-weight: 700;
-  }
-  .pc_menu .pc_sub_menu .inner .sub_menu:first-child {
-    width: calc(100% / 7 + 10px);
-    padding-right: 10px;
-  }
-  .pc_menu .pc_sub_menu .inner .sub_menu:last-child {
-    padding-left: 30px;
   }
 }
 

@@ -23,6 +23,11 @@ $(function () {
     $('.depth1 > ul').hover(function(){
         subUp();
     });
+    $('.depth1 li').hover(function(){
+        $(this).addClass('on').siblings('li').removeClass('on');
+    }).mouseleave(function(){
+        $('.depth1 li').removeClass('on');
+    });
     $('.pc_menu').mouseleave(function(){
         subDown();
     });

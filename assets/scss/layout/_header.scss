@@ -24,7 +24,7 @@ header.header {
         padding-top: vw(13);
         padding-bottom: vw(18);
         @include desktop {
-            padding: px(10);
+            padding: px(10) px(22);
             width: 1200px;
             margin:0 auto;
         }
@@ -64,6 +64,11 @@ header.header {
                 margin-left:px(14.5);
                 @include desktop {
                     font-weight: 700;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        color:#333;
+                    }
                 }
             }
         }
@@ -180,6 +185,27 @@ nav {
             li.on a {
                 color:#ee4500;    
             }
+            li:nth-child(1) {
+                width: 186px;;
+            }
+            li:nth-child(2) {
+                width: 152px;;
+            }
+            li:nth-child(3) {
+                width: 164px;;
+            }
+            li:nth-child(4) {
+                width: 174px;;
+            }
+            li:nth-child(5) {
+                width: 200px;;
+            }
+            li:nth-child(6) {
+                width: 156px;;
+            }
+            li:nth-child(7) {
+                width: 168px;
+            }
         }        
     }
 }
@@ -235,12 +261,6 @@ nav {
                     font-family: 'NanumSquare';
                     font-weight: 700;
                 }
-                &:first-child > a{
-                    text-align: left;
-                }
-                &:last-child > a{
-                    text-align: right;
-                }
             
             }
         }
@@ -254,12 +274,32 @@ nav {
                 display: block;
             }
             .inner {
-                width: 1220px;
+                width: 1200px;
                 margin:0 auto;
                 display: flex;
                 padding: px(8) 0;
                 .sub_menu {
-                    width: calc(100% / 7);
+                    &:nth-child(1) {
+                        width: 186px;;
+                    }
+                    &:nth-child(2) {
+                        width: 152px;;
+                    }
+                    &:nth-child(3) {
+                        width: 164px;;
+                    }
+                    &:nth-child(4) {
+                        width: 174px;;
+                    }
+                    &:nth-child(5) {
+                        width: 200px;;
+                    }
+                    &:nth-child(6) {
+                        width: 156px;;
+                    }
+                    &:nth-child(7) {
+                        width: 168px;
+                    }
                     text-align: center;
                     li {
                         display: block;
@@ -279,14 +319,7 @@ nav {
                             color:#e35000;
                             font-weight: 700;
                         }
-                    }
-                    &:first-child {
-                        width: calc(100% / 7 + 10px);
-                        padding-right: 10px;
-                    }
-                    &:last-child {
-                        padding-left: px(15);
-                    }
+                    }                    
                 }
             }
         }
