@@ -2032,13 +2032,6 @@ footer.footer .t1:last-child {
   padding: 0 5vw 5vw;
 }
 
-@media (min-width: 1200px) {
-  .policy {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 .policy h1 {
   font-size: 5vw;
   font-weight: 700;
@@ -2198,6 +2191,147 @@ footer.footer .t1:last-child {
 .policy a:hover {
   color: #ee5400;
   text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .policy {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+  }
+  .policy h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -2px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+  .policy h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #c6c6c6;
+    margin-top: 40px;
+  }
+  .policy h2:nth-child(2) {
+    margin-top: 0;
+  }
+  .policy h3 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    margin-top: 33px;
+  }
+  .policy p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #666;
+  }
+  .policy .t1 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #666;
+    position: relative;
+    padding-left: 24px;
+  }
+  .policy .t1::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .policy .t1.n1:before {
+    content: '1) ';
+  }
+  .policy .t1.n2:before {
+    content: '2) ';
+  }
+  .policy .t1.n3:before {
+    content: '3) ';
+  }
+  .policy .t1.n4:before {
+    content: '4) ';
+  }
+  .policy .t1.n5:before {
+    content: '5) ';
+  }
+  .policy .t1 b {
+    font-weight: 700;
+  }
+  .policy .t2 {
+    margin-left: 24px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #666;
+    padding-left: 24px;
+    position: relative;
+  }
+  .policy .t2:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .policy .t2.n1::before {
+    content: '가. ';
+  }
+  .policy .t2.n2::before {
+    content: '니. ';
+  }
+  .policy .t2.n3::before {
+    content: '다. ';
+  }
+  .policy .t2.n4::before {
+    content: '라. ';
+  }
+  .policy .t2.n5::before {
+    content: '마. ';
+  }
+  .policy .t2.n6::before {
+    content: '바. ';
+  }
+  .policy .t2.n7::before {
+    content: '사. ';
+  }
+  .policy .t2.n8::before {
+    content: '아. ';
+  }
+  .policy .t2.n9::before {
+    content: '자. ';
+  }
+  .policy .t3 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #666;
+    margin-left: 48px;
+    padding-left: 12px;
+    position: relative;
+  }
+  .policy .t3:before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .policy a {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: -1px;
+    margin-top: 32px;
+  }
+  .policy a:hover {
+    color: #ee5400;
+    text-decoration: underline;
+  }
 }
 
 .privacy {
