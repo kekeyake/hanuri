@@ -57,6 +57,7 @@ header.header {
             color:#999;
             @include desktop {
                 font-weight: 700;
+                font-family: 'Noto Sans KR';
             }
         }
         div {

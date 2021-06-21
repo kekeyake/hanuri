@@ -923,6 +923,7 @@ header.header .__top a {
 @media (min-width: 1200px) {
   header.header .__top a {
     font-weight: 700;
+    font-family: 'Noto Sans KR';
   }
 }
 
@@ -2629,6 +2630,11 @@ footer.footer .t1:last-child {
   border-bottom: 0.16667vw solid #999;
 }
 
+.join .join_wrap .join_box > input:disabled {
+  background: transparent;
+  color: #999;
+}
+
 .join .join_wrap .join_box .radio_box {
   margin-top: 1.66667vw;
   padding-bottom: 2.08333vw;
@@ -2753,7 +2759,7 @@ footer.footer .t1:last-child {
   }
   .join .join_wrap {
     width: 720px;
-    margin: 39px auto 60px;
+    margin: 39px auto 0;
     border: 1px solid #ccc;
     padding: 72px 90px;
     background-color: #fff;
@@ -2786,6 +2792,10 @@ footer.footer .t1:last-child {
     font-size: 24px;
     letter-spacing: -0.48px;
     border-bottom: 1px solid #ccc;
+  }
+  .join .join_wrap .join_box > input:disabled {
+    background: transparent;
+    color: #999;
   }
   .join .join_wrap .join_box .radio_box {
     margin-top: 20px;

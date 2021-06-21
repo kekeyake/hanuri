@@ -53,6 +53,10 @@
                 letter-spacing: vw(-0.48);
                 border: 0 solid #000;
                 border-bottom: vw(1) solid #999;
+                &:disabled {
+                    background: transparent;
+                    color:#999;
+                }
             }
             .radio_box {
                 margin-top: vw(10);
@@ -153,7 +157,7 @@
         }
         .join_wrap {
             width: px(360);
-            margin: px(19.5) auto px(30);
+            margin: px(19.5) auto 0;
             border: px(0.5) solid #ccc;
             padding:px(36) px(45);
             background-color: #fff;
@@ -186,6 +190,10 @@
                     font-size: px(12);
                     letter-spacing: px(-0.24);
                     border-bottom: px(0.5) solid #ccc;
+                    &:disabled {
+                        background: transparent;
+                        color:#999;
+                    }
                 }
                 .radio_box {
                     margin-top: px(10);
