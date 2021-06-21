@@ -2032,6 +2032,13 @@ footer.footer .t1:last-child {
   padding: 0 5vw 5vw;
 }
 
+@media (min-width: 1200px) {
+  .policy {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .policy h1 {
   font-size: 5vw;
   font-weight: 700;
@@ -2341,6 +2348,7 @@ footer.footer .t1:last-child {
   letter-spacing: -0.25vw;
   height: 11.08333vw;
   margin-bottom: 2.91667vw;
+  color: #000;
 }
 
 .login .login_wrap__btn a.btn_login {
@@ -2496,6 +2504,7 @@ footer.footer .t1:last-child {
     height: 67px;
     line-height: 67px;
     margin-bottom: 17px;
+    color: #000;
   }
   .login .login_wrap__btn a.btn_login__kakao img {
     width: 34px;

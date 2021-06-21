@@ -27,6 +27,7 @@
                 letter-spacing: vw(-1.5);
                 height: vw(66.5);
                 margin-bottom: vw(17.5);
+                color:#000;
                 &.btn_login {                    
                     color:#fff;
                     background-color: #ee5400;
@@ -149,6 +150,7 @@
                     height: px(33.5);
                     line-height: px(33.5);
                     margin-bottom: px(8.5);
+                    color:#000;
                     &.btn_login {                    
                         &__kakao {
                             img {
