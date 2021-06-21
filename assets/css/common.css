@@ -2331,7 +2331,10 @@ footer.footer .t1:last-child {
   margin-top: 8.83333vw;
 }
 
-.login .login_wrap__btn button {
+.login .login_wrap__btn a {
+  display: block;
+  text-align: center;
+  line-height: 11.08333vw;
   width: 100%;
   font-weight: 700;
   font-size: 5vw;
@@ -2340,27 +2343,27 @@ footer.footer .t1:last-child {
   margin-bottom: 2.91667vw;
 }
 
-.login .login_wrap__btn button.btn_login {
+.login .login_wrap__btn a.btn_login {
   color: #fff;
   background-color: #ee5400;
 }
 
-.login .login_wrap__btn button.btn_login__kakao {
+.login .login_wrap__btn a.btn_login__kakao {
   background-color: #fee500;
 }
 
-.login .login_wrap__btn button.btn_login__kakao img {
+.login .login_wrap__btn a.btn_login__kakao img {
   width: 5.61667vw;
   margin-right: 2.33333vw;
 }
 
-.login .login_wrap__btn button.btn_login__naver {
+.login .login_wrap__btn a.btn_login__naver {
   color: #fff;
   background-color: #1ec800;
   margin-bottom: 0;
 }
 
-.login .login_wrap__btn button.btn_login__naver img {
+.login .login_wrap__btn a.btn_login__naver img {
   width: 5.61667vw;
   margin-right: 2.5vw;
   -webkit-transform: translateY(-0.66667vw);
@@ -2486,17 +2489,19 @@ footer.footer .t1:last-child {
   .login .login_wrap__btn {
     margin-top: 53px;
   }
-  .login .login_wrap__btn button {
+  .login .login_wrap__btn a {
+    display: block;
     font-size: 30px;
     letter-spacing: -1.5px;
     height: 67px;
+    line-height: 67px;
     margin-bottom: 17px;
   }
-  .login .login_wrap__btn button.btn_login__kakao img {
+  .login .login_wrap__btn a.btn_login__kakao img {
     width: 34px;
     margin-right: 13px;
   }
-  .login .login_wrap__btn button.btn_login__naver img {
+  .login .login_wrap__btn a.btn_login__naver img {
     width: 35px;
     margin-right: 14px;
     -webkit-transform: translateY(-4px);

@@ -17,7 +17,10 @@
         }
         &__btn {
             margin-top: vw(53);
-            button {
+            a {
+                display: block;
+                text-align: center;
+                line-height: vw(66.5);
                 width: 100%;
                 font-weight: 700;
                 font-size: vw(30);
@@ -139,10 +142,12 @@
             }
             &__btn {
                 margin-top: px(26.5);
-                button {
+                a {
+                    display: block;
                     font-size: px(15);
                     letter-spacing: px(-0.75);
                     height: px(33.5);
+                    line-height: px(33.5);
                     margin-bottom: px(8.5);
                     &.btn_login {                    
                         &__kakao {
