@@ -2779,6 +2779,9 @@ footer.footer .t1:last-child {
     letter-spacing: -1.5px;
     padding: 0px;
   }
+  .join h1:nth-of-type(2) {
+    margin-top: 60px;
+  }
   .join .join_wrap {
     width: 720px;
     margin: 39px auto 0;
@@ -3082,10 +3085,10 @@ a.link {
   }
   .btn.__top {
     position: fixed;
-    right: 24px;
-    bottom: 212px;
-    width: 42px;
-    height: 42px;
+    right: 30px;
+    bottom: 220px;
+    width: 51px;
+    height: 51px;
     background: #fff url(../img/btn_top.svg) no-repeat 50% 50%/24px 15px;
     border: 1px solid #777;
   }
