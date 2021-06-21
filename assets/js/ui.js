@@ -33,5 +33,22 @@ $(function () {
     function subDown() {
         $('.pc_sub_menu').slideUp();
     }
+
+    $('.btn_toggle').on('click',function(e){
+        var $this = $(this).find('img');
+        var $prevInput = $(this).prev();
+        if ( $this.attr('src').match('_hide') ) {
+            $(this).prev().attr('type','password');
+        } else {
+            $(this).prev().attr('type','text');
+        }
+        $this.attr('src', function(index, attr){
+            if ( attr.match('_hide')){
+                return attr.replace('_hide.svg', '.svg');
+            } else {
+                return attr.replace('.svg', '_hide.svg');
+            }
+        });
+    });
 });
 

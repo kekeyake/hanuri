@@ -42,6 +42,7 @@
                 color:#999;
                 letter-spacing: vw(-0.44);
                 line-height: 1;
+                font-weight: 700;
             }
             > input {
                 display: flex;
@@ -51,7 +52,7 @@
                 font-size: vw(24);
                 letter-spacing: vw(-0.48);
                 border: 0 solid #000;
-                border-bottom: vw(1) solid #d4d4d4;
+                border-bottom: vw(1) solid #999;
             }
             .radio_box {
                 margin-top: vw(10);
@@ -177,6 +178,7 @@
                 > label {
                     font-size: px(10);
                     letter-spacing: px(-0.2);
+                    font-weight: 700;
                 }
                 > input {
                     height:px(25);

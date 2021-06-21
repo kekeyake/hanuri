@@ -55,10 +55,16 @@ header.header {
         a {
             font-size: px(8);
             color:#999;
+            @include desktop {
+                font-weight: 700;
+            }
         }
         div {
             a {
                 margin-left:px(14.5);
+                @include desktop {
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -171,6 +177,9 @@ nav {
             position: absolute;
             width: 1200px;
             margin:0 auto;
+            li.on a {
+                color:#ee4500;    
+            }
         }        
     }
 }

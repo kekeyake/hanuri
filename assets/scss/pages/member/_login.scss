@@ -10,6 +10,11 @@
         padding-bottom: vw(8);
     }
     .login_wrap {
+        .error {
+            margin-top: vw(22.5);
+            font-size: vw(22);
+            color:#ee5400;
+        }
         &__btn {
             margin-top: vw(53);
             button {
@@ -66,6 +71,7 @@
                 font-size: vw(22);
                 color:#999;
                 letter-spacing: vw(-0.5);
+                font-weight: 700;
             }
             input {
                 display: flex;
@@ -126,6 +132,10 @@
             padding-bottom: px(20.5);
         }
         .login_wrap {
+            .error {
+                margin-top: px(12);
+                font-size: px(10);
+            }
             &__btn {
                 margin-top: px(26.5);
                 button {
@@ -174,6 +184,7 @@
                     font-size: px(12);
                     border: 0 solid #000;
                     border-bottom: px(0.5) solid #ccc;
+                    font-weight: 700;
                 }
                 &._password {
                     position: relative;
