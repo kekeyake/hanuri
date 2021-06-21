@@ -3080,6 +3080,15 @@ a.link {
   button.btn {
     border-radius: 3px;
   }
+  .btn.__top {
+    position: fixed;
+    right: 24px;
+    bottom: 212px;
+    width: 42px;
+    height: 42px;
+    background: #fff url(../img/btn_top.svg) no-repeat 50% 50%/24px 15px;
+    border: 1px solid #777;
+  }
   .checkbox {
     width: 22px;
     height: 22px;

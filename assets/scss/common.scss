@@ -166,6 +166,17 @@ a.link {
 	button.btn {
 		border-radius: px(1.5);
 	}
+	.btn {
+		&.__top {
+			position: fixed;
+			right: px(12);
+			bottom:px(106);
+			width: px(21);
+			height: px(21);
+			background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / px(12) px(7.5);
+			border: px(0.5) solid #777;
+		}
+	}
 
 	.checkbox {
 		width: px(11);
