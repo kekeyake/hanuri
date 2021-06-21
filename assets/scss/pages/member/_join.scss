@@ -282,9 +282,7 @@
             div {
                 padding:px(11);
                 border: px(0.5) solid #666;
-                &:first-child {
-                    border-top: 0 solid #666;
-                }
+                border-top: 0 solid #666;
             }
         }
         .btn_join {                    

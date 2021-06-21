@@ -2889,8 +2889,6 @@ footer.footer .t1:last-child {
   .join .agree_box div {
     padding: 22px;
     border: 1px solid #666;
-  }
-  .join .agree_box div:first-child {
     border-top: 0 solid #666;
   }
   .join .btn_join {
