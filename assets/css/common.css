@@ -2812,6 +2812,12 @@ footer.footer .t1:last-child {
     width: 44px;
     height: 31px;
   }
+  .join .join_wrap .join_box .btn_toggle img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
   .join .join_wrap .check_wrap {
     margin-top: 101px;
     font-size: 44px;

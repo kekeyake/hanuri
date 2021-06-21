@@ -212,6 +212,11 @@
                     bottom:px(4.5);
                     width: px(22);
                     height: px(15.5);
+                    img {
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                    }
                 }
                 
             }

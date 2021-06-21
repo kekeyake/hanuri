@@ -49,9 +49,9 @@ $(function () {
         }
         $this.attr('src', function(index, attr){
             if ( attr.match('_hide')){
-                return attr.replace('_hide.svg', '.svg');
+                return attr.replace('_hide.png', '.png');
             } else {
-                return attr.replace('.svg', '_hide.svg');
+                return attr.replace('.png', '_hide.png');
             }
         });
     });
