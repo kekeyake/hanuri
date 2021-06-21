@@ -12,7 +12,7 @@
     .join_wrap {
         
         .error {
-            margin-top: vw(22.5);
+            margin-top: vw(11);
             font-size: vw(22);
             color:#ee5400;
         }
@@ -23,7 +23,7 @@
                 .btn_cert {
                     position: absolute;
                     right:0;
-                    bottom:vw(1);
+                    top:vw(48);
                     width: vw(141);
                     height: vw(50.5);
                     background: #666;
@@ -35,6 +35,9 @@
                 }
                 input {
                     width: vw(385.5);
+                    &.w_full {
+                        width: 100%;
+                    }
                 }
             }
             > label {
@@ -56,6 +59,20 @@
                 &:disabled {
                     background: transparent;
                     color:#999;
+                }
+            }
+            > p {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height:vw(54);
+                font-size: vw(24);
+                letter-spacing: vw(-0.48);
+                border-bottom: vw(1) solid #999;
+                color:#999;
+                strong {
+                    color:#ee5400;
+                    margin-left: 10px;
                 }
             }
             .radio_box {
@@ -120,14 +137,16 @@
         font-size: vw(22);
         color:#333;
         letter-spacing: vw(-0.44);
-        border: vw(0.5) solid #666;
+        border-top: vw(0.5) solid #666;
         div {
             padding:vw(21);
             display: flex;
             align-items: center;
-            &:first-child {
-                border-bottom: vw(1) solid #666;
-            }
+            border: vw(0.5) solid #666;
+            border-top: 0 solid #000;
+            // &:first-child {
+            //     border-bottom: vw(1) solid #666;
+            // }
         }
         a {
             color:#ee5400;
@@ -169,7 +188,7 @@
                 padding-top: px(12);
                 &.__cert {
                     .btn_cert {
-                        bottom:px(0);
+                        top:px(20);
                         width: px(62);
                         height: px(26);
                         border-radius: px(1.5);
@@ -193,6 +212,20 @@
                     &:disabled {
                         background: transparent;
                         color:#999;
+                    }
+                }
+                > p {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height:px(27);
+                    font-size: px(12);
+                    letter-spacing: px(-0.24);
+                    border-bottom: px(0.5) solid #999;
+                    color:#999;
+                    strong {
+                        color:#ee5400;
+                        margin-left: 10px;
                     }
                 }
                 .radio_box {
@@ -242,11 +275,12 @@
             margin-top: px(20);
             font-size: px(10.5);
             letter-spacing: px(-0.44);
-            border: px(0.5) solid #666;
+            border-top: px(0.5) solid #666;
             div {
                 padding:px(11);
+                border: px(0.5) solid #666;
                 &:first-child {
-                    border-bottom: px(0.5) solid #666;
+                    border-top: 0 solid #666;
                 }
             }
         }

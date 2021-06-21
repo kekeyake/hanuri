@@ -11,7 +11,7 @@
     }
     .login_wrap {
         .error {
-            margin-top: vw(22.5);
+            margin-top: vw(11);
             font-size: vw(22);
             color:#ee5400;
         }
@@ -175,6 +175,7 @@
                 label {
                     font-size: px(10);
                     letter-spacing: px(-0.2);
+                    font-weight: 700;
                 }
                 input {
                     color:#333;
@@ -185,7 +186,7 @@
                     font-size: px(12);
                     border: 0 solid #000;
                     border-bottom: px(0.5) solid #ccc;
-                    font-weight: 700;
+                    
                 }
                 &._password {
                     position: relative;
