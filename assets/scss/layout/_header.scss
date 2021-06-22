@@ -24,8 +24,8 @@ header.header {
         padding-top: vw(13);
         padding-bottom: vw(18);
         @include desktop {
-            padding: px(10) px(22);
-            width: 1200px;
+            padding: px(10) px(23) px(10) px(25);
+            width: 1290px;
             margin:0 auto;
         }
         .logo {
@@ -181,31 +181,33 @@ nav {
         .depth1 ul {
             display: flex;
             position: absolute;
-            width: 1200px;
+            width: 1290px;
             margin:0 auto;
+            li {
+                &:nth-child(1) {
+                    width: 194px;
+                }
+                &:nth-child(2) {
+                    width: 172px;
+                }
+                &:nth-child(3) {
+                    width: 172px;
+                }
+                &:nth-child(4) {
+                    width: 192px;
+                }
+                &:nth-child(5) {
+                    width: 212px;
+                }
+                &:nth-child(6) {
+                    width: 172px;
+                }
+                &:nth-child(7) {
+                    width: 176px;
+                }
+            }
             li.on a {
                 color:#ee4500;    
-            }
-            li:nth-child(1) {
-                width: 186px;;
-            }
-            li:nth-child(2) {
-                width: 152px;;
-            }
-            li:nth-child(3) {
-                width: 164px;;
-            }
-            li:nth-child(4) {
-                width: 174px;;
-            }
-            li:nth-child(5) {
-                width: 200px;;
-            }
-            li:nth-child(6) {
-                width: 156px;;
-            }
-            li:nth-child(7) {
-                width: 168px;
             }
         }        
     }
@@ -243,7 +245,7 @@ nav {
     }
     .pc_menu {
         > div {
-            width: 1200px;
+            width: 1290px;
             margin:0 auto;
             border-bottom: px(0) solid #ddd;
         }
@@ -275,31 +277,31 @@ nav {
                 display: block;
             }
             .inner {
-                width: 1200px;
+                width: 1290px;
                 margin:0 auto;
                 display: flex;
                 padding: px(8) 0;
                 .sub_menu {
                     &:nth-child(1) {
-                        width: 186px;;
+                        width: 194px;;
                     }
                     &:nth-child(2) {
-                        width: 152px;;
+                        width: 172px;;
                     }
                     &:nth-child(3) {
-                        width: 164px;;
+                        width: 172px;;
                     }
                     &:nth-child(4) {
-                        width: 174px;;
+                        width: 192px;;
                     }
                     &:nth-child(5) {
-                        width: 200px;;
+                        width: 212px;;
                     }
                     &:nth-child(6) {
-                        width: 156px;;
+                        width: 172px;;
                     }
                     &:nth-child(7) {
-                        width: 168px;
+                        width: 176px;
                     }
                     text-align: center;
                     li {
