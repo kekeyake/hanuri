@@ -17,7 +17,8 @@
         }
         &__btn {
             margin-top: vw(53);
-            a {
+            a,
+            button {
                 display: block;
                 text-align: center;
                 line-height: vw(66.5);
@@ -143,7 +144,8 @@
             }
             &__btn {
                 margin-top: px(26.5);
-                a {
+                a,
+                button {
                     display: block;
                     font-size: px(15);
                     letter-spacing: px(-0.75);
