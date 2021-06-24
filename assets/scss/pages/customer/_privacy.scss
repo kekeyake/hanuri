@@ -97,3 +97,106 @@
         }
     }
 }
+@include desktop {
+    .privacy {
+        width: 1200px;
+        margin:0 auto;
+        padding: 0 0 px(15);
+        h1 {
+            font-size: px(15);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: px(-1);
+            text-align: center;
+            padding-top: px(20);  
+            padding-bottom: px(18);
+        }
+        h2 {
+            font-size: px(12.5);
+            font-weight: 500;
+            letter-spacing: px(-0.25);
+            padding-bottom: px(8.5);
+            border-bottom: px(0.5) solid #c6c6c6;
+            margin-top: px(20);
+            margin-bottom: px(10);
+        }
+        h3 {
+            font-size: px(11);
+            color:#333;
+            font-weight: 500;
+            letter-spacing: px(-0.25);
+            margin-bottom: px(10);
+            margin-top: px(16.5);
+        }
+        p {
+            font-size: px(10);
+            line-height: 1.5;
+            letter-spacing: px(-0.5);
+            color:#666;
+        }
+        .t1 {
+            font-size: px(10);
+            line-height: 1.5;
+            letter-spacing: px(-0.5);
+            color:#666;
+            position: relative;
+            padding-left:px(12);
+            &::before {
+                position: absolute;
+                left: 0;
+                top:0;
+            }
+            &.n1:before {
+                content: '1) ';
+            }
+            &.n2:before {
+                content: '2) ';
+            }
+            &.n3:before {
+                content: '3) ';
+            }
+            &.n4:before {
+                content: '4) ';
+            }
+            &.n5:before {
+                content: '5) ';
+            }
+            b {
+                font-weight: 700;
+            }
+        }
+        
+        .t2 {
+            font-size: px(10);
+            line-height: 1.5;
+            letter-spacing: px(-0.5);
+            color:#666;
+            margin-left: px(12);
+            padding-left:px(6);
+            position: relative;
+            &:before {
+                content: '-';
+                position: absolute;
+                left: 0;
+                top:0;
+            }
+        }
+        p {
+            a {
+                display: inline-block;
+            }
+        }
+        a {
+            display: block;
+            font-size: px(11);
+            font-weight: 500;
+            color:#333;
+            letter-spacing: px(-0.5);
+            margin-top: px(16);
+            &:hover {
+                color:#ee5400;
+                text-decoration: underline;
+            }
+        }
+    }
+}

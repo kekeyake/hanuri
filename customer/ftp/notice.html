@@ -1,0 +1,119 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="notice">
+        <div class="__wrap_top">
+            <h1>공지사항</h1>
+			<form name="form1" method="get">
+			<input type="hidden" name="code" value="{{code}}" />
+            <div class="search_box">
+                <input type="text" id="s_keyword" name="s_keyword" placeholder="검색어를 입력하세요">
+                <button class="btn __search"></button>
+            </div>
+			</form>
+			{{form_script}}
+        </div>
+        <ul class="__list">
+			<!--@loop(list)-->
+            <li>
+            <a href="../customer/notice_view.jsp?id={{list.id}}&{{list_query}}">
+                <i <!--@if(list.new_block)-->class="new"<!--/if(list.new_block)-->>{{list.notice_type_block}}</i>
+                <p>              
+                <span>{{list.subject_conv}}</span>
+                <span class="date">{{list.reg_date_conv}}</span>
+                </p>
+            </a>
+            </li>
+			<!--/loop(list)-->
+<!--
+            <li>
+            <a href="#a">
+                <i class="new">이벤트</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>이벤트</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>이벤트</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+            <li>
+            <a href="#a">
+                <i>공지</i>
+                <p>              
+                <span>한우리캠퍼스 사이트 개편 이벤트</span>
+                <span class="date">2021.08.20</span>
+                </p>
+            </a>
+            </li>
+-->
+        </ul>
+
+        <button class="btn btn_more">
+            더보기
+        </button>
+    </div>
+</main>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

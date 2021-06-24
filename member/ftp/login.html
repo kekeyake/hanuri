@@ -1,0 +1,95 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main member">
+    <div class="login">
+        <h1>로그인</h1>
+        <div class="card">
+			<form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit2(this);">
+            <!-- login wrap -->
+            <div class="login_wrap">
+                <div class="login_box">
+                    <label for="user_id">아이디</label>
+                    <input type="text" id="user_id" name="user_id" class="input" onkeyup="javascript:checkUserid();" placeholder="아이디입력">
+                </div>
+                <p id="isUseridArea" class="error"></p>
+                <div class="login_box _password">
+                    <label for="user_pass">비밀번호</label>
+                    <input type="password" id="user_pass" name="user_pass" onkeyup="javascript:checkCapsLock(event);">
+                    <button class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw.png" alt=""></button>
+                </div>
+                <p id="l_capslock" class="error" style="display:none;">Caps Lock이 켜져 있습니다.</p>
+                <div class="check_wrap">
+                    <label>
+                        <input type="checkbox" id="save_id02" name="save_id02" class="input checkbox">
+                        <span>아이디 저장</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="input checkbox">
+                        <span>자동 로그인</span>
+                    </label>
+                </div>
+            </div>
+            <!--// login wrap -->
+
+            <!-- login btn -->
+            <div class="login_wrap__btn">
+				<button type="submit" class="btn btn_login">로그인</button>
+                <!--<a class="btn btn_login" href="javascript:void(0);" onclick="javascript:goSubmit2();">로그인</a>-->
+                <a class="btn btn_login__kakao" href="javascript:void(0);" onclick="javascript:kakaoLogin();"><img src="../assets/img/ico_kakao.png" alt=""> 카카오 아이디로 로그인</a>
+                <a class="btn btn_login__naver" href="javascript:void(0);" onclick="javascript:naverLogin();"><img src="../assets/img/ico_naver.png" alt="">네이버 아이디로 로그인</a>
+            </div>
+            <!--// login btn -->
+			</form>
+			{{form_script}}
+            
+            <!-- login join, password -->
+            <div class="login_wrap__btn_join">
+                <a href="../member/join.jsp">회원가입</a>
+                <a href="../member/info.jsp">아이디, 비밀번호 찾기</a>
+            </div>
+            <!--// login join, password -->
+        </div>
+    </div>
+</main>
+
+<script language="javascript">
+	function checkCapsLock(e) {
+		if(e.getModifierState('CapsLock')){
+			$("#l_capslock").fadeIn();
+		} else{
+			$("#l_capslock").hide();
+		}
+	}
+	function checkUserid() {
+		var f = document.forms['form1'];
+		var v = f['user_id'].value;
+		if(v != "") {
+			call("call_userid_check.jsp?v=" + v, "isUseridArea");
+		}
+	}
+	function kakaoLogin() {
+		location.href = "{{KakaoApiURL}}";
+	}
+	function naverLogin() {
+		location.href = "{{NaverApiURL}}";
+	}
+	function goSubmit2(f) {
+		if(!validate(f)) return false;
+		if(f['save_id02'].checked) SetCookie("SAVEID", f['user_id'].value, 3600 * 24 * 30, "/");
+		else SetCookie("SAVEID", "");
+		//f.submit();
+		return true;
+	}
+	<!--@nif(login_block)-->
+	addEvent("onload", function() {
+		if(GetCookie("SAVEID")) {
+			var f = document.forms['form1'];
+			f['user_id'].value = GetCookie("SAVEID");
+			f['save_id02'].checked = true;
+			f['user_pass'].focus();
+		}
+	});
+	<!--/nif(login_block)-->
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->
