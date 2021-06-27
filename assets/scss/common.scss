@@ -223,6 +223,39 @@ a.link {
 		}
 	}
 
+	.search_box {
+		margin:0 auto;
+		border-radius: px(12.4);
+		border: solid px(2) #ddd;
+		background-color: #fff;
+		width: px(200);
+		height: px(25);
+		display: flex;
+		align-items: center;
+		padding:0 px(10);
+		position: relative;
+		input {
+			border: 0 solid #000;
+			background: transparent;
+			font-size: px(11);
+			font-weight: 700;
+			width: 100%;
+			&::placeholder {
+				color:#bbb;
+			}
+		}
+		button {
+			position: absolute;
+			right:px(10);
+			top:50%;
+			transform: translateY(-50%);
+			width: px(12.5);
+			height: px(12.5);
+			background: url(../img/ico_search.svg) no-repeat 0 0 / cover;
+			opacity: 0.4;
+		}
+	}
+
 	.checkbox {
 		width: px(11);
 		height: px(11);

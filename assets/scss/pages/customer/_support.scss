@@ -77,3 +77,87 @@
     }
     
 }
+
+@include desktop {
+    .support {
+        width: 1200px;
+        margin:0 auto;
+        h1 {
+            font-size: px(15);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: px(-1);
+            text-align: center;
+            padding-top: px(20);  
+            padding-bottom: px(18);
+        }
+        .__wrap_top {
+            padding-top: px(18);  
+            padding-bottom: px(21);
+            text-align: center;
+            border-top: px(0.5) solid #bcbcbc;
+            border-bottom: px(0.5) solid #bcbcbc;
+            background: #f9f9f9;
+            .search_box {
+                margin:px(15) auto 0;
+            }
+            
+            p {
+                font-size: px(12);
+                line-height: 1.42;
+                letter-spacing: px(-0.5);
+                font-weight: 500;
+            }
+        }
+        .__list {
+            margin-bottom: px(45);
+            li {
+                display: flex;
+                padding:px(20) 0 px(20) px(15);
+                border-bottom: px(0.5) solid #bcbcbc;
+                font-size: px(11);
+                font-weight: 500;
+                line-height: 1.36;
+                letter-spacing: px(-0.5);
+                &:last-child {
+                    border-bottom: px(0.5) solid #bcbcbc;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: px(68);
+                    height: px(61.5);
+                    border-radius: px(5);
+                }
+                &:nth-child(1)::before {
+                    background:#f4f4f4 url(../img/support_01.svg) no-repeat 50% 50% / px(25.5);
+                }
+                &:nth-child(2)::before {
+                    background:#f4f4f4 url(../img/support_02.svg) no-repeat 50% 50% / px(34);
+                }
+                &:nth-child(3)::before {
+                    background:#f4f4f4 url(../img/support_03.svg) no-repeat 50% 50% / px(45);
+                }
+                div {
+                    width: px(188.5);
+                    margin-left: px(12);
+                    word-break: keep-all;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: px(116.5);
+                        height:px(24);
+                        background: #ee4500;
+                        border-radius: px(12);
+                        color:#fff;
+                        font-size: px(12.45);
+                        letter-spacing: px(-0.5);
+                        margin-top: px(7.5);
+                    }
+                }
+            }
+        }
+        
+    }
+}
