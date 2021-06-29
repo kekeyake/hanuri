@@ -55,5 +55,9 @@ $(function () {
             }
         });
     });
+
+    $('.setting_ly .btn_box button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+    });
 });
 

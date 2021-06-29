@@ -1,0 +1,28 @@
+.course {
+    h1 {
+        font-size: vw(30);
+        font-weight: 700;
+        color:#333;
+        letter-spacing: vw(-2);
+        text-align: center;
+        padding-top: vw(40);  
+        padding-bottom: vw(36);
+    }
+    
+}
+
+@include desktop {
+    .course {
+        width: 1200px;
+        margin:0 auto;
+        h1 {
+            font-size: px(15);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: px(-1);
+            text-align: center;
+            padding-top: px(20);  
+            padding-bottom: px(18);
+        }
+    }
+}

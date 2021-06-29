@@ -1167,6 +1167,21 @@ nav.pc_menu .depth1 ul li.on a {
   color: #333;
 }
 
+.bg_dimmed {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg_dimmed.on {
+  display: block;
+}
+
 @media (min-width: 1200px) {
   header.header {
     height: 108px;
@@ -1329,6 +1344,12 @@ nav.pc_menu .depth1 ul li.on a {
   font-family: 'NanumSquare';
 }
 
+@media (min-width: 1200px) {
+  .side_nav {
+    display: none;
+  }
+}
+
 .side_nav.open {
   left: 0;
 }
@@ -1468,6 +1489,60 @@ nav.pc_menu .depth1 ul li.on a {
 
 .side_nav .snb_list li a:last-child {
   margin-right: 0;
+}
+
+.consulting {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5vw;
+  background: #333;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .consulting {
+    display: none;
+  }
+}
+
+.consulting button {
+  width: 46.66667vw;
+  height: 11.66667vw;
+  font-size: 4.16667vw;
+  letter-spacing: -0.41667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0 solid #000;
+}
+
+.consulting button:first-child {
+  background-color: #e35000;
+  color: #fff;
+}
+
+.consulting button:first-child img {
+  width: 6.66667vw;
+  margin-right: 3.41667vw;
+}
+
+.consulting button:last-child {
+  background-color: #ffde00;
+}
+
+.consulting button:last-child img {
+  width: 6.16667vw;
+  margin-right: 2.08333vw;
 }
 
 footer.footer {
@@ -3604,6 +3679,261 @@ footer.footer .t1:last-child {
     letter-spacing: -1.5px;
     height: 67px;
     margin-bottom: 0px;
+  }
+}
+
+.course h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.33333vw;
+  text-align: center;
+  padding-top: 6.66667vw;
+  padding-bottom: 6vw;
+}
+
+@media (min-width: 1200px) {
+  .course {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .course h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -2px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+}
+
+.course .__wrap_top {
+  padding-bottom: 3.66667vw;
+  border-bottom: 0.16667vw solid #bcbcbc;
+}
+
+.course .btn_sort_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7.5vw;
+  padding: 0 2.66667vw;
+}
+
+.course .btn_sort_list button {
+  height: 5.91667vw;
+  border: 0.33333vw solid #999;
+  border-radius: 2.91667vw;
+  font-size: 3.5vw;
+  color: #777;
+  letter-spacing: -0.07vw;
+  padding: 0 1.75vw;
+  margin-right: 0.83333vw;
+  background: #fff;
+}
+
+.course .btn_sort_list button.btn_sort {
+  background-color: #fff;
+  padding: 0 3vw;
+}
+
+.course .btn_sort_list button.btn_sort img {
+  width: 3vw;
+  opacity: 0.6;
+}
+
+.course .btn_sort_list button.on {
+  background: #a9a9a9;
+  border-color: #a9a9a9;
+}
+
+.course .btn_sort_list button.on span {
+  font-weight: 500;
+  color: #fff;
+  padding-left: 3.41667vw;
+  background: url(../img/ico_active.svg) no-repeat 0 50%/3vw;
+}
+
+.course .board_list li {
+  border-bottom: 0.08333vw solid #999;
+}
+
+.course .board_list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 4vw 2.66667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.course .board_list li .img_box {
+  width: 38.33333vw;
+  margin-right: 3vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.course .board_list li .img_box img {
+  width: 100%;
+}
+
+.course .board_list li .img_box .status {
+  display: inline-block;
+  position: absolute;
+  left: 1.75vw;
+  top: 2vw;
+  padding: 0.5vw 1.16667vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.83333vw;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+.course .board_list li .txt_box {
+  width: calc(100% - 38.333vw);
+  padding: 1.66667vw 0vw;
+  color: #333;
+}
+
+.course .board_list li .txt_box .event_t {
+  display: inline-block;
+  background-color: #ea5504;
+  padding: 0.41667vw 1.66667vw;
+  font-size: 3.33333vw;
+  letter-spacing: -0.16667vw;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.5vw;
+  margin-bottom: 1.66667vw;
+}
+
+.course .board_list li .txt_box .t1 {
+  font-size: 4.83333vw;
+  font-weight: 700;
+  letter-spacing: -0.24167vw;
+  margin-bottom: 2.5vw;
+  line-height: 5vw;
+}
+
+.course .board_list li .txt_box .t2 {
+  font-size: 3.66667vw;
+  letter-spacing: -0.18333vw;
+  line-height: 4.66667vw;
+  word-break: keep-all;
+}
+
+.course .setting_ly {
+  display: none;
+  width: 100%;
+  position: fixed;
+  z-index: 201;
+  left: 0;
+  background-color: #fff;
+  border-top-left-radius: 3.33333vw;
+  border-top-right-radius: 3.33333vw;
+  bottom: 0;
+  padding: 0 2.5vw;
+}
+
+.course .setting_ly.on {
+  display: block;
+}
+
+.course .setting_ly .btn_setting_reload {
+  position: absolute;
+  left: 3.33333vw;
+  top: 2.5vw;
+  width: 5.33333vw;
+  height: 6.16667vw;
+  border: 0 solid #000;
+  background: transparent;
+  opacity: .5;
+}
+
+.course .setting_ly .btn_setting_reload img {
+  width: 100%;
+}
+
+.course .setting_ly .btn_setting_closed {
+  position: absolute;
+  right: 3.33333vw;
+  top: 3.66667vw;
+  width: 4.66667vw;
+  height: 4.66667vw;
+  border: 0 solid #000;
+  background: transparent;
+  opacity: .5;
+}
+
+.course .setting_ly .btn_setting_closed img {
+  width: 100%;
+}
+
+.course .setting_ly .tit {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.66667vw;
+  letter-spacing: -0.23333vw;
+  padding: 3.83333vw 0;
+  border-bottom: 0.08333vw solid #999;
+  line-height: 5vw;
+  margin-bottom: 6.33333vw;
+}
+
+.course .setting_ly .stit {
+  font-size: 3.66667vw;
+  letter-spacing: -0.18333vw;
+  line-height: 5vw;
+  color: #999;
+  font-weight: 700;
+}
+
+.course .setting_ly .btn_box {
+  margin: 1.83333vw 0 5.66667vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1.66667vw;
+}
+
+.course .setting_ly .btn_box button {
+  width: calc(100% / 4);
+  height: 8.33333vw;
+  font-size: 3.66667vw;
+  letter-spacing: -0.36667vw;
+  color: #666;
+  border: 0.33333vw solid #ddd;
+  margin-left: -0.16667vw;
+  background-color: #fff;
+}
+
+.course .setting_ly .btn_box button:first-child {
+  border-top-left-radius: 1.66667vw;
+  border-bottom-left-radius: 1.66667vw;
+}
+
+.course .setting_ly .btn_box button:last-child {
+  border-top-right-radius: 1.66667vw;
+  border-bottom-right-radius: 1.66667vw;
+}
+
+.course .setting_ly .btn_box button.on {
+  color: #ea5504;
+  border-color: #ea5504;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .course {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
