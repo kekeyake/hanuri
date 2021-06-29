@@ -59,5 +59,19 @@ $(function () {
     $('.setting_ly .btn_box button').on('click',function(){
         $(this).addClass('on').siblings('button').removeClass('on');
     });
+
+    $('.tab_container .tab_cont').hide();
+    $('.tab_container .tab_cont.introduction').show();
+    $('#courseTab button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+        var tabLink = $(this).attr('data-rel');
+        $('.tab_container .tab_cont').hide();
+        $('.tab_container .tab_cont.'+tabLink+'').show();
+
+    });
+
+    $('.tab_cont.study .tit').on('click',function(){
+        $(this).toggleClass('on').next('ol').toggleClass('on');
+    });
 });
 
