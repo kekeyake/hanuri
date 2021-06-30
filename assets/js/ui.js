@@ -73,5 +73,9 @@ $(function () {
     $('.tab_cont.study .tit').on('click',function(){
         $(this).toggleClass('on').next('ol').toggleClass('on');
     });
+
+    $('.course .agree_wrap .tit').on('click',function(){
+        $(this).next('.info_box').toggleClass('on');
+    });
 });
 

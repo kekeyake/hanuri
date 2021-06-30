@@ -175,11 +175,11 @@
                     letter-spacing: vw(-1.25);
                     border-radius: vw(3);
                     &.btn_list {
-                        width: vw(203);
+                        width: 34.5%;
                         background-color: #666;
                     }
                     &.btn_apply {
-                        width: vw(361);
+                        width: 64.5%;
                         background-color: #ee5400;
                     }
                 }
@@ -381,6 +381,62 @@
                         letter-spacing: vw(-1.1);
                     }
                 }
+            }
+        }
+    }
+
+    .view_ly {
+        padding-bottom:vw(45.5);
+        .t1 {
+            font-size: vw(22);
+            line-height: 1.59;
+            color:#666;
+            letter-spacing: vw(-2.2);
+            padding:0 vw(15);
+            b {
+                font-weight: 700;
+            }
+        }
+        .input_box {
+            padding:0 vw(15);
+            margin:vw(32.5) 0 vw(34.5);
+            li {
+                display: flex;
+                color:#666;
+                align-items: center;
+                letter-spacing: vw(-2.2);
+                margin-bottom: vw(10.5);
+                b {
+                    width: vw(105);
+                    font-weight: 500;
+                }
+                input {
+                    display: flex;
+                    align-items: center;
+                    height: vw(40);
+                    width: vw(265);
+                    padding:vw(5);
+                    border: vw(1) solid #ddd;
+                    & + span {
+                        margin-left: vw(10);
+                    }
+                }
+            }
+            &.w100 input {
+                width: calc(100% - 17.5vw);
+            }
+        }
+        .btn_wrap {
+            padding:0 vw(15);
+            .btn {
+                width: 100%;
+                height: vw(56.5);
+                background-color: #ee5400;
+                color:#fff;
+                border-radius: vw(3);
+                font-size: vw(25);
+                letter-spacing: vw(-1.25);
+                font-weight: 700;
             }
         }
     }
