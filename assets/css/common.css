@@ -3693,7 +3693,6 @@ footer.footer .t1:last-child {
 }
 
 .course .__layer {
-  display: none;
   width: 100%;
   position: fixed;
   z-index: 201;
@@ -3701,12 +3700,15 @@ footer.footer .t1:last-child {
   background-color: #fff;
   border-top-left-radius: 3.33333vw;
   border-top-right-radius: 3.33333vw;
-  bottom: 0;
   padding: 0 2.5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  bottom: -200%;
 }
 
 .course .__layer.on {
   display: block;
+  bottom: 0;
 }
 
 .course .__layer .btn_setting_reload {

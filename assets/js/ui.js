@@ -77,5 +77,15 @@ $(function () {
     $('.course .agree_wrap .tit').on('click',function(){
         $(this).next('.info_box').toggleClass('on');
     });
+
+    $('.btn_sort').on('click',function(){
+        $('.bg_dimmed').addClass('on');
+        $('.setting_ly').addClass('on');
+        
+    });
+    $('.btn_setting_closed').on('click',function(){
+        $('.bg_dimmed').removeClass('on');
+        $('.setting_ly').removeClass('on');
+    });
 });
 

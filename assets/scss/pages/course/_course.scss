@@ -9,7 +9,7 @@
         padding-bottom: vw(36);
     }
     .__layer {
-        display: none;
+        // display: none;
         width: 100%;
         position: fixed;
         z-index: 201;
@@ -17,12 +17,12 @@
         background-color: #fff;
         border-top-left-radius: vw(20);
         border-top-right-radius: vw(20);
-        bottom:0;
         padding:0 vw(15);
-        // transition: all 1s;
+        transition: all .5s;
+        bottom:-200%;
         &.on {
             display: block;
-            // bottom:50%;
+            bottom:0;
         }
         .btn_setting_reload {
             position: absolute;
