@@ -83,9 +83,18 @@ $(function () {
         $('.setting_ly').addClass('on');
         
     });
+
+    $('.btn_recommend').on('click',function(){
+        $('.bg_dimmed').addClass('on');
+        $('.__recommend').addClass('on');
+        // $('.view_ly').addClass('on');
+        
+    });
+
     $('.btn_setting_closed').on('click',function(){
         $('.bg_dimmed').removeClass('on');
-        $('.setting_ly').removeClass('on');
+        $('.__layer').removeClass('on');
+        
     });
 });
 
