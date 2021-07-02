@@ -3993,7 +3993,7 @@ footer.footer .t1:last-child {
 @media (min-width: 1200px) {
   .course .__wrap_top {
     padding-bottom: 15px;
-    border-bottom: 0.16667vw solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
