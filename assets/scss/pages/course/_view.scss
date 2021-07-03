@@ -351,9 +351,9 @@
                     color:#333;
                     letter-spacing: vw(-1.1);
                     font-weight: 500;
-                    background: #eee url(../img/ico_minus.svg) no-repeat right vw(13) top 50% / vw(28);
+                    background: #eee url(../img/ico_plus.svg) no-repeat right vw(13) top 50% / vw(28);
                     &.on {
-                        background: #eee url(../img/ico_plus.svg) no-repeat right vw(13) top 50% / vw(28);
+                        background: #eee url(../img/ico_minus.svg) no-repeat right vw(13) top 50% / vw(28);
                     }
                 }
                 ol {
@@ -640,6 +640,7 @@
                             border-radius: px(1.5);
                             font-weight: 700;
                             margin-right: px(5);
+                            font-size: px(11);
                         }
                     }
                 }
@@ -669,7 +670,7 @@
             }
             .tab_wrap {
                 margin-top: px(30);
-                padding:0 px(7.5);
+                padding:0;
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
@@ -762,21 +763,22 @@
                         margin-top: px(8.25);
                         p {
                             overflow : hidden;
-                            text-overflow: ellipsis;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 5;
-                            -webkit-box-orient: vertical;
+                            text-overflow:none;
+                            display: block;
+                            // -webkit-line-clamp:;
+                            // -webkit-box-orient: vertical;
                             font-size: px(11);
                             line-height: 1.36;
                             letter-spacing: px(-0.55);
                             color:#333;
-                            max-height: px(75);
+                            max-height: auto;
                             &::after {
                                 content: '';
                                 display: block;
                                 clear: both;
                             }
                             a {
+                                display: none;
                                 color:#999;
                                 font-weight: 700;
                                 margin-left: px(5);
@@ -784,7 +786,7 @@
                         }
                         img {
                             float: right;
-                            width: px(220);
+                            width: px(180);
                             margin-left: px(10);
                         }
                     }

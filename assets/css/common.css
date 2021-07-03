@@ -4670,11 +4670,11 @@ footer.footer .t1:last-child {
   color: #333;
   letter-spacing: -0.18333vw;
   font-weight: 500;
-  background: #eee url(../img/ico_minus.svg) no-repeat right 2.16667vw top 50%/4.66667vw;
+  background: #eee url(../img/ico_plus.svg) no-repeat right 2.16667vw top 50%/4.66667vw;
 }
 
 .course .view_wrap .tab_container .study .tit.on {
-  background: #eee url(../img/ico_plus.svg) no-repeat right 2.16667vw top 50%/4.66667vw;
+  background: #eee url(../img/ico_minus.svg) no-repeat right 2.16667vw top 50%/4.66667vw;
 }
 
 .course .view_wrap .tab_container .study ol {
@@ -5047,6 +5047,7 @@ footer.footer .t1:last-child {
     border-radius: 3px;
     font-weight: 700;
     margin-right: 10px;
+    font-size: 22px;
   }
   .course .view_wrap .info_wrap .btn_box {
     margin-top: 27px;
@@ -5077,7 +5078,7 @@ footer.footer .t1:last-child {
   }
   .course .view_wrap .tab_wrap {
     margin-top: 60px;
-    padding: 0 15px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5184,15 +5185,13 @@ footer.footer .t1:last-child {
   }
   .course .view_wrap .tab_container .review .txt p {
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    text-overflow: none;
+    display: block;
     font-size: 22px;
     line-height: 1.36;
     letter-spacing: -1.1px;
     color: #333;
-    max-height: 150px;
+    max-height: auto;
   }
   .course .view_wrap .tab_container .review .txt p::after {
     content: '';
@@ -5200,13 +5199,14 @@ footer.footer .t1:last-child {
     clear: both;
   }
   .course .view_wrap .tab_container .review .txt p a {
+    display: none;
     color: #999;
     font-weight: 700;
     margin-left: 10px;
   }
   .course .view_wrap .tab_container .review .txt img {
     float: right;
-    width: 440px;
+    width: 360px;
     margin-left: 20px;
   }
   .course .view_wrap .tab_container .study {
