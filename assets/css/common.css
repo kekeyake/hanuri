@@ -3683,6 +3683,7 @@ footer.footer .t1:last-child {
 }
 
 .course h1 {
+  display: none;
   font-size: 5vw;
   font-weight: 700;
   color: #333;
@@ -3762,6 +3763,7 @@ footer.footer .t1:last-child {
     margin: 0 auto;
   }
   .course h1 {
+    display: block;
     font-size: 30px;
     font-weight: 700;
     color: #333;
@@ -3769,6 +3771,9 @@ footer.footer .t1:last-child {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 36px;
+  }
+  .course .__wrap_top {
+    margin-top: 40px;
   }
   .course .__layer {
     display: none;
@@ -3874,7 +3879,7 @@ footer.footer .t1:last-child {
 }
 
 .course .board_list {
-  margin-bottom: 7.5vw;
+  margin-bottom: 15vw;
 }
 
 .course .board_list li {
@@ -4021,7 +4026,7 @@ footer.footer .t1:last-child {
   }
   .course .btn_sort_list button {
     height: 36px;
-    border: 2px solid #999;
+    border: 1px solid #999;
     border-radius: 1.33333vw;
     font-size: 18px;
     color: #777;
@@ -4055,7 +4060,7 @@ footer.footer .t1:last-child {
     margin: 0;
     height: 38px;
     font-size: 18px;
-    border-width: 2px;
+    border-width: 3px;
   }
   .course .board_list {
     display: -webkit-box;
@@ -4102,8 +4107,7 @@ footer.footer .t1:last-child {
     position: absolute;
     left: 10px;
     top: 13px;
-    padding: 3px 8px 5px;
-    background-color: #c80000;
+    padding: 1px 8px 2px;
     border-radius: 5px;
     color: #fff;
     font-weight: 700;
@@ -4117,7 +4121,7 @@ footer.footer .t1:last-child {
   .course .board_list li .txt_box .event_t {
     display: inline-block;
     background-color: #ea5504;
-    padding: 5px 8px;
+    padding: 1px 8px 2px;
     font-size: 16px;
     letter-spacing: -0.8px;
     color: #fff;
@@ -5712,9 +5716,10 @@ a.link {
   .search_box input {
     border: 0 solid #000;
     background: transparent;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     width: 100%;
+    letter-spacing: -1px;
   }
   .search_box input::-webkit-input-placeholder {
     color: #bbb;

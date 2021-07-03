@@ -241,9 +241,10 @@ a.link {
 		input {
 			border: 0 solid #000;
 			background: transparent;
-			font-size: px(11);
+			font-size: px(9);
 			font-weight: 700;
 			width: 100%;
+			letter-spacing: px(-0.5);
 			&::placeholder {
 				color:#bbb;
 			}
