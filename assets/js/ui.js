@@ -96,5 +96,9 @@ $(function () {
         $('.__layer').removeClass('on');
         
     });
+    $('.btn_sort_list .category').on('click',function(){
+        $(this).addClass('on').siblings('.category').removeClass('on');
+    });
+    
 });
 
