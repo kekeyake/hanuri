@@ -99,6 +99,12 @@ $(function () {
     $('.btn_sort_list .category').on('click',function(){
         $(this).addClass('on').siblings('.category').removeClass('on');
     });
+
+    $('.info_wrap .btn').on('click',function(){
+        $(this).addClass('on').siblings('.btn').removeClass('on');
+    });
+
+
     
 });
 
