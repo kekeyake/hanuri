@@ -4570,14 +4570,14 @@ footer.footer .t1:last-child {
           align-items: center;
   height: 6.5vw;
   padding: 0 3.33333vw 0.08333vw;
-  border-radius: 3.25vw;
+  border-radius: 10px;
   background-color: #f3f3f3;
   margin-right: 0.83333vw;
 }
 
 .course .view_wrap .tab_container .list {
   margin: 2.33333vw 0 4.33333vw;
-  border-radius: 1.66667vw;
+  border-radius: 10px;
   background-color: #f3f3f3;
   padding: 3.33333vw;
   font-size: 3.66667vw;

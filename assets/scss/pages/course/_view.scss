@@ -269,7 +269,7 @@
                             align-items: center;
                             height: vw(39);
                             padding:0 vw(20) vw(0.5);
-                            border-radius: vw(19.5);
+                            border-radius: 10px;
                             background-color: #f3f3f3;
                             margin-right: vw(5);
                         }
@@ -279,7 +279,7 @@
             
             .list {
                 margin: vw(14) 0 vw(26);
-                border-radius: vw(10);
+                border-radius: 10px;
                 background-color: #f3f3f3;
                 padding:vw(20);
                 font-size: vw(22);
