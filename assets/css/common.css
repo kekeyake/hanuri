@@ -4377,6 +4377,14 @@ footer.footer .t1:last-child {
   width: 100%;
 }
 
+.course .view_wrap .info_wrap ul li .tool_layer {
+  border: 0.08333vw solid #ee4500;
+  padding: 5.83333vw 5vw;
+  letter-spacing: -0.18333vw;
+  font-size: 3.66667vw;
+  color: #333;
+}
+
 .course .view_wrap .info_wrap ul li .btn {
   display: -webkit-box;
   display: -ms-flexbox;
