@@ -1932,10 +1932,9 @@ footer.footer .t1:last-child {
     text-align: center;
   }
   .notice .__wrap_top h1 {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
     color: #333;
-    letter-spacing: -2px;
   }
   .notice .__wrap_top h1 + .search_box {
     margin: 36px auto 0;
