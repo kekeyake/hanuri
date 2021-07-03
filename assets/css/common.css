@@ -4287,6 +4287,9 @@ footer.footer .t1:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2.5vw;
   border-bottom: 0.5px solid #999;
 }
@@ -4304,9 +4307,6 @@ footer.footer .t1:last-child {
   color: #aaa;
   position: relative;
   font-weight: 700;
-  line-height: 1;
-  -webkit-transform: translateY(6.5px);
-          transform: translateY(6.5px);
 }
 
 .course .view_wrap .info_wrap ul li strong button {
@@ -4318,13 +4318,24 @@ footer.footer .t1:last-child {
 }
 
 .course .view_wrap .info_wrap ul li input {
-  border: 0.53333vw solid #666;
+  border: 0.53333vw solid #999;
   height: 6.66667vw;
   line-height: 6.66667vw;
 }
 
 .course .view_wrap .info_wrap ul li.line1 > div {
   padding: 0.83333vw 0 0.83333vw 3.33333vw;
+}
+
+.course .view_wrap .info_wrap ul li.align_top {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.course .view_wrap .info_wrap ul li.align_top strong {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 .course .view_wrap .info_wrap ul li > div {
@@ -4397,7 +4408,7 @@ footer.footer .t1:last-child {
           justify-content: center;
   border: 0.53333vw solid #ccc;
   height: 7.5vw;
-  padding: 0.25vw 2vw 0.41667vw;
+  padding: 0.25vw 2vw 0.33333vw;
   margin-right: 1.66667vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4474,12 +4485,12 @@ footer.footer .t1:last-child {
 }
 
 .course .view_wrap .info_wrap .btn_box button.btn_list {
-  width: 34%;
+  width: 34.5%;
   background-color: #666;
 }
 
 .course .view_wrap .info_wrap .btn_box button.btn_apply {
-  width: 64%;
+  width: 64.5%;
   background-color: #ee5400;
 }
 
@@ -4558,9 +4569,10 @@ footer.footer .t1:last-child {
       -ms-flex-align: center;
           align-items: center;
   height: 6.5vw;
-  padding: 0 1.66667vw;
+  padding: 0 3.33333vw 0.08333vw;
   border-radius: 3.25vw;
   background-color: #f3f3f3;
+  margin-right: 0.83333vw;
 }
 
 .course .view_wrap .tab_container .list {
