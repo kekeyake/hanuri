@@ -4199,6 +4199,7 @@ footer.footer .t1:last-child {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 4.66667vw;
 }
 
 .course .view_wrap .tit_box {
@@ -4238,7 +4239,7 @@ footer.footer .t1:last-child {
   font-size: 3.33333vw;
   letter-spacing: -0.16667vw;
   font-weight: 700;
-  padding: 0.33333vw 2.5vw;
+  padding: 0.11667vw 2.5vw;
   border-radius: 0.5vw;
 }
 
@@ -4374,9 +4375,11 @@ footer.footer .t1:last-child {
       -ms-flex-pack: center;
           justify-content: center;
   border: 0.41667vw solid #ccc;
-  height: 5.83333vw;
-  padding: 0 2vw;
+  height: 7.5vw;
+  padding: 0.25vw 2vw 0.41667vw;
   margin-right: 1.66667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .course .view_wrap .info_wrap ul li .btn.on {
@@ -4401,8 +4404,8 @@ footer.footer .t1:last-child {
           justify-content: center;
   border: 0 solid #000;
   color: #333;
-  height: 5.83333vw;
-  padding: 0 2vw;
+  height: 7.5vw;
+  padding: 0.25vw 2vw 0.41667vw;
   background-color: #ccc;
   margin-right: 1.66667vw;
 }
@@ -4419,8 +4422,8 @@ footer.footer .t1:last-child {
           justify-content: center;
   border: 0 solid #000;
   color: #fff;
-  height: 5vw;
-  padding: 0 2.5vw;
+  height: 6.66667vw;
+  padding: 0.25vw 2.5vw 0.41667vw;
   background-color: #666;
   border-radius: 0.5vw;
   font-weight: 700;

@@ -2,6 +2,7 @@
     .view_wrap {
         display: flex;
         flex-wrap: wrap;
+        margin-top: vw(28);
         .tit_box {
             width: 100%;
             padding:0 vw(15);
@@ -26,7 +27,7 @@
                 font-size: vw(20);
                 letter-spacing: vw(-1);
                 font-weight: 700;
-                padding:vw(2) vw(15);
+                padding:vw(0.7) vw(15);
                 border-radius: vw(3);
             }
         }
@@ -121,9 +122,10 @@
                         align-items: center;
                         justify-content: center;
                         border: vw(2.5) solid #ccc;
-                        height: vw(35);
-                        padding:0 vw(12);
+                        height: vw(45);
+                        padding:vw(1.5) vw(12) vw(2.5);
                         margin-right: vw(10);
+                        box-sizing: border-box;
                         &.on {
                             border-color: #ee4500;
                             color:#ee4500;
@@ -141,8 +143,8 @@
                         justify-content: center;
                         border: 0 solid #000;
                         color:#333;
-                        height: vw(35);
-                        padding:0 vw(12);
+                        height: vw(45);
+                        padding:vw(1.5) vw(12) vw(2.5);
                         background-color: #ccc;
                         margin-right: vw(10);
                     }
@@ -152,8 +154,8 @@
                         justify-content: center;
                         border: 0 solid #000;
                         color:#fff;
-                        height: vw(30);
-                        padding:0 vw(15);
+                        height: vw(40);
+                        padding:vw(1.5) vw(15) vw(2.5);
                         background-color: #666;
                         border-radius: vw(3);
                         font-weight: 700;
