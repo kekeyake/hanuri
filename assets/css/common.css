@@ -3873,6 +3873,10 @@ footer.footer .t1:last-child {
   background: url(../img/ico_active.svg) no-repeat 0 50%/3vw;
 }
 
+.course .board_list {
+  margin-bottom: 7.5vw;
+}
+
 .course .board_list li {
   border-bottom: 0.08333vw solid #999;
 }
@@ -3905,7 +3909,7 @@ footer.footer .t1:last-child {
   position: absolute;
   left: 1.75vw;
   top: 2vw;
-  padding: 0.5vw 1.16667vw;
+  padding: 0.25vw 1.16667vw 0.33333vw;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 0.83333vw;
   color: #fff;
@@ -3922,7 +3926,7 @@ footer.footer .t1:last-child {
 .course .board_list li .txt_box .event_t {
   display: inline-block;
   background-color: #ea5504;
-  padding: 0.41667vw 1.66667vw;
+  padding: 0.25vw 1.66667vw 0.25vw;
   font-size: 3.33333vw;
   letter-spacing: -0.16667vw;
   color: #fff;
