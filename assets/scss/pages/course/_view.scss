@@ -399,20 +399,11 @@
                     }
                     p {
                         overflow : hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 5;
-                        -webkit-box-orient: vertical;
                         font-size: vw(22);
                         line-height: 1.36;
                         letter-spacing: vw(-1.1);
                         color:#333;
-                        max-height: vw(150);
-                        &::after {
-                            content: '';
-                            display: block;
-                            clear: both;
-                        }
+                        max-height: vw(150);                        
                         a {
                             color:#999;
                             font-weight: 700;

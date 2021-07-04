@@ -4760,21 +4760,11 @@ footer.footer .t1:last-child {
 
 .course .view_wrap .tab_container .review .txt p {
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
   font-size: 3.66667vw;
   line-height: 1.36;
   letter-spacing: -0.18333vw;
   color: #333;
   max-height: 25vw;
-}
-
-.course .view_wrap .tab_container .review .txt p::after {
-  content: '';
-  display: block;
-  clear: both;
 }
 
 .course .view_wrap .tab_container .review .txt p a {
