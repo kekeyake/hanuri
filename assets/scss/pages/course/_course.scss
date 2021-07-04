@@ -1,14 +1,4 @@
 .course {
-    h1 {
-        display: none;
-        font-size: vw(30);
-        font-weight: 700;
-        color:#333;
-        letter-spacing: vw(-2);
-        text-align: center;
-        padding-top: vw(40);  
-        padding-bottom: vw(36);
-    }
     .__wrap_top {
         margin-top: vw(45);
     }
@@ -72,16 +62,6 @@
     .course {
         width: 1200px;
         margin:0 auto;
-        h1 {
-            display: block;
-            font-size: px(15);
-            font-weight: 700;
-            color:#333;
-            letter-spacing: 0;
-            text-align: center;
-            padding-top: px(20);  
-            padding-bottom: px(18);
-        }
         .__wrap_top {
             margin-top: px(20);
         }

@@ -2,28 +2,30 @@
 
 <main class="main member">
     <div class="join">
-        <h1>회원가입</h1>
+        <!-- <h1>회원가입</h1> -->
 		<form name="form1" method="post" target="sysfrm">
 		<input type="hidden" name="is_use_userid" value="N" />
+		<input type="hidden" name="gender" value="{{nice_iInfo.sgendercode_conv}}" />
         <div class="join_wrap">
             <div class="join_box __cert">
-                <label for="l1">휴대폰 번호</label>
-                <input type="text" id="l1" value="010-6276-2626">
-                <button class="btn btn_cert">휴대폰 인증</button>
+                <label for="mobile">휴대폰 번호</label>
+                <input type="text" id="mobile" value="휴대폰 인증 버튼을 눌러주세요." name="mobile" readonly>
+                <!-- <button class="btn btn_cert" onclick="javascript:changeCheck();">휴대폰 인증</button> -->
+				<iframe src="../main/checkplus_sms.jsp" id="plusArea" name="plusArea" frameborder="0" scrolling="no"></iframe>
             </div>
 
             <div class="join_box">
                 <label for="user_name">이름</label>
-                <input type="text" name="user_name" id="user_name" />
+                <input type="text" name="user_name" id="user_name" value="{{nice_iInfo.sname}}" readonly />
             </div>
             <div class="join_box">
-                <label for="birthday_year">생년월일</label>
-                <input type="text" id="birthday_year">
+                <label for="birthday_conv">생년월일</label>
+                <input type="text" id="birthday_conv" name="birthday_conv" value="{{birthday_conv}}" readonly />
             </div>
             <div class="join_box">
-                <label for="user_id">아이디</label>
-                <input type="text" name="user_id" id="user_id" onkeyup="javascript:checkUserid();" />
-                <button id="b_reset_userid" class="btn btn_reset" style="display:none;"><img src="../assets/img/btn_delete.svg" alt=""></button>
+                <label for="user_id">아이디 (6자리 이상)</label>
+                <input type="text" name="user_id" id="user_id" onkeyup="javascript:checkUserid();" style="ime-mode:disabled;" />
+                <button id="b_reset_userid" class="btn btn_reset" onclick="javascript:resetUserid();" style="display:none;"><img src="../assets/img/btn_delete.svg" alt=""></button>
             </div>
             <p id="alreadyUseridArea" class="error"></p>
             <div class="join_box">
@@ -49,17 +51,17 @@
 
             <div class="agree_box">
                 <div>
-                    <input type="checkbox" class="checkbox" id="c1">
-                    <label for="c1">[필수] <a href="../customer/policy.jsp">이용약관</a>, <a href="../customer/privacy.jsp">개인정보 수집 및 이용</a> 동의</label>
+                    <input type="checkbox" class="checkbox" id="m_agree_yn" name="m_agree_yn">
+                    <label for="m_agree_yn">[필수] <a href="../customer/policy.jsp">이용약관</a>, <a href="../customer/privacy.jsp">개인정보 수집 및 이용</a> 동의</label>
                 </div>
                 <div>
-                    <input type="checkbox" class="checkbox" id="c2">
-                    <label for="c2">학습 정보 및 이벤트 SMS 수신 동의</label>
+                    <input type="checkbox" class="checkbox" id="m_agree_yn2" name="m_agree_yn2">
+                    <label for="m_agree_yn2">학습 정보 및 이벤트 SMS 수신 동의</label>
                 </div>
             </div>
             <!--// agree_box -->
             
-            <button class="btn btn_join">가입하기</button>
+            <button type="submit" class="btn btn_join">가입하기</button>
         </div>
         <!--// join_wrap -->
 		</form>
@@ -71,8 +73,25 @@
 	function checkUserid() {
 		var f = document.forms['form1'];
 		var v = f['user_id'].value;
+		var userid_pattern = new RegExp('[^a-zA-Z0-9]'); //아이디 패턴검사 정규식
 		if(v != "") {
+			//아이디 값이 없거나 아이디가 유효한게 아니면
+			if(!v.length || userid_pattern.test(v)) {
+				$("#alreadyUseridArea").text("한글아이디는 사용이 불가능합니다.");
+				f['user_id'].value = v.replace(/[^a-zA-Z0-9]/g, '').trim();
+				return false;
+			}
 			call("call_is_userid.jsp?v=" + v, "alreadyUseridArea");
+		}
+	}
+	function resetUserid() {
+		var f = document.forms['form1'];
+		var v = f['user_id'].value;
+		if(v != "") f['user_id'].value = ""; 
+		if(f['user_id'].value = "") {
+			$("#b_reset_userid").hide(); 
+			$("#alreadyUseridArea").text("");
+			return false;
 		}
 	}
 	function id_check() {
@@ -178,5 +197,6 @@
 		}
 	}
 </script>
+
 
 <!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

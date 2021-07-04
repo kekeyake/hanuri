@@ -104,7 +104,27 @@ $(function () {
         $(this).addClass('on').siblings('.btn').removeClass('on');
     });
 
-
+    var thisUrl = window.location.href;
+    var tabActive = thisUrl.slice(-3);
+    switch (tabActive) {
+        case "F05":
+            $('.nav_menu li.n2').addClass('on').siblings('li').remoeClass('on');
+            break;
+        case "F04":
+            $('.nav_menu li.n3').addClass('on').siblings('li').remoeClass('on');
+            break;
+        case "F03":
+            $('.nav_menu li.n4').addClass('on').siblings('li').remoeClass('on');
+            break;
+        case "F01":
+            $('.nav_menu li.n5').addClass('on').siblings('li').remoeClass('on');
+            break;
+        case "F06":
+            $('.nav_menu li.n8').addClass('on').siblings('li').remoeClass('on');
+            break;
+        default:
+            break;
+    }
     
 });
 

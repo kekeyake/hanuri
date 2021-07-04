@@ -21,11 +21,21 @@ function myQNA(){
 
 <main class="main">
     <div class="guide">
-        <h1>이용안내</h1>
+        <div class="__wrap_top">
+			<form name="form1" method="get">
+			<input type="hidden" name="code" value="{{code}}" />
+            <div class="search_box">
+                <input type="text" id="s_keyword" name="s_keyword" placeholder="검색어를 입력하세요">
+                <button type="submit" class="btn __search"></button>
+            </div>
+			</form>
+			{{form_script}}
+        </div>
+
         <div class="nav_menu noscroll">
             <ul>
 				<!--@loop(categories)-->
-                <li class="on {{categories.tab}}"><a href="../customer/guide.jsp?code=faq&s_category_id={{categories.id}}">{{categories.name}}</a></li>
+                <li class="{{categories.tab}}"><a href="../customer/guide.jsp?code=faq&s_category_id={{categories.id}}">{{categories.name}}</a></li>
 				<!--/loop(categories)-->
 				<!--
                 <li><a href="#a">교육과정</a></li>
@@ -37,13 +47,7 @@ function myQNA(){
                 <li><a href="#a">기타</a></li>
 				-->
             </ul>
-        </div>
-        <div class="__wrap_top">
-            <div class="search_box">
-            <input type="text" placeholder="검색어를 입력하세요">
-            <button class="btn __search"></button>
-            </div>
-        </div>
+        </div>        
 
         <ul class="qa_list">
 			<!--@loop(list)-->

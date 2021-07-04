@@ -1,16 +1,8 @@
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">   
-    $(document).ready( function() {
-        $("#headers").load("../layout/header.html");  //헤더 인클루드
-        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
-    });
-</script>
-
-<div data-include-path="../layout/header.html" id="headers"></div>
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
 
 <main class="main member">
     <div class="join __sns">
-        <!-- <h1>네이버 아이디로 간편 가입</h1> -->
+        <!-- <h1>SNS 계정 아이디로 간편 가입 완료</h1> -->
         <div class="join_wrap">
             <div class="join_box">
                 <label for="l1">이름</label>
@@ -61,4 +53,21 @@
     </div>
 </main>
 
-<div data-include-path="../layout/footer.html" id="footers"></div>
+<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+<script type="text/javascript">
+      kakaoPixel('3060365382616528588').pageView();
+      kakaoPixel('3060365382616528588').completeRegistration();
+</script>
+<script type="text/javascript">
+	var _NGUL = "wcs.naver.net/wcslog.js";
+	var _NPR = location.protocol=="https:"?"https://"+_NGUL:"http://"+_NGUL;
+	document.writeln("<scr"+"ipt type='text/ja"+"vascript' src='"+ _NPR +"'></scr"+"ipt>"); 
+</script>
+<script type="text/javascript">
+	var _nasa={}; //_nasa 변수에 전환추적을 위한 정보를 담음. 항상 로그 전송 method인 wcs_do(_nasa)보다 이전에 있어야 함.
+	_nasa["cnv"] = wcs.cnv("2","10"); //wcs.cnv("전환유형", "전환가치") 세팅.구매 유형인 경우 결제금액은 상황에 따라 변경될 수 있도록 변수가 들어가야 합니다. 그 외의 유형은 통상적으로 1의 값을 넣습니다.
+	fbq('track', 'CompleteRegistration');
+	gtag('event', 'conversion', {'send_to': 'AW-663409106/Tci0CLe4hMkBENKjq7wC'});
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

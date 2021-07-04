@@ -2,51 +2,147 @@
 
 <main class="main member">
     <div class="join __info">
-        <h1>아이디 찾기</h1>
+		<form name="form1" method="post" target="sysfrm">
+        <!-- <h1>아이디 찾기</h1> -->
         <div class="join_wrap">
             <div class="join_box">
-                <label for="l1">이름</label>
-                <input type="text" id="l1" value="ehanuri">
-            </div>
-
-            <div class="join_box">
-                <label for="l2">휴대폰 번호</label>
-                <input type="text" id="l2">
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" name="user_name" />
             </div>
             <div class="join_box">
-                <label for="l3">이메일</label>
-                <input type="text" id="l3">
+                <label for="mobile">휴대폰 번호</label>
+                <input type="text" id="mobile" name="mobile" maxlength="13" onkeyup="autoHypenPhone1();">
             </div>
-            <p class="error">이메일 형식이 아닙니다.</p>
-
-            <button class="btn btn_join">알림톡(SMS)으로 전송</button>
+            <div class="join_box">
+                <label for="email">이메일</label>
+                <input type="text" id="email" name="email" onkeyup="javascript:checkEmail();" />
+            </div>
+            <p id="errorEmail" class="error"></p>
+            <button type="submit" class="btn btn_join">알림톡(SMS)으로 전송</button>
         </div>
+		</form>
+		{{form_script}}
         <!--// join_wrap -->
 
-        <h1>임시 비밀번호 받기</h1>
+        <!-- <h1>임시 비밀번호 받기</h1> -->
+		<form name="form2" method="post" target="sysfrm" action="../member/find_passwd.jsp">
         <div class="join_wrap">
             <div class="join_box">
-                <label for="l1">이름</label>
-                <input type="text" id="l1" value="ehanuri">
+                <label for="pass_name">이름</label>
+                <input type="text" id="pass_name" name="pass_name" />
             </div>
 
             <div class="join_box">
-                <label for="l2">아이디</label>
-                <input type="text" id="l2">
-            </div><p class="error">존재하지 않는 아이디입니다.</p>
+                <label for="pass_id">아이디</label>
+                <input type="text" id="pass_id" name="pass_id" onkeyup="javascript:checkUserid();" />
+            </div><p id="isUseridArea" class="error"></p>
             <div class="join_box">
-                <label for="l3">휴대폰 번호</label>
-                <input type="text" id="l3">
+                <label for="pass_mobile">휴대폰 번호</label>
+                <input type="text" id="pass_mobile" name="pass_mobile" maxlength="13" onkeyup="autoHypenPhone2();" />
             </div>
             <div class="join_box">
-                <label for="l4">이메일</label>
-                <input type="text" id="l4">
+                <label for="pass_email">이메일</label>
+                <input type="text" id="pass_email" name="pass_email" onkeyup="javascript:checkEmail2();" />
             </div>
-            <p class="error">이메일 형식이 아닙니다.</p>
-            <button class="btn btn_join">알림톡(SMS)으로 전송</button>
+            <p id="errorEmail2" class="error"></p>
+            <button type="submit" class="btn btn_join">알림톡(SMS)으로 전송</button>
         </div>
+		</form>
+		{{form2_script}}
         <!--// join_wrap -->
     </div>
 </main>
+
+<script language="javascript">
+	function autoHypenPhone1() {
+		var f = document.forms['form1'];
+		event = event || window.event;
+		var hpstr = f['mobile'].value;
+		hpstr = hpstr.replace(/[^0-9]/g, '').trim();
+		var tmp = '';
+		if(hpstr.length < 4) {
+			f['mobile'].value = hpstr;
+		} else if(hpstr.length < 7) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3);
+			f['mobile'].value = tmp;
+		} else if(hpstr.length < 11) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 3);
+			tmp += '-';
+			tmp += hpstr.substr(6);
+			f['mobile'].value = tmp;
+		} else {				
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 4);
+			tmp += '-';
+			tmp += hpstr.substr(7);
+			f['mobile'].value = tmp;
+		}
+	}
+	function autoHypenPhone2() {
+		var f = document.forms['form2'];
+		event = event || window.event;
+		var hpstr = f['pass_mobile'].value;
+		hpstr = hpstr.replace(/[^0-9]/g, '').trim();
+		var tmp = '';
+		if(hpstr.length < 4) {
+			f['pass_mobile'].value = hpstr;
+		} else if(hpstr.length < 7) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3);
+			f['pass_mobile'].value = tmp;
+		} else if(hpstr.length < 11) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 3);
+			tmp += '-';
+			tmp += hpstr.substr(6);
+			f['pass_mobile'].value = tmp;
+		} else {				
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 4);
+			tmp += '-';
+			tmp += hpstr.substr(7);
+			f['pass_mobile'].value = tmp;
+		}
+	}
+	function checkEmail() {
+		var f = document.forms['form1'];
+		var email = f['email'].value;
+		if(email == '' || email == 'undefined') return false;
+		if(!email_check(email)) {
+			$("#errorEmail").text("이메일 형식이 아닙니다.");
+			return false;
+		} else {
+			$("#errorEmail").text("");
+		}
+		return false;
+	}
+	function checkEmail2() {
+		var f = document.forms['form2'];
+		var pass_email = f['pass_email'].value;
+		if(pass_email == '' || pass_email == 'undefined') return false;
+		if(!email_check(pass_email)) {
+			$("#errorEmail2").text("이메일 형식이 아닙니다.");
+			return false;
+		} else {
+			$("#errorEmail2").text("");
+		}
+		return false;
+	}
+	function checkUserid() {
+		var f = document.forms['form2'];
+		var v = f['pass_id'].value;
+		if(v != "") {
+			call("call_userid_check.jsp?v=" + v, "isUseridArea");
+		}
+	}
+</script>
 
 <!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

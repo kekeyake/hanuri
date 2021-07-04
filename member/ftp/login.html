@@ -2,7 +2,7 @@
 
 <main class="main member">
     <div class="login">
-        <h1>로그인</h1>
+        <!-- <h1>로그인</h1> -->
         <div class="card">
 			<form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit2(this);">
             <!-- login wrap -->
@@ -15,7 +15,7 @@
                 <div class="login_box _password">
                     <label for="user_pass">비밀번호</label>
                     <input type="password" id="user_pass" name="user_pass" onkeyup="javascript:checkCapsLock(event);">
-                    <button class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw.png" alt=""></button>
+                    <button type="button" class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw.png" alt=""></button>
                 </div>
                 <p id="l_capslock" class="error" style="display:none;">Caps Lock이 켜져 있습니다.</p>
                 <div class="check_wrap">
@@ -34,7 +34,6 @@
             <!-- login btn -->
             <div class="login_wrap__btn">
 				<button type="submit" class="btn btn_login">로그인</button>
-                <!--<a class="btn btn_login" href="javascript:void(0);" onclick="javascript:goSubmit2();">로그인</a>-->
                 <a class="btn btn_login__kakao" href="javascript:void(0);" onclick="javascript:kakaoLogin();"><img src="../assets/img/ico_kakao.png" alt=""> 카카오 아이디로 로그인</a>
                 <a class="btn btn_login__naver" href="javascript:void(0);" onclick="javascript:naverLogin();"><img src="../assets/img/ico_naver.png" alt="">네이버 아이디로 로그인</a>
             </div>
@@ -54,7 +53,7 @@
 
 <script language="javascript">
 	function checkCapsLock(e) {
-		if(e.getModifierState('CapsLock')){
+		if(e.getModifierState('CapsLock')) {
 			$("#l_capslock").fadeIn();
 		} else{
 			$("#l_capslock").hide();

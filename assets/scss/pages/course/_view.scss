@@ -305,6 +305,47 @@
                         color:#666;
                         letter-spacing: vw(-1.1);
                     }
+                    .point {
+                        margin-left: vw(11.5);
+                        background-image: url(../img/ico_star.png);
+                        background-repeat: no-repeat;
+                        background-size: vw(100);
+                        width: vw(100);
+                        height: vw(19);
+                        &.num10 {
+                            background-position: 0 0;
+                        }
+                        &.num9 {
+                            background-position: 0 vw(-19);
+                        }
+                        &.num8 {
+                            background-position: 0 vw(-37);
+                        }
+                        &.num7 {
+                            background-position: 0 vw(-57);
+                        }
+                        &.num6 {
+                            background-position: 0 vw(-76);
+                        }
+                        &.num5 {
+                            background-position: 0 vw(-95);
+                        }
+                        &.num4 {
+                            background-position: 0 vw(-114);
+                        }
+                        &.num3 {
+                            background-position: 0 vw(-152);
+                        }
+                        &.num2 {
+                            background-position: 0 vw(-171);
+                        }
+                        &.num1 {
+                            background-position: 0 vw(-190);
+                        }
+                        &.num0 {
+                            background-position: 0 vw(-209);
+                        }
+                    }
                 }
                 .txt {
                     margin-top: vw(16.5);
@@ -482,6 +523,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-top: px(28);
             .tit_box {
                 width: 100%;
                 padding:0;

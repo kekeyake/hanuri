@@ -2,14 +2,17 @@
 
 <main class="main">
     <div class="support">
-        <h1>학습지원</h1>
         <div class="__wrap_top">
             <p>안녕하세요, 한우리입니다.</p>
             <p>질문 키워드를 검색해 보세요.</p>
+			<form name="form1" method="get" action="../customer/guide.jsp">
+			<input type="hidden" name="code" value="faq" />
             <div class="search_box">
-            <input type="text" placeholder="검색어 입력">
-            <button class="btn __search"></button>
+            <input type="text" id="s_keyword" name="s_keyword" placeholder="검색어 입력">
+            <button type="submit" class="btn __search"></button>
             </div>
+			</form>
+			{{form_script}}
         </div>
         <ul class="__list">
             <li>

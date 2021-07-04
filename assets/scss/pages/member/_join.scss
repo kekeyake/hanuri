@@ -23,7 +23,7 @@
                 .btn_cert {
                     position: absolute;
                     right:0;
-                    top:vw(48);
+                    bottom:0;
                     width: vw(141);
                     height: vw(50.5);
                     background: #666;
@@ -32,6 +32,17 @@
                     font-size: vw(22);
                     font-weight: 700;
                     letter-spacing: vw(-1.1);
+                }
+                iframe {
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    width: vw(141);
+                    height: vw(50.5);
+                    border-radius: vw(3);                    
+                    button {
+                        font-size: vw(22);
+                    }
                 }
                 input {
                     width: vw(385.5);
@@ -197,6 +208,18 @@
                         border-radius: px(1.5);
                         font-size: px(10);
                         letter-spacing: px(-0.5);
+                    }
+                    iframe {
+                        bottom:0;
+                        width: px(62);
+                        height: px(26);
+                        border-radius: px(1.5);
+                        font-size: px(10);
+                        letter-spacing: px(-0.5);
+                        button {
+                            font-size: px(10);
+                        }
+
                     }
                     input {
                         width: px(202);

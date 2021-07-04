@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="tamtam">
+    <meta property="og:title" content="한우리캠퍼스 / 한우리 평생교육원">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
@@ -30,8 +30,15 @@
             </h1>
             <button class="m btn _login"></button>
             <div class="pc">
+				<!--@nif(login_block)-->
                 <a href="../member/join.jsp">회원가입</a>
                 <a href="../member/login.jsp">로그인</a>
+				<!--/nif(login_block)-->
+				<!--@if(login_block)-->
+                <a href="../member/join_info.jsp">정보수정</a>
+                <a href="../main/logout.jsp">로그아웃</a>
+				<!--/if(login_block)-->
+
             </div>
         </section>        
     </header>
@@ -136,3 +143,5 @@
             </div>
         </div>
     </nav>
+    
+    <h1 class="h1">페이지 타이틀</h1>
