@@ -352,8 +352,8 @@
                         background-image: url(../img/ico_star.png);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        width: vw(100);
-                        height: vw(20);
+                        width: vw(103);
+                        height: vw(19);
                         &.num10 {
                             background-position: 0 0;
                         }
@@ -906,6 +906,47 @@
                             font-weight: 500;
                             color:#666;
                             letter-spacing: px(-0.55);
+                        }
+                        .point {
+                            margin-left: px(6);
+                            background-image: url(../img/ico_star.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: px(51.5);
+                            height: px(9.5);
+                            &.num10 {
+                                background-position: 0 0;
+                            }
+                            &.num9 {
+                                background-position: 0 px(-10);
+                            }
+                            &.num8 {
+                                background-position: 0 px(-20);
+                            }
+                            &.num7 {
+                                background-position: 0 px(-30);
+                            }
+                            &.num6 {
+                                background-position: 0 px(-40);
+                            }
+                            &.num5 {
+                                background-position: 0 px(-50);
+                            }
+                            &.num4 {
+                                background-position: 0 px(-60);
+                            }
+                            &.num3 {
+                                background-position: 0 px(-70);
+                            }
+                            &.num2 {
+                                background-position: 0 px(-80);
+                            }
+                            &.num1 {
+                                background-position: 0 px(-90);
+                            }
+                            &.num0 {
+                                background-position: 0 px(-100);
+                            }
                         }
                     }
                     .txt {

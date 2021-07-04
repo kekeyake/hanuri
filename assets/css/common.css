@@ -4698,8 +4698,8 @@ footer.footer .t1:last-child {
   background-image: url(../img/ico_star.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 16.66667vw;
-  height: 3.33333vw;
+  width: 17.16667vw;
+  height: 3.16667vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num10 {
@@ -5377,6 +5377,47 @@ footer.footer .t1:last-child {
     font-weight: 500;
     color: #666;
     letter-spacing: -1.1px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point {
+    margin-left: 12px;
+    background-image: url(../img/ico_star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 103px;
+    height: 19px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num10 {
+    background-position: 0 0;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num9 {
+    background-position: 0 -20px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num8 {
+    background-position: 0 -40px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num7 {
+    background-position: 0 -60px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num6 {
+    background-position: 0 -80px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num5 {
+    background-position: 0 -100px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num4 {
+    background-position: 0 -120px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num3 {
+    background-position: 0 -140px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num2 {
+    background-position: 0 -160px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num1 {
+    background-position: 0 -180px;
+  }
+  .course .view_wrap .tab_container .review .profile_box .point.num0 {
+    background-position: 0 -200px;
   }
   .course .view_wrap .tab_container .review .txt {
     margin-top: 16.5px;
