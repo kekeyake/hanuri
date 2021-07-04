@@ -3863,7 +3863,6 @@ footer.footer .t1:last-child {
 }
 
 .course .btn_sort_list {
-  font-family: 'NanumSquare';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3906,7 +3905,6 @@ footer.footer .t1:last-child {
 }
 
 .course .board_list {
-  font-family: 'NanumSquare';
   margin-bottom: 15vw;
 }
 
