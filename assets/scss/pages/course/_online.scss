@@ -28,6 +28,7 @@
                     width: vw(100);
                     font-weight: 700;
                     color:#aaa;
+                    font-size: vw(22);
                 }
                 div {
                     width: vw(473);
@@ -35,9 +36,9 @@
                         color:#ee5400;
                     }
                     input {
-                        font-size: vw(20);
+                        font-size: vw(22);
                         padding:0 vw(10);
-                        border: vw(1) solid #ddd;
+                        border: px(0.5) solid #777;
                         height: vw(40);
                     }
                     .i1 {
@@ -91,7 +92,6 @@
                 display: none;
                 border-bottom: vw(0.25) solid #666;
                 padding:vw(25) vw(15);
-                padding-right: 0;
                 font-size: vw(20);
                 letter-spacing: vw(-0.5);
                 &.on {
@@ -162,6 +162,7 @@
                         width: px(50);
                         font-weight: 700;
                         color:#aaa;
+                        font-size: px(11);
                     }
                     div {
                         width: px(236.5);
@@ -169,9 +170,9 @@
                             color:#ee5400;
                         }
                         input {
-                            font-size: px(10);
+                            font-size: px(11);
                             padding:0 px(5);
-                            border: px(0.5) solid #ddd;
+                            border: px(0.5) solid #777;
                             height: px(20);
                         }
                         .i1 {

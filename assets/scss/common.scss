@@ -25,7 +25,10 @@
 @import 'pages/course/view';
 @import 'pages/course/online';
 
+@import 'pages/class/class';
+@import 'pages/class/order';
 
+body {font-size: vw(22);}
 /* common */
 select.select {
 	// padding: 5px 20px 5px 10px;
@@ -153,6 +156,7 @@ form .btn_cert {
 }
 /* pc layout common */
 @include desktop {
+	body {font-size: px(11);}
 	.m {
 		display: none;
 	}

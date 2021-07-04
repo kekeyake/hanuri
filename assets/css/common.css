@@ -4942,6 +4942,7 @@ footer.footer .t1:last-child {
   width: 44.16667vw;
   padding: 0.83333vw;
   border: 0.16667vw solid #ddd;
+  font-size: 3.66667vw;
 }
 
 .course .view_ly .input_box li input + span {
@@ -5089,6 +5090,7 @@ footer.footer .t1:last-child {
     border-radius: 3px;
     line-height: 40px;
     padding: 0 10px;
+    font-size: 22px;
   }
   .course .view_wrap .info_wrap ul li.line1 > div {
     padding: 5px 0 5px 20px;
@@ -5596,6 +5598,7 @@ footer.footer .t1:last-child {
     width: 265px;
     padding: 5px;
     border: 1px solid #ddd;
+    font-size: 22px;
   }
   .course .view_ly .input_box li input + span {
     margin-left: 10px;
@@ -5654,6 +5657,7 @@ footer.footer .t1:last-child {
   width: 16.66667vw;
   font-weight: 700;
   color: #aaa;
+  font-size: 3.66667vw;
 }
 
 .course .online_wrap .registration_wrap li div {
@@ -5665,9 +5669,9 @@ footer.footer .t1:last-child {
 }
 
 .course .online_wrap .registration_wrap li div input {
-  font-size: 3.33333vw;
+  font-size: 3.66667vw;
   padding: 0 1.66667vw;
-  border: 0.16667vw solid #ddd;
+  border: 1px solid #777;
   height: 6.66667vw;
 }
 
@@ -5731,7 +5735,6 @@ footer.footer .t1:last-child {
   display: none;
   border-bottom: 0.04167vw solid #666;
   padding: 4.16667vw 2.5vw;
-  padding-right: 0;
   font-size: 3.33333vw;
   letter-spacing: -0.08333vw;
 }
@@ -5801,6 +5804,7 @@ footer.footer .t1:last-child {
     width: 100px;
     font-weight: 700;
     color: #aaa;
+    font-size: 22px;
   }
   .course .online_wrap .registration_wrap li div {
     width: 473px;
@@ -5809,9 +5813,9 @@ footer.footer .t1:last-child {
     color: #ee5400;
   }
   .course .online_wrap .registration_wrap li div input {
-    font-size: 20px;
+    font-size: 22px;
     padding: 0 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #777;
     height: 40px;
   }
   .course .online_wrap .registration_wrap li div .i1 {
@@ -5894,6 +5898,298 @@ footer.footer .t1:last-child {
     letter-spacing: -1.25px;
     font-weight: 700;
   }
+}
+
+@media (min-width: 1200px) {
+  .class {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.class .online_wrap {
+  padding-bottom: 7.58333vw;
+}
+
+.class .online_wrap > .tit {
+  padding: 0 2.5vw;
+  font-size: 5vw;
+  letter-spacing: -0.25vw;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 3.33333vw;
+}
+
+.class .online_wrap .registration_wrap {
+  border-top: 0.08333vw solid #bbb;
+  font-size: 3.66667vw;
+  letter-spacing: -0.18333vw;
+  color: #333;
+}
+
+.class .online_wrap .registration_wrap li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5vw;
+  border-bottom: 0.08333vw solid #bbb;
+}
+
+.class .online_wrap .registration_wrap li:last-child b {
+  line-height: 4.5vw;
+}
+
+.class .online_wrap .registration_wrap li b {
+  width: 16.66667vw;
+  font-weight: 700;
+  color: #aaa;
+  font-size: 3.66667vw;
+}
+
+.class .online_wrap .registration_wrap li div {
+  width: 78.83333vw;
+}
+
+.class .online_wrap .registration_wrap li div .t1 b {
+  color: #ee5400;
+}
+
+.class .online_wrap .registration_wrap li div input {
+  font-size: 3.66667vw;
+  padding: 0 1.66667vw;
+  border: 1px solid #777;
+  height: 6.66667vw;
+}
+
+.class .online_wrap .registration_wrap li div .i1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.25vw;
+}
+
+.class .online_wrap .registration_wrap li div .i1:last-child {
+  margin-bottom: 0;
+}
+
+.class .online_wrap .registration_wrap li div .i1.__100 input {
+  width: 100%;
+}
+
+.class .online_wrap .registration_wrap li div .i1 input {
+  width: 27.83333vw;
+}
+
+.class .online_wrap .registration_wrap li div .i1 .btn_link {
+  height: 6.66667vw;
+  border-radius: 0.5vw;
+  background-color: #666;
+  color: #fff;
+  font-weight: 700;
+  border: 0 solid #000;
+  padding: 0 2.5vw;
+  margin-left: 1.66667vw;
+}
+
+.class .online_wrap .agree_wrap {
+  margin: 5vw 2.5vw;
+  border: 0.04167vw solid #666;
+  border-bottom: 0 solid #000;
+}
+
+.class .online_wrap .agree_wrap .tit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.33333vw;
+  font-size: 3.66667vw;
+  font-weight: 400;
+  letter-spacing: -0.07333vw;
+  color: #333;
+  border-bottom: 0.04167vw solid #666;
+  background-color: #f6f6f6;
+}
+
+.class .online_wrap .agree_wrap .tit p {
+  cursor: pointer;
+}
+
+.class .online_wrap .agree_wrap .info_box {
+  display: none;
+  border-bottom: 0.04167vw solid #666;
+  padding: 4.16667vw 2.5vw;
+  font-size: 3.33333vw;
+  letter-spacing: -0.08333vw;
+}
+
+.class .online_wrap .agree_wrap .info_box.on {
+  display: block;
+}
+
+.class .online_wrap .agree_wrap .info_box .stit {
+  font-weight: 700;
+  color: #ee5400;
+  margin-top: 1.66667vw;
+}
+
+.class .online_wrap .agree_wrap .info_box .s1 b {
+  font-weight: 700;
+}
+
+.class .online_wrap .btn_wrap {
+  padding: 0 2.5vw;
+}
+
+.class .online_wrap .btn_wrap .btn {
+  width: 100%;
+  height: 10.08333vw;
+  background-color: #ee5400;
+  color: #fff;
+  border-radius: 0.5vw;
+  font-size: 4.16667vw;
+  letter-spacing: -0.20833vw;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .class {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .class .online_wrap {
+    padding-bottom: 45.5px;
+  }
+  .class .online_wrap > .tit {
+    padding: 0 15px;
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .class .online_wrap .registration_wrap {
+    border-top: 0.5px solid #bbb;
+    font-size: 22px;
+    letter-spacing: -1px;
+    color: #333;
+  }
+  .class .online_wrap .registration_wrap li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    border-bottom: 0.5px solid #bbb;
+  }
+  .class .online_wrap .registration_wrap li:last-child b {
+    line-height: 27px;
+  }
+  .class .online_wrap .registration_wrap li b {
+    width: 100px;
+    font-weight: 700;
+    color: #aaa;
+    font-size: 22px;
+  }
+  .class .online_wrap .registration_wrap li div {
+    width: 473px;
+  }
+  .class .online_wrap .registration_wrap li div .t1 b {
+    color: #ee5400;
+  }
+  .class .online_wrap .registration_wrap li div input {
+    font-size: 22px;
+    padding: 0 10px;
+    border: 1px solid #777;
+    height: 40px;
+  }
+  .class .online_wrap .registration_wrap li div .i1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 7.5px;
+  }
+  .class .online_wrap .registration_wrap li div .i1:last-child {
+    margin-bottom: 0;
+  }
+  .class .online_wrap .registration_wrap li div .i1.__100 input {
+    width: 100%;
+  }
+  .class .online_wrap .registration_wrap li div .i1 input {
+    width: 167px;
+  }
+  .class .online_wrap .registration_wrap li div .i1 .btn_link {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #666;
+    color: #fff;
+    font-weight: 700;
+    border: 0 solid #000;
+    padding: 0 15px;
+    margin-left: 10px;
+  }
+  .class .online_wrap .agree_wrap {
+    margin: 30px 15px;
+    border: 1px solid #666;
+    border-bottom: 0 solid #000;
+  }
+  .class .online_wrap .agree_wrap .tit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.44px;
+    color: #333;
+    border-bottom: 1px solid #666;
+    background-color: #f6f6f6;
+  }
+  .class .online_wrap .agree_wrap .tit p {
+    cursor: pointer;
+  }
+  .class .online_wrap .agree_wrap .info_box {
+    display: none;
+    border-bottom: 1px solid #666;
+    padding: 25px;
+    padding-right: 0;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+  }
+  .class .online_wrap .agree_wrap .info_box.on {
+    display: block;
+  }
+  .class .online_wrap .agree_wrap .info_box .stit {
+    font-weight: 700;
+    color: #ee5400;
+    margin-top: 10px;
+  }
+  .class .online_wrap .agree_wrap .info_box .s1 b {
+    font-weight: 700;
+  }
+  .class .online_wrap .btn_wrap {
+    padding: 0 15px;
+  }
+  .class .online_wrap .btn_wrap .btn {
+    display: block;
+    width: 240px;
+    margin: 0 auto;
+    height: 60.5px;
+    background-color: #ee5400;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    font-weight: 700;
+  }
+}
+
+body {
+  font-size: 3.66667vw;
 }
 
 /* common */
@@ -6066,6 +6362,9 @@ form .btn_cert {
 
 /* pc layout common */
 @media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
   .m {
     display: none;
   }

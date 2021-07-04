@@ -534,6 +534,7 @@
                     width: vw(265);
                     padding:vw(5);
                     border: vw(1) solid #ddd;
+                    font-size: vw(22);
                     & + span {
                         margin-left: vw(10);
                     }
@@ -656,6 +657,7 @@
                             border-radius: px(1.5);
                             line-height: px(20);
                             padding:0 px(5);
+                            font-size: px(11);
                         }                
                         &.line1 {
                             > div {
@@ -1100,6 +1102,7 @@
                         width: px(132.5);
                         padding:px(2.5);
                         border: px(0.5) solid #ddd;
+                        font-size: px(11);
                         & + span {
                             margin-left: px(5);
                         }
