@@ -4586,7 +4586,7 @@ footer.footer .t1:last-child {
 
 .course .view_wrap .tab_wrap button {
   width: calc(100% / 4);
-  border: 0.08333vw solid #999;
+  border: 1px solid #999;
   border-right: 0 solid #000;
   background-color: #f3f3f3;
   height: 8.83333vw;
@@ -4594,10 +4594,12 @@ footer.footer .t1:last-child {
   font-size: 3.66667vw;
   letter-spacing: -0.18333vw;
   font-weight: 500;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .course .view_wrap .tab_wrap button:last-child {
-  border-right: 0.08333vw solid #999;
+  border-right: 1px solid #999;
 }
 
 .course .view_wrap .tab_wrap button.on {

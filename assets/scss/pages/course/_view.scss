@@ -264,7 +264,7 @@
             width: 100%;
             button {
                 width: calc(100% / 4);
-                border: vw(0.5) solid #999;
+                border: px(0.5) solid #999;
                 border-right: 0 solid #000;
                 background-color: #f3f3f3;
                 height: vw(53);
@@ -272,8 +272,9 @@
                 font-size: vw(22);
                 letter-spacing: vw(-1.1);
                 font-weight: 500;
+                box-sizing: border-box;
                 &:last-child {
-                    border-right: vw(0.5) solid #999;
+                    border-right: px(0.5) solid #999;
                 }
                 &.on {
                     color:#fff;
