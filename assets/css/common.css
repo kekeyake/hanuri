@@ -4697,9 +4697,9 @@ footer.footer .t1:last-child {
   margin-left: 1.91667vw;
   background-image: url(../img/ico_star.png);
   background-repeat: no-repeat;
-  background-size: 16.66667vw;
+  background-size: cover;
   width: 16.66667vw;
-  height: 3.16667vw;
+  height: 3.33333vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num10 {
@@ -4707,43 +4707,43 @@ footer.footer .t1:last-child {
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num9 {
-  background-position: 0 -3.16667vw;
+  background-position: 0 -3.33333vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num8 {
-  background-position: 0 -6.16667vw;
+  background-position: 0 -6.66667vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num7 {
-  background-position: 0 -9.5vw;
+  background-position: 0 -10vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num6 {
-  background-position: 0 -12.66667vw;
+  background-position: 0 -13.33333vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num5 {
-  background-position: 0 -15.83333vw;
+  background-position: 0 -16.66667vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num4 {
-  background-position: 0 -19vw;
+  background-position: 0 -20vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num3 {
-  background-position: 0 -25.33333vw;
+  background-position: 0 -23.33333vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num2 {
-  background-position: 0 -28.5vw;
+  background-position: 0 -26.66667vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num1 {
-  background-position: 0 -31.66667vw;
+  background-position: 0 -30vw;
 }
 
 .course .view_wrap .tab_container .review .profile_box .point.num0 {
-  background-position: 0 -34.83333vw;
+  background-position: 0 -33.33333vw;
 }
 
 .course .view_wrap .tab_container .review .txt {

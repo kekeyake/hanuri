@@ -351,41 +351,41 @@
                         margin-left: vw(11.5);
                         background-image: url(../img/ico_star.png);
                         background-repeat: no-repeat;
-                        background-size: vw(100);
+                        background-size: cover;
                         width: vw(100);
-                        height: vw(19);
+                        height: vw(20);
                         &.num10 {
                             background-position: 0 0;
                         }
                         &.num9 {
-                            background-position: 0 vw(-19);
+                            background-position: 0 vw(-20);
                         }
                         &.num8 {
-                            background-position: 0 vw(-37);
+                            background-position: 0 vw(-40);
                         }
                         &.num7 {
-                            background-position: 0 vw(-57);
+                            background-position: 0 vw(-60);
                         }
                         &.num6 {
-                            background-position: 0 vw(-76);
+                            background-position: 0 vw(-80);
                         }
                         &.num5 {
-                            background-position: 0 vw(-95);
+                            background-position: 0 vw(-100);
                         }
                         &.num4 {
-                            background-position: 0 vw(-114);
+                            background-position: 0 vw(-120);
                         }
                         &.num3 {
-                            background-position: 0 vw(-152);
+                            background-position: 0 vw(-140);
                         }
                         &.num2 {
-                            background-position: 0 vw(-171);
+                            background-position: 0 vw(-160);
                         }
                         &.num1 {
-                            background-position: 0 vw(-190);
+                            background-position: 0 vw(-180);
                         }
                         &.num0 {
-                            background-position: 0 vw(-209);
+                            background-position: 0 vw(-200);
                         }
                     }
                 }
