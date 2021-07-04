@@ -392,6 +392,11 @@
                 }
                 .txt {
                     margin-top: vw(16.5);
+                    &::after {
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
                     p {
                         overflow : hidden;
                         text-overflow: ellipsis;

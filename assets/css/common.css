@@ -4752,6 +4752,12 @@ footer.footer .t1:last-child {
   margin-top: 2.75vw;
 }
 
+.course .view_wrap .tab_container .review .txt::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .course .view_wrap .tab_container .review .txt p {
   overflow: hidden;
   text-overflow: ellipsis;
