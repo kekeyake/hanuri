@@ -5,6 +5,7 @@
     }
 
     .btn_sort_list {
+        font-family: 'NanumSquare';
         display: flex;
         margin-top: vw(45);
         padding:0 vw(16);
@@ -40,6 +41,7 @@
     }
 
     .board_list {
+        font-family: 'NanumSquare';
         margin-bottom: vw(90);
         li {
             border-bottom: vw(0.5) solid #999;
