@@ -1,0 +1,95 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="online_wrap">
+            <p class="tit">독서지도사 양성과정 온라인 수강신청</p>
+            <ul class="registration_wrap">
+                <li>
+                    <b>교육일정</b>
+                    <div>
+                        <p class="t1">2021.09.01 ~ 2021.01.31 화목 10시</p>
+                    </div>
+                </li>
+                <li>
+                    <b>결제금액</b>
+                    <div>
+                        <p class="t1"><b>349,000원</b></p>
+                    </div>
+                </li>
+                <li>
+                    <b>교재배송 <br>주소입력</b>
+                    <div>
+                        <p class="i1">
+                            <input type="text">
+                            <button class="btn_link">검색</button>
+                        </p>
+                        <p class="i1 __100">
+                            <input type="text">
+                        </p>
+                        <p class="i1 __100">
+                            <input type="text">
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="agree_wrap">
+                <div class="tit">
+                    <input type="checkbox" class="checkbox">
+                    <p>[필수] 환불·연기·할인 정책 동의 보기</p>
+                </div>
+                <div class="info_box">
+                    <p class="stit">환불정책</p>
+                    <p class="txt">
+                        - 수강 이력이 없고 2021.09.25까지 신청 시 4개월차 수강료 환불 <br>
+                        - 2021.10.25까지 강의 20% 미만 수강 시 1개월 수강료 공제<br>
+                        - 교재가 발송된 경우 교재비 공제<br>
+                        - 외부 제휴 온라인 수강권 및 쿠폰은 수강신청 후 취소 및 환불 불가
+                    </p>
+
+                    <p class="stit">연기정책</p>
+                    <p class="txt">
+                        - 교육기간 1/2 경과 전까지 신청 가능<br>
+                        - 최대 6개월까지 연기 가능하며 기간 내에 직접 재시작하여야 함<br>
+                        - 연기 후 재연기, 환불, 반변경 불가
+                    </p>
+
+                    <p class="stit">할인정책 </p>
+                    <p class="txt">결제 후에 할인을 적용할 수 없음</p>
+                </div>
+                <div class="tit">
+                    <input type="checkbox" class="checkbox">
+                    <p>[필수] 멘토링을 위한 개인정보 제3자 제공 동의 보기</p>
+                </div>
+                <div class="info_box">
+                    <p class="s1">
+                        <b>제공목적</b> : 한우리 독서토론논술 지역센터에서 한우리 지도교사
+                        활동 안내를 위한 전화 멘토링 제공
+                    </p>
+                    <p class="s1">
+                        <b>제공기관</b> : 한우리열린교육
+                    </p>
+                    <p class="s1">
+                        <b>제공항목</b> : 이름, 연락처, 주소, 한우리캠퍼스 교육과정 수강 정보
+                    </p>
+                    <p class="s1">
+                        <b>보유·이용기간</b> : 수강신청 후 2년
+                    </p>
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <button class="btn" type="button">확인</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
