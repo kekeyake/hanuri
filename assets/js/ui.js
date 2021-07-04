@@ -125,6 +125,15 @@ $(function () {
         default:
             break;
     }
+
+    $('.tool_tip').on('click',function(){
+        var tg = $(this).attr('data-rel');
+        $('.' + tg).addClass('on');
+        console.log(tg);
+    });
+    $('.btn_closed_tooltip').on('click',function(){
+        $(this).parent('.tool_layer').removeClass('on');
+    });
     
 });
 

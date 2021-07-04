@@ -67,6 +67,7 @@
                     align-items: center;
                     padding:vw(15);
                     border-bottom: 0.5px solid #999;
+                    position: relative;
                     strong {
                         display: flex;
                         justify-content: space-between;
@@ -77,7 +78,7 @@
                         position: relative;
                         font-weight: 700;
                         // transform: translateY(6.5px);
-                        button {
+                        > button {
                             position: absolute;
                             left:50%;
                             top:vw(40);
@@ -108,7 +109,8 @@
                         flex-wrap: wrap;
                         font-size: vw(22);
                         letter-spacing: vw(-1.1);
-                        div {
+                        position: relative;
+                        > div {
                             display: flex;
                             align-items: center;
                             width: 100%;
@@ -136,12 +138,52 @@
                         }
                     }
                     .tool_layer {
+                        display: none;
+                        width: vw(570);
                         border: vw(0.5) solid #ee4500;
-                        padding:vw(35) vw(30);
+                        padding:vw(40) vw(35) vw(35) vw(30);
                         letter-spacing: vw(-1.1);
-                        font-size: vw(22);
+                        font-size: vw(20);
                         color:#333;
-                        
+                        position: absolute;
+                        top:vw(53);
+                        right:vw(1.5);
+                        background-color: #fff;
+                        z-index: 10;
+                        &.on {
+                            display: block;
+                        }
+                        &.tool2 {
+                            top:vw(73);
+                        }
+                        dl div {
+                            margin-bottom: vw(15);
+                        }
+                        .t1 {
+                            font-size: vw(22);
+                            font-weight: 700;
+                            margin-bottom: vw(5);
+                        }
+                        .t2 {
+                            padding-left: vw(25.5);
+                            background: url(../img/ico_bang.svg) no-repeat 0 50% / vw(20);
+                        }
+                        .t3 {
+                            padding-left: vw(25.5);
+                            background: url(../img/ico_bang2.svg) no-repeat 0 50% / vw(20);
+                        }
+                        .btn_closed_tooltip {
+                            border: 0 solid #000;
+                            background-color: #fff;
+                            position: absolute;
+                            right:vw(14);
+                            top:vw(13.5);
+                            width: vw(20);
+                            height: vw(20);
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }
                     .btn {
                         display: flex;
@@ -605,6 +647,23 @@
                                 transform: translateX(-50%);
                             }
                         }
+                        input {
+                            border: px(1.25) solid #999;
+                            height: px(20);
+                            border-radius: px(1.5);
+                            line-height: px(20);
+                        }                
+                        &.line1 {
+                            > div {
+                                padding:px(2.5) 0 px(2.5) px(10);
+                            }
+                        }
+                        &.align_top {
+                            align-items: stretch;
+                            strong {
+                                transform: translateY(3px);
+                            }
+                        }
                         > div {
                             width: calc(100% - 15px);
                             padding-left: px(10);
@@ -613,7 +672,7 @@
                             flex-wrap: wrap;
                             font-size: px(11);
                             letter-spacing: px(-0.55);
-                            div {
+                            > div {
                                 display: flex;
                                 align-items: center;
                                 width: 100%;
@@ -638,6 +697,54 @@
                             cursor: pointer;
                             img {
                                 width: 100%;
+                            }
+                        }
+                        .tool_layer {
+                            display: none;
+                            width: px(285);
+                            border: px(0.5) solid #ee4500;
+                            padding:px(20) px(17.5) px(17.5) px(15);
+                            letter-spacing: px(-0.5);
+                            font-size: px(10);
+                            color:#333;
+                            position: absolute;
+                            top:px(25);
+                            right:px(30);
+                            background-color: #fff;
+                            z-index: 10;
+                            &.on {
+                                display: block;
+                            }
+                            &.tool2 {
+                                top:px(35);
+                            }
+                            dl div {
+                                margin-bottom: px(7.5);
+                            }
+                            .t1 {
+                                font-size: px(11);
+                                font-weight: 700;
+                                margin-bottom: px(2.5);
+                            }
+                            .t2 {
+                                padding-left: px(12.75);
+                                background: url(../img/ico_bang.svg) no-repeat 0 50% / px(10);
+                            }
+                            .t3 {
+                                padding-left: px(12.75);
+                                background: url(../img/ico_bang2.svg) no-repeat 0 50% / px(10);
+                            }
+                            .btn_closed_tooltip {
+                                border: 0 solid #000;
+                                background-color: #fff;
+                                position: absolute;
+                                right:px(7);
+                                top:px(6);
+                                width: px(10);
+                                height: px(10);
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
                         .btn {
@@ -764,8 +871,8 @@
                                 display: inline-flex;
                                 align-items: center;
                                 height: px(19.5);
-                                padding:0 px(5);
-                                border-radius: px(19.75);
+                                padding:0 px(7.5);
+                                border-radius: px(5);
                                 background-color: #f3f3f3;
                             }
                         }

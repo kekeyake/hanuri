@@ -4318,6 +4318,7 @@ footer.footer .t1:last-child {
           align-items: center;
   padding: 2.5vw;
   border-bottom: 0.5px solid #999;
+  position: relative;
 }
 
 .course .view_wrap .info_wrap ul li strong {
@@ -4335,7 +4336,7 @@ footer.footer .t1:last-child {
   font-weight: 700;
 }
 
-.course .view_wrap .info_wrap ul li strong button {
+.course .view_wrap .info_wrap ul li strong > button {
   position: absolute;
   left: 50%;
   top: 6.66667vw;
@@ -4377,9 +4378,10 @@ footer.footer .t1:last-child {
       flex-wrap: wrap;
   font-size: 3.66667vw;
   letter-spacing: -0.18333vw;
+  position: relative;
 }
 
-.course .view_wrap .info_wrap ul li > div div {
+.course .view_wrap .info_wrap ul li > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4390,7 +4392,7 @@ footer.footer .t1:last-child {
   margin-top: 1.16667vw;
 }
 
-.course .view_wrap .info_wrap ul li > div div .btn_link {
+.course .view_wrap .info_wrap ul li > div > div .btn_link {
   margin-left: 1.66667vw;
   margin-right: 0;
 }
@@ -4415,11 +4417,60 @@ footer.footer .t1:last-child {
 }
 
 .course .view_wrap .info_wrap ul li .tool_layer {
+  display: none;
+  width: 95vw;
   border: 0.08333vw solid #ee4500;
-  padding: 5.83333vw 5vw;
+  padding: 6.66667vw 5.83333vw 5.83333vw 5vw;
   letter-spacing: -0.18333vw;
-  font-size: 3.66667vw;
+  font-size: 3.33333vw;
   color: #333;
+  position: absolute;
+  top: 8.83333vw;
+  right: 0.25vw;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer.on {
+  display: block;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer.tool2 {
+  top: 12.16667vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer dl div {
+  margin-bottom: 2.5vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer .t1 {
+  font-size: 3.66667vw;
+  font-weight: 700;
+  margin-bottom: 0.83333vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer .t2 {
+  padding-left: 4.25vw;
+  background: url(../img/ico_bang.svg) no-repeat 0 50%/3.33333vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer .t3 {
+  padding-left: 4.25vw;
+  background: url(../img/ico_bang2.svg) no-repeat 0 50%/3.33333vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer .btn_closed_tooltip {
+  border: 0 solid #000;
+  background-color: #fff;
+  position: absolute;
+  right: 2.33333vw;
+  top: 2.25vw;
+  width: 3.33333vw;
+  height: 3.33333vw;
+}
+
+.course .view_wrap .info_wrap ul li .tool_layer .btn_closed_tooltip img {
+  width: 100%;
 }
 
 .course .view_wrap .info_wrap ul li .btn {
@@ -5025,6 +5076,24 @@ footer.footer .t1:last-child {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .course .view_wrap .info_wrap ul li input {
+    border: 2.5px solid #999;
+    height: 40px;
+    border-radius: 3px;
+    line-height: 40px;
+  }
+  .course .view_wrap .info_wrap ul li.line1 > div {
+    padding: 5px 0 5px 20px;
+  }
+  .course .view_wrap .info_wrap ul li.align_top {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .course .view_wrap .info_wrap ul li.align_top strong {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
   .course .view_wrap .info_wrap ul li > div {
     width: calc(100% - 15px);
     padding-left: 20px;
@@ -5039,7 +5108,7 @@ footer.footer .t1:last-child {
     font-size: 22px;
     letter-spacing: -1.1px;
   }
-  .course .view_wrap .info_wrap ul li > div div {
+  .course .view_wrap .info_wrap ul li > div > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5049,7 +5118,7 @@ footer.footer .t1:last-child {
     width: 100%;
     margin-top: 7px;
   }
-  .course .view_wrap .info_wrap ul li > div div .btn_link {
+  .course .view_wrap .info_wrap ul li > div > div .btn_link {
     margin-left: 10px;
     margin-right: 0;
   }
@@ -5067,6 +5136,54 @@ footer.footer .t1:last-child {
     cursor: pointer;
   }
   .course .view_wrap .info_wrap ul li .tool_tip img {
+    width: 100%;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer {
+    display: none;
+    width: 570px;
+    border: 1px solid #ee4500;
+    padding: 40px 35px 35px 30px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    background-color: #fff;
+    z-index: 10;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer.on {
+    display: block;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer.tool2 {
+    top: 70px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer dl div {
+    margin-bottom: 15px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer .t1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer .t2 {
+    padding-left: 25.5px;
+    background: url(../img/ico_bang.svg) no-repeat 0 50%/20px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer .t3 {
+    padding-left: 25.5px;
+    background: url(../img/ico_bang2.svg) no-repeat 0 50%/20px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer .btn_closed_tooltip {
+    border: 0 solid #000;
+    background-color: #fff;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  .course .view_wrap .info_wrap ul li .tool_layer .btn_closed_tooltip img {
     width: 100%;
   }
   .course .view_wrap .info_wrap ul li .btn {
@@ -5222,8 +5339,8 @@ footer.footer .t1:last-child {
         -ms-flex-align: center;
             align-items: center;
     height: 39px;
-    padding: 0 10px;
-    border-radius: 39.5px;
+    padding: 0 15px;
+    border-radius: 10px;
     background-color: #f3f3f3;
   }
   .course .view_wrap .tab_container .list {
