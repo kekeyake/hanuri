@@ -129,9 +129,136 @@
 }
 
 @include desktop {
-    // .course {
-    //     width: 1200px;
-    //     margin:0 auto;
-        
-    // }
+    
+    .course {
+        width: 1200px;
+        margin:0 auto;
+        .online_wrap {
+            padding-bottom:px(22.75);
+            > .tit {
+                padding:0 px(7.5);
+                font-size: px(15);
+                letter-spacing: px(-0.75);
+                color:#333;
+                font-weight: 700;
+                margin-bottom: px(10);
+            }
+            
+            .registration_wrap {
+                border-top: px(0.25) solid #bbb;
+                font-size: px(11);
+                letter-spacing: px(-0.5);
+                color:#333;
+                li {
+                    display: flex;
+                    padding:px(7.5);
+                    border-bottom: px(0.25) solid #bbb;
+                    &:last-child {
+                        b {
+                            line-height: px(13.5);
+                        }
+                    }
+                    b {
+                        width: px(50);
+                        font-weight: 700;
+                        color:#aaa;
+                    }
+                    div {
+                        width: px(236.5);
+                        .t1 b {
+                            color:#ee5400;
+                        }
+                        input {
+                            font-size: px(10);
+                            padding:0 px(5);
+                            border: px(0.5) solid #ddd;
+                            height: px(20);
+                        }
+                        .i1 {
+                            display: flex;
+                            margin-bottom: px(3.75);
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            &.__100 {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+                            input {
+                                width: px(83.5);
+                            }    
+                            .btn_link {
+                                height: px(20);
+                                border-radius: px(1.5);
+                                background-color: #666;
+                                color:#fff;
+                                font-weight: 700;
+                                border: 0 solid #000;
+                                padding:0 px(7.5);
+                                margin-left: px(5);
+                            }
+                        }
+                    }
+                }
+            }
+            .agree_wrap {
+                margin: px(15) px(7.5);
+                border: px(0.5) solid #666;
+                border-bottom: 0 solid #000;
+                .tit {
+                    display: flex;
+                    align-items: center;
+                    padding:px(10);
+                    font-size: px(11);
+                    font-weight: 400;
+                    letter-spacing: px(-0.22);
+                    color:#333;
+                    border-bottom: px(0.5) solid #666;
+                    background-color: #f6f6f6;
+                    p {
+                        cursor: pointer;
+                    }
+                }
+                
+                .info_box {
+                    display: none;
+                    border-bottom: px(0.5) solid #666;
+                    padding:px(12.5);
+                    padding-right: 0;
+                    font-size: px(10);
+                    letter-spacing: px(-0.25);
+                    &.on {
+                        display: block;
+                    }
+    
+                    .stit {
+                        font-weight: 700;
+                        color:#ee5400;
+                        margin-top: px(5);
+                    }
+                    .s1 {
+                        b {
+                            font-weight: 700;
+                        }
+                    }
+                }
+    
+            }
+            .btn_wrap {
+                padding:0 px(7.5);
+                .btn {
+                    width: 100%;
+                    height: px(30.25);
+                    background-color: #ee5400;
+                    color:#fff;
+                    border-radius: px(1.5);
+                    font-size: px(12.5);
+                    letter-spacing: px(-0.625);
+                    font-weight: 700;
+                }
+            }
+        }
+    
+    }
 }
