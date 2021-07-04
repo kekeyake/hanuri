@@ -4346,9 +4346,10 @@ footer.footer .t1:last-child {
 }
 
 .course .view_wrap .info_wrap ul li input {
-  border: 0.53333vw solid #999;
+  border: 0.08333vw solid #777;
   height: 6.66667vw;
   line-height: 6.66667vw;
+  padding: 0 1.66667vw;
 }
 
 .course .view_wrap .info_wrap ul li.line1 > div {
@@ -4382,10 +4383,17 @@ footer.footer .t1:last-child {
   position: relative;
 }
 
+.course .view_wrap .info_wrap ul li > div span {
+  color: #ee4500;
+  margin-left: 1.66667vw;
+}
+
 .course .view_wrap .info_wrap ul li > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4421,7 +4429,7 @@ footer.footer .t1:last-child {
   display: none;
   width: 95vw;
   border: 0.08333vw solid #ee4500;
-  padding: 6.66667vw 5.83333vw 5.83333vw 5vw;
+  padding: 3.33333vw 5.83333vw 4.58333vw 5vw;
   letter-spacing: -0.18333vw;
   font-size: 3.33333vw;
   color: #333;
@@ -5076,10 +5084,11 @@ footer.footer .t1:last-child {
             transform: translateX(-50%);
   }
   .course .view_wrap .info_wrap ul li input {
-    border: 2.5px solid #999;
+    border: 1px solid #777;
     height: 40px;
     border-radius: 3px;
     line-height: 40px;
+    padding: 0 10px;
   }
   .course .view_wrap .info_wrap ul li.line1 > div {
     padding: 5px 0 5px 20px;
@@ -5106,6 +5115,10 @@ footer.footer .t1:last-child {
         flex-wrap: wrap;
     font-size: 22px;
     letter-spacing: -1.1px;
+  }
+  .course .view_wrap .info_wrap ul li > div span {
+    color: #ee4500;
+    margin-left: 10px;
   }
   .course .view_wrap .info_wrap ul li > div > div {
     display: -webkit-box;

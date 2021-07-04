@@ -86,9 +86,10 @@
                         }
                     }    
                     input {
-                        border: vw(3.2) solid #999;
+                        border: vw(0.5) solid #777;
                         height: vw(40);
                         line-height: vw(40);
+                        padding:0 vw(10);
                     }                
                     &.line1 {
                         > div {
@@ -110,8 +111,13 @@
                         font-size: vw(22);
                         letter-spacing: vw(-1.1);
                         position: relative;
+                        span {
+                            color:#ee4500;
+                            margin-left: vw(10);
+                        }
                         > div {
                             display: flex;
+                            flex-wrap: wrap;
                             align-items: center;
                             width: 100%;
                             margin-top: vw(7);
@@ -141,7 +147,7 @@
                         display: none;
                         width: vw(570);
                         border: vw(0.5) solid #ee4500;
-                        padding:vw(40) vw(35) vw(35) vw(30);
+                        padding:vw(20) vw(35) vw(27.5) vw(30);
                         letter-spacing: vw(-1.1);
                         font-size: vw(20);
                         color:#333;
@@ -645,10 +651,11 @@
                             }
                         }
                         input {
-                            border: px(1.25) solid #999;
+                            border: px(0.5) solid #777;
                             height: px(20);
                             border-radius: px(1.5);
                             line-height: px(20);
+                            padding:0 px(5);
                         }                
                         &.line1 {
                             > div {
@@ -669,6 +676,10 @@
                             flex-wrap: wrap;
                             font-size: px(11);
                             letter-spacing: px(-0.55);
+                            span {
+                                color:#ee4500;
+                                margin-left: px(5);
+                            }
                             > div {
                                 display: flex;
                                 align-items: center;
