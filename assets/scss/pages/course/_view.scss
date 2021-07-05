@@ -141,6 +141,7 @@
                         cursor: pointer;
                         img {
                             width: 100%;
+                            vertical-align: top;
                         }
                     }
                     .tool_layer {
@@ -633,7 +634,7 @@
                 ul {
                     li {
                         display: flex;
-                        padding:px(7.5);
+                        padding:px(10) px(7.5);
                         border-bottom: 0.25px solid #999;
                         strong {
                             display: flex;
@@ -663,12 +664,18 @@
                             > div {
                                 padding:px(2.5) 0 px(2.5) px(10);
                             }
+                            &.l2 {
+                                padding:px(5) px(7.5);
+                            }
                         }
                         &.align_top {
                             align-items: stretch;
                             strong {
                                 transform: translateY(3px);
                             }
+                        }
+                        &.sale {
+                            padding-bottom: px(5);
                         }
                         > div {
                             width: calc(100% - 15px);
@@ -707,11 +714,12 @@
                             cursor: pointer;
                             img {
                                 width: 100%;
+                                vertical-align: top;
                             }
                         }
                         .tool_layer {
                             display: none;
-                            width: px(285);
+                            width: px(340);
                             border: px(0.5) solid #ee4500;
                             padding:px(20) px(17.5) px(17.5) px(15);
                             letter-spacing: px(-0.5);
@@ -719,7 +727,8 @@
                             color:#333;
                             position: absolute;
                             top:px(25);
-                            right:px(30);
+                            left: -71px;
+                            right:0;
                             background-color: #fff;
                             z-index: 10;
                             &.on {
@@ -773,7 +782,7 @@
                         .sale {
                             .btn,
                             .link {
-                                margin-bottom: px(3.5);
+                                margin-bottom: px(5);
                             }
                         }
                         .link {
@@ -781,10 +790,10 @@
                             align-items: center;
                             justify-content: center;
                             border: 0 solid #000;
-                            color:#333;
+                            color:#999;
                             height: px(17.5);
                             padding:0 px(6);
-                            background-color: #ccc;
+                            background-color: #eee;
                             margin-right: px(5);
                         }
                         .btn_link {
@@ -1005,9 +1014,9 @@
                         color:#333;
                         letter-spacing: px(-0.55);
                         font-weight: 500;
-                        background: #eee url(../img/ico_minus.svg) no-repeat right px(6.5) top 50% / px(14);
+                        background: #eee url(../img/ico_plus.svg) no-repeat right px(6.5) top 50% / px(14);
                         &.on {
-                            background: #eee url(../img/ico_plus.svg) no-repeat right px(6.5) top 50% / px(14);
+                            background: #eee url(../img/ico_minus.svg) no-repeat right px(6.5) top 50% / px(14);
                         }
                     }
                     ol {
