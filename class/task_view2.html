@@ -1,0 +1,123 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__task">
+            <div class="book_view">
+                <div class="__top">
+                    <img src="../assets/img/@book01.png" alt="">
+                    <div class="txt_box no_btn">
+                        <p class="t1">추억 가득한 할머니의 사랑 약방</p>
+                        <p class="t2">박혜선 글, 이승원 그림</p>
+                        <p class="t2">크레용하우스 펴냄</p>
+                    </div>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>제출기한</th>
+                            <td>2021.06.20까지 제출 시 첨삭 제공</td>
+                        </tr>
+                        <tr>
+                            <th>과제양식</th>
+                            <td>
+                                <p>독서지도계획안 양식.docx</p>
+                                <p>독서지도계획안 양식.hwp</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text_box">
+                    <p>초점과 유의사항에 맞추어 독서 수업의 차시별 계획안을 작성하세요.</p>
+                    <br>
+                    <p>[작성방법] 과제양식을 받아 작성하고 다른이름으로 저장하여 첨부합니다. 예) 독서지도계획안 양식_한우리.hwp</p>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>파일첨부</th>
+                            <td>
+                                <p><button class="btn">찾아보기</button></p>
+                                <p>독서지도계획안 양식_김서연.docx <button class="btn" style="margin-left: 10px;">삭제</button></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제출일</th>
+                            <td>2021.09.10</td>
+                        </tr>
+                        <tr>
+                            <th>점수</th>
+                            <td><b>78점</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>총평</h2>
+                <div class="text_box">
+                    <p>각 항목의 개념 이해가 잘되었습니다.</p>
+                    <br>
+                    <p>인물의 심리 변화를 알아보는 학습 목표는 좋습니다. <br>그러나 이를 통해 수업의 주제를 무엇으로 할 지 구체화되어 있지 않습니다.</p>
+                </div>
+                <table class="tbl_list3">
+                    <colgroup>
+                        <col style="width: 48%;">
+                        <col style="width: 25%;">
+                        <col style="width: 27%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="txt_l">채점항목</th>
+                            <th><span>배점</span></th>
+                            <th><span>점수</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="txt_l">초점 이해</td>
+                            <td class="td_bg">30</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_l">각 항목에 대한 개념 이해</td>
+                            <td class="td_bg">24</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_l">목표 진술</td>
+                            <td class="td_bg">15</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_l">교수-학습 활동 구성</td>
+                            <td class="td_bg">31</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_l">합계</td>
+                            <td class="td_bg">100</td>
+                            <td>78</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn_list">목록</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

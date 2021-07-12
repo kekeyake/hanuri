@@ -1,0 +1,66 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__task">
+            <ul class="task_list">
+                <li>2021.10.31까지 모든 과제를 제출해야 수료할 수 있습니다.</li>
+                <li>제출된 과제는 홈페이지와 블로그에 게시될 수 있습니다.</li>
+                <li>다른 학습자들의 감상문을 참고해 보세요. <a href="#a">우수감상문</a> </li>
+            </ul>
+            <ul class="book_list">
+                <li>
+                    <img src="../assets/img/@book01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">할머니의 사랑 약방</p>
+                        <p class="t2"><span>2021.06.20</span>까지 제출 시 첨삭 제공</p>
+                        <p class="t3">
+                            <span class="status type1">첨삭완료</span>
+                            85점
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../assets/img/@book02.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">3일 늦은 선물</p>
+                        <p class="t2"><span>2021.06.20</span>까지 제출 시 첨삭 제공</p>
+                        <p class="t3">
+                            <span class="status type2">제출완료</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../assets/img/@book03.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">나는 증인이 아닙니다</p>
+                        <p class="t2"><span>2021.06.20</span>까지 제출 시 첨삭 제공</p>
+                        <p class="t3">
+                            <span class="status type3">미제출</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../assets/img/@book04.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">회색 도시를 바꾼 예술가들</p>
+                        <p class="t2"><span>2021.06.20</span>까지 제출 시 첨삭 제공</p>
+                        <p class="t3">
+                            <span class="status type3">미제출</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

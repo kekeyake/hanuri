@@ -1,0 +1,189 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="class_list">
+            <div class="__top">
+                <div class="tit">
+                    <span>공지</span>
+                    <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                </div>
+                <div class="status_txt">
+                    <p>남은기간 <span>20</span>일 / 미제출과제 <span>1</span>건</p>
+                </div>
+                <div class="status_info">
+                    <div class="graph_wrap">
+                        <div class="graph_box">                        
+                            <span>권장진도</span>
+                            <div class="bar_wrap">
+                                <span class="gauge_bar" style="width: 80%;"></span>
+                                <em>80%</em>
+                            </div>
+                        </div>
+                        <div class="graph_box">
+                            <span>나의진도</span>
+                            <div class="bar_wrap">
+                                <span class="gauge_bar my" style="width: 70%;"></span>
+                                <em>70%</em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_txt type1">
+                        <span>조금 더 힙내세요!</span>
+                    </div>                    
+                </div>
+            </div>
+            <table class="class_tbl">
+                <colgroup>
+                    <col style="width: 12%;">
+                    <col style="width: auto;">
+                    <col style="width: 10%;">
+                    <col style="width: 28%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>차시명</th>
+                        <th>진도</th>
+                        <th>학습</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>오리엔테이션</td>
+                        <td>100%</td>
+                        <td>
+                            <button type="button" class="btn_review">복습하기</button>
+                        </td>
+                    </tr>
+                    <tr class="no_bg">
+                        <td></td>
+                        <td>독서와 독서지도의 이해</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>독서의 즐거움</td>
+                        <td>70%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>독서 지도의 이해</td>
+                        <td>50%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr class="no_bg">
+                        <td></td>
+                        <td>독서자료 선정</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>독서자료의 이해</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>독서 자료 선정의 이해</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>독서 자료 선정 방법</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="survey_ly __layer">
+            <p class="tit">첫 학습을 환영합니다.</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <div class="inner">
+                <div class="t1">
+                    <p>
+                        독서지도 전문가 김도전님을 응원합니다. <br>
+                        즐겁고 유익한 경험이 되도록 한우리도 노력할게요!
+                    </p>
+                    <img src="../assets/img/ico_survey.png" alt="">
+                </div>
+                <p class="q">본 교육과정을 알게 된 경로를 모두 선택해 주세요.</p>
+                <div class="inflow_list">
+                    <button type="button">인터넷 검색</button>
+                    <button type="button">유튜브</button>
+                    <button type="button">지인소개</button>
+                    <button type="button">한우리센터</button>
+                    <button type="button">SNS 수강후기</button>
+                    <button type="button">지역광고</button>
+                    <button type="button">카카오톡</button>
+                    <button type="button">아이엠스쿨</button>
+                    <button type="button">한우리블로그</button>
+                    <button type="button">TV</button>
+                    <button type="button">배너광고</button>
+                    <button type="button">기타입력</button>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_next">다음에 하기</button>
+                    <button type="button">확인</button>
+                </div>
+            </div>            
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+        <div class="evaluating_courses_ly __layer">
+            <p class="tit">과목 평가하기</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <div class="inner">
+                <div class="teacher_info">
+                    <img src="../assets/img/@teacher_01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">독서와 독서지도의 이해</p>
+                        <p class="t2">정은주 강사</p>
+                    </div>
+                </div>
+                <p class="q">과목의 전문성을 평가해 주세요.</p>
+                <div class="point_wrap">
+                    <p class="point num2"></p>
+                    <span><b>4점</b> : 우수</span>
+                </div>
+                <p class="q">강사의 전달력은 어떠했나요?</p>
+                <div class="point_wrap">
+                    <p class="point num10"></p>
+                    <span><b>5점</b> : 매우 우수</span>
+                </div>
+                
+                <div class="btn_wrap">
+                    <button type="button" class="btn_next">다음에 하기</button>
+                    <button type="button">확인</button>
+                </div>
+            </div>            
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>            
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

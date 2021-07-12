@@ -1,0 +1,67 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__task">
+            <ul class="task_list">
+                <li>2021.10.31까지 모든 과제를 제출해야 수료할 수 있습니다.</li>
+                <li>제출된 과제는 홈페이지와 블로그에 게시될 수 있습니다.</li>
+                <li>다른 학습자들의 감상문을 참고해 보세요. <a href="#a">우수감상문</a> </li>
+            </ul>
+            <div class="book_view">
+                <div class="__top">
+                    <img src="../assets/img/@book01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">추억 가득한 할머니의 사랑 약방</p>
+                        <p class="t2">박혜선 글, 이승원 그림</p>
+                        <p class="t2">크레용하우스 펴냄</p>
+                    </div>
+                    <button class="btn_pc_write">
+                        PC에서 <br>과제작성
+                    </button>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>첨삭기준</th>
+                            <td>2021.06.20까지 제출 시 첨삭 제공</td>
+                        </tr>
+                        <tr>
+                            <th>분량</th>
+                            <td>500자 기준 ±150자</td>
+                        </tr>
+                        <tr>
+                            <th>제출일</th>
+                            <td>2021.06.15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text_box">
+                    <p>[초점] 아래의 4가지 초점이 모두 포함되도록 한 편의 서평식 독서
+                    감상문 을 작성하십시오.</p>
+                    <br>
+                    <p>1) 책의 형식과 내용을 살펴 기본적인 서평을 하십시오.</p>
+                    <p>2) 이 책을 읽히기에 적당한 학년을 정하고 그 이유를 제시하십시오.</p>
+                    <p>3) 앞에서 설정한 학년을 대상으로 지도할 때 적당하다고 생각하는 학습 목표를 세 가지 정도 제시하고 그 이유를 설명하십시오.</p>
+                    <p>4) 그 목표에 알맞은 독서지도 활동들을 제시하십시오.</p>
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn_list">목록</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

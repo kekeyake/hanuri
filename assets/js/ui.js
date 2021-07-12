@@ -135,5 +135,24 @@ $(function () {
         $(this).parent('.tool_layer').removeClass('on');
     });
     
+
+    $('.status_info .info_txt').on('click', function(){
+        $('.bg_dimmed').addClass('on');
+        $('.survey_ly').addClass('on');
+    });
+    $('.survey_ly .btn_wrap button').on('click', function(){
+        $('.bg_dimmed').removeClass('on');
+        $('.__layer').removeClass('on');
+    });
+
+    $('.inflow_list button').on('click', function(){
+        $(this).toggleClass('on');
+    });
+
+    $('.btn_review').on('click', function(){
+        $('.bg_dimmed').addClass('on');
+        $('.evaluating_courses_ly').addClass('on');
+    });
+
 });
 

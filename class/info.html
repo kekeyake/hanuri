@@ -1,0 +1,88 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__task">
+            <div class="book_view">
+                <div class="list_view_top">
+                    <p>독서지도사 양성과정 142기</p>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>학습기간</th>
+                            <td>2021.01.01 ~ 2021.04.30</td>
+                        </tr>
+                        <tr>
+                            <th>학습진도</th>
+                            <td>80% 학습 (48/60차시)</td>
+                        </tr>
+                        <tr>
+                            <th>과제진도</th>
+                            <td>100% 제출 (4/4편)</td>
+                        </tr>
+                        <tr>
+                            <th>수료여부</th>
+                            <td>수료</td>
+                        </tr>
+                        <tr>
+                            <th>복습기간</th>
+                            <td>2021.05.01 ~ 2021.06.30</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_box">
+                    <button class="btn_study">학습연기</button>
+                    <button class="btn_cancel" disabled>환불</button>
+                    <button class="btn_confirmation">수강확인서</button>
+                    <button class="btn_certificates">수료증</button>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>결제정보</th>
+                            <td>2021.01.01 카드결제</td>
+                        </tr>
+                        <tr>
+                            <th>할인정보</th>
+                            <td>추천 30% 할인 114,000원</td>
+                        </tr>
+                        <tr>
+                            <th>결제금액</th>
+                            <td>311,000원</td>
+                        </tr>
+                        <tr>
+                            <th>한포인트</th>
+                            <td>10,000포인트 사용</td>
+                        </tr>
+                        <tr>
+                            <th>교재발송</th>
+                            <td>
+                                <p>발송완료</p>
+                                <p>서울 도봉구 방학로 148-4 (방학동, 삼성월드빌) 101호</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

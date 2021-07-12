@@ -1,0 +1,124 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__delay">
+            <div class="tit_box">
+                <p class="t1">교육과정 환불 정책 안내</p>
+                <p class="t2">평생교육법시행령 제23조 제2항 관련 (4개월 교육과정 기준)</p>
+            </div>
+            <table class="tbl_list4">
+                <colgroup>
+                    <col style="width:40%;">
+                    <col style="width:20%;">
+                    <col style="width:40%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>환불신청시점</th>
+                        <th>학습 진도</th>
+                        <th>공제 금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>수업시작 전</th>
+                        <td>-</td>
+                        <td rowspan="2">배송이 시작된 교재비</td>
+                    </tr>
+                    <tr>
+                        <th>수업시작일</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>개월차 1/3 경과 전</th>
+                        <td>5강 이하</td>
+                        <td>1개월차 수강료의 1/3</td>
+                    </tr>
+                    <tr>
+                        <th>개월차 1/2 경과 전</th>
+                        <td>8강 이하</td>
+                        <td>1개월차 수강료의 1/2</td>
+                    </tr>
+                    <tr>
+                        <th>개월차 1/2 경과 후</th>
+                        <td>15강 이하</td>
+                        <td>1개월차 수강료</td>
+                    </tr>
+                    <tr>
+                        <th>수업시작 1개월 이후</th>
+                        <td colspan="2">환불 불가</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="s_txt">※ 4개월 미만 교육과정 환불기준은 담당자에게 문의주시기 바랍니다.</p>
+            <div class="__top">
+                <p>독서지도사 양성과정 142기 학습연기 신청</p>
+            </div>
+            <table class="tbl_list">
+                <colgroup>
+                    <col style="width:25%;">
+                    <col style="width:75%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>신청기한</th>
+                        <td>2021.08.23 까지 연기 신청 가능</td>
+                    </tr>
+                    <tr>
+                        <th>교육기간</th>
+                        <td>2021.05.02 ~ 2021.10.31</td>
+                    </tr>
+                    <tr>
+                        <th>결제방법</th>
+                        <td>가상계좌</td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰번호</th>
+                        <td>
+                            <input type="text" value="010-2212-2235" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>환불계좌</th>
+                        <td>
+                            <input type="text" class="input" placeholder="본인 명의의 계좌 입력">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>신청사유</th>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="black">필수 동의</h2>
+            <ul class="agree_list type2">
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>환불 정책에 따라 수강료에서 <b>공제금액 제외 후 환불</b>됩니다.</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>신청후  담당자가 전화로 금액과 절차를 안내해 드립니다.</span>
+                    </label>
+                </li>
+            </ul>
+            <button class="btn btn_stay">환불 신청</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

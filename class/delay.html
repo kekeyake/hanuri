@@ -1,0 +1,77 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__delay">
+            <div class="__top">
+                <p>독서지도사 양성과정 142기 학습연기 신청</p>
+            </div>
+            <table class="tbl_list">
+                <colgroup>
+                    <col style="width:25%;">
+                    <col style="width:75%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>신청기한</th>
+                        <td>2021.08.23 까지 연기 신청 가능</td>
+                    </tr>
+                    <tr>
+                        <th>연기기간</th>
+                        <td>최대 6개월 (이후 과정 소멸)</td>
+                    </tr>
+                    <tr>
+                        <th>신청사유</th>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>필수 동의</h2>
+            <ul class="agree_list">
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>학습 이력, 과제 제출 <b>이력이 모두 초기화</b>됩니다.</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>연기 후 <b>재연기, 반변경, 환불 불가</b>합니다.</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>연기 후 6개월 내에 <b>직접 학습을 재시작</b>해야 합니다.</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>변경된 과제도서비 및 교재비는 <b>직접 부담</b>합니다.</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <span>담당 선생님의 안내를 받은 후 연기가 확정됩니다.</span>
+                    </label>
+                </li>
+            </ul>
+            <button class="btn btn_stay">학습연기 신청</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

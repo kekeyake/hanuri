@@ -1,0 +1,52 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__task">
+            <ul class="task_list">
+                <li>과제별 제출기한까지 제출하셔야 첨삭이 제공됩니다.</li>
+            </ul>
+            <table class="tbl_list2">
+                <colgroup>
+                    <col style="width: 48%;">
+                    <col style="width: 25%;">
+                    <col style="width: 27%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="txt_l">과제명</th>
+                        <th>제출기한</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="txt_l">1차 문학 논술</td>
+                        <td class="td_bg">2021.06.20</td>
+                        <td><span class="status">첨삭완료</span></td>
+                    </tr>
+                    <tr>
+                        <td class="txt_l">2차 문학 논술</td>
+                        <td class="td_bg">2021.06.20</td>
+                        <td><span class="status type1">제출완료</span></td>
+                    </tr>
+                    <tr>
+                        <td class="txt_l">3차 문학 논술</td>
+                        <td class="td_bg">2021.06.20</td>
+                        <td>제출전</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

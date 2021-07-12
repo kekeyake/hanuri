@@ -1,0 +1,59 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__refer">
+            <div class="__wrap_top">
+                <div class="search_box">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button class="btn __search"></button>
+                </div>
+            </div>
+            <ul class="book_list">
+                <li>
+                    <img src="../assets/img/@book01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">할머니의 사랑 약방</p>
+                        <p class="t2">미래에는 어떤 직업이 생겨날까</p>
+                        <p class="t3">
+                            <span class="status">137기</span> 이선희
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../assets/img/@book02.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">3일 늦은 선물</p>
+                        <p class="t2">헤어짐의 슬픔을 이겨 낸 틸리</p>
+                        <p class="t3">
+                            <span class="status">137기</span> 김유정
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../assets/img/@book03.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">나는 증인이 아닙니다</p>
+                        <p class="t2">작고 보잘것없는 것에서 피어나는 커다란 행복</p>
+                        <p class="t3">
+                            <span class="status">137기</span> 김이슬
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn_more">
+                더보기
+            </button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

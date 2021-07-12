@@ -1,0 +1,75 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="__notice">
+            <div class="__wrap_top">
+                <div class="search_box">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button class="btn __search"></button>
+                </div>
+            </div>
+            <ul class="__list">
+                <li>
+                    <a href="#a">
+                        <p>
+                            141회 온라인 자격시험 일정  안내
+                            <span class="reply">[10]</span> <i class="new">N</i>
+                        </p>
+                        <span class="date">2021.09.01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <p>
+                            참여자 전원 CU3천원권 드리는 수강후기 이벤트 꼭 참여해 주세요!
+                            <span class="reply">[10]</span>
+                        </p>
+                        <span class="date">2021.09.01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <p>
+                            ZOOM OT 참여, 댓글로 신청하세요.
+                            <span class="reply">[10]</span>
+                        </p>
+                        <span class="date">2021.09.01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <p>
+                            서평식 독서감상문 과제 제출 방법 안내
+                            <span class="reply">[10]</span>
+                        </p>
+                        <span class="date">2021.09.01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <p>
+                            독서지도계획안 ZOOM 실시간 수업 안내
+                            <span class="reply">[10]</span>
+                        </p>
+                        <span class="date">2021.09.01</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="btn btn_more">
+                더보기
+            </button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

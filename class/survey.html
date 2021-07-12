@@ -1,0 +1,165 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="class">
+        <div class="survey">
+            <div class="__top">
+                <img src="../assets/img/ico_survey_02.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">학습하시느라 수고하셨습니다!</p>
+                    <p class="t2">
+                        교육의 개선을 위해 <br>
+                        설문 참여를 부탁드립니다.
+                    </p>
+                </div>                
+            </div>
+            <h2>과목 평가</h2>
+            <div class="cont_inner">
+                <div class="teacher_info">
+                    <img src="../assets/img/@teacher_01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">독서와 독서지도의 이해</p>
+                        <p class="t2">정은주 강사</p>
+                    </div>
+                </div>
+                <div class="point_box">
+                    <dl>
+                        <dt>전문성</dt>
+                        <dd>
+                            <div class="point_wrap">
+                                <p class="point num9"></p>
+                                <span><b>4점</b> : 우수</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>전달력</dt>
+                        <dd>
+                            <div class="point_wrap">
+                                <p class="point num10"></p>
+                                <span><b>5점</b> : 매우 우수</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="teacher_info">
+                    <img src="../assets/img/@teacher_02.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">독서 자료 선정</p>
+                        <p class="t2">정진희 강사</p>
+                    </div>
+                </div>
+                <div class="point_box">
+                    <dl>
+                        <dt>전문성</dt>
+                        <dd>
+                            <div class="point_wrap">
+                                <p class="point num9"></p>
+                                <span><b>4점</b> : 우수</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>전달력</dt>
+                        <dd>
+                            <div class="point_wrap">
+                                <p class="point num10"></p>
+                                <span><b>5점</b> : 매우 우수</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <h2>교육과정 설문</h2>
+            <div class="cont_inner">
+                <p class="q_txt">1. 가장 유익한 과목과 이유는 무엇인가요?</p>
+                <select name="" id="" class="cus_select">
+                    <option value="">과목선택</option>
+                </select>
+                <textarea name="" id="" cols="30" rows="10" placeholder="이유는 무었인가요?"></textarea>
+
+                <p class="q_txt">2. 본 교육을 수강하신 목적이 무엇인가요? (중복 선택)</p>
+                <ul class="check_list">
+                    <li>                        
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                            <span>한우리 독서지도 교사로 활동하기 위해</span>
+                        </label>
+                    </li>
+                    <li>                        
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                            <span>독서지도 실무 노하우를 배우기 위해</span>
+                        </label>
+                    </li>
+                    <li>                        
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                            <span>자녀 독서지도를 위해</span>
+                        </label>
+                    </li>
+                    <li>                        
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                            <span>자기 계발을 위해</span>
+                        </label>
+                    </li>
+                    <li>                        
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                            <span>기타</span>
+                            <input type="text">
+                        </label>
+                    </li>
+                </ul>
+
+                <p class="q_txt">3. 위의 목적에 대해 만족하셨나요?</p>
+                <ul class="radio_list">
+                    <li>
+                        <label>
+                            <input type="radio" class="radio" name="radio">
+                            <span>매우 만족</span>
+                        </label>                        
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radio" name="radio">
+                            <span>만족</span>
+                        </label>                        
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radio" name="radio">
+                            <span>대체로 만족</span>
+                        </label>                        
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radio" name="radio">
+                            <span>불만족</span>
+                        </label>                        
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radio" name="radio">
+                            <span>매우 불만족</span>
+                        </label>                        
+                    </li>
+                </ul>
+
+                <p class="q_txt">4. 학습을 마친 소감을 남겨 주세요.</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

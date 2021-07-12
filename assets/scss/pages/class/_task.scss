@@ -1,0 +1,248 @@
+.class {
+    .__task {
+        padding-bottom: vw(100);
+        .task_list {
+            padding:vw(44) 0 vw(39) vw(38);
+            border-bottom: 1px solid #999;
+            li {
+                font-size: vw(20);
+                color:#666;
+                letter-spacing: vw(-1);
+                position: relative;
+                padding-left: vw(15);
+                margin-bottom: vw(10);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: "■";
+                    display: inline-flex;
+                    font-size: vw(7);
+                    color:#666;
+                    position: absolute;
+                    left: 0;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+                a {
+                    padding: vw(5) vw(15);
+                    border-radius: 20px;
+                    background-color: #8b59cf;
+                    color:#fff;
+                    font-size: vw(18);
+                    font-weight: 700;
+                    letter-spacing: vw(-0.9);
+                }
+            }
+        }
+        .book_list {
+            li {
+                border-bottom: 1px solid #999;
+                padding:vw(25) vw(30);
+                display: flex;
+                letter-spacing: vw(-1);
+                img {
+                    width: vw(120);
+                    margin-right: vw(30);
+                }
+                .txt_box {
+                    .t1 {
+                        font-size: vw(23);
+                        color:#333;
+                        margin-bottom: vw(5);
+                    }
+                    .t2 {
+                        font-size: vw(20);
+                        color:#999;
+                        margin-bottom: vw(19);
+                        span {
+                            color:#333;
+                        }
+                    }
+                    .t3 {
+                        font-size: vw(20);
+                        color:#333;
+                        .status {
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: vw(100);
+                            height: vw(33);
+                            border-radius: 5px;
+                            background-color: #333;
+                            color:#fff;
+                            font-size: vw(20);
+                            font-weight: 700;
+                            &.type1 {
+                                background-color: #333;
+                            }
+                            &.type2 {
+                                background-color: #999;
+                            }
+                            &.type3 {
+                                background-color: #ee4500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: vw(130);
+            height: vw(45);
+            background-color: #666;
+            border-radius: vw(3);
+            color:#fff;
+            font-weight: 700;
+            font-size: vw(22);
+            display: flex;
+            justify-content: center;
+            margin:vw(31) auto vw(62);
+        }
+        .book_view {
+            .__top {
+                display: flex;
+                padding:vw(25) vw(30);
+                img {
+                    width: vw(120);
+                    margin-right: vw(30);
+                }
+                .txt_box {
+                    width: vw(252);
+                    .t1 {
+                        font-size: vw(25);
+                        color:#333;
+                        font-weight: 500;
+                        letter-spacing: vw(-1.25);
+                        line-height: vw(28);
+                        word-break:keep-all;
+                        margin-bottom: vw(10);
+                    }
+                    .t2 {
+                        
+                        font-size: vw(20);
+                        color:#999;
+                        letter-spacing: vw(-1);
+                        line-height: vw(25);
+                    }
+                    &.no_btn {
+                        width: vw(380);
+                    }
+                }
+                .btn_pc_write {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: vw(105);
+                    height: vw(96);
+                    margin-left: auto;
+                    background-color: #ee4500;
+                    border-radius: 5px;
+                    color:#fff;
+                    font-size: vw(22);
+                    letter-spacing: vw(-1);
+                    line-height: 1.14;
+                    font-weight: 500;
+                    border: 0 solid #000;
+                }
+            }
+            .text_box {
+                padding:vw(35) vw(20) vw(30) vw(30);
+                font-size: vw(22);
+                color:#333;
+                letter-spacing: vw(-1);
+                border-bottom: 1px solid #999;
+                line-height: 1.36;
+                & + .tbl_list {
+                    border-top: 0 solid #000;
+                }
+            }
+            .list_view_top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:vw(17) vw(20) vw(18) vw(40);
+                background-color: #f3f3f3;
+                border-top: 1px solid #999;
+                p {
+                    font-size: vw(23);
+                    font-weight: 500;
+                    color:#333;
+                    letter-spacing: vw(-1.25);
+                }
+                .btn_pc_write {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: vw(51);
+                    margin-left: auto;
+                    padding:0 vw(14);
+                    background-color: #ee4500;
+                    border-radius: 5px;
+                    color:#fff;
+                    font-size: vw(25);
+                    letter-spacing: vw(-1);
+                    font-weight: 500;
+                    border: 0 solid #000;
+                }
+            }
+            .btn_box {
+                display: flex;
+                width: 100%;
+                padding:vw(30);
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 24%;
+                    height: vw(51);
+                    margin-right: 2%;
+                    border: 0 solid #000;
+                    border-radius: 5px;
+                    color:#fff;
+                    font-size: vw(22);
+                    letter-spacing: vw(-1.1);
+                    font-weight: 700;
+                    &:disabled {
+                        background-color: #ccc !important;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.btn_study,
+                    &.btn_cancel {
+                        background-color: #ee4500;
+                    }
+                    &.btn_confirmation,
+                    &.btn_certificates {
+                        background-color: #8b59cf;
+                    }
+                }
+            }
+        }
+        h2 {
+            width: 100%;
+            height: vw(60.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: vw(22);
+            font-weight: 500;
+            color:#333;
+            letter-spacing: vw(-1.1);
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #999;
+        }
+    }
+}
+
+@include desktop {
+    .class {
+        .__task {
+
+        }
+    }
+}

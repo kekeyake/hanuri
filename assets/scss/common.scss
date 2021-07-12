@@ -28,6 +28,13 @@
 @import 'pages/class/class';
 @import 'pages/class/order';
 
+@import 'pages/class/list';
+@import 'pages/class/survey';
+@import 'pages/class/notice';
+@import 'pages/class/task';
+@import 'pages/class/refer';
+@import 'pages/class/delay';
+
 body {font-size: vw(22);}
 /* common */
 select.select {
@@ -112,6 +119,22 @@ a.link {
 		opacity: 0.4;
 	}
 }
+.cus_select {
+	border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: vw(1);
+	border: vw(1) solid #777;
+	width: 100%;
+	height: vw(44);
+	padding:0 vw(18.5);
+	font-size: vw(22);
+	color:#333;
+	background:#f9f9f9 url(../img/ico_select.svg) no-repeat right vw(15) top 50% / vw(26);
+}
+/* IE 에서 Select box 화살표 제거 */
+.cus_select::-ms-expand {
+	display: none;
+}
 
 .checkbox {
 	display: inline-flex;
@@ -154,6 +177,83 @@ form .btn_cert {
 	font-weight: 700;
 	letter-spacing: vw(-1.1);
 }
+
+.__layer {
+	// display: none;
+	width: 100%;
+	position: fixed;
+	z-index: 201;
+	left: 0;
+	background-color: #fff;
+	border-top-left-radius: vw(20);
+	border-top-right-radius: vw(20);
+	padding:0 vw(15);
+	transition: all .5s;
+	bottom:-200%;
+	&.on {
+		display: block;
+		bottom:0;
+	}
+	.btn_setting_reload {
+		position: absolute;
+		left:vw(20);
+		top:vw(15);
+		width: vw(32);
+		height: vw(37);
+		border: 0 solid #000;
+		background: transparent;
+		opacity: .5;
+		img {
+			width: 100%;
+		}
+	}
+	.btn_setting_closed {
+		position: absolute;
+		right:vw(20);
+		top:vw(22);
+		width: vw(28);
+		height: vw(28);
+		border: 0 solid #000;
+		background: transparent;
+		opacity: .5;
+		img {
+			width: 100%;
+		}
+	}
+	.tit {
+		text-align: center;
+		font-weight: 700;
+		font-size: vw(28);
+		letter-spacing: vw(-1.4);
+		padding:vw(23) 0;
+		border-bottom: vw(0.5) solid #999;
+		line-height: vw(30);
+		margin-bottom: vw(38);
+	}
+	.btn_wrap {
+		margin: vw(32) 0;
+		display: flex;		
+		justify-content: space-between;
+		button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: vw(60);
+			width: 49%;
+			font-size: vw(25);
+			font-weight: 700;
+			letter-spacing: vw(-1.25);
+			border-radius: 3px;
+			background-color: #666;
+			color:#fff;
+			border: 0 solid #000;
+			&:last-child {
+				background-color: #ee5400;
+			}
+		}
+	}
+}
+
 /* pc layout common */
 @include desktop {
 	body {font-size: px(11);}
@@ -163,7 +263,60 @@ form .btn_cert {
 	.pc {
 		display: block;
 	}
-
+	
+	.__layer {
+		display: none;
+		width: px(310);
+		position: fixed;
+		z-index: 201;
+		left: 50%;
+		background-color: #fff;
+		border-radius: px(10);
+		padding:0 px(12);
+		top:50%;
+		bottom:auto;
+		transform: translate(-50%,-50%);
+		&.on {
+			display: block;
+			bottom:auto;
+		}
+		.btn_setting_reload {
+			position: absolute;
+			left:px(15);
+			top:px(7.5);
+			width: px(16);
+			height: px(19);
+			border: 0 solid #000;
+			background: transparent;
+			opacity: .5;
+			img {
+				width: 100%;
+			}
+		}
+		.btn_setting_closed {
+			position: absolute;
+			right:px(15);
+			top:px(11);
+			width: px(14);
+			height: px(14);
+			border: 0 solid #000;
+			background: transparent;
+			opacity: .5;
+			img {
+				width: 100%;
+			}
+		}
+		.tit {
+			text-align: center;
+			font-weight: 700;
+			font-size: px(12.5);
+			letter-spacing: px(-1.25);
+			padding:px(12) 0;
+			border-bottom: px(0.25) solid #999;
+			line-height: 1.2;
+			margin-bottom: px(20);
+		}
+	}
 	// main.main {
 		// padding-top: px(31);
 		

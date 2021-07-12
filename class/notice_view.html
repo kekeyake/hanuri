@@ -1,0 +1,77 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="sub_header">
+        <button class="btn __back"></button>
+        <h1><a href="#a">학습공지 목록</a></h1>
+    </div>
+    <div class="class">
+        <div class="__notice">
+            <div class="__view">
+                <div class="tit">
+                    <p>한우리캠퍼스 개인정보취급방침 및 이용약관 개정 안내 <span class="reply">[16]</span> <span class="date">2021.09.01</span></p>
+                </div>
+                <div class="stit">
+                    <i>첨부</i>
+                    <p class="t1"><a href="#">도서관_한우리독해력특강_교안.pdf</a></p>
+                </div>
+                <div class="stit">
+                    <i>링크</i>
+                    <p class="t2"><a href="#a">https://www.hanuricampus.com/customer/policy.jsp</a></p>
+                </div>
+                <div class="event_box">
+                    <img src="../assets/img/@view_event.png" alt="">
+                </div>
+            </div>
+            <button class="btn btn_list">목록</button>
+
+            <div class="reply_list">
+                <p class="reply_tit">댓글 10/120</p>
+                <div class="reply_write_box">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="button" class="btn_write">작성</button>
+                </div>
+                <div class="reply_list_box">
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_profile.svg" alt="">
+                        <span class="knick_name">김선우</span>
+                        <span class="date_txt">2021.05.17 13:54</span>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button">수정</button>
+                        <button type="button">삭제</button>
+                        <button type="button">답글</button>
+                    </div>
+                    <p class="txt">이벤트에 참여하고 메일 보냈습니다. 확인해 주세요.</p>
+                </div>
+                <div class="reply_comment">
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_reply.svg" alt="" class="reply">
+                        <span class="knick_name">관리자</span>
+                        <span class="date_txt">2021.05.17 13:54</span>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button">답글</button>
+                    </div>
+                    <p class="txt">
+                        이벤트에 참여해 주셔서 감사합니다. <br>
+                        즐겁게 학습하시기 바랍니다.
+                    </p>
+                </div>
+                <button class="btn btn_more">
+                    더보기
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
