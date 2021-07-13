@@ -1,0 +1,138 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="mypage">
+        <h3>독서지도사 자격시험 이력</h3>
+        <table class="tbl_list5">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:25%;">
+                <col style="width:25%;">
+                <col style="width:25%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><span>회차</span></th>
+                    <th><span>시헙일<br>발표일</span></th>
+                    <th><span>상태<br>수검번호</span></th>
+                    <th><span>응시결과</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>140</td>
+                    <td>
+                        <p>21.05.15</p> 
+                        <p>21.05.28</p> 
+                    </td>
+                    <td>결제대기</td>
+                    <td>최종합격</td>
+                </tr>
+                <tr>
+                    <td>139</td>
+                    <td>
+                        <p>21.03.15</p> 
+                        <p>21.03.28</p> 
+                    </td>
+                    <td>결제완료 <br>159728-5543</td>
+                    <td>필기 불합격<br>실기 합격</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#a" class="btn __guide"><span>자격증 신청 안내</span></a>
+
+        <h3>시험 프로세스</h3>
+        <div class="process_wrap">
+            <ol>
+                <li>
+                    <div class="ico_box">
+                        <span>시험접수</span>
+                    </div>
+                    <p>04.05 ~ 04.16</p>
+                </li>
+                <li>
+                    <div class="ico_box">
+                        <span>사전테스트</span>
+                    </div>
+                    <p>04.19 ~ 04.26</p>
+                </li>
+                <li>
+                    <div class="ico_box">
+                        <span>시험응시</span>
+                    </div>
+                    <p>05.15</p>
+                </li>
+                <li>
+                    <div class="ico_box">
+                        <span>합격자 발표</span>
+                    </div>
+                    <p>05.28</p>
+                </li>
+            </ol>
+        </div>
+
+        <h3>시험 유의사항</h3>
+        <ul class="desc_list">            
+            <li class="point">시험 응시는 PC만 가능(모바일, 태블릿 응시 불가)</li>
+            <li>Windows 7 이상, 1280x1024이상의 해상도에서 지원</li>
+            <li>인터넷 브라우저는 Chrome 및 Internet Explore11 버전을 권장</li>
+            <li class="point">테스트 및 시험 진행 전 메뉴얼을 숙지할 것</li>
+            <li class="point">사전테스트 미응시로 인한 시험 당일 오류 발생 등 불이익은 응시자에게 있음</li>
+        </ul>
+        <a href="#a" class="btn __download">자격시험 메뉴얼 다운로드</a>
+
+        <h3>사전테스트 체크사항</h3>
+        <ul class="desc_list">            
+            <li class="point">반드시 실제 시험에 응시할 PC를 이용할 것</li>
+            <li>필기 및 실기 샘플 문제 제공</li>
+            <li>온라인 시험 매뉴얼 사전 숙지할 것</li>
+            <li>실제 자격시험과 동일하게 테스트 가능하므로, 소요 시간 예측 가능</li>
+        </ul>
+
+        <h3>시험 응시 방법</h3>
+        <div class="exam_wrap">
+            <ol>
+                <li>PC 접속</li>
+                <li>응시버튼 클릭</li>
+                <li>로그인</li>
+                <li>프로그램 설치</li>
+                <li>테스트 및 응시</li>
+            </ol>
+        </div>
+
+        <h3>로그인 정보</h3>
+        <ul class="info_list">
+            <li>
+                <b>ID</b> :
+                <span>수검번호 (예) 211390-XXXX</span>
+            </li>
+            <li>
+                <b>PW</b> :
+                <span>생년월일 8자리 (예) 19800203</span>
+            </li>
+        </ul>
+
+        <h3>시험 시간</h3>
+        <ul class="info_list">
+            <li>
+                <b>필기</b> : 
+                <span>10:00 ~ 11:00 (60분)</span>
+            </li>
+            <li>
+                <b>실기</b> : 
+                <span>10:00 ~ 11:00 (60분)</span>
+            </li>
+        </ul>
+        <a href="https://www.igtc.kr/exam/accounts/login.do" target="_blank" class="btn __test">사전 테스트 응시하기(PC 전용)</a>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

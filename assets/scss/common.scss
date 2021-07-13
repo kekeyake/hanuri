@@ -35,6 +35,8 @@
 @import 'pages/class/refer';
 @import 'pages/class/delay';
 
+@import 'pages/mypage/mypage';
+
 body {font-size: vw(22);}
 /* common */
 select.select {
@@ -163,6 +165,235 @@ a.link {
 }
 .m {
 	display: block;
+}
+.tbl_list {
+	border-top: 1px solid #999;
+	th,td {
+		border-bottom: 1px solid #999;
+		font-size: vw(22);
+		letter-spacing: vw(-1);
+	}
+	th {
+		background-color: #f3f3f3;
+		font-weight: 500;
+		text-align: right;
+		padding:vw(17) vw(33) vw(16) vw(0);
+		vertical-align: middle;
+	}
+	td {
+		vertical-align: middle;
+		padding:vw(17) vw(28) vw(16);
+		font-weight: 400;
+		word-break: keep-all;
+		b {
+			font-weight: 700;
+			&.price {
+				color:#ee4500;
+			}
+		}
+		.btn {
+			height: vw(33);
+			color:#fff;
+			padding:0 vw(17);
+			background-color: #999;
+			border-radius: 5px;
+			font-size: vw(20);
+			font-weight: 700;
+		}
+		p {
+			margin-bottom: vw(10);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		textarea {
+			border: 1px solid #999;
+			width: 100%;
+			height: vw(81);
+			resize: none;
+			overflow-y: auto;
+			padding:vw(10) vw(20);
+			font-size: vw(22);
+		}
+		.input {
+			width: 100%;
+			border: 1px solid #999;
+			padding:vw(5) vw(10);
+		}
+		.select_box {
+			width: 80%;
+			.cus_select {
+				background-color: #fff;
+			}
+		}
+		.img_box {
+			width: vw(120);
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.tbl_list2 {
+	th,td {
+		border-bottom: 1px solid #bbb;
+	}
+	th {
+		padding:vw(16) 0 vw(15);
+		background-color: #f9f9f9;
+	}
+	td {
+		padding:vw(20) 0;
+		text-align: center;
+	}
+	.txt_l {
+		text-align: left;
+		padding-left: vw(40);
+	}
+	.td_bg {
+		background-color: #f9f9f9;
+	}
+	.status {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: vw(100);
+		height: vw(33);
+		border-radius: 5px;
+		background-color: #333;
+		color:#fff;
+		font-size: vw(20);
+		letter-spacing: vw(-1);
+		font-weight: 700;
+		&.type1 {
+			background-color: #999;
+		}
+	}
+}
+.tbl_list3 {
+	th,td {
+		border-bottom: 1px solid #bbb;
+	}
+	th {
+		padding:vw(16) 0 vw(15);
+		background-color: #f9f9f9;
+		letter-spacing: vw(-1);
+		span {
+			font-weight: 400;
+		}
+	}
+	td {
+		padding:vw(20) 0;
+		text-align: center;
+		background-color: #f9f9f9;
+	}
+	.txt_l {
+		text-align: left;
+		padding-left: vw(40);
+	}
+	.td_bg {
+		background-color: #fff;
+	}
+	.status {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: vw(100);
+		height: vw(33);
+		border-radius: 5px;
+		background-color: #333;
+		color:#fff;
+		font-size: vw(20);
+		letter-spacing: vw(-1);
+		font-weight: 700;
+		&.type1 {
+			background-color: #999;
+		}
+	}
+}
+.tbl_list4 {
+	border-top: 1px solid #999;
+	th,td {
+		border-bottom: 1px solid #999;
+		font-size: vw(22);
+		letter-spacing: vw(-1);
+		text-align: center;
+		padding:vw(17) 0 vw(16);
+	}
+	th {
+		background-color: #f3f3f3;
+		font-weight: 500;
+		vertical-align: middle;
+		border-left: 1px solid #999;
+		&:first-child {
+			border-left: 0 solid #000;
+		}
+	}
+	td {
+		vertical-align: middle;
+		font-weight: 400;
+		border-left: 1px solid #999;
+		&:first-child {
+			border-left: 0 solid #000;
+		}
+	}
+}
+.tbl_list5 {
+	border-top: 1px solid #999;
+	th,td {
+		border-bottom: 1px solid #999;
+		font-size: vw(22);
+		letter-spacing: vw(-1);
+		text-align: center;
+		padding:vw(17) 0 vw(16);
+	}
+	th {
+		background-color: #f3f3f3;
+		font-weight: 400;
+		vertical-align: middle;		
+	}
+	td {
+		vertical-align: middle;
+		font-weight: 400;		
+	}
+}
+.tbl_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:vw(17) vw(20) vw(18) vw(40);
+	background-color: #f3f3f3;
+	border-top: 1px solid #999;
+	&.txt_c {
+		p {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&.no_bdt {
+		border-top: 0 solid #000;
+	}
+	p {
+		font-size: vw(23);
+		font-weight: 500;
+		color:#333;
+		letter-spacing: vw(-1.25);
+	}
+	.btn_pc_write {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: vw(51);
+		margin-left: auto;
+		padding:0 vw(14);
+		background-color: #ee4500;
+		border-radius: 5px;
+		color:#fff;
+		font-size: vw(25);
+		letter-spacing: vw(-1);
+		font-weight: 500;
+		border: 0 solid #000;
+	}
 }
 form .btn_cert {
 	position: absolute;

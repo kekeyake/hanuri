@@ -1,0 +1,79 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="sub_header">
+        <button class="btn __back"></button>
+        <h1><a href="#a">시험이력 목록</a></h1>
+    </div>
+    <div class="mypage">
+        <div class="tbl_top no_bdt txt_c">
+            <p>140회 독서지도사 자격시험</p>
+        </div>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>수검번호</th>
+                    <td>211410-1148</td>
+                </tr>
+                <tr>
+                    <th>시험종목</th>
+                    <td>필기+실기</td>
+                </tr>
+                <tr>
+                    <th>시험장소</th>
+                    <td>온라인</td>
+                </tr>
+                <tr>
+                    <th>시험일</th>
+                    <td>2021.07.03</td>
+                </tr>
+                <tr>
+                    <th>발표일</th>
+                    <td>2021.07.16 <b class="price">[최종합격]</b></td>
+                </tr>
+                <tr>
+                    <th>사진</th>
+                    <td>
+                        <div class="img_box">
+                            <img src="../assets/img/@task_01.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>응시료</th>
+                    <td>70,000원</td>
+                </tr>
+                <tr>
+                    <th>결제방법</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="btn_wrap">
+            <button class="btn __cancel">삭제</button>
+            <button class="btn __cancel">목록</button>
+            <button class="btn __ok">결제</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

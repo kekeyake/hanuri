@@ -1,0 +1,47 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="mypage">
+        <div class="__wrap_top">
+            <div class="search_box">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button class="btn __search"></button>
+            </div>
+        </div>
+        <ul class="mypage_list">
+            <li>
+                <p>독서지도사 양성과정 142기</p>
+                <button class="btn _study">학습실 입장</button>
+            </li>
+            <li>
+                <p>원고지 첨삭</p>
+                <button class="btn _study">학습실 입장</button>
+            </li>
+            <li>
+                <p>유아독서지도사</p>
+                <button class="btn _restart">학습 재시작</button>
+            </li>
+            <li>
+                <p>논술지도사</p>
+                <button class="btn _review">복습하기</button>
+            </li>
+            <li>
+                <p>독서지도사 양성과정 100기</p>
+                <button class="btn _end">학습종료</button>
+            </li>
+        </ul>
+        <button class="btn btn_more">
+            더보기
+        </button>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

@@ -1,0 +1,93 @@
+@import 'helpers/mixins';
+@import 'base/reset';
+@import 'base/font';
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* pc layout common */
+@include desktop {
+	body {
+        margin: 0;
+        padding: 0;
+        font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .confirmation {
+        width: 1050px;
+        margin:0 auto;
+        position: relative;
+        .img1 {
+            width: 100%;
+        }
+        .img2 {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+        }
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: 198px;
+            h1 {
+                font-size: 70px;
+                font-weight: 700;
+            }
+            .btm {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span.s1 {
+                    display: inline-flex;
+                    width: 43px;
+                    font-size: 21px;
+                    line-height: 1.14;
+                    font-weight: 700;
+                    color:#000;
+                }
+                span.s2 {
+                    font-size: 50px;
+                    font-weight: 700;
+                    color:#000;
+                }
+            }
+        }
+        
+    }
+    
+    @page {
+        size: A4 landscape;
+        margin: 0;
+        /*size: landscape;*/
+    }
+    @media print {
+        .page {
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            margin: 1cm auto;
+            border-radius: 5px;
+            background: white;
+            // box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .subpage {
+            padding: 1cm;
+            height: 256mm;
+        }
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+
+}

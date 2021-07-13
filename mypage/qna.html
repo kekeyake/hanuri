@@ -1,0 +1,63 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="mypage">
+        <div class="__wrap_top">
+            <div class="search_box">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button class="btn __search"></button>
+            </div>
+        </div>
+        <ul class="__list">
+            <li>
+                <a href="#a">
+                    <i>대기</i>
+                    <p>              
+                        <span>과제를 언제까지 제출해야 수료할 수 있나요? 지금이라도 낼 수 있나요?</span>
+                        <span class="date">2021.09.01</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <i>대기</i>
+                    <p>              
+                        <span>학습완료 처리 요청</span>
+                        <span class="date">2021.08.20</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <i class="complete">완료</i>
+                    <p>              
+                        <span>학습 목표 달성이벤트는 어디서?</span>
+                        <span class="date">2021.08.20</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <i class="complete">완료</i>
+                    <p>              
+                        <span>질문이 있어요.</span>
+                        <span class="date">2021.08.20</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <button class="btn btn_more">더보기</button>
+        <a href="#a" class="btn __inquiry"><span>문의하기</span></a>
+        <a href="#a" class="btn __faq"><span>자주묻는 질문</span></a>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
