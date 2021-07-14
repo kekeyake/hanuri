@@ -1,4 +1,4 @@
-.class {
+.mypage {
     .online_wrap {
         padding-bottom:vw(45.5);
         > .tit {
@@ -130,7 +130,7 @@
 
 @include desktop {
     
-    .class {
+    .mypage {
         width: 1200px;
         margin:0 auto;
         .online_wrap {
