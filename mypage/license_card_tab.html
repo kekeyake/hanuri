@@ -1,0 +1,116 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="mypage">
+        <div class="list_tab">
+            <a href="#a" class="link on" data-rel="license_tab">자격이력</a>
+            <a href="#a" class="link" data-rel="card_tab">자격증 발급이력</a>
+        </div>
+        <div id="license_tab" class="tab_cont on">
+            <h3>자격 이력</h3>
+            <table class="tbl_list5">
+                <colgroup>
+                    <col style="width:30%;">
+                    <col style="width:25%;">
+                    <col style="width:20%;">
+                    <col style="width:25%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><span>자격</span></th>
+                        <th><span>유효기간</span></th>
+                        <th><span>상태</th>
+                        <th><span>보수교육</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>유아독서지도사</td>
+                        <td>21.04.02</td>
+                        <td>정지</td>
+                        <td><a href="#a" class="link">이력보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>자기주도학습 지도사 1급</td>
+                        <td>21.04.02</td>
+                        <td>유효</td>
+                        <td><a href="#a" class="link">이력보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>독서지도사</td>
+                        <td>21.04.02</td>
+                        <td>유효</td>
+                        <td><a href="#a" class="link">이력보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>스토리텔링 리딩코치</td>
+                        <td>21.04.02</td>
+                        <td>유효</td>
+                        <td><a href="#a" class="link">이력보기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="card_tab" class="tab_cont">
+            <h3>자격증 발급 이력</h3>
+            <table class="tbl_list5">
+                <colgroup>
+                    <col style="width:25%;">
+                    <col style="width:25%;">
+                    <col style="width:25%;">
+                    <col style="width:25%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><span>자격</span></th>
+                        <th><span>유효기간</span></th>
+                        <th><span>상태</th>
+                        <th><span>보수교육</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>신규 <br>결제대기</td>
+                        <td>유아독서지도사</td>
+                        <td>21.04.02</td>                        
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>평생 <br>발급완료</td>
+                        <td>스토리텔링 리딩코치</td>
+                        <td>21.04.02</td>                        
+                        <td><a href="#a" class="link">취득확인서</a></td>
+                    </tr>
+                    <tr>
+                        <td>신규 <br>입금대기</td>
+                        <td>논술지도사</td>
+                        <td>21.04.02</td>                        
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>평생 <br>발급완료</td>
+                        <td>대입논술 지도사</td>
+                        <td>21.04.02</td>                        
+                        <td><a href="#a" class="link">취득확인서</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="apply_certification">
+            <p class="t1">보수교육 16시간 이수하고 유효기간 없는</p>
+            <a href="#a">평생자격증 신청하기</a>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

@@ -128,8 +128,7 @@ $(function () {
 
     $('.tool_tip').on('click',function(){
         var tg = $(this).attr('data-rel');
-        $('.' + tg).addClass('on');
-        console.log(tg);
+        $('.' + tg).addClass('on');        
     });
     $('.btn_closed_tooltip').on('click',function(){
         $(this).parent('.tool_layer').removeClass('on');
@@ -152,6 +151,12 @@ $(function () {
     $('.btn_review').on('click', function(){
         $('.bg_dimmed').addClass('on');
         $('.evaluating_courses_ly').addClass('on');
+    });
+
+    $('.list_tab .link').on('click',function(){
+        var tg = $(this).attr('data-rel');
+        $(this).addClass('on').siblings('.link').removeClass('on');
+        $('#' + tg).addClass('on').siblings('.tab_cont').removeClass('on');
     });
 
 });

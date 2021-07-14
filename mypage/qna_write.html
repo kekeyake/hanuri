@@ -1,0 +1,47 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">    
+    <div class="mypage">
+        <div class="__write">
+            <div class="inquiry_box">
+                <label>분류</label>
+                <select name="" id="" class="cus_select">
+                    <option value="">독서지도사</option>
+                </select>
+            </div>
+            <div class="inquiry_box">
+                <label>제목</label>                
+                <input type="text" placeholder="제목을 입력하세요">                
+            </div>
+            <div class="inquiry_box">
+                <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <div class="inquiry_box">
+                <label>파일첨부 <span>(50MB 이하)</span></label>
+                <div class="attach_file">
+                    <button class="btn" type="button">찾아보기</button>
+                    <span>스크린샷.pdf</span>
+                    <button class="btn" type="button">삭제</button>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox_wrap">
+            <label>
+                <input type="checkbox" class="checkbox">
+                <span>답변 알림톡, 학습 정보 및 이벤트 SMS 수신 동의</span>
+            </label>
+        </div>
+        <button class="btn __ok">확인</button>
+        
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

@@ -7926,6 +7926,10 @@ footer.footer .t1:last-child {
   background-color: #ee4500;
 }
 
+.mypage table + h3 {
+  margin-top: 5vw;
+}
+
 .mypage h3 {
   font-size: 4.16667vw;
   font-weight: 700;
@@ -7988,6 +7992,10 @@ footer.footer .t1:last-child {
 }
 
 .mypage > .btn.__test {
+  background-color: #ee4500;
+}
+
+.mypage > .btn.__ok {
   background-color: #ee4500;
 }
 
@@ -8366,6 +8374,259 @@ footer.footer .t1:last-child {
 
 .mypage .__view .bg_gray {
   background: #f9f9f9;
+}
+
+.mypage .__write {
+  border-top: 1px solid #999;
+}
+
+.mypage .__write .inquiry_box {
+  padding: 0 5vw;
+  border-bottom: 1px solid #999;
+  letter-spacing: -0.07333vw;
+}
+
+.mypage .__write .inquiry_box label {
+  display: block;
+  color: #999;
+  font-weight: 700;
+  margin: 3.33333vw 0 1.66667vw;
+  font-size: 3.66667vw;
+}
+
+.mypage .__write .inquiry_box label span {
+  font-weight: 400;
+}
+
+.mypage .__write .inquiry_box .cus_select {
+  width: 70%;
+  margin-bottom: 3.33333vw;
+  background-color: #fff;
+}
+
+.mypage .__write .inquiry_box input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 3.33333vw;
+  padding: 0 2.5vw;
+  height: 8.08333vw;
+  font-size: 3.66667vw;
+  border: 1px solid #999;
+  color: #333;
+}
+
+.mypage .__write .inquiry_box input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box input::placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box textarea {
+  width: 100%;
+  margin: 5vw 0;
+  padding: 3.5vw 2.5vw;
+  height: 49.25vw;
+  font-size: 3.66667vw;
+  border: 1px solid #999;
+  color: #333;
+  resize: none;
+}
+
+.mypage .__write .inquiry_box textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box textarea::placeholder {
+  color: #ccc;
+}
+
+.mypage .__write .inquiry_box .attach_file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.91667vw;
+}
+
+.mypage .__write .inquiry_box .attach_file span {
+  font-size: 4vw;
+  color: #333;
+  margin: 0 2.33333vw;
+}
+
+.mypage .__write .inquiry_box .attach_file .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.16667vw;
+  height: 5.5vw;
+  font-size: 3.33333vw;
+  letter-spacing: 0.16667vw;
+  font-weight: 700;
+  color: #fff;
+  background-color: #999;
+  border-radius: 5px;
+}
+
+.mypage .checkbox_wrap {
+  padding: 4.75vw 5vw;
+}
+
+.mypage .checkbox_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #999;
+  padding: 3.58333vw 3.08333vw 3.41667vw;
+  background-color: #f6f6f6;
+  letter-spacing: -0.07333vw;
+  color: #333;
+}
+
+.mypage .checkbox_wrap + .btn {
+  margin-top: 0;
+}
+
+.mypage .list_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.16667vw;
+  padding: 0 2.5vw;
+  margin: 7.5vw 0;
+}
+
+.mypage .list_tab .link {
+  width: 50%;
+  font-size: 3.66667vw;
+  font-weight: 500;
+  color: #666;
+  height: 8.83333vw;
+  border: solid 0.08333vw #999;
+  background-color: #f3f3f3;
+}
+
+.mypage .list_tab .link.on {
+  color: #fff;
+  font-weight: 700;
+  background-color: #999;
+}
+
+.mypage .apply_certification {
+  width: 90vw;
+  height: 22.58333vw;
+  margin: 5.5vw auto 0;
+  padding: 6.66667vw 0 6.66667vw 28.41667vw;
+  letter-spacing: -0.16667vw;
+  background-color: #eee;
+  color: #333;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mypage .apply_certification .t1 {
+  font-size: 3.66667vw;
+  width: 100%;
+}
+
+.mypage .apply_certification a {
+  font-weight: 700;
+  color: #333;
+  font-size: 4.16667vw;
+  padding-right: 2.91667vw;
+  background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/1.25vw;
+}
+
+.mypage .apply_certification::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 7.75vw;
+  top: 3.33333vw;
+  width: 15.83333vw;
+  height: 15.83333vw;
+  border-radius: 100%;
+  background: #fff url(../img/ico_certification.svg) no-repeat 50% 2.91667vw/10.16667vw;
+}
+
+.mypage .tbl_list5 td:first-child {
+  padding: 2vw 5vw;
+  word-break: keep-all;
+}
+
+.mypage .tbl_list5 .link {
+  width: 19.16667vw;
+  height: 7.66667vw;
+  color: #fff;
+  background-color: #8b59cf;
+  border-radius: 5px;
+}
+
+.mypage .tbl_list5 .txt_box {
+  text-align: left;
+}
+
+.mypage .tbl_list5 .txt_box .t1 {
+  font-size: 3.66667vw;
+  color: #333;
+  font-weight: 500;
+}
+
+.mypage .tbl_list5 .txt_box .date {
+  font-size: 3.33333vw;
+  color: #999;
+}
+
+.mypage .tab_cont {
+  display: none;
+}
+
+.mypage .tab_cont.on {
+  display: block;
 }
 
 @media (min-width: 1200px) {
