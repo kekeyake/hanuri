@@ -8,6 +8,16 @@
         $pixels * 2
     }px;
 }
+@function em($pixels) {
+    @return #{
+        $pixels * 0.72
+    }px;
+}
+@function pvw($pixels) {
+    @return #{
+        ($pixels * 100) / $print
+    }vw;
+}
 
 
 // @media (min-width: 768px) and (max-width: 1024px) {

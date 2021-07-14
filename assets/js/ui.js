@@ -74,7 +74,7 @@ $(function () {
         $(this).toggleClass('on').next('ol').toggleClass('on');
     });
 
-    $('.class .agree_wrap .tit').on('click',function(){
+    $('.mypage .agree_wrap .tit').on('click',function(){
         $(this).next('.info_box').toggleClass('on');
     });
 

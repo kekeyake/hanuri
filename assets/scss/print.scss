@@ -1,93 +1,563 @@
+@import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'helpers/functions';
 @import 'base/reset';
 @import 'base/font';
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif KR', serif;
+    color:#000;
+    font-weight: 700;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.__bg {
+    width: 100%;
+}
+.btm {
+    margin: pvw(98.5) auto 0;
+    font-family: "Noto Sans KR",Sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: max-content;
+    padding:0 pvw(20);
+    span.s1 {
+        display: inline-flex;
+        
+        width: pvw(53);
+        font-size: pvw(21);
+        line-height: 1.14;
+        font-weight: 700;
+        color:#000;
+    }
+    span.s2 {
+        font-size: pvw(50);
+        font-weight: 700;
+        color:#000;
+        margin-left: pvw(5);
+    }
+    .sign {
+        width: pvw(119);
+        position: absolute;
+        right:0;
+        z-index: -1;
+    }
+}
+.box {
+    width: 100%;
+    margin:2.5% auto;
+    position: relative;  
+}
+/* 수강확인서 */
+.confirmation {                      
+    .__inner {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        padding-top: pvw(170);
+        text-align: center;
+        h1 {
+            font-size: pvw(70);
+            font-weight: 700;
+            letter-spacing: pvw(14);
+        }
+        ul {
+            margin-top: pvw(100);
+            padding-left: pvw(139);
+            li {
+                text-align: left;
+                font-size: pvw(33);
+                margin-bottom: pvw(15);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .t1 {
+            margin-top: pvw(97.5);
+            font-size: pvw(40);
+            line-height: 1.88;
+        }
+        .t2 {
+            margin-top: pvw(127.5);
+            font-size: pvw(35);
+        }            
+    }        
+}
+
+/* 수료증 */
+.certificates {
+    .__inner {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        padding-top: pvw(140);
+        text-align: center;
+        .number_txt {
+            font-size: pvw(27);
+            text-align: left;
+            margin-left: pvw(84);
+        }
+        h1 {
+            margin-top: pvw(57);
+            font-size: pvw(70);
+            font-weight: 700;
+            letter-spacing: pvw(35);
+        }
+        ul {
+            margin-top: pvw(100);
+            padding-left: pvw(114);
+            li {
+                text-align: left;
+                font-size: pvw(33);
+                margin-bottom: pvw(15);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .t1 {
+            margin-top: pvw(110);
+            font-size: pvw(45);
+            line-height: 2;
+        }
+        .t2 {
+            margin-top: pvw(150);
+            font-size: pvw(35);
+        }            
+    } 
+}
+
+/* 자격취득확인서 */
+.qac {
+    .__inner {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        padding-top: pvw(140);
+        text-align: center;
+        .number_txt {
+            font-size: pvw(27);
+            text-align: left;
+            margin-left: pvw(84);
+        }
+        h1 {
+            margin-top: pvw(57);
+            font-size: pvw(70);
+            font-weight: 700;
+            letter-spacing: pvw(7);
+        }
+        ul {
+            margin-top: pvw(100);
+            padding-left: pvw(114);
+            li {
+                text-align: left;
+                font-size: pvw(33);
+                margin-bottom: pvw(15);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .t1 {
+            margin-top: pvw(100);
+            font-size: pvw(45);
+            line-height: 2;
+        }
+        .t2 {
+            margin-top: pvw(125);
+            font-size: pvw(35);
+        }            
+    } 
+}
 
 /* pc layout common */
 @include desktop {
 	body {
         margin: 0;
         padding: 0;
-        font: 12pt "Tahoma";
+        font-family: 'Noto Serif KR', serif;
+        color:#000;
+        font-weight: 700;
     }
     * {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
     }
-    .confirmation {
-        width: 1050px;
-        margin:0 auto;
+
+    .__bg {
+        width: 100%;
+    }
+    .btm {
+        margin: 98.5px auto 0;
+        font-family: "Noto Sans KR",Sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        .img1 {
-            width: 100%;
+        width: max-content;
+        padding:0 20px;
+        span.s1 {
+            display: inline-flex;
+            width: 43px;
+            font-size: 21px;
+            line-height: 1.14;
+            font-weight: 700;
+            color:#000;
         }
-        .img2 {
+        span.s2 {
+            font-size: 50px;
+            font-weight: 700;
+            color:#000;
+            margin-left: 5px;
+        }
+        .sign {
+            width: 119px;
             position: absolute;
-            left:0;
-            top:0;
-            width: 100%;
+            right:0;
+            z-index: -1;
         }
+    }
+    .box {
+        width: 1050px;
+        margin:2.5% auto;
+        position: relative;  
+    }
+    /* 수강확인서 */
+    .confirmation {                      
         .__inner {
             position: absolute;
             left:0;
             top:0;
             width: 100%;
-            padding-top: 198px;
+            padding-top: 170px;
+            text-align: center;
             h1 {
                 font-size: 70px;
                 font-weight: 700;
+                letter-spacing: 14px;
             }
-            .btm {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                span.s1 {
-                    display: inline-flex;
-                    width: 43px;
-                    font-size: 21px;
-                    line-height: 1.14;
-                    font-weight: 700;
-                    color:#000;
-                }
-                span.s2 {
-                    font-size: 50px;
-                    font-weight: 700;
-                    color:#000;
+            ul {
+                margin-top: 100px;
+                padding-left: 139px;
+                li {
+                    text-align: left;
+                    font-size: 33px;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
-        }
-        
-    }
-    
-    @page {
-        size: A4 landscape;
-        margin: 0;
-        /*size: landscape;*/
-    }
-    @media print {
-        .page {
-            width: 21cm;
-            min-height: 29.7cm;
-            padding: 2cm;
-            margin: 1cm auto;
-            border-radius: 5px;
-            background: white;
-            // box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .subpage {
-            padding: 1cm;
-            height: 256mm;
-        }
-        .page {
-            margin: 0;
-            border: initial;
-            border-radius: initial;
-            width: initial;
-            min-height: initial;
-            box-shadow: initial;
-            background: initial;
-            page-break-after: always;
-        }
+            .t1 {
+                margin-top: 97.5px;
+                font-size: 40px;
+                line-height: 1.88;
+            }
+            .t2 {
+                margin-top: 127.5px;
+                font-size: 35px;
+            }            
+        }        
     }
 
+    /* 수료증 */
+    .certificates {
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: 140px;
+            text-align: center;
+            .number_txt {
+                font-size: 27px;
+                text-align: left;
+                margin-left: 84px;
+            }
+            h1 {
+                margin-top: 57px;
+                font-size: 70px;
+                font-weight: 700;
+                letter-spacing: 35px;
+            }
+            ul {
+                margin-top: 100px;
+                padding-left: 114px;
+                li {
+                    text-align: left;
+                    font-size: 33px;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .t1 {
+                margin-top: 123px;
+                font-size: 45px;
+                line-height: 2;
+            }
+            .t2 {
+                margin-top: 150px;
+                font-size: 35px;
+            }            
+        } 
+    }
+
+    /* 자격취득확인서 */
+    .qac {
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: 140px;
+            text-align: center;
+            .number_txt {
+                font-size: 27px;
+                text-align: left;
+                margin-left: 84px;
+            }
+            h1 {
+                margin-top: 57px;
+                font-size: 70px;
+                font-weight: 700;
+                letter-spacing: 7px;
+            }
+            ul {
+                margin-top: 100px;
+                padding-left: 114px;
+                li {
+                    text-align: left;
+                    font-size: 33px;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .t1 {
+                margin-top: 114px;
+                font-size: 45px;
+                line-height: 2;
+            }
+            .t2 {
+                margin-top: 125px;
+                font-size: 35px;
+            }            
+        } 
+    }
+}
+
+@page {
+    size:210mm 297mm; /*A4*/
+    margin:0mm;
+}
+@media print {
+    html, body {
+        margin:0;
+        padding:0;
+        page-break-after: avoid;
+        page-break-before: avoid;
+        font-family: 'Noto Serif KR', serif;
+        color:#000;
+        font-weight: 700;
+    }
+    .body, .page {margin-top:-1px} /*서브픽셀 해결1*/
+    .page:first-child {
+        page-break-before: auto;
+        page-break-inside: avoid
+    }
+    .page {
+        overflow:hidden;
+        position:relative;
+        width:210mm;
+        height:297mm; /*서브픽셀 해결1 사용시*/
+        height:calc(297mm - 1px); /*서브픽셀 해결2 - IE는 미지원*/
+        page-break-before: always
+    }
+    .page > .subpage { /*img를 .page안에 꽉차게 */
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        height:100%;
+    } 
+
+    .__bg {
+        width: 100%;
+    }
+    .btm {
+        margin:em(98.5) auto 0;
+        font-family: "Noto Sans KR",Sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: max-content;
+        padding:0 em(20);
+        span.s1 {
+            display: inline-flex;
+            width: em(43);
+            font-size: em(21);
+            line-height: 1.14;
+            font-weight: 700;
+            color:#000;
+        }
+        span.s2 {
+            font-size: em(50);
+            font-weight: 700;
+            color:#000;
+            margin-left: em(5);
+        }
+        .sign {
+            width: em(119);
+            position: absolute;
+            right:0;
+            z-index: -1;
+        }
+    }
+    .box {
+        width: 95%;
+        margin:2.5% auto;
+        position: relative;  
+    }
+    /* 수강확인서 */
+    .confirmation {
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: em(170);
+            text-align: center;
+            h1 {
+                font-size: em(70);
+                font-weight: 700;
+                letter-spacing: em(14);
+            }
+            ul {
+                margin-top: em(100);
+                padding-left: em(139);
+                li {
+                    text-align: left;
+                    font-size: em(33);
+                    margin-bottom: em(15);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .t1 {
+                margin-top: em(97.5);
+                font-size: em(40);
+                line-height: 1.88;
+            }
+            .t2 {
+                margin-top: em(127.5);
+                font-size: em(35);
+            }            
+        }            
+    }
+
+    /* 수료증 */
+    .certificates {
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: em(140);
+            text-align: center;
+            .number_txt {
+                font-size: em(27);
+                text-align: left;
+                margin-left: em(84);
+            }
+            h1 {
+                margin-top: em(57);
+                font-size: em(70);
+                font-weight: 700;
+                letter-spacing: em(35);
+            }
+            ul {
+                margin-top: em(100);
+                padding-left: em(114);
+                li {
+                    text-align: left;
+                    font-size: em(33);
+                    margin-bottom: em(15);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .t1 {
+                margin-top: em(123);
+                font-size: em(45);
+                line-height: 2;
+            }
+            .t2 {
+                margin-top: em(150);
+                font-size: em(35);
+            }            
+        } 
+    }
+
+    /* 자격취득확인서 */
+    .qac {
+        .__inner {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            padding-top: em(140);
+            text-align: center;
+            .number_txt {
+                font-size: em(27);
+                text-align: left;
+                margin-left: em(84);
+            }
+            h1 {
+                margin-top: em(57);
+                font-size: em(70);
+                font-weight: 700;
+                letter-spacing: em(7);
+            }
+            ul {
+                margin-top: em(100);
+                padding-left: em(114);
+                li {
+                    text-align: left;
+                    font-size: em(33);
+                    margin-bottom: em(15);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .t1 {
+                margin-top: em(114);
+                font-size: em(45);
+                line-height: 2;
+            }
+            .t2 {
+                margin-top: em(125);
+                font-size: em(35);
+            }            
+        } 
+    }
 }
