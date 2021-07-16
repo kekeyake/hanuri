@@ -68,7 +68,7 @@
                         </strong>
                         <div class="sale">
                             <button class="link" type="button">추천</button>
-                            <button class="btn on" type="button">회원학부모</button>
+                            <button class="btn on btn_member" type="button">회원학부모</button>
                             <button class="btn" type="button">단체3인</button>
                             <button class="btn" type="button">단체2인</button>
                             <button class="btn" type="button">교사사서</button>
@@ -114,9 +114,17 @@
                         <div>
                             <label class="btn_link">
                                 찾아보기
-                                <input type="file">
+                                <input type="file" class="add_file">
                             </label>
-                            <p>file.file</p>
+                            <input type="text" class="attachName" placeholder="file.file">
+                            <!-- <script>
+                                $("#excelFile").on('change',function(){
+                                    var fileValue = $("#excelFile").val().split("\\");
+                                    var fileName = fileValue[fileValue.length-1]; // 파일명    
+                                    $("#attachFileName").val(fileName);
+                                });
+                                
+                            </script> -->
                         </div>
                     </li>
                     <li>

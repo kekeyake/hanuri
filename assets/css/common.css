@@ -4239,6 +4239,10 @@ footer.footer .t1:last-child {
   padding: 0 1.66667vw;
 }
 
+.course .view_wrap .info_wrap ul li input.attachName {
+  border: 0 solid #000;
+}
+
 .course .view_wrap .info_wrap ul li.line1 > div {
   padding: 0.83333vw 0 0.83333vw 3.33333vw;
 }
@@ -4291,6 +4295,10 @@ footer.footer .t1:last-child {
 .course .view_wrap .info_wrap ul li > div > div .btn_link {
   margin-left: 1.66667vw;
   margin-right: 0;
+}
+
+.course .view_wrap .info_wrap ul li > div > div .attachName {
+  border: 0 solid #000;
 }
 
 .course .view_wrap .info_wrap ul li > div b {
@@ -4671,6 +4679,9 @@ footer.footer .t1:last-child {
     line-height: 40px;
     padding: 0 10px;
     font-size: 22px;
+  }
+  .course .view_wrap .info_wrap ul li input.attachName {
+    border: 0 solid #000;
   }
   .course .view_wrap .info_wrap ul li.line1 > div {
     padding: 5px 0 5px 20px;

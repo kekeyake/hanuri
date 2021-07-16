@@ -91,6 +91,13 @@ $(function () {
         
     });
 
+    $('.btn_member').on('click',function(){
+        $('.bg_dimmed').addClass('on');
+        $('.__member').addClass('on');
+        // $('.view_ly').addClass('on');
+        
+    });
+
     $('.btn_setting_closed').on('click',function(){
         $('.bg_dimmed').removeClass('on');
         $('.__layer').removeClass('on');
@@ -159,5 +166,19 @@ $(function () {
         $('#' + tg).addClass('on').siblings('.tab_cont').removeClass('on');
     });
 
+    $('.add_file').each(function (index, item) { 
+        $(this).on('change' ,function(){
+            var fileValue = $(this).val().split("\\");
+            var fileName = fileValue[fileValue.length-1]; // 파일명    
+            $(this).closest('div').find('.attachName').val(fileName);
+            console.log(fileName);
+        });
+
+    });    
+    
 });
+
+
+    
+
 

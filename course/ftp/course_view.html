@@ -1,0 +1,512 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+	<form name="form1" method="post" target="sysfrm" enctype="multipart/form-data" onsubmit="return goSubmit(this);">
+	<input type="hidden" id="g_id" name="g_id" value="{{gubun}}" />
+	<input type="hidden" id="course_id" name="course_id" />
+	<input type="hidden" id="step_id" name="step_id" value="" />
+	<input type="hidden" id="l_resultArea" name="l_resultArea" />
+	<input type="hidden" id="sale_type" name="sale_type" value="03" />
+	<input type="hidden" id="discount_type" name="discount_type" value="" />
+	<input type="hidden" id="pay_price" name="pay_price" value="0" />
+	<input type="hidden" id="disc_price" name="disc_price" value="0" />
+    <div class="course">
+        <div class="view_wrap">
+            <div class="tit_box">
+                <p class="tit"><a href="javascript:view_step_id();">{{gubun_name}}</a></p>
+                <!--@if(event_block)--><span>{{event_info}}</span><!--/if(event_block)-->
+            </div>
+            <div class="movie_wrap">
+                <div class="thumb_box">
+                    <img id="thumb_main_img" src="{{main_image_url}}" alt=""><!--../assets/img/@view_thumb.png-->
+                </div>
+                <div class="movie_box">
+                    <img src="../assets/img/@view_movie.png" alt="">
+                    <button type="button"><img src="../assets/img/ico_play.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="info_wrap">
+                <ul>
+                    <li>
+                        <strong><i>방</i><i>식</i></strong>
+                        <div>
+							<!--@loop(steps)-->
+                            <button class="btn" type="button" onclick="javascript:setCourseStep('{{steps.id}}');">{{steps.gubun_type_conv}}</button>
+							<!--@if(zoom_block)-->
+                            <button class="tool_tip" type="button" data-rel="tool1"><img src="../assets/img/ico_tool.svg" alt=""></button>
+                            <div class="tool_layer tool1">
+                                온라인 수업이지만 출석반처럼 정해진 시간에 줌(ZOOM) 플랫폼을 통해 비대면 실시간으로 수업하는 방식입니다. 강사와 질의응답 시간을 가지며 학습자끼리 소그룹 토의에 참여하는 방식으로 진행됩니다. 안전하게 비대면 수업으로 동기들과 함께 학습할 수 있어 동기 부여와 상호작용  효과를 기대할 수 있습니다.
+                                <button class="btn_closed_tooltip"><img src="../assets/img/ico_x.svg" alt=""></button>
+                            </div>
+							<!--/if(zoom_block)-->
+							<!--/loop(steps)-->
+							<!--
+                            <button class="btn" type="button" onclick="javascript:setCourseStep('off');">출석</button>
+                            <button class="btn" type="button" onclick="javascript:setCourseStep('zoom');">ZOOM</button>
+							-->		
+                        </div>
+                    </li>
+                    <li id="offStudyArea" class="align_top" style="display:none;">
+                        <strong><i>지</i><i>역</i></strong>
+                        <div>
+							<!--@loop(schedule_list)-->
+                            <button class="btn" type="button" onclick="javascript:setOffAreaMap('{{schedule_list.id}}');">{{schedule_list.name}}</button>
+							<!--/loop(schedule_list)-->
+                            <div id="offAreaMap" style="display:none;">
+							<!--
+                                <p>{{schedule_list.addr}}&nbsp;{{schedule_list.addr2}}</p>
+                                <a href="" onclick="return false;" cuid="{{schedule_list.id}}" id="location_wrap{{schedule_list.id}}" class="openpopx" title="{{schedule_list.location}}">지도</a>
+								<button class="btn_link" onclick="return false;" type="button">{{schedule_list.name}}</button>
+						    -->
+                            </div>
+                        </div>
+                    </li>
+                    <li id="periodArea" class="line1 l2" style="display:none;">
+                        <strong><i>일</i><i>정</i></strong>
+                        <div>
+                            <p id="p_study_period">2021.09.01 ~ 2021.01.31 화목 10시</p>
+                        </div>
+                    </li>
+                    <li class="line1 l2">
+                        <strong><i>할</i><i>인</i></strong>
+                        <div>
+                            <p>로그인 후 할인금액 확인 가능</p>
+                        </div>
+                    </li>
+                    <li class="align_top sale">
+                        <strong>
+                            <i>할</i><i>인</i> <button class="tool_tip" type="button" data-rel="tool2"><img src="../assets/img/ico_tool.svg" alt=""></button>                            
+                        </strong>
+                        <div class="sale">
+							<!--@nif(is_bosu_block)--><!--@if(recommend_yn)--><!--@nif(is_teachercourse_block)-->
+                            <button class="link" type="button" onclick="javascript:setDiscount('01');">추천</button>
+							<!--/nif(is_teachercourse_block)--><!--/if(recommend_yn)--><!--/nif(is_bosu_block)-->
+                            <button class="btn" type="button" onclick="javascript:setDiscount('02');">회원학부모</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('03');">단체3인</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('04');">단체2인</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('05');">교사사서</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('06');">대학생</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('07');">재수강</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('08');">바우처</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('09');">쿠폰</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('10');">준교사</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('11');">센터장추천</button>
+                            <button class="btn" type="button" onclick="javascript:setDiscount('12');">2021 교사소개 이벤트</button>
+                            
+                            <div class="tool_layer tool2">
+                                <dl>
+                                    <div>
+                                        <dt class="t1">할인 적용 안내</dt>
+                                        <dd class="t2">할인은 이벤트와 중복 적용되지 않습니다.</dd>
+                                        <dd class="t3">결제 후에는 할인이 적용되지 않습니다.</dd>
+                                    </div>
+                                    <div>
+                                        <dt class="t1">단체할인</dt>
+                                        <dd>단체할인은 모든 인원이 수강신청 된 후에 적용됩니다. 수강신청 후 할인 적용 안내를 받으신 뒤 결제하시기 바랍니다.</dd>
+                                    </div>
+                                    <div>
+                                        <dt class="t1">쿠폰(온라인 수강권)</dt>
+                                        <dd>온라인 수강권은 수강신청 후에는 환불되지 않으므로, 신청 전에 구매처에서 환불하시기 바랍니다. </dd>
+                                    </div>
+                                </dl>
+                                <button class="btn_closed_tooltip"><img src="../assets/img/ico_x.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="l_disinfo_1" style="display:none;"><!--회원추천-->
+                        <strong><i>추</i> <i>천</i><i>인</i></strong>
+                        <div>
+                            <button class="btn_link btn_recommend" type="button">검색</button>
+                            <p id="l_recomm_username"></p>
+							<input type="hidden" id="recom_is_history" name="recom_is_history" style="background-color:#f5f5f5;border:none;width:450px" />
+							<input type="hidden" id="recom_name" name="recomm_name" />
+							<input type="hidden" id="recom_group" name="recomm_step" />
+							<input type="hidden" id="recom_course" name="recomm_course" />
+							<input type="hidden" id="recom_phone" name="recomm_phone" />
+							<input type="hidden" id="recomm_dc_yn" name="recomm_dc_yn" value="" />
+                        </div>
+                    </li>
+                    <li id="l_disinfo_2" style="display:none;"><!--회원학부모-->
+                        <strong><i>회</i> <i>원</i></strong>
+                        <div>
+							<button class="btn_link btn_member" type="button">검색</button>
+                        </div>
+                    </li>
+                    <li id="l_disinfo_3" name="names5" id="names5" style="display:none;"><!--단체3인-->
+                        <strong><i>단</i> <i>체</i></strong>
+                        <div>
+                            <input type="text" class="input" placeholder="단체 3인 이상 이름 입력" style="width: 100%;">
+                        </div>
+                    </li>
+                    <li id="l_disinfo_4" name="names2" id="names2" style="display:none;"><!--단체2인-->
+                        <strong><i>단</i> <i>체</i></strong>
+                        <div>
+                            <input type="text" class="input" placeholder="단체 2인 이름 입력" style="width: 100%;">
+                        </div>
+                    </li>
+                    <li id="l_disinfo_5" style="display:none;"><!--교사사서-->
+                        <strong><i>첨</i> <i>부</i></strong>
+                        <div>
+							<label class="btn_link">찾아보기<input type="file" class="add_file"></label>
+                            <input type="text" class="attachName" placeholder="file.file">
+                        </div>
+                    </li>
+                    <li id="l_disinfo_6" style="display:none;"><!--대학생-->
+                        <strong><i>첨</i> <i>부</i></strong>
+                        <div>
+                            <label class="btn_link">찾아보기<input type="file" class="add_file"></label>
+                            <input type="text" class="attachName" placeholder="file.file">
+                        </div>
+                    </li>
+                    <li id="l_disinfo_9" style="display:none;"><!--쿠폰사용-->
+                        <strong><i>쿠</i> <i>폰</i></strong>
+                        <div>
+                            <input type="text" class="input" placeholder="쿠폰번호 입력" style="width:50%;"><br>
+                            <span>쿠폰번호 오류<span>
+                        </div>
+                    </li>
+                    <li id="l_disinfo_10" style="display:none;"><!--준교사-->
+                        <strong><i>소</i> <i>속</i></strong>
+                        <div>
+                            <input type="text" class="input" placeholder="소속센터 입력" style="width: 100%;">
+                        </div>
+                    </li>
+                    <li class="line1">
+                        <strong><i>교</i><i>재</i></strong>
+                        <div>
+                            <button class="btn on" type="button">증정</button>
+                            <button class="btn" type="button">구매</button>
+                            <button class="btn" type="button">비구매</button>
+                            <strike>45,000원</strike>
+                        </div>
+                    </li>
+                    <li id="l_study_price" style="display:none;">
+                        <strong><i>교</i><i>육</i><i>비</i></strong>
+                        <div id="p_price">
+                            <strike>545,000원</strike><b>381,500원 [30% 할인 이벤트]</b>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn_box">
+                    <button class="btn_list" type="button">목록</button>
+                    <button class="btn_apply" type="sumbit">수강신청</button>
+                </div>
+            </div>
+
+			<iframe name="info_tab" id="info_tab" src="" height="100%" width="100%" scrolling="no" frameborder="0"></iframe> 
+
+        <div id="l_search_child" class="view_ly __layer __member">
+            <p class="tit">한우리 독서토론논술 회원 정보</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <p class="t1">
+                정보를  등록할 경우 한우리열린교육 회원 조회에 활용하는 것에 동의하신 것으로 확인합니다. <br>
+                <b>정보 보유 기간</b> : 한우리캠퍼스 서비스 제공 기간까지
+            </p>
+            <ul class="input_box">
+                <li>
+                    <b>소속센터</b>
+                    <input type="text">
+                </li>
+                <li>
+                    <b>자녀이름</b>
+                    <input type="text" name="childname" id="childname">
+                </li>
+                <li>
+                    <b>생년월일(8자리)</b>
+                    <input type="text" name="juminfront" id="juminfront" maxlength="8">
+                    <span>예) 20110505</span>
+                </li>
+            </ul>
+            <div class="btn_wrap">
+                <button class="btn" type="button">확인</button>
+            </div>
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+        <div id="l_search_recommend" class="view_ly __layer __recommend">
+            <p class="tit">추천인 검색</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <p class="t1">
+                - 추천인 이름과 휴대폰 번호가 일치해야 검색 가능합니다. <br>
+                - 추천은 학습 2개월차부터 가능합니다. (당월 수강생 추천 불가)
+            </p> 
+            <ul class="input_box w100">
+                <li>
+                    <b>추천인 이름</b>
+                    <input type="text" name="p_username" id="p_username">
+                </li>
+                <li>
+                    <b>휴대폰 번호</b>
+                    <input type="text" name="p_handphone" id="p_handphone" maxlength="13" onkeyup="autoHypenPhone1();">
+                </li>
+            </ul>
+            <div class="btn_wrap">
+                <button class="btn" type="button" onclick="javascript:searchRuser();">검색하기</button>
+            </div>
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+    </div>
+	</form>  
+	{{form_script}}
+</main>
+
+<script language="JavaScript">
+	function view_step_id() {
+		var f = document.forms['form1'];
+		var step_id = f['step_id'].value;
+		alert(step_id);
+	}
+	function setCourseStep(val) {
+		$("#periodArea").hide();
+		var f = document.forms['form1'];
+		var v = f['g_id'].value;
+		if(v != "" && val != "") {
+			call("call_view_step.jsp?v=" + v + "&v2=" + val, "l_resultArea");
+		}
+	}
+	function setOffAreaMap(val) {
+		var f = document.forms['form1'];
+		var v = f['g_id'].value;
+		if(v != "" && val != "") {
+			call("call_view_area.jsp?v=" + val, "l_resultArea");
+		}
+	}
+	function searchRuser() {
+		var f = document.forms['form1'];
+		var v = f['p_username'].value;
+		var v2 = f['p_handphone'].value;
+		var v3 = f['pay_price'].value;
+		if(v != "" && v2 != "" && v3 != "") {
+			call("call_recom_user.jsp?v=" + v + "&v2=" + v2 + "&v3=" + v3, "l_recomm_username");
+		}
+	}
+	function setSaleType(v) {
+		var f = document.forms['form1'];
+		document.getElementById("discount_info").style.display = v == 1 ? "block" : "none";
+		<!--@if(recommend_yn)-->
+			document.getElementById("recomme_info").style.display = v == 2 ? "block" : "none";
+		<!--/if(recommend_yn)-->
+		<!--@if(coupon_yn)-->
+			document.getElementById("coupon_info").style.display = v == 4 ? "block" : "none";
+		<!--/if(coupon_yn)-->
+		<!--@if(main_course_yn)-->
+			//document.getElementById("inteacher_info").style.display = v == 5 ? "block" : "none";
+			if(v == 5) alert("교사소개 추천서를 보내주시기 바랍니다. ");
+		<!--/if(main_course_yn)-->
+
+		if(v != 1) {
+			for(var i=0, max=f['discount_type'].length; i<max; i++) {
+				f['discount_type'][i].checked = false;
+			}
+			document.getElementById("centernameArea").style.display = "none";
+			document.getElementById("centertopnameArea").style.display = "none";
+			document.getElementById("loveArea").style.display = "none";
+			//document.getElementById("groupArea10").style.display = "none";
+			document.getElementById("groupArea5").style.display = "none";
+			document.getElementById("fileArea").style.display = "none";
+			document.getElementById("studentArea").style.display = "none";
+			document.getElementById("parentArea").style.display = "none";
+			document.getElementById("visitArea").style.display = "none";
+		}
+
+		<!--@if(main_course_yn)-->
+		if(v == 4) {
+			f['paymethod'][0].disabled = false;
+			f['paymethod'][1].disabled = false;
+			f['paymethod'][2].disabled = false;
+			document.getElementById("card_info").style.display = "none";
+			document.getElementById("virtual_info").style.display = "none";
+			<!--@if(main_course_online_block)-->
+			f['paymethod'][3].checked = true;
+			document.getElementById("voucher_info").style.display = "none";
+			<!--/if(main_course_online_block)-->
+		} else {
+			f['book_buy_yn'][0].disabled = false;
+			f['book_buy_yn'][1].disabled = false;
+			<!--@nif(is_freebook_coupon_block)-->
+			<!--@if(main_course_online_block)-->
+			f['book_coupon'].disabled = false;
+			<!--/if(main_course_online_block)-->
+			<!--/nif(is_freebook_coupon_block)-->
+			f['book_buy_yn'][0].checked = true;
+			<!--@nif(main_course_yn)-->
+				f['hanpoint'].disabled = false;
+				f['department2'].disabled = false;
+			<!--/nif(main_course_yn)-->
+			f['paymethod'][0].disabled = false;
+			f['paymethod'][1].disabled = false;
+			f['paymethod'][2].disabled = false;
+			<!--@if(main_course_online_block)-->
+			f['paymethod'][3].checked = false;
+			<!--/if(main_course_online_block)-->
+		}
+		<!--/if(main_course_yn)-->
+
+		<!--@if(main_course_offline_block)-->
+		if(v == 8) {
+			document.getElementById("enteacher_info").style.display = "block";
+			<!--@if(refund01_block)-->
+			document.getElementById("delay01").style.display = "none";
+			document.getElementById("delay02").style.display = "block";
+			<!--/if(refund01_block)-->
+			f['book_buy_yn'][0].disabled = false;
+			f['book_buy_yn'][1].disabled = true;
+			f['item100123'][0].checked = true;
+			f['item100123'][1].disabled = true;
+			f['item100123'][2].disabled = true;
+		} else {
+			document.getElementById("enteacher_info").style.display = "none";
+			<!--@if(refund01_block)-->
+			document.getElementById("delay01").style.display = "flex";
+			document.getElementById("delay02").style.display = "none";
+			<!--/if(refund01_block)-->
+			f['book_buy_yn'][0].disabled = false;
+			f['book_buy_yn'][1].disabled = false;
+			f['item100123'][1].disabled = false;
+			f['item100123'][2].disabled = false;
+		}
+		<!--/if(main_course_offline_block)-->
+
+		<!--@if(is_onehand_block)-->
+		<!--@if(is_onehand_dc_block)-->
+		if(v == 1) {
+			$("input:radio[name='discount_type']:radio[value='07']").prop("checked", true);
+		} else {
+			$("input:radio[name='discount_type']:radio[value='07']").prop("checked", false);
+		}
+		<!--/if(is_onehand_dc_block)-->
+		<!--/if(is_onehand_block)-->
+
+	}
+	function setDiscount(v) {
+		var f = document.forms['form1'];
+		document.getElementById("l_disinfo_1").style.display = v == '01' ? "flex" : "none";
+		document.getElementById("l_disinfo_2").style.display = v == '02' ? "flex" : "none";
+		document.getElementById("l_disinfo_3").style.display = v == '03' ? "flex" : "none";
+		document.getElementById("l_disinfo_4").style.display = v == '04' ? "flex" : "none";
+		document.getElementById("l_disinfo_5").style.display = v == '05' ? "flex" : "none";
+		document.getElementById("l_disinfo_6").style.display = v == '06' ? "flex" : "none";
+		document.getElementById("l_disinfo_9").style.display = v == '09' ? "flex" : "none";
+		document.getElementById("l_disinfo_10").style.display = v == '10' ? "flex" : "none";
+
+		<!--@if(main_course_off_seoul_block)-->
+			setArea(v);
+		<!--/if(main_course_off_seoul_block)-->
+		setCentertopname(v);
+		<!--@if(main_course_block)-->
+			setCentername(v);
+			setVisit(v);
+			setParent(v);
+		<!--/if(main_course_block)-->
+		setCertificate(v);
+		<!--@if(family_love_yn)-->
+			setLove(v);
+		<!--/if(family_love_yn)-->
+		//setRetake(v);
+		setGroup(v);
+		setStudent(v);
+		//setFreshman(v);
+		//setFamilyhelp(v);
+	}
+	function autoHypenPhone1() {
+		var f = document.forms['form1'];
+		event = event || window.event;
+		var hpstr = f['p_handphone'].value;
+		hpstr = hpstr.replace(/[^0-9]/g, '').trim();
+		var tmp = '';
+		if(hpstr.length < 4) {
+			f['p_handphone'].value = hpstr;
+		} else if(hpstr.length < 7) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3);
+			f['p_handphone'].value = tmp;
+		} else if(hpstr.length < 11) {
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 3);
+			tmp += '-';
+			tmp += hpstr.substr(6);
+			f['p_handphone'].value = tmp;
+		} else {				
+			tmp += hpstr.substr(0, 3);
+			tmp += '-';
+			tmp += hpstr.substr(3, 4);
+			tmp += '-';
+			tmp += hpstr.substr(7);
+			f['p_handphone'].value = tmp;
+		}
+	}
+	function goCart(id, schid) {
+		<!--@if(login_block)-->
+		document.getElementById("sysfrm").src = "../mypage/cart_insert.jsp?id=" + id + (schid > 0 ? "&schid=" + schid : "");
+		<!--/if(login_block)-->
+		<!--@nif(login_block)-->
+		alert("로그인이 필요한 서비스입니다.");
+		location.href = "../member/login.jsp?returl={{SYS_PAGE_URL}}";
+		<!--/nif(login_block)-->
+		return;
+	}
+	function setCart(id) {
+		if("" != id) {
+			<!--@nif(login_block)-->
+				alert("로그인이 필요한 서비스입니다.");
+				location.href = "../member/login.jsp?returl={{SYS_PAGE_URL}}";
+				return;
+			<!--/nif(login_block)-->
+			call("call_cart.jsp?id=" + id, "wish" + id );
+		}
+
+	}
+	function goSubmit(f) {
+
+		if(!validate(f)) return false;
+
+		if(GetFormValue('form1', 'sale_type') == "01" && GetFormValue('form1', 'discount_type') == "") { alert("수강료 할인 상세내용을 선택 해주시기 바랍니다. "); return false; }
+
+		<!--@if(coupon_yn)-->
+		<!--@nif(is_hanteachercourse_block)-->
+		if(f['free_course'] && f['yes24_coupon']) {
+			if(f['free_course'].value != "" && f['yes24_coupon'].value != "") { alert("무료 쿠폰과 할인 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['gshome_coupon'] && f['book_coupon']) {
+			if(f['gshome_coupon'].value != "" && f['book_coupon'].value != "") { alert("GS홈쇼핑 쿠폰과 교재무료 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['edupang_coupon'] && f['yes24_coupon']) {
+			if(f['edupang_coupon'].value != "" && f['yes24_coupon'].value != "") { alert("에듀팡 쿠폰과 할인 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['edupang_coupon'] && f['book_coupon']) {
+			if(f['edupang_coupon'].value != "" && f['book_coupon'].value != "") { alert("에듀팡 쿠폰과 교재무료 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['kbs_coupon'] && f['yes24_coupon']) {
+			if(f['kbs_coupon'].value != "" && f['yes24_coupon'].value != "") { alert("온라인수강권 쿠폰과 할인 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['kbs_coupon'] && f['book_coupon']) {
+			if(f['kbs_coupon'].value != "" && f['book_coupon'].value != "") { alert("온라인수강권 쿠폰과 교재무료 쿠폰은 중복으로 사용 할 수 없습니다."); return false; }
+		}
+		if(f['sale_type'].value == '04' && f['kbs_coupon'].value != "" && f['book_buy_yn'].value == "Y") {
+			if(!confirm("교재 구매를 선택하신게 맞는지 확인하신 후 수강신청 해주시기 바랍니다. \n교재 비구매를 선택하시려면 취소버튼을 눌러주세요. ")) return false;
+		}
+		<!--/nif(is_hanteachercourse_block)-->
+		<!--/if(coupon_yn)-->
+	}
+</script>
+<script>
+	//팝업 띄우기
+	$('.openpopx').click(function(e){
+		var text=$(this).attr("id");
+		//아이디와 동일한 클래스 찾아 출력
+		$("."+text).show(function(){
+			//모달레이어 가로,세로정렬
+			$("."+text).css('marginTop', - $("."+text).height() / 2);
+			$("."+text).css('marginLeft', - $("."+text).width() / 2);
+		});
+		//e.preventDefault();
+		var cuid=$(this).attr("cuid");
+		wrapWindowByPop(function() {
+			eval("gMap" + cuid + "()");
+			//eval("gMap(\'" +  + "\',\'" + + "\')");
+		});
+	});
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

@@ -90,6 +90,9 @@
                         height: vw(40);
                         line-height: vw(40);
                         padding:0 vw(10);
+                        &.attachName {
+                            border: 0 solid #000;
+                        }
                     }                
                     &.line1 {
                         > div {
@@ -124,6 +127,9 @@
                             .btn_link {
                                 margin-left: vw(10);
                                 margin-right: 0;
+                            }
+                            .attachName {
+                                border: 0 solid #000;
                             }
                         }
                         b {
@@ -426,6 +432,9 @@
                             line-height: px(20);
                             padding:0 px(5);
                             font-size: px(11);
+                            &.attachName {
+                                border: 0 solid #000;
+                            }
                         }                
                         &.line1 {
                             > div {
