@@ -300,6 +300,301 @@
 
 @include desktop {
     .class {
-
+        .class_list {
+            padding-bottom: px(50);
+            .__top {
+                padding:px(27) px(15) px(26);
+                .tit {
+                    display: flex;
+                    align-items: center;
+                    font-size: px(11);
+                    color:#666;
+                    letter-spacing: px(-0.5);
+                    margin-bottom: px(9.5);
+                    span {
+                        font-size: px(10);
+                        color:#fff;
+                        font-weight: 700;
+                        letter-spacing: px(-0.5);
+                        margin-right: px(6.5);
+                        padding: px(3) px(9.25) px(2.5) px(8.5);
+                        border-radius: 5px;
+                        background-color: #c70000;
+                    }
+                }
+                .status_txt {
+                    border-radius: 5px;
+                    border: solid 0.5px #999;
+                    background-color: #eee;
+                    margin-bottom: px(12.5);
+                    padding:px(10) 0 px(8.5);
+                    text-align: center;
+                    font-size: px(11.5);
+                    font-weight: 500;
+                    letter-spacing: px(-0.625);
+                    color:#333;
+                    span {
+                        color:#c70000;
+                    }
+                }
+                .status_info {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .graph_wrap {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: px(152.5);
+                        height: px(28);
+                        span {
+                            font-size: px(9);
+                            font-weight: 500;
+                            color:#666;
+                            letter-spacing: px(-0.45);
+                        }
+                        .graph_box {
+                            display: flex;
+                            justify-content: space-between;
+                            height: px(12);
+                            .bar_wrap {
+                                width: px(115);
+                                height: px(11);
+                                border: solid 0.5px #777;
+                                background-color: #f9f9f9;
+                                position: relative;
+                                overflow: hidden;
+                                .gauge_bar {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    top:px(0.125);
+                                    left: 1%;
+                                    background-color: #999;
+                                    &.my {
+                                        background-color: #ee4500;
+                                    }
+                                }
+                                em {
+                                    position: absolute;
+                                    left:5%;
+                                    top:50%;
+                                    transform: translateY(-50%);
+                                    font-size: px(7.5);
+                                    font-weight: 700;
+                                    color:#fff;
+                                }
+                            }
+                        }
+                    }
+                    .info_txt {
+                        display: flex;
+                        width: px(107.5);
+                        height: px(28);
+                        padding:0 px(11) 0 px(35.25);
+                        align-items: center;
+                        justify-content: space-between;
+                        border-radius: 5px;
+                        background-color: #8b59cf;
+                        background-repeat: no-repeat;
+                        background-position: px(11.25) 50%;
+                        &.type1 {
+                            background-image:url(../img/ico_status_01.svg);
+                            background-size: px(18.5);
+                            padding:0 px(5) 0 px(36.25);
+                        }
+                        &.type2 {
+                            background-image:url(../img/ico_status_02.svg);
+                            background-size: px(21.5);
+                            background-position: px(11.5) 40%;
+                            padding:0 px(5) 0 px(38.5);
+                        }
+                        &.type3 {
+                            background-image:url(../img/ico_status_03.svg);
+                            background-position: px(16.25) 40%;
+                            background-size: px(13.75);
+                            padding:0 px(5) 0 px(34.25);
+                        }
+                        &.type4 {
+                            background-image:url(../img/ico_status_04.svg);
+                            background-position: px(10.25) 50%;
+                            background-size: px(15.5);
+                            padding:0 px(5) 0 px(28.75);
+                            span {
+                                font-size: px(10);
+                            }
+                        }
+                        span {
+                            font-size: px(8.5);
+                            font-weight: 700;
+                            color:#fff;
+                            letter-spacing: px(-0.5);
+                        }
+                    }
+                }
+            }
+            .class_tbl {
+                width: 100%;
+                font-size: px(11);
+                font-weight: 500;
+                letter-spacing: px(-0.5);
+                color:#333;
+                th,
+                td {
+                    text-align: center;
+                }
+                th:nth-child(2),
+                td:nth-child(2) {
+                    text-align: left;
+                }
+                th {
+                    border-top: 2px solid #bbb;
+                    border-bottom: 2px solid #bbb;
+                    background: #f9f9f9;
+                    padding:px(6.5) 0 px(6);
+                }
+                td {
+                    border-bottom: 1px solid #bbb;
+                    padding:px(6) 0;
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: px(54);
+                        height: px(17.5);
+                        margin:0 auto;
+                        color:#fff;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        font-size: px(11);
+                        border: 0 solid #000;
+                        &.btn_review {
+                            background-color: #999;
+                        }
+                        &.btn_learning {
+                            background-color: #ee4500;
+                        }
+                    }
+                }
+                .no_bg td {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+        .survey_ly {
+            .inner {
+                padding:0 px(7.5);
+            }
+            .t1 {
+                font-size: px(11);
+                font-weight: 500;
+                letter-spacing: px(-1.1);
+                color:#999;
+                text-align: center;
+                margin-bottom: px(20);
+                img {
+                    margin-top: px(18);
+                    width: px(100);
+                }
+            }
+            .q {
+                font-size: px(11);
+                font-weight: 500;
+                color:#333;
+                &::before {
+                    content: "Q";
+                    width: px(15.25);
+                    height: px(14.25);
+                    display: inline-flex;
+                    background-color: #666;
+                    border-radius: 3px;
+                    justify-content: center;
+                    align-items: center;
+                    color:#fff;
+                    line-height: px(13);
+                    margin-right:px(5.5);
+                }
+            }
+            .inflow_list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: px(11);
+                button {
+                    width: 24%;
+                    height: px(21);
+                    margin:0 1.3% 1.3% 0;
+                    border: solid 2px #ccc;
+                    background-color: #ffff;
+                    font-size: px(11);
+                    color:#333;
+                    letter-spacing: px(-1.1);
+                    &:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                    &.on {
+                        border: solid 2px #ee4500;
+                        color:#ee4500;
+                    }
+                }
+            }
+        }
+        .evaluating_courses_ly {
+            .inner {
+                padding:0 px(7.5);
+            }
+            
+            .teacher_info {
+                display: flex;
+                img {
+                    width: px(65);
+                    margin-right: px(10.5);
+                }
+                .t1 {
+                    font-weight: 500;
+                    margin-top: px(10);
+                    font-size: px(13.5);
+                    color:#333;
+                }
+                .t2 {
+                    font-weight: 500;
+                    font-size: px(12);
+                    color:#999
+                }
+            }
+            .q {
+                font-size: px(11);
+                font-weight: 500;
+                color:#333;
+                margin: px(19.5) 0 px(10);
+                &::before {
+                    content: "Q";
+                    width: px(15.25);
+                    height: px(14.25);
+                    display: inline-flex;
+                    background-color: #666;
+                    border-radius: 3px;
+                    justify-content: center;
+                    align-items: center;
+                    color:#fff;
+                    line-height: px(13);
+                    margin-right:px(5.5);
+                }
+            }
+            .point_wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-size: vw(25);
+                    color:#ee4500;
+                    b {
+                        font-weight: 500;
+                    }
+                }
+            }
+            .btn_wrap  {
+                margin-top: vw(54) !important;
+            }
+        }
     }
 }

@@ -242,7 +242,242 @@
 @include desktop {
     .class {
         .__task {
-
+            padding-bottom: px(50);
+            .task_list {
+                padding:px(22) 0 px(19.5) px(19);
+                border-bottom: 1px solid #999;
+                li {
+                    font-size: px(10);
+                    color:#666;
+                    letter-spacing: px(-0.5);
+                    position: relative;
+                    padding-left: px(7.5);
+                    margin-bottom: px(5);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &::before {
+                        content: "■";
+                        display: inline-flex;
+                        font-size: px(3.5);
+                        color:#666;
+                        position: absolute;
+                        left: 0;
+                        top:50%;
+                        transform: translateY(-50%);
+                    }
+                    a {
+                        padding: px(2.5) px(7.5);
+                        border-radius: 20px;
+                        background-color: #8b59cf;
+                        color:#fff;
+                        font-size: px(9);
+                        font-weight: 700;
+                        letter-spacing: px(-0.45);
+                    }
+                }
+            }
+            .book_list {
+                li {
+                    border-bottom: 1px solid #999;
+                    padding:px(12.5) px(15);
+                    display: flex;
+                    letter-spacing: px(-0.5);
+                    img {
+                        width: px(60);
+                        margin-right: px(15);
+                    }
+                    .txt_box {
+                        .t1 {
+                            font-size: px(11.5);
+                            color:#333;
+                            margin-bottom: px(2.5);
+                        }
+                        .t2 {
+                            font-size: px(10);
+                            color:#999;
+                            margin-bottom: px(9.5);
+                            span {
+                                color:#333;
+                            }
+                        }
+                        .t3 {
+                            font-size: px(10);
+                            color:#333;
+                            .status {
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: px(50);
+                                height: px(11.5);
+                                border-radius: 5px;
+                                background-color: #333;
+                                color:#fff;
+                                font-size: px(10);
+                                font-weight: 700;
+                                &.type1 {
+                                    background-color: #333;
+                                }
+                                &.type2 {
+                                    background-color: #999;
+                                }
+                                &.type3 {
+                                    background-color: #ee4500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn_list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: px(65);
+                height: px(22.5);
+                background-color: #666;
+                border-radius: px(1.5);
+                color:#fff;
+                font-weight: 700;
+                font-size: px(11);
+                display: flex;
+                justify-content: center;
+                margin:px(15.5) auto px(31);
+            }
+            .book_view {
+                .__top {
+                    display: flex;
+                    padding:px(12.5) px(15);
+                    img {
+                        width: px(60);
+                        margin-right: px(15);
+                    }
+                    .txt_box {
+                        width: px(126);
+                        .t1 {
+                            font-size: px(12.5);
+                            color:#333;
+                            font-weight: 500;
+                            letter-spacing: px(-0.625);
+                            line-height: px(14);
+                            word-break:keep-all;
+                            margin-bottom: px(5);
+                        }
+                        .t2 {
+                            
+                            font-size: px(10);
+                            color:#999;
+                            letter-spacing: px(-0.5);
+                            line-height: px(12.5);
+                        }
+                        &.no_btn {
+                            width: px(190);
+                        }
+                    }
+                    .btn_pc_write {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: px(52.5);
+                        height: px(48);
+                        margin-left: auto;
+                        background-color: #ee4500;
+                        border-radius: 5px;
+                        color:#fff;
+                        font-size: px(11);
+                        letter-spacing: px(-0.5);
+                        line-height: 1.14;
+                        font-weight: 500;
+                        border: 0 solid #000;
+                    }
+                }
+                .text_box {
+                    padding:px(17.5) px(10) px(15) px(15);
+                    font-size: px(11);
+                    color:#333;
+                    letter-spacing: vpx(-0.5);
+                    border-bottom: 1px solid #999;
+                    line-height: 1.36;
+                    & + .tbl_list {
+                        border-top: 0 solid #000;
+                    }
+                }
+                .list_view_top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding:px(8.5) px(10) px(9) vw(20);
+                    background-color: #f3f3f3;
+                    border-top: 1px solid #999;
+                    p {
+                        font-size: px(11.5);
+                        font-weight: 500;
+                        color:#333;
+                        letter-spacing: px(-0.625);
+                    }
+                    .btn_pc_write {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: px(25.5);
+                        margin-left: auto;
+                        padding:0 px(7);
+                        background-color: #ee4500;
+                        border-radius: 5px;
+                        color:#fff;
+                        font-size: px(12.5);
+                        letter-spacing: px(-0.5);
+                        font-weight: 500;
+                        border: 0 solid #000;
+                    }
+                }
+                .btn_box {
+                    display: flex;
+                    width: 100%;
+                    padding:px(15);
+                    button, a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 24%;
+                        height: px(25.5);
+                        margin-right: 2%;
+                        border: 0 solid #000;
+                        border-radius: 5px;
+                        color:#fff;
+                        font-size: px(11);
+                        letter-spacing: px(-0.5);
+                        font-weight: 700;
+                        &:disabled {
+                            background-color: #ccc !important;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn_study,
+                        &.btn_cancel {
+                            background-color: #ee4500;
+                        }
+                        &.btn_confirmation,
+                        &.btn_certificates {
+                            background-color: #8b59cf;
+                        }
+                    }
+                }
+            }
+            h2 {
+                width: 100%;
+                height: px(30.25);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: px(11);
+                font-weight: 500;
+                color:#333;
+                letter-spacing: px(-0.5);
+                background-color: #f9f9f9;
+                border-bottom: 1px solid #999;
+            }
         }
     }
 }

@@ -94,7 +94,94 @@
 @include desktop {
     .class {
         .__delay {
-
+            padding-bottom: px(50);
+            .__top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding:px(8.5) px(10) px(9) px(20);
+                background-color: #f3f3f3;
+                border-top: 1px solid #999;
+                p {
+                    font-size: px(11.5);
+                    font-weight: 500;
+                    color:#333;
+                    letter-spacing: px(-0.625);
+                }
+            }
+            .btn_stay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: px(23.5);
+                height: px(25.5);
+                background-color: #ee4500;
+                border-radius: 5px;
+                padding:0 px(10);
+                color:#fff;
+                font-weight: 700;
+                font-size: px(12.5);
+                display: flex;
+                justify-content: center;
+                margin:px(15.5) auto px(31);
+            }
+            h2 {
+                font-size: px(12.5);
+                font-weight: 500;
+                letter-spacing: px(-0.625);
+                color:#ee4500;
+                padding:px(17.55) px(16) px(9);
+                &.black {
+                    color:#333;
+                }
+            }
+            .agree_list {
+                border-top: 1px solid #999;
+                li {
+                    padding:px(9) px(17) px(9.5);
+                    border-bottom: 1px solid #999;
+                    background-color: #fff;
+                    &:nth-child(odd) {
+                        background-color: #f6f6f6;
+                    }
+                    label {
+                        display: flex;
+                        align-items: center;
+                        font-size: px(10);
+                        color:#333;
+                        letter-spacing: px(-0.22);
+                        b {
+                            color:#ee4500;
+                        }
+                    }
+                }
+                &.type2 {
+                    li {
+                        padding-right: 0;
+                        background-color: #f6f6f6;
+                    }
+                }
+            }
+            .s_txt {
+                margin: px(11.5) px(13.25) px(25);
+                font-size: px(10);
+                letter-spacing: vw(-1);
+                color:#666;
+            }
+            .tit_box {
+                padding:px(26) 0 vw(13.5);
+                text-align: center;
+                .t1 {
+                    font-size:px(12.5);
+                    letter-spacing: px(-0.625);
+                }
+                .t2 {
+                    font-size: px(10);
+                    letter-spacing: px(-0.5);
+                    color:#666;
+                    margin-top: px(2.5);
+                }
+            }
         }
     }
 }

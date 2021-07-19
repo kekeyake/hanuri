@@ -172,7 +172,176 @@
 }
 @include desktop {
     .class {
-        
+        .survey {
+            padding-bottom: px(50);
+            .__top {
+                padding:px(13.5) 0 px(17.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 171px;
+                    margin-right: px(15.75);
+                }
+                .t1 {
+                    font-size: px(12);
+                    letter-spacing: px(-1.2);
+                    color:#333;
+                    font-weight: 500;
+                }
+                .t2 {
+                    margin-top: px(8.25);
+                    font-size: px(11);
+                    font-weight: 500;
+                    letter-spacing: px(-1.1);
+                    color:#999
+                }
+            }
+            h2 {
+                width: 100%;
+                height: 73.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: px(12.5);
+                font-weight: 700;
+                color:#333;
+                letter-spacing: px(-0.625);
+                background-color: #f9f9f9;
+                border-top: 1px solid #dedede;
+                border-bottom: 1px solid #dedede;
+            }
+            .cont_inner {
+                padding:px(15) px(15) px(32.5);
+                .teacher_info {
+                    display: flex;
+                    img {
+                        width: px(65);
+                        margin-right: px(10.5);
+                    }
+                    .t1 {
+                        font-weight: 500;
+                        margin-top: px(10);
+                        font-size: px(13.5);
+                        color:#333;
+                    }
+                    .t2 {
+                        font-weight: 500;
+                        font-size: px(12);
+                        color:#999
+                    }
+                }
+                .point_box {
+                    display: flex;
+                    margin-top: px(11.5);
+                    border: 1px solid #666;
+                    margin-bottom: px(15);
+                    &:nth-child {
+                        margin-bottom: 0;
+                    }
+                    dl {
+                        width: 50%;
+                        text-align: center;
+                        &:first-child {
+                            border-right: 1px solid #666;
+                        }
+                        dt {
+                            height: px(26);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #f3f3f3;
+                            border-bottom: 1px solid #666;
+                            font-size: px(11);
+                            font-weight: 700;
+                            color:#333;
+                            letter-spacing: px(-0.5);
+                        }
+                        dd {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding:px(9) 0;
+                            .point {
+                                margin-bottom: px(10);
+                            }
+                            span {
+                                color:#ee4500;
+                                font-size: px(11);
+                                letter-spacing: px(-0.5);
+                                b {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+                .q_txt {
+                    font-size: px(11);
+                    letter-spacing: px(-0.5);
+                    color: #333;
+                    margin-top: px(23.75);
+                    margin-bottom: px(9.5);
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+                textarea {
+                    margin-top: px(6.5);
+                    width: 100%;
+                    height: px(40);
+                    overflow-y: auto;
+                    background-color: #f9f9f9;
+                    border: 1px solid #777;
+                    padding:px(5) px(9.25);
+                    box-sizing: border-box;
+                    resize: none;
+                    border-radius: px(1);
+                    font-size: px(11);
+                }
+                .check_list {
+                    li {
+                        margin-bottom: px(5);
+                        label {
+                            display: flex;
+                            align-items: center;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        input[type="text"] {
+                            border: 1px solid #777;
+                            padding:0 px(10);
+                            font-size: px(11);
+                            height: px(16);
+                            margin-left: px(5);
+                        }
+                        input[type="checkbox"]:checked + span {
+                            color:#ee4500;
+                        }
+                    }
+                }
+                .radio_list {
+                    display: flex;
+                    li {
+                        margin-right:px(3.5);
+                    }
+                    label {
+                        display: flex;
+                        align-items: center;
+                    }
+                    input {
+                        margin-right:px(2.5);
+                    }
+                    span {
+                        font-size: px(9);
+                    }
+                }
+            }
+            
+            
+        }   
     }
 
 }

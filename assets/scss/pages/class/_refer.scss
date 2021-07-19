@@ -171,7 +171,171 @@
 @include desktop {
     .class {
         .__refer {
-
+            padding-bottom: px(50);
+            .__wrap_top {
+                padding-top: px(20);  
+                padding-bottom: px(21.5);
+                text-align: center;
+                h1 {
+                    font-size: px(15);
+                    font-weight: 700;
+                    color:#333;
+                    letter-spacing: px(-1);
+                    & + .search_box {
+                        margin: px(18) auto 0;
+                    }
+                }
+            }
+            .__top {
+                display: flex;
+                padding:px(12.5) px(15);
+                img {
+                    width: px(60);
+                    margin-right: px(15);
+                }
+                .txt_box {
+                    width: 252px;
+                    .t1 {
+                        font-size: px(12.5);
+                        color:#333;
+                        font-weight: 500;
+                        letter-spacing: px(-0.625);
+                        line-height: px(14);
+                        word-break:keep-all;
+                        margin-bottom: px(5);
+                    }
+                    .t2 {
+                        
+                        font-size: px(10);
+                        color:#999;
+                        letter-spacing: px(-0.5);
+                        line-height: px(12.5);
+                    }
+                    &.no_btn {
+                        width: px(190);
+                    }
+                }
+                .btn_pc_write {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: px(50.255);
+                    height: px(48);
+                    margin-left: auto;
+                    background-color: #ee4500;
+                    border-radius: 5px;
+                    color:#fff;
+                    font-size: px(11);
+                    letter-spacing: px(-0.5);
+                    line-height: 1.14;
+                    font-weight: 500;
+                    border: 0 solid #000;
+                }
+            }
+            .book_list {
+                border-top: 1px solid #999;
+                li {
+                    border-bottom: 1px solid #999;
+                    padding:px(12.5) px(15);
+                    display: flex;
+                    letter-spacing: px(-0.5);
+                    img {
+                        width: px(60);
+                        margin-right: px(15);
+                    }
+                    .txt_box {
+                        .t1 {
+                            font-size: px(11.5);
+                            color:#333;
+                            margin-bottom: px(5);
+                        }
+                        .t2 {
+                            font-size: px(10);
+                            color:#333;
+                            margin-bottom: px(2.5);
+                            
+                        }
+                        .t3 {
+                            font-size: px(10);
+                            color:#333;
+                            .status {
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: px(11.5);
+                                padding:0 px(6.25);
+                                border-radius: 5px;
+                                background-color: #999;
+                                color:#fff;
+                                font-size: px(10);
+                                font-weight: 700;
+                                margin-right: px(5);
+                            }
+                        }
+                    }
+                }
+            }
+            .btn_more {
+                display: flex;
+                justify-content: center;
+                margin: px(24) auto;
+                font-size: px(11);
+                font-weight: 700;
+                color: #929292;
+                padding-right: px(20);
+                background: url(../img/btn_more.png) no-repeat 100% 50% / px(12.5) px(7.5);
+            }
+            .btn_list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: px(65);
+                height: px(22.5);
+                background-color: #666;
+                border-radius: px(1.5);
+                color:#fff;
+                font-weight: 700;
+                font-size: px(11);
+                display: flex;
+                justify-content: center;
+                margin:px(15.5) auto px(31);
+            }
+            .text_box {
+                padding:px(17.5) px(10) px(15) px(15);
+                font-size: px(11);
+                color:#333;
+                letter-spacing: px(-0.5);
+                border-bottom: 1px solid #999;
+                line-height: 1.36;
+                background-color: #f6f6f6;
+            }
+            .text_box2 {
+                padding:px(20) px(15) px(10);
+                font-size: px(11);
+                color:#333;
+                border-bottom: 1px solid #999;
+                line-height: 1.36;
+                background-color: #fff;
+                .t1 {
+                    font-size: px(12.5);
+                    letter-spacing: px(-0.625);
+                    font-weight: 500;
+                    margin-bottom: px(19.25);
+                    text-align: center;
+                }
+                .t2 {
+                    font-size: px(11);
+                    color:#333;
+                    text-align: center;
+                    margin-bottom: px(14);
+                    letter-spacing: px(-0.5);
+                }
+                .t3 {
+                    font-size: px(11);
+                    letter-spacing: px(-0.5);
+                    line-height: 1.36;
+                }
+            }
         }
     }
 }
