@@ -5285,12 +5285,19 @@ footer.footer .t1:last-child {
 }
 
 .class .check_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class .check_star li {
+  margin: 0 0.33333vw;
   width: 6.5vw;
   height: 6.33333vw;
   background: url(../img/ico_check_star_off.svg) no-repeat 0 0/cover;
 }
 
-.class .check_star:checked {
+.class .check_star li.on {
   background: url(../img/ico_check_star.svg) no-repeat 0 0/cover;
 }
 
@@ -5341,11 +5348,17 @@ footer.footer .t1:last-child {
     background-position: 0 -200px;
   }
   .class .check_star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .class .check_star li {
+    margin: 0 2px;
     width: 38px;
     height: 36px;
     background: url(../img/ico_check_star_off.svg) no-repeat 0 0/cover;
   }
-  .class .check_star:checked {
+  .class .check_star li.on {
     background: url(../img/ico_check_star.svg) no-repeat 0 0/cover;
   }
 }
@@ -5358,6 +5371,12 @@ footer.footer .t1:last-child {
   padding: 9vw 5vw 8.66667vw;
 }
 
+.class .class_list .__top .notice_swiper {
+  height: 6.66667vw;
+  overflow-y: hidden;
+  margin-bottom: 1.08333vw;
+}
+
 .class .class_list .__top .tit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5368,7 +5387,6 @@ footer.footer .t1:last-child {
   font-size: 3.66667vw;
   color: #666;
   letter-spacing: -0.18333vw;
-  margin-bottom: 3.16667vw;
 }
 
 .class .class_list .__top .tit span {
@@ -5741,7 +5759,7 @@ footer.footer .t1:last-child {
   margin-right: 1.83333vw;
 }
 
-.class .evaluating_courses_ly .point_wrap {
+.class .evaluating_courses_ly .check_point_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5753,12 +5771,12 @@ footer.footer .t1:last-child {
           align-items: center;
 }
 
-.class .evaluating_courses_ly .point_wrap span {
+.class .evaluating_courses_ly .check_point_box p {
   font-size: 4.16667vw;
   color: #ee4500;
 }
 
-.class .evaluating_courses_ly .point_wrap span b {
+.class .evaluating_courses_ly .check_point_box p b {
   font-weight: 500;
 }
 
@@ -5772,6 +5790,11 @@ footer.footer .t1:last-child {
   }
   .class .class_list .__top {
     padding: 54px 30px 52px;
+  }
+  .class .class_list .__top .notice_swiper {
+    height: 40px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
   }
   .class .class_list .__top .tit {
     display: -webkit-box;
@@ -6094,7 +6117,7 @@ footer.footer .t1:last-child {
     line-height: 26px;
     margin-right: 11px;
   }
-  .class .evaluating_courses_ly .point_wrap {
+  .class .evaluating_courses_ly .check_point_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6105,11 +6128,11 @@ footer.footer .t1:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .class .evaluating_courses_ly .point_wrap span {
+  .class .evaluating_courses_ly .check_point_box p {
     font-size: 25px;
     color: #ee4500;
   }
-  .class .evaluating_courses_ly .point_wrap span b {
+  .class .evaluating_courses_ly .check_point_box p b {
     font-weight: 500;
   }
   .class .evaluating_courses_ly .btn_wrap {
@@ -6152,7 +6175,6 @@ footer.footer .t1:last-child {
   font-weight: 500;
   letter-spacing: -0.36667vw;
   color: #999;
-  text-align: center;
 }
 
 .class .survey h2 {
@@ -6178,6 +6200,10 @@ footer.footer .t1:last-child {
 
 .class .survey .cont_inner {
   padding: 5vw 5vw 10.83333vw;
+}
+
+.class .survey .cont_inner .box {
+  display: block;
 }
 
 .class .survey .cont_inner .teacher_info {
@@ -6262,17 +6288,17 @@ footer.footer .t1:last-child {
   padding: 3vw 0;
 }
 
-.class .survey .cont_inner .point_box dl dd .check_point {
+.class .survey .cont_inner .point_box dl dd .check_star {
   margin-bottom: 3.33333vw;
 }
 
-.class .survey .cont_inner .point_box dl dd span {
+.class .survey .cont_inner .point_box dl dd p {
   color: #ee4500;
   font-size: 3.66667vw;
   letter-spacing: -0.18333vw;
 }
 
-.class .survey .cont_inner .point_box dl dd span b {
+.class .survey .cont_inner .point_box dl dd p b {
   font-weight: 500;
 }
 
@@ -6341,7 +6367,7 @@ footer.footer .t1:last-child {
 }
 
 .class .survey .cont_inner .radio_list li {
-  margin-right: 1.16667vw;
+  margin-right: 3.33333vw;
   margin-bottom: 1.66667vw;
 }
 
@@ -6355,7 +6381,7 @@ footer.footer .t1:last-child {
 }
 
 .class .survey .cont_inner .radio_list input {
-  margin-right: 0.41667vw;
+  margin-right: 1.66667vw;
 }
 
 .class .survey .cont_inner .radio_list input[type="radio"]:checked + span {
@@ -6371,7 +6397,7 @@ footer.footer .t1:last-child {
     padding-bottom: 100px;
   }
   .class .survey .__top {
-    padding: 27px 0 35px;
+    padding: 0 0 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6422,10 +6448,21 @@ footer.footer .t1:last-child {
   .class .survey .cont_inner {
     padding: 30px 30px 65px;
   }
-  .class .survey .cont_inner .teacher_info {
+  .class .survey .cont_inner .box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .class .survey .cont_inner .box:last-child {
+    margin-bottom: 0;
+  }
+  .class .survey .cont_inner .teacher_info {
+    width: 500px;
   }
   .class .survey .cont_inner .teacher_info img {
     width: 130px;
@@ -6446,9 +6483,9 @@ footer.footer .t1:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 23px;
+    width: calc(100% - 500px);
+    margin: 0;
     border: 1px solid #999;
-    margin-bottom: 30px;
   }
   .class .survey .cont_inner .point_box:nth-child {
     margin-bottom: 0;
@@ -6494,15 +6531,15 @@ footer.footer .t1:last-child {
             align-items: center;
     padding: 18px 0;
   }
-  .class .survey .cont_inner .point_box dl dd .check_point {
+  .class .survey .cont_inner .point_box dl dd .check_star {
     margin-bottom: 20px;
   }
-  .class .survey .cont_inner .point_box dl dd span {
+  .class .survey .cont_inner .point_box dl dd p {
     color: #ee4500;
     font-size: 22px;
     letter-spacing: -1px;
   }
-  .class .survey .cont_inner .point_box dl dd span b {
+  .class .survey .cont_inner .point_box dl dd p b {
     font-weight: 500;
   }
   .class .survey .cont_inner .q_txt {
@@ -6515,8 +6552,11 @@ footer.footer .t1:last-child {
   .class .survey .cont_inner .q_txt:first-of-type {
     margin-top: 0;
   }
+  .class .survey .cont_inner select {
+    margin-bottom: 13px;
+  }
   .class .survey .cont_inner textarea {
-    margin-top: 13px;
+    margin-top: 0;
     width: 100%;
     height: 80px;
     overflow-y: auto;
@@ -6559,7 +6599,8 @@ footer.footer .t1:last-child {
     display: flex;
   }
   .class .survey .cont_inner .radio_list li {
-    margin-right: 7px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
   .class .survey .cont_inner .radio_list label {
     display: -webkit-box;
@@ -6570,7 +6611,7 @@ footer.footer .t1:last-child {
             align-items: center;
   }
   .class .survey .cont_inner .radio_list input {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .class .survey .cont_inner .radio_list span {
     font-size: 22px;
@@ -7860,6 +7901,7 @@ footer.footer .t1:last-child {
   display: -ms-flexbox;
   display: flex;
   padding: 4.16667vw 5vw;
+  border-top: 1px solid #bbb;
 }
 
 .class .__refer .__top img {
@@ -8013,7 +8055,7 @@ footer.footer .t1:last-child {
   font-size: 3.66667vw;
   color: #333;
   letter-spacing: -0.16667vw;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #bbb;
   line-height: 1.36;
   background-color: #f6f6f6;
 }
@@ -8022,7 +8064,7 @@ footer.footer .t1:last-child {
   padding: 6.66667vw 5vw 3.33333vw;
   font-size: 3.66667vw;
   color: #333;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #bbb;
   line-height: 1.36;
   background-color: #fff;
 }
@@ -8327,6 +8369,7 @@ footer.footer .t1:last-child {
   font-size: 3.33333vw;
   color: #333;
   letter-spacing: -0.07333vw;
+  font-weight: 500;
 }
 
 .class .__delay .agree_list li label b {
@@ -8383,7 +8426,7 @@ footer.footer .t1:last-child {
   }
   .class .__delay .__top p {
     font-size: 23px;
-    font-weight: 500;
+    font-weight: 700;
     color: #333;
     letter-spacing: -1.25px;
   }
@@ -8455,7 +8498,7 @@ footer.footer .t1:last-child {
     color: #666;
   }
   .class .__delay .tit_box {
-    padding: 52px 0 2.25vw;
+    padding: 0 0 24px;
     text-align: center;
   }
   .class .__delay .tit_box .t1 {
@@ -10555,7 +10598,7 @@ a.link {
 
 .tbl_list th {
   background-color: #f3f3f3;
-  font-weight: 700;
+  font-weight: 500;
   text-align: right;
   padding: 2.83333vw 5.5vw 2.66667vw 0vw;
   vertical-align: middle;
@@ -10749,7 +10792,7 @@ a.link {
 
 .tbl_list4 th {
   background-color: #f3f3f3;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: middle;
   border-left: 1px solid #999;
 }
@@ -11767,7 +11810,7 @@ form .btn_cert {
   }
   .tbl_list th {
     background-color: #f3f3f3;
-    font-weight: 700;
+    font-weight: 500;
     text-align: right;
     padding: 17px 33px 16px 0px;
     vertical-align: middle;
@@ -11785,7 +11828,7 @@ form .btn_cert {
     color: #ee4500;
   }
   .tbl_list td .btn {
-    height: 25px;
+    height: 31px;
     color: #fff;
     padding: 0 17px;
     background-color: #999;
@@ -11922,7 +11965,7 @@ form .btn_cert {
   }
   .tbl_list4 th {
     background-color: #f3f3f3;
-    font-weight: 700;
+    font-weight: 500;
     vertical-align: middle;
     border-left: 1px solid #999;
   }

@@ -4,13 +4,17 @@
         padding-bottom: vw(100);
         .__top {
             padding:vw(54) vw(30) vw(52);
+            .notice_swiper {
+                height: vw(40);
+                overflow-y: hidden;
+                margin-bottom: vw(6.5);
+            }
             .tit {
                 display: flex;
                 align-items: center;
                 font-size: vw(22);
                 color:#666;
                 letter-spacing: vw(-1.1);
-                margin-bottom: vw(19);
                 span {
                     font-size: vw(20);
                     color:#fff;
@@ -288,11 +292,11 @@
                 margin-right:vw(11);
             }
         }
-        .point_wrap {
+        .check_point_box {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            span {
+            p {
                 font-size: vw(25);
                 color:#ee4500;
                 b {
@@ -312,6 +316,11 @@
             padding-bottom: px(50);
             .__top {
                 padding:px(27) px(15) px(26);
+                .notice_swiper {
+                    height: px(20);
+                    overflow-y: hidden;
+                    margin-bottom: px(10);
+                }
                 .tit {
                     display: flex;
                     align-items: center;
@@ -592,11 +601,11 @@
                     margin-right:px(5.5);
                 }
             }
-            .point_wrap {
+            .check_point_box {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                span {
+                p {
                     font-size: px(12.5);
                     color:#ee4500;
                     b {

@@ -174,7 +174,49 @@ $(function () {
             console.log(fileName);
         });
 
-    });    
+    });   
+    if ($('.notice_swiper').length) {
+        var swiper = new Swiper(".notice_swiper", {
+            direction: "vertical",
+            loop: true,
+            spaceBetween: 10,
+            autoplay: {
+                delay : 3500,
+            },
+        });
+    }    
+    $('.check_point_box .check_star li').on('click',function(){
+        var idx = $(this).index()+1;
+        var pointNum = $(this).parent('ul').next('p').find('b');
+        var pointTxt = $(this).parent('ul').next('p').find('span');
+        $(this).parent('ul').find('li').removeClass('on');
+        $(this).parent('ul').find('li:lt('+ idx +')').addClass('on');
+        
+        switch (idx) {
+            case 1 :
+                pointNum.text("1점");
+                pointTxt.text("매우 미흡");
+                break;
+            case 2 :
+                pointNum.text("2점");
+                pointTxt.text("미흡");
+                break;
+            case 3 :
+                pointNum.text("3점");
+                pointTxt.text("보통");
+                break;
+            case 4 :
+                pointNum.text("4점");
+                pointTxt.text("우수");
+                break;
+            case 5 :
+                pointNum.text("5점");
+                pointTxt.text("매우 우수");
+                break;
+        }
+        //console.log(idx);
+    })
+
     
 });
 
