@@ -1,5 +1,6 @@
 .class {
     .__notice {
+        padding-bottom: vw(50);
         .__wrap_top {
             padding-top: vw(40);  
             padding-bottom: vw(43);
@@ -116,6 +117,7 @@
                 p {
                     width: vw(437);
                     margin-left: vw(14);
+                    line-height: vw(31);;
                 }
                 a {
                     color:#666;
@@ -160,7 +162,7 @@
                     width: vw(445);
                     height: vw(55);
                     overflow-y: auto;
-                    padding:vw(10) vw(20);
+                    padding:vw(10);
                     font-size: vw(20);
                     color:#333;
                     resize: none;
@@ -206,6 +208,8 @@
                     margin-right: vw(8);
                     &.reply {
                         width: vw(32);
+                        display: inline-block;
+                        transform: translateY(-6px);
                     }
                 }
                 .knick_name {
@@ -346,6 +350,7 @@
                     display: flex;
                     padding:px(16) px(15);
                     background: #f9f9f9;
+                    border-top: 1px solid #a3a3a3;
                     border-bottom: 1px solid #a3a3a3;
                     p {
                         width: 437px;
@@ -371,6 +376,7 @@
                     p {
                         width: 437px;
                         margin-left: px(7);
+                        line-height: 31px;
                     }
                     a {
                         color:#666;
@@ -384,7 +390,7 @@
                     letter-spacing: px(-0.5);
                 }
                 .t2 {
-                    font-size: px(9);
+                    font-size: px(11);
                     letter-spacing: px(-0.5);
                 }
                 .event_box {
@@ -396,6 +402,7 @@
             }
             
             .reply_list {
+                margin-top: 20px;
                 .reply_tit {
                     font-size: px(10);
                     letter-spacing: px(-0.5);
@@ -412,7 +419,7 @@
                     justify-content: space-between;
                     textarea {
                         border: 1px solid #999;
-                        width: 445px;
+                        width: calc(100% - 80px);
                         height: px(27.5);
                         overflow-y: auto;
                         padding:px(5) px(10);

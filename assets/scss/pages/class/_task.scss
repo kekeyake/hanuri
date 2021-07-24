@@ -1,11 +1,17 @@
 .class {
     .__task {
         padding-bottom: vw(100);
+        .tbl_list2 {
+            thead {
+                th {
+                    border-top: 1px solid #999;
+                }
+            }
+        }
         .task_list {
-            padding:vw(44) 0 vw(39) vw(38);
-            border-bottom: 1px solid #999;
+            padding:vw(22) 0 vw(39) vw(19);
             li {
-                font-size: vw(20);
+                font-size: vw(22);
                 color:#666;
                 letter-spacing: vw(-1);
                 position: relative;
@@ -25,7 +31,7 @@
                     transform: translateY(-50%);
                 }
                 a {
-                    padding: vw(5) vw(15);
+                    padding: vw(2) vw(10);
                     border-radius: 20px;
                     background-color: #8b59cf;
                     color:#fff;
@@ -36,8 +42,9 @@
             }
         }
         .book_list {
+            border-top: 1px solid #bbb;
             li {
-                border-bottom: 1px solid #999;
+                border-bottom: 1px solid #bbb;
                 padding:vw(25) vw(30);
                 display: flex;
                 letter-spacing: vw(-1);
@@ -47,20 +54,22 @@
                 }
                 .txt_box {
                     .t1 {
-                        font-size: vw(23);
+                        font-size: vw(25);
                         color:#333;
                         margin-bottom: vw(5);
+                        font-weight: 500;
                     }
                     .t2 {
-                        font-size: vw(20);
+                        font-size: vw(22);
                         color:#999;
                         margin-bottom: vw(19);
                         span {
                             color:#333;
+                            font-weight: 500;
                         }
                     }
                     .t3 {
-                        font-size: vw(20);
+                        font-size: vw(22);
                         color:#333;
                         .status {
                             display: inline-flex;
@@ -73,6 +82,7 @@
                             color:#fff;
                             font-size: vw(20);
                             font-weight: 700;
+                            margin-right: vw(5);
                             &.type1 {
                                 background-color: #333;
                             }
@@ -104,6 +114,7 @@
         }
         .book_view {
             .__top {
+                border-top: 1px solid #999;
                 display: flex;
                 padding:vw(25) vw(30);
                 img {
@@ -145,7 +156,7 @@
                     font-size: vw(22);
                     letter-spacing: vw(-1);
                     line-height: 1.14;
-                    font-weight: 500;
+                    font-weight: 700;
                     border: 0 solid #000;
                 }
             }
@@ -168,8 +179,8 @@
                 background-color: #f3f3f3;
                 border-top: 1px solid #999;
                 p {
-                    font-size: vw(23);
-                    font-weight: 500;
+                    font-size: vw(25);
+                    font-weight: 700;
                     color:#333;
                     letter-spacing: vw(-1.25);
                 }
@@ -244,10 +255,9 @@
         .__task {
             padding-bottom: px(50);
             .task_list {
-                padding:px(22) 0 px(19.5) px(19);
-                border-bottom: 1px solid #999;
+                padding:px(11) 0 px(19.5) px(9.5);
                 li {
-                    font-size: px(10);
+                    font-size: px(11);
                     color:#666;
                     letter-spacing: px(-0.5);
                     position: relative;
@@ -267,7 +277,7 @@
                         transform: translateY(-50%);
                     }
                     a {
-                        padding: px(2.5) px(7.5);
+                        padding: px(1.5) px(5.5);
                         border-radius: 20px;
                         background-color: #8b59cf;
                         color:#fff;
@@ -279,7 +289,7 @@
             }
             .book_list {
                 li {
-                    border-bottom: 1px solid #999;
+                    border-bottom: 1px solid #bbb;
                     padding:px(12.5) px(15);
                     display: flex;
                     letter-spacing: px(-0.5);
@@ -289,12 +299,12 @@
                     }
                     .txt_box {
                         .t1 {
-                            font-size: px(11.5);
+                            font-size: px(12.5);
                             color:#333;
                             margin-bottom: px(2.5);
                         }
                         .t2 {
-                            font-size: px(10);
+                            font-size: px(11);
                             color:#999;
                             margin-bottom: px(9.5);
                             span {
@@ -302,19 +312,20 @@
                             }
                         }
                         .t3 {
-                            font-size: px(10);
+                            font-size: px(11);
                             color:#333;
                             .status {
                                 display: inline-flex;
                                 justify-content: center;
                                 align-items: center;
                                 width: px(50);
-                                height: px(11.5);
+                                height: px(16.5);
                                 border-radius: 5px;
                                 background-color: #333;
                                 color:#fff;
                                 font-size: px(10);
                                 font-weight: 700;
+                                margin-right: 10px;
                                 &.type1 {
                                     background-color: #333;
                                 }
@@ -387,7 +398,7 @@
                         font-size: px(11);
                         letter-spacing: px(-0.5);
                         line-height: 1.14;
-                        font-weight: 500;
+                        font-weight: 700;
                         border: 0 solid #000;
                     }
                 }
@@ -395,7 +406,7 @@
                     padding:px(17.5) px(10) px(15) px(15);
                     font-size: px(11);
                     color:#333;
-                    letter-spacing: vpx(-0.5);
+                    letter-spacing: px(-0.25);
                     border-bottom: 1px solid #999;
                     line-height: 1.36;
                     & + .tbl_list {
@@ -410,8 +421,8 @@
                     background-color: #f3f3f3;
                     border-top: 1px solid #999;
                     p {
-                        font-size: px(11.5);
-                        font-weight: 500;
+                        font-size: px(12.5);
+                        font-weight: 700;
                         color:#333;
                         letter-spacing: px(-0.625);
                     }

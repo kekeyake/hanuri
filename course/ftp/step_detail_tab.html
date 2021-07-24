@@ -1,0 +1,131 @@
+<!--@if(step_detail_block)-->
+			<div class="tab_wrap" id="courseTab">
+                <button type="button" class="on" data-rel="introduction">과정소개</button>
+                <button type="button" data-rel="review">수강후기</button>
+                <button type="button" data-rel="study">학습목차</button>
+                <button type="button" data-rel="instructor">강사소개</button>
+            </div>
+            <div class="tab_container">
+                <div id="tab_info_1" class="tab_cont introduction">
+					<!--@if(memo_block)-->{{memo_conv}}<!--/if(memo_block)-->
+					<!--@if(content1_block)-->
+                    <p class="tit">
+						{{content1}}
+						<!--
+                        실력있는 독서지도 전문가를 양성하는 교육! <br>
+                        독서지도사 자격증 취득하고 한우리 교사활동을 통해 평생 전문직업
+                        으로 활용하고 자녀 독서 교육에도 적용하세요.
+						-->
+                    </p>
+					<!--/if(content1_block)-->
+					<!--@if(content2_block)-->
+                    <p class="stit">{{content2_title}}<!--중요 안내--></p>
+                    <ul class="list">
+						{{content2}}
+						<!--	
+                        <li>- 개인별 과제 첨삭지도 4편 제공</li>
+                        <li>- 교재는 9월 10일부터 택배로 순차 배송</li>
+                        <li>- 환불 시 교재비 45,000원 공제</li>
+						-->
+                    </ul>
+					<!--/if(content2_block)-->
+					<!--@if(content3_block)-->
+                    <p class="stit">{{content3_title}}<!--수료 기준--></p>
+                    <ul class="list">{{content3}}
+						<!--
+                        <li>- 학습진도 80% 이상, 과제 4편 제출</li>
+                        <li>- 수료 후 1년간 자격시험 가산점 제공</li>
+                        <li>- 수료 후 한우리 지도교사 활동 신청 가능</li>
+						-->
+                    </ul>
+					<!--/if(content3_block)-->
+					<!--@if(content4_block)-->
+                    <p class="stit">{{content4_title}}<!--자격시험 및 자격증--></p>
+                    <ul class="list">{{content4}}
+						<!--
+                        <li>- 2022년 3월 145회 자격시험 응시 권장</li>
+                        <li>- 합격 시 독서지도사  자격 취득 [민간자격 제2008-0276호]</li>
+						-->
+                    </ul>
+					<!--/if(content4_block)-->
+                    <p class="stit">관련태그</p>
+                    <div>
+                        <span>{{hash_tags}}</span>
+                        <!--<span>#자격시험</span>-->
+                    </div>
+                </div>
+
+                <div id="tab_info_2" class="tab_cont review">
+                    <ul>
+						<!--@loop(epilogue)-->
+                        <li>
+                            <div class="profile_box">
+                                <img src="../assets/img/ico_profile.svg" alt="">
+                                <span class="user">{{epilogue.subject_conv}} / {{epilogue.step_name_conv}} {{epilogue.writer_conv}}님</span><!--@if(epilogue.new_block)--><em class="ico new"></em><!--/if(epilogue.new_block)-->
+                                <span class="point num10"></span>
+                            </div>
+                            <div class="txt">
+                                <p>{{epilogue.content}}</p>
+                            </div>
+                        </li>
+						<!--/loop(epilogue)-->
+                        <li>
+                            <div class="profile_box">
+                                <img src="../assets/img/ico_profile.svg" alt="">
+                                <span class="user">139기 손○현님</span>
+                                <span class="point num9"></span>
+                            </div>
+                            <div class="txt">
+                                <p>
+                                    <!-- <img src="../assets/img/@review.png" alt=""> -->
+                                    생각보다 굉장히 전문화된 수업과 알찬 교재 내 용을 통해 학부모의 입장에선 자녀를 믿고 보낼 수 있을 것 같았고, 교사의 입장에선 제대로 배우고 공부해서 가르치고 싶다는
+                                    생각보다 굉장히 전문화된 수업과 알찬 교재 내 용을 통해 학부모의 입장에선 자녀를 믿고 보낼 수 있을 것 같았고, 교사의 입장에선 제대로 배우고 공부해서 가르치고 싶다는생각보다 굉장히 전문화된 수업과 알찬 교재 내 용을 통해 학부모의 입장에선 자녀를 믿고 보낼 수 있을 것 같았고, 교사의 입장에선 제대로 배우고 공부해서 가르치고 싶다는                                    <a href="#a">더보기</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tab_info_3" class="tab_cont study">
+					<!--@loop(list)-->
+						<!--@if(list.is_first)-->	
+						<p class="tit">{{list.1depth}}</p>
+						<!--/if(list.is_first)-->	
+						<ol rows="{{list.rows}}">
+							<li>{{list.lesson_subject}}<!--@if(list.study_date_block)-->&nbsp;({{list.study_date_conv}})<!--/if(list.study_date_block)--></li>
+						</ol>
+						<!--@if(list.is_first)-->	
+
+					<!--/loop(list)-->
+                </div>
+
+                <div id="tab_info_4" class="tab_cont instructor">
+					<!--@loop(tutors)-->
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_instructor.svg" alt="">
+                        <span class="user">{{tutors.name}} / {{tutors.subject1_name}}</span>
+                    </div>
+                    <ul class="list">
+                        <li>{{tutors.introduce}}</li>
+                        <li>{{tutors.ability}}</li>
+                        <!--<li>- 前 미래교육연구소장</li>-->
+                    </ul>
+					<!--/loop(tutors)-->
+					<!--
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_instructor.svg" alt="">
+                        <span class="user">곽상영 / 서평식 독서감상문 쓰기</span>
+                    </div>
+                    <ul class="list">
+                        <li>- 한우리평생교육원 전문강사</li>
+                        <li>- 한우리평생교육원 강평위원</li>
+                        <li>- 前 중학교 국어과 교사</li>
+                    </ul>
+					-->
+                </div>
+            </div>
+        </div>
+		<script language="javascript">
+		addEvent("onload", function() { ResizeIframe("info_tab"); });
+		</script>
+<!--/if(step_detail_block)-->

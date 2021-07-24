@@ -39,6 +39,14 @@
             background-position: 0 vw(-430);
         }
     }
+    .check_star {
+        width: vw(39);
+        height: vw(38);
+        background: url(../img/ico_check_star_off.svg) no-repeat 0 0 / cover;
+        &:checked {
+            background: url(../img/ico_check_star.svg) no-repeat 0 0 / cover;
+        }
+    }
 }
 @include desktop {
     
@@ -84,6 +92,14 @@
             }
             &.num0 {
                 background-position: 0 px(-100);
+            }
+        }
+        .check_star {
+            width: px(19);
+            height: px(18);
+            background: url(../img/ico_check_star_off.svg) no-repeat 0 0 / cover;
+            &:checked {
+                background: url(../img/ico_check_star.svg) no-repeat 0 0 / cover;
             }
         }
     }
