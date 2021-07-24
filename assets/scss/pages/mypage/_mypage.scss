@@ -185,6 +185,7 @@
     }
     .btn_wrap {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding:vw(40) 0 vw(60);
@@ -210,6 +211,37 @@
                 background-color: #ee4500;
             }
         }
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:vw(30) auto;
+            width: vw(540);
+            height: vw(60);
+            border-radius: 3px;
+            color:#fff;
+            font-size: vw(25);
+            letter-spacing: vw(-1.25);
+            font-weight: 500;   
+            &.__inquiry {
+                background-color: #ee4500;
+                margin-bottom: vw(11);
+                span {
+                    padding-right: vw(27);
+                    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
+                }
+            }
+            &.__faq {
+                margin:0 auto;
+                background-color: #999;
+                span {
+                    padding-right: vw(27);
+                    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
+                }
+            }
+        }
+        
     }
     table {
         & + h3 {
@@ -264,22 +296,7 @@
         &.__ok {
             background-color: #ee4500;
         }
-        &.__inquiry {
-            background-color: #ee4500;
-            margin-bottom: vw(11);
-            span {
-                padding-right: vw(27);
-                background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
-            }
-        }
-        &.__faq {
-            margin:0 auto;
-            background-color: #999;
-            span {
-                padding-right: vw(27);
-                background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
-            }
-        }
+        
     }
     .desc_list {
         padding:vw(10) vw(30);
@@ -962,6 +979,35 @@
                 }
                 &.__ok {
                     background-color: #ee4500;
+                }
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: px(74.25);
+                height: px(25.5);
+                color:#fff;
+                font-size: px(11);
+                font-weight: 500;
+                border-radius: 5px;
+                letter-spacing: px(-0.5);
+                margin:0 px(2); 
+                &.__inquiry {
+                    background-color: #ee4500;
+                    margin:0 px(2);
+                    span {
+                        padding-right: 0;
+                        background: none;
+                    }
+                }
+                &.__faq {
+                    margin:0 px(2);
+                    background-color: #999;
+                    span {
+                        padding-right: 0;
+                        background: none;
+                    }
                 }
             }
         }

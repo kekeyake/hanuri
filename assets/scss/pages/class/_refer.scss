@@ -75,9 +75,8 @@
                 .txt_box {
                     .t1 {
                         font-size: vw(25);
-                        font-weight: 700;
+                        font-weight: 500;
                         color:#333;
-                        padding-top: vw(8);
                         margin-bottom: vw(10);
                     }
                     .t2 {
@@ -248,18 +247,18 @@
                     }
                     .txt_box {
                         .t1 {
-                            font-size: px(11.5);
+                            font-size: px(12.5);
                             color:#333;
                             margin-bottom: px(5);
                         }
                         .t2 {
-                            font-size: px(10);
+                            font-size: px(11);
                             color:#333;
                             margin-bottom: px(2.5);
                             
                         }
                         .t3 {
-                            font-size: px(10);
+                            font-size: px(11);
                             color:#333;
                             .status {
                                 display: inline-flex;

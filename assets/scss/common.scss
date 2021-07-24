@@ -159,10 +159,16 @@ a.link {
 	}
 }
 .pc {
-	display: none;
+	display: none !important;
 }
 .m {
-	display: block;
+	display: block !important;
+}
+.pc_f {
+	display: none !important;
+}
+.m_f {
+	display: flex !important;
 }
 .tbl_list {
 	border-top: 1px solid #999;
@@ -379,8 +385,8 @@ a.link {
 		border-top: 0 solid #000;
 	}
 	p {
-		font-size: vw(23);
-		font-weight: 500;
+		font-size: vw(25);
+		font-weight: 700;
 		color:#333;
 		letter-spacing: vw(-1.25);
 	}
@@ -740,6 +746,12 @@ form .btn_cert {
 	}
 	.pc {
 		display: block !important;
+	}
+	.m_f {
+		display: none !important;
+	}
+	.pc_f {
+		display: flex !important;
 	}
 	
 	.__layer {
@@ -1397,10 +1409,12 @@ form .btn_cert {
 			border-top: 0 solid #000;
 		}
 		p {
-			font-size: px(11.5);
-			font-weight: 500;
+			width: 100%;
+			font-size: px(12.5);
+			font-weight: 700;
 			color:#333;
 			letter-spacing: px(-0.625);
+			text-align: center;
 		}
 		.btn_pc_write {
 			display: flex;

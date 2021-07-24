@@ -77,9 +77,9 @@
                             }
                             em {
                                 position: absolute;
-                                left:50%;
+                                left:5%;
                                 top:50%;
-                                transform: translate(-50%,-50%);
+                                transform: translateY(-50%);
                                 font-size: vw(15);
                                 font-weight: 700;
                                 color:#fff;
@@ -385,9 +385,9 @@
                                 }
                                 em {
                                     position: absolute;
-                                    left:50%;
+                                    left:10%;
                                     top:50%;
-                                    transform: translate(-50%,-50%);
+                                    transform: translateY(-50%);
                                     font-size: px(7.5);
                                     font-weight: 700;
                                     color:#fff;

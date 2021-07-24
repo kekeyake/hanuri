@@ -9,14 +9,14 @@
             }
         }
         .task_list {
-            padding:vw(22) 0 vw(39) vw(19);
+            padding:vw(30) 0 vw(14) vw(19);
             li {
                 font-size: vw(22);
                 color:#666;
                 letter-spacing: vw(-1);
                 position: relative;
                 padding-left: vw(15);
-                margin-bottom: vw(10);
+                margin-bottom: vw(5);
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -71,6 +71,7 @@
                     .t3 {
                         font-size: vw(22);
                         color:#333;
+                        font-weight: 700;
                         .status {
                             display: inline-flex;
                             justify-content: center;
@@ -255,7 +256,7 @@
         .__task {
             padding-bottom: px(50);
             .task_list {
-                padding:px(11) 0 px(19.5) px(9.5);
+                padding:px(13) 0 px(11) px(9.5);
                 li {
                     font-size: px(11);
                     color:#666;
@@ -277,7 +278,7 @@
                         transform: translateY(-50%);
                     }
                     a {
-                        padding: px(1.5) px(5.5);
+                        padding: px(1.5) px(6.5);
                         border-radius: 20px;
                         background-color: #8b59cf;
                         color:#fff;
@@ -314,6 +315,7 @@
                         .t3 {
                             font-size: px(11);
                             color:#333;
+                            font-weight: 700;
                             .status {
                                 display: inline-flex;
                                 justify-content: center;
