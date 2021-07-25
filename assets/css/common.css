@@ -7514,6 +7514,8 @@ footer.footer .t1:last-child {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.20833vw;
+  text-align: center;
+  width: 100%;
 }
 
 .class .__task .book_view .list_view_top .btn_pc_write {
