@@ -212,7 +212,7 @@ body {
 }
 
 .btm {
-  margin: 9.8995vw auto 0;
+  margin: 7.9196vw auto 0;
   font-family: "Noto Sans KR",Sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,29 +227,29 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 0 2.01005vw;
+  padding: 0 1.60804vw;
 }
 
 .btm span.s1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 5.32663vw;
-  font-size: 2.11055vw;
+  white-space: nowrap;
+  font-size: 1.68844vw;
   line-height: 1.14;
   font-weight: 700;
   color: #000;
 }
 
 .btm span.s2 {
-  font-size: 5.02513vw;
+  font-size: 4.0201vw;
   font-weight: 700;
   color: #000;
-  margin-left: 0.50251vw;
+  margin-left: 10px;
 }
 
 .btm .sign {
-  width: 11.9598vw;
+  width: 9.56784vw;
   position: absolute;
   right: 0;
   z-index: -1;
@@ -257,8 +257,9 @@ body {
 
 .box {
   width: 100%;
-  margin: 2.5% auto;
+  margin: 0 auto;
   position: relative;
+  padding: 10%;
 }
 
 /* 수강확인서 */
@@ -267,25 +268,25 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 17.08543vw;
+  padding-top: 20.90452vw;
   text-align: center;
 }
 
 .confirmation .__inner h1 {
-  font-size: 7.03518vw;
+  font-size: 5.62814vw;
   font-weight: 700;
-  letter-spacing: 1.40704vw;
+  letter-spacing: 1.12563vw;
 }
 
 .confirmation .__inner ul {
-  margin-top: 10.05025vw;
-  padding-left: 13.96985vw;
+  margin-top: 8.0402vw;
+  padding-left: 18.49246vw;
 }
 
 .confirmation .__inner ul li {
   text-align: left;
-  font-size: 3.31658vw;
-  margin-bottom: 1.50754vw;
+  font-size: 2.65327vw;
+  margin-bottom: 1.20603vw;
 }
 
 .confirmation .__inner ul li:last-child {
@@ -293,14 +294,14 @@ body {
 }
 
 .confirmation .__inner .t1 {
-  margin-top: 9.79899vw;
-  font-size: 4.0201vw;
+  margin-top: 7.8392vw;
+  font-size: 3.21608vw;
   line-height: 1.88;
 }
 
 .confirmation .__inner .t2 {
-  margin-top: 12.81407vw;
-  font-size: 3.51759vw;
+  margin-top: 10.25126vw;
+  font-size: 2.81407vw;
 }
 
 /* 수료증 */
@@ -309,32 +310,32 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 14.07035vw;
+  padding-top: 19.29648vw;
   text-align: center;
 }
 
 .certificates .__inner .number_txt {
-  font-size: 2.71357vw;
+  font-size: 2.17085vw;
   text-align: left;
-  margin-left: 8.44221vw;
+  margin-left: 16.0804vw;
 }
 
 .certificates .__inner h1 {
-  margin-top: 5.72864vw;
-  font-size: 7.03518vw;
+  margin-top: 4.58291vw;
+  font-size: 5.62814vw;
   font-weight: 700;
-  letter-spacing: 3.51759vw;
+  letter-spacing: 2.81407vw;
 }
 
 .certificates .__inner ul {
-  margin-top: 10.05025vw;
-  padding-left: 11.45729vw;
+  margin-top: 8.0402vw;
+  padding-left: 18.49246vw;
 }
 
 .certificates .__inner ul li {
   text-align: left;
-  font-size: 3.31658vw;
-  margin-bottom: 1.50754vw;
+  font-size: 2.65327vw;
+  margin-bottom: 1.20603vw;
 }
 
 .certificates .__inner ul li:last-child {
@@ -342,14 +343,14 @@ body {
 }
 
 .certificates .__inner .t1 {
-  margin-top: 11.05528vw;
-  font-size: 4.52261vw;
+  margin-top: 8.84422vw;
+  font-size: 3.61809vw;
   line-height: 2;
 }
 
 .certificates .__inner .t2 {
-  margin-top: 15.07538vw;
-  font-size: 3.51759vw;
+  margin-top: 8.0402vw;
+  font-size: 2.81407vw;
 }
 
 /* 자격취득확인서 */
@@ -358,32 +359,32 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 14.07035vw;
+  padding-top: 19.29648vw;
   text-align: center;
 }
 
 .qac .__inner .number_txt {
-  font-size: 2.71357vw;
+  font-size: 2.17085vw;
   text-align: left;
-  margin-left: 8.44221vw;
+  margin-left: 16.0804vw;
 }
 
 .qac .__inner h1 {
-  margin-top: 5.72864vw;
-  font-size: 7.03518vw;
+  margin-top: 4.58291vw;
+  font-size: 5.62814vw;
   font-weight: 700;
-  letter-spacing: 0.70352vw;
+  letter-spacing: 0.56281vw;
 }
 
 .qac .__inner ul {
-  margin-top: 10.05025vw;
-  padding-left: 11.45729vw;
+  margin-top: 8.0402vw;
+  padding-left: 18.49246vw;
 }
 
 .qac .__inner ul li {
   text-align: left;
-  font-size: 3.31658vw;
-  margin-bottom: 1.50754vw;
+  font-size: 2.65327vw;
+  margin-bottom: 1.20603vw;
 }
 
 .qac .__inner ul li:last-child {
@@ -391,14 +392,14 @@ body {
 }
 
 .qac .__inner .t1 {
-  margin-top: 10.05025vw;
-  font-size: 4.52261vw;
+  margin-top: 8.0402vw;
+  font-size: 3.61809vw;
   line-height: 2;
 }
 
 .qac .__inner .t2 {
-  margin-top: 12.56281vw;
-  font-size: 3.51759vw;
+  margin-top: 5.62814vw;
+  font-size: 2.81407vw;
 }
 
 /* pc layout common */
@@ -460,8 +461,9 @@ body {
   }
   .box {
     width: 1050px;
-    margin: 2.5% auto;
+    margin: 5% auto;
     position: relative;
+    padding: 0;
   }
   /* 수강확인서 */
   .confirmation .__inner {
@@ -672,6 +674,7 @@ body {
     width: 95%;
     margin: 2.5% auto;
     position: relative;
+    padding: 5%;
   }
   /* 수강확인서 */
   .confirmation .__inner {
@@ -700,12 +703,12 @@ body {
     margin-bottom: 0;
   }
   .confirmation .__inner .t1 {
-    margin-top: 70.2px;
+    margin-top: 64.8px;
     font-size: 28.8px;
     line-height: 1.88;
   }
   .confirmation .__inner .t2 {
-    margin-top: 91.8px;
+    margin-top: 64.8px;
     font-size: 25.2px;
   }
   /* 수료증 */
@@ -714,13 +717,13 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    padding-top: 100.8px;
+    padding-top: 129.6px;
     text-align: center;
   }
   .certificates .__inner .number_txt {
     font-size: 19.44px;
     text-align: left;
-    margin-left: 60.48px;
+    margin-left: 86.4px;
   }
   .certificates .__inner h1 {
     margin-top: 41.04px;
@@ -730,7 +733,7 @@ body {
   }
   .certificates .__inner ul {
     margin-top: 72px;
-    padding-left: 82.08px;
+    padding-left: 115.2px;
   }
   .certificates .__inner ul li {
     text-align: left;
@@ -741,12 +744,12 @@ body {
     margin-bottom: 0;
   }
   .certificates .__inner .t1 {
-    margin-top: 88.56px;
+    margin-top: 50.4px;
     font-size: 32.4px;
     line-height: 2;
   }
   .certificates .__inner .t2 {
-    margin-top: 108px;
+    margin-top: 50.4px;
     font-size: 25.2px;
   }
   /* 자격취득확인서 */
@@ -755,13 +758,13 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    padding-top: 100.8px;
+    padding-top: 129.6px;
     text-align: center;
   }
   .qac .__inner .number_txt {
     font-size: 19.44px;
     text-align: left;
-    margin-left: 60.48px;
+    margin-left: 86.4px;
   }
   .qac .__inner h1 {
     margin-top: 41.04px;
@@ -770,8 +773,8 @@ body {
     letter-spacing: 5.04px;
   }
   .qac .__inner ul {
-    margin-top: 72px;
-    padding-left: 82.08px;
+    margin-top: 64.8px;
+    padding-left: 115.2px;
   }
   .qac .__inner ul li {
     text-align: left;
@@ -782,12 +785,12 @@ body {
     margin-bottom: 0;
   }
   .qac .__inner .t1 {
-    margin-top: 82.08px;
+    margin-top: 43.2px;
     font-size: 32.4px;
     line-height: 2;
   }
   .qac .__inner .t2 {
-    margin-top: 90px;
+    margin-top: 43.2px;
     font-size: 25.2px;
   }
 }

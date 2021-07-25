@@ -15,7 +15,7 @@
 }
 @function pvw($pixels) {
     @return #{
-        ($pixels * 100) / $print
+        ($pixels * 80) / $print
     }vw;
 }
 
