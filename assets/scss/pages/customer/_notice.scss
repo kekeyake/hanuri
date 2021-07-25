@@ -47,17 +47,14 @@
                 letter-spacing: vw(-1);
                 color:#333;
                 font-weight: 500;
-                width: vw(434);
+                width:calc(100% - 11.417vw);
                 margin-left: vw(14);
-                span {
-                    margin-right: vw(14);
-                }
                 .date {
                     font-size: vw(20);
                     color:#999;
                     letter-spacing: vw(-1);
                     font-weight: 400;
-                    margin-left: 0;
+                    margin-left: vw(14);
                 }
             }
         }

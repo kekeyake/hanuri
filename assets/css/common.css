@@ -1845,12 +1845,8 @@ footer.footer .t1:last-child {
   letter-spacing: -0.16667vw;
   color: #333;
   font-weight: 500;
-  width: 72.33333vw;
+  width: calc(100% - 11.417vw);
   margin-left: 2.33333vw;
-}
-
-.notice .__list li p span {
-  margin-right: 2.33333vw;
 }
 
 .notice .__list li p .date {
@@ -1858,7 +1854,7 @@ footer.footer .t1:last-child {
   color: #999;
   letter-spacing: -0.16667vw;
   font-weight: 400;
-  margin-left: 0;
+  margin-left: 2.33333vw;
 }
 
 .notice .btn_more {
@@ -8945,6 +8941,15 @@ footer.footer .t1:last-child {
   background: #eee;
   padding: 5vw 5vw 4.16667vw;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.mypage .process_wrap::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 .mypage .process_wrap ol {
@@ -9025,6 +9030,15 @@ footer.footer .t1:last-child {
   background: #eee;
   padding: 5vw 5vw;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.mypage .exam_wrap::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 .mypage .exam_wrap ol {
@@ -9057,6 +9071,7 @@ footer.footer .t1:last-child {
   color: #fff;
   font-size: 3.33333vw;
   font-weight: 700;
+  line-height: 3.66667vw;
   letter-spacing: -0.16667vw;
 }
 
@@ -9134,12 +9149,8 @@ footer.footer .t1:last-child {
   letter-spacing: -0.16667vw;
   color: #333;
   font-weight: 500;
-  width: 72.33333vw;
+  width: calc(100% - 11.417vw);
   margin-left: 2.33333vw;
-}
-
-.mypage .__list li p span {
-  margin-right: 2.33333vw;
 }
 
 .mypage .__list li p .date {
@@ -9147,7 +9158,7 @@ footer.footer .t1:last-child {
   color: #999;
   letter-spacing: -0.16667vw;
   font-weight: 400;
-  margin-left: 0;
+  margin-left: 2.33333vw;
 }
 
 .mypage .__list li i {
@@ -9537,14 +9548,6 @@ footer.footer .t1:last-child {
   color: #999;
 }
 
-.mypage .tab_cont {
-  display: none;
-}
-
-.mypage .tab_cont.on {
-  display: block;
-}
-
 @media (min-width: 1200px) {
   .mypage {
     width: 1200px;
@@ -9778,12 +9781,15 @@ footer.footer .t1:last-child {
     margin: 0 4px;
   }
   .mypage .btn_wrap button.__cancel {
+    width: 128.5px;
     background-color: #666;
   }
   .mypage .btn_wrap button.__stay {
+    width: 128.5px;
     background-color: #ccc;
   }
   .mypage .btn_wrap button.__ok {
+    width: 128.5px;
     background-color: #ee4500;
   }
   .mypage .btn_wrap .btn {
@@ -9796,7 +9802,7 @@ footer.footer .t1:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 148.5px;
+    width: 297px;
     height: 51px;
     color: #fff;
     font-size: 22px;
@@ -9877,16 +9883,16 @@ footer.footer .t1:last-child {
     background: none;
   }
   .mypage > .btn.__download {
-    width: 300px;
+    width: 380px;
     margin-top: 10px;
     background-color: #333;
   }
   .mypage > .btn.__test {
-    width: 360px;
+    width: 400px;
     background-color: #ee4500;
   }
   .mypage > .btn.__ok {
-    width: 148.5px;
+    width: 240px;
     background-color: #ee4500;
   }
   .mypage > .btn.__inquiry {
@@ -10017,7 +10023,7 @@ footer.footer .t1:last-child {
             align-items: center;
     text-align: center;
     word-break: keep-all;
-    width: 105px;
+    width: 145px;
     height: 75.5px;
     margin-right: 80px;
     position: relative;
@@ -10027,6 +10033,7 @@ footer.footer .t1:last-child {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -1px;
+    line-height: 24px;
   }
   .mypage .exam_wrap ol li:after {
     position: absolute;
@@ -10087,15 +10094,21 @@ footer.footer .t1:last-child {
     padding: 20px 30px;
   }
   .mypage .__list li a i {
-    margin-top: pxw(1);
+    margin-top: 2px;
   }
   .mypage .__list li p {
     font-size: 23px;
     letter-spacing: -1px;
     color: #333;
     font-weight: 500;
-    width: 434px;
+    width: 100%;
     margin-left: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .mypage .__list li p span {
     margin-right: 14px;
@@ -10105,7 +10118,7 @@ footer.footer .t1:last-child {
     color: #999;
     letter-spacing: -1px;
     font-weight: 400;
-    margin-left: 0;
+    margin: 0;
   }
   .mypage .__list li i {
     display: -webkit-box;
@@ -10339,7 +10352,7 @@ footer.footer .t1:last-child {
     border-radius: 5px;
   }
   .mypage .checkbox_wrap {
-    padding: 48.5px 30px;
+    padding: 48.5px 0;
   }
   .mypage .checkbox_wrap label {
     display: -webkit-box;
@@ -10383,7 +10396,7 @@ footer.footer .t1:last-child {
     background-color: #999;
   }
   .mypage .apply_certification {
-    width: 100%;
+    width: 47%;
     height: 135.5px;
     margin: 33px auto 0;
     padding: 40px 0 40px 170.5px;
@@ -10444,12 +10457,6 @@ footer.footer .t1:last-child {
   .mypage .tbl_list5 .txt_box .date {
     font-size: 20px;
     color: #999;
-  }
-  .mypage .tab_cont {
-    display: none;
-  }
-  .mypage .tab_cont.on {
-    display: block;
   }
 }
 

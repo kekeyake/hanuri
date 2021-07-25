@@ -318,6 +318,11 @@
         background: #eee;
         padding:vw(30) vw(30) vw(25);
         overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera*/
+        }
         ol {
             display: flex;            
             width: max-content;
@@ -389,6 +394,11 @@
         background: #eee;
         padding:vw(30) vw(30);
         overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera*/
+        }
         ol {
             display: flex;            
             width: max-content;
@@ -407,6 +417,7 @@
                 color:#fff;
                 font-size:vw(20);
                 font-weight: 700;
+                line-height: vw(22);
                 letter-spacing: vw(-1);
                 &:after {
                     position: absolute;
@@ -473,17 +484,15 @@
                 letter-spacing: vw(-1);
                 color:#333;
                 font-weight: 500;
-                width: vw(434);
+                width:calc(100% - 11.417vw);
                 margin-left: vw(14);
-                span {
-                    margin-right: vw(14);
-                }
+
                 .date {
                     font-size: vw(20);
                     color:#999;
                     letter-spacing: vw(-1);
                     font-weight: 400;
-                    margin-left: 0;
+                    margin-left: vw(14);
                 }
             }
             i {
@@ -767,12 +776,7 @@
             }
         }
     }
-    .tab_cont {
-        display: none;
-        &.on {
-            display: block;
-        }
-    }
+
 }
 @include desktop {
     
@@ -984,12 +988,15 @@
                 letter-spacing: px(-0.5);
                 margin:0 px(2);
                 &.__cancel {
+                    width: px(64.25);
                     background-color: #666;
                 }
                 &.__stay {
+                    width: px(64.25);
                     background-color: #ccc;
                 }
                 &.__ok {
+                    width: px(64.25);
                     background-color: #ee4500;
                 }
             }
@@ -997,7 +1004,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: px(74.25);
+                width: px(148.5);
                 height: px(25.5);
                 color:#fff;
                 font-size: px(11);
@@ -1070,16 +1077,16 @@
                 }
             }
             &.__download {
-                width: 300px;
+                width: 380px;
                 margin-top: px(5);
                 background-color: #333;
             }
             &.__test {
-                width: 360px;
+                width: 400px;
                 background-color: #ee4500;
             }
             &.__ok {
-                width: 148.5px;
+                width: 240px;
                 background-color: #ee4500;
             }
             &.__inquiry {
@@ -1202,7 +1209,7 @@
                     align-items: center;
                     text-align: center;
                     word-break: keep-all;
-                    width: px(52.5);
+                    width: px(72.5);
                     height: px(37.75);
                     margin-right: px(40);
                     position: relative;
@@ -1212,6 +1219,7 @@
                     font-size:px(10);
                     font-weight: 700;
                     letter-spacing: px(-0.5);
+                    line-height: px(12);
                     &:after {
                         position: absolute;
                         right:px(-40);
@@ -1270,7 +1278,7 @@
                     display: flex;
                     padding:px(10) px(15);
                     i {
-                        margin-top: pxw(1);
+                        margin-top: px(1);
                     }
                 }
                 p {
@@ -1278,8 +1286,10 @@
                     letter-spacing: px(-0.5);
                     color:#333;
                     font-weight: 500;
-                    width: px(217);
+                    width: 100%;
                     margin-left: px(7);
+                    display: flex;
+                    justify-content: space-between;
                     span {
                         margin-right: px(7);
                     }
@@ -1288,7 +1298,7 @@
                         color:#999;
                         letter-spacing: px(-0.5);
                         font-weight: 400;
-                        margin-left: 0;
+                        margin: 0;
                     }
                 }
                 i {
@@ -1475,7 +1485,7 @@
             }
         }
         .checkbox_wrap {
-            padding:px(24.25) px(15);
+            padding:px(24.25) 0;
             label {
                 display: flex;
                 align-items: center;
@@ -1511,7 +1521,7 @@
             }
         }
         .apply_certification {
-            width: 100%;
+            width: 47%;
             height: px(67.75);
             margin:px(16.5) auto 0;
             padding:px(20) 0 px(20) px(85.25);        
@@ -1570,11 +1580,6 @@
                 }
             }
         }
-        .tab_cont {
-            display: none;
-            &.on {
-                display: block;
-            }
-        }
+
     }
 }

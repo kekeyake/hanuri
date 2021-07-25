@@ -160,11 +160,11 @@ $(function () {
         $('.evaluating_courses_ly').addClass('on');
     });
 
-    $('.list_tab .link').on('click',function(){
-        var tg = $(this).attr('data-rel');
-        $(this).addClass('on').siblings('.link').removeClass('on');
-        $('#' + tg).addClass('on').siblings('.tab_cont').removeClass('on');
-    });
+    // $('.list_tab .link').on('click',function(){
+    //     var tg = $(this).attr('data-rel');
+    //     $(this).addClass('on').siblings('.link').removeClass('on');
+    //     $('#' + tg).addClass('on').siblings('.tab_cont').removeClass('on');
+    // });
 
     $('.add_file').each(function (index, item) { 
         $(this).on('change' ,function(){
