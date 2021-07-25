@@ -11277,50 +11277,37 @@ form .btn_cert {
   background: #eee url(../img/ico_minus.svg) no-repeat right 2.16667vw top 50%/4.66667vw;
 }
 
-.tab_container .study ol {
+.tab_container .study .txt_list {
   display: none;
-  counter-reset: list-counter;
   margin: 1.66667vw 0;
-}
-
-.tab_container .study ol.on {
-  display: block;
-}
-
-.tab_container .study ol li {
   border-radius: 1.66667vw;
   border: solid 0.08333vw #ccc;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 8vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1.66667vw;
+  padding: 1.66667vw;
   margin-bottom: 1.08333vw;
   font-size: 3.66667vw;
+  line-height: 5.16667vw;
 }
 
-.tab_container .study ol li:last-child {
-  margin-bottom: 0;
-}
-
-.tab_container .study ol li::before {
+.tab_container .study .txt_list.on {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.tab_container .study .txt_list span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 5.66667vw;
   height: 5.16667vw;
+  line-height: 5.16667vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  counter-increment: list-counter;
-  content: "0" counter(list-counter);
   color: #fff;
   font-weight: #700;
   font-size: 3.66667vw;
@@ -11817,21 +11804,12 @@ form .btn_cert {
   .tab_container .study .tit.on {
     background: #eee url(../img/ico_minus.svg) no-repeat right 13px top 50%/28px;
   }
-  .tab_container .study ol {
+  .tab_container .study .txt_list {
     display: none;
-    counter-reset: list-counter;
     margin: 10px 0;
-  }
-  .tab_container .study ol.on {
-    display: block;
-  }
-  .tab_container .study ol li {
     border-radius: 10px;
     border: solid 1px #ccc;
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 48px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -11840,13 +11818,15 @@ form .btn_cert {
     margin-bottom: 6.5px;
     font-size: 22px;
   }
-  .tab_container .study ol li:last-child {
-    margin-bottom: 0;
-  }
-  .tab_container .study ol li::before {
+  .tab_container .study .txt_list.on {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .tab_container .study .txt_list span {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     width: 34px;
     height: 31px;
     -webkit-box-pack: center;
@@ -11855,8 +11835,6 @@ form .btn_cert {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    counter-increment: list-counter;
-    content: "0" counter(list-counter);
     color: #fff;
     font-weight: #700;
     font-size: 22px;

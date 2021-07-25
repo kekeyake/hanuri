@@ -33,10 +33,10 @@ $(function () {
     });
 
     function subUp() {
-        $('.pc_sub_menu').slideDown();
+        $('.pc_sub_menu').stop().slideDown();
     }
     function subDown() {
-        $('.pc_sub_menu').slideUp();
+        $('.pc_sub_menu').stop().slideUp();
     }
 
     $('.btn_toggle').on('click',function(e){
@@ -71,7 +71,7 @@ $(function () {
     });
 
     $('.tab_cont.study .tit').on('click',function(){
-        $(this).toggleClass('on').next('ol').toggleClass('on');
+        $(this).toggleClass('on').nextUntil('.tit').toggleClass('on');
     });
 
     $('.mypage .agree_wrap .tit').on('click',function(){

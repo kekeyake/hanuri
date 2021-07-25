@@ -5,24 +5,28 @@
 	<input type="hidden" id="g_id" name="g_id" value="{{gubun}}" />
 	<input type="hidden" id="course_id" name="course_id" />
 	<input type="hidden" id="step_id" name="step_id" value="" />
+	<input type="hidden" id="schid" name="schid" value="0" />
 	<input type="hidden" id="l_resultArea" name="l_resultArea" />
 	<input type="hidden" id="sale_type" name="sale_type" value="03" />
 	<input type="hidden" id="discount_type" name="discount_type" value="" />
-	<input type="hidden" id="pay_price" name="pay_price" value="0" />
+	<input type="hidden" id="study_price" name="study_price" value="0" />
 	<input type="hidden" id="disc_price" name="disc_price" value="0" />
+	<input type="hidden" id="book_buy_yn" name="book_buy_yn" value="Y" />
+	<input type="hidden" id="paymethod" name="paymethod" value="3001" />
     <div class="course">
         <div class="view_wrap">
             <div class="tit_box">
                 <p class="tit"><a href="javascript:view_step_id();">{{gubun_name}}</a></p>
-                <!--@if(event_block)--><span>{{event_info}}</span><!--/if(event_block)-->
+                <!--@if(event_info_block)--><span>{{event_info}}</span><!--/if(event_info_block)-->
+				<!--@if(event_detail_block)--><span class="event_t">{{event_info_detail}}</span><!--/if(event_detail_block)-->
             </div>
             <div class="movie_wrap">
                 <div class="thumb_box">
                     <img id="thumb_main_img" src="{{main_image_url}}" alt=""><!--../assets/img/@view_thumb.png-->
                 </div>
                 <div class="movie_box">
-                    <img src="../assets/img/@view_movie.png" alt="">
-                    <button type="button"><img src="../assets/img/ico_play.svg" alt=""></button>
+                    <video src="{{sample_lesson_url}}" id="videoPlayer" class="videoMini" controls="controls" width="100%" height="100%" webkit-playsinline playsinline controlsList="nodownload"></video><!--<img src="../assets/img/@view_movie.png" alt="">-->
+                    <button type="button"><!--<img src="../assets/img/ico_play.svg" alt="">--></button>
                 </div>
             </div>
             <div class="info_wrap">
@@ -31,7 +35,7 @@
                         <strong><i>방</i><i>식</i></strong>
                         <div>
 							<!--@loop(steps)-->
-                            <button class="btn" type="button" onclick="javascript:setCourseStep('{{steps.id}}');">{{steps.gubun_type_conv}}</button>
+                            <button id="step_type" class="btn" type="button" onclick="javascript:setCourseStep('{{steps.id}}');">{{steps.gubun_type_conv}}</button>
 							<!--@if(zoom_block)-->
                             <button class="tool_tip" type="button" data-rel="tool1"><img src="../assets/img/ico_tool.svg" alt=""></button>
                             <div class="tool_layer tool1">
@@ -40,10 +44,6 @@
                             </div>
 							<!--/if(zoom_block)-->
 							<!--/loop(steps)-->
-							<!--
-                            <button class="btn" type="button" onclick="javascript:setCourseStep('off');">출석</button>
-                            <button class="btn" type="button" onclick="javascript:setCourseStep('zoom');">ZOOM</button>
-							-->		
                         </div>
                     </li>
                     <li id="offStudyArea" class="align_top" style="display:none;">
@@ -64,35 +64,42 @@
                     <li id="periodArea" class="line1 l2" style="display:none;">
                         <strong><i>일</i><i>정</i></strong>
                         <div>
-                            <p id="p_study_period">2021.09.01 ~ 2021.01.31 화목 10시</p>
+                            <p id="p_study_period">2021.01.01 ~ 2021.12.31</p>
                         </div>
                     </li>
+
+					<!--@nif(login_block)-->
                     <li class="line1 l2">
                         <strong><i>할</i><i>인</i></strong>
                         <div>
                             <p>로그인 후 할인금액 확인 가능</p>
                         </div>
                     </li>
-                    <li class="align_top sale">
+					<!--/nif(login_block)-->
+
+					<!--@if(login_block)-->
+                    <li id="dcArea" class="align_top sale" style="display:none;">
                         <strong>
                             <i>할</i><i>인</i> <button class="tool_tip" type="button" data-rel="tool2"><img src="../assets/img/ico_tool.svg" alt=""></button>                            
                         </strong>
                         <div class="sale">
-							<!--@nif(is_bosu_block)--><!--@if(recommend_yn)--><!--@nif(is_teachercourse_block)-->
-                            <button class="link" type="button" onclick="javascript:setDiscount('01');">추천</button>
-							<!--/nif(is_teachercourse_block)--><!--/if(recommend_yn)--><!--/nif(is_bosu_block)-->
-                            <button class="btn" type="button" onclick="javascript:setDiscount('02');">회원학부모</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('03');">단체3인</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('04');">단체2인</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('05');">교사사서</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('06');">대학생</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('07');">재수강</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('08');">바우처</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('09');">쿠폰</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('10');">준교사</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('11');">센터장추천</button>
-                            <button class="btn" type="button" onclick="javascript:setDiscount('12');">2021 교사소개 이벤트</button>
-                            
+                            <!--@if(recommend_block)--><button type="button" id="dc_01" class="btn" onclick="javascript:setDiscount('02','01','01');">추천</button><!--/if(recommend_block)-->
+                            <!--@if(dc_02_block)--><button type="button" id="dc_02" class="btn" onclick="javascript:setDiscount('01','13','02');">회원학부모</button><!--/if(dc_02_block)-->
+                            <!--@if(dc_14_block)--><button type="button" id="dc_14" onclick="javascript:setDiscount('01','15','14');" class="btn">단체5인</button><!--/if(dc_14_block)-->
+                            <!--@if(dc_03_block)--><button type="button" id="dc_03" onclick="javascript:setDiscount('01','15','03');" class="btn">단체3인</button><!--/if(dc_03_block)-->
+                            <!--@if(dc_04_block)--><button type="button" id="dc_04" onclick="javascript:setDiscount('01','14','04');" class="btn">단체2인</button><!--/if(dc_04_block)-->
+                            <!--@if(dc_05_block)--><button type="button" id="dc_05" onclick="javascript:setDiscount('01','06','05');" class="btn">교사사서</button><!--/if(dc_05_block)-->
+                            <!--@if(dc_06_block)--><button type="button" id="dc_06" onclick="javascript:setDiscount('01','16','06');" class="btn">대학생</button><!--/if(dc_06_block)-->
+                            <!--@if(restudy_block)--><button type="button" id="dc_07" onclick="javascript:setDiscount('01','04','07');" class="btn" >재수강</button><!--/if(restudy_block)-->
+                            <!--@if(main_course_block)--><button type="button" id="dc_08"  class="btn" onclick="javascript:setDiscount('99','90','08');">바우처</button><!--/if(main_course_block)-->
+                            <!--@if(coupon_yn)--><button type="button" id="dc_09" onclick="javascript:setDiscount('04','70','09');" class="btn">쿠폰</button><!--/if(coupon_yn)-->
+							<!--@if(main_course_block)--><!--@if(dc_10_block)--><button type="button" id="dc_10" onclick="javascript:setDiscount('01','11','10');" class="btn">준교사</button><!--/if(dc_10_block)--><!--/if(main_course_block)-->
+                            <!--@if(dc_11_block)--><button type="button" id="dc_11" onclick="javascript:setDiscount('01','30','11');" class="btn">센터장추천</button><!--/if(dc_11_block)-->
+   							<!--@if(dc_12_block)--><button type="button" id="dc_12" onclick="javascript:setDiscount('01','08','12');" class="btn">봉사단</button><!--/if(dc_12_block)-->
+   							<!--@if(dc_13_block)--><button type="button" id="dc_13" onclick="javascript:setDiscount('01','09','13');" class="btn">연구원</button><!--/if(dc_13_block)-->
+							<!--@if(main_course_yn)--><button type="button" id="dc_15" onclick="javascript:setDiscount('05','80','15');" class="btn">2021 교사소개 이벤트</button><!--/if(main_course_yn)-->
+							<!--@if(main_course_yn)--><!--<button type="button" id="dc_17" onclick="javascript:setDiscount('17');" class="btn">지도교사 양성반</button>--><!--/if(main_course_yn)-->
+                            <!--@nif(main_course_yn)--><!--@if(read_complete_block)--><button type="button" id="dc_16" onclick="javascript:setDiscount('01','28','16');" class="btn">독서지도사 수료자</button><!--/if(read_complete_block)--><!--/nif(main_course_yn)-->
                             <div class="tool_layer tool2">
                                 <dl>
                                     <div>
@@ -109,10 +116,13 @@
                                         <dd>온라인 수강권은 수강신청 후에는 환불되지 않으므로, 신청 전에 구매처에서 환불하시기 바랍니다. </dd>
                                     </div>
                                 </dl>
-                                <button class="btn_closed_tooltip"><img src="../assets/img/ico_x.svg" alt=""></button>
+                                <button class="btn_closed_tooltip" type="button"><img src="../assets/img/ico_x.svg" alt=""></button>
                             </div>
                         </div>
                     </li>
+					<!--/if(login_block)-->
+
+					<!--@if(recommend_block)-->
                     <li id="l_disinfo_1" style="display:none;"><!--회원추천-->
                         <strong><i>추</i> <i>천</i><i>인</i></strong>
                         <div>
@@ -126,78 +136,101 @@
 							<input type="hidden" id="recomm_dc_yn" name="recomm_dc_yn" value="" />
                         </div>
                     </li>
+					<!--/if(recommend_block)-->
+
+					<!--@if(family_love_yn)-->
                     <li id="l_disinfo_2" style="display:none;"><!--회원학부모-->
                         <strong><i>회</i> <i>원</i></strong>
                         <div>
-							<button class="btn_link btn_member" type="button">검색</button>
+							<button class="btn_link btn_member" type="button">입력</button>
                         </div>
                     </li>
-                    <li id="l_disinfo_3" name="names5" id="names5" style="display:none;"><!--단체3인-->
+					<!--/if(family_love_yn)-->
+					<!--@if(dc_14_block)-->
+                    <li id="l_disinfo_17" style="display:none;"><!--단체5인-->
                         <strong><i>단</i> <i>체</i></strong>
                         <div>
-                            <input type="text" class="input" placeholder="단체 3인 이상 이름 입력" style="width: 100%;">
+                            <input type="text" name="names5" class="input" placeholder="단체 5인 이상 이름 입력" style="width: 100%;">
                         </div>
                     </li>
-                    <li id="l_disinfo_4" name="names2" id="names2" style="display:none;"><!--단체2인-->
+					<!--/if(dc_14_block)-->
+					<!--@if(dc_03_block)-->
+                    <li id="l_disinfo_3" style="display:none;"><!--단체3인-->
                         <strong><i>단</i> <i>체</i></strong>
                         <div>
-                            <input type="text" class="input" placeholder="단체 2인 이름 입력" style="width: 100%;">
+                            <input type="text" name="names5" class="input" placeholder="단체 3인 이상 이름 입력" style="width: 100%;">
                         </div>
                     </li>
+					<!--/if(dc_03_block)-->
+					<!--@if(dc_04_block)-->
+                    <li id="l_disinfo_4" style="display:none;"><!--단체2인-->
+                        <strong><i>단</i> <i>체</i></strong>
+                        <div>
+                            <input type="text" name="names2" class="input" placeholder="단체 2인 이름 입력" style="width: 100%;">
+                        </div>
+                    </li>
+					<!--/if(dc_04_block)-->
                     <li id="l_disinfo_5" style="display:none;"><!--교사사서-->
                         <strong><i>첨</i> <i>부</i></strong>
                         <div>
 							<label class="btn_link">찾아보기<input type="file" class="add_file"></label>
-                            <input type="text" class="attachName" placeholder="file.file">
+                            <input type="text" id="upload01" name="license_file" class="attachName" placeholder="파일을 선택하세요">
                         </div>
                     </li>
                     <li id="l_disinfo_6" style="display:none;"><!--대학생-->
                         <strong><i>첨</i> <i>부</i></strong>
                         <div>
                             <label class="btn_link">찾아보기<input type="file" class="add_file"></label>
-                            <input type="text" class="attachName" placeholder="file.file">
+                            <input type="text" id="upload03" name="student_file" class="attachName" placeholder="파일을 선택하세요">
                         </div>
                     </li>
                     <li id="l_disinfo_9" style="display:none;"><!--쿠폰사용-->
                         <strong><i>쿠</i> <i>폰</i></strong>
                         <div>
-                            <input type="text" class="input" placeholder="쿠폰번호 입력" style="width:50%;"><br>
-                            <span>쿠폰번호 오류<span>
+                            <input type="text" class="input" name="sdc_coupon" id="sdc_coupon" maxlength="10" onkeyup="checkCoupon();" placeholder="쿠폰번호 입력" style="width:50%;"><br/>
+                            <span id="sdcCouponArea"><span>
                         </div>
                     </li>
                     <li id="l_disinfo_10" style="display:none;"><!--준교사-->
                         <strong><i>소</i> <i>속</i></strong>
                         <div>
-                            <input type="text" class="input" placeholder="소속센터 입력" style="width: 100%;">
+                            <input type="text" name="teacher_center_name" class="input" placeholder="소속센터 입력" style="width: 100%;">
+                        </div>
+                    </li>
+                    <li id="l_disinfo_11" style="display:none;"><!--센터장-->
+                        <strong><i>센</i> <i>터</i></strong>
+                        <div>
+                            <input type="text" class="input" name="center_name" placeholder="센터명(센터장명) 입력" style="width: 100%;">
                         </div>
                     </li>
                     <li class="line1">
                         <strong><i>교</i><i>재</i></strong>
                         <div>
-                            <button class="btn on" type="button">증정</button>
-                            <button class="btn" type="button">구매</button>
-                            <button class="btn" type="button">비구매</button>
-                            <strike>45,000원</strike>
+                            <!--@if(free_book_block)--><button id="book_buy_1" class="btn" type="button" onclick="javascript:setBuybook(1);">증정</button><!--/if(free_book_block)-->
+                            <button id="book_buy_2" class="btn" type="button" onclick="javascript:setBuybook(2);">구매</button>
+                            <button id="book_buy_3" class="btn" type="button" onclick="javascript:setBuybook(3);">비구매</button>
+                            <p id="l_book_price"></p>
                         </div>
                     </li>
                     <li id="l_study_price" style="display:none;">
-                        <strong><i>교</i><i>육</i><i>비</i></strong>
+                        <strong><i>교</i><i>육</i><i>비</i></strong><input type="hidden" name="pay_price" id="pay_price" /><input type="hidden" name="pay_price_text" id="pay_price_text" />
                         <div id="p_price">
-                            <strike>545,000원</strike><b>381,500원 [30% 할인 이벤트]</b>
+                            <!--<strike>545,000원</strike><b>381,500원 [30% 할인 이벤트]</b>-->
                         </div>
                     </li>
                 </ul>
                 <div class="btn_box">
-                    <button class="btn_list" type="button">목록</button>
+                    <button class="btn_list" type="button" onclick="go_list();">목록</button>
                     <button class="btn_apply" type="sumbit">수강신청</button>
                 </div>
             </div>
 
 			<iframe name="info_tab" id="info_tab" src="" height="100%" width="100%" scrolling="no" frameborder="0"></iframe> 
 
+		<!--@if(dc_02_block)-->
         <div id="l_search_child" class="view_ly __layer __member">
             <p class="tit">한우리 독서토론논술 회원 정보</p>
-            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <button class="btn_setting_reload" type="button" onclick="javascript:reset_child();"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
             <p class="t1">
                 정보를  등록할 경우 한우리열린교육 회원 조회에 활용하는 것에 동의하신 것으로 확인합니다. <br>
                 <b>정보 보유 기간</b> : 한우리캠퍼스 서비스 제공 기간까지
@@ -205,26 +238,30 @@
             <ul class="input_box">
                 <li>
                     <b>소속센터</b>
-                    <input type="text">
+                    <input type="text" name="department" id="department">
+					<span>예) 영등포지부</span>
                 </li>
                 <li>
                     <b>자녀이름</b>
                     <input type="text" name="childname" id="childname">
                 </li>
                 <li>
-                    <b>생년월일(8자리)</b>
-                    <input type="text" name="juminfront" id="juminfront" maxlength="8">
+                    <b>생년월일</b>
+                    <input type="text" name="juminfront" id="juminfront" maxlength="8" placeholder="8자리 입력">
                     <span>예) 20110505</span>
                 </li>
             </ul>
             <div class="btn_wrap">
-                <button class="btn" type="button">확인</button>
+                <button class="btn" type="button" onclick="javascript:sel_child_close();">확인</button>
             </div>
             <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
         </div>
+		<!--/if(dc_02_block)-->
+
+		<!--@if(recommend_block)-->
         <div id="l_search_recommend" class="view_ly __layer __recommend">
             <p class="tit">추천인 검색</p>
-            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <button class="btn_setting_reload" type="button" onclick="javascript:reset_recommuser();"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
             <p class="t1">
                 - 추천인 이름과 휴대폰 번호가 일치해야 검색 가능합니다. <br>
                 - 추천은 학습 2개월차부터 가능합니다. (당월 수강생 추천 불가)
@@ -244,19 +281,34 @@
             </div>
             <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
         </div>
+		<!--/if(recommend_block)-->
+
     </div>
 	</form>  
 	{{form_script}}
 </main>
 
 <script language="JavaScript">
+	addEvent("onload", setCourseStep('{{on_stepid}}'));
+	function go_list() {
+		location.href = "./course_list.jsp";
+	}
 	function view_step_id() {
 		var f = document.forms['form1'];
+		var g_id = f['g_id'].value;
 		var step_id = f['step_id'].value;
+		var study_price = f['study_price'].value;
+		var disc_price = f['disc_price'].value;
+		var pay_price = f['pay_price'].value;
+		alert(g_id);
 		alert(step_id);
+		alert("수강료: "+study_price);
+		alert("교재비: "+disc_price);
+		alert("실결제금액: "+pay_price);
 	}
 	function setCourseStep(val) {
-		$("#periodArea").hide();
+//		$("#periodArea").hide();
+//		$("#dcArea").hide();
 		var f = document.forms['form1'];
 		var v = f['g_id'].value;
 		if(v != "" && val != "") {
@@ -274,17 +326,65 @@
 		var f = document.forms['form1'];
 		var v = f['p_username'].value;
 		var v2 = f['p_handphone'].value;
-		var v3 = f['pay_price'].value;
+		var v3 = f['study_price'].value;
+		var v4 = f['disc_price'].value;
 		if(v != "" && v2 != "" && v3 != "") {
-			call("call_recom_user.jsp?v=" + v + "&v2=" + v2 + "&v3=" + v3, "l_recomm_username");
+			call("call_recom_user.jsp?v=" + v + "&v2=" + v2 + "&v3=" + v3 + "&v4=" + v4, "l_recomm_username");
+		}
+	}
+	function reset_recommuser() {
+		var f = document.forms['form1'];
+		f['p_username'].value= "";
+		f['p_handphone'].value= "";
+		f['p_username'].focus();
+	}
+	function sel_child_close() {
+		$(".bg_dimmed").removeClass("on");$(".__layer").removeClass("on");
+	}
+	function reset_child() {
+		var f = document.forms['form1'];
+		f['department'].value= "";
+		f['childname'].value= "";
+		f['juminfront'].value= "";
+		f['department'].focus();
+	}
+	function setBuybook(val) {
+		var f = document.forms['form1'];
+		var dis_type = f['discount_type'].value;
+		var study_price = f['study_price'].value;
+		var disc_price = f['disc_price'].value;
+
+		if(dis_type == '07') {}
+
+		var r_study_price = 0;
+		r_study_price = parseInt(study_price) + parseInt(disc_price);
+		if(val == 1) {
+			$("#p_price").text(number_format(parseInt(study_price)) + "원");
+			$("#l_book_price").show();
+			$("#l_book_price").text(number_format(disc_price) + "원");
+		} else if(val == 2) {
+			$("#p_price").text(number_format(parseInt(study_price) + parseInt(disc_price)) + "원");
+			$("#l_book_price").show();
+			$("#l_book_price").text(number_format(disc_price) + "원");
+		} else if(val == 3) {
+			f['book_buy_yn'].value = 'N';
+			$("#p_price").text(number_format(parseInt(study_price)) + "원");
+			$("#l_book_price").hide();
+		}
+	}
+	function checkCoupon() {
+		var f = document.forms['form1'];
+		var v = f['sdc_coupon'].value;
+		if(v != "") {
+			call("call_sdc_coupon.jsp?v=" + v, "sdcCouponArea");
 		}
 	}
 	function setSaleType(v) {
 		var f = document.forms['form1'];
 		document.getElementById("discount_info").style.display = v == 1 ? "block" : "none";
-		<!--@if(recommend_yn)-->
+		<!--@if(recommend_block)-->
 			document.getElementById("recomme_info").style.display = v == 2 ? "block" : "none";
-		<!--/if(recommend_yn)-->
+		<!--/if(recommend_block)-->
 		<!--@if(coupon_yn)-->
 			document.getElementById("coupon_info").style.display = v == 4 ? "block" : "none";
 		<!--/if(coupon_yn)-->
@@ -377,35 +477,67 @@
 		<!--/if(is_onehand_block)-->
 
 	}
-	function setDiscount(v) {
+	function setDiscount(val1, val2, val3) {
 		var f = document.forms['form1'];
-		document.getElementById("l_disinfo_1").style.display = v == '01' ? "flex" : "none";
-		document.getElementById("l_disinfo_2").style.display = v == '02' ? "flex" : "none";
-		document.getElementById("l_disinfo_3").style.display = v == '03' ? "flex" : "none";
-		document.getElementById("l_disinfo_4").style.display = v == '04' ? "flex" : "none";
-		document.getElementById("l_disinfo_5").style.display = v == '05' ? "flex" : "none";
-		document.getElementById("l_disinfo_6").style.display = v == '06' ? "flex" : "none";
-		document.getElementById("l_disinfo_9").style.display = v == '09' ? "flex" : "none";
-		document.getElementById("l_disinfo_10").style.display = v == '10' ? "flex" : "none";
+		f['sale_type'].value = val1;
+		f['discount_type'].value = val2;
+		var total_price = 0;
+		var study_price = 0;
+		var sale_price = 0;
+		var p_pay_price_conv = f['pay_price_text'].value;
+		var r_pay_price_conv = '';
+		f['pay_price'].value = 0;
+		$("#p_price").html(p_pay_price_conv);
 
-		<!--@if(main_course_off_seoul_block)-->
-			setArea(v);
-		<!--/if(main_course_off_seoul_block)-->
-		setCentertopname(v);
+		<!--@if(recommend_block)-->document.getElementById("l_disinfo_1").style.display = val3 == '01' ? "flex" : "none";<!--/if(recommend_block)-->
+		<!--@if(dc_02_block)-->document.getElementById("l_disinfo_2").style.display = val3 == '02' ? "flex" : "none";<!--/if(dc_02_block)-->
+		<!--@if(dc_03_block)-->document.getElementById("l_disinfo_3").style.display = val3 == '03' ? "flex" : "none";<!--/if(dc_03_block)-->
+		<!--@if(dc_04_block)-->document.getElementById("l_disinfo_4").style.display = val3 == '04' ? "flex" : "none";<!--/if(dc_04_block)-->
+		<!--@if(dc_05_block)-->document.getElementById("l_disinfo_5").style.display = val3 == '05' ? "flex" : "none";<!--/if(dc_05_block)-->
+		<!--@if(dc_06_block)-->document.getElementById("l_disinfo_6").style.display = val3 == '06' ? "flex" : "none";<!--/if(dc_06_block)-->
+		<!--@if(coupon_yn)-->document.getElementById("l_disinfo_9").style.display = val3 == '09' ? "flex" : "none";<!--/if(coupon_yn)-->
 		<!--@if(main_course_block)-->
-			setCentername(v);
-			setVisit(v);
-			setParent(v);
+		<!--@if(dc_10_block)-->document.getElementById("l_disinfo_10").style.display = val3 == '10' ? "flex" : "none";<!--/if(dc_10_block)-->
+			<!--@if(dc_15_block)-->
+				if(val3 == '15') {
+					document.getElementById("l_disinfo_15").style.display = "flex";
+					setBuybook(1);
+					$("#book_buy_1").addClass("on");
+					$("#book_buy_2").removeClass("on");
+					$("#book_buy_3").removeClass("on");
+					$("#book_buy_2").removeClass("btn");
+					$("#book_buy_2").addClass("link");
+					$("#book_buy_2").attr("onclick","javascript:void(0);");
+					$("#book_buy_3").removeClass("btn");
+					$("#book_buy_3").addClass("link");
+					$("#book_buy_3").attr("onclick","javascript:void(0);");
+				} else {
+					document.getElementById("l_disinfo_15").style.display = "none";
+					setBuybook(2);
+					$("#book_buy_1").removeClass("on");
+					$("#book_buy_2").addClass("on");
+					$("#book_buy_3").removeClass("on");
+					$("#book_buy_2").removeClass("link");
+					$("#book_buy_2").addClass("btn");
+					$("#book_buy_2").attr("onclick","javascript:setBuybook(2);");
+					$("#book_buy_3").removeClass("link");
+					$("#book_buy_3").addClass("btn");
+					$("#book_buy_3").attr("onclick","javascript:setBuybook(3);");
+				}
+			<!--/if(dc_15_block)-->
 		<!--/if(main_course_block)-->
-		setCertificate(v);
-		<!--@if(family_love_yn)-->
-			setLove(v);
-		<!--/if(family_love_yn)-->
-		//setRetake(v);
-		setGroup(v);
-		setStudent(v);
-		//setFreshman(v);
-		//setFamilyhelp(v);
+		<!--@if(dc_11_block)-->document.getElementById("l_disinfo_11").style.display = val3 == '11' ? "flex" : "none";<!--/if(dc_11_block)-->
+		<!--@if(restudy_block)-->
+		if(val3 == '07') {
+			total_price = parseInt(f['study_price'].value) + parseInt(f['disc_price'].value);
+			study_price = parseInt(f['study_price'].value);
+			salePrice = study_price * 50 / 100;
+			dc_pay_price = total_price - parseInt(salePrice);
+			r_pay_price_conv = "<strike>" + number_format(total_price) + "원</strike><b>" + number_format(dc_pay_price) + "원 [50% 할인]</b>";
+			f['pay_price'].value = parseInt(dc_pay_price);
+			$("#p_price").html(r_pay_price_conv);
+		}
+		<!--/if(restudy_block)-->
 	}
 	function autoHypenPhone1() {
 		var f = document.forms['form1'];
@@ -445,6 +577,9 @@
 		location.href = "../member/login.jsp?returl={{SYS_PAGE_URL}}";
 		<!--/nif(login_block)-->
 		return;
+	}
+	function goUrl(val) {
+		window.open(val, '_blank');
 	}
 	function setCart(id) {
 		if("" != id) {

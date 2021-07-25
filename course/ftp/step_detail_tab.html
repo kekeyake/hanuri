@@ -89,13 +89,12 @@
                 <div id="tab_info_3" class="tab_cont study">
 					<!--@loop(list)-->
 						<!--@if(list.is_first)-->	
-						<p class="tit">{{list.1depth}}</p>
+						<div class="tit">{{list.1depth}}</div>
 						<!--/if(list.is_first)-->	
-						<ol rows="{{list.rows}}">
-							<li>{{list.lesson_subject}}<!--@if(list.study_date_block)-->&nbsp;({{list.study_date_conv}})<!--/if(list.study_date_block)--></li>
-						</ol>
-						<!--@if(list.is_first)-->	
-
+						<p class="txt_list" rows="{{list.rows}}">
+                            <span class="num"></span>
+							{{list.lesson_subject}}<!--@if(list.study_date_block)-->&nbsp;({{list.study_date_conv}})<!--/if(list.study_date_block)-->
+						</p>
 					<!--/loop(list)-->
                 </div>
 
