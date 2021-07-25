@@ -7507,6 +7507,7 @@ footer.footer .t1:last-child {
   padding: 2.83333vw 3.33333vw 3vw 6.66667vw;
   background-color: #f3f3f3;
   border-top: 1px solid #999;
+  position: relative;
 }
 
 .class .__task .book_view .list_view_top p {
@@ -7518,7 +7519,13 @@ footer.footer .t1:last-child {
   width: 100%;
 }
 
+.class .__task .book_view .list_view_top p.txt_l {
+  text-align: left;
+}
+
 .class .__task .book_view .list_view_top .btn_pc_write {
+  position: absolute;
+  right: 3.33333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

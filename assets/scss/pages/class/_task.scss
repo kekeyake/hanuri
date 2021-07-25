@@ -179,6 +179,7 @@
                 padding:vw(17) vw(20) vw(18) vw(40);
                 background-color: #f3f3f3;
                 border-top: 1px solid #999;
+                position: relative;
                 p {
                     font-size: vw(25);
                     font-weight: 700;
@@ -186,8 +187,13 @@
                     letter-spacing: vw(-1.25);
                     text-align: center;
                     width: 100%;
+                    &.txt_l {
+                        text-align: left;
+                    }
                 }
                 .btn_pc_write {
+                    position: absolute;
+                    right:vw(20);
                     display: flex;
                     justify-content: center;
                     align-items: center;
