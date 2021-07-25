@@ -5780,6 +5780,14 @@ footer.footer .t1:last-child {
   font-weight: 500;
 }
 
+.class .evaluating_courses_ly .check_point_box p.pointTxt {
+  display: none;
+}
+
+.class .evaluating_courses_ly .check_point_box p.pointTxt.on {
+  display: block;
+}
+
 .class .evaluating_courses_ly .btn_wrap {
   margin-top: 9vw !important;
 }
@@ -6300,6 +6308,14 @@ footer.footer .t1:last-child {
 
 .class .survey .cont_inner .point_box dl dd p b {
   font-weight: 500;
+}
+
+.class .survey .cont_inner .point_box dl dd p.pointTxt {
+  display: none;
+}
+
+.class .survey .cont_inner .point_box dl dd p.pointTxt.on {
+  display: block;
 }
 
 .class .survey .cont_inner .q_txt {

@@ -302,7 +302,14 @@
                 b {
                     font-weight: 500;
                 }
+                &.pointTxt {
+                    display: none;
+                    &.on {
+                        display: block;
+                    }
+                }
             }
+
         }
         .btn_wrap  {
             margin-top: vw(54) !important;

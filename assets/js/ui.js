@@ -187,31 +187,26 @@ $(function () {
     }    
     $('.check_point_box .check_star li').on('click',function(){
         var idx = $(this).index()+1;
-        var pointNum = $(this).parent('ul').next('p').find('b');
-        var pointTxt = $(this).parent('ul').next('p').find('span');
+        var pointTxt = $(this).closest('.check_point_box').find('.pointTxt');
         $(this).parent('ul').find('li').removeClass('on');
         $(this).parent('ul').find('li:lt('+ idx +')').addClass('on');
-        
+        pointTxt.addClass('on');
+        $(this).parent('ul').next('.infoTxt').hide();
         switch (idx) {
             case 1 :
-                pointNum.text("1점");
-                pointTxt.text("매우 미흡");
+                pointTxt.text("1점 : 매우 미흡");
                 break;
             case 2 :
-                pointNum.text("2점");
-                pointTxt.text("미흡");
+                pointTxt.text("2점 : 미흡");
                 break;
             case 3 :
-                pointNum.text("3점");
-                pointTxt.text("보통");
+                pointTxt.text("3점 : 보통");
                 break;
             case 4 :
-                pointNum.text("4점");
-                pointTxt.text("우수");
+                pointTxt.text("4점 : 우수");
                 break;
             case 5 :
-                pointNum.text("5점");
-                pointTxt.text("매우 우수");
+                pointTxt.text("5점 : 매우 우수");
                 break;
         }
         //console.log(idx);
