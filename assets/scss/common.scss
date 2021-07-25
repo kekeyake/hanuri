@@ -740,6 +740,32 @@ form .btn_cert {
 .mgt50 {
 	margin-top: vw(50);
 }
+.add_file_wrap {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 0 solid #000;
+	color:#fff;
+	height: vw(40);
+	padding:vw(1.5) vw(15) vw(2.5);
+	background-color: #666;
+	border-radius: vw(3);
+	font-weight: 700;
+	margin-right: vw(10);
+	font-size: vw(22);
+	width: max-content;
+	.add_file {
+		display: none !important;
+	}
+}
+.attachName {
+	width: max-content !important;
+	height: vw(40);
+	line-height: vw(40);
+	padding:0 vw(10);
+	margin:0 !important;
+	border: 0 solid #000 !important;
+}   
 
 /* pc layout common */
 @include desktop {
@@ -1438,4 +1464,22 @@ form .btn_cert {
 	.mgt50 {
 		margin-top: px(25);
 	}
+	.add_file_wrap {
+		
+		height: px(15.5);
+		padding:0 px(10);
+		border-radius: px(3);		
+		margin-right: px(5);
+		font-size: px(10);
+		.add_file {
+			display: none;
+		}
+	}
+	.attachName {
+		width: max-content;
+		height: 20px;
+		line-height: 20px;
+		padding:0 10px;
+		border: 0 solid #000;
+	}   
 }
