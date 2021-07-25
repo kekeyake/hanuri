@@ -360,12 +360,15 @@ a.link {
 	}
 	th {
 		background-color: #f3f3f3;
-		font-weight: 400;
+		font-weight: 500;
 		vertical-align: middle;		
 	}
 	td {
 		vertical-align: middle;
-		font-weight: 400;		
+		font-weight: 400;	
+		b {
+			font-weight: 500;
+		}	
 	}
 }
 .tbl_top {
@@ -1384,7 +1387,7 @@ form .btn_cert {
 		}
 		th {
 			background-color: #f3f3f3;
-			font-weight: 400;
+			font-weight: 500;
 			vertical-align: middle;		
 		}
 		td {

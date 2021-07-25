@@ -282,6 +282,7 @@
         &.__guide {            
             background-color: #8b59cf;
             span {
+                font-weight: 700;
                 padding-right: vw(27);
                 background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
             }
@@ -291,6 +292,7 @@
             background-color: #333;
         }
         &.__test {
+            font-weight: 700;
             background-color: #ee4500;
         }
         &.__ok {
@@ -525,9 +527,9 @@
             display: flex;
             padding:vw(32) vw(30);
             background: #f9f9f9;
+            border-top: vw(1) solid #a3a3a3;
             border-bottom: vw(1) solid #a3a3a3;
             p {
-                width: vw(437);
                 font-size: vw(27);
                 font-weight: 500;
                 color:#333;
@@ -588,6 +590,15 @@
     }
     .__write {
         border-top: 1px solid #999;
+        > .tit {
+            font-size: vw(30);   
+            font-weight: 700;
+            padding:vw(28.5) 0 vw(32.5);
+            letter-spacing: vw(-1);
+            color:#333;
+            text-align: center;
+            border-bottom: 1px solid #999;
+        }
         .inquiry_box {
             padding:0 vw(30);
             border-bottom: 1px solid #999;
@@ -679,7 +690,7 @@
         align-items: center;
         letter-spacing: vw(-1);
         padding:0 vw(15);
-        margin:vw(45) 0;
+        margin:vw(45) 0 vw(10);
         .link {
             width: 50%;
             font-size: vw(22);
@@ -741,6 +752,7 @@
             color:#fff;
             background-color: #8b59cf;
             border-radius: 5px;
+            font-weight: 500;
         }
         .txt_box {
             text-align: left;
@@ -1048,20 +1060,26 @@
                 background: url(../img/btn_more.png) no-repeat 100% 50% / px(12.5) px(7.5);
             }         
             &.__guide {            
+                width: 200px;
                 background-color: #8b59cf;
                 span {
-                    padding-right: px(13.5);
-                    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / px(7);
+                    padding-right: 0;
+                    // padding-right: px(13.5);
+                    // background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / px(7);
+                    background: none;
                 }
             }
             &.__download {
+                width: 300px;
                 margin-top: px(5);
                 background-color: #333;
             }
             &.__test {
+                width: 360px;
                 background-color: #ee4500;
             }
             &.__ok {
+                width: 148.5px;
                 background-color: #ee4500;
             }
             &.__inquiry {
@@ -1098,25 +1116,29 @@
         .process_wrap {
             background: #eee;
             padding:px(15) px(15) px(12.5);
-            overflow-x: scroll;
+            overflow-x: visible;
             ol {
-                display: flex;            
-                width: max-content;
+                display: flex;       
+                justify-content: center;
+                width: 100%;
                 li {
                     text-align: center;
                     width: px(75);
-                    margin-right: px(15);
+                    margin-right: px(50);
                     position: relative;
                     &:after {
                         position: absolute;
-                        right:px(-15);
+                        right:px(-50);
                         top:0;
                         display: inline-flex;
                         content: '';
-                        width: px(15);
+                        width: px(50);
                         height: px(57.75);
-                        background: url(../img/ico_arrow_black.svg) no-repeat 50% 50% / 70%;
+                        background: url(../img/ico_arrow_black.svg) no-repeat 50% 50% / 30%;
                         opacity: 0.5;
+                    }
+                    &:last-child {
+                        margin-right: 0;
                     }
                     
                     .ico_box {                    
@@ -1169,10 +1191,11 @@
         .exam_wrap {
             background: #eee;
             padding:px(15);
-            overflow-x: scroll;
+            overflow-x: visible;
             ol {
                 display: flex;            
-                width: max-content;
+                justify-content: center;
+                width: 100%;
                 li {
                     display: flex;
                     justify-content: center;
@@ -1181,7 +1204,7 @@
                     word-break: keep-all;
                     width: px(52.5);
                     height: px(37.75);
-                    margin-right: px(19);
+                    margin-right: px(40);
                     position: relative;
                     background-color:#666;
                     border-radius: 5px;
@@ -1191,17 +1214,18 @@
                     letter-spacing: px(-0.5);
                     &:after {
                         position: absolute;
-                        right:px(-19);
+                        right:px(-40);
                         top:0;
                         display: inline-flex;
                         content: '';
-                        width: px(19);
+                        width: px(40);
                         height: px(37.5);
-                        background: url(../img/ico_arrow_black.svg) no-repeat 50% 50% / 70%;
+                        background: url(../img/ico_arrow_black.svg) no-repeat 50% 50% / 30%;
                         opacity: 0.5;
                     }
                     
                     &:last-child {                 
+                        margin-right: 0;
                         &::after {
                             display: none;
                         }
@@ -1308,9 +1332,9 @@
                 display: flex;
                 padding:px(16) px(15);
                 background: #f9f9f9;
+                border-top: 1px solid #a3a3a3;
                 border-bottom: 1px solid #a3a3a3;
                 p {
-                    width: px(218.5);
                     font-size: px(13.5);
                     font-weight: 500;
                     color:#333;
@@ -1370,31 +1394,39 @@
             }
         }
         .__write {
-            border-top: 1px solid #999;
+            border-top: 0 solid #999;
+            > .tit {
+                font-size: px(15);   
+                padding:0 0 px(16.25);
+                letter-spacing: px(-0.5);
+            }
             .inquiry_box {
-                padding:0 px(15);
+                padding:px(15);
                 border-bottom: 1px solid #999;
                 letter-spacing: px(-0.22);
+                display: flex;
+                align-items: center;
                 label {
                     display: block;
+                    white-space: nowrap;
                     color:#999;
                     font-weight: 700;
-                    margin:px(10) 0 px(5);
+                    margin:0 20px 0 0;
                     font-size: px(11);                
                     span {
                         font-weight: 400;
                     }
                 }
                 .cus_select {
-                    width: 70%;
-                    margin-bottom: px(10);
+                    width: 100%;
+                    margin-bottom: 0;
                     background-color: #fff;
                 }
                 input {
                     display: flex;
                     align-items: center;
                     width: 100%;
-                    margin-bottom: px(10);
+                    margin-bottom: 0;
                     padding:0 px(7.5);
                     height: px(24.25);
                     font-size: px(11);
@@ -1406,7 +1438,7 @@
                 }
                 textarea {
                     width: 100%;
-                    margin: px(15) 0;
+                    margin: 0;
                     padding:px(10.5) px(7.5);
                     height: px(147.75);
                     font-size: px(11);
@@ -1420,7 +1452,7 @@
                 .attach_file {
                     display: flex;
                     align-items: center;
-                    margin-bottom: px(8.75);
+                    margin: 0;
                     span {
                         font-size: px(12);
                         color:#333;
@@ -1479,7 +1511,7 @@
             }
         }
         .apply_certification {
-            width: px(270);
+            width: 100%;
             height: px(67.75);
             margin:px(16.5) auto 0;
             padding:px(20) 0 px(20) px(85.25);        

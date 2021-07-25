@@ -8905,6 +8905,7 @@ footer.footer .t1:last-child {
 }
 
 .mypage > .btn.__guide span {
+  font-weight: 700;
   padding-right: 4.5vw;
   background: url(../img/ico_arrow_white.svg) no-repeat 100% 50%/2.33333vw;
 }
@@ -8915,6 +8916,7 @@ footer.footer .t1:last-child {
 }
 
 .mypage > .btn.__test {
+  font-weight: 700;
   background-color: #ee4500;
 }
 
@@ -9204,11 +9206,11 @@ footer.footer .t1:last-child {
   display: flex;
   padding: 5.33333vw 5vw;
   background: #f9f9f9;
+  border-top: 0.16667vw solid #a3a3a3;
   border-bottom: 0.16667vw solid #a3a3a3;
 }
 
 .mypage .__view .tit p {
-  width: 72.83333vw;
   font-size: 4.5vw;
   font-weight: 500;
   color: #333;
@@ -9281,6 +9283,16 @@ footer.footer .t1:last-child {
 
 .mypage .__write {
   border-top: 1px solid #999;
+}
+
+.mypage .__write > .tit {
+  font-size: 5vw;
+  font-weight: 700;
+  padding: 4.75vw 0 5.41667vw;
+  letter-spacing: -0.16667vw;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #999;
 }
 
 .mypage .__write .inquiry_box {
@@ -9433,7 +9445,7 @@ footer.footer .t1:last-child {
           align-items: center;
   letter-spacing: -0.16667vw;
   padding: 0 2.5vw;
-  margin: 7.5vw 0;
+  margin: 7.5vw 0 1.66667vw;
 }
 
 .mypage .list_tab .link {
@@ -9507,6 +9519,7 @@ footer.footer .t1:last-child {
   color: #fff;
   background-color: #8b59cf;
   border-radius: 5px;
+  font-weight: 500;
 }
 
 .mypage .tbl_list5 .txt_box {
@@ -9856,20 +9869,24 @@ footer.footer .t1:last-child {
     background: url(../img/btn_more.png) no-repeat 100% 50%/25px 15px;
   }
   .mypage > .btn.__guide {
+    width: 200px;
     background-color: #8b59cf;
   }
   .mypage > .btn.__guide span {
-    padding-right: 27px;
-    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50%/14px;
+    padding-right: 0;
+    background: none;
   }
   .mypage > .btn.__download {
+    width: 300px;
     margin-top: 10px;
     background-color: #333;
   }
   .mypage > .btn.__test {
+    width: 360px;
     background-color: #ee4500;
   }
   .mypage > .btn.__ok {
+    width: 148.5px;
     background-color: #ee4500;
   }
   .mypage > .btn.__inquiry {
@@ -9905,34 +9922,38 @@ footer.footer .t1:last-child {
   .mypage .process_wrap {
     background: #eee;
     padding: 30px 30px 25px;
-    overflow-x: scroll;
+    overflow-x: visible;
   }
   .mypage .process_wrap ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   .mypage .process_wrap ol li {
     text-align: center;
     width: 150px;
-    margin-right: 30px;
+    margin-right: 100px;
     position: relative;
   }
   .mypage .process_wrap ol li:after {
     position: absolute;
-    right: -30px;
+    right: -100px;
     top: 0;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     content: '';
-    width: 30px;
+    width: 100px;
     height: 115.5px;
-    background: url(../img/ico_arrow_black.svg) no-repeat 50% 50%/70%;
+    background: url(../img/ico_arrow_black.svg) no-repeat 50% 50%/30%;
     opacity: 0.5;
+  }
+  .mypage .process_wrap ol li:last-child {
+    margin-right: 0;
   }
   .mypage .process_wrap ol li .ico_box {
     width: 100%;
@@ -9973,15 +9994,16 @@ footer.footer .t1:last-child {
   .mypage .exam_wrap {
     background: #eee;
     padding: 30px;
-    overflow-x: scroll;
+    overflow-x: visible;
   }
   .mypage .exam_wrap ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   .mypage .exam_wrap ol li {
     display: -webkit-box;
@@ -9997,7 +10019,7 @@ footer.footer .t1:last-child {
     word-break: keep-all;
     width: 105px;
     height: 75.5px;
-    margin-right: 38px;
+    margin-right: 80px;
     position: relative;
     background-color: #666;
     border-radius: 5px;
@@ -10008,16 +10030,19 @@ footer.footer .t1:last-child {
   }
   .mypage .exam_wrap ol li:after {
     position: absolute;
-    right: -38px;
+    right: -80px;
     top: 0;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     content: '';
-    width: 38px;
+    width: 80px;
     height: 75px;
-    background: url(../img/ico_arrow_black.svg) no-repeat 50% 50%/70%;
+    background: url(../img/ico_arrow_black.svg) no-repeat 50% 50%/30%;
     opacity: 0.5;
+  }
+  .mypage .exam_wrap ol li:last-child {
+    margin-right: 0;
   }
   .mypage .exam_wrap ol li:last-child::after {
     display: none;
@@ -10134,10 +10159,10 @@ footer.footer .t1:last-child {
     display: flex;
     padding: 32px 30px;
     background: #f9f9f9;
+    border-top: 1px solid #a3a3a3;
     border-bottom: 1px solid #a3a3a3;
   }
   .mypage .__view .tit p {
-    width: 437px;
     font-size: 27px;
     font-weight: 500;
     color: #333;
@@ -10197,26 +10222,38 @@ footer.footer .t1:last-child {
     background: #f9f9f9;
   }
   .mypage .__write {
-    border-top: 1px solid #999;
+    border-top: 0 solid #999;
+  }
+  .mypage .__write > .tit {
+    font-size: 30px;
+    padding: 0 0 32.5px;
+    letter-spacing: -1px;
   }
   .mypage .__write .inquiry_box {
-    padding: 0 30px;
+    padding: 30px;
     border-bottom: 1px solid #999;
     letter-spacing: -0.44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mypage .__write .inquiry_box label {
     display: block;
+    white-space: nowrap;
     color: #999;
     font-weight: 700;
-    margin: 20px 0 10px;
+    margin: 0 20px 0 0;
     font-size: 22px;
   }
   .mypage .__write .inquiry_box label span {
     font-weight: 400;
   }
   .mypage .__write .inquiry_box .cus_select {
-    width: 70%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 0;
     background-color: #fff;
   }
   .mypage .__write .inquiry_box input {
@@ -10227,7 +10264,7 @@ footer.footer .t1:last-child {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding: 0 15px;
     height: 48.5px;
     font-size: 22px;
@@ -10248,7 +10285,7 @@ footer.footer .t1:last-child {
   }
   .mypage .__write .inquiry_box textarea {
     width: 100%;
-    margin: 30px 0;
+    margin: 0;
     padding: 21px 15px;
     height: 295.5px;
     font-size: 22px;
@@ -10275,7 +10312,7 @@ footer.footer .t1:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 17.5px;
+    margin: 0;
   }
   .mypage .__write .inquiry_box .attach_file span {
     font-size: 24px;
@@ -10346,7 +10383,7 @@ footer.footer .t1:last-child {
     background-color: #999;
   }
   .mypage .apply_certification {
-    width: 540px;
+    width: 100%;
     height: 135.5px;
     margin: 33px auto 0;
     padding: 40px 0 40px 170.5px;
@@ -10841,13 +10878,17 @@ a.link {
 
 .tbl_list5 th {
   background-color: #f3f3f3;
-  font-weight: 400;
+  font-weight: 500;
   vertical-align: middle;
 }
 
 .tbl_list5 td {
   vertical-align: middle;
   font-weight: 400;
+}
+
+.tbl_list5 td b {
+  font-weight: 500;
 }
 
 .tbl_top {
@@ -12008,7 +12049,7 @@ form .btn_cert {
   }
   .tbl_list5 th {
     background-color: #f3f3f3;
-    font-weight: 400;
+    font-weight: 500;
     vertical-align: middle;
   }
   .tbl_list5 td {
