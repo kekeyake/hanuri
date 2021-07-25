@@ -54,7 +54,7 @@ body {
     width: 100%;
     margin:0 auto;
     position: relative;  
-    padding:10%;
+    padding:5%;
 }
 /* 수강확인서 */
 .confirmation {     
@@ -84,12 +84,12 @@ body {
             }
         }
         .t1 {
-            margin-top: pvw(97.5);
-            font-size: pvw(40);
+            margin-top: pvw(120);
+            font-size: pvw(45);
             line-height: 1.88;
         }
         .t2 {
-            margin-top: pvw(127.5);
+            margin-top: pvw(140);
             font-size: pvw(35);
         }            
     }        
@@ -128,12 +128,12 @@ body {
             }
         }
         .t1 {
-            margin-top: pvw(110);
+            margin-top: pvw(130);
             font-size: pvw(45);
             line-height: 2;
         }
         .t2 {
-            margin-top: pvw(100);
+            margin-top: pvw(140);
             font-size: pvw(35);
         }            
     } 
@@ -172,12 +172,12 @@ body {
             }
         }
         .t1 {
-            margin-top: pvw(100);
+            margin-top: pvw(120);
             font-size: pvw(45);
             line-height: 2;
         }
         .t2 {
-            margin-top: pvw(70);
+            margin-top: pvw(113);
             font-size: pvw(35);
         }            
     } 
@@ -436,7 +436,7 @@ body {
         width: 95%;
         margin:2.5% auto;
         position: relative;  
-        padding:5%;
+        padding:2.5%;
     }
     /* 수강확인서 */
     .confirmation {

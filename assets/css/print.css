@@ -259,7 +259,7 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 10%;
+  padding: 5%;
 }
 
 /* 수강확인서 */
@@ -294,13 +294,13 @@ body {
 }
 
 .confirmation .__inner .t1 {
-  margin-top: 7.8392vw;
-  font-size: 3.21608vw;
+  margin-top: 9.64824vw;
+  font-size: 3.61809vw;
   line-height: 1.88;
 }
 
 .confirmation .__inner .t2 {
-  margin-top: 10.25126vw;
+  margin-top: 11.25628vw;
   font-size: 2.81407vw;
 }
 
@@ -343,13 +343,13 @@ body {
 }
 
 .certificates .__inner .t1 {
-  margin-top: 8.84422vw;
+  margin-top: 10.45226vw;
   font-size: 3.61809vw;
   line-height: 2;
 }
 
 .certificates .__inner .t2 {
-  margin-top: 8.0402vw;
+  margin-top: 11.25628vw;
   font-size: 2.81407vw;
 }
 
@@ -392,13 +392,13 @@ body {
 }
 
 .qac .__inner .t1 {
-  margin-top: 8.0402vw;
+  margin-top: 9.64824vw;
   font-size: 3.61809vw;
   line-height: 2;
 }
 
 .qac .__inner .t2 {
-  margin-top: 5.62814vw;
+  margin-top: 9.08543vw;
   font-size: 2.81407vw;
 }
 
@@ -674,7 +674,7 @@ body {
     width: 95%;
     margin: 2.5% auto;
     position: relative;
-    padding: 5%;
+    padding: 2.5%;
   }
   /* 수강확인서 */
   .confirmation .__inner {
