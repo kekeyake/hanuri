@@ -1,0 +1,41 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="#a">시험안내</a>
+            <a href="#a">시험과목</a>
+            <a href="#a" class="on">견본문제&middot;답안지</a>
+        </div>
+        
+        <h2>독서지도사 자격시험 견본문제</h2>
+        <a href="#a" class="btn_down">독서지도사 자격시험 견본문제 다운로드</a>
+        <ul class="desc_list">
+            <li class="point">시험문제의 유형을 참고하시도록 견본문제를 제공합니다.</li>
+            <li class="point">실제 시험에는 같은 문제가 출제되지 않습니다.  </li>
+            <li>독서지도사 자격시험은 문제은행 방식으로 운영되어 기출문제를 제공하지 않습니다. </li>
+        </ul>
+
+        <h2>실기시험 답안지 견본</h2>
+        <h3>서평식 독서감상문</h3>
+        <img src="../assets/img/img_test1.png" alt="" class="test_img">
+        <h3>독서지도계획안</h3>
+        <img src="../assets/img/img_test2.png" alt="" class="test_img">
+        <ul class="desc_list">
+            <li class="point">견본 답안의 재배포를 금합니다.</li>
+            <li>온라인 시험일 경우 웹에서 작성 가능한 양식으로 제공합니다.</li>
+            <li>이미지를 클릭하시면 PDF 파일로 보실 수 있습니다. </li>
+        </ul>
+        
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

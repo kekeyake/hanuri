@@ -539,6 +539,21 @@
         background: #fff url(../img/ico_certification.svg) no-repeat 50% vw(17.5) / vw(61);
     }
 }
+
+.desc_list {
+    padding:vw(10) vw(30);
+    li {
+        font-size: vw(22);
+        letter-spacing: vw(-1.1);
+        color:#333;
+        margin-bottom: vw(10);
+        padding-left: vw(25);
+        background: url(../img/ico_bang2.svg) no-repeat 0 vw(4.5) / vw(20);
+        &.point {
+            background: url(../img/ico_bang.svg) no-repeat 0 vw(4.5) / vw(20);
+        }
+    }
+}
 @include desktop {
 
     .btn_sort_list {
@@ -833,6 +848,7 @@
                             .btn_link {
                                 margin-left: px(5);
                                 margin-right: 0;
+                                height: px(16.5);
                             }
                         }
                         b {
@@ -938,7 +954,7 @@
                         justify-content: center;
                         border: 0 solid #000;
                         color:#fff;
-                        height: px(15);
+                        height: px(19.5);
                         padding:0 px(7.5);
                         background-color: #666;
                         border-radius: px(1.5);
@@ -1031,6 +1047,33 @@
             }
         }
     }
+
+    .tab_link_wrap {
+        margin-top: px(30);
+		padding:0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		a {
+			width: calc(100% / 3);
+			border: px(0.5) solid #999;
+			border-right: 0 solid #000;
+			background-color: #f3f3f3;
+			height: px(26.5);
+			color:#666;
+			font-size: px(11);
+			letter-spacing: px(-0.55);
+			font-weight: 500;
+			&:last-child {
+				border-right: px(0.5) solid #999;
+			}
+			&.on {
+				color:#fff;
+				font-weight: 700;
+				background-color: #999;
+			}
+		}
+    }
     .apply_certification {
         width: 47%;
         height: px(67.75);
@@ -1064,6 +1107,20 @@
             height: px(47.5);
             border-radius: 100%;
             background: #fff url(../img/ico_certification.svg) no-repeat 50% px(8.25) / px(30.5);
+        }
+    }
+    .desc_list {
+        padding:px(5) px(15);
+        li {
+            font-size: px(11);
+            letter-spacing: px(-0.5);
+            color:#333;
+            margin-bottom: px(5);
+            padding-left: px(12.5);
+            background: url(../img/ico_bang2.svg) no-repeat 0 px(2.25) / px(10);
+            &.point {
+                background: url(../img/ico_bang.svg) no-repeat 0 px(2.25) / px(10);
+            }
         }
     }
 }

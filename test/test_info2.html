@@ -1,0 +1,168 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="#a">시험안내</a>
+            <a href="#a" class="on">시험과목</a>
+            <a href="#a">견본문제&middot;답안지</a>
+        </div>
+        
+        <h2>필기시험과목</h2>
+        <table class="tbl_type1">
+            <colgroup>
+                <col style="width: 25%;">
+                <col style="width: 50%;">
+                <col style="width: 25%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>과목</th>
+                    <th>내용</th>
+                    <th>문항</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        독서 <br class="m">교육론
+                    </th>
+                    <td>
+                        독서와 독서지도의 이해 <br>
+                        아동 발달과 독서<br>
+                        진로 독서 교육의 이해<br>
+                        상담과 독서<br>
+                        교육과 교육학
+                    </td>
+                    <td>
+                        13
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        독서 <br class="m">자료론
+                    </th>
+                    <td>
+                        독서 자료 선정 <br>
+                        아동문학의 이해
+                    </td>
+                    <td>
+                        10
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        독서지도 <br class="m">방법론
+                    </th>
+                    <td>
+                        글쓰기 지도의 실제 <br>
+                        서평식 독서감상문 쓰기<br>
+                        논술 지도<br>
+                        과정 중심 독서지도<br>
+                        토의 토론 지도<br>
+                        독서 교육과정과 수업 계획
+                    </td>
+                    <td>
+                        27
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <ul class="desc_list">
+            <li>필기 총 50문항, 배점 100점 중 60점 이상 합격</li>
+        </ul>
+
+        <h2>필기시험 지정 도서</h2>
+        <ul class="list_type_book">
+            <li>
+                <img src="../assets/img/img_test_book01.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">독서교육의 이론과 실제 Ⅰ</p>
+                    <p class="t2">박정진, 조재윤, 정래필, (사)한우리독서문화운동본부 교재집필연구회 <br>스푼북 펴냄</p>
+                </div>
+            </li>
+            <li>
+                <img src="../assets/img/img_test_book02.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">독서교육의 이론과 실제 Ⅱ</p>
+                    <p class="t2">박정진, 조재윤, 정래필, (사)한우리독서문화운동본부 교재집필연구회 <br>스푼북 펴냄</p>
+                </div>
+            </li>
+        </ul>
+
+        <h2>실기시험과목</h2>
+        <table class="tbl_type1">
+            <colgroup>
+                <col style="width: 25%;">
+                <col style="width: 50%;">
+                <col style="width: 25%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>과목</th>
+                    <th>내용</th>
+                    <th>문항</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">독서지도 <br class="m">실무</th>
+                    <td>서평식 독서감상문 작성</td>
+                    <td>1</td>
+                </tr>
+                <tr>                    
+                    <td>독서지도계획안 작성</td>
+                    <td>1</td>
+                </tr>                
+            </tbody>
+        </table>
+        <ul class="desc_list">
+            <li class="point">실기시험 지정 도서는 회차별 원서접수 기간에 공고</li>
+            <li class="point">지정 도서 4권 중 시험 당일에 선정되는 도서로 작성</li>
+            <li>실기 문항별 배점 50점씩, 합산 100점 중 60점 이상 합격</li>
+        </ul>
+
+        <h2>144회 실기시험 지정 도서</h2>
+        <ul class="list_type_book">
+            <li>
+                <img src="../assets/img/img_test_book03.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">할머니의 사랑 약방</p>
+                    <p class="t2">박혜선 글, 이승원 그림 <br>크레용하우스 펴냄</p>
+                </div>
+            </li>
+            <li>
+                <img src="../assets/img/img_test_book04.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">3일 늦은 선물</p>
+                    <p class="t2">이형진 글, 이형진 그림 <br>시공주니어 펴냄</p>
+                </div>
+            </li>
+            <li>
+                <img src="../assets/img/img_test_book05.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">나는 증인이 아닙니다</p>
+                    <p class="t2">박현숙 글, 권송이 그림 <br>아이앤북 펴냄</p>
+                </div>
+            </li>
+            <li>
+                <img src="../assets/img/img_test_book06.png" alt="">
+                <div class="txt_box">
+                    <p class="t1">회색 도시를 바꾼 예술가들</p>
+                    <p class="t2">F.이사벨 캠포이·테레사 하웰 글, 라파엘 로페즈 그림, 마술연필 옮김 <br>보물창고 펴냄</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

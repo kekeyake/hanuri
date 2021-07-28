@@ -300,20 +300,6 @@
         }
         
     }
-    .desc_list {
-        padding:vw(10) vw(30);
-        li {
-            font-size: vw(22);
-            letter-spacing: vw(-1.1);
-            color:#333;
-            margin-bottom: vw(10);
-            padding-left: vw(25);
-            background: url(../img/ico_bang2.svg) no-repeat 0 vw(4.5) / vw(20);
-            &.point {
-                background: url(../img/ico_bang.svg) no-repeat 0 vw(4.5) / vw(20);
-            }
-        }
-    }
     .process_wrap {
         background: #eee;
         padding:vw(30) vw(30) vw(25);
@@ -1051,20 +1037,6 @@
                 span {
                     padding-right: px(13.5);
                     background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / px(7);
-                }
-            }
-        }
-        .desc_list {
-            padding:px(5) px(15);
-            li {
-                font-size: px(11);
-                letter-spacing: px(-0.5);
-                color:#333;
-                margin-bottom: px(5);
-                padding-left: px(12.5);
-                background: url(../img/ico_bang2.svg) no-repeat 0 px(2.25) / px(10);
-                &.point {
-                    background: url(../img/ico_bang.svg) no-repeat 0 px(2.25) / px(10);
                 }
             }
         }
