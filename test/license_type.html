@@ -1,0 +1,55 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="#a">자격증 안내</a>
+            <a href="#a">자격증 신청</a>
+            <a href="#a" class="on">자격종목</a>
+        </div>
+        <h2>자격 발급 및 관리기관 정보</h2>
+        <ul class="list_type01">
+            <li><em>기관명</em> : (사)한우리독서문화운동본부</li>
+            <li><em>대표자</em> : 김희선</li>
+            <li><em>연락처</em> : 02-6276-2624</li>
+            <li><em>소재</em> : 서울시 영등포구 당산로27길 16 한우리빌딩 2층</li>
+            <li><em>사이트</em> : www.hanuricampus.com</li>
+        </ul>
+
+        <h2>독서지도사</h2>
+        <div class="type_list">
+            <img src="../assets/img/img_license03.png" alt="">
+            <ul>
+                <li><b>자격의 종류</b> : 등록(비공인) 민간자격</li>
+                <li><b>등록번호</b> : 2008-0276호</li>
+                <li><b>시험기준</b> : 필기, 실기시험</li>
+                <li><b>시험응시료</b> : 필기 3만원, 실기 4만원</li>
+                <li><b>환불규정</b> : 접수기간 100% 환불, 접수마감 ~ 시험 15일 전 50% 환불, 이후 환불하지 않음</li>
+                <li><a href="#a" target="_blank">환불규정 새창으로 보기</a></li>
+            </ul>
+        </div>
+
+        <h2>논술지도사 1급</h2>
+        <div class="type_list">
+            <img src="../assets/img/img_license04.png" alt="">
+            <ul>
+                <li><b>자격의 종류</b> : 등록(비공인) 민간자격</li>
+                <li><b>등록번호</b> : 2008-0277호</li>
+                <li><b>시험기준</b> : 본 기관 <span>대입논술지도사</span> 수료자</li>
+                <li><b>시험응시료</b> : 수강료 포함 280,000원</li>
+                <li><b>환불규정</b> : 평생교육법 시행령 제23조 2항</li>
+                <li><a href="#a" target="_blank">환불규정 새창으로 보기</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

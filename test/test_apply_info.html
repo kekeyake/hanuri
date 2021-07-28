@@ -1,0 +1,39 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <ul class="apply_refund">
+            <li class="btn btn_red">144회 시험 접수 04.05 ~ 04.16</li>
+            <li class="btn btn_pupple">사전 테스트 응시 06.05 ~ 06.16</li>
+            <li><a href="#a" class="btn btn_down">환불 신청</a></li>
+        </ul>
+        <h2>응시료</h2>
+        <ul class="list_type01">
+            <li><b>필기+실기</b> : 70,000원</li>
+            <li><b>필기</b> : 30,000원</li>
+            <li><b>실기</b> : 40,000원</li>
+        </ul>
+
+        <h2>응시료 환불 규정</h2>
+        <ul class="list_type01">
+            <li><b>원서접수 기간</b> : 100% 환불(송금수수료 제외)</li>
+            <li><b>시험일 기준 15일 이전</b> : 50% 환불</li>
+        </ul>
+        <ul class="desc_list">
+            <li class="point">위 기간 이후에는 환불하지 않음</li>
+            <li class="point">연기 제도 없음</li>
+            <li>응시자나 직계가족의 사고, 질병, 경조사 등의 사유로 시험 전 환불 신청 시 시험 50% 환불 가능(1주일 내 증빙서류 제출)</li>
+        </ul>
+        
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

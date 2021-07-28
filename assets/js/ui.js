@@ -89,7 +89,7 @@ $(function () {
         $("#info_tab",parent.document).height( resizeHeight + 150);
     });
 
-    $('.mypage .agree_wrap .tit').on('click',function(){
+    $('.agree_wrap .tit').on('click',function(){
         $(this).next('.info_box').toggleClass('on');
     });
 

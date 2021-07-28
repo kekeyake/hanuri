@@ -475,6 +475,7 @@
 }
 .tab_link_wrap {
     margin-top: vw(42);
+    margin-bottom: vw(50);
 	padding:0 vw(15);
 	display: flex;
 	justify-content: space-between;
@@ -546,11 +547,17 @@
         font-size: vw(22);
         letter-spacing: vw(-1.1);
         color:#333;
+        font-weight: 500;
         margin-bottom: vw(10);
         padding-left: vw(25);
         background: url(../img/ico_bang2.svg) no-repeat 0 vw(4.5) / vw(20);
         &.point {
             background: url(../img/ico_bang.svg) no-repeat 0 vw(4.5) / vw(20);
+        }
+        &.tit {
+            padding-left: 0;
+            background: none;
+            font-weight: 400;
         }
     }
 }

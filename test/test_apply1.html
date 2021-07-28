@@ -1,0 +1,123 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <h2>144회 독서지도사 자격시험 접수</h2>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>시험유형</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>시험장소</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>응시자명</th>
+                    <td>한우리 (1990.01.01)</td>
+                </tr>
+                <tr>
+                    <th>휴대폰</th>
+                    <td>010-6276-2626</td>
+                </tr>                
+                <tr>
+                    <th>교육기관</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>사진첨부</th>
+                    <td>
+                        <div class="attach_file">
+                            <label class="add_file_wrap">
+                                찾아보기
+                                <input type="file" class="add_file">
+                            </label>
+                            <input type="text" class="attachName" placeholder="파일을 첨부해주세요">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="desc_list">
+            <li class="point">자격증용 사진이므로 선명한 반명함 사진을 권장합니다.</li>
+            <li class="point">본인 확인이 안될 경우 시험을 응시할 수 없습니다.</li>
+            <li>사진파일은 jpg(권장), png, gif 형식만 가능합니다.</li>
+            <li>사진파일 용량은 50KB 이하입니다.</li>
+        </ul>
+        <div class="agree_wrap">
+            <div class="tit">
+                <input type="checkbox" class="checkbox">
+                <p>[필수] 응시료 환불 안내</p>
+            </div>
+            <div class="info_box">
+                <p class="stit">환불정책</p>
+                <p class="txt">
+                    - 원서접수 기간 동안에는 송금 수수료를 제외하고 100% 환불<br>
+                    - 시험일 기준 15일 이전일 경우 50% 환불
+                </p>
+
+                <p class="stit">환불기간 이후 환불이 가능한 경우(50% 환불)</p>
+                <p class="txt">
+                    - 응시자의 사고, 질병 등 사유 발생 시 진단서, 입원확인서 제출<br>
+                    - 직계가족의 사고, 질병 등 사유 발생 시 진단서, 입원확인서 제출<br>
+                    - 직계가족 결혼 시, 가족관계서류와 청첩장 사본 제출<br>
+                    - 직계가족 사망 시, 등본과 사망확인서 등 관련 서류 제출<br>
+                    - 증빙 서류에 시험일이 포함되어야 함<br>
+                    - 시험 전날까지 환불 신청하고 1주일 내 서류 제출 필수 
+                </p>
+
+                <p class="stit">연기정책</p>
+                <p class="txt">연기제도가 없으며, 연기 불가로 인해 환불하지 않음</p>
+            </div>
+            <div class="tit">
+                <input type="checkbox" class="checkbox">
+                <p>[필수] 제3자 정보 제공 동의</p>
+            </div>
+            <div class="info_box">
+                <p class="txt">
+                    - 제공처 : 한우리열린교육 <br>
+                    - 목적 : 한우리 지도교사 활동 안내<br>
+                    - 항목 : 이름, 주소, 연락처, 수강정보, 응시정보<br>
+                    - 정보보유기간 : 1년
+                </p>
+            </div>
+        </div>
+        <div class="btn_wrap">
+            <button class="btn cancel" type="button">취소</button>
+            <button class="btn" type="button">다음 단계</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

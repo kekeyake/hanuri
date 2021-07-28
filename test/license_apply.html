@@ -1,0 +1,99 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="#a">자격증 안내</a>
+            <a href="#a" class="on">자격증 신청</a>
+            <a href="#a">자격종목</a>
+        </div>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>시험유형</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>시험장소</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>응시자명</th>
+                    <td>한우리 (1990.01.01)</td>
+                </tr>
+                <tr>
+                    <th>휴대폰</th>
+                    <td>010-6276-2626</td>
+                </tr>                
+                <tr>
+                    <th>주소</th>
+                    <td>
+                        <div class="address_input">
+                            <p class="i1">
+                                <input type="text" class="input">
+                                <button class="btn_link">검색</button>
+                            </p>
+                            <p class="i1 __100">
+                                <input type="text" class="input">
+                            </p>
+                            <p class="i1 __100">
+                                <input type="text" class="input">
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>사진첨부</th>
+                    <td>
+                        <div class="attach_file">
+                            <label class="add_file_wrap">
+                                찾아보기
+                                <input type="file" class="add_file">
+                            </label>
+                            <input type="text" class="attachName" placeholder="파일을 첨부해주세요">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>결제금액</th>
+                    <td>5,000원</td>
+                </tr>                
+            </tbody>
+        </table>
+        <ul class="desc_list">
+            <li class="point">자격증용 사진이므로 선명한 반명함 사진을 권장합니다.</li>
+            <li>사진파일은 jpg(권장), png, gif 형식만 가능합니다.</li>
+            <li>사진파일 용량은 50KB 이하입니다.</li>
+        </ul>
+        <div class="btn_wrap">
+            <button class="btn cancel" type="button">취소</button>
+            <button class="btn" type="button">다음 단계</button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
