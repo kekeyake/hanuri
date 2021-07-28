@@ -99,6 +99,9 @@
             padding-left: vw(12);
             position: relative;
             margin-bottom: vw(10);
+            &:last-child {
+                margin-bottom: 0;
+            }
             &::before {
                 content: '';
                 display: block;
@@ -468,6 +471,134 @@
             }
         }
 
+        h2 {
+            padding:0;
+            font-size: px(12.5);
+            letter-spacing: px(-0.625);
+            margin-bottom: px(7.5);
+            margin-top: px(30);
+        }
+        h3 {
+            padding:0;
+            font-size: px(11);
+            letter-spacing: px(-0.5);
+            margin:px(10) 0 px(5);
+            padding-left: px(20);
+            &::before {
+                width: px(2.5);
+                height: px(2.5);
+                position: absolute;
+                left: px(15);
+                top:px(5);
+            }
+        }
+
+        .test_img {
+            width: px(270);
+        }
+        .txt1 {
+            padding:0 px(15);
+            font-size: px(11);   
+            letter-spacing: px(-0.5);
+            line-height: 1.45;
+            margin-bottom: px(15);
+        }
+        .list_type01 {
+            padding:px(10) px(15);
+            li {
+                font-size: px(11);
+                letter-spacing: px(-0.5);
+                padding-left: px(6);
+                margin-bottom: px(5);
+                &::before {
+                    width: px(2.5);
+                    height: px(2.5);
+                    top:px(5);
+                }                                
+                strong {
+                    padding-right: px(7.5);
+                    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / px(3.75);
+                }
+                p {
+                    font-size: px(9);
+                }
+            }
+        }
+    
+        .list_type_book {
+            padding:px(15);
+            li {
+                margin-bottom: px(10);
+                img {
+                    width: px(75);
+                }
+                .txt_box {
+                    margin-left: px(11.75);
+                    padding-top: px(7.5);
+                    .t1 {
+                        font-size: px(11.5);
+                        margin-bottom: px(5);
+                    }
+                    .t2 {
+                        font-size: px(11);
+                    }
+                }
+            }
+        }
+    
+        .tbl_type1 {
+            th,
+            td {
+                padding:px(7) 0 px(6.5);
+            }
+            .c1 { width: 20%; }
+            .c2 { width: 38%; }
+            .c3 { width: 20%; }
+            .c4 { width: 22%; }
+            .c5 { width: 40%; }
+        }
+        .desc_list {
+            padding:0 px(15);
+            margin-top:px(10);
+        }
+        .btn {
+            width: px(270);
+            height: px(31.5);
+            font-size: px(12.5);
+            letter-spacing: px(-0.625);
+            &.btn_down {        
+                background:#333;
+            }
+            &.btn_red {        
+                background:#ee4500;
+            }
+            &.btn_pupple {        
+                background:#8b59cf;
+            }
+            &.__apply {
+                margin-top: px(30);
+                span {
+                    padding-right: px(13.5);
+                    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / px(7);
+                }
+            }
+        }
+        
+        .apply_refund {
+            padding:0;
+            margin-top: 0;
+            li {
+                width: 100%;
+                margin-bottom: vw(10);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+
         .agree_wrap {
             margin: px(15) px(7.5);
             border: px(0.5) solid #666;
@@ -512,16 +643,102 @@
 
         }
         .btn_wrap {
-            padding:0 px(7.5);
+            margin-top: px(15);
+            padding:0;
+            justify-content: center;
             .btn {
-                width: 100%;
+                width: px(130);
                 height: px(30.25);
+                margin:0 px(5);
                 background-color: #ee5400;
                 color:#fff;
                 border-radius: px(1.5);
                 font-size: px(12.5);
                 letter-spacing: px(-0.625);
                 font-weight: 700;
+            }
+            .__btn {
+                width: px(130);
+                height: px(30);
+                margin:0 px(5);
+                font-size: px(12.5);
+                letter-spacing: px(-0.625);
+                &.__apply {
+                    margin-top: 0;
+                    span {
+                        padding-right: px(13.5);
+                        background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / px(7);
+                    }
+                }
+            }
+        }
+
+        .license_sample {
+            padding:0 px(15);
+            justify-content: center;
+            li {
+                width: 500px;
+                margin:0 px(10);
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin-top: px(10);
+                    font-size: px(10);
+                }
+            }
+        }
+
+        .address_input {
+            .i1 {
+                display: flex;
+                margin-bottom: px(3.75);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &.__100 {
+                    input {
+                        width: 100%;
+                    }
+                }
+                input {
+                    width: px(83.5);
+                }    
+                .btn_link {
+                    height: px(20);
+                    border-radius: px(1.5);
+                    background-color: #666;
+                    color:#fff;
+                    font-weight: 700;
+                    border: 0 solid #000;
+                    padding:0 px(7.5);
+                    margin-left: px(5);
+                }
+            }
+        }
+
+        .type_list {
+            padding:0 px(15);
+            img {
+                width: px(130);
+            }
+            ul {
+                margin-left: px(34);
+                li {
+                    font-size: px(10);
+                    padding-left: px(5);
+                    margin-bottom: px(4);
+                    letter-spacing: px(-0.5);
+                    &::before {
+                        width: px(2.5);
+                        height: px(2.5);
+                        top:px(5);
+                    }
+                    a {
+                        padding-right: px(7.5);
+                        background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / vw(3.75);
+                    }
+                }
             }
         }
     }

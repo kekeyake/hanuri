@@ -3070,7 +3070,8 @@ footer.footer .t1:last-child {
     font-weight: 700;
   }
   .tab_link_wrap {
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10650,6 +10651,10 @@ footer.footer .t1:last-child {
   margin-bottom: 1.66667vw;
 }
 
+.h_test .list_type01 li:last-child {
+  margin-bottom: 0;
+}
+
 .h_test .list_type01 li::before {
   content: '';
   display: block;
@@ -11124,6 +11129,137 @@ footer.footer .t1:last-child {
     border-radius: 100%;
     background: #fff url(../img/ico_next_test.svg) no-repeat 50% 16.5px/61px;
   }
+  .h_test h2 {
+    padding: 0;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+  }
+  .h_test h3 {
+    padding: 0;
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px;
+    padding-left: 40px;
+  }
+  .h_test h3::before {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+  }
+  .h_test .test_img {
+    width: 540px;
+  }
+  .h_test .txt1 {
+    padding: 0 30px;
+    font-size: 22px;
+    letter-spacing: -1px;
+    line-height: 1.45;
+    margin-bottom: 30px;
+  }
+  .h_test .list_type01 {
+    padding: 20px 30px;
+  }
+  .h_test .list_type01 li {
+    font-size: 22px;
+    letter-spacing: -1px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+  .h_test .list_type01 li::before {
+    width: 5px;
+    height: 5px;
+    top: 10px;
+  }
+  .h_test .list_type01 li strong {
+    padding-right: 15px;
+    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/7.5px;
+  }
+  .h_test .list_type01 li p {
+    font-size: 18px;
+  }
+  .h_test .list_type_book {
+    padding: 30px;
+  }
+  .h_test .list_type_book li {
+    margin-bottom: 20px;
+  }
+  .h_test .list_type_book li img {
+    width: 150px;
+  }
+  .h_test .list_type_book li .txt_box {
+    margin-left: 23.5px;
+    padding-top: 15px;
+  }
+  .h_test .list_type_book li .txt_box .t1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .h_test .list_type_book li .txt_box .t2 {
+    font-size: 22px;
+  }
+  .h_test .tbl_type1 th,
+  .h_test .tbl_type1 td {
+    padding: 14px 0 13px;
+  }
+  .h_test .tbl_type1 .c1 {
+    width: 20%;
+  }
+  .h_test .tbl_type1 .c2 {
+    width: 38%;
+  }
+  .h_test .tbl_type1 .c3 {
+    width: 20%;
+  }
+  .h_test .tbl_type1 .c4 {
+    width: 22%;
+  }
+  .h_test .tbl_type1 .c5 {
+    width: 40%;
+  }
+  .h_test .desc_list {
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+  .h_test .btn {
+    width: 540px;
+    height: 63px;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+  }
+  .h_test .btn.btn_down {
+    background: #333;
+  }
+  .h_test .btn.btn_red {
+    background: #ee4500;
+  }
+  .h_test .btn.btn_pupple {
+    background: #8b59cf;
+  }
+  .h_test .btn.__apply {
+    margin-top: 60px;
+  }
+  .h_test .btn.__apply span {
+    padding-right: 27px;
+    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50%/14px;
+  }
+  .h_test .apply_refund {
+    padding: 0;
+    margin-top: 0;
+  }
+  .h_test .apply_refund li {
+    width: 100%;
+    margin-bottom: 1.66667vw;
+  }
+  .h_test .apply_refund li:last-child {
+    margin-bottom: 0;
+  }
+  .h_test .apply_refund li .btn {
+    width: 100%;
+  }
   .h_test .agree_wrap {
     margin: 30px 15px;
     border: 1px solid #666;
@@ -11167,17 +11303,102 @@ footer.footer .t1:last-child {
     font-weight: 700;
   }
   .h_test .btn_wrap {
-    padding: 0 15px;
+    margin-top: 30px;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .h_test .btn_wrap .btn {
-    width: 100%;
+    width: 260px;
     height: 60.5px;
+    margin: 0 10px;
     background-color: #ee5400;
     color: #fff;
     border-radius: 3px;
     font-size: 25px;
     letter-spacing: -1.25px;
     font-weight: 700;
+  }
+  .h_test .btn_wrap .__btn {
+    width: 260px;
+    height: 60px;
+    margin: 0 10px;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+  }
+  .h_test .btn_wrap .__btn.__apply {
+    margin-top: 0;
+  }
+  .h_test .btn_wrap .__btn.__apply span {
+    padding-right: 27px;
+    background: url(../img/ico_arrow_white.svg) no-repeat 100% 50%/14px;
+  }
+  .h_test .license_sample {
+    padding: 0 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .h_test .license_sample li {
+    width: 500px;
+    margin: 0 20px;
+  }
+  .h_test .license_sample li img {
+    width: 100%;
+  }
+  .h_test .license_sample li p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .h_test .address_input .i1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 7.5px;
+  }
+  .h_test .address_input .i1:last-child {
+    margin-bottom: 0;
+  }
+  .h_test .address_input .i1.__100 input {
+    width: 100%;
+  }
+  .h_test .address_input .i1 input {
+    width: 167px;
+  }
+  .h_test .address_input .i1 .btn_link {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #666;
+    color: #fff;
+    font-weight: 700;
+    border: 0 solid #000;
+    padding: 0 15px;
+    margin-left: 10px;
+  }
+  .h_test .type_list {
+    padding: 0 30px;
+  }
+  .h_test .type_list img {
+    width: 260px;
+  }
+  .h_test .type_list ul {
+    margin-left: 68px;
+  }
+  .h_test .type_list ul li {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+  }
+  .h_test .type_list ul li::before {
+    width: 5px;
+    height: 5px;
+    top: 10px;
+  }
+  .h_test .type_list ul li a {
+    padding-right: 15px;
+    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/0.625vw;
   }
 }
 
@@ -12855,7 +13076,7 @@ form .btn_cert {
     margin-top: 50px;
   }
   .add_file_wrap {
-    height: 31px;
+    height: 33px;
     padding: 0 20px;
     border-radius: 6px;
     margin-right: 10px;
