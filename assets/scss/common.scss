@@ -10,6 +10,7 @@
 @import 'layout/header';
 @import 'layout/sidebar';
 @import 'layout/footer';
+@import 'layout/layout';
 
 @import 'pages/customer/notice';
 @import 'pages/customer/support';
@@ -34,6 +35,8 @@
 @import 'pages/class/delay';
 
 @import 'pages/mypage/mypage';
+
+@import 'pages/test/test';
 
 body {font-size: vw(22);}
 /* common */

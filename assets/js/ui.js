@@ -5,8 +5,10 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 106) {
             $('.pc_menu').addClass('sticky');
+            $('h1.h1').addClass('sticky');
         } else {
             $('.pc_menu').removeClass('sticky');
+            $('h1.h1').removeClass('sticky');
         }
     });
 
