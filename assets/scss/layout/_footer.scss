@@ -50,7 +50,7 @@ footer.footer {
 }
 @include desktop {
     footer.footer {
-        padding-bottom: vw(35);
+        padding-bottom: 0;
         overflow-x: hidden;
         .inner {
             width: 1200px;

@@ -20,13 +20,16 @@ $(function () {
     $('.question').on('click',function(){
         $(this).next('.answer').toggleClass('open');
     });
-    $('.depth1 > ul').hover(function(){
-        subUp();
-    });
+    // $('.depth1 > ul').hover(function(){
+    //     subUp();
+    // });
     $('.depth1 li').hover(function(){
         $(this).addClass('on').siblings('li').removeClass('on');
     }).mouseleave(function(){
         $('.depth1 li').removeClass('on');
+    });
+    $('.pc_menu').mouseenter(function(){
+        subUp();
     });
     $('.pc_menu').mouseleave(function(){
         subDown();
@@ -63,15 +66,25 @@ $(function () {
     $('.tab_container .tab_cont').hide();
     $('.tab_container .tab_cont.introduction').show();
     $('#courseTab button').on('click',function(){
+        // console.log($(document).height());
+        
+        // function resize(){  
+        //     var resizeHeight = $('#content').height();
+        //     $("#iframeWin",parent.document).height( resizeHeight + 150 );
+        // });          
         $(this).addClass('on').siblings('button').removeClass('on');
         var tabLink = $(this).attr('data-rel');
         $('.tab_container .tab_cont').hide();
         $('.tab_container .tab_cont.'+tabLink+'').show();
+        var resizeHeight = $('.tab_container').height();
+        $("#info_tab",parent.document).height( resizeHeight + 150);
 
     });
 
     $('.tab_cont.study .tit').on('click',function(){
         $(this).toggleClass('on').nextUntil('.tit').toggleClass('on');
+        var resizeHeight = $('.tab_container').height();
+        $("#info_tab",parent.document).height( resizeHeight + 150);
     });
 
     $('.mypage .agree_wrap .tit').on('click',function(){
@@ -103,7 +116,8 @@ $(function () {
         $('.__layer').removeClass('on');
         
     });
-    $('.btn_sort_list .category').on('click',function(){
+
+    $('.btn_sort_list .category').on('click',function(){                
         $(this).addClass('on').siblings('.category').removeClass('on');
     });
 

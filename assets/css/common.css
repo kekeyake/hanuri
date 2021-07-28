@@ -1660,7 +1660,7 @@ footer.footer .t1:last-child {
 
 @media (min-width: 1200px) {
   footer.footer {
-    padding-bottom: 5.83333vw;
+    padding-bottom: 0;
     overflow-x: hidden;
   }
   footer.footer .inner {

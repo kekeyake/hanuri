@@ -1,5 +1,13 @@
 <!--<div data-include-path="../layout/header.html" id="headers"></div>-->
 
+<script language="JavaScript">
+	function setDiscount2(val1, val2, val3) {
+			alert(val1);
+			alert(val2);
+			alert(val3);
+	}
+</script>
+
 <main class="main">
 	<form name="form1" method="post" target="sysfrm" enctype="multipart/form-data" onsubmit="return goSubmit(this);">
 	<input type="hidden" id="g_id" name="g_id" value="{{gubun}}" />
@@ -78,12 +86,12 @@
 					<!--/nif(login_block)-->
 
 					<!--@if(login_block)-->
-                    <li id="dcArea" class="align_top sale" style="display:none;">
+                    <li id="dcArea" class="align_top sale">
                         <strong>
                             <i>할</i><i>인</i> <button class="tool_tip" type="button" data-rel="tool2"><img src="../assets/img/ico_tool.svg" alt=""></button>                            
                         </strong>
                         <div class="sale">
-                            <!--@if(recommend_block)--><button type="button" id="dc_01" class="btn" onclick="javascript:setDiscount('02','01','01');">추천</button><!--/if(recommend_block)-->
+                            <!--@if(recommend_block)--><button type="button" id="dc_01" onclick="javascript:setDiscount2('02','01','01');" class="btn">추천</button><!--/if(recommend_block)-->
                             <!--@if(dc_02_block)--><button type="button" id="dc_02" class="btn" onclick="javascript:setDiscount('01','13','02');">회원학부모</button><!--/if(dc_02_block)-->
                             <!--@if(dc_14_block)--><button type="button" id="dc_14" onclick="javascript:setDiscount('01','15','14');" class="btn">단체5인</button><!--/if(dc_14_block)-->
                             <!--@if(dc_03_block)--><button type="button" id="dc_03" onclick="javascript:setDiscount('01','15','03');" class="btn">단체3인</button><!--/if(dc_03_block)-->
@@ -97,10 +105,10 @@
                             <!--@if(dc_11_block)--><button type="button" id="dc_11" onclick="javascript:setDiscount('01','30','11');" class="btn">센터장추천</button><!--/if(dc_11_block)-->
    							<!--@if(dc_12_block)--><button type="button" id="dc_12" onclick="javascript:setDiscount('01','08','12');" class="btn">봉사단</button><!--/if(dc_12_block)-->
    							<!--@if(dc_13_block)--><button type="button" id="dc_13" onclick="javascript:setDiscount('01','09','13');" class="btn">연구원</button><!--/if(dc_13_block)-->
-							<!--@if(main_course_yn)--><button type="button" id="dc_15" onclick="javascript:setDiscount('05','80','15');" class="btn">2021 교사소개 이벤트</button><!--/if(main_course_yn)-->
+							<!--@if(main_course_yn)--><button type="button" id="dc_15" onclick="javascript:setDiscount2('05','80','15');" class="btn">2021 교사소개 이벤트</button><!--/if(main_course_yn)-->
 							<!--@if(main_course_yn)--><!--<button type="button" id="dc_17" onclick="javascript:setDiscount('17');" class="btn">지도교사 양성반</button>--><!--/if(main_course_yn)-->
                             <!--@nif(main_course_yn)--><!--@if(read_complete_block)--><button type="button" id="dc_16" onclick="javascript:setDiscount('01','28','16');" class="btn">독서지도사 수료자</button><!--/if(read_complete_block)--><!--/nif(main_course_yn)-->
-                            <div class="tool_layer tool2">
+                            <div class="tool_layer tool2"> 
                                 <dl>
                                     <div>
                                         <dt class="t1">할인 적용 안내</dt>
@@ -138,14 +146,15 @@
                     </li>
 					<!--/if(recommend_block)-->
 
-					<!--@if(family_love_yn)-->
+					<!--@if(dc_02_block)-->
                     <li id="l_disinfo_2" style="display:none;"><!--회원학부모-->
                         <strong><i>회</i> <i>원</i></strong>
                         <div>
 							<button class="btn_link btn_member" type="button">입력</button>
                         </div>
                     </li>
-					<!--/if(family_love_yn)-->
+					<!--/if(dc_02_block)-->
+
 					<!--@if(dc_14_block)-->
                     <li id="l_disinfo_17" style="display:none;"><!--단체5인-->
                         <strong><i>단</i> <i>체</i></strong>
@@ -154,6 +163,7 @@
                         </div>
                     </li>
 					<!--/if(dc_14_block)-->
+
 					<!--@if(dc_03_block)-->
                     <li id="l_disinfo_3" style="display:none;"><!--단체3인-->
                         <strong><i>단</i> <i>체</i></strong>
@@ -162,6 +172,7 @@
                         </div>
                     </li>
 					<!--/if(dc_03_block)-->
+
 					<!--@if(dc_04_block)-->
                     <li id="l_disinfo_4" style="display:none;"><!--단체2인-->
                         <strong><i>단</i> <i>체</i></strong>
@@ -170,6 +181,8 @@
                         </div>
                     </li>
 					<!--/if(dc_04_block)-->
+
+					<!--@if(dc_05_block)-->
                     <li id="l_disinfo_5" style="display:none;"><!--교사사서-->
                         <strong><i>첨</i> <i>부</i></strong>
                         <div>
@@ -177,6 +190,9 @@
                             <input type="text" id="upload01" name="license_file" class="attachName" placeholder="파일을 선택하세요">
                         </div>
                     </li>
+					<!--/if(dc_05_block)-->
+
+					<!--@if(dc_06_block)-->
                     <li id="l_disinfo_6" style="display:none;"><!--대학생-->
                         <strong><i>첨</i> <i>부</i></strong>
                         <div>
@@ -184,6 +200,9 @@
                             <input type="text" id="upload03" name="student_file" class="attachName" placeholder="파일을 선택하세요">
                         </div>
                     </li>
+					<!--/if(dc_06_block)-->
+
+					<!--@if(coupon_yn)-->
                     <li id="l_disinfo_9" style="display:none;"><!--쿠폰사용-->
                         <strong><i>쿠</i> <i>폰</i></strong>
                         <div>
@@ -191,18 +210,28 @@
                             <span id="sdcCouponArea"><span>
                         </div>
                     </li>
+					<!--/if(coupon_yn)-->
+
+					<!--@if(main_course_block)-->
+					<!--@if(dc_10_block)-->
                     <li id="l_disinfo_10" style="display:none;"><!--준교사-->
                         <strong><i>소</i> <i>속</i></strong>
                         <div>
                             <input type="text" name="teacher_center_name" class="input" placeholder="소속센터 입력" style="width: 100%;">
                         </div>
                     </li>
+					<!--/if(dc_10_block)-->
+					<!--/if(main_course_block)-->
+
+					<!--@if(dc_11_block)-->
                     <li id="l_disinfo_11" style="display:none;"><!--센터장-->
                         <strong><i>센</i> <i>터</i></strong>
                         <div>
                             <input type="text" class="input" name="center_name" placeholder="센터명(센터장명) 입력" style="width: 100%;">
                         </div>
                     </li>
+					<!--/if(dc_11_block)-->
+
                     <li class="line1">
                         <strong><i>교</i><i>재</i></strong>
                         <div>
@@ -212,12 +241,14 @@
                             <p id="l_book_price"></p>
                         </div>
                     </li>
+
                     <li id="l_study_price" style="display:none;">
                         <strong><i>교</i><i>육</i><i>비</i></strong><input type="hidden" name="pay_price" id="pay_price" /><input type="hidden" name="pay_price_text" id="pay_price_text" />
                         <div id="p_price">
                             <!--<strike>545,000원</strike><b>381,500원 [30% 할인 이벤트]</b>-->
                         </div>
                     </li>
+
                 </ul>
                 <div class="btn_box">
                     <button class="btn_list" type="button" onclick="go_list();">목록</button>
@@ -475,12 +506,13 @@
 		}
 		<!--/if(is_onehand_dc_block)-->
 		<!--/if(is_onehand_block)-->
-
 	}
+
 	function setDiscount(val1, val2, val3) {
 		var f = document.forms['form1'];
 		f['sale_type'].value = val1;
 		f['discount_type'].value = val2;
+		//alert(val1);	alert(val2);	alert(val3);
 		var total_price = 0;
 		var study_price = 0;
 		var sale_price = 0;
@@ -488,7 +520,6 @@
 		var r_pay_price_conv = '';
 		f['pay_price'].value = 0;
 		$("#p_price").html(p_pay_price_conv);
-
 		<!--@if(recommend_block)-->document.getElementById("l_disinfo_1").style.display = val3 == '01' ? "flex" : "none";<!--/if(recommend_block)-->
 		<!--@if(dc_02_block)-->document.getElementById("l_disinfo_2").style.display = val3 == '02' ? "flex" : "none";<!--/if(dc_02_block)-->
 		<!--@if(dc_03_block)-->document.getElementById("l_disinfo_3").style.display = val3 == '03' ? "flex" : "none";<!--/if(dc_03_block)-->
@@ -596,7 +627,7 @@
 
 		if(!validate(f)) return false;
 
-		if(GetFormValue('form1', 'sale_type') == "01" && GetFormValue('form1', 'discount_type') == "") { alert("수강료 할인 상세내용을 선택 해주시기 바랍니다. "); return false; }
+		//if(GetFormValue('form1', 'sale_type') == "01" && GetFormValue('form1', 'discount_type') == "") { alert("수강료 할인 상세내용을 선택 해주시기 바랍니다. "); return false; }
 
 		<!--@if(coupon_yn)-->
 		<!--@nif(is_hanteachercourse_block)-->
