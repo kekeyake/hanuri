@@ -1,7 +1,7 @@
 .h_test {
     margin-bottom: vw(100);
     .__wrap_top {
-        margin-top: 7.5vw;
+        margin-top: vw(30);
         padding-bottom: vw(22);
         border-bottom: vw(1) solid #bcbcbc;
     }
@@ -419,6 +419,7 @@
         width: 1200px;
         margin:0 auto 100px;
         .__wrap_top {
+            margin-top: px(30);
             padding-bottom: px(7.5);
             border-bottom: px(0.5) solid #bcbcbc;
             display: flex;
