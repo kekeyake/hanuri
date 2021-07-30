@@ -81,6 +81,16 @@ a.link {
 		background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / vw(24) vw(15);
 		border: vw(1) solid #777;
 	}
+	&.btn_more {
+		display: flex;
+		justify-content: center;
+		margin: vw(48) auto;
+		font-size: vw(22);
+		font-weight: 700;
+		color: #929292;
+		padding-right: vw(40);
+		background: url(../img/btn_more.png) no-repeat 100% 50% / vw(25) vw(15);
+	}
 }
 .noscroll {
 	scrollbar-width: none;
@@ -902,6 +912,16 @@ form .btn_cert {
 			height: px(25.5);
 			background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / px(12) px(7.5);
 			border: px(0.5) solid #777;
+		}
+		&.btn_more {
+			display: flex;
+			justify-content: center;
+			margin: px(24) auto;
+			font-size: px(11);
+			font-weight: 700;
+			color: #929292;
+			padding-right: px(20);
+			background: url(../img/btn_more.png) no-repeat 100% 50% / px(12.5) px(7.5);
 		}
 	}
 
