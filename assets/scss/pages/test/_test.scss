@@ -82,7 +82,7 @@
         margin:0 auto;
     }
     .txt1 {
-        padding:0 vw(60) 0 vw(30);
+        padding:0 vw(30);
         font-size: vw(22);   
         letter-spacing: vw(-1);
         color:#333;
@@ -90,7 +90,8 @@
         margin-bottom: vw(30);
     }
     .list_type01 {
-        padding:vw(20) vw(30);
+        margin-bottom: vw(40);
+        padding:vw(30);
         background-color: #eee;
         li {
             font-size: vw(22);
@@ -204,6 +205,7 @@
         font-size: vw(25);
         color:#fff;
         letter-spacing: vw(-1.25);
+        font-weight: 700;
         &.btn_down {        
             background:#333;
         }
@@ -247,7 +249,7 @@
             align-items: center;
             padding:vw(20);
             font-size: vw(22);
-            font-weight: 400;
+            font-weight: 700;
             letter-spacing: vw(-0.44);
             color:#333;
             border-bottom: vw(0.25) solid #666;
@@ -312,6 +314,7 @@
             font-size: vw(25);
             color:#fff;
             letter-spacing: vw(-1.25);
+            font-weight: 700;
             &.__list {
                 background-color: #333;
             }
@@ -413,6 +416,50 @@
             }
         }
     }
+
+    .apply_certification {
+        width: vw(570);
+    }
+
+    .board_list {
+        li {            
+            .txt_box {   
+                padding-top: 0; 
+                .event_t {
+                    margin: vw(5) 0 0;
+                }            
+                .t1 {
+                    font-size: vw(25);
+                    font-weight: 700;
+                    letter-spacing: vw(-1.45);
+                    margin: vw(10) 0 vw(5);
+                    line-height: vw(32);
+                    overflow: hidden; 
+                    text-overflow: ellipsis; 
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; /* 라인수 */	
+                    -webkit-box-orient: vertical; 
+                    word-wrap:break-word;
+                    word-break: keep-all;
+                }
+                .t2 {
+                    font-size: vw(22);
+                    letter-spacing: vw(-1.1);
+                    line-height: vw(28);
+                    word-break: keep-all;
+                }
+            }
+        }
+    }
+
+    .movie_wrap {
+        .thumb_box {
+            display: block;
+        }
+        .movie_box {
+            display: none;
+        }
+    }
 }
 @include desktop {
     .h_test {
@@ -434,7 +481,7 @@
         }
 
         .next_test {
-            width: 47%;
+            width: 100%;
             height: px(67.75);
             margin:px(16.5) auto 0;
             padding:px(15) 0 px(15) px(85.25);        
@@ -484,21 +531,27 @@
             font-size: px(11);
             letter-spacing: px(-0.5);
             margin:px(10) 0 px(5);
-            padding-left: px(20);
+            padding-left: px(5);
             &::before {
                 width: px(2.5);
                 height: px(2.5);
                 position: absolute;
-                left: px(15);
+                left: 0;
                 top:px(5);
             }
         }
-
+        .test_list {
+            display: flex;
+            li {
+                width: 49%;
+            }
+        }
         .test_img {
             width: px(270);
+            margin:0;
         }
         .txt1 {
-            padding:0 px(15);
+            padding:0;
             font-size: px(11);   
             letter-spacing: px(-0.5);
             line-height: 1.45;
@@ -506,6 +559,7 @@
         }
         .list_type01 {
             padding:px(10) px(15);
+            margin-bottom:px(20);
             li {
                 font-size: px(11);
                 letter-spacing: px(-0.5);
@@ -528,8 +582,16 @@
     
         .list_type_book {
             padding:px(15);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             li {
-                margin-bottom: px(10);
+                width: 49%;
+                margin-top: px(20);
+                margin-bottom: 0;
+                &:nth-child(-n + 2) {
+                    margin-top: 0;
+                }
                 img {
                     width: px(75);
                 }
@@ -559,7 +621,7 @@
             .c5 { width: 40%; }
         }
         .desc_list {
-            padding:0 px(15);
+            padding:0;
             margin-top:px(10);
         }
         .btn {
@@ -569,6 +631,7 @@
             letter-spacing: px(-0.625);
             &.btn_down {        
                 background:#333;
+                margin:0;
             }
             &.btn_red {        
                 background:#ee4500;
@@ -588,12 +651,11 @@
         .apply_refund {
             padding:0;
             margin-top: 0;
+            display: flex;
+            justify-content: space-between;
             li {
-                width: 100%;
-                margin-bottom: vw(10);
-                &:last-child {
-                    margin-bottom: 0;
-                }
+                width: 33%;
+                margin: 0;                
                 .btn {
                     width: 100%;
                 }
@@ -601,7 +663,7 @@
         }
 
         .agree_wrap {
-            margin: px(15) px(7.5);
+            margin: px(15) 0;
             border: px(0.5) solid #666;
             border-bottom: 0 solid #000;
             .tit {
@@ -609,7 +671,7 @@
                 align-items: center;
                 padding:px(10);
                 font-size: px(11);
-                font-weight: 400;
+                font-weight: 700;
                 letter-spacing: px(-0.22);
                 color:#333;
                 border-bottom: px(0.5) solid #666;
@@ -663,7 +725,7 @@
                 height: px(30);
                 margin:0 px(5);
                 font-size: px(12.5);
-                letter-spacing: px(-0.625);
+                letter-spacing: px(-0.625);                
                 &.__apply {
                     margin-top: 0;
                     span {
@@ -675,11 +737,14 @@
         }
 
         .license_sample {
-            padding:0 px(15);
-            justify-content: center;
+            padding:0;
+            justify-content: flex-start;
             li {
                 width: 500px;
-                margin:0 px(10);
+                margin:0;
+                &:first-child {
+                    margin-right: 20px;
+                }
                 img {
                     width: 100%;
                 }
@@ -719,12 +784,12 @@
         }
 
         .type_list {
-            padding:0 px(15);
+            padding:0;
             img {
                 width: px(130);
             }
             ul {
-                margin-left: px(34);
+                margin-left: px(17);
                 li {
                     font-size: px(10);
                     padding-left: px(5);
@@ -738,6 +803,31 @@
                     a {
                         padding-right: px(7.5);
                         background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / px(3.75);
+                    }
+                }
+            }
+        }
+
+        .apply_certification {
+            width: 100%;
+        }
+        .board_list {
+            li {            
+                .txt_box {   
+                    padding-top: 0; 
+                    .event_t {
+                        margin: px(2.5) 0 0;
+                    }            
+                    .t1 {
+                        font-size: px(12.5);
+                        letter-spacing: px(-0.725);
+                        margin: px(5) 0 px(2.5);
+                        line-height: px(16);
+                    }
+                    .t2 {
+                        font-size: px(11);
+                        letter-spacing: px(-0.5);
+                        line-height: px(14);
                     }
                 }
             }
