@@ -226,9 +226,11 @@ $(function () {
                 break;
         }
         //console.log(idx);
-    })
+    });
 
-    
+    $('.apply_refund a').on('click',function (){
+        $(this).addClass('on').parent('li').siblings('li').find('a').removeClass('on');
+    });
 });
 
 

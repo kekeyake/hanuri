@@ -40,7 +40,17 @@
             width: vw(95);
             height: vw(95);
             border-radius: 100%;
-            background: #fff url(../img/ico_next_test.svg) no-repeat 50% vw(17.5) / vw(61);
+            background: #fff;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: vw(56);
+            top:vw(25);
+            width: vw(85);
+            height: vw(85);
+            background: url(../img/ico_next_test.svg) no-repeat 50%  / 99%;
         }
     }
 
@@ -515,7 +525,17 @@
                 width: px(47.5);
                 height: px(47.5);
                 border-radius: 100%;
-                background: #fff url(../img/ico_next_test.svg) no-repeat 50% px(8.25) / px(30.5);
+                background: #fff;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: px(26);
+                top:px(15);
+                width: px(42.5);
+                height: px(42.5);
+                background: url(../img/ico_next_test.svg) no-repeat 50%  / 99%;
             }
         }
 
@@ -652,12 +672,31 @@
             padding:0;
             margin-top: 0;
             display: flex;
-            justify-content: space-between;
             li {
-                width: 33%;
+                width: calc(100% / 3);
                 margin: 0;                
                 .btn {
                     width: 100%;
+                    border-radius: 0;                                      
+                }
+                a {
+                    width: 100%;
+                    border: px(0.5) solid #999;
+                    border-right: 0 solid #000;
+                    background-color: #f3f3f3 !important;
+                    height: px(26.5);
+                    color:#666;
+                    font-size: px(11);
+                    letter-spacing: px(-0.55);
+                    font-weight: 500;
+                    &:last-child {
+                        border-right: px(0.5) solid #999 !important;
+                    }
+                    &.on {
+                        color:#fff;
+                        font-weight: 700;
+                        background-color: #999 !important;
+                    }
                 }
             }
         }
@@ -828,6 +867,9 @@
                         font-size: px(11);
                         letter-spacing: px(-0.5);
                         line-height: px(14);
+                    }
+                    .t3 {
+                        display: none;
                     }
                 }
             }
