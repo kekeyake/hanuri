@@ -1,6 +1,8 @@
 var $winW, $winH, $isMobile, $headerHeight;
+
 $(function () {
     $headerHeight = $('.header').innerHeight();
+
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 106) {
@@ -231,8 +233,69 @@ $(function () {
     $('.apply_refund a').on('click',function (){
         $(this).addClass('on').parent('li').siblings('li').find('a').removeClass('on');
     });
-});
 
+    if ( $('.top_banner_slide').length ) {
+        var swiper2 = new Swiper(".top_banner_slide", {
+            loop: true,
+            pagination: {
+                el: ".top_banner_slide .swiper-pagination",
+            },
+        });
+    }
+    if ( $('.event_banner_slide').length ) {
+        var swiper3 = new Swiper(".event_banner_slide", {
+            loop: true,
+            pagination: {
+                el: ".event_banner .swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".event_banner_slide .swiper-button-next",
+                prevEl: ".event_banner_slide .swiper-button-prev",
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,                    
+                },
+            },
+        });
+    }
+    if ($('.notice_swiper').length) {
+        var swiper = new Swiper(".notice_swiper", {
+            direction: "vertical",
+            loop: true,
+            spaceBetween: 10,
+            autoplay: {
+                delay : 3500,
+            },
+        });
+    }   
+    
+});
+var ww = $(window).width();
+var mySwiper4 = undefined;
+function initSwiper() {
+
+  if (ww < 1280 && mySwiper4 == undefined) {
+    mySwiper4 = new Swiper(".__notice_list .swiper-container", {
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+            delay : 3500,
+        },
+    });
+  } else if (ww > 1279 && mySwiper4 != undefined) {
+    mySwiper4.destroy();
+    mySwiper4 = undefined;
+  }
+}
+
+initSwiper();
+
+$(window).on('resize', function () {
+  ww = $(window).width();
+  initSwiper();
+});
 
     
 
