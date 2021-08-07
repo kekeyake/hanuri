@@ -11949,6 +11949,10 @@ footer.footer .t1:last-child {
   background: #000;
 }
 
+.main_cont.top_banner .top_banner_slide .banner_txt a {
+  color: #fff;
+}
+
 .main_cont.top_banner .top_banner_slide .swiper-slide img {
   width: 100%;
 }
@@ -12373,11 +12377,34 @@ footer.footer .t1:last-child {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    right: 50px;
+    right: 50%;
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
     bottom: 70px;
   }
   .main_cont.top_banner .__recruit {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+    background-color: #ffa801;
+    border-radius: 23px;
+    z-index: 10;
+    padding: 12px 20px 11px;
+  }
+  .main_cont.top_banner .__recruit span {
+    font-family: 'NanumSquare';
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: #000;
+    padding-right: 20px;
+    background: url(../img/main/ico_arrow.png) no-repeat 100% 50%/12px;
   }
   .main_cont.interview {
     padding: 70px 0 75px;

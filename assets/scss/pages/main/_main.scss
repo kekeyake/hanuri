@@ -82,6 +82,9 @@
                 font-size: vw(25);
                 letter-spacing: vw(-1.25);
                 background: #000;
+                a {
+                    color:#fff;
+                }
             }            
             .swiper-slide {
                 img {
@@ -461,12 +464,31 @@
                 }
                 .swiper-pagination {
                     width: max-content;
-                    right:50px;
+                    right:50%;
+                    transform: translateX(600px);
                     bottom:70px;
                 }
             }
             .__recruit {
-                display: none;
+                display: flex;
+                position: absolute;
+                left:50%;
+                bottom:80px;
+                transform: translateX(-600px);
+                background-color: #ffa801;
+                border-radius: 23px;
+                z-index: 10;
+                padding:12px 20px 11px;
+                span {
+                    font-family: 'NanumSquare';
+                    font-size: 22px;
+                    font-weight: 900;
+                    font-style: italic;
+                    letter-spacing: -1px;
+                    color:#000;
+                    padding-right: 20px;
+                    background: url(../img/main/ico_arrow.png) no-repeat 100% 50% / 12px;
+                }
             }
         }
     
