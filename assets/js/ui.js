@@ -235,16 +235,58 @@ $(function () {
     });
 
     if ( $('.top_banner_slide').length ) {
-        var swiper2 = new Swiper(".top_banner_slide", {
+        var mainSwiper1 = new Swiper(".top_banner_slide", {
+            slidesPerView:1,
             loop: true,
+            effect: "fade",
+            speed:1000,
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".top_banner_slide .swiper-pagination",
             },
         });
     }
-    if ( $('.event_banner_slide').length ) {
-        var swiper3 = new Swiper(".event_banner_slide", {
+    if ( $('.interview_slide').length ) {
+        var mainSwiper2 = new Swiper(".interview_slide", {
+            slidesPerView:1,
             loop: true,
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".interview_slide .swiper-button-next",
+                prevEl: ".interview_slide .swiper-button-prev",
+            },
+        });
+        
+    }
+
+    if ($('.reply_list').length) {
+        var mainSwiper3 = new Swiper(".reply_list", {
+            slidesPerView:3,
+            direction: "vertical",
+            loop: true,
+            touchRatio: 0,//드래그 금지
+            speed:700,
+            autoHeight : true,
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
+        });
+    }    
+    
+    if ( $('.event_banner_slide').length ) {
+        var mainSwiper4 = new Swiper(".event_banner_slide", {
+            loop: true,
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".event_banner .swiper-pagination",
             },
@@ -260,41 +302,31 @@ $(function () {
             },
         });
     }
-    if ($('.notice_swiper').length) {
-        var swiper = new Swiper(".notice_swiper", {
+    px    
+});
+var ww = $(window).width();
+var mainSwiper5 = undefined;
+function initSwiper() {
+
+    if (ww < 1280 && mainSwiper5 == undefined) {
+        mainSwiper5 = new Swiper(".__notice_list .swiper-container", {
             direction: "vertical",
             loop: true,
-            spaceBetween: 10,
             autoplay: {
                 delay : 3500,
             },
         });
-    }   
-    
-});
-var ww = $(window).width();
-var mySwiper4 = undefined;
-function initSwiper() {
-
-  if (ww < 1280 && mySwiper4 == undefined) {
-    mySwiper4 = new Swiper(".__notice_list .swiper-container", {
-        direction: "vertical",
-        loop: true,
-        autoplay: {
-            delay : 3500,
-        },
-    });
-  } else if (ww > 1279 && mySwiper4 != undefined) {
-    mySwiper4.destroy();
-    mySwiper4 = undefined;
-  }
+    } else if (ww > 1279 && mainSwiper5 != undefined) {
+        mainSwiper5.destroy();
+        mainSwiper5 = undefined;
+    }
 }
 
 initSwiper();
 
 $(window).on('resize', function () {
-  ww = $(window).width();
-  initSwiper();
+    ww = $(window).width();
+    initSwiper();
 });
 
     

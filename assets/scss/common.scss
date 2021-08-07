@@ -40,7 +40,13 @@
 
 @import 'pages/main/main';
 
-body {font-size: vw(22);}
+body {
+	font-size: vw(22);
+	-ms-overflow-style: none; 
+}
+::-webkit-scrollbar { 
+	display: none;
+}
 /* common */
 select.select {
 	// padding: 5px 20px 5px 10px;
@@ -75,6 +81,7 @@ a.link {
 }
 .btn {
 	&.__top {
+		z-index: 100;
 		position: fixed;
 		right: vw(24);
 		bottom:vw(212);
