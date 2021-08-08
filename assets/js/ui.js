@@ -270,12 +270,11 @@ $(function () {
             slidesPerView:3,
             direction: "vertical",
             loop: true,
-            touchRatio: 0,//드래그 금지
             speed:700,
             autoHeight : true,
+            allowTouchMove: false,
             autoplay: {
                 delay : 3500,
-                disableOnInteraction: false,
             },
         });
     }    
