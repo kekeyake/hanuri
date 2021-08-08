@@ -302,7 +302,6 @@ $(function () {
             },
         });
     }
-    px    
 });
 var ww = $(window).width();
 var mainSwiper5 = undefined;
