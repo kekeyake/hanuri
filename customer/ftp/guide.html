@@ -35,7 +35,7 @@ function myQNA(){
         <div class="nav_menu noscroll">
             <ul>
 				<!--@loop(categories)-->
-                <li class="{{categories.tab}}"><a href="../customer/guide.jsp?code=faq&s_category_id={{categories.id}}">{{categories.name}}</a></li>
+                <li class="{{categories.tab}}"><a href="../customer/guide.jsp?code=faq&s_category_id={{categories.id}}&ord=S{{categories.sort}}">{{categories.name}}</a></li>
 				<!--/loop(categories)-->
 				<!--
                 <li><a href="#a">교육과정</a></li>

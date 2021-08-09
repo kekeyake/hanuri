@@ -112,11 +112,16 @@ nav {
                             color:#ee4500;
                         }
                     }
+                    a {
+                        &:hover {
+                            color:#ee4500;
+                        }
+                    }
                 }
                 a {
                     font-weight: 900;
                     color:#333;
-                    font-size: vw(25);
+                    font-size: vw(25);                    
                 }
             }
         }
@@ -204,6 +209,11 @@ nav {
                 }
                 &:nth-child(7) {
                     width: 176px;
+                }
+                a {
+                    &:hover {
+                        color:#ee4500;
+                    }
                 }
             }
             li.on a {

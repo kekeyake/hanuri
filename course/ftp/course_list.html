@@ -3,42 +3,20 @@
 <main class="main">
 	<form name="form1" method="get">
 	<input type="hidden" name="s_type" id="s_type" />
-	<input type="hidden" name="s_gubun" id="s_gubun" />
-	<input type="hidden" name="s_shape" id="s_shape" />
-	<input type="hidden" name="s_period" id="s_period" />
     <div class="course">
         <div class="__wrap_top">
             <div class="search_box">
                 <input type="text" id="s_keyword" name="s_keyword" placeholder="교육과정 검색">
                 <button type="submit" class="btn __search"></button>
+				<input type="hidden" name="s_ord" id="s_ord" />
             </div>            
             <div class="btn_sort_list">
                 <button class="btn_sort" type="button"><img src="../assets/img/btn_sort.svg" alt=""></button>
-                <button class="category n1" type="button" onclick="javascript:go_type('01');"><span>자격</span></button>
-                <button class="category n2" type="button" onclick="javascript:go_type('02');"><span>수료</span></button>
-                <button class="category n3" type="button" onclick="javascript:go_type('03');"><span>특강</span></button>
-                <button class="category n9" type="button" onclick="javascript:go_type('09');"><span>이벤트</span></button>
-            </div>
-            <script>
-                var thisPageUrl = window.location.href;
-                var sortActive = thisPageUrl.slice(63,65);
-                switch (sortActive) {
-                    case "01":                        
-                        $('.btn_sort_list .n1').addClass('on').siblings('button').removeClass('on');
-                        break;
-                    case "02":
-                        $('.btn_sort_list .n2').addClass('on').siblings('button').removeClass('on');
-                        break;
-                    case "03":
-                        $('.btn_sort_list .n3').addClass('on').siblings('button').removeClass('on');
-                        break;
-                    case "09":
-                        $('.btn_sort_list .n9').addClass('on').siblings('button').removeClass('on');
-                        break;                    
-                    default:
-                        break;
-                }
-            </script>
+                <button class="category n1" type="button" onclick="javascript:go_type('01','C1');"><span>자격</span></button>
+                <button class="category n2" type="button" onclick="javascript:go_type('02','C2');"><span>수료</span></button>
+                <button class="category n3" type="button" onclick="javascript:go_type('03','C3');"><span>특강</span></button>
+                <button class="category n4" type="button" onclick="javascript:go_type('09','C4');"><span>이벤트</span></button>
+            </div>            
         </div>
         <ul class="board_list">
 			<!--@loop(list)-->
@@ -173,8 +151,9 @@
 
 <script>
 	var f = document.forms['form1'];
-	function go_type(val) {
+	function go_type(val, val2) {
 		f['s_type'].value = val;
+		f['s_ord'].value = val2;
 		f.submit();
 	}
 	function go_gubun(val) {

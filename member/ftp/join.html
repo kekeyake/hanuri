@@ -25,20 +25,20 @@
             <div class="join_box">
                 <label for="user_id">아이디 (6자리 이상)</label>
                 <input type="text" name="user_id" id="user_id" onkeyup="javascript:checkUserid();" style="ime-mode:disabled;" />
-                <button id="b_reset_userid" class="btn btn_reset" onclick="javascript:resetUserid();" style="display:none;"><img src="../assets/img/btn_delete.svg" alt=""></button>
+                <button type="button" id="b_reset_userid" class="btn btn_reset" onclick="javascript:resetUserid();" style="display:none;"><img src="../assets/img/btn_delete.svg" alt=""></button>
             </div>
             <p id="alreadyUseridArea" class="error"></p>
             <div class="join_box">
                 <label for="user_passwd">비밀번호 (영문, 숫자 조합 8자리 이상)</label>
                 <input type="password" name="user_passwd" id="user_passwd" onkeyup="javascript:checkPassword1();">
-                <button class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw.png" alt=""></button>
+                <button type="button" class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw_hide.png" alt=""></button>
             </div>
 			<p id="errorPassword1" class="error"></p>
     
             <div class="join_box">
                 <label for="l6">비밀번호 확인</label>
                 <input type="password" name="user_passwd2" id="user_passwd2" onkeyup="javascript:checkCapsLock(event);checkPassword2();">
-                <button class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw_hide.png" alt=""></button>
+                <button type="button" class="btn btn_toggle"><img src="../assets/img/ico_toggle_pw_hide.png" alt=""></button>
             </div>
             <p id="l_capslock" class="error" style="display:none;">Caps Lock이 켜져 있습니다.</p>
             <p id="errorPassword2" class="error"></p>
@@ -77,7 +77,7 @@
 		if(v != "") {
 			//아이디 값이 없거나 아이디가 유효한게 아니면
 			if(!v.length || userid_pattern.test(v)) {
-				$("#alreadyUseridArea").text("한글아이디는 사용이 불가능합니다.");
+				$("#alreadyUseridArea").text("한글 및 특수문자는 사용이 불가능합니다.");
 				f['user_id'].value = v.replace(/[^a-zA-Z0-9]/g, '').trim();
 				return false;
 			}
