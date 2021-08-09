@@ -1,0 +1,138 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="course">
+        <div class="__wrap_top">
+            <div class="search_box">
+                <input type="text" placeholder="교육과정 검색">
+                <button class="btn __search"></button>
+            </div>
+
+            <div class="btn_sort_list">
+                <button class="btn_sort" type="button" id="btnSort"><img src="../assets/img/btn_sort.svg" alt=""></button>
+                <button class="category on" type="button"><span>자격</span></button>
+                <button class="category" type="button"><span>수료</span></button>
+                <button class="category" type="button"><span>특강</span></button>
+                <button class="category" type="button"><span>이벤트</span></button>
+            </div>
+        </div>
+    
+        <ul class="board_list">
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img01.png" alt="">
+                        <span class="status">BEST</span>
+                    </div>
+                    <div class="txt_box">
+                        <span class="event_t">30% 할인 이벤트</span>
+                        <p class="t1">독서지도사 양성과정</p>
+                        <p class="t3"><span>#한우리선생님</span> <span>#자격증</span> <span>#첨삭</span> <span>#첨삭</span> <span>#첨삭</span></p>
+                        <p class="t2">실력있는 독서지도 전문가 양성, 자녀 교육에 적용하고 평생직업으로 활용</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img02.png" alt="">
+                        <span class="status">NEW</span>
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">논술지도사</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">2021년 개편, 초중등 독서감상문과 논술문 쓰기 지도, 첨삭지도 연습</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img03.png" alt="">
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">토론지도사</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">토론의 기본 개념부터 다양한 토론기법 및 모형의 이론과 실습 교육</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img04.png" alt="">
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">유아독서지도사</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">유아 발달, 유아 심리 특성, 유아 도서의 역사와 특성 등 다양한 이론 및 실습과정</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img05.png" alt="">
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">대입논술지도사</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">대입 인문계 기출문제를 분석하고 답안작성과 첨삭지도 연습, 논술문제 출제 능력 배양</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img06.png" alt="">
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">그림책놀이지도사</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">발달단계에 맞는 그림책을 선정하여 다양한 놀이로 지도하는 그림책놀이지도사 양성과정</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="setting_ly __layer">
+            <p class="tit">교육과정 보기 설정</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            
+            <p class="stit">교육형태</p>
+            <div class="btn_box">
+                <button type="button" class="on">온라인</button>
+                <button type="button">ZOOM</button>
+                <button type="button">출석</button>
+                <button type="button">온라인+출석</button>
+            </div>
+
+            <p class="stit">교육형태</p>
+            <div class="btn_box">
+                <button type="button">자격과정</button>
+                <button type="button">수료과정</button>
+                <button type="button">패키지과정</button>
+                <button type="button">특강</button>
+            </div>
+
+            <p class="stit">수강시간</p>
+            <div class="btn_box">
+                <button type="button">1개월</button>
+                <button type="button">2개월</button>
+                <button type="button">3개월</button>
+                <button type="button">4개월</button>
+            </div>
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
