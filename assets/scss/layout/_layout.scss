@@ -81,6 +81,20 @@
                 border-radius: vw(3);
                 margin-bottom: vw(10);                
             }
+            .course_t {
+                display: inline-block;
+                background-color: #3a5498;
+                padding:vw(1.5) vw(10) vw(1.5);
+                font-size: vw(20);
+                letter-spacing: vw(-1);
+                color:#fff;
+                font-weight: 700;
+                border-radius: vw(3);
+                margin-bottom: vw(10);   
+                &._green {
+                    background-color: #6b9a38;
+                }             
+            }
             .t1 {
                 font-size: vw(29);
                 font-weight: 700;
@@ -96,6 +110,14 @@
             }
             .t3 {
                 display: none;
+            }
+            .price {
+                font-size: vw(22);
+                letter-spacing: vw(-1.1);
+                line-height: vw(28);
+                word-break: keep-all;
+                margin-top: vw(10);
+                color:#333;
             }
         }
     }
@@ -825,6 +847,20 @@
                     border-radius: px(1.5);
                     margin-bottom: px(3.5);
                 }
+                .course_t {
+                    display: inline-block;
+                    background-color: #3a5498;
+                    padding:px(1.5) px(4) px(.5);
+                    font-size: px(8);
+                    letter-spacing: px(-0.4);
+                    color:#fff;
+                    font-weight: 700;
+                    border-radius: px(1.5);
+                    margin-bottom: px(3.5);
+                    &._green {
+                        background-color: #6b9a38;
+                    }             
+                }
                 .t1 {
                     font-size: px(12.5);
                     font-weight: 700;
@@ -850,6 +886,13 @@
                         word-break: keep-all;
                     }
                     
+                }
+                .price {
+                    font-size: px(8);
+                    letter-spacing: px(-0.4);
+                    line-height: px(11);
+                    word-break: keep-all;
+                    margin-top: 5px;
                 }
             }
         }

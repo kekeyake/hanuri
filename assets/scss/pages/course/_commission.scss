@@ -1,7 +1,7 @@
 .course {
     &.__commission {
         overflow: hidden;
-        padding:0 vw(30);
+        padding:0 vw(30) vw(50);
         .tab_link_wrap {
             padding:0;
         }
@@ -135,6 +135,65 @@
             }
         }
     }
+
+    &.__commission_list {
+        h2 {
+            font-size: vw(25);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: vw(-1.25);
+            margin-left: vw(30);
+            margin-bottom: vw(20);
+        }
+        .board_list {
+            border-top: 1px solid #999;
+        }
+    }
+    .list_type01 {
+        margin-bottom: vw(40);
+        padding:vw(30);
+        background-color: #eee;
+        li {
+            font-size: vw(22);
+            color:#333;
+            letter-spacing: vw(-1);
+            padding-left: vw(12);
+            position: relative;
+            margin-bottom: vw(10);
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: vw(5);
+                height: vw(5);
+                background-color:#333;
+                border-radius: 100%;
+                position: absolute;left: 0;
+                top:vw(10);
+            }
+            .point {
+                color:#ee4500;
+                font-weight: 700;
+            }
+            em {
+                font-weight: 500;
+            }
+            b {
+                font-weight: 700;
+            }
+            strong {
+                font-weight: 700;
+                padding-right: vw(15);
+                background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / vw(7.5);
+            }
+            p {
+                font-size: vw(18);
+                line-height: 1.5;
+            }
+        }
+    }
 }
 
 @include desktop {
@@ -236,6 +295,41 @@
                         letter-spacing: -1.25px;
                         background: url(../img/ico_doc.svg) no-repeat 100% 50% / 23px;
                     }
+                }
+            }
+        }
+
+        &.__commission_list {
+            h2 {
+                font-size: 25px;
+                letter-spacing: -1.25px;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+            .board_list {
+                border-top: 1px solid #bcbcbc;
+                margin-bottom: 50px;
+            }
+        }
+        .list_type01 {
+            padding:px(10) px(15);
+            margin-bottom:px(20);
+            li {
+                font-size: px(11);
+                letter-spacing: px(-0.5);
+                padding-left: px(6);
+                margin-bottom: px(5);
+                &::before {
+                    width: px(2.5);
+                    height: px(2.5);
+                    top:px(5);
+                }                                
+                strong {
+                    padding-right: px(7.5);
+                    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / px(3.75);
+                }
+                p {
+                    font-size: px(9);
                 }
             }
         }

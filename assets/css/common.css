@@ -1895,6 +1895,22 @@ footer.footer .t1:last-child {
   margin-bottom: 1.66667vw;
 }
 
+.board_list li .txt_box .course_t {
+  display: inline-block;
+  background-color: #3a5498;
+  padding: 0.25vw 1.66667vw 0.25vw;
+  font-size: 3.33333vw;
+  letter-spacing: -0.16667vw;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.5vw;
+  margin-bottom: 1.66667vw;
+}
+
+.board_list li .txt_box .course_t._green {
+  background-color: #6b9a38;
+}
+
 .board_list li .txt_box .t1 {
   font-size: 4.83333vw;
   font-weight: 700;
@@ -1912,6 +1928,15 @@ footer.footer .t1:last-child {
 
 .board_list li .txt_box .t3 {
   display: none;
+}
+
+.board_list li .txt_box .price {
+  font-size: 3.66667vw;
+  letter-spacing: -0.18333vw;
+  line-height: 4.66667vw;
+  word-break: keep-all;
+  margin-top: 1.66667vw;
+  color: #333;
 }
 
 .setting_ly .stit {
@@ -2862,6 +2887,20 @@ footer.footer .t1:last-child {
     border-radius: 3px;
     margin-bottom: 7px;
   }
+  .board_list li .txt_box .course_t {
+    display: inline-block;
+    background-color: #3a5498;
+    padding: 3px 8px 1px;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 7px;
+  }
+  .board_list li .txt_box .course_t._green {
+    background-color: #6b9a38;
+  }
   .board_list li .txt_box .t1 {
     font-size: 25px;
     font-weight: 700;
@@ -2886,6 +2925,13 @@ footer.footer .t1:last-child {
   .board_list li .txt_box .t3 span {
     display: inline-block;
     word-break: keep-all;
+  }
+  .board_list li .txt_box .price {
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    line-height: 22px;
+    word-break: keep-all;
+    margin-top: 5px;
   }
   .setting_ly .stit {
     font-size: 22px;
@@ -6316,7 +6362,7 @@ footer.footer .t1:last-child {
 
 .course.__commission {
   overflow: hidden;
-  padding: 0 5vw;
+  padding: 0 5vw 8.33333vw;
 }
 
 .course.__commission .tab_link_wrap {
@@ -6476,6 +6522,74 @@ footer.footer .t1:last-child {
   background: url(../img/ico_doc.svg) no-repeat 100% 50%/3.83333vw;
 }
 
+.course.__commission_list h2 {
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.20833vw;
+  margin-left: 5vw;
+  margin-bottom: 3.33333vw;
+}
+
+.course.__commission_list .board_list {
+  border-top: 1px solid #999;
+}
+
+.course .list_type01 {
+  margin-bottom: 6.66667vw;
+  padding: 5vw;
+  background-color: #eee;
+}
+
+.course .list_type01 li {
+  font-size: 3.66667vw;
+  color: #333;
+  letter-spacing: -0.16667vw;
+  padding-left: 2vw;
+  position: relative;
+  margin-bottom: 1.66667vw;
+}
+
+.course .list_type01 li:last-child {
+  margin-bottom: 0;
+}
+
+.course .list_type01 li::before {
+  content: '';
+  display: block;
+  width: 0.83333vw;
+  height: 0.83333vw;
+  background-color: #333;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.66667vw;
+}
+
+.course .list_type01 li .point {
+  color: #ee4500;
+  font-weight: 700;
+}
+
+.course .list_type01 li em {
+  font-weight: 500;
+}
+
+.course .list_type01 li b {
+  font-weight: 700;
+}
+
+.course .list_type01 li strong {
+  font-weight: 700;
+  padding-right: 2.5vw;
+  background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/1.25vw;
+}
+
+.course .list_type01 li p {
+  font-size: 3vw;
+  line-height: 1.5;
+}
+
 @media (min-width: 1200px) {
   .course.__commission {
     overflow: visible;
@@ -6579,6 +6693,38 @@ footer.footer .t1:last-child {
     font-size: 25px;
     letter-spacing: -1.25px;
     background: url(../img/ico_doc.svg) no-repeat 100% 50%/23px;
+  }
+  .course.__commission_list h2 {
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .course.__commission_list .board_list {
+    border-top: 1px solid #bcbcbc;
+    margin-bottom: 50px;
+  }
+  .course .list_type01 {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+  .course .list_type01 li {
+    font-size: 22px;
+    letter-spacing: -1px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+  .course .list_type01 li::before {
+    width: 5px;
+    height: 5px;
+    top: 10px;
+  }
+  .course .list_type01 li strong {
+    padding-right: 15px;
+    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/7.5px;
+  }
+  .course .list_type01 li p {
+    font-size: 18px;
   }
 }
 
