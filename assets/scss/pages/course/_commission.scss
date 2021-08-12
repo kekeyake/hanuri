@@ -170,6 +170,42 @@
                 margin: vw(60) 0 0;
             }
         }
+        .step_list {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: vw(29.5);
+            margin-bottom: vw(40);
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: vw(110.5);
+                height: vw(80.5);
+                font-size: vw(20);
+                color:#000;
+                letter-spacing: vw(-1.5);
+                background: #cde2f6;
+                border-radius: 10px;
+                margin-right: vw(25);
+                margin-bottom: vw(19.5);
+                text-align: center;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: vw(11.5);
+                    height: vw(19);
+                    background: url(../img/course/ico_arrow_right.svg) no-repeat 0 0 / cover;
+                    position: absolute;
+                    right:vw(-18);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
         .contents_list {
             display: flex;
             justify-content: space-between;

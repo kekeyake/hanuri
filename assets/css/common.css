@@ -6563,6 +6563,53 @@ footer.footer .t1:last-child {
   margin: 10vw 0 0;
 }
 
+.course.__commission_write .step_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 4.91667vw;
+  margin-bottom: 6.66667vw;
+}
+
+.course.__commission_write .step_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18.41667vw;
+  height: 13.41667vw;
+  font-size: 3.33333vw;
+  color: #000;
+  letter-spacing: -0.25vw;
+  background: #cde2f6;
+  border-radius: 10px;
+  margin-right: 4.16667vw;
+  margin-bottom: 3.25vw;
+  text-align: center;
+  position: relative;
+}
+
+.course.__commission_write .step_list li::after {
+  content: '';
+  display: block;
+  width: 1.91667vw;
+  height: 3.16667vw;
+  background: url(../img/course/ico_arrow_right.svg) no-repeat 0 0/cover;
+  position: absolute;
+  right: -3vw;
+}
+
+.course.__commission_write .step_list li:last-child::after {
+  display: none;
+}
+
 .course.__commission_write .contents_list {
   display: -webkit-box;
   display: -ms-flexbox;
