@@ -1,0 +1,84 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="course __commission_write">
+        <div class="tab_link_wrap">
+            <a href="#a">과정 소개</a>
+            <a href="#a">과정 목록</a>
+            <a href="#a" class="on">상담신청</a>
+        </div>
+
+        <h2>진행 절차</h2>
+        <h2>담당자 안내</h2>
+        <ul class="contents_list">
+            <li>
+                <p class="t1">독서지도사 양성과정</p>
+                <p class="t2">
+                    <b>이인수 팀장</b> <br>
+                    02-6276-2612<br>
+                    <span>sea0617@hanuribook.or.kr</span>
+                </p>
+            </li>
+            <li>
+                <p class="t1">단체위탁과정</p>
+                <p class="t2">
+                    <b>김희정 팀장</b> <br>
+                    02-6276-2615<br>
+                    <span>khj1020@hanuribook.or.kr</span>
+                </p>
+            </li>
+        </ul>
+        
+        <h2 class="tit">상담신청</h2>
+        <ul class="input_form">
+            <li>
+                <label>과정 선택</label>
+                <select name="" id="" class="cus_select">
+                    <option value="">독서지도사</option>
+                </select>
+            </li>
+            <li>
+                <label>단체명</label>
+                <input type="text" class="text" placeholder="단체명을 입력하세요">
+            </li>
+            <li>
+                <label>담당자 이름, 소속, 직위</label>
+                <input type="text" class="text" placeholder="담당자 정보를 입력하세요">
+            </li>
+            <li>
+                <label>전화번호</label>
+                <input type="text" class="text" placeholder="전화번호를 입력하세요">
+            </li>
+            <li>
+                <label>이메일 주소</label>
+                <input type="text" class="text" placeholder="이메일 주소를 입력하세요">
+            </li>
+            <li>
+                <textarea name="" id="" cols="30" rows="10" placeholder="문의할 내용을 입력하세요"></textarea>
+            </li>
+        </ul>
+        <div class="agree_box">
+            <div>
+                <input type="checkbox" class="checkbox">
+                <span>[필수] 개인정보 수집·이용 동의</span>
+            </div>
+            <div class="txt_box">
+                (사)한우리독서문화운동본부는 단체위탁교육 상담 서비스를 
+                위해 개인정보를 수집·이용합니다. 수집된 개인정보는 이외의 
+                목적으로 사용하지 않으며, 정보 주체의 동의 없이 제3자에게 
+                제공하지 않습니다.
+            </div>
+        </div>
+        <button type="button" class="btn __ok">확인</button>
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>
