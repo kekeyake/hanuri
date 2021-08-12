@@ -1,138 +1,432 @@
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">   
-    $(document).ready( function() {
-        $("#headers").load("../layout/header.html");  //헤더 인클루드
-        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
-    });
-</script>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="tamtam">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.min.css?3" />
+</head>
+<body>
+<div class="bg_dimmed"></div>
 
-<div data-include-path="../layout/header.html" id="headers"></div>
 
-<main class="main">
-    <div class="course">
-        <div class="__wrap_top">
-            <div class="search_box">
-                <input type="text" placeholder="교육과정 검색">
-                <button class="btn __search"></button>
+<div id="wrap">
+    <!-- header -->
+    <header class="header">
+        <section class="inner __top">
+            <button id="btnMobile" class="m btn _menu"></button>
+            <a href="#a" class="pc">전체메뉴</a>
+            <h1 class="logo">
+                <a href="#a"><img src="../assets/img/logo_m.svg" alt="한우리 독서지도사"></a>
+            </h1>
+            <button class="m btn _login"></button>
+            <div class="pc">
+                <a href="../member/join.jsp">회원가입</a>
+                <a href="../member/login.jsp">로그인</a>
             </div>
-
-            <div class="btn_sort_list">
-                <button class="btn_sort" type="button" id="btnSort"><img src="../assets/img/btn_sort.svg" alt=""></button>
-                <button class="category on" type="button"><span>자격</span></button>
-                <button class="category" type="button"><span>수료</span></button>
-                <button class="category" type="button"><span>특강</span></button>
-                <button class="category" type="button"><span>이벤트</span></button>
+        </section>        
+    </header>
+    <!--// header -->
+    
+    <nav class="main_menu">
+        <section class="inner __nav">
+            <ul>
+                <li><a href="#a">독서지도사</a></li>
+                <li class="on"><a href="#a">수강신청</a></li>
+                <li><a href="#a">자격시험</a></li>
+                <li><a href="#a">한우리교사</a></li>        
+            </ul>      
+        </section>
+        <section class="__sub_bg noscroll">
+            <div class="__snav on">
+                <a href="#a">왜 독서지도사인가?</a>
+                <a href="#a" class="on">독서지도사는 한우리</a>
+                <a href="#a">활동후기</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">독서지도사과정</a>
+                <a href="#a">전체과정</a>
+                <a href="#a">단체위탁과정</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">시험안내</a>
+                <a href="#a">시험접수</a>
+                <a href="#a">응시결과</a>
+                <a href="#a">자격증신청</a>
+                <a href="#a">보수교육</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">한우리교사안내</a>
+                <a href="#a">입문과정</a>
+            </div>      
+        </section>
+    </nav>
+    <nav class="pc pc_menu">
+        <div class="depth1">
+            <ul>
+                <li><a href="#a">독서지도사</a></li>
+                <li class="on"><a href="#a">수강신청</a></li>
+                <li><a href="#a">자격시험</a></li>
+                <li><a href="#a">한우리교사</a></li>
+                <li><a href="#a">한우리캠퍼스</a></li>
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">내 강의실</a></li>
+            </ul>
+        </div>
+        <div class="pc_sub_menu">
+            <div class="inner">
+                <ul class="sub_menu">
+                    <li><a href="#a">왜 독서지도사인가?</a></li>
+                    <li><a href="#a">독서지도사는 한우리</a></li>
+                    <li><a href="#a">활동후기</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">독서지도사과정</a></li>
+                    <li><a href="#a">전체과정</a></li>
+                    <li><a href="#a">단체위탁과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">시험안내</a></li>
+                    <li><a href="#a">시험접수</a></li>
+                    <li><a href="#a">응시결과</a></li>
+                    <li><a href="#a">자격증신청</a></li>
+                    <li><a href="#a">보수교육</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">한우리교사안내</a></li>
+                    <li><a href="#a">입문과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">인사말</a></li>
+                    <li><a href="#a">설립목적</a></li>
+                    <li><a href="#a">연혁</a></li>
+                    <li><a href="#a">위치안내</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">공지사항</a></li>
+                    <li><a href="#a">학습지원</a></li>
+                    <li><a href="#a">이용안내</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">수강과정</a></li>
+                    <li><a href="#a">결제대기</a></li>
+                    <li><a href="#a">시험이력</a></li>
+                    <li><a href="#a">자격이력</a></li>
+                    <li><a href="#a">나의상담</a></li>
+                </ul>
             </div>
         </div>
-    
-        <ul class="board_list">
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img01.png" alt="">
-                        <span class="status">BEST</span>
-                    </div>
-                    <div class="txt_box">
-                        <span class="event_t">30% 할인 이벤트</span>
-                        <p class="t1">독서지도사 양성과정</p>
-                        <p class="t3"><span>#한우리선생님</span> <span>#자격증</span> <span>#첨삭</span> <span>#첨삭</span> <span>#첨삭</span></p>
-                        <p class="t2">실력있는 독서지도 전문가 양성, 자녀 교육에 적용하고 평생직업으로 활용</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img02.png" alt="">
-                        <span class="status">NEW</span>
-                    </div>
-                    <div class="txt_box">
-                        <p class="t1">논술지도사</p>
-                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
-                        <p class="t2">2021년 개편, 초중등 독서감상문과 논술문 쓰기 지도, 첨삭지도 연습</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img03.png" alt="">
-                    </div>
-                    <div class="txt_box">
-                        <p class="t1">토론지도사</p>
-                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
-                        <p class="t2">토론의 기본 개념부터 다양한 토론기법 및 모형의 이론과 실습 교육</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img04.png" alt="">
-                    </div>
-                    <div class="txt_box">
-                        <p class="t1">유아독서지도사</p>
-                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
-                        <p class="t2">유아 발달, 유아 심리 특성, 유아 도서의 역사와 특성 등 다양한 이론 및 실습과정</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img05.png" alt="">
-                    </div>
-                    <div class="txt_box">
-                        <p class="t1">대입논술지도사</p>
-                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
-                        <p class="t2">대입 인문계 기출문제를 분석하고 답안작성과 첨삭지도 연습, 논술문제 출제 능력 배양</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#a">
-                    <div class="img_box">
-                        <img src="../assets/img/course_img06.png" alt="">
-                    </div>
-                    <div class="txt_box">
-                        <p class="t1">그림책놀이지도사</p>
-                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
-                        <p class="t2">발달단계에 맞는 그림책을 선정하여 다양한 놀이로 지도하는 그림책놀이지도사 양성과정</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-
-        <div class="setting_ly __layer">
-            <p class="tit">교육과정 보기 설정</p>
-            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
-            
-            <p class="stit">교육형태</p>
-            <div class="btn_box">
-                <button type="button" class="on">온라인</button>
-                <button type="button">ZOOM</button>
-                <button type="button">출석</button>
-                <button type="button">온라인+출석</button>
+    </nav>
+<main class="main">
+    <div class="course __intro">
+        <div class="__intro">
+            <div class="top">
+                <img src="../assets/img/course/bg_top.png" alt="독서지도사 막상 시작하려니 걱정이 앞선다면?">
             </div>
-
-            <p class="stit">교육형태</p>
-            <div class="btn_box">
-                <button type="button">자격과정</button>
-                <button type="button">수료과정</button>
-                <button type="button">패키지과정</button>
-                <button type="button">특강</button>
+            <div class="dont __01">
+                <img src="../assets/img/course/dont01.png" alt="수강이력이 쌓일수록 자신감도 커집니다">
             </div>
-
-            <p class="stit">수강시간</p>
-            <div class="btn_box">
-                <button type="button">1개월</button>
-                <button type="button">2개월</button>
-                <button type="button">3개월</button>
-                <button type="button">4개월</button>
+            <div class="dont_slide __01">
+                <div class="inner">
+                    <img src="../assets/img/course/dont01_txt.png" alt="여러분과 비슷했던 수많은 수강생들도 완강했습니다." class="tit">
+                    <div class="swiper-container dont_slide01">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    자녀를 키우고 있는 저로서는 유익한 내용도 많았고, 좀
+                                    더 빨리 알았으면 하는 아쉬움도 있었습니다. 책을 단순
+                                    하게 읽는 것에 그치지 않고 잘 읽는 방법들을 알게 되어 
+                                    기쁘고, 막연하게 어렵다고 생각했던 글쓰기의 부담도 
+                                    줄었습니다. 온라인 수업 내용은 방대했지만 쾌적하게 
+                                    구성되어 도움이 되었습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>135기 박○란님</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    자녀를 키우고 있는 저로서는 유익한 내용도 많았고, 좀
+                                    더 빨리 알았으면 하는 아쉬움도 있었습니다. 책을 단순
+                                    하게 읽는 것에 그치지 않고 잘 읽는 방법들을 알게 되어 
+                                    기쁘고, 막연하게 어렵다고 생각했던 글쓰기의 부담도 
+                                    줄었습니다. 온라인 수업 내용은 방대했지만 쾌적하게 
+                                    구성되어 도움이 되었습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>135기 박○란님</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    자녀를 키우고 있는 저로서는 유익한 내용도 많았고, 좀
+                                    더 빨리 알았으면 하는 아쉬움도 있었습니다. 책을 단순
+                                    하게 읽는 것에 그치지 않고 잘 읽는 방법들을 알게 되어 
+                                    기쁘고, 막연하게 어렵다고 생각했던 글쓰기의 부담도 
+                                    줄었습니다. 온라인 수업 내용은 방대했지만 쾌적하게 
+                                    구성되어 도움이 되었습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>135기 박○란님</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>                
             </div>
-            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+            <div class="dont __02">
+                <img src="../assets/img/course/dont02.png" alt="학습 진도, 꼼꼼하게 관리해 드립니다">
+            </div>
+            <div class="dont_slide __02">
+                <div class="inner">
+                    <img src="../assets/img/course/dont02_txt.png" alt="수강후기의 감사 인사와 칭찬 릴레이가 증명합니다" class="tit">
+                    <div class="swiper-container dont_slide02">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    생업을 병행해야 하는 상황이라 기간도 촉박했는데, 
+                                    독려문자도 계속 와서 포기하지 않고 공부를 이어나갈 
+                                    수 있었던 것 같아요. 전문적인 강의를 경험할 수 있게 해
+                                    줘서 고맙습니다. 이후 전문 분야의 개별강의를 들을 의
+                                    향도 있습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>139기 이○완님</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    자녀를 키우고 있는 저로서는 유익한 내용도 많았고, 좀
+                                    더 빨리 알았으면 하는 아쉬움도 있었습니다. 책을 단순
+                                    하게 읽는 것에 그치지 않고 잘 읽는 방법들을 알게 되어 
+                                    기쁘고, 막연하게 어렵다고 생각했던 글쓰기의 부담도 
+                                    줄었습니다. 온라인 수업 내용은 방대했지만 쾌적하게 
+                                    구성되어 도움이 되었습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>135기 박○란님</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="t1">
+                                    자녀를 키우고 있는 저로서는 유익한 내용도 많았고, 좀
+                                    더 빨리 알았으면 하는 아쉬움도 있었습니다. 책을 단순
+                                    하게 읽는 것에 그치지 않고 잘 읽는 방법들을 알게 되어 
+                                    기쁘고, 막연하게 어렵다고 생각했던 글쓰기의 부담도 
+                                    줄었습니다. 온라인 수업 내용은 방대했지만 쾌적하게 
+                                    구성되어 도움이 되었습니다. 
+                                </p>
+                                <div class="user_box">
+                                    <img src="../assets/img/ico_profile.svg" alt="">
+                                    <span>135기 박○란님</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dont __03">
+                <img src="../assets/img/course/dont03.png" alt="탄탄한 교육과정과 확실한 활동처 제공">
+            </div>
+            <div class="dont03">
+                <div class="inner">
+                    <ul>
+                        <li><img src="../assets/img/course/dont03_01.png" alt=""></li>
+                        <li><img src="../assets/img/course/dont03_02.png" alt=""></li>
+                    </ul>
+                    <img src="../assets/img/course/dont03_txt.png" alt="정년없는 한우리선생님 활동으로 자격증 제대로 활용하세요!" class="txt">
+                </div>                
+            </div>
+            <div class="btn_wrap">
+                <a href="#a" class="btn __link btn1"><span>한우리 선생님이 궁금하다면?</span></a>
+                <a href="#a" class="btn __link btn2"><span>독서지도사 수강신청 바로가기</span></a>
+            </div>
+            <div class="consultation_request">
+                <div class="inner">
+                    <h2>상담신청</h2>
+                    <div class="input_form">
+                        <div class="input_box">
+                            <label>이름</label>
+                            <input type="text" class="text" placeholder="이름 입력">
+                        </div>
+                        <div class="input_box">
+                            <label>휴대폰 번호</label>
+                            <input type="text" class="text" placeholder="숫자만 입력">
+                        </div>
+                        <div class="input_box">
+                            <label>관심 교육 방식</label>
+                            <select name="" id="" class="cus_select">
+                                <option value="">선택하세요</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <label>거주 지역</label>
+                            <input type="text" class="text" placeholder="클릭하여 검색하세요">
+                        </div>
+                        <div class="check_box">
+                            <input type="checbox" class="checkbox">
+                            <span>[필수] 개인정보 수집&middot;이용 동의</span>
+                        </div>
+                        <div class="inner_box">
+                            <ol class="number_list">
+                                <li>개인정보 수집 목적 : 교육상품 서비스 관련 상담, 교육과정 개강 정보 알림</li>
+                                <li>수집하는 항목 : 이름, 휴대폰 번호, 거주 지역</li>
+                                <li>개인정보의 보유 및 이용기간 : 1년</li>
+                                <li>수집한 개인정보의 위탁 : 수집한 정보는 한우리캠퍼스의 교육상담을 위한 용도로만 이용하며, 회원 동의 없이 외부 업체에 위탁하지 않습니다.</li>
+                            </ol>
+                            <p class="txt">귀하는 개인정보 제공에 동의하지 않을 권리가 있으며, 동의 거부 시 서비스가 제한됩니다.</p>
+                        </div>
+                        <p class="txt">상담 접수 후 3영업일 내에 연락을 드립니다.</p>
+                        <p class="txt">바로 상담을 원하실 경우 카카오톡 또는 전화문의를 이용해 주시기 바랍니다.</p>
+                        <a href="#a" class="link btn">확인</a>
+                    </div>
+                </div>                
+            </div>
         </div>
     </div>
 </main>
 
-<div data-include-path="../layout/footer.html" id="footers"></div>
+ <!-- footer -->
+ <footer class="footer">
+    <section class="inner">
+        <ul class="foot_list">
+            <li><a href="#a">회사소개</a></li>
+            <li><a href="#a">이용약관</a></li>
+            <li><a href="#a">개인정보취급방침</a></li>
+            <li><a href="#a">단체위탁과정</a></li>
+            <li><a href="#a">카카오톡 상담</a></li>
+            <li><a href="#a">한우리 블로그</a></li>
+        </ul>
+        <div class="txt_wrap">
+            <h1 class="footer_logo"><img src="../assets/img/footer_logo.svg" alt="한우리 캠퍼스"></h1>
+            <div class="m _txt">
+                <p class="t1">07261 서울시 영등포구 당산로27길 16 한우리빌딩 2층  대표 김희선</p>
+                <p class="t1">사업자등록번호 220-82-00385  통신판매업신고 제 2015-서울영등포-0870</p>
+                <p class="t1">© (사)한우리독서문화운동본부</p>
+            </div>
+            <div class="pc _txt">
+                <p class="t1"><strong>한우리캠퍼스</strong><span>대표 김희선</span><span>02-6276-2626</span></p>
+                <p class="t1"><span>07261 서울시 영등포구 당산로27길 16 한우리빌딩 2층</span><span>사업자등록번호 220-82-00385</span><span>통신판매업신고 제 2015-서울영등포-0870</span></p>
+                <p class="t1">© (사)한우리독서문화운동본부</p>
+            </div>
+        </div>
+    </section>        
+</footer>
+<!--// footer -->
+</div>
+
+<button class="btn __top"></button>
+
+<!-- mobile nav -->
+<aside class="side_nav">
+<div class="side_header">
+    <p class="tit">안녕하세요. 한우리입니다.</p>
+    <ul class="quick_menu_list"><!-- login 전 -->
+        <li><a href="#a"><span>로그인</span></a></li>
+        <li><a href="#a"><span>회원가입</span></a></li>
+        <li><a href="#a"><span>로그인정보</span></a></li>
+        <li><a href="#a"><span>이용안내</span></a></li>
+    </ul>
+    <ul class="quick_menu_list __after"><!-- login 후 -->
+        <li><a href="#a">로그아웃</a></li>
+        <li><a href="#a">정보수정</a></li>
+        <li><a href="#a">결제대기</a></li>
+        <li><a href="#a">내 강의실</a></li>
+    </ul>
+    <nav>
+        <ul class="snb_list">
+            <li>
+                <strong>독서지도사</strong>
+                <div>
+                    <a href="#a">왜 독서지도사인가?</a>
+                    <a href="#a">독서지도사는 한우리</a>
+                    <a href="#a">활동후기</a>
+                </div>
+            </li>
+            <li>
+                <strong>수강신청</strong>
+                <div>
+                    <a href="#a">독서지도사과정</a>
+                    <a href="#a">전체과정</a>
+                    <a href="#a">단체위탁과정</a>
+                </div>
+            </li>
+            <li>
+                <strong>자격시험</strong>
+                <div>
+                    <a href="#a">시험안내</a>
+                    <a href="#a">시험접수</a>
+                    <a href="#a">응시결과</a>
+                    <a href="#a">자격증신청</a>
+                    <a href="#a">보수교육</a>
+                </div>
+            </li>
+            <li>
+                <strong>한우리교사</strong>
+                <div>
+                    <a href="#a">한우리교사안내</a>
+                    <a href="#a">입문과정</a>
+                </div>
+            </li>
+            <li>
+                <strong>고객센터</strong>
+                <div>
+                    <a href="../customer/notice.jsp">공지사항</a>
+                    <a href="../customer/support.jsp">학습지원</a>
+                    <a href="../customer/guide.jsp">이용안내</a>
+                    <a href="../customer/policy.jsp">이용약관</a>
+                </div>
+            </li>
+            <li>
+                <strong>한우리캠퍼스</strong>
+                <div>
+                    <a href="#a">인사말</a>
+                    <a href="#a">설립목적</a>
+                    <a href="#a">연혁</a>
+                    <a href="#a">위치안내</a>
+                </div>
+            </li>
+            <li>
+                <strong>내 강의실</strong>
+                <div>
+                    <a href="#a">수강과정</a>
+                    <a href="#a">결제대기</a>
+                    <a href="#a">시험이력</a>
+                    <a href="#a">자격이력</a>
+                    <a href="#a">나의상담</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <buton id="btnClosed" class="btn __closed"></buton>
+</div>
+</aside>
+
+<aside class="consulting">
+<button><img src="../assets/img/ico_phone.svg" alt=""> 전화 상담</button>
+<button><img src="../assets/img/ico_kakao_ch.svg" alt=""> 카톡 상담</button>
+</aside>
+<!--// mobile nav -->
+<script defer src="../assets/js/jquery-3.4.1.min.js"></script>
+<!-- <script src="https://www.hanuricampus.com/new/html/js/jquery-1.9.1.min.js"></script> -->
+<script defer src="../assets/libs/swiper.min.js"></script>
+<!-- <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script defer src="../assets/js/ui.js"></script>
+</body>
+</html>

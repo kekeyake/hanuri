@@ -338,6 +338,46 @@ $(function () {
             },
         });
     }
+
+    if ( $('.dont_slide01').length ) {
+        var introSwiper1 = new Swiper(".dont_slide01", {            
+            centeredSlides: true,
+            slidesPerView: "auto",
+            spaceBetween: 25,
+            loop: true,
+            centeredSlides: true,
+
+            // autoplay: {
+            //     delay : 3500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".dont_slide01 .swiper-pagination",
+                clickable: true,
+            },
+        });
+            
+    }
+
+    if ( $('.dont_slide02').length ) {
+        var introSwiper2 = new Swiper(".dont_slide02", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 25,
+            loop: true,
+            centeredSlides: true,
+
+            // autoplay: {
+            //     delay : 3500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".dont_slide02 .swiper-pagination",
+                clickable: true,
+            },            
+        });
+            
+    }
 });
 var ww = $(window).width();
 var mainSwiper5 = undefined;
