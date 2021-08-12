@@ -6920,10 +6920,35 @@ footer.footer .t1:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 8.33333vw;
+    height: 50px;
     background: #eee;
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
+  }
+  .course.__commission_write .step_list {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .course.__commission_write .step_list li {
+    width: calc((100% - 125px) / 6);
+    height: 80px;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+  .course.__commission_write .step_list li::after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 19px;
+    right: -18px;
+  }
+  .course.__commission_write .step_list li:last-child {
+    margin-right: 0;
+  }
+  .course.__commission_write .step_list li:last-child::after {
+    display: none;
   }
   .course.__commission_write .contents_list {
     display: -webkit-box;
@@ -6954,6 +6979,41 @@ footer.footer .t1:last-child {
   }
   .course.__commission_write .contents_list li .t2 span {
     font-size: 20px;
+  }
+  .course.__commission_write .input_form li {
+    padding: 17px 30px 20px;
+  }
+  .course.__commission_write .input_form label {
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+  }
+  .course.__commission_write .input_form textarea {
+    width: 100%;
+    height: 420px;
+    font-size: 22px;
+    padding: 20px;
+  }
+  .course.__commission_write .agree_box {
+    width: 100%;
+    margin: 33px auto;
+  }
+  .course.__commission_write .agree_box div:first-child {
+    padding: 17px 22px;
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+  .course.__commission_write .agree_box div.txt_box {
+    padding: 22px;
+    font-size: 21px;
+    letter-spacing: -1px;
+  }
+  .course.__commission_write .__ok {
+    width: 540px;
+    height: 60.5px;
+    margin: 70px auto;
+    border-radius: 4px;
+    font-size: 30px;
   }
   .course .list_type01 {
     padding: 20px 30px;

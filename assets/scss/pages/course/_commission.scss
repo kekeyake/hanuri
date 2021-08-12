@@ -477,10 +477,35 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: vw(50);
+                    height: 50px;
                     background: #eee;
                     border-top: 1px solid #aaa;
                     border-bottom: 1px solid #aaa;
+                }
+            }
+            .step_list {
+                padding-left: 0;
+                margin-bottom: 40px;
+                li {
+                    width: calc((100% - 125px) / 6);
+                    height: 80px;
+                    font-size: 20px;
+                    letter-spacing: -1.5px;
+                    margin-right: 25px;
+                    margin-bottom: 0;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 11px;
+                        height: 19px;
+                        right:-18px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        &::after {
+                            display: none;
+                        }
+                    }
                 }
             }
             .contents_list {
@@ -508,6 +533,47 @@
                         }
                     }
                 }
+            }
+            .input_form {
+                li {
+                    padding:17px 30px 20px;
+                }
+    
+                label {
+                    font-size: 22px;
+                    letter-spacing: -1px;
+                    margin-bottom: 10px;
+                }
+                textarea {
+                    width: 100%;
+                    height: 420px;
+                    font-size: 22px;
+                    padding:20px;
+                }
+            }
+            .agree_box {
+                width: 100%;
+                margin:33px auto;
+                div {
+                    &:first-child {
+                        padding:17px 22px;
+                        font-size: 22px;
+                        letter-spacing: -1px;
+                    }
+                    &.txt_box {
+                        padding:22px;
+                        font-size: 21px;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
+            .__ok {
+                width: 540px;
+                height:60.5px;
+                margin: 70px auto;
+                border-radius: 4px;
+                font-size: 30px;
+    
             }
         }
         .list_type01 {
