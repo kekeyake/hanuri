@@ -1,0 +1,243 @@
+.course {
+    &.__commission {
+        overflow: hidden;
+        padding:0 vw(30);
+        .tab_link_wrap {
+            padding:0;
+        }
+        h2 {
+            font-size: vw(25);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: vw(-1.25);
+            + .txt {
+                font-size: vw(22);
+                color:#333;
+                letter-spacing: vw(-1);
+                margin-top: vw(20);
+            }
+        } 
+        
+        .img_cont {
+            position: relative;
+            background-color: #eee;
+            margin-top: vw(30);
+            padding:vw(30) 0;
+            display: flex;
+            justify-content: space-between;
+            &::after {
+                content: '';
+                display: block;
+                width: 200%;
+                height: 100%;
+                position: absolute;
+                left: -50%;
+                top:0;
+                background: #eee;
+                z-index: -1;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 200%;
+                height: 100%;
+                position: absolute;
+                right: -50%;
+                top:0;
+                background: #eee;
+                z-index: -1;
+            }
+            .box {
+                width: 50%;
+                text-align: center;
+                p {
+                    font-size: vw(20);
+                    letter-spacing: vw(-0.25);
+                    margin-top: vw(25);
+                    color:#333;
+                }
+                img {
+                    width: vw(150);
+                }
+            }
+        }
+        
+        .inner {
+
+            .tit {
+                width: vw(310);
+                margin:vw(60) auto vw(40);
+                img {
+                    width: 100%;
+                }
+            }
+
+            .contents_list {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    overflow: hidden;
+                    width: vw(260.5);
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background: #eee;
+                    .t1 {
+                        background: #234a9b;
+                        color:#fff;
+                        font-size: vw(22);
+                        letter-spacing: vw(-1);
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: vw(50);
+                    }
+                    .t2 {
+                        padding:vw(20) vw(22);
+                        font-size: vw(22);
+                        color:#333;
+                        letter-spacing: vw(-1.65);
+                        line-height: 1.36;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .info_list {
+                .t1 {
+                    margin-top: vw(40);
+                    font-size: vw(28);
+                    font-weight: 500;
+                    color:#000;
+                    letter-spacing: vw(-2);
+                    text-align: center;
+                }
+                .t2 {
+                    margin-top: vw(17.5);
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .__download {
+                width: 100%;
+                height: vw(60.5);
+                margin-top: vw(32);
+                background-color: #234a9b;
+                span {
+                    padding-right: vw(30);
+                    font-size: vw(25);
+                    font-weight: 700;
+                    color:#fff;
+                    letter-spacing: vw(-1.25);
+                    background: url(../img/ico_doc.svg) no-repeat 100% 50% / vw(23);
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    .course {
+        &.__commission {
+            overflow: visible;
+            padding:0;
+            h2 {
+                font-size: 25px;
+                letter-spacing: -1.25px;
+                + .txt {
+                    font-size: 22px;
+                    letter-spacing: -1px;
+                    margin-top: 20px;
+                }
+            } 
+            
+            .img_cont {
+                width: 1125px;
+                margin: 30px auto 0;
+                padding:30px 0;
+                .box {
+                    width: 50%;
+                    text-align: center;
+                    p {
+                        font-size: 20px;
+                        letter-spacing: -0.25px;
+                        margin-top: 25px;
+                    }
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+            
+            .inner {
+    
+                .tit {
+                    width: 310px;
+                    margin:60px auto 40px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .contents_list {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1125px;
+                    margin:0 auto;
+                    li {
+                        overflow: hidden;
+                        width: 540px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        background: #eee;
+                        .t1 {
+                            font-size: 22px;
+                            letter-spacing: -1px;
+                            height: 50px;
+                        }
+                        .t2 {
+                            padding:20px 22px;
+                            font-size: 22px;
+                            letter-spacing: -1.65px;
+                            line-height: 1.36;
+                        }
+                    }
+                }
+    
+                .info_list {
+                    margin:70px auto 0;
+                    display: flex;
+                    width: 1125px;
+                    justify-content: space-between;
+                    li {
+                        width: 540px;
+                    }
+                    .t1 {
+                        margin-top: 0;
+                        font-size: 28px;
+                        letter-spacing: -2px;
+                    }
+                    .t2 {
+                        margin-top: 17.5px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .__download {
+                    display: flex;
+                    width: 540px;
+                    height:60.5px;
+                    margin: 70px auto;
+                    span {
+                        padding-right: 30px;
+                        font-size: 25px;
+                        letter-spacing: -1.25px;
+                        background: url(../img/ico_doc.svg) no-repeat 100% 50% / 23px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="course __commission">
+        <div class="tab_link_wrap">
+            <a href="#a" class="on">과정 소개</a>
+            <a href="#a">과정 목록</a>
+            <a href="#a">상담신청</a>
+        </div>
+
+        <h2>단체위탁과정</h2>
+        <p class="txt">한우리의 31년 노하우를 담은 교육 프로그램을 원하시는 장소로 찾아가 진행해 드리는 맞춤형 과정입니다.</p>
+        <div class="img_cont">
+            <div class="box">
+                <img src="../assets/img/course/ico_agency.png" alt="기관">
+                <p>지자체, 학교, 도서관, 기업체</p>
+            </div>
+            <div class="box">
+                <img src="../assets/img/course/ico_normal.png" alt="일반">
+                <p>독서모임, 동아리, 학부모 모임</p>
+            </div>
+        </div>
+        <div class="inner">
+            <p class="tit"><img src="../assets/img/course/ico_commission_txt1.png" alt="한우리 단체위탁과정 자신있게 제안합니다"></p>
+            <ul class="contents_list">
+                <li>
+                    <p class="t1">다양한 콘텐츠</p>
+                    <p class="t2">
+                        30년 누적 운영 노하우와 <br class="pc">
+                        독서토론논술 관련
+                        검증된  교육 콘텐츠 보유
+                    </p>
+                </li>
+                <li>
+                    <p class="t1">전문 강사진</p>
+                    <p class="t2">
+                        풍부한 실무 경험과 
+                        강의 경력을 갖춘 <br class="pc">각 분야별
+                        최고의 강사진 보유
+                    </p>
+                </li>
+            </ul>
+            <ul class="info_list">
+                <li>
+                    <p class="t1">진행 사례</p>
+                    <p class="t2">
+                        <img src="../assets/img/course/img_commission_01.png" alt="">
+                    </p>
+                </li>
+                <li>
+                    <p class="t1">교육 분야</p>
+                    <p class="t2">
+                        <img src="../assets/img/course/img_commission_02.png" alt="">
+                    </p>
+                </li>
+            </ul>
+            <a href="#a" class="link __download"><span>제안서 다운로드</span></a>
+        </div>
+        
+    </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

@@ -6314,6 +6314,274 @@ footer.footer .t1:last-child {
   }
 }
 
+.course.__commission {
+  overflow: hidden;
+  padding: 0 5vw;
+}
+
+.course.__commission .tab_link_wrap {
+  padding: 0;
+}
+
+.course.__commission h2 {
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.20833vw;
+}
+
+.course.__commission h2 + .txt {
+  font-size: 3.66667vw;
+  color: #333;
+  letter-spacing: -0.16667vw;
+  margin-top: 3.33333vw;
+}
+
+.course.__commission .img_cont {
+  position: relative;
+  background-color: #eee;
+  margin-top: 5vw;
+  padding: 5vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course.__commission .img_cont::after {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  left: -50%;
+  top: 0;
+  background: #eee;
+  z-index: -1;
+}
+
+.course.__commission .img_cont::before {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  background: #eee;
+  z-index: -1;
+}
+
+.course.__commission .img_cont .box {
+  width: 50%;
+  text-align: center;
+}
+
+.course.__commission .img_cont .box p {
+  font-size: 3.33333vw;
+  letter-spacing: -0.04167vw;
+  margin-top: 4.16667vw;
+  color: #333;
+}
+
+.course.__commission .img_cont .box img {
+  width: 25vw;
+}
+
+.course.__commission .inner .tit {
+  width: 51.66667vw;
+  margin: 10vw auto 6.66667vw;
+}
+
+.course.__commission .inner .tit img {
+  width: 100%;
+}
+
+.course.__commission .inner .contents_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course.__commission .inner .contents_list li {
+  overflow: hidden;
+  width: 43.41667vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #eee;
+}
+
+.course.__commission .inner .contents_list li .t1 {
+  background: #234a9b;
+  color: #fff;
+  font-size: 3.66667vw;
+  letter-spacing: -0.16667vw;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8.33333vw;
+}
+
+.course.__commission .inner .contents_list li .t2 {
+  padding: 3.33333vw 3.66667vw;
+  font-size: 3.66667vw;
+  color: #333;
+  letter-spacing: -0.275vw;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.course.__commission .inner .info_list .t1 {
+  margin-top: 6.66667vw;
+  font-size: 4.66667vw;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.33333vw;
+  text-align: center;
+}
+
+.course.__commission .inner .info_list .t2 {
+  margin-top: 2.91667vw;
+}
+
+.course.__commission .inner .info_list .t2 img {
+  width: 100%;
+}
+
+.course.__commission .inner .__download {
+  width: 100%;
+  height: 10.08333vw;
+  margin-top: 5.33333vw;
+  background-color: #234a9b;
+}
+
+.course.__commission .inner .__download span {
+  padding-right: 5vw;
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.20833vw;
+  background: url(../img/ico_doc.svg) no-repeat 100% 50%/3.83333vw;
+}
+
+@media (min-width: 1200px) {
+  .course.__commission {
+    overflow: visible;
+    padding: 0;
+  }
+  .course.__commission h2 {
+    font-size: 25px;
+    letter-spacing: -1.25px;
+  }
+  .course.__commission h2 + .txt {
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+  }
+  .course.__commission .img_cont {
+    width: 1125px;
+    margin: 30px auto 0;
+    padding: 30px 0;
+  }
+  .course.__commission .img_cont .box {
+    width: 50%;
+    text-align: center;
+  }
+  .course.__commission .img_cont .box p {
+    font-size: 20px;
+    letter-spacing: -0.25px;
+    margin-top: 25px;
+  }
+  .course.__commission .img_cont .box img {
+    width: 150px;
+  }
+  .course.__commission .inner .tit {
+    width: 310px;
+    margin: 60px auto 40px;
+  }
+  .course.__commission .inner .tit img {
+    width: 100%;
+  }
+  .course.__commission .inner .contents_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1125px;
+    margin: 0 auto;
+  }
+  .course.__commission .inner .contents_list li {
+    overflow: hidden;
+    width: 540px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #eee;
+  }
+  .course.__commission .inner .contents_list li .t1 {
+    font-size: 22px;
+    letter-spacing: -1px;
+    height: 50px;
+  }
+  .course.__commission .inner .contents_list li .t2 {
+    padding: 20px 22px;
+    font-size: 22px;
+    letter-spacing: -1.65px;
+    line-height: 1.36;
+  }
+  .course.__commission .inner .info_list {
+    margin: 70px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1125px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .course.__commission .inner .info_list li {
+    width: 540px;
+  }
+  .course.__commission .inner .info_list .t1 {
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: -2px;
+  }
+  .course.__commission .inner .info_list .t2 {
+    margin-top: 17.5px;
+  }
+  .course.__commission .inner .info_list .t2 img {
+    width: 100%;
+  }
+  .course.__commission .inner .__download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 540px;
+    height: 60.5px;
+    margin: 70px auto;
+  }
+  .course.__commission .inner .__download span {
+    padding-right: 30px;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    background: url(../img/ico_doc.svg) no-repeat 100% 50%/23px;
+  }
+}
+
 .class .point {
   background-image: url(../img/ico_star.png);
   background-repeat: no-repeat;
@@ -13344,6 +13612,7 @@ footer.footer .t1:last-child {
 body {
   font-size: 3.66667vw;
   -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

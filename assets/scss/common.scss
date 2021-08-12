@@ -26,6 +26,7 @@
 @import 'pages/course/view';
 @import 'pages/course/online';
 @import 'pages/course/intro';
+@import 'pages/course/commission';
 
 @import 'pages/class/class';
 @import 'pages/class/list';
@@ -44,6 +45,7 @@
 body {
 	font-size: vw(22);
 	-ms-overflow-style: none; 
+	overflow-x: hidden;
 }
 ::-webkit-scrollbar { 
 	display: none;
