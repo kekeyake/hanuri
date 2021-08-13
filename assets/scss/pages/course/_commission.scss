@@ -265,6 +265,10 @@
                 resize: none;
                 font-size: vw(22);
                 padding:vw(20);
+                color:#666;
+                &::placeholder {
+                    color:#666;
+                }
             }
         }
         .agree_box {
@@ -274,7 +278,6 @@
             div {
                 &:first-child {
                     background: #f6f6f6;
-                    border-bottom: 1px solid #666;
                     padding:vw(17.5) vw(22);
                     display: flex;
                     align-items: center;
@@ -284,6 +287,7 @@
                     font-weight: 500;
                 }
                 &.txt_box {
+                    border-top: 1px solid #666;
                     padding:vw(22) vw(14);
                     font-size: vw(21);
                     letter-spacing: vw(-1);
@@ -537,12 +541,17 @@
             .input_form {
                 li {
                     padding:17px 30px 20px;
+                    display: flex;
+                    align-items: center;
                 }
     
                 label {
+                    display: inline-block;
+                    width: 300px;
                     font-size: 22px;
                     letter-spacing: -1px;
-                    margin-bottom: 10px;
+                    margin-bottom: 0;
+                    word-break: keep-all;
                 }
                 textarea {
                     width: 100%;
@@ -563,7 +572,7 @@
                     &.txt_box {
                         padding:22px;
                         font-size: 21px;
-                        letter-spacing: -1px;
+                        letter-spacing: -0.5px;
                     }
                 }
             }

@@ -6144,7 +6144,7 @@ footer.footer .t1:last-child {
   margin: 2.83333vw 0;
   font-size: 3.33333vw;
   color: #666;
-  border: 1px solid #666;
+  border: 1px solid #999;
   padding: 4.16667vw 3.33333vw;
   line-height: 5vw;
   background-color: #fff;
@@ -6346,11 +6346,15 @@ footer.footer .t1:last-child {
   }
   .course .__intro .consultation_request .input_form .inner_box .number_list li {
     padding-left: 22px;
+    letter-spacing: 0;
+    word-break: keep-all;
   }
   .course .__intro .consultation_request .input_form .txt {
     margin-top: 5px;
     font-size: 20px;
     padding-left: 22px;
+    letter-spacing: 0;
+    word-break: keep-all;
   }
   .course .__intro .consultation_request .link {
     height: 65px;
@@ -6685,6 +6689,23 @@ footer.footer .t1:last-child {
   resize: none;
   font-size: 3.66667vw;
   padding: 3.33333vw;
+  color: #666;
+}
+
+.course.__commission_write .input_form textarea::-webkit-input-placeholder {
+  color: #666;
+}
+
+.course.__commission_write .input_form textarea:-ms-input-placeholder {
+  color: #666;
+}
+
+.course.__commission_write .input_form textarea::-ms-input-placeholder {
+  color: #666;
+}
+
+.course.__commission_write .input_form textarea::placeholder {
+  color: #666;
 }
 
 .course.__commission_write .agree_box {
@@ -6695,7 +6716,6 @@ footer.footer .t1:last-child {
 
 .course.__commission_write .agree_box div:first-child {
   background: #f6f6f6;
-  border-bottom: 1px solid #666;
   padding: 2.91667vw 3.66667vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6710,6 +6730,7 @@ footer.footer .t1:last-child {
 }
 
 .course.__commission_write .agree_box div.txt_box {
+  border-top: 1px solid #666;
   padding: 3.66667vw 2.33333vw;
   font-size: 3.5vw;
   letter-spacing: -0.16667vw;
@@ -6982,11 +7003,20 @@ footer.footer .t1:last-child {
   }
   .course.__commission_write .input_form li {
     padding: 17px 30px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .course.__commission_write .input_form label {
+    display: inline-block;
+    width: 300px;
     font-size: 22px;
     letter-spacing: -1px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    word-break: keep-all;
   }
   .course.__commission_write .input_form textarea {
     width: 100%;
@@ -7006,7 +7036,7 @@ footer.footer .t1:last-child {
   .course.__commission_write .agree_box div.txt_box {
     padding: 22px;
     font-size: 21px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
   }
   .course.__commission_write .__ok {
     width: 540px;
@@ -14221,7 +14251,23 @@ input.text {
   height: 7.33333vw;
   padding: 0 3.08333vw;
   font-size: 3.66667vw;
-  color: #333;
+  color: #666;
+}
+
+input.text::-webkit-input-placeholder {
+  color: #666;
+}
+
+input.text:-ms-input-placeholder {
+  color: #666;
+}
+
+input.text::-ms-input-placeholder {
+  color: #666;
+}
+
+input.text::placeholder {
+  color: #666;
 }
 
 .cus_select {
@@ -14232,8 +14278,8 @@ input.text {
   height: 7.33333vw;
   padding: 0 3.08333vw;
   font-size: 3.66667vw;
-  color: #333;
-  background: #f9f9f9 url(../img/ico_select.svg) no-repeat right 2.5vw top 50%/4.33333vw;
+  color: #666;
+  background: #fff url(../img/ico_select.svg) no-repeat right 2.5vw top 50%/4.33333vw;
 }
 
 /* IE 에서 Select box 화살표 제거 */
@@ -15263,7 +15309,19 @@ form .btn_cert {
     height: 44px;
     padding: 0 18.5px;
     font-size: 22px;
-    color: #333;
+    color: #666;
+  }
+  input.text::-webkit-input-placeholder {
+    color: #666;
+  }
+  input.text:-ms-input-placeholder {
+    color: #666;
+  }
+  input.text::-ms-input-placeholder {
+    color: #666;
+  }
+  input.text::placeholder {
+    color: #666;
   }
   .cus_select {
     -webkit-appearance: none;
@@ -15273,8 +15331,8 @@ form .btn_cert {
     height: 44px;
     padding: 0 18.5px;
     font-size: 22px;
-    color: #333;
-    background: #f9f9f9 url(../img/ico_select.svg) no-repeat right 15px top 50%/26px;
+    color: #666;
+    background: #fff url(../img/ico_select.svg) no-repeat right 15px top 50%/26px;
   }
   form .btn_cert {
     position: absolute;

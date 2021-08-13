@@ -156,7 +156,10 @@ input.text {
 	height: vw(44);
 	padding:0 vw(18.5);
 	font-size: vw(22);
-	color:#333;
+	color:#666;
+	&::placeholder {
+		color:#666;
+	}
 	
 }
 .cus_select {
@@ -167,8 +170,8 @@ input.text {
 	height: vw(44);
 	padding:0 vw(18.5);
 	font-size: vw(22);
-	color:#333;
-	background:#f9f9f9 url(../img/ico_select.svg) no-repeat right vw(15) top 50% / vw(26);
+	color:#666;
+	background:#fff url(../img/ico_select.svg) no-repeat right vw(15) top 50% / vw(26);
 }
 /* IE 에서 Select box 화살표 제거 */
 .cus_select::-ms-expand {
@@ -1013,7 +1016,10 @@ form .btn_cert {
 		height: px(22);
 		padding:0 px(9.25);
 		font-size: px(11);
-		color:#333;
+		color:#666;
+		&::placeholder {
+			color:#666;
+		}
 	}
 	.cus_select {
 		-webkit-appearance: none;
@@ -1023,8 +1029,8 @@ form .btn_cert {
 		height: px(22);
 		padding:0 px(9.25);
 		font-size: px(11);
-		color:#333;
-		background:#f9f9f9 url(../img/ico_select.svg) no-repeat right px(7.5) top 50% / px(13);
+		color:#666;
+		background:#fff url(../img/ico_select.svg) no-repeat right px(7.5) top 50% / px(13);
 	}
 	form .btn_cert {
 		position: absolute;

@@ -167,7 +167,7 @@
                     margin: vw(17) 0;
                     font-size: vw(20);                    
                     color:#666;
-                    border: 1px solid #666;
+                    border: 1px solid #999;
                     padding:vw(25) vw(20);
                     line-height: vw(30);
                     background-color: #fff;
@@ -372,6 +372,8 @@
                         .number_list {
                             li {
                                 padding-left:22px;
+                                letter-spacing: 0;
+                                word-break: keep-all;
                             }
                         }
                     }
@@ -379,6 +381,8 @@
                         margin-top: 5px; 
                         font-size: 20px;                        
                         padding-left:22px;
+                        letter-spacing: 0;
+                        word-break: keep-all;
                     }
                 }              
     
