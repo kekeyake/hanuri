@@ -42,6 +42,10 @@
 
 @import 'pages/main/main';
 
+@import 'pages/leader/review';
+@import 'pages/leader/confidence';
+@import 'pages/leader/reason';
+
 body {
 	font-size: vw(22);
 	-ms-overflow-style: none; 

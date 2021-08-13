@@ -1151,7 +1151,7 @@ nav.pc_menu .depth1 ul li.on a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  border-bottom: 0.16667vw solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
 }
 
 .sub_header .__back {
@@ -1161,8 +1161,8 @@ nav.pc_menu .depth1 ul li.on a {
   left: 3.83333vw;
   top: 3.83333vw;
   background: url(../img/btn_back.svg) no-repeat 50% 50%/cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateY(-1vw);
+          transform: rotate(180deg) translateY(-1vw);
   opacity: .5;
 }
 
@@ -2778,6 +2778,19 @@ footer.footer .t1:last-child {
 
 .no_data span img.__idx {
   width: 29vw;
+}
+
+.elliipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.elliipsis_line2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -14094,6 +14107,168 @@ footer.footer .t1:last-child {
        object-fit: fill;
     margin: 0 auto;
   }
+}
+
+.leader.__list {
+  padding-top: 8.33333vw;
+  text-align: center;
+}
+
+.leader.__list .tit {
+  font-size: 5.83333vw;
+  letter-spacing: -0.43333vw;
+  color: #000;
+  line-height: 1.25;
+}
+
+.leader.__list .tit b {
+  font-size: 6.66667vw;
+  letter-spacing: -0.5vw;
+  font-weight: 700;
+  position: relative;
+}
+
+.leader.__list .tit b::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2.66667vw;
+  background-color: #ffcb40;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.leader.__list .tit + .stxt {
+  margin-top: 3.83333vw;
+  font-size: 4.33333vw;
+  letter-spacing: -0.325vw;
+  color: #000;
+}
+
+.leader.__list .review_list {
+  margin-top: 5.33333vw;
+  text-align: left;
+  border-top: 1px solid #bbb;
+}
+
+.leader.__list .review_list li {
+  border-bottom: 1px solid #bbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.16667vw 6.66667vw 4.16667vw 5vw;
+}
+
+.leader.__list .review_list li img {
+  width: 20.16667vw;
+}
+
+.leader.__list .review_list li .txt_box {
+  margin-left: 3.25vw;
+  letter-spacing: -0.16667vw;
+  width: 64.58333vw;
+}
+
+.leader.__list .review_list li .txt_box .t1 {
+  font-size: 3.83333vw;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.83333vw;
+}
+
+.leader.__list .review_list li .txt_box .t2 {
+  font-size: 3.33333vw;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 0.83333vw;
+}
+
+.leader.__list .review_list li .txt_box .t3 {
+  font-size: 3.66667vw;
+  color: #666;
+  line-height: 1.23;
+}
+
+.leader.__view .top_tit {
+  border-bottom: 1px solid #a3a3a3;
+  padding: 5vw 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-weight: 500;
+}
+
+.leader.__view .top_tit .tit {
+  font-size: 4.5vw;
+  color: #333;
+  letter-spacing: -0.225vw;
+  line-height: 5.83333vw;
+}
+
+.leader.__view .top_tit .t2 {
+  font-size: 3.33333vw;
+  letter-spacing: -0.16667vw;
+  color: #666;
+}
+
+.leader.__view .cont_box {
+  padding: 5vw;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.leader.__view .cont_box img {
+  width: 100%;
+}
+
+.leader.__view .cont_box p {
+  margin-top: 4.08333vw;
+  font-size: 3.66667vw;
+  color: #666;
+  letter-spacing: -0.18333vw;
+  line-height: 1.36;
+}
+
+.leader.__view .btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6.66667vw 0 10vw;
+}
+
+.leader.__view .btn_wrap button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21.41667vw;
+  height: 8.5vw;
+  color: #fff;
+  font-size: 3.66667vw;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: -0.18333vw;
+  margin: 0 0.66667vw;
+}
+
+.leader.__view .btn_wrap button.__cancel {
+  background-color: #666;
 }
 
 body {

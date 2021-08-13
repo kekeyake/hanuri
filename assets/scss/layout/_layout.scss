@@ -756,6 +756,18 @@
         }
     }
 }
+
+.elliipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.elliipsis_line2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;  
+}
 @include desktop {
 
     .btn_sort_list {

@@ -227,7 +227,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    border-bottom: vw(1) solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
     .__back {
         width: vw(15);
         height: vw(25);
@@ -235,7 +235,7 @@ nav {
         left: vw(23);
         top:vw(23);
         background: url(../img/btn_back.svg) no-repeat 50% 50% / cover;
-        transform: rotate(180deg);
+        transform: rotate(180deg) translateY(-1vw);
         opacity: .5;
     }
     h1 {
