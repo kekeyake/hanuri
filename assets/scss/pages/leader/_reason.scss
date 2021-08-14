@@ -1,8 +1,91 @@
 .leader {
     &.__reason {
         .top_cont {
-            img {
+            padding-top: vw(102.5);
+            background: #fbedd6;
+            position: relative;
+            .bg {
                 width: 100%;
+            }
+            .txt {
+                font-size: vw(40);
+                font-weight: 700;
+                line-height: vw(48);
+                letter-spacing: vw(-0.375);
+                text-align: center;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top:10%;
+                color:#bc3e00;
+                opacity: 0;
+                animation: fadeIn 4s forwards;
+                animation-delay: 2s;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(5vw);
+                }
+                30% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                80% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .move_list {
+                li {
+                    position: absolute;
+                    opacity: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+                li:nth-child(1) {
+                    width: vw(115);
+                    top:vw(57);
+                    left: vw(30);
+                    animation: fadeUp 1s forwards;
+                    animation-delay: 6s;
+                }
+                li:nth-child(2) {
+                    width: vw(135.5);
+                    top:vw(32.5);
+                    left: vw(155);
+                    animation: fadeUp 1s forwards;
+                    animation-delay: 7s;
+                }
+                li:nth-child(3) {
+                    width: vw(130.5);
+                    top:vw(49.5);
+                    left: vw(305.5);
+                    animation: fadeUp 1s forwards;
+                    animation-delay: 8s;
+                }
+                li:nth-child(4) {
+                    width: vw(115.5);
+                    top:vw(28);
+                    left: vw(451);
+                    animation: fadeUp 1s forwards;
+                    animation-delay: 9s;
+                }
+            }
+            @keyframes fadeUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(5vw);
+                }                
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
         }
         .reason_cont {
@@ -278,9 +361,92 @@
 @include desktop {
     .leader {   
         &.__reason {
-            .top_cont {
-                img {
-                    width: 100%;
+            .top_cont {                
+                padding-top: 0;
+                background: url(../img/leader/reason_top_bg.png) repeat-x 0 100%;
+                .bg {
+                    display: block;
+                    margin:0 auto;
+                    width: 1200px;
+                }
+                .txt {
+                    font-size: 40px;
+                    line-height: 48px;
+                    letter-spacing: -0.375;
+                    top:10%;
+                    animation: fadeIn 4s forwards;
+                    animation-delay: 2s;
+                }
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+                    30% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    80% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+    
+                .move_list {
+                    width: 570px;
+                    margin:0 auto;
+                    top: 0;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    li {
+                        position: absolute;
+                        opacity: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    li:nth-child(1) {
+                        width: 115px;
+                        top:57px;
+                        left: 30px;
+                        animation: fadeUp 1s forwards;
+                        animation-delay: 6s;
+                    }
+                    li:nth-child(2) {
+                        width: 135.5px;
+                        top:32.5px;
+                        left: 155px;
+                        animation: fadeUp 1s forwards;
+                        animation-delay: 7s;
+                    }
+                    li:nth-child(3) {
+                        width: 130.5px;
+                        top:40.5px;
+                        left: 305.5px;
+                        animation: fadeUp 1s forwards;
+                        animation-delay: 8s;
+                    }
+                    li:nth-child(4) {
+                        width: 115.5px;
+                        top:28px;
+                        left: 451px;
+                        animation: fadeUp 1s forwards;
+                        animation-delay: 9s;
+                    }
+                }
+                @keyframes fadeUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }                
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
                 }
             }
             .reason_cont {
