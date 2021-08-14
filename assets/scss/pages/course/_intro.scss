@@ -4,8 +4,24 @@
         .top {
             padding:0 vw(30);
             background: #e1dcd2;
+            position: relative;
             > img {
                 width: 100%;
+            }
+            .move_arrow {
+                position: absolute;
+                bottom:vw(30);
+                left:50%;
+                transform: translateX(-50%);
+                margin-left: vw(80);
+                width: vw(45);
+                height: vw(25);
+                background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0 / cover;
+                animation: motion-bounce .8s 1.8s infinite alternate both;
+            }
+            @keyframes motion-bounce{
+                0%{bottom:vw(20);}
+                100%{bottom:vw(40);}
             }
         }
         .dont {
@@ -227,6 +243,21 @@
                     display: block;
                     width: 540px;
                     margin:0 auto;
+                }
+                .move_arrow {
+                    position: absolute;                    
+                    left:50%;
+                    bottom:30px;
+                    transform: translateX(-50%);
+                    margin-left: 80px;
+                    width: 45px;
+                    height: 25px;
+                    background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0 / cover;
+                    animation: motion-bounce .8s 1.8s infinite alternate both;
+                }
+                @keyframes motion-bounce{
+                    0%{bottom:20px}
+                    100%{bottom:40px}
                 }
             }
             .dont {

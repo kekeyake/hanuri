@@ -5971,10 +5971,43 @@ footer.footer .t1:last-child {
 .course .__intro .top {
   padding: 0 5vw;
   background: #e1dcd2;
+  position: relative;
 }
 
 .course .__intro .top > img {
   width: 100%;
+}
+
+.course .__intro .top .move_arrow {
+  position: absolute;
+  bottom: 5vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 13.33333vw;
+  width: 7.5vw;
+  height: 4.16667vw;
+  background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0/cover;
+  -webkit-animation: motion-bounce .8s 1.8s infinite alternate both;
+          animation: motion-bounce .8s 1.8s infinite alternate both;
+}
+
+@-webkit-keyframes motion-bounce {
+  0% {
+    bottom: 3.33333vw;
+  }
+  100% {
+    bottom: 6.66667vw;
+  }
+}
+
+@keyframes motion-bounce {
+  0% {
+    bottom: 3.33333vw;
+  }
+  100% {
+    bottom: 6.66667vw;
+  }
 }
 
 .course .__intro .dont {
@@ -6240,6 +6273,35 @@ footer.footer .t1:last-child {
     display: block;
     width: 540px;
     margin: 0 auto;
+  }
+  .course .__intro .top .move_arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 80px;
+    width: 45px;
+    height: 25px;
+    background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0/cover;
+    -webkit-animation: motion-bounce .8s 1.8s infinite alternate both;
+            animation: motion-bounce .8s 1.8s infinite alternate both;
+  }
+  @-webkit-keyframes motion-bounce {
+    0% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 40px;
+    }
+  }
+  @keyframes motion-bounce {
+    0% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 40px;
+    }
   }
   .course .__intro .dont {
     padding: 0;
