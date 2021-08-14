@@ -185,27 +185,28 @@
             justify-content: center;
             line-height: 1;
             height: vw(30);
-            margin-left: vw(12.5);
+            margin-left: vw(6);
             background-color: #ea5504;
             color:#fff;
             font-size: vw(20);
             letter-spacing: vw(-1);
             font-weight: 700;
-            padding:vw(0.7) vw(15);
+            padding:vw(0.7) vw(10);
             border-radius: vw(3);
             transform: translateY(-1px);
         }
     }
     .movie_wrap {
+        width: 100%;
         padding:0 vw(15);
         .thumb_box {
-            display: none;
             img {
                 width: 100%;
             }
         }
         .movie_box {
             position: relative;
+            margin-top: vw(20);
             img {
                 width: 100%;
             }
@@ -288,10 +289,14 @@
                         flex-wrap: wrap;
                         align-items: center;
                         width: 100%;
-                        margin-top: vw(7);
+                        margin-top: vw(15);
+                        line-height: 1.35;
                         .btn_link {
+                            display: inline-flex;
                             margin-left: vw(10);
                             margin-right: 0;
+                            height: vw(30);
+                            padding:vw(1.5) vw(10) vw(2.5);
                         }
                         .attachName {
                             border: 0 solid #000;
@@ -310,6 +315,9 @@
                     background-color:transparent;
                     opacity: 0.3;
                     cursor: pointer;
+                    &.no2 {
+                        transform: translateY(-1vw);
+                    }
                     img {
                         width: 100%;
                         vertical-align: top;
@@ -332,7 +340,7 @@
                         display: block;
                     }
                     &.tool2 {
-                        top:vw(73);
+                        top:vw(-22.5);
                     }
                     dl div {
                         margin-bottom: vw(15);
@@ -530,9 +538,9 @@
 }
 
 .apply_certification {
-    width: vw(540);
+    width: vw(570);
     height: vw(135.5);
-    margin:vw(33) auto 0;
+    margin:vw(33) auto;
     padding:vw(40) 0 vw(40) vw(170.5);        
     letter-spacing: vw(-1);
     background-color: #eee;
@@ -994,6 +1002,7 @@
             }
             .movie_box {
                 position: relative;
+                margin-top: 0;
                 img {
                     width: 100%;
                 }
@@ -1079,8 +1088,8 @@
                             display: flex;
                             align-items: center;
                             width: 100%;
-                            margin-top: px(3.5);
-                            .btn_link {
+                            margin-top: px(7);
+                            .btn_link {                                
                                 margin-left: px(5);
                                 margin-right: 0;
                                 height: px(16.5);
@@ -1099,6 +1108,9 @@
                         background-color:transparent;
                         opacity: 0.3;
                         cursor: pointer;
+                        &.no2 {
+                            transform: translateY(-4px);
+                        }
                         img {
                             width: 100%;
                             vertical-align: top;
@@ -1122,7 +1134,7 @@
                             display: block;
                         }
                         &.tool2 {
-                            top:px(35);
+                            top:px(-14);
                         }
                         dl div {
                             margin-bottom: px(7.5);
@@ -1311,9 +1323,9 @@
 		}
     }
     .apply_certification {
-        width: 47%;
+        width: 100%;
         height: px(67.75);
-        margin:px(16.5) auto 0;
+        margin:px(16.5) auto;
         padding:px(20) 0 px(20) px(85.25);        
         letter-spacing: px(-0.5);
         background-color: #eee;

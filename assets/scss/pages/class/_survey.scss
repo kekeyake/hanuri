@@ -39,7 +39,7 @@
             border-bottom: 1px solid #dedede;
         }
         .cont_inner {
-            padding:vw(30) vw(30) vw(65);
+            padding:vw(30);
             .box {
                 display: block;
             }
@@ -182,7 +182,29 @@
             }
         }
         
-        
+        .btn_wrap {
+            margin: vw(32) 0;
+            padding:0 vw(30);
+            display: flex;		
+            justify-content: space-between;
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: vw(60);
+                width: 49%;
+                font-size: vw(25);
+                font-weight: 700;
+                letter-spacing: vw(-1.25);
+                border-radius: 3px;
+                background-color: #666;
+                color:#fff;
+                border: 0 solid #000;
+                &:last-child {
+                    background-color: #ee5400;
+                }
+            }
+        }
     }
 }
 @include desktop {
@@ -227,7 +249,7 @@
                 border-bottom: 1px solid #dedede;
             }
             .cont_inner {
-                padding:px(15) px(15) px(32.5);
+                padding:px(15);
                 .box {
                     display: flex;
                     width: 100%;
@@ -354,7 +376,6 @@
                     li {
                         margin-right:px(10);
                         margin-bottom: 0;
-
                     }
                     label {
                         display: flex;
@@ -366,10 +387,35 @@
                     span {
                         font-size: px(11);
                     }
+                    textarea {
+                        margin-top: 10px;
+                    }
                 }
             }
             
-            
+            .btn_wrap {
+                margin: px(16) 0;
+                padding:0 px(15);
+                display: flex;		
+                justify-content: center;
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: px(148.5);
+                    height: px(25.5);
+                    color:#fff;
+                    font-size: px(11);
+                    font-weight: 500;
+                    border-radius: 5px;
+                    letter-spacing: px(-0.5);
+                    margin:0 px(2); 
+                    &:last-child {
+                        background-color: #ee5400;
+                    }
+                }
+                
+            }
         }   
     }
 

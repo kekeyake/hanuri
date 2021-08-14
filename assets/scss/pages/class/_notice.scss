@@ -94,8 +94,8 @@
                 background: #f9f9f9;
                 border-bottom: vw(1) solid #a3a3a3;
                 p {
-                    width: vw(437);
-                    margin-left: vw(14);
+                    width: 100%;
+                    // margin-left: vw(14);
                     font-size: vw(27);
                     font-weight: 500;
                     color:#333;
@@ -136,6 +136,7 @@
             }
             .event_box {
                 border-bottom: vw(1) solid #c2c2c2;
+                padding:vw(18) vw(30);
                 img {
                     width: 100%;
                 }
@@ -353,8 +354,8 @@
                     border-top: 1px solid #a3a3a3;
                     border-bottom: 1px solid #a3a3a3;
                     p {
-                        width: 437px;
-                        margin-left: px(7);
+                        width: 100%;
+                        // margin-left: px(7);
                         font-size: px(13.5);
                         font-weight: 500;
                         color:#333;
@@ -395,6 +396,7 @@
                 }
                 .event_box {
                     border-bottom: 1px solid #c2c2c2;
+                    padding:px(9) px(15);
                     img {
                         width: 100%;
                     }

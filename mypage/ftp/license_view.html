@@ -1,0 +1,86 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="sub_header m_f bdb_none">
+        <button class="btn __back"></button>
+        <h1><a href="#a">자격이력 목록</a></h1>
+    </div>
+    <div class="mypage">
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>자격명칭</th>
+                    <td><b>{{license_name}}</b></td>
+                </tr>
+                <tr>
+                    <th>자격번호</th>
+                    <td>{{license_no}}</td>
+                </tr>
+                <tr>
+                    <th>취득일</th>
+                    <td>{{issue_date}} ({{step}}회)</td>
+                </tr>
+                <tr>
+                    <th>갱신일</th>
+                    <td>{{renewal_year}}</td>
+                </tr>                                
+                <tr>
+                    <th>유효기간</th>
+                    <td><!--@nif(tinfo.eternal_block)-->{{end_date}}<!--/nif(tinfo.eternal_block)--><!--@if(tinfo.eternal_block)-->평생<!--/if(tinfo.eternal_block)--></td>
+                </tr>                
+            </tbody>
+        </table>
+
+        <h3>보수교육 이력</h3>
+        <table class="tbl_list5">
+            <colgroup>
+                <col style="width:75%;">
+                <col style="width:25%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>과정명</th>
+                    <th>이수시간</th>
+                </tr>
+            </thead>
+            <tbody>
+				<!--@loop(slist)-->
+                <tr>
+                    <td>
+                        <div class="txt_box">
+                            <p class="t1">{{slist.stepname_conv}}</p>
+                            <p class="date">{{slist.start_date}} ~ {{slist.end_date}}</p>
+                        </div>
+                    </td>
+                    <td>{{slist.lesson_time}}시간</td>
+                </tr>
+				<!--/loop(slist)-->
+<!--
+                <tr>
+                    <td>
+                        <div class="txt_box">
+                            <p class="t1">활동 패키지 (마인드맵으로 독서지도 스킬 업 + 어휘력 쑥쑥 신나는 어휘놀이)</p>
+                            <p class="date">21.06.18 ~ 21.06.30</p>
+                        </div>
+                    </td>
+                    <td>8시간</td>
+                </tr>
+-->
+				<!--@nif(slist)-->
+				<tr>
+					<td colspan="2">보수교육 이력이 없습니다</td>
+				</tr>
+				<!--/nif(slist)-->
+            </tbody>
+        </table>
+        <div class="btn_wrap">
+            <button type="button" class="btn __cancel" onclick="location.href='license.jsp';">목록</button>            
+        </div>
+    </div>
+</main>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

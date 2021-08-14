@@ -1,25 +1,21 @@
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">   
-    $(document).ready( function() {
-        $("#headers").load("../layout/header.html");  //헤더 인클루드
-        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
-    });
-</script>
-
-<div data-include-path="../layout/header.html" id="headers"></div>
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
 
 <main class="main">
     <div class="class">
+		<!--@include(class/class_header.html)-->
         <div class="class_list">
             <div class="__top">
                 <div class="swiper-container notice_swiper">
                     <div class="swiper-wrapper">
+						<!--@loop(nlist)--> 
                         <div class="swiper-slide">                            
                             <div class="tit">
-                                <span>공지1</span>
-                                <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                                <span>공지<!--{{nlist.__ord}}--></span>
+                                <p><a href="./class_notice_view.jsp?id={{nlist.id}}&{{list_query}}">{{nlist.subject_conv}}</a><!--@if(nlist.notice_new_block)-->&nbsp;<img src="../html/images/ic_new.gif" width="13" height="11" /><!--/if(nlist.notice_new_block)--></p>
                             </div>                            
                         </div>
+						<!--/loop(nlist)--> 
+						<!--
                         <div class="swiper-slide">                            
                             <div class="tit">
                                 <span>공지2</span>
@@ -44,30 +40,36 @@
                                 <p>수강 설문 참여하신 분께 복습시간 제공</p>
                             </div>                            
                         </div>
+						-->
                     </div>
                 </div>                
                 <div class="status_txt">
-                    <p>남은기간 <span>20</span>일 / 미제출과제 <span>1</span>건</p>
+                    <p>남은기간 <span>{{cuinfo.diff_date}}</span>일 / 미제출과제 <span>{{cuinfo.notrcount}}</span>건</p>
                 </div>
                 <div class="status_info">
                     <div class="graph_wrap">
                         <div class="graph_box">                        
                             <span>권장진도</span>
                             <div class="bar_wrap">
-                                <span class="gauge_bar" style="width: 80%;"></span>                                
+                                <span class="gauge_bar" style="width: {{cuinfo.recommend_ratio}}%;"></span>                                
                             </div>
-                            <em>80%</em>
+                            <em>{{cuinfo.recommend_ratio}}%</em>
                         </div>
                         <div class="graph_box">
                             <span>나의진도</span>
                             <div class="bar_wrap">
-                                <span class="gauge_bar my" style="width: 70%;"></span>                                
+                                <span class="gauge_bar my" style="width: {{cuinfo.progress_ratio_conv}}%;"></span>                                
                             </div>
-                            <em>70%</em>
+                            <em>{{cuinfo.progress_ratio_conv}}%</em>
                         </div>
                     </div>
                     <div class="info_txt type1">
-                        <span>조금 더 힙내세요!</span>
+                        <span><!--@if(main_online_block)--><a href="./goal.jsp">목표달성 선물도착</a><!--/if(main_online_block)-->
+						<!--@nif(main_online_block)-->
+						<!--@if(cuinfo.recommend_block)-->조금 더 힙내세요!<!--/if(cuinfo.recommend_block)-->
+						<!--@nif(cuinfo.recommend_block)-->진도가 원활합니다<!--/nif(cuinfo.recommend_block)-->
+						<!--/nif(main_online_block)-->
+						</span>
                     </div>                    
                 </div>
             </div>
@@ -87,14 +89,65 @@
                     </tr>
                 </thead>
                 <tbody>
+					<!--@loop(clist)-->
+					<!--@nif(clist.type_block)-->
+                    <tr class="no_bg">
+                        <td></td>
+                        <td>{{clist.subject}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+					<!--/nif(clist.type_block)-->
+
+					<!--@if(clist.type_block)-->
                     <tr>
-                        <td>0</td>
-                        <td>오리엔테이션</td>
-                        <td>100%</td>
+                        <td>{{clist.chapter}}</td>
+                        <td>{{clist.lesson_subject}}</td>
+                        <td>{{clist.ratio}}%</td>
                         <td>
-                            <button type="button" class="btn_review">복습하기</button>
+							<!--@if(clist.online_block)-->
+							<!--@if(clist.open_block)-->
+							<!--@if(clist.complete_yn)--><button type="button" class="btn_review" onclick="javascript:OpenWindow('./viewer.jsp?cuid={{cuinfo.id}}&chapter={{clist.chapter}}', '_VRV_', {{clist.width_conv}}, {{clist.height_conv}});">복습하기</button><!--/if(clist.complete_yn)-->
+							<!--@nif(clist.complete_yn)-->
+								<!--@nif(clist.not_study_block)-->	
+									<!--@if(clist.chapter0_block)-->	
+									<button type="button" class="btn_learning" onclick="javascript:OpenWindow('/data/Contents/gs/ori_h.mp4', '_VRV_', 1280, 720);">학습하기</button>
+									<!--/if(clist.chapter0_block)-->	
+									<!--@nif(clist.chapter0_block)-->	
+									<button type="button" class="btn_learning" onclick="javascript:OpenWindow('./viewer.jsp?cuid={{cuinfo.id}}&chapter={{clist.chapter}}', '_VRV_', {{clist.width_conv}}, {{clist.height_conv}});">학습하기</button>
+									<!--/nif(clist.chapter0_block)-->	
+								<!--/nif(clist.not_study_block)-->
+								<!--@if(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:void(0);">학습하기</button>
+								<!--/if(clist.not_study_block)-->
+							<!--/nif(clist.complete_yn)-->
+							<!--/if(clist.open_block)-->
+
+							<!--@nif(clist.open_block)-->&nbsp;
+								<!--@nif(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:msg('{{clist.msg}}')">학습하기</button>
+								<!--/nif(clist.not_study_block)-->
+								<!--@if(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:void(0);">학습하기</button>
+								<!--/if(clist.not_study_block)-->
+							<!--/nif(clist.open_block)-->
+							<!--/if(clist.online_block)-->
+
+							<!--@if(clist.zoom_block)-->
+							<button type="button" class="btn_learning" onclick="javascript:goZoom();">강의실입장</button>
+							<!--/if(clist.zoom_block)-->
                         </td>
                     </tr>
+					<!--/if(clist.type_block)-->
+					<!--/loop(clist)-->
+
+					<!--@nif(clist)-->
+                    <tr>
+                        <td colspan="4">등록된 학습목차가 없습니다</td>
+                    </tr>
+					<!--/nif(clist)-->
+
+<!--
                     <tr class="no_bg">
                         <td></td>
                         <td>독서와 독서지도의 이해</td>
@@ -133,7 +186,7 @@
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>독서 자료 선정의 이해독서 자료 선정의 이해 <br>독서 자료 선정의 이해</td>
+                        <td>독서 자료 선정의 이해</td>
                         <td>0%</td>
                         <td>
                             <button type="button" class="btn_learning">학습하기</button>
@@ -147,35 +200,37 @@
                             <button type="button" class="btn_learning">학습하기</button>
                         </td>
                     </tr>
+-->
                 </tbody>
             </table>
         </div>
 
+		<form name="form1" method="post" target="sysfrm">
         <div class="survey_ly __layer">
             <p class="tit">첫 학습을 환영합니다.</p>
             <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
             <div class="inner">
                 <div class="t1">
                     <p>
-                        독서지도 전문가 김도전님을 응원합니다. <br>
+                        독서지도 전문가 {{SYS_USERNAME}}님을 응원합니다. <br>
                         즐겁고 유익한 경험이 되도록 한우리도 노력할게요!
                     </p>
                     <img src="../assets/img/ico_survey.png" alt="">
                 </div>
                 <p class="q">본 교육과정을 알게 된 경로를 모두 선택해 주세요.</p>
                 <div class="inflow_list">
-                    <button type="button">인터넷 검색</button>
-                    <button type="button">유튜브</button>
-                    <button type="button">지인소개</button>
-                    <button type="button">한우리센터</button>
-                    <button type="button">SNS 수강후기</button>
-                    <button type="button">지역광고</button>
-                    <button type="button">카카오톡</button>
-                    <button type="button">아이엠스쿨</button>
-                    <button type="button">한우리블로그</button>
-                    <button type="button">TV</button>
-                    <button type="button">배너광고</button>
-                    <input type="text" placeholder="기타입력">
+                    <button type="button" onclick="javasccript:set_join_motive('01');">인터넷 검색</button>
+                    <button type="button" onclick="javasccript:set_join_motive('43');">유튜브</button>
+                    <button type="button" onclick="javasccript:set_join_motive('26');">지인소개</button>
+                    <button type="button" onclick="javasccript:set_join_motive('23');">한우리센터</button>
+                    <button type="button" onclick="javasccript:set_join_motive('25');">SNS 수강후기</button>
+                    <button type="button" onclick="javasccript:set_join_motive('33');">지역광고</button>
+                    <button type="button" onclick="javasccript:set_join_motive('42');">카카오톡</button>
+                    <button type="button" onclick="javasccript:set_join_motive('17');">아이엠스쿨</button>
+                    <button type="button" onclick="javasccript:set_join_motive('22');">한우리블로그</button>
+                    <button type="button" onclick="javasccript:set_join_motive('31');">TV</button>
+                    <button type="button" onclick="javasccript:set_join_motive('28');">배너광고</button>
+                    <input type="text" name="join_motive" onclick="javasccript:set_join_motive('36');" placeholder="기타입력">
                 </div>
                 <div class="btn_wrap">
                     <button type="button" class="btn_next">다음에 하기</button>
@@ -231,6 +286,24 @@
             </div>            
             <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>            
         </div>
+		</form>
+		{{form_script}}
     </div>
 </main>
-<div data-include-path="../layout/footer.html" id="footers"></div>
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->
+
+<script>
+var join_motive_result;
+function goZoom() {
+	window.open('{{cuinfo.zoom_link}}', 'zoomlink', 'left=0, top=0, width=1024, height=800, scrollbars=yes, toolbar=no, menubar=no, location=no, status=no, resizable=yes')
+}
+function msg(msg) {
+	alert(msg);
+}
+function set_join_motive(val) {
+	var f = document.forms['form1'];
+	join_motive_result += val + ",";
+alert(join_motive_result);
+	f['join_motive'].value = join_motive_result;
+}
+</script>

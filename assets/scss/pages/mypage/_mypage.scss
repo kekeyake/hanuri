@@ -202,7 +202,7 @@
             letter-spacing: vw(-1.1);
             margin:0 vw(4);
             &.__cancel {
-                background-color: #666;
+                background-color: #999;
             }
             &.__stay {
                 background-color: #ccc;
@@ -216,7 +216,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin:vw(30) auto;
+            margin:vw(5) auto;
             width: vw(540);
             height: vw(60);
             border-radius: 3px;
@@ -923,7 +923,7 @@
                 margin:0 px(2);
                 &.__cancel {
                     width: px(64.25);
-                    background-color: #666;
+                    background-color: #999;
                 }
                 &.__stay {
                     width: px(64.25);
@@ -1423,7 +1423,7 @@
             display: flex;
             align-items: center;
             letter-spacing: px(-0.5);
-            padding:0 px(7.5);
+            padding:0;
             margin:px(22.5) 0;
             .link {
                 width: 50%;

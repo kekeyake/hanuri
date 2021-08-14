@@ -134,9 +134,9 @@
     background: #333;
     justify-content: space-between;
     button {
-        width: vw(280);
+        width: vw(278);
         height: vw(70);
-        font-size: vw(25);
+        font-size: vw(28);
         letter-spacing: vw(-2.5);
         display: flex;
         align-items: center;
@@ -145,6 +145,10 @@
         &:first-child {
             background-color: #e35000;
             color:#fff;
+            a {
+                color:#fff;
+            }
+            
             img {
                 width: vw(40);
                 margin-right: vw(20.5);

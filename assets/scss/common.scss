@@ -80,9 +80,6 @@ button.btn {
 a {
 	text-decoration: none;
 	color:#000;
-	&:hover {
-		text-decoration: underline;
-	}
 }
 a.link {
     display: inline-flex;
@@ -485,6 +482,18 @@ form .btn_cert {
 		display: block;
 		bottom:0;
 	}
+	&.__loading {
+		padding:vw(30) vw(15);
+		.t1 {
+			text-align: center;
+		}
+	}
+	&.__saving {
+		padding:vw(30) vw(15);
+		.t1 {
+			text-align: center;
+		}
+	}
 	.btn_setting_reload {
 		position: absolute;
 		left:vw(20);
@@ -837,6 +846,12 @@ form .btn_cert {
 		&.on {
 			display: block;
 			bottom:auto;
+		}
+		&.__loading {
+			padding:px(15) px(12);
+		}
+		&.__saving {
+			padding:px(15) px(12);
 		}
 		.btn_setting_reload {
 			position: absolute;

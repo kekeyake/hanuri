@@ -1,0 +1,74 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="mypage">
+        <div class="__wrap_top">
+			<form name="form1" method="get">
+            <div class="search_box">
+                <input type="text" id="s_keyword" name="s_keyword" placeholder="교육과정 검색">
+                <button type="submit" class="btn __search"></button>
+            </div>
+			</form>
+			{{form_script}}
+        </div>
+        <ul class="mypage_list">
+
+			<!--@loop(list)--> 
+            <li>
+				<!--@if(list.delay_block)--><p><a href="javascript:void(0);" onclick="javascript:goRestudy('{{list.id}}');">{{list.name_conv}}</a></p><button class="btn _restart" type="button" onclick="javascript:goRestudy('{{list.id}}');">학습 재시작</button><!--/if(list.delay_block)-->
+				<!--@if(list.end_study_yn)--><p><a href="../class/info.jsp?cuid={{list.id}}">{{list.name_conv}}</a></p><button type="button" class="btn _end" onclick="location='../class/info.jsp?cuid={{list.id}}'">학습종료</button><!--/if(list.end_study_yn)-->
+
+				<!--@nif(list.delay_block)-->
+				<!--@nif(list.end_study_yn)--> 
+				<!--@nif(list.wait_yn)--> 
+					<p><a href="javascript:void(0);" onclick="javascript:goStudy('{{list.id}}');">{{list.name_conv}}</a></p><button class="btn _study" type="button" onclick="javascript:goStudy('{{list.id}}');">학습실 입장</button>
+				<!--/nif(list.wait_yn)--> 
+				<!--@if(list.wait_yn)--> 
+					<p>{{list.name_conv}}</p><button class="btn _end" type="button" onclick="javascript:void(0);">학습대기</button>
+				<!--/if(list.wait_yn)--> 
+				<!--/nif(list.end_study_yn)--> 
+				<!--/nif(list.delay_block)-->
+            </li>
+			<!--/loop(list)--> 
+
+			<!--@nif(list)-->
+            <li class="no_data">
+                <span><img src="../assets/img/ico_nodata_idx.svg" alt="" class="__idx"></span>
+                <p>수강중인 과정이 없습니다</p>
+            </li>
+			<!--/nif(list)-->
+<!--
+            <li>
+                <p>원고지 첨삭</p>
+                <button class="btn _study">학습실 입장</button>
+            </li>
+            <li>
+                <p>유아독서지도사</p>
+                <button class="btn _restart">학습 재시작</button>
+            </li>
+            <li>
+                <p>논술지도사</p>
+                <button class="btn _review">복습하기</button>
+            </li>
+            <li>
+                <p>독서지도사 양성과정 100기</p>
+                <button class="btn _end">학습종료</button>
+            </li>
+-->
+        </ul>
+        <button class="btn btn_more">
+            더보기
+        </button>
+    </div>
+</main>
+
+<script language="javascript">
+	function goStudy(val) {
+		location.href = "../class/index.jsp?cuid=" + val;
+	}
+	function goRestudy(val) {
+		location.href = "../mypage/restart.jsp?id=" + val;
+	}
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

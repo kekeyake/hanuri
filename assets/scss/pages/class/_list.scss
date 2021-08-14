@@ -58,16 +58,17 @@
                         letter-spacing: vw(-0.9);
                     }
                     .graph_box {
-                        display: flex;
-                        justify-content: space-between;
+                        display: flex;   
+                        align-items: center;
                         height: vw(24);
                         .bar_wrap {
-                            width: vw(230);
+                            width: vw(170);
                             height: vw(22);
                             border: solid 0.5px #bbb;
                             background-color: #f9f9f9;
                             position: relative;
                             overflow: hidden;
+                            margin-left: vw(10);
                             .gauge_bar {
                                 display: block;
                                 width: 100%;
@@ -78,16 +79,14 @@
                                 &.my {
                                     background-color: #ee4500;
                                 }
-                            }
-                            em {
-                                position: absolute;
-                                left:5%;
-                                top:50%;
-                                transform: translateY(-50%);
-                                font-size: vw(15);
-                                font-weight: 700;
-                                color:#fff;
-                            }
+                            }                            
+                        }
+                        em {
+                            width: vw(50);
+                            margin-left: vw(8);
+                            font-size: vw(16);
+                            font-weight: 700;
+                            color:#333;
                         }
                     }
                 }
@@ -101,7 +100,7 @@
                     border-radius: 5px;
                     background-color: #8b59cf;
                     background-repeat: no-repeat;
-                    background-position: vw(22.5) 50%;
+                    background-position: vw(22.5) 50%;                    
                     &.type1 {
                         background-image:url(../img/ico_status_01.svg);
                         background-size: vw(37);
@@ -133,6 +132,9 @@
                         font-weight: 700;
                         color:#fff;
                         letter-spacing: vw(-1);
+                        a {
+                            color:#fff;
+                        }
                     }
                 }
             }
@@ -369,7 +371,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        width: px(152.5);
+                        width: 50%;
                         height: px(28);
                         span {
                             font-size: px(9);
@@ -379,7 +381,6 @@
                         }
                         .graph_box {
                             display: flex;
-                            justify-content: space-between;
                             height: px(12);
                             .bar_wrap {
                                 width: px(115);
@@ -398,18 +399,15 @@
                                     &.my {
                                         background-color: #ee4500;
                                     }
-                                }
-                                em {
-                                    position: absolute;
-                                    left:10%;
-                                    top:50%;
-                                    transform: translateY(-50%);
-                                    font-size: px(7.5);
-                                    font-weight: 700;
-                                    color:#fff;
-                                }
+                                }                                
                             }
-                        }
+                            em {          
+                                margin-left: px(5);                  
+                                font-size: px(7.5);
+                                font-weight: 700;
+                                color:#333;
+                            }
+                        }                        
                     }
                     .info_txt {
                         display: flex;

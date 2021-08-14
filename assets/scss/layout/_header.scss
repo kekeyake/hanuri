@@ -103,7 +103,7 @@ nav {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                padding:0 vw(29);
+                padding:0 vw(25);
                 position: relative;
                 li {
                     width: max-content;                
@@ -228,6 +228,9 @@ nav {
     justify-content: center;
     position: relative;
     border-bottom: 1px solid #a3a3a3;
+    &.bdb_none {
+        border-bottom: 0 solid #000;
+    }
     .__back {
         width: vw(15);
         height: vw(25);
