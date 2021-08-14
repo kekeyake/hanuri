@@ -55,7 +55,69 @@
 @include desktop {
     .leader {
         &.__confidence {
-        
+            .confidence_cont {
+                &.__01 {
+                    background: url(../img/leader/confidence_01_bg.png) no-repeat 50% / cover;
+                    padding:px(8) 0 px(31.5);
+                    text-align: center;
+                    img {
+                        width: px(502.5);
+                        margin:0 auto;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+                &.__02 {
+                    padding:px(34.5) 0 px(40.5);
+                    text-align: center;
+                    img {
+                        width: px(375);
+                        margin:0 auto;
+                    }
+                }
+                &.__03 {
+                    background: #f4f2ee;
+                    padding: px(34.5) px(40);
+                    img {
+                        margin:0 auto;
+                        width: px(560);
+                    }
+                }
+                &.__04 {
+                    background: #d0ddd6;
+                    padding: px(35) px(30.5);
+                    img {
+                        margin:0 auto;
+                        width: px(376.5);
+                    }
+                }
+                &.__05 {
+                    width: 1200px;
+                    margin:0 auto;
+                    padding: px(30) px(32.5);
+                    img {
+                        display: block;
+                        margin:0 auto;
+                        width: px(183.5);
+                    }
+                    .movie_box {
+                        margin-top: px(17.5);
+                    }
+                }
+            }
+            .__link {
+                height: 56px;
+                padding:0 20px 0 30px;
+                margin:40px auto 0;        
+                box-shadow: 1.2px 1.6px 0 2px #000;
+                span {
+                    letter-spacing: -2px;
+                    padding-right: 52px;
+                    font-size: 22px;
+                    background: url(../img/main/ico_click.svg) no-repeat 100% 100% / 33px;
+                }
+            }
         }
     }
 }

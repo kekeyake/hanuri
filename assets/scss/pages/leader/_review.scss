@@ -132,93 +132,67 @@
 @include desktop {
     .leader {
         &.__list {
-            padding-top: vw(50);
-            text-align: center;
+            width: 1200px;
+            margin:0 auto;
+            padding-top: 50px;            
             .tit {
-                font-size: vw(35);
-                letter-spacing: vw(-2.6);
-                color:#000;
-                line-height: 1.25;
+                font-size: 35px;
+                letter-spacing: -2.6px;
                 b {
-                    font-size: vw(40);
-                    letter-spacing: vw(-3);
-                    font-weight: 700;
-                    position: relative;
+                    font-size: 40px;
+                    letter-spacing: -3px;
                     &::after {
-                        content: '';
-                        display: block;
-                        width: 100%;
-                        height: vw(16);
-                        background-color: #ffcb40;
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        z-index: -1;
+                        height: 16px;
                     }
                 }
                 + .stxt {
-                    margin-top: vw(23);
-                    font-size: vw(26);
-                    letter-spacing: vw(-1.95);
-                    color:#000;
+                    margin-top: 23px;
+                    font-size: 26px;
+                    letter-spacing: -1.95px;
                 }
             }
             .review_list {
-                margin-top: vw(32);
-                text-align: left;
-                border-top: 1px solid #bbb;
+                margin-top: 32px;
                 li {
-                    border-bottom: 1px solid #bbb;
-                    display: flex;
-                    align-items: center;
-                    padding:vw(25) vw(40) vw(25) vw(30);
+                    align-items: stretch;
+                    padding:25px 40px 25px 30px;
                     img {
-                        width: vw(121);
+                        width: 121px;
                     }
                     .txt_box {
-                        margin-left:vw(19.5);
-                        letter-spacing: vw(-1);
-                        width: vw(387.5);
+                        margin-left:20px;
+                        letter-spacing: -1px;
+                        width: calc(100% - 141px);
                         .t1 {
-                            font-size: vw(23);
-                            font-weight: 700;
-                            color:#333;
-                            margin-bottom: vw(5);
+                            font-size: 23px;
+                            margin-bottom: 5px;
                         }
                         .t2 {
-                            font-size: vw(20);
-                            font-weight: 700;
-                            color:#999;
-                            margin-bottom: vw(5);
+                            font-size: 20px;
+                            margin-bottom: 5px;
                         }
                         .t3 {
-                            font-size: vw(22);
-                            color:#666;
-                            line-height: 1.23;
+                            font-size: 22px;
                         }
                     }
                 }
             }
         }
 
-        &.__view {
+        &.__view {   
+            width: 1200px;;         
+            margin:0 auto;
             .top_tit {
-                // border-top: 1px solid #bbb;
-                border-bottom: 1px solid #a3a3a3;
-                padding:vw(30) 0;
-                background-color: #f9f9f9;
-                text-align: center;
-                font-weight: 500;
+                border-top: 1px solid #bbb;
+                padding:30px 0;
                 .tit {
-                    font-size: vw(27);
-                    color:#333;
-                    letter-spacing: vw(-1.35);
-                    line-height: vw(35);
+                    font-size: 27px;
+                    letter-spacing: -1.35px;
+                    line-height: 35px;
                 }
                 .t2 {
-                    font-size: vw(20);
-                    letter-spacing: vw(-1);
-                    color:#666;
+                    font-size: 20px;
+                    letter-spacing: -1px;
                 }
             }
             .cont_box {
@@ -228,34 +202,20 @@
                     width: 100%;
                 }
                 p {
-                    margin-top: vw(24.5);
-                    font-size: vw(22);
-                    color:#666;
-                    letter-spacing: vw(-1.1);
-                    line-height: 1.36;
+                    margin-top: 24px;
+                    font-size: 22px;
+                    letter-spacing: -1px;
                 }
             }
             .btn_wrap {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                padding:vw(40) 0 vw(60);
+                padding:40px 0 60px;
                 button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: vw(128.5);
-                    height: vw(51);
-                    color:#fff;
-                    font-size: vw(22);
-                    font-weight: 500;
+                    width: 128px;
+                    height: 51px;
+                    font-size: 22px;
                     border-radius: 5px;
-                    letter-spacing: vw(-1.1);
-                    margin:0 vw(4);
-                    &.__cancel {
-                        background-color: #666;
-                    }
+                    letter-spacing: -1px;
+                    margin:0 4px;                    
                 }
             }
         }
