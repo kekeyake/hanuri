@@ -347,10 +347,10 @@ $(function () {
             loop: true,
             centeredSlides: true,
 
-            // autoplay: {
-            //     delay : 3500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".dont_slide01 .swiper-pagination",
                 clickable: true,
@@ -367,10 +367,10 @@ $(function () {
             loop: true,
             centeredSlides: true,
 
-            // autoplay: {
-            //     delay : 3500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".dont_slide02 .swiper-pagination",
                 clickable: true,
