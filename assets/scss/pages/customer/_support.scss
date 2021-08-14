@@ -139,7 +139,7 @@
                     background:#f4f4f4 url(../img/support_03.svg) no-repeat 50% 50% / px(45);
                 }
                 div {
-                    width: px(188.5);
+                    width: calc(100% - 158px);
                     margin-left: px(12);
                     word-break: keep-all;
                     a {

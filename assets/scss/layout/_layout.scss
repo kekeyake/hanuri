@@ -296,7 +296,7 @@
                             margin-left: vw(10);
                             margin-right: 0;
                             height: vw(30);
-                            padding:vw(1.5) vw(10) vw(2.5);
+                            padding:vw(1.5) vw(5) vw(2.5);
                         }
                         .attachName {
                             border: 0 solid #000;
@@ -819,6 +819,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: px(15) 0;
+        margin-bottom: 50px;
         li {
             width: px(293);
             margin-bottom: px(13);
@@ -1093,6 +1094,7 @@
                                 margin-left: px(5);
                                 margin-right: 0;
                                 height: px(16.5);
+                                padding:0 10px;
                             }
                         }
                         b {

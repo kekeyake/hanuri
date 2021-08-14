@@ -111,7 +111,22 @@
             font-size: vw(22);
             display: flex;
             justify-content: center;
-            margin:vw(31) auto vw(62);
+            margin:vw(31) auto vw(62);            
+        }
+        .__ok {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: vw(130);
+            height: vw(45);
+            background-color: #ee4500;
+            border-radius: vw(3);
+            color:#fff;
+            font-weight: 700;
+            font-size: vw(22);
+            display: flex;
+            justify-content: center;
+            margin:vw(31) auto vw(62);            
         }
         .book_view {
             .__top {
@@ -364,6 +379,22 @@
                 display: flex;
                 justify-content: center;
                 margin:px(15.5) auto px(31);
+            }
+            .__ok {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: px(65);
+                height: px(22.5);
+                background-color: #ee4500;
+                border-radius: px(1.5);
+                color:#fff;
+                font-weight: 700;
+                font-size: px(11);
+                display: flex;
+                justify-content: center;
+                margin:px(15.5) auto px(31);
+                background-color: #ee4500;                           
             }
             .book_view {
                 .__top {

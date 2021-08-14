@@ -1,0 +1,53 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">    
+    <div class="mypage">
+
+		<form name="form1" method="post" target="sysfrm" enctype="multipart/form-data">
+        <div class="__write">
+            <p class="tit">문의하기</p>
+            <div class="inquiry_box">
+                <label>분류</label>
+                <select name="category" id="category" class="cus_select">
+					<option value="">선택하세요</option>
+					<!--@loop(categories)-->
+					<option value="{{categories.id}}">{{categories.name}}</option>
+					<!--/loop(categories)-->
+                </select>
+            </div>
+            <div class="inquiry_box">
+                <label>제목</label>                
+                <input type="text" id="write_title" name="write_title" placeholder="제목을 입력하세요">                
+            </div>
+            <div class="inquiry_box">
+                <textarea name="content" cols="30" rows="10" placeholder="내용을 입력하세요">{{question}}</textarea>
+            </div>
+            <div class="inquiry_box">
+                <label>파일첨부 <span>(50MB 이하)</span></label>
+                <div class="attach_file">
+                    <label class="add_file_wrap">
+                        찾아보기
+                        <input type="file" id="file_up" name="content_file" class="add_file">
+                    </label>
+                    <input type="text" class="attachName" placeholder="파일을 첨부해주세요">
+                </div>
+            </div>
+        </div>
+		<!--@nif(sms_agree_block)-->
+        <div class="checkbox_wrap">
+            <label>
+                <input type="checkbox" name="sms_yn" id="sms_yn" value="Y" class="checkbox">
+                <span>답변 알림톡, 학습 정보 및 이벤트 SMS 수신 동의</span>
+            </label>
+        </div>
+		<!--/nif(sms_agree_block)-->
+        <div class="btn_wrap">
+            <button type="submit" class="btn __ok">확인</button>
+        </div>        
+        </form>
+		{{form_script}}
+
+	</div>
+</main>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

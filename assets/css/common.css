@@ -2179,7 +2179,7 @@ footer.footer .t1:last-child {
   margin-left: 1.66667vw;
   margin-right: 0;
   height: 5vw;
-  padding: 0.25vw 1.66667vw 0.41667vw;
+  padding: 0.25vw 0.83333vw 0.41667vw;
 }
 
 .view_wrap .info_wrap ul li > div > div .attachName {
@@ -2860,6 +2860,7 @@ footer.footer .t1:last-child {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 30px 0;
+    margin-bottom: 50px;
   }
   .board_list li {
     width: 586px;
@@ -3174,6 +3175,7 @@ footer.footer .t1:last-child {
     margin-left: 10px;
     margin-right: 0;
     height: 33px;
+    padding: 0 10px;
   }
   .view_wrap .info_wrap ul li > div b {
     color: #ee4500;
@@ -4212,7 +4214,7 @@ footer.footer .t1:last-child {
     background: #f4f4f4 url(../img/support_03.svg) no-repeat 50% 50%/90px;
   }
   .support .__list li div {
-    width: 377px;
+    width: calc(100% - 158px);
     margin-left: 24px;
     word-break: keep-all;
   }
@@ -9424,6 +9426,28 @@ footer.footer .t1:last-child {
   margin: 5.16667vw auto 10.33333vw;
 }
 
+.class .__task .__ok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21.66667vw;
+  height: 7.5vw;
+  background-color: #ee4500;
+  border-radius: 0.5vw;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.66667vw;
+  display: flex;
+  justify-content: center;
+  margin: 5.16667vw auto 10.33333vw;
+}
+
 .class .__task .book_view .__top {
   border-top: 1px solid #999;
   display: -webkit-box;
@@ -9734,6 +9758,28 @@ footer.footer .t1:last-child {
     display: flex;
     justify-content: center;
     margin: 31px auto 62px;
+  }
+  .class .__task .__ok {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 130px;
+    height: 45px;
+    background-color: #ee4500;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin: 31px auto 62px;
+    background-color: #ee4500;
   }
   .class .__task .book_view .__top {
     display: -webkit-box;
@@ -16174,7 +16220,6 @@ form .btn_cert {
   background-color: #f3f3f3;
   padding: 3.33333vw;
   font-size: 3.66667vw;
-  line-height: 1.27;
   letter-spacing: -0.18333vw;
 }
 
@@ -16764,7 +16809,7 @@ form .btn_cert {
     background-color: #f3f3f3;
     padding: 20px;
     font-size: 22px;
-    line-height: 1.27;
+    line-height: 1.5;
     letter-spacing: -1.1px;
   }
   .tab_container .review {
