@@ -378,6 +378,25 @@ $(function () {
         });
             
     }
+
+    if( $('.support_slide').length ) {
+        var teacherSwiper = new Swiper(".support_slide", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 25,
+            loop: true,
+            centeredSlides: true,
+
+            autoplay: {
+                delay : 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".support_slide .swiper-pagination",
+                clickable: true,
+            },            
+        });
+    }
 });
 var ww = $(window).width();
 var mainSwiper5 = undefined;
