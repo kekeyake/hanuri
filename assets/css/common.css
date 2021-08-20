@@ -15480,6 +15480,290 @@ footer.footer .t1:last-child {
   }
 }
 
+.enter {
+  padding-bottom: 11.66667vw;
+}
+
+.enter .enter_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vw;
+  background: url(../img/teacher/top_bg_m.png) no-repeat 50%/cover;
+  color: #fff;
+}
+
+.enter .enter_top h1 {
+  font-size: 7.5vw;
+  letter-spacing: -0.56333vw;
+  font-weight: 700;
+}
+
+.enter .enter_top .stit {
+  font-size: 5.5vw;
+  letter-spacing: -0.41667vw;
+}
+
+.enter .cont h2 {
+  font-size: 5.83333vw;
+  letter-spacing: -0.43833vw;
+  color: #000;
+  font-family: "NanumSquare";
+  font-weight: 900;
+  text-align: center;
+}
+
+.enter .cont.__01 {
+  padding: 11.66667vw 2.5vw;
+}
+
+.enter .cont.__01 img {
+  width: 100%;
+  display: block;
+  margin: 5.08333vw 0 3.33333vw;
+}
+
+.enter .cont.__01 .txt {
+  font-size: 3.33333vw;
+  letter-spacing: -0.25vw;
+  color: #666;
+  padding-left: 1.66667vw;
+  position: relative;
+  line-height: 1.4;
+}
+
+.enter .cont.__01 .txt::before {
+  content: '*';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.enter .cont.__02 {
+  background-color: #f0eddf;
+  padding: 10vw 5vw 6.66667vw;
+}
+
+.enter .cont.__02 .stit {
+  font-size: 3.66667vw;
+  margin-top: 3.33333vw;
+  letter-spacing: -0.275vw;
+  text-align: center;
+  font-family: "NanumSquare";
+  line-height: 1.36;
+}
+
+.enter .cont.__02 .img_box {
+  margin-top: 5.66667vw;
+}
+
+.enter .cont.__02 .img_box img {
+  width: 100%;
+}
+
+.enter .cont.__02 .img_box img:first-child {
+  margin-bottom: 3.41667vw;
+}
+
+.enter h3 {
+  margin: 10vw 0 0 4.58333vw;
+  font-size: 4.16667vw;
+  letter-spacing: -0.20833vw;
+  font-weight: 700;
+  color: #333;
+}
+
+.enter .txt_list {
+  margin: 3.33333vw 0 8.41667vw;
+  padding: 5vw 4.66667vw;
+  background-color: #eee;
+}
+
+.enter .txt_list li {
+  padding-left: 1.66667vw;
+  font-size: 3.66667vw;
+  color: #333;
+  position: relative;
+  letter-spacing: -0.16667vw;
+  margin-bottom: 1.66667vw;
+}
+
+.enter .txt_list li b {
+  font-weight: 700;
+}
+
+.enter .txt_list li::before {
+  content: '';
+  display: block;
+  width: 0.83333vw;
+  height: 0.83333vw;
+  background-color: #333;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 2vw;
+}
+
+.enter .link {
+  display: block;
+  width: 76.75vw;
+  margin: 0 auto;
+}
+
+.enter .link img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .enter {
+    padding-bottom: 70px;
+  }
+  .enter .enter_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 240px;
+    background: #807e81 url(../img/teacher/top_bg_pc.png) no-repeat 50%/1070px;
+    color: #fff;
+  }
+  .enter .enter_top h1 {
+    font-size: 45px;
+    letter-spacing: -3.38px;
+    font-weight: 700;
+  }
+  .enter .enter_top .stit {
+    font-size: 33px;
+    letter-spacing: -2.5px;
+  }
+  .enter .cont {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .enter .cont h2 {
+    font-size: 35px;
+    letter-spacing: -2.63px;
+    color: #000;
+    font-family: "NanumSquare";
+    font-weight: 900;
+    text-align: center;
+  }
+  .enter .cont.__01 {
+    padding: 70px 15px 50px;
+  }
+  .enter .cont.__01 img {
+    width: 624px;
+    display: block;
+    margin: 30px auto 40px;
+  }
+  .enter .cont.__01 .txt {
+    width: 557px;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+    color: #666;
+    padding-left: 10px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .enter .cont.__01 .txt::before {
+    content: '*';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .enter .cont.__02 {
+    background-color: #f0eddf;
+    padding: 60px 50px;
+  }
+  .enter .cont.__02 .stit {
+    font-size: 22px;
+    margin-top: 20px;
+    letter-spacing: -1.65;
+    text-align: center;
+    font-family: "NanumSquare";
+    line-height: 1.36;
+  }
+  .enter .cont.__02 .img_box {
+    margin-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .enter .cont.__02 .img_box img {
+    width: 540px;
+  }
+  .enter .cont.__02 .img_box img:first-child {
+    margin-bottom: 0;
+  }
+  .enter h3 {
+    width: 1200px;
+    margin: 60px auto 0;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    font-weight: 700;
+    color: #333;
+  }
+  .enter .txt_list {
+    width: 1200px;
+    margin: 20px auto 50px;
+    padding: 37px 30px;
+    background-color: #eee;
+  }
+  .enter .txt_list li {
+    padding-left: 10px;
+    font-size: 22px;
+    color: #333;
+    position: relative;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+  }
+  .enter .txt_list li b {
+    font-weight: 700;
+  }
+  .enter .txt_list li::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+  .enter .link {
+    display: block;
+    width: 460px;
+    margin: 0 auto;
+  }
+  .enter .link img {
+    width: 100%;
+  }
+}
+
 body {
   font-size: 3.66667vw;
   -ms-overflow-style: none;
