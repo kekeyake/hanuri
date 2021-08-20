@@ -4123,6 +4123,14 @@ footer.footer .t1:last-child {
   background: #f4f4f4 url(../img/support_03.svg) no-repeat 50% 50%/15vw;
 }
 
+.support .__list li:nth-child(4)::before {
+  background: #f4f4f4 url(../img/support_04.svg) no-repeat 50% 50%/11.41667vw;
+}
+
+.support .__list li:nth-child(5)::before {
+  background: #f4f4f4 url(../img/support_05.svg) no-repeat 50% 50%/11.41667vw;
+}
+
 .support .__list li div {
   width: 62.83333vw;
   margin-left: 4vw;
@@ -4212,6 +4220,12 @@ footer.footer .t1:last-child {
   }
   .support .__list li:nth-child(3)::before {
     background: #f4f4f4 url(../img/support_03.svg) no-repeat 50% 50%/90px;
+  }
+  .support .__list li:nth-child(4)::before {
+    background: #f4f4f4 url(../img/support_04.svg) no-repeat 50% 50%/68.5px;
+  }
+  .support .__list li:nth-child(5)::before {
+    background: #f4f4f4 url(../img/support_05.svg) no-repeat 50% 50%/68.5px;
   }
   .support .__list li div {
     width: calc(100% - 158px);
