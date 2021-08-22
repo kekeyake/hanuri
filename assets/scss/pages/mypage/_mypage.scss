@@ -913,7 +913,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: px(64.25);
+                width: 297px;
                 height: px(25.5);
                 color:#fff;
                 font-size: px(11);
@@ -922,15 +922,15 @@
                 letter-spacing: px(-0.5);
                 margin:0 px(2);
                 &.__cancel {
-                    width: px(64.25);
+                    width: 297px;
                     background-color: #999;
                 }
                 &.__stay {
-                    width: px(64.25);
+                    width: 297px;
                     background-color: #ccc;
                 }
                 &.__ok {
-                    width: px(64.25);
+                    width: 297px;
                     background-color: #ee4500;
                 }
             }

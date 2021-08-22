@@ -1,0 +1,94 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="sub_header m_f">
+        <button class="btn __back"></button>
+        <h1><a href="./class_notice.jsp?cuid={{cuid}}">학습공지 목록</a></h1>
+    </div>
+    <div class="class">
+		<!--@include(class/class_header.html)-->
+        <div class="__notice">
+            <div class="__view">
+                <div class="tit">
+                    <p>{{required_yn_conv}}{{subject}} <span class="reply">{{comment_conv}}</span> <span class="date">{{reg_date_conv}}</span></p>
+                </div>
+
+				<!--@if(files)-->
+                <div class="stit">
+                    <i>첨부</i>
+					<!--@loop(files)-->
+                    <p class="t1"><a href="../main/download.jsp?file={{files.filename_conv}}&ek={{files.ek}}">{{files.filename}}</a><!--{{files.ext}}--></p>
+					<!--/loop(files)-->
+                </div>
+				<!--/if(files)-->
+<!--
+                <div class="stit">
+                    <i>링크</i>
+                    <p class="t2"><a href="#a">https://www.hanuricampus.com/customer/policy.jsp</a></p>
+                </div>
+-->
+                <div class="event_box">
+                    <!--<img src="../assets/img/@view_event.png" alt="">-->
+					<!--@if(event_block)-->
+					<a href="/classroom/goal.jsp?cuid={{cuid}}">{{content}}</a>
+					<!--/if(event_block)-->
+					<!--@nif(event_block)-->
+					{{content}}
+					<!--/nif(event_block)-->
+                </div>
+            </div>
+            <button class="btn btn_list" onclick="go_list();">목록</button>
+
+			<!--@if(comment_block)-->
+			<iframe name="class_notice_comment" id="class_notice_comment" src="class_notice_comment.jsp?mid={{id}}&cuid={{cuid}}&status=&code=admin_notice" height="100%" width="100%" scrolling="no" frameborder="0"></iframe> 
+			<!--/if(comment_block)-->
+<!--
+            <div class="reply_list">
+                <p class="reply_tit">댓글 10/120</p>
+                <div class="reply_write_box">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="button" class="btn_write">작성</button>
+                </div>
+                <div class="reply_list_box">
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_profile.svg" alt="">
+                        <span class="knick_name">김선우</span>
+                        <span class="date_txt">2021.05.17 13:54</span>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button">수정</button>
+                        <button type="button">삭제</button>
+                        <button type="button">답글</button>
+                    </div>
+                    <p class="txt">이벤트에 참여하고 메일 보냈습니다. 확인해 주세요.</p>
+                </div>
+                <div class="reply_comment">
+                    <div class="profile_box">
+                        <img src="../assets/img/ico_reply.svg" alt="" class="reply">
+                        <span class="knick_name">관리자</span>
+                        <span class="date_txt">2021.05.17 13:54</span>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button">답글</button>
+                    </div>
+                    <p class="txt">
+                        이벤트에 참여해 주셔서 감사합니다. <br>
+                        즐겁게 학습하시기 바랍니다.
+                    </p>
+                </div>
+                <button class="btn btn_more">
+                    더보기
+                </button>
+            </div>
+-->
+        </div>
+    </div>
+</main>
+
+<script language="javascript">
+	function golist() {
+		location.href = "./class/class_notice.jsp?{{list_query}}"l;
+	}
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

@@ -1,0 +1,123 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("../layout/header.html");  //헤더 인클루드
+        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="../layout/header.html" id="headers"></div>
+
+<main class="main">
+    
+        <div class="__goal">
+            <div class="__top_event">
+                <p class="t1">할 수 있다!</p>
+                <p class="t2">목표 달성 이벤트</p>
+                <p class="t3">열심히 학습하시는 여러분을 한우리가 응원합니다. <br>학습 진도를 달성할 때마다 간식 선물을 드려요!  </p>
+            </div>
+            <div class="step_list">
+                <div class="text_box">
+                    <ul>
+                        <li>- <a href="#a">010-2221-1212</a>으로 기프티콘이 전송됩니다.</li>
+                        <li>- 휴대폰 번호 변경을 원하시면 번호를 클릭하세요.</li>
+                        <li>- 잘못된 번호 발송이나 사용기한 종료 후 재발송되지 않습니다.</li>
+                    </ul>
+                </div>
+                <ol>
+                    <li>
+                        <div class="product_box">
+                            <img src="../assets/img/class/img_500.png" alt="">
+                            <span>비타500 <br>드링크</span>
+                        </div>
+                        <div class="step_box type1">
+                            아쉬워요. <br>
+                            다음 단계에<br>
+                            도전해 주세요!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <img src="../assets/img/class/img_milk.png" alt="">
+                            <span>바나나맛 <br>우유</span>
+                        </div>
+                        <a href="#a" class="step_box type2">
+                            선물받기
+                        </a>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <img src="../assets/img/class/img_coffee.png" alt="">
+                            <span>스타벅스 <br>커피</span>
+                        </div>
+                        <div class="step_box type3">
+                            학습중
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <img src="../assets/img/class/img_coffee.png" alt="">
+                            <span>스타벅스 <br>커피</span>
+                        </div>
+                        <div class="step_box type4">
+                            학습대기
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>나의 학습 현황</h2>
+                <table class="tbl">
+                    <colgroup>
+                        <col style="width: 10;">
+                        <col style="width: 26;">
+                        <col style="width: 25;">
+                        <col style="width: 17;">
+                        <col style="width: 17;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>단계</th>
+                            <th>학습기간</th>
+                            <th>학습목표/진도율</th>
+                            <th>과제제출</th>
+                            <th>결과</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bg">1</td>
+                            <td>결제일 ~ 02.28</td>
+                            <td class="bg">25 / <b>15%</b></td>
+                            <td>1 / <b>0</b></td>
+                            <td class="bg">미달성</td>
+                        </tr>
+                        <tr>
+                            <td class="bg">2</td>
+                            <td>03.01 ~ 03.31</td>
+                            <td class="bg">50 / <b>50%</b></td>
+                            <td>2 / <b>2</b></td>
+                            <td class="bg">달성</td>
+                        </tr>
+                        <tr>
+                            <td class="bg">3</td>
+                            <td>04.01 ~ 04.30</td>
+                            <td class="bg">75 / <b>80%</b></td>
+                            <td>3 / <b>3</b></td>
+                            <td class="bg">학습중</td>
+                        </tr>
+                        <tr>
+                            <td class="bg">4</td>
+                            <td>05.01 ~ 05.31</td>
+                            <td class="bg">100 / <b>80%</b></td>
+                            <td>4 / <b>3</b></td>
+                            <td class="bg">학습대기</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="end"><b>수고</b>하셨습니다.</p>
+            </div>            
+        </div>
+</main>
+
+<div data-include-path="../layout/footer.html" id="footers"></div>

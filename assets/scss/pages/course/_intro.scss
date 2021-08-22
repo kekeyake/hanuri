@@ -1,6 +1,54 @@
 .course {
     
     .__intro {
+        .event_wrap {
+            position: relative;
+            .tit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: vw(90);
+                letter-spacing: vw(-2.09);
+                font-size: vw(42);
+                background-color: #242424;
+                font-family: "NanumSquare";
+                color:#fff;
+                font-weight: 800;
+            }
+            > img {
+                width: 100%;
+            }
+            .btn_wrap {
+                width:100%;
+                position: absolute;
+                left: 0%;
+                bottom:0;
+                display: flex;
+                justify-content: space-between;
+                padding:vw(15);
+                background-color: rgba(255, 255, 255, .8);
+                .btn {
+                    width: 49%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: vw(33);
+                    height: vw(61);
+                    color:#fff;
+                    font-family: "NanumSquare";
+                    letter-spacing: vw(-1.66);
+                    border-radius: 8px;
+                    font-weight: 800;
+                    &.__address {
+                        background-color: #242424;
+                    }
+                    &.__kakaotalk_share {
+                        background-color: #ea5413;
+                    }
+                }
+            }
+        }
         .top {
             padding:0 vw(30);
             background: #e1dcd2;
@@ -236,6 +284,62 @@
             width: 100%;
         }
         .__intro {
+            .event_wrap {
+                width: 1200px;
+                margin:0 auto;
+                position: relative;
+                padding-top: 30px;
+                .tit {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 700px;
+                    height: 80px;
+                    margin:0 auto 20px;
+                    letter-spacing: -2.09px;
+                    font-size: 40px;
+                    background-color: #242424;
+                    font-family: "NanumSquare";
+                    color:#fff;
+                    font-weight: 800;
+                    border-radius: 30px;
+                }
+                > img {
+                    display: block;
+                    margin:0 auto;
+                    width: 700px;
+                }
+                .btn_wrap {
+                    width:700px;
+                    position: absolute;
+                    left: 50%;
+                    bottom:0;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: space-between;
+                    padding:15px;
+                    background-color: rgba(255, 255, 255, .8);
+                    .btn {
+                        width: 49%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 33px;
+                        height: 60px;
+                        color:#fff;
+                        font-family: "NanumSquare";
+                        letter-spacing: -1.66px;
+                        border-radius: 8px;
+                        font-weight: 800;
+                        &.__address {
+                            background-color: #242424;
+                        }
+                        &.__kakaotalk_share {
+                            background-color: #ea5413;
+                        }
+                    }
+                }
+            }
             .top {
                 width: 100%;
                 background: #e1dcd2;
@@ -300,6 +404,7 @@
                     .t1 {
                         font-size: 22px;
                         margin-bottom: 25px;
+                        letter-spacing: -1px;
                     }
                     .user_box {
                         img {

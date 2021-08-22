@@ -8,7 +8,7 @@
                 width: 100%;
             }
             .txt {
-                font-size: vw(40);
+                font-size: vw(36);
                 font-weight: 700;
                 line-height: vw(48);
                 letter-spacing: vw(-0.375);
@@ -19,8 +19,8 @@
                 top:10%;
                 color:#bc3e00;
                 opacity: 0;
-                animation: fadeIn 4s forwards;
-                animation-delay: 2s;
+                animation: fadeIn 2s forwards;
+                animation-delay: 1s;
             }
             @keyframes fadeIn {
                 0% {
@@ -49,32 +49,32 @@
                     }
                 }
                 li:nth-child(1) {
-                    width: vw(115);
-                    top:vw(57);
+                    width: vw(135.5);
+                    top:vw(60);
                     left: vw(30);
-                    animation: fadeUp 1s forwards;
-                    animation-delay: 6s;
+                    animation: fadeUp .5s forwards;
+                    animation-delay: 3s;
                 }
                 li:nth-child(2) {
-                    width: vw(135.5);
+                    width: vw(115.5);
                     top:vw(32.5);
-                    left: vw(155);
-                    animation: fadeUp 1s forwards;
-                    animation-delay: 7s;
+                    left: vw(178);
+                    animation: fadeUp .5s forwards;
+                    animation-delay: 3.5s;
                 }
                 li:nth-child(3) {
                     width: vw(130.5);
                     top:vw(49.5);
                     left: vw(305.5);
-                    animation: fadeUp 1s forwards;
-                    animation-delay: 8s;
+                    animation: fadeUp .5s forwards;
+                    animation-delay: 4s;
                 }
                 li:nth-child(4) {
                     width: vw(115.5);
                     top:vw(28);
                     left: vw(451);
-                    animation: fadeUp 1s forwards;
-                    animation-delay: 9s;
+                    animation: fadeUp .5s forwards;
+                    animation-delay: 4.5s;
                 }
             }
             @keyframes fadeUp {
@@ -370,12 +370,12 @@
                     width: 1200px;
                 }
                 .txt {
-                    font-size: 40px;
+                    font-size: 36px;
                     line-height: 48px;
                     letter-spacing: -0.375;
                     top:10%;
-                    animation: fadeIn 4s forwards;
-                    animation-delay: 2s;
+                    animation: fadeIn 2s forwards;
+                    animation-delay: 1s;
                 }
                 @keyframes fadeIn {
                     0% {
@@ -410,32 +410,32 @@
                         }
                     }
                     li:nth-child(1) {
-                        width: 115px;
+                        width: 135.5px;
                         top:57px;
                         left: 30px;
-                        animation: fadeUp 1s forwards;
-                        animation-delay: 6s;
+                        animation: fadeUp .5s forwards;
+                        animation-delay: 3s;
                     }
                     li:nth-child(2) {
-                        width: 135.5px;
+                        width: 115.5px;
                         top:32.5px;
-                        left: 155px;
-                        animation: fadeUp 1s forwards;
-                        animation-delay: 7s;
+                        left: 178px;
+                        animation: fadeUp .5s forwards;
+                        animation-delay: 3.5s;
                     }
                     li:nth-child(3) {
                         width: 130.5px;
                         top:40.5px;
-                        left: 305.5px;
-                        animation: fadeUp 1s forwards;
-                        animation-delay: 8s;
+                        left: 307.5px;
+                        animation: fadeUp .5s forwards;
+                        animation-delay: 4s;
                     }
                     li:nth-child(4) {
                         width: 115.5px;
                         top:28px;
                         left: 451px;
-                        animation: fadeUp 1s forwards;
-                        animation-delay: 9s;
+                        animation: fadeUp .5s forwards;
+                        animation-delay: 4.5s;
                     }
                 }
                 @keyframes fadeUp {

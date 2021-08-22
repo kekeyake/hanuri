@@ -245,7 +245,7 @@ nav {
         font-size:vw(22);        
         letter-spacing: vw(-1);
         font-weight: 500;
-        color:#333;
+        color:#333;        
     }
     a {
         color:#333;
@@ -278,7 +278,7 @@ h1.h1 {
     background: #ededed;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 @include desktop {
     header.header {
@@ -428,6 +428,9 @@ h1.h1 {
         position: relative;
         margin-bottom: px(35);
         letter-spacing: 0;
+        &.mgb_none {
+            margin-bottom: 0;   
+        }
         &.sticky {
             margin-top: px(32.5);
         }

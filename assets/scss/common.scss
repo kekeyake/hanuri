@@ -35,6 +35,7 @@
 @import 'pages/class/task';
 @import 'pages/class/refer';
 @import 'pages/class/delay';
+@import 'pages/class/goal';
 
 @import 'pages/mypage/mypage';
 
@@ -55,9 +56,9 @@ body {
 	-ms-overflow-style: none; 
 	overflow-x: hidden;
 }
-::-webkit-scrollbar { 
-	display: none;
-}
+// ::-webkit-scrollbar { 
+// 	display: none;
+// }
 /* common */
 select.select {
 	// padding: 5px 20px 5px 10px;
@@ -96,7 +97,7 @@ a.link {
 		z-index: 100;
 		position: fixed;
 		right: vw(24);
-		bottom:vw(212);
+		bottom:vw(100);
 		width: vw(43);
 		height: vw(43);
 		background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / vw(24) vw(15);
@@ -638,10 +639,11 @@ form .btn_cert {
 		}
 		.profile_box {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			> img {
 				width: vw(35);
 				margin-right: vw(9);
+				margin-top: vw(5);
 			}
 			.user {
 				font-size: vw(22);
@@ -776,6 +778,7 @@ form .btn_cert {
 			> img {
 				width: vw(35);
 				margin-right: vw(9);
+				margin-top: 0;
 			}
 			.user {
 				font-size: vw(22);
@@ -958,7 +961,7 @@ form .btn_cert {
 		&.__top {
 			position: fixed;
 			right: px(15);
-			bottom:px(110);
+			bottom:px(35);
 			width: px(25.5);
 			height: px(25.5);
 			background:#fff url(../img/btn_top.svg) no-repeat 50% 50% / px(12) px(7.5);

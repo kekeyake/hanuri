@@ -459,7 +459,7 @@
                     line-height: vw(28);
                     word-break: keep-all;
                 }
-            }
+            }            
         }
     }
 
@@ -475,7 +475,7 @@
 @include desktop {
     .h_test {
         width: 1200px;
-        margin:0 auto 100px;
+        margin:0 auto 50px;
         .__wrap_top {
             margin-top: px(30);
             padding-bottom: px(7.5);

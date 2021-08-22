@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>한우리 독서지도사</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="한우리 독서지도사 · 한우리 평생교육원">
+    <meta property="og:description" content="30년 전통의 독서지도 전문기관 한우리, 독서지도사 6만 5천명, 논술지도사 2만명 양성">
+    <meta property="og:image" content="../assets/img/@meta_144.png">
+    <meta property="og:url" content="https://www.hanuricampus.com">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.min.css?123" />
+	<!--<script type="text/javascript" src="../html/js/jquery-1.9.1.min.js"></script>-->
+	<script defer src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script defer src="../assets/libs/swiper.min.js"></script>
+	<script defer src="../assets/js/ui.js"></script>
+<!--
+	<script language="javascript" type="text/javascript" src="../html/js/jquery.slides.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../html/js/jquery.textPlaceholder.js"></script>
+	<script language="javascript" type="text/javascript" src="../html/js/jquery.bpopup.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../html/js/hanui.js"></script>
+-->
+	<script language="javascript" type="text/javascript" src="../html/js/common.js"></script>
+	<script language="javascript" type="text/javascript" src="../html/js/validate.js"></script>
+<!--	<script language="javascript" type="text/javascript" src="../html/js/notrmouse.js"></script> -->
+
+    <style type="text/css">
+        .pc_p_title  {display:none;}
+        .m_p_title {display:none;}
+    
+        @media (min-width: 1200px) { 
+        .pc_p_title  {display:block;}
+        .m_p_title {display:none;}
+        }
+        @media (max-width: 1200px) { 
+        .pc_p_title  {display:none;}
+        .m_p_title {display:block;}
+        }
+    </style>
+    
+</head>
+
+<body>
+<div class="bg_dimmed"></div>
+
+<div id="wrap">
+    <!-- header -->
+    <header class="header">
+        <section class="inner __top">
+            <button id="btnMobile" class="m btn _menu"></button>
+            <a href="#a" class="pc">전체메뉴</a>
+            <h1 class="logo">
+                <a href="../main/index.jsp"><img src="../assets/img/logo_m.svg" alt="한우리 독서지도사"></a>
+            </h1>
+            <button type="button" onclick="location.href='../mypage/';" class="m btn _login"></button>
+            <div class="pc">
+				<!--@nif(login_block)-->
+                <a href="../member/join.jsp">회원가입</a>
+                <a href="../member/login.jsp">로그인</a>
+				<!--/nif(login_block)-->
+				<!--@if(login_block)-->
+                <a href="../member/join_info.jsp">정보수정</a>
+                <a href="../main/logout.jsp">로그아웃</a>
+				<!--/if(login_block)-->
+
+            </div>
+        </section>        
+    </header>
+    <!--// header -->
+    
+	<!--@nif(lnb_07_block)-->
+    <nav class="main_menu">
+        <section class="inner __nav">
+            <ul>
+                <li class="{{lnb_01}}"><a href="../leader/reason.jsp">독서지도사</a></li>
+                <li class="{{lnb_02}}"><a href="../course/intro.jsp">수강신청</a></li>
+                <li class="{{lnb_03}}"><a href="../test/test_info.jsp">자격시험</a></li>
+                <li class="{{lnb_04}}"><a href="../teacher/teacher.jsp">한우리교사</a></li>        
+            </ul>      
+        </section>
+	    <!--@nif(lnb_main_block)-->
+        <section class="<!--@nif(lnb_08_block)--><!--@nif(lnb_06_block)-->__sub_bg noscroll<!--/nif(lnb_06_block)--><!--/nif(lnb_08_block)-->">
+			<!--@if(lnb_01_block)-->
+            <div class="__snav on">
+                <a href="../leader/reason.jsp" class="{{lnb_sub_01}}">왜 독서지도사인가?</a>
+                <a href="../leader/confidence.jsp" class="{{lnb_sub_02}}">독서지도사는 한우리</a>
+                <a href="../leader/review_list.jsp?code=bookteacher" class="{{lnb_sub_03}}">활동후기</a>
+            </div>
+			<!--/if(lnb_01_block)-->
+			<!--@if(lnb_02_block)-->
+            <div class="__snav on">
+                <a href="../course/intro.jsp" class="{{lnb_sub_01}}">독서지도사과정</a>
+                <a href="../course/course_list.jsp" class="{{lnb_sub_02}}">전체과정</a>
+                <a href="../course/commission.jsp" class="{{lnb_sub_03}}">단체위탁과정</a>
+            </div>
+			<!--/if(lnb_02_block)-->
+			<!--@if(lnb_03_block)-->
+            <div class="__snav on">
+                <a href="../test/test_info.jsp" class="{{lnb_sub_01}}">시험안내</a>
+                <a href="../test/test_apply1.jsp" class="{{lnb_sub_02}}">시험접수</a>
+                <a href="../class/test.jsp" class="{{lnb_sub_03}}">응시결과</a>
+                <a href="../test/license.jsp" class="{{lnb_sub_04}}">자격증신청</a>
+                <a href="../test/supplement.jsp" class="{{lnb_sub_05}}">보수교육</a>
+            </div>
+			<!--/if(lnb_03_block)-->
+			<!--@if(lnb_04_block)-->
+            <div class="__snav on">
+                <a href="../teacher/teacher.jsp" class="{{lnb_sub_01}}">한우리교사안내</a>
+                <a href="../teacher/process.jsp" class="{{lnb_sub_02}}">입문과정</a>
+            </div>      
+			<!--/if(lnb_04_block)-->
+        </section>
+	    <!--/nif(lnb_main_block)-->
+    </nav>
+	<!--/nif(lnb_07_block)-->
+
+	<!--@if(lnb_07_block)-->
+    <nav class="main_menu">
+        <section class="inner __nav">
+            <ul>
+                <li class="{{lnb_mobile_81}}"><a href="../mypage/index.jsp">수강과정</a></li>
+                <li class="{{lnb_mobile_82}}"><a href="../mypage/pay.jsp">결제대기</a></li>
+                <li class="{{lnb_mobile_83}}"><a href="../mypage/test.jsp">시험이력</a></li>
+                <li class="{{lnb_mobile_84}}"><a href="../mypage/license.jsp">자격이력</a></li>
+                <li class="{{lnb_mobile_85}}"><a href="../mypage/qna.jsp">나의상담</a></li>        
+            </ul>      
+        </section>
+		<!--@if(lnb_mobile_sub_08_block)-->
+        <section class="__sub_bg noscroll">
+            <div class="__snav on">
+                <a href="../class/index.jsp?{{list_query}}" class="{{lnb_mobile_sub_811}}">학습목차</a>
+                <a href="../class/class_notice.jsp?{{list_query}}" class="{{lnb_mobile_sub_812}}">학습공지</a>
+                <!--@if(cuinfo.homework_block)--><a href="../class/task{{hbook_imgae_conv}}.jsp?{{list_query}}" class="{{lnb_mobile_sub_813}}">과제실</a><!--/if(cuinfo.homework_block)-->
+                <!--@nif(cuinfo.end_study_block)--><!--@if(cuinfo.survey_block)--><a href="../class/survey.jsp?{{list_query}}" class="{{lnb_mobile_sub_814}}">설문</a><!--/if(cuinfo.survey_block)--><!--/nif(cuinfo.end_study_block)-->
+                <a href="../class/info.jsp?{{list_query}}" class="{{lnb_mobile_sub_815}}">수강정보</a>
+            </div>
+        </section>
+		<!--/if(lnb_mobile_sub_08_block)-->
+		<!--@if(lnb_mobile_84_block)--> 
+        <section class="__sub_bg noscroll">
+            <div class="__snav on">
+                <a href="../mypage/license.jsp" class="{{lnb_mobile_sub_841}}">자격이력</a>
+                <a href="../mypage/card.jsp" class="{{lnb_mobile_sub_842}}">자격증 발급이력</a>
+            </div>
+        </section>
+		<!--/if(lnb_mobile_84_block)-->
+    </nav>
+	<!--/if(lnb_07_block)-->
+
+    <nav class="pc pc_menu">
+        <div class="depth1">
+            <ul>
+                <li class="{{lnb_01}}"><a href="../leader/reason.jsp">독서지도사</a></li>
+                <li class="{{lnb_02}}"><a href="../course/intro.jsp">수강신청</a></li>
+                <li class="{{lnb_03}}"><a href="../test/test_info.jsp">자격시험</a></li>
+                <li class="{{lnb_04}}"><a href="../teacher/teacher.jsp">한우리교사</a></li>
+                <li class="{{lnb_05}}"><a href="../hanuri/greeting.jsp">한우리캠퍼스</a></li>
+                <li class="{{lnb_06}}"><a href="../customer/support.jsp">고객센터</a></li>
+                <li class="{{lnb_07}}"><a href="../mypage/index.jsp">내 강의실</a></li>
+            </ul>
+        </div>
+        <div class="pc_sub_menu">
+            <div class="inner">
+                <ul class="sub_menu">
+                    <li><a href="../leader/reason.jsp" class="{{lnb_pc_sub_11}}">왜 독서지도사인가?</a></li>
+                    <li><a href="../leader/confidence.jsp" class="{{lnb_pc_sub_12}}">독서지도사는 한우리</a></li>
+                    <li><a href="../leader/review_list.jsp?code=bookteacher" class="{{lnb_pc_sub_13}}">활동후기</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../course/intro.jsp" class="{{lnb_pc_sub_21}}">독서지도사과정</a></li>
+                    <li><a href="../course/course_list.jsp" class="{{lnb_pc_sub_22}}">전체과정</a></li>
+                    <li><a href="../course/commission.jsp" class="{{lnb_pc_sub_23}}">단체위탁과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../test/test_info.jsp" class="{{lnb_pc_sub_31}}">시험안내</a></li>
+                    <li><a href="../test/test_apply1.jsp" class="{{lnb_pc_sub_32}}">시험접수</a></li>
+                    <li><a href="../class/test.jsp" class="{{lnb_pc_sub_33}}">응시결과</a></li>
+                    <li><a href="../test/license.jsp" class="{{lnb_pc_sub_34}}">자격증</a></li>
+                    <li><a href="../test/supplement.jsp" class="{{lnb_pc_sub_35}}">보수교육</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../teacher/teacher.jsp" class="{{lnb_pc_sub_41}}">한우리교사안내</a></li>
+                    <li><a href="../teacher/enter.jsp" class="{{lnb_pc_sub_42}}">입문과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../hanuri/greeting.jsp" class="{{lnb_pc_sub_51}}">인사말</a></li>
+                    <li><a href="../hanuri/purpose.jsp" class="{{lnb_pc_sub_52}}">설립목적</a></li>
+                    <li><a href="../hanuri/history.jsp" class="{{lnb_pc_sub_53}}">연혁</a></li>
+                    <li><a href="../hanuri/location.jsp" class="{{lnb_pc_sub_54}}">위치안내</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../customer/support.jsp" class="{{lnb_pc_sub_62}}">학습지원</a></li>
+                    <li><a href="../customer/guide.jsp?code=faq&s_category_id=" class="{{lnb_pc_sub_63}}">이용안내</a></li>
+                    <li><a href="../customer/notice.jsp" class="{{lnb_pc_sub_61}}">공지사항</a></li>
+                    <!--li><a href="../customer/policy.jsp" class="{{lnb_pc_sub_64}}">이용약관</a></li-->
+                    <!--li><a href="../customer/privacy.jsp" class="{{lnb_pc_sub_65}}">개인정보취급방침</a></li-->
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="../mypage/index.jsp" class="{{lnb_pc_sub_71}}">수강과정</a></li>
+                    <li><a href="../mypage/pay.jsp" class="{{lnb_pc_sub_72}}">결제대기</a></li>
+                    <li><a href="../mypage/test.jsp" class="{{lnb_pc_sub_73}}">시험이력</a></li>
+                    <li><a href="../mypage/license.jsp" class="{{lnb_pc_sub_74}}">자격이력</a></li>
+                    <li><a href="../mypage/qna.jsp" class="{{lnb_pc_sub_75}}">나의상담</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--@nif(lnb_main_block)-->
+		<!--@if(lnb_title_block)-->
+		<div class="m_p_title"> <h1 class="h1">{{p_title}}</h1></div>
+		<!--/if(lnb_title_block)-->
+		<div class="pc_p_title"><h1 class="h1">{{p_title}}</h1></div>        
+    <!--/nif(lnb_main_block)-->
+    <!-- <h1 class="h1 mgb_none">페이지 타이틀</h1> -->

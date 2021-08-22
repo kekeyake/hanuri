@@ -228,13 +228,14 @@
                 display: flex;
                 width: 100%;
                 padding:vw(30);
+                justify-content: center;
                 button, a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 24%;
                     height: vw(51);
-                    margin-right: 2%;
+                    margin:0 1%;
                     border: 0 solid #000;
                     border-radius: 5px;
                     color:#fff;
@@ -243,9 +244,6 @@
                     font-weight: 700;
                     &:disabled {
                         background-color: #ccc !important;
-                    }
-                    &:last-child {
-                        margin-right: 0;
                     }
                     &.btn_study,
                     &.btn_cancel {
@@ -493,7 +491,7 @@
                         justify-content: center;
                         width: 24%;
                         height: px(25.5);
-                        margin-right: 2%;
+                        margin:0 1%;
                         border: 0 solid #000;
                         border-radius: 5px;
                         color:#fff;
@@ -502,10 +500,7 @@
                         font-weight: 700;
                         &:disabled {
                             background-color: #ccc !important;
-                        }
-                        &:last-child {
-                            margin-right: 0;
-                        }
+                        }                        
                         &.btn_study,
                         &.btn_cancel {
                             background-color: #ee4500;

@@ -86,34 +86,38 @@
         padding-right: vw(27.5);
         background: url(../img/btn_more.svg) no-repeat 100% 50% / vw(19.5);
     }
-    .btn_contact {
-        display: block;
-        width: vw(540);
-        height: vw(60);
-        color:#fff;
-        font-weight: 700;
-        letter-spacing: vw(-1);
-        font-size: vw(25);
-        background: #ee4500;
-        margin:0 auto vw(12);
+    .btn_wrap {
+        .btn_contact {
+            display: block;
+            width: vw(540);
+            height: vw(60);
+            color:#fff;
+            font-weight: 700;
+            letter-spacing: vw(-1);
+            font-size: vw(25);
+            background: #ee4500;
+            margin:0 auto vw(12);
+        }
+        .btn_consultation {
+            display: block;
+            width: vw(540);
+            height: vw(60);
+            color:#fff;
+            font-weight: 700;
+            letter-spacing: vw(-1);
+            font-size: vw(25);
+            background: #999;
+            margin:0 auto vw(45);
+        }
     }
-    .btn_consultation {
-        display: block;
-        width: vw(540);
-        height: vw(60);
-        color:#fff;
-        font-weight: 700;
-        letter-spacing: vw(-1);
-        font-size: vw(25);
-        background: #999;
-        margin:0 auto vw(45);
-    }
+    
 }
 
 @include desktop {
     .guide {
         width: 1200px;
-        margin:0 auto;        
+        margin:0 auto; 
+        padding-bottom: 100px;       
         .nav_menu {
             overflow-x: auto;
             background: #f3f3f3;
@@ -201,27 +205,32 @@
             padding-right: px(13.75);
             background: url(../img/btn_more.svg) no-repeat 100% 50% / px(9.75);
         }
-        .btn_contact {
-            display: block;
-            width: px(270);
-            height: px(30);
-            color:#fff;
-            font-weight: 700;
-            letter-spacing: px(-0.5);
-            font-size: px(12.5);
-            background: #ee4500;
-            margin:0 auto px(6);
+        .btn_wrap {
+            display: flex;
+            justify-content: center;
+            .btn_contact {
+                display: block;
+                width: 297px;
+                height: px(25.5);
+                color:#fff;
+                font-weight: 700;
+                letter-spacing: px(-0.5);
+                font-size: px(11);
+                background: #ee4500;
+                margin:0 4px;
+            }
+            .btn_consultation {
+                display: block;
+                width: 297px;
+                height: px(25.5);
+                color:#fff;
+                font-weight: 700;
+                letter-spacing: px(-0.5);
+                font-size: px(11);
+                background: #999;
+                margin:0 4px;
+            }
         }
-        .btn_consultation {
-            display: block;
-            width: px(270);
-            height: px(30);
-            color:#fff;
-            font-weight: 700;
-            letter-spacing: px(-0.5);
-            font-size: px(12.75);
-            background: #999;
-            margin:0 auto px(22.75);
-        }
+        
     }
 }

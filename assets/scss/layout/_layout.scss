@@ -67,7 +67,7 @@
         }
         .txt_box {
             width: calc(100% - 38.333vw);
-            padding:vw(10) vw(0);
+            padding:vw(5) vw(0) vw(10); 
             color:#333;
             text-decoration: none;
             .event_t {
@@ -103,6 +103,7 @@
                 line-height: vw(30);
             }
             .t2 {
+                margin-top: vw(6);
                 font-size: vw(22);
                 letter-spacing: vw(-1.1);
                 line-height: vw(28);
@@ -539,7 +540,7 @@
 
 .apply_certification {
     width: vw(570);
-    height: vw(135.5);
+    
     margin:vw(33) auto;
     padding:vw(40) 0 vw(40) vw(170.5);        
     letter-spacing: vw(-1);
@@ -565,9 +566,10 @@
         display: block;
         position: absolute;
         left: vw(46.5);
-        top:vw(20);
+        top:50%;
         width: vw(95);
         height: vw(95);
+        transform: translateY(-50%);
         border-radius: 100%;
         background: #fff url(../img/ico_certification.svg) no-repeat 50% vw(17.5) / vw(61);
     }
@@ -764,7 +766,15 @@
         }
     }
 }
-
+.no_data_list {
+    padding:vw(10) 0 vw(20);
+    border-bottom: 1px solid #bcbcbc;
+    color:#333;
+    letter-spacing: vw(-1.25) !important;
+    text-align: center;
+    font-size: vw(22);
+    color:#333;
+}
 .elliipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -826,7 +836,7 @@
             border: px(0.5) solid #ddd;
             border-radius: px(4);
             box-shadow: 1.1px 1px 1.5px 0 rgba(0, 0, 0, 0.11);
-            background-color: #fff;
+            background-color: #fff;            
             a {
                 display: flex;
                 align-items:stretch;
@@ -1326,7 +1336,7 @@
     }
     .apply_certification {
         width: 100%;
-        height: px(67.75);
+        
         margin:px(16.5) auto;
         padding:px(20) 0 px(20) px(85.25);        
         letter-spacing: px(-0.5);
@@ -1352,9 +1362,10 @@
             display: block;
             position: absolute;
             left: px(23.25);
-            top:px(10);
+            top:50%;
             width: px(47.5);
             height: px(47.5);
+            transform: translateY(-50%);
             border-radius: 100%;
             background: #fff url(../img/ico_certification.svg) no-repeat 50% px(8.25) / px(30.5);
         }
@@ -1540,5 +1551,15 @@
                 }
             }
         }
+    }
+
+    .no_data_list {
+        padding:30px 0 60px;
+        border-bottom: 1px solid #bcbcbc;
+        color:#333;
+        letter-spacing: -1.25px;
+        text-align: center;
+        font-size: 22px;
+        color:#333;
     }
 }

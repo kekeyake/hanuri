@@ -1,0 +1,129 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="./supplement.jsp">교육 안내</a>
+            <a href="#a" class="on">교육 신청</a>
+            <a href="../mypage/license.jsp">이력조회</a>
+        </div>
+        <div class="apply_certification">
+            <p class="t1">보수교육 16시간 이수하고 유효기간 없는</p>
+            <a href="../test/license.jsp">평생자격증 신청하기</a>
+        </div>
+		<form name="form1" method="get">
+		<input type="hidden" name="s_time" id="s_time" />
+        <div class="__wrap_top">
+            <div class="search_box">
+                <input type="text" id="s_keyword" name="s_keyword" placeholder="검색">
+                <button type="submit" class="__search"></button>
+				<input type="hidden" name="s_ord" id="s_ord" />
+            </div>
+            <div class="btn_sort_list">
+                <button class="category n1" type="button" onclick="javascript:setTime('T1','C1');"><span>1~2시간</span></button>
+                <button class="category n2" type="button" onclick="javascript:setTime('T2','C2');"><span>3~4시간</span></button>
+                <button class="category n3" type="button" onclick="javascript:setTime('T3','C3');"><span>5~6시간</span></button>
+                <button class="category n4" type="button" onclick="javascript:setTime('T4','C4');"><span>패키지</span></button>
+                <button class="category n5" type="button" onclick="javascript:setTime('','C5');"><span>전체</span></button>
+            </div>
+        </div>
+		</form>    
+		{{form_script}}    
+
+        <ul class="board_list">
+			<!--@loop(list)-->
+            <li>
+                <a href="./supplement_view.jsp?id={{list.id}}&{{list_query}}">
+                    <div class="img_box">
+                        <img src="{{list.main_image_url}}" alt="">
+                        <span class="status">보수교육</span>
+						<!--@if(event_info_block)--><span>{{event_info}}</span><!--/if(event_info_block)-->
+						<!--@if(event_detail_block)--><span class="status">{{event_info_detail}}</span><!--/if(event_detail_block)-->
+                    </div>
+                    <div class="txt_box">
+						<!--@if(list.event_info_block)--><span class="event_t">{{list.event_info}}</span><!--/if(list.event_info_block)-->
+						<!--@if(list.event_detail_block)--><span class="event_t">{{list.event_info_detail}}</span><!--/if(list.event_detail_block)-->
+                        <p class="t1">{{list.name_conv}}</p>
+                        <p class="t3"><span>{{list.hash_tags}}</span><!--<span>#한우리선생님</span> <span>#자격증</span> <span>#첨삭</span> <span>#첨삭</span> <span>#첨삭</span>--></p>
+                        <p class="t2">{{list.lesson_time}}시간 이수 / {{list.total_price_conv}}원</p>
+                        <!--p class="t2">{{list.lesson_day}}일 학습</p-->
+                    </div>
+                </a>
+            </li>
+			<!--/loop(list)-->
+			
+<!--
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img02.png" alt="">
+                        <span class="status">NEW</span>
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">관점이 살아 있는 글쓰기</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">2시간 이수 / 30일 학습</p>
+                        <p class="t2">20,000원</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#a">
+                    <div class="img_box">
+                        <img src="../assets/img/course_img03.png" alt="">
+                    </div>
+                    <div class="txt_box">
+                        <p class="t1">생생한 활동 중심의 초등한국사 독서수업의 실제</p>
+                        <p class="t3"><span>#글쓰기</span> <span>#중등</span> <span>#한우리선생님</span> <span>#자격증</span> <span>#자격증</span> <span>#자격증</span></p>
+                        <p class="t2">3시간 이수 / 30일 학습</p>
+                        <p class="t2">20,000원</p>
+                    </div>
+                </a>
+            </li>
+-->
+        </ul>
+        <!--@nif(list)-->
+        <div class="no_data_list">보수교육 과정이 없습니다</div>
+        <!--/nif(list)-->
+        <div class="setting_ly __layer">
+            <p class="tit">교육과정 보기 설정</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            
+            <p class="stit">교육형태</p>
+            <div class="btn_box">
+                <button type="button" class="on">온라인</button>
+                <button type="button">ZOOM</button>
+                <button type="button">출석</button>
+                <button type="button">온라인+출석</button>
+            </div>
+
+            <p class="stit">교육형태</p>
+            <div class="btn_box">
+                <button type="button">자격과정</button>
+                <button type="button">수료과정</button>
+                <button type="button">패키지과정</button>
+                <button type="button">특강</button>
+            </div>
+
+            <p class="stit">수강시간</p>
+            <div class="btn_box">
+                <button type="button">1개월</button>
+                <button type="button">2개월</button>
+                <button type="button">3개월</button>
+                <button type="button">4개월</button>
+            </div>
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+    </div>
+</main>
+
+<script>
+	var f = document.forms['form1'];
+	function setTime(val, val2) {
+		f['s_time'].value = val;
+		f['s_ord'].value = val2;
+		f.submit();
+	}
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

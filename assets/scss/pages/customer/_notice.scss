@@ -90,20 +90,22 @@
             padding:vw(32) vw(30);
             background: #f9f9f9;
             border-bottom: vw(1) solid #a3a3a3;
+            i {
+                display: none;
+            }
             p {
-                width: vw(437);
-                margin-left: vw(14);
+                width: 100%;
                 font-size: vw(27);
                 font-weight: 500;
                 color:#333;
                 letter-spacing: vw(-1);
                 line-height: 1.3;
                 .date {
+                    display: block;
                     font-size: vw(20);
                     font-weight: 400;
                     color:#999;
                     letter-spacing: vw(-1);
-                    margin-left: vw(14);
                 }
             }
         }
@@ -222,8 +224,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: px(65);
-            height: px(22.5);
+            width: px(150);
+            height: px(25.5);
             background-color: #666;
             border-radius: px(1.5);
             color:#fff;
@@ -240,9 +242,9 @@
                 background: #f9f9f9;
                 border-bottom: px(0.5) solid #a3a3a3;
                 border-top: px(0.5) solid #a3a3a3;
+                
                 p {
-                    width: px(218.5);
-                    margin-left: px(7);
+                    width: 100%; 
                     font-size: px(13.5);
                     font-weight: 500;
                     color:#333;
@@ -253,7 +255,6 @@
                         font-weight: 400;
                         color:#999;
                         letter-spacing: px(-0.5);
-                        margin-left: px(7);
                     }
                 }
             }

@@ -178,6 +178,12 @@ $(function () {
         case "C4":
             $('.btn_sort_list .n4').addClass('on').siblings('button').removeClass('on');
             break;                    
+        case "C5":
+            $('.btn_sort_list .n5').addClass('on').siblings('button').removeClass('on');
+            break;                    
+        case "C6":
+            $('.btn_sort_list .n6').addClass('on').siblings('button').removeClass('on');
+            break;                    
         default:
             break;
     }
