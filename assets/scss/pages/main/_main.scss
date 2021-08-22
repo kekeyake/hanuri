@@ -367,12 +367,12 @@
         .__notice_list {
             display: flex;
             align-items: center;
-            padding:vw(12) vw(16);            
+            padding:vw(6) vw(16);            
             .tit {
                 font-size: vw(22);
                 font-weight: 700;
                 color:#fff;
-                padding:vw(7) vw(16);
+                padding:vw(3) vw(16) vw(4);
                 border-radius: 17.5px;
                 background-color: #2d2d2d;
                 margin-right: vw(12);
@@ -782,16 +782,16 @@
                     display: inline-block;
                     width: auto;
                     font-size: px(11);
-                    padding:7px 16px 6px;
+                    padding:4px 16px 3px;
                     border-radius: 17.5px;
                     margin-right: 0;
                 }
                 ul {
                     height: auto;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     padding-left:5px;
                     li {                    
-                        margin-bottom: 8px;                  
+                        margin-bottom: 4px;                  
                         height: auto;
                         &:last-child {
                             margin-bottom: 0;;

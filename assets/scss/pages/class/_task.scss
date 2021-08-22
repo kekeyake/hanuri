@@ -132,7 +132,9 @@
             .__top {
                 border-top: 1px solid #999;
                 display: flex;
+                flex-wrap: wrap;
                 padding:vw(25) vw(30);
+                align-items: flex-start;
                 img {
                     width: vw(120);
                     margin-right: vw(30);
@@ -158,6 +160,10 @@
                     &.no_btn {
                         width: vw(380);
                     }
+                }
+                .txt_box2 {
+                    margin-top: vw(10);
+                    width:100%;
                 }
                 .btn_pc_write {
                     display: flex;
@@ -398,12 +404,13 @@
                 .__top {
                     display: flex;
                     padding:px(12.5) px(15);
+                    flex-wrap: wrap;
                     img {
                         width: px(60);
                         margin-right: px(15);
                     }
                     .txt_box {
-                        width: px(126);
+                        width: calc( 100% - 325px );
                         .t1 {
                             font-size: px(12.5);
                             color:#333;
@@ -421,8 +428,12 @@
                             line-height: px(12.5);
                         }
                         &.no_btn {
-                            width: px(190);
+                            width: calc(100% - 200px);
                         }
+                    }
+                    .txt_box2 {
+                        margin-top: 10px;
+                        width:100%;
                     }
                     .btn_pc_write {
                         display: flex;

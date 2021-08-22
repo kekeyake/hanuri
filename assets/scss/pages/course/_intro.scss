@@ -65,7 +65,7 @@
                 width: vw(45);
                 height: vw(25);
                 background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0 / cover;
-                animation: motion-bounce .8s 1.8s infinite alternate both;
+                animation: motion-bounce  .5s infinite alternate both;
             }
             @keyframes motion-bounce{
                 0%{bottom:vw(20);}
@@ -357,7 +357,7 @@
                     width: 45px;
                     height: 25px;
                     background: url(../img/course/ico_arrow_moving.svg) no-repeat 0 0 / cover;
-                    animation: motion-bounce .8s 1.8s infinite alternate both;
+                    animation: motion-bounce .5s infinite alternate both;
                 }
                 @keyframes motion-bounce{
                     0%{bottom:20px}
@@ -426,7 +426,7 @@
             }
     
             .dont03 {
-                padding:30px 0;
+                padding:40px 0;
                 margin-bottom: 60px;
                 .inner {
                     width: 1200px;
@@ -434,15 +434,15 @@
                 }
                 ul {
                     display: flex;
-                    margin-bottom: 37.5px;
+                    margin-bottom: 20.5px;
                     justify-content: space-between;
                 }
                 li {
-                    width: 569px;
-                    margin-bottom: 17.5px;
+                    width: 590px;
+                    margin-bottom: 0;
                 }
                 .txt {
-                    width: 377.5px;
+                    width: 50%;
                 }
             }
     
@@ -479,7 +479,7 @@
                 margin:60px auto;
                 padding:35px 0;
                 .inner {
-                    width: 540px;            
+                    width: 800px;            
                     margin:0 auto;        
                 }
                 h2 {

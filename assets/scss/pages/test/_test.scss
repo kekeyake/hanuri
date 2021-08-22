@@ -194,10 +194,14 @@
         td {
             text-align: center;
         }
+        .now {
+            background-color: #f9f9f9;
+            font-weight: 500;         
+        }
         .c1 { width: 20%; }
-        .c2 { width: 38%; }
+        .c2 { width: 40%; }
         .c3 { width: 20%; }
-        .c4 { width: 22%; }
+        .c4 { width: 20%; }
         .c5 { width: 40%; }
     }
     .desc_list {
@@ -534,8 +538,8 @@
                 position: absolute;
                 left: px(26);
                 top:px(15);
-                width: px(42.5);
-                height: px(42.5);
+                width: px(45);
+                height: px(45);
                 background: url(../img/ico_next_test.svg) no-repeat 50%  / 99%;
             }
         }
@@ -589,7 +593,7 @@
                 &::before {
                     width: px(2.5);
                     height: px(2.5);
-                    top:px(5);
+                    top:px(7.5);
                 }                                
                 strong {
                     padding-right: px(7.5);
@@ -636,9 +640,9 @@
                 padding:px(7) 0 px(6.5);
             }
             .c1 { width: 20%; }
-            .c2 { width: 38%; }
+            .c2 { width: 40%; }
             .c3 { width: 20%; }
-            .c4 { width: 22%; }
+            .c4 { width: 20%; }
             .c5 { width: 40%; }
         }
         .desc_list {

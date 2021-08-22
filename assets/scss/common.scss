@@ -287,12 +287,14 @@ input.text {
 	}
 }
 .tbl_list2 {
+	font-family: 'Noto Sans KR'; 
 	thead th {
 		border-bottom: 1px solid #999;
 		font-weight: 700;
 	}
 	th,td {
 		border-bottom: 1px solid #bbb;
+		color:#666;
 	}
 	th {
 		padding:vw(16) 0 vw(15);
@@ -303,6 +305,9 @@ input.text {
 		text-align: center;
 		b {
 			font-weight: 700;
+		}
+		a {
+			color:#666;
 		}
 	}
 	.txt_l {

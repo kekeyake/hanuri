@@ -139,6 +139,25 @@
             letter-spacing: vw(-1);
             color:#666;
             border-bottom: vw(1) solid #c2c2c2;
+            img {
+                width: 100%;
+            }
+            p {
+                font-family: "Noto Sans KR" !important;
+                font-size: vw(22) !important;
+                span {
+                    font-family: "Noto Sans KR" !important;
+                    font-size: vw(22) !important;
+                }
+            }
+            div {
+                font-family: "Noto Sans KR" !important;
+                font-size: vw(22) !important;
+                span {
+                    font-family: "Noto Sans KR" !important;
+                    font-size: vw(22) !important;
+                }
+            }
         }
     }
 }
@@ -263,7 +282,7 @@
                 border-bottom: px(0.5) solid #c2c2c2;
                 padding:px(9) px(15);
                 p {
-                    width: px(218.5);
+                    width: 100%;
                     margin-left: px(7);
                 }
                 a {
@@ -280,7 +299,7 @@
             .t2 {
                 font-size: px(9);
                 letter-spacing: px(-0.5);
-            }
+            }     
             .text_box {
                 padding:px(18) px(14.5) px(24);
                 font-size: px(11);
@@ -288,7 +307,26 @@
                 letter-spacing: px(-0.5);
                 color:#666;
                 border-bottom: px(0.5) solid #c2c2c2;
-            }
+                img {
+                    width: auto;
+                }
+                p {
+                    font-family: "Noto Sans KR" !important;
+                    font-size: 22px !important;
+                    span {
+                        font-family: "Noto Sans KR" !important;
+                        font-size: 22px !important;
+                    }
+                }
+                div {
+                    font-family: "Noto Sans KR" !important;
+                    font-size: 22px !important;
+                    span {
+                        font-family: "Noto Sans KR" !important;
+                        font-size: 22px !important;
+                    }
+                }
+            }       
         }
     }
 }

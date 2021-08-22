@@ -105,7 +105,7 @@
                     line-height: 1.25;
                     color:#000;
                     letter-spacing: vw(-1.8);
-                    margin-top: vw(26);
+                    margin-top: vw(20);
                     b {
                         font-weight: 700;
                         color:#ee4500;
@@ -207,6 +207,7 @@
                             font-weight: 500;
                             line-height: 1.17;
                             margin-bottom: vw(0);
+                            padding-top: vw(5);
                             b {
                                 font-weight: 700;
                             }
@@ -458,7 +459,7 @@
                     + .stxt {
                         font-size: 24px;
                         letter-spacing: -1.8px;
-                        margin-top: 26px;
+                        margin-top: 20px;
                     }
                 }
                 .line {

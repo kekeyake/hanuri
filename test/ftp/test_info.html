@@ -1,0 +1,162 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="h_test">
+        <div class="tab_link_wrap">
+            <a href="../test/test_info.jsp" class="on">시험안내</a>
+            <a href="../test/test_range.jsp">시험과목</a>
+            <a href="../test/test_sample.jsp">견본문제&middot;답안지</a>
+        </div>
+        <div class="next_test">
+            <p class="t1">{{step}}회 자격시험 : <span><!--@if(request_block)--><a href="javascript:goApplication();"><!--/if(request_block)--><!--@nif(request_block)--><a href="javascript:void(0);" onclick="javascript:alert('{{request_str}}');"><!--/nif(request_block)-->{{next_examdate_conv}}</a></span></p>
+            <p class="t2">[원서접수기간] {{next_requestdate_conv}}</a>
+			</p>
+        </div>
+        
+        <h2>독서지도사 자격시험</h2>
+        <p class="txt1">독서지도사 자격시험은 만 18세 이상 누구나 응시할 수 있으며 어린이와 청소년을 대상으로 한 독서 교육 프로그램의 개발 및 활용 능력과 독서 교육에 대한 교육적 자문을 수행할 수 있는 역량에 대해 아래와 같은 기준으로 평가합니다.</p>
+        <ul class="list_type01">
+            <li>독서지도 교육 관련 제반 이론 및 지식</li>
+            <li>독서지도 관련 자료 활용 능력</li>
+            <li>논술지도를 위한 전문적 소양과 서평 능력</li>
+            <li>독서 전·중·후 활동에 필요한 지도법과 현장 적응 능력</li>
+            <li>독서지도 계획과 적용에 대한 실무 능력</li>
+        </ul>
+
+        <h2>시험 일정</h2>
+        <table class="tbl_type1">
+            <colgroup>
+                <col class="c1">
+                <col class="c2">
+                <col class="c3">
+                <col class="c4">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>회차</th>
+                    <th>시험접수</th>
+                    <th>시험일</th>
+                    <th>결과발표</th>
+                </tr>
+            </thead>
+            <tbody>
+				<!--@loop(examlist)-->
+                <tr>
+                    <th>{{examlist.step_conv}}</th>
+                    <td>{{examlist.request_sdate_conv}} ~ {{examlist.request_edate_conv}}</td>
+                    <td>{{examlist.exam_date_conv}}</td>
+                    <td>{{examlist.result_date_conv}}</td>
+                </tr>
+				<!--/loop(examlist)-->
+<!--
+                <tr>
+                    <th>141</th>
+                    <td>04.05 ~ 04.16</td>
+                    <td>05.15</td>
+                    <td>05.28</td>
+                </tr>
+                <tr>
+                    <th>142</th>
+                    <td>04.05 ~ 04.16</td>
+                    <td>05.15</td>
+                    <td>05.28</td>
+                </tr>
+                <tr>
+                    <th>143</th>
+                    <td>04.05 ~ 04.16</td>
+                    <td>05.15</td>
+                    <td>05.28</td>
+                </tr>
+-->
+            </tbody>
+        </table>
+
+        <h2>시험 유형</h2>
+        <table class="tbl_type1">
+            <colgroup>
+                <col class="c1">
+                <col class="c5"">
+                <col class="c5">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>유형</th>
+                    <th>필기</th>
+                    <th>실기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>방식</th>
+                    <td colspan="2">온라인 시험으로 같은 날 시행</td>
+                </tr>
+                <tr>
+                    <th>형태</th>
+                    <td>오지선다형 50문항</td>
+                    <td>실무형 2문항</td>
+                </tr>
+                <tr>
+                    <th>시간</th>
+                    <td>10:00 ~ 11:00 (60분)</td>
+                    <td>11:20~13:20 (120분)</td>
+                </tr>
+                <tr>
+                    <th>응시료</th>
+                    <td>30,000원</td>
+                    <td>40,000원</td>
+                </tr>
+                <tr>
+                    <th>평가</th>
+                    <td>자동채점</td>
+                    <td>수기채점</td>
+                </tr>
+                <tr>
+                    <th>합격기준</th>
+                    <td colspan="2">각 100점 만점에 60점 이상</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="desc_list">
+            <li class="point">처음 응시할 경우 동시 응시만 가능</li>
+            <li>필기 또는 실기 합격자는 발표일로부터 1년간 합격 시험 면제</li>
+            <li>합격 시험 면제 기한은 시험일 기준</li>
+        </ul>
+        
+        <h2>수료자 가산점 제도</h2>
+        <ul class="list_type01">
+            <li><b>대상</b> : 한우리 독서지도사 양성과정 수료자</li>
+            <li><b>적용기준</b> : 시험일이 수료일로부터 1년 이내일 경우</li>
+            <li><b>가산점</b> : 필기, 실기 각 5점</li>
+        </ul>
+
+        <h2>독서지도사 자격시험</h2>
+        <p class="txt1">(사)한우리독서문화운동본부는 자격기본법에 의거하여 자격 시험을 운영 · 관리합니다. 관련 법령은 국가법령정보센터 새창 링크로 제공합니다. </p>
+        <ul class="list_type01">
+            <li>
+                <strong><a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20210323&lsiSeq=230383#0000" target="_blank">자격기본법</a></strong>
+                <p>법률 제17954호 / 공포일 021.03.23 / 시행일 2021.03.23 / 타법개정</p>
+            </li>
+            <li>
+                <strong><a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20191024&lsiSeq=210853#0000" target="_blank">자격기본법 시행령</a></strong>
+                <p>대통령령 제30133호 / 공포일 2019.10.22 / 시행일 2019.10.24 / 일부개정</p>
+            </li>
+            <li>
+                <strong><a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20210316&lsiSeq=230301#0000" target="_blank">자격기본법 시행규칙</a></strong>
+                <p>교육부령 제233호 / 공포일 2021.03.16 / 시행일 2021.03.16 / 일부개정</p>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<script language="javascript">
+function goApplication() {
+	<!--@nif(login_block)-->
+	alert("로그인이 필요한 서비스입니다.");
+	<!--/nif(login_block)-->
+
+	alert("9월 시험은 온라인으로 진행됩니다.\n\n시험관련 개인 사전 테스트는\n8/25(수) 10시 ~ 8/29(일) 24시 입니다. ");
+	location.href = 'test_apply1.jsp?eid={{id}}&st=hpass';
+}
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

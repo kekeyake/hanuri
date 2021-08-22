@@ -1,0 +1,175 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+	<script src="/js/corr.js" type="text/javascript"></script>
+	<form name="form1" method="post" target="sysfrm" enctype="multipart/form-data">
+    <div class="class">
+		<!--@include(class/class_header.html)-->
+        <div class="__task">
+            <ul class="task_list">
+                <li>{{cuinfo.study_edate_conv}}까지 모든 과제를 제출해야 수료할 수 있습니다.</li>
+                <li class="m_f">과제는 PC에서만 작성이 가능합니다.</li>
+                <li>제출된 과제는 홈페이지와 블로그에 게시될 수 있습니다.</li>
+                <li>다른 학습자들의 감상문을 참고해 보세요. <a href="./refer.jsp?{{list_query}}">우수감상문</a> </li>
+            </ul>
+            <div class="book_view">
+                <div class="__top">
+                    <img src="{{book_img_url}}" alt="">
+                    <div class="txt_box">
+                        <p class="t1">{{book_name}}</p>
+                        <p class="t2">{{author}} 글, {{illustrator}} 그림</p>
+                        <p class="t2">{{publisher}} 펴냄</p>						
+                    </div>					
+					<!--@if(chumsak_block)-->
+						<!--@nif(team_yn)-->
+							<!--@if(period_block)--> 
+								<!--@if(chumsak_nosubmit_block)--><button type="button" class="pc btn_pc_write" onclick="addHomeworkUser();">과제작성</button><!--/if(chumsak_nosubmit_block)-->
+							<!--/if(period_block)-->
+						<!--/nif(team_yn)-->
+
+						<!--@if(period_block)-->
+							<!--@if(captain_block)-->
+							<!--@if(chumsak_nosubmit_block)-->
+								<!--@if(homework_user_block)--><button type="button" class="pc btn_pc_write" onclick="addHomeworkUser();">작성하기</button><!--/if(homework_user_block)-->
+								<button type="button" class="btn_pc_write" onclick="goSubmit();">제출하기</button>
+							<!--/if(chumsak_nosubmit_block)-->
+							<!--/if(captain_block)-->
+						<!--/if(period_block)-->
+
+						<!--@if(chumsak_submit_block)-->
+						<button type="button" class="btn_pc_write" onclick="addHomeworkUser();">내용보기</button>
+						<!--/if(chumsak_submit_block)-->
+					<!--/if(chumsak_block)-->
+					<div class="txt_box2">
+						{{outline}}
+					</div>
+                </div>
+                <table class="tbl_list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:75%;">
+                    </colgroup>
+                    <tbody>
+						<!--@if(team_yn)-->
+                        <tr>
+                            <th>도서명</th>
+                            <td>{{book_name}}</td>
+                        </tr>
+						<!--/if(team_yn)-->
+						<!--@if(chumsak_block)-->
+                        <tr>
+                            <th>첨삭기준</th>
+                            <td>{{submit_date_conv}}까지 제출 시 첨삭 제공</td>
+                        </tr>
+						<!--/if(chumsak_block)-->
+						<!--@if(quantity_block)-->
+                        <tr>
+                            <th>분량</th>
+                            <td>{{quantity}}</td>
+                        </tr>
+						<!--/if(quantity_block)-->
+						<!--@if(filename)-->
+                        <tr>
+                            <th>첨부파일</th>
+                            <td><a href="../main/download.jsp?file={{filename_conv}}&ek={{ek}}">{{filename}}</a><!--{{file_ext}}--></td>
+                        </tr>
+						<!--/if(filename)-->
+						<!--@if(chumsak_submit_block)-->
+                        <tr>
+                            <th>제출일</th>
+                            <td>{{user_submit_date_conv}}</td>
+                        </tr>
+						<!--/if(chumsak_submit_block)-->
+                    </tbody>
+                </table>
+                <div class="text_box">
+					<p>{{content}}</p>
+<!--
+                    <p>[초점] 아래의 4가지 초점이 모두 포함되도록 한 편의 서평식 독서
+                    감상문 을 작성하십시오.</p>
+                    <br>
+                    <p>1) 책의 형식과 내용을 살펴 기본적인 서평을 하십시오.</p>
+                    <p>2) 이 책을 읽히기에 적당한 학년을 정하고 그 이유를 제시하십시오.</p>
+                    <p>3) 앞에서 설정한 학년을 대상으로 지도할 때 적당하다고 생각하는 학습 목표를 세 가지 정도 제시하고 그 이유를 설명하십시오.</p>
+                    <p>4) 그 목표에 알맞은 독서지도 활동들을 제시하십시오.</p>
+-->
+                </div>
+            </div>
+            <button type="button" class="btn btn_list" onclick="location.href='task.jsp?{{list_query}}';">목록</button>
+        </div>
+    </div>
+	</form>
+	{{form_script}}
+	<script>
+	function addHomeworkUser() {
+		goWrite();
+	}
+	function goSubmit() {
+		var f = document.forms['form1'];
+		<!--@if(team_yn)-->
+		if(!validate(f)) return;
+		<!--/if(team_yn)-->
+		f.action = "task_team.jsp?{{query}}";
+		f.submit();
+	}
+	</script>
+</main>
+
+<form name="corrForm">
+<input type="hidden" name="group2" value="{{step_id}}" />							<!--과정코드-->
+<input type="hidden" name="group3" value="{{teamid}}" />							<!--그룹과제인 경우 그룹 아이디-->
+<input type="hidden" name="testCode" value="{{id_conv}}" />						<!--과제아이디-->
+<input type="hidden" name="userId" value="{{cuinfo.user_id}}" />							<!--회원아이디-->
+<input type="hidden" name="userNum" value="{{cuid}}" />							<!--수강생아이디-->
+<input type="hidden" name="userName" value="{{user_name}}" />						<!--회원명-->
+<input type="hidden" name="totalQuizCount" value="1" />					<!--문항수 기본 1-->
+<input type="hidden" name="totalScore" value="100" />					<!--배점 기본 100-->
+<input type="hidden" name="type" value="C" />
+<input type="hidden" name="startTime" value="" />						<!--시작시간 (미지정시 PC시간) yyyyMMddHHmmss-->
+<input type="hidden" name="reportTitle" value="{{name}}" />						<!--과제명?-->
+<input type="hidden" name="writeMode" value="{{csinfo.write_mode}}" />	<!--원고지모드 or 백지모드(1/0)(독지사과정이고 노동부과제가 아닌경우 1 아니면 0)-->
+<input type="hidden" name="endFlag" value="{{csinfo.end_flag}}" />			<!--첨삭완료여부(1/0) → tbl_quiz_info_duser_act 테이블의 endflag 값-->
+<input type="hidden" name="sendYn" value="{{csinfo.send_yn}}" />			<!--제출완료여부(1/0) → tbl_quiz_info_duser_act 테이블의 sendyn 값-->
+<input type="hidden" name="writeYn" value="{{csinfo.write_yn}}" />			<!--쓰기가능모드(Y/N) →  tbl_quiz_info_duser_act 테이블에 등록이 되어있으면 Y 아니면 N-->
+<input type="hidden" name="tempanswerPath" value="{{csinfo.tempanswer_path}}" />					<!--과제파일경로 → tbl_quiz_info_duser_act 테이블에 tempanswerpath 값-->
+<input type="hidden" name="insurancYn" value="{{cuinfo.insurance_yn}}" />			<!--노동부환급과정여부(Y/N)-->
+</form>
+
+<script>
+	function goWrite() {
+		<!--@if(csinfo.end_block)-->
+		<!--@if(team_yn)-->
+		OpenWindows("../main/chumsak_result.jsp?md=team&hid={{id}}&tid={{teamid}}", "_OPR_", 900, 800);
+		<!--/if(team_yn)-->
+
+		<!--@nif(team_yn)-->
+		OpenWindows("../main/chumsak_result.jsp?hid={{id}}&huid={{ru_id}}", "_OPR_", 900, 800);
+		<!--/nif(team_yn)-->
+
+		<!--/if(csinfo.end_block)-->
+		<!--@nif(csinfo.end_block)-->
+
+		av = navigator.appVersion;
+		var a = navigator.userAgent;
+		if(av.indexOf('NT 5.1') >= 0 && a.indexOf('MSIE') >= 0) {
+			alert("XP에서는 크롬으로만 작성하실 수 있습니다. 크롬 브라우저를 설치하시겠습니까? ");
+			window.open('https://www.google.com/intl/ko/chrome/browser/features.html','_blank');
+			return;
+		} else if(av.indexOf('NT 6.1') >= 0 && (av.indexOf('MSIE 7.0') >= 0 || av.indexOf('MSIE 8.0') >= 0 || av.indexOf('MSIE 9.0') >= 0) ) {
+			alert("과제 작성은 익스플로러11 이상 에서만 가능하오니 최신 버전으로 업데이트 하거나 크롬 브라우저 설치 후 작성 바랍니다. ");
+			//window.open('http://windows.microsoft.com/ko-kr/internet-explorer/download-ie','_blank');
+			window.open('https://www.google.com/intl/ko/chrome/browser/features.html','_blank');
+			return;
+		}
+
+		var f = document.forms['corrForm'];
+		OpenWindows("about:blank", "cwrite", 1000, 900);
+		f.method = "POST";
+		f.action = "/gocorr/";
+		f.target = "cwrite";
+		f.submit();
+		<!--/nif(csinfo.end_block)-->
+	}
+</script>
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

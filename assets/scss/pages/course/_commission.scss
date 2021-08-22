@@ -51,7 +51,7 @@
                 width: 50%;
                 text-align: center;
                 p {
-                    font-size: vw(20);
+                    font-size: vw(24);
                     letter-spacing: vw(-0.25);
                     margin-top: vw(25);
                     color:#333;
@@ -84,7 +84,7 @@
                     .t1 {
                         background: #234a9b;
                         color:#fff;
-                        font-size: vw(22);
+                        font-size: vw(26);
                         letter-spacing: vw(-1);
                         font-weight: 700;
                         display: flex;
@@ -181,7 +181,7 @@
                 align-items: center;
                 width: vw(110.5);
                 height: vw(80.5);
-                font-size: vw(20);
+                font-size: vw(22);
                 color:#000;
                 letter-spacing: vw(-1.5);
                 background: #cde2f6;
@@ -190,6 +190,7 @@
                 margin-bottom: vw(19.5);
                 text-align: center;
                 position: relative;
+                line-height: 1.2;
                 &::after {
                     content: '';
                     display: block;
@@ -220,7 +221,7 @@
                 .t1 {
                     background: #234a9b;
                     color:#fff;
-                    font-size: vw(22);
+                    font-size: vw(26);
                     letter-spacing: vw(-1);
                     font-weight: 700;
                     display: flex;
@@ -379,7 +380,7 @@
                     width: 50%;
                     text-align: center;
                     p {
-                        font-size: 20px;
+                        font-size: 24px;
                         letter-spacing: -0.25px;
                         margin-top: 25px;
                     }
@@ -411,7 +412,7 @@
                         border-top-right-radius: 10px;
                         background: #eee;
                         .t1 {
-                            font-size: 22px;
+                            font-size: 26px;
                             letter-spacing: -1px;
                             height: 50px;
                         }
@@ -493,7 +494,7 @@
                 li {
                     width: calc((100% - 125px) / 6);
                     height: 80px;
-                    font-size: 20px;
+                    font-size: 22px;
                     letter-spacing: -1.5px;
                     margin-right: 25px;
                     margin-bottom: 0;
@@ -523,7 +524,7 @@
                     border-top-right-radius: 10px;
                     background: #eee;
                     .t1 {
-                        font-size: 22px;
+                        font-size: 26px;
                         letter-spacing: -1px;
                         height: 50px;
                     }
@@ -561,7 +562,7 @@
                 }
             }
             .agree_box {
-                width: 100%;
+                width: 1140px;
                 margin:33px auto;
                 div {
                     &:first-child {
@@ -596,7 +597,7 @@
                 &::before {
                     width: px(2.5);
                     height: px(2.5);
-                    top:px(5);
+                    top:px(7.5);
                 }                                
                 strong {
                     padding-right: px(7.5);
