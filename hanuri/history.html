@@ -1,13 +1,131 @@
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">   
-    $(document).ready( function() {
-        $("#headers").load("../layout/header.html");  //헤더 인클루드
-        $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
-    });
-</script>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="tamtam">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.min.css?3" />
+</head>
+<body>
+<div class="bg_dimmed"></div>
 
-<div data-include-path="../layout/header.html" id="headers"></div>
 
+<div id="wrap">
+    <!-- header -->
+    <header class="header">
+        <section class="inner __top">
+            <button id="btnMobile" class="m btn _menu"></button>
+            <a href="#a" class="pc">전체메뉴</a>
+            <h1 class="logo">
+                <a href="#a"><img src="../assets/img/logo_m.svg" alt="한우리 독서지도사"></a>
+            </h1>
+            <button class="m btn _login"></button>
+            <div class="pc">
+                <a href="../member/join.jsp">회원가입</a>
+                <a href="../member/login.jsp">로그인</a>
+            </div>
+        </section>        
+    </header>
+    <!--// header -->
+    
+    <nav class="main_menu">
+        <section class="inner __nav">
+            <ul>
+                <li><a href="#a">독서지도사</a></li>
+                <li class="on"><a href="#a">수강신청</a></li>
+                <li><a href="#a">자격시험</a></li>
+                <li><a href="#a">한우리교사</a></li>        
+            </ul>      
+        </section>
+        <section class="__sub_bg noscroll">
+            <div class="__snav on">
+                <a href="#a">왜 독서지도사인가?</a>
+                <a href="#a" class="on">독서지도사는 한우리</a>
+                <a href="#a">활동후기</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">독서지도사과정</a>
+                <a href="#a">전체과정</a>
+                <a href="#a">단체위탁과정</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">시험안내</a>
+                <a href="#a">시험접수</a>
+                <a href="#a">응시결과</a>
+                <a href="#a">자격증신청</a>
+                <a href="#a">보수교육</a>
+            </div>
+            <div class="__snav">
+                <a href="#a">한우리교사안내</a>
+                <a href="#a">입문과정</a>
+            </div>      
+        </section>
+    </nav>
+    <nav class="pc pc_menu">
+        <div class="depth1">
+            <ul>
+                <li><a href="#a">독서지도사</a></li>
+                <li class="on"><a href="#a">수강신청</a></li>
+                <li><a href="#a">자격시험</a></li>
+                <li><a href="#a">한우리교사</a></li>
+                <li><a href="#a">한우리캠퍼스</a></li>
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">내 강의실</a></li>
+            </ul>
+        </div>
+        <div class="pc_sub_menu">
+            <div class="inner">
+                <ul class="sub_menu">
+                    <li><a href="#a">왜 독서지도사인가?</a></li>
+                    <li><a href="#a">독서지도사는 한우리</a></li>
+                    <li><a href="#a">활동후기</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">독서지도사과정</a></li>
+                    <li><a href="#a">전체과정</a></li>
+                    <li><a href="#a">단체위탁과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">시험안내</a></li>
+                    <li><a href="#a">시험접수</a></li>
+                    <li><a href="#a">응시결과</a></li>
+                    <li><a href="#a">자격증신청</a></li>
+                    <li><a href="#a">보수교육</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">한우리교사안내</a></li>
+                    <li><a href="#a">입문과정</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">인사말</a></li>
+                    <li><a href="#a">설립목적</a></li>
+                    <li><a href="#a">연혁</a></li>
+                    <li><a href="#a">위치안내</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">공지사항</a></li>
+                    <li><a href="#a">학습지원</a></li>
+                    <li><a href="#a">이용안내</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                </ul>
+                <ul class="sub_menu">
+                    <li><a href="#a">수강과정</a></li>
+                    <li><a href="#a">결제대기</a></li>
+                    <li><a href="#a">시험이력</a></li>
+                    <li><a href="#a">자격이력</a></li>
+                    <li><a href="#a">나의상담</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <main class="main">
     
         <div class="hanuri">
@@ -18,7 +136,7 @@
                     <p>독서교육 30년 외길을 걸어온<br>독서문화 창조 기업</p>
                 </div>
                 <!-- 2021 ~ 2011 -->
-                <div class="history_wrap">
+                <div class="history_wrap first">
                     <div class="__cont">
                         <div class="years">2021</div>
                         <ul class="month">
@@ -131,6 +249,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="img_tit">
                     <img src="../assets/img/hanuri/history_top_03.png" alt="" class="m">
                     <img src="../assets/img/hanuri/history_top_03_pc.png" alt="" class="pc">
@@ -165,24 +284,29 @@
                         <ul class="month">
                             <li>
                                 <b>11</b>
-                                <p>국민필독서 선정위원회 구성</p>
-                                <p class="t2">김형석(위원장), 김태길, 최창규, 박완서, 이청준, 김우창, 신동욱, 남미영, 박철원 등</p>                                
+                                <p>
+                                    국민필독서 선정위원회 구성
+                                    <span>김형석(위원장), 김태길, 최창규, 박완서, 이청준, 김우창, 신동욱, 남미영, 박철원 등</span>                                
+                                </p>
                             </li>
                             <li>
                                 <b>07</b>
-                                <p>한우리독서문화운동본부 발기총회</p>
-                                <p class="t2">발기인 : 김형석(연세대 명예교수), 김태길(서울대 명예교수), 최창규(서울대 교수), 박철원(한국사회교육 아카데미 이사장)</p>                                
+                                <p>
+                                    한우리독서문화운동본부 발기총회
+                                    <span>발기인 : 김형석(연세대 명예교수), 김태길(서울대 명예교수), 최창규(서울대 교수), 박철원(한국사회교육 아카데미 이사장)</span>
+                                </p>
                             </li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="img_tit">
                     <p>국내 최초 독서·토론·논술분야<br>전문 교육기관 설립</p>
                     <img src="../assets/img/hanuri/history_top_04.png" alt="" class="m">
                     <img src="../assets/img/hanuri/history_top_04_pc.png" alt="" class="pc">
                 </div>
                 <h2>사진으로 보는 한우리 역사</h2>
-                <div class="img_slide_wrap">
+                <div class="img_slide_wrap" id="imgSlideWrap">
                     <ul>
                         <li>
                             <img src="../assets/img/hanuri/history_01.png" alt="">
@@ -211,12 +335,116 @@
                     </ul>
                 </div>
 
-                <div class="gallery_wrap">
-                    <img src="" alt="" class="gallery_img" id="galleryPic">
-
+                <div class="gallery_wrap" id="galleryWrap">
+                    <div class="inner">
+                        <img src="../assets/img/hanuri/history_01.png" alt="" class="gallery_img" id="galleryPic">
+                        <p id="galleryTxt">137기 독서지도사 출석반</p>
+                        <button class="btn __closed" id="btnClosedGallery"></button>
+                        <button class="btn __prev"></button>
+                        <button class="btn __next"></button>
+                    </div>
                 </div>
             </div>
         </div>
 </main>
 
-<div data-include-path="../layout/footer.html" id="footers"></div>
+<button class="btn __top"></button>
+
+<!-- mobile nav -->
+<aside class="side_nav">
+<div class="side_header">
+    <p class="tit">안녕하세요. 한우리입니다.</p>
+    <ul class="quick_menu_list"><!-- login 전 -->
+        <li><a href="#a"><span>로그인</span></a></li>
+        <li><a href="#a"><span>회원가입</span></a></li>
+        <li><a href="#a"><span>로그인정보</span></a></li>
+        <li><a href="#a"><span>이용안내</span></a></li>
+    </ul>
+    <ul class="quick_menu_list __after"><!-- login 후 -->
+        <li><a href="#a">로그아웃</a></li>
+        <li><a href="#a">정보수정</a></li>
+        <li><a href="#a">결제대기</a></li>
+        <li><a href="#a">내 강의실</a></li>
+    </ul>
+    <nav>
+        <ul class="snb_list">
+            <li>
+                <strong>독서지도사</strong>
+                <div>
+                    <a href="#a">왜 독서지도사인가?</a>
+                    <a href="#a">독서지도사는 한우리</a>
+                    <a href="#a">활동후기</a>
+                </div>
+            </li>
+            <li>
+                <strong>수강신청</strong>
+                <div>
+                    <a href="#a">독서지도사과정</a>
+                    <a href="#a">전체과정</a>
+                    <a href="#a">단체위탁과정</a>
+                </div>
+            </li>
+            <li>
+                <strong>자격시험</strong>
+                <div>
+                    <a href="#a">시험안내</a>
+                    <a href="#a">시험접수</a>
+                    <a href="#a">응시결과</a>
+                    <a href="#a">자격증신청</a>
+                    <a href="#a">보수교육</a>
+                </div>
+            </li>
+            <li>
+                <strong>한우리교사</strong>
+                <div>
+                    <a href="#a">한우리교사안내</a>
+                    <a href="#a">입문과정</a>
+                </div>
+            </li>
+            <li>
+                <strong>고객센터</strong>
+                <div>
+                    <a href="../customer/notice.jsp">공지사항</a>
+                    <a href="../customer/support.jsp">학습지원</a>
+                    <a href="../customer/guide.jsp">이용안내</a>
+                    <a href="../customer/policy.jsp">이용약관</a>
+                </div>
+            </li>
+            <li>
+                <strong>한우리캠퍼스</strong>
+                <div>
+                    <a href="#a">인사말</a>
+                    <a href="#a">설립목적</a>
+                    <a href="#a">연혁</a>
+                    <a href="#a">위치안내</a>
+                </div>
+            </li>
+            <li>
+                <strong>내 강의실</strong>
+                <div>
+                    <a href="#a">수강과정</a>
+                    <a href="#a">결제대기</a>
+                    <a href="#a">시험이력</a>
+                    <a href="#a">자격이력</a>
+                    <a href="#a">나의상담</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <buton id="btnClosed" class="btn __closed"></buton>
+</div>
+</aside>
+
+<aside class="consulting">
+<button><img src="../assets/img/ico_phone.svg" alt=""> 전화 상담</button>
+<button><img src="../assets/img/ico_kakao_ch.svg" alt=""> 카톡 상담</button>
+</aside>
+<!--// mobile nav -->
+<script defer src="../assets/js/jquery-3.4.1.min.js"></script>
+<!-- <script src="https://www.hanuricampus.com/new/html/js/jquery-1.9.1.min.js"></script> -->
+<script defer src="../assets/libs/swiper.min.js"></script>
+<!-- <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script defer src="../assets/js/ui.js"></script>
+</body>
+</html>
+

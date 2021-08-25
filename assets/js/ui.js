@@ -402,7 +402,29 @@ $(function () {
                 clickable: true,
             },            
         });
-    }    
+    }
+    if( $(window).width() > 1200 ) {
+        if( $('#imgSlideWrap').length ) {
+            var $li = $('#imgSlideWrap').find('li').length;
+            var $width = Number(334 * $li);
+    
+            $('#imgSlideWrap ul').width($width);
+        }
+    }
+    if( $('#imgSlideWrap').length ) {
+        $('#imgSlideWrap li').on('click',function(){
+            var $img = $(this).find('img').attr('src');
+            var $txt = $(this).find('p').text();
+            
+            $('#galleryWrap').addClass('on');
+            $('#galleryPic').attr('src',$img);
+            $('#galleryTxt').text($txt);
+        });
+        $('#btnClosedGallery').on('click',function(){
+            $('#galleryWrap').removeClass('on');
+        });
+    }
+    
 });
 var ww = $(window).width();
 var mainSwiper5 = undefined;
