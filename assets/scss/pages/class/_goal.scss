@@ -1,15 +1,15 @@
 
     .__goal {
         .__top_event {
-            height: vw(374);
-            background:#f8e6e7 url(../img/class/goal_top.png) no-repeat 50% 50% / 150%;
+            height: vw(270);
+            background:#f6e2e3 url(../img/class/goal_top.png) no-repeat 50% 50% / 150%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-top: vw(120);
+            padding-top: vw(40);
             .t1 {
-                font-size: vw(54);
+                font-size: vw(42);
                 color:#048b80;
                 letter-spacing: vw(-4);
                 font-weight: 500;
@@ -17,14 +17,14 @@
                 margin-bottom: vw(5);
             }
             .t2 {
-                font-size: vw(54);
+                font-size: vw(42);
                 color:#33438c;
                 letter-spacing: vw(-4);
                 font-weight: 700;
                 line-height: 1;
             }
             .t3 {
-                margin-top: vw(23);
+                margin-top: vw(15);
                 font-size: vw(22);
                 letter-spacing: vw(-1.65);
                 color:#333;
@@ -95,15 +95,15 @@
                     &:nth-child(3) {
                         background: url(../img/class/step03.png) no-repeat 0 50% / vw(91);
                         img {
-                            width: vw(53);
-                            margin-left:vw(29);
+                            width: vw(38);
+                            margin-left:vw(38);
                         }
                     }
                     &:nth-child(4) {
                         background: url(../img/class/step04.png) no-repeat 0 50% / vw(91);
                         img {
-                            width: vw(53);
-                            margin-left:vw(29);
+                            width: vw(71.5);
+                            margin-left:vw(20);
                         }
                     }
                     .product_box {
@@ -201,13 +201,13 @@
     .__goal {
         .__top_event {
             width: 100%;
-            height: 572px;
+            height: 360px;
             background:#f6e2e3 url(../img/class/goal_top.png) no-repeat 50% 50% / 1200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-top: 120px;
+            padding-top: 50px;
             .t1 {
                 font-size: 54px;
                 color:#048b80;
@@ -298,15 +298,15 @@
                     &:nth-child(3) { 
                         background: url(../img/class/step03.png) no-repeat 0 50% / 91px;
                         img {
-                            width: 53px;
-                            margin-left:29px;
+                            width: 38px;
+                            margin-left:38px;
                         }
                     }
                     &:nth-child(4) {
                         background: url(../img/class/step04.png) no-repeat 0 50% / 91px;
                         img {
-                            width: 53px;
-                            margin-left:29px;
+                            width: 71.5px;
+                            margin-left:20px;
                         }
                     }
                     .product_box {

@@ -402,7 +402,7 @@ $(function () {
                 clickable: true,
             },            
         });
-    }
+    }    
 });
 var ww = $(window).width();
 var mainSwiper5 = undefined;

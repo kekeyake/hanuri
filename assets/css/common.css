@@ -2973,7 +2973,7 @@ footer.footer .t1:last-child {
     word-break: keep-all;
   }
   .board_list li .txt_box .price {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: -0.8px;
     line-height: 22px;
     word-break: keep-all;
@@ -7643,16 +7643,53 @@ footer.footer .t1:last-child {
 }
 
 .class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  top: 0.04167vw;
-  left: 1%;
-  background-color: #999;
+  top: 0;
+  left: 0;
 }
 
-.class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar.my {
+.class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar.my::after {
   background-color: #ee4500;
+  -webkit-animation: loadingGauge 2s forwards;
+          animation: loadingGauge 2s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar::after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color: #999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: loadingGauge 2s forwards;
+          animation: loadingGauge 2s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes loadingGauge {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loadingGauge {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .class .class_list .__top .status_info .graph_wrap .graph_box em {
@@ -8063,12 +8100,45 @@ footer.footer .t1:last-child {
     display: block;
     width: 100%;
     height: 100%;
-    top: 0.25px;
-    left: 1%;
-    background-color: #999;
+    top: 0;
+    left: 0;
   }
-  .class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar.my {
+  .class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar.my::after {
     background-color: #ee4500;
+    -webkit-animation: loadingGauge 2s forwards;
+            animation: loadingGauge 2s forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .class .class_list .__top .status_info .graph_wrap .graph_box .bar_wrap .gauge_bar::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: loadingGauge 2s forwards;
+            animation: loadingGauge 2s forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  @-webkit-keyframes loadingGauge {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes loadingGauge {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
   }
   .class .class_list .__top .status_info .graph_wrap .graph_box em {
     margin-left: 10px;
@@ -10874,8 +10944,8 @@ footer.footer .t1:last-child {
 }
 
 .__goal .__top_event {
-  height: 62.33333vw;
-  background: #f8e6e7 url(../img/class/goal_top.png) no-repeat 50% 50%/150%;
+  height: 45vw;
+  background: #f6e2e3 url(../img/class/goal_top.png) no-repeat 50% 50%/150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10889,11 +10959,11 @@ footer.footer .t1:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20vw;
+  padding-top: 6.66667vw;
 }
 
 .__goal .__top_event .t1 {
-  font-size: 9vw;
+  font-size: 7vw;
   color: #048b80;
   letter-spacing: -0.66667vw;
   font-weight: 500;
@@ -10902,7 +10972,7 @@ footer.footer .t1:last-child {
 }
 
 .__goal .__top_event .t2 {
-  font-size: 9vw;
+  font-size: 7vw;
   color: #33438c;
   letter-spacing: -0.66667vw;
   font-weight: 700;
@@ -10910,7 +10980,7 @@ footer.footer .t1:last-child {
 }
 
 .__goal .__top_event .t3 {
-  margin-top: 3.83333vw;
+  margin-top: 2.5vw;
   font-size: 3.66667vw;
   letter-spacing: -0.275vw;
   color: #333;
@@ -11004,8 +11074,8 @@ footer.footer .t1:last-child {
 }
 
 .__goal .step_list ol li:nth-child(3) img {
-  width: 8.83333vw;
-  margin-left: 4.83333vw;
+  width: 6.33333vw;
+  margin-left: 6.33333vw;
 }
 
 .__goal .step_list ol li:nth-child(4) {
@@ -11013,8 +11083,8 @@ footer.footer .t1:last-child {
 }
 
 .__goal .step_list ol li:nth-child(4) img {
-  width: 8.83333vw;
-  margin-left: 4.83333vw;
+  width: 11.91667vw;
+  margin-left: 3.33333vw;
 }
 
 .__goal .step_list ol li .product_box {
@@ -11129,7 +11199,7 @@ footer.footer .t1:last-child {
 @media (min-width: 1200px) {
   .__goal .__top_event {
     width: 100%;
-    height: 572px;
+    height: 360px;
     background: #f6e2e3 url(../img/class/goal_top.png) no-repeat 50% 50%/1200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11144,7 +11214,7 @@ footer.footer .t1:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 120px;
+    padding-top: 50px;
   }
   .__goal .__top_event .t1 {
     font-size: 54px;
@@ -11243,15 +11313,15 @@ footer.footer .t1:last-child {
     background: url(../img/class/step03.png) no-repeat 0 50%/91px;
   }
   .__goal .step_list ol li:nth-child(3) img {
-    width: 53px;
-    margin-left: 29px;
+    width: 38px;
+    margin-left: 38px;
   }
   .__goal .step_list ol li:nth-child(4) {
     background: url(../img/class/step04.png) no-repeat 0 50%/91px;
   }
   .__goal .step_list ol li:nth-child(4) img {
-    width: 53px;
-    margin-left: 29px;
+    width: 71.5px;
+    margin-left: 20px;
   }
   .__goal .step_list ol li .product_box {
     width: 229.5px;
