@@ -1,12 +1,115 @@
 .hanuri {
     .__history {
+        padding-bottom: vw(50);
+        .img_tit {
+            position: relative;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+            p {
+                position: absolute;
+                top:50%;
+                left:0;
+                transform: translateY(-50%);
+                width: 100%;
+                text-align: center;
+                font-family: "NanumSquare";
+                font-size: vw(30);
+                letter-spacing: vw(-1.5);
+                line-height: 1.33;
+                color:#fff;
+            }
+        }
+        .history_wrap {
+            padding:vw(40) vw(40) 0;
+            font-family: "NanumSquare";
+            .__cont {
+                display: flex;
+                .years {
+                    font-size: vw(40);
+                    margin-right: vw(50);
+                    color:#eb6100;                    
+                    letter-spacing: vw(-1.5);
+                    font-weight: 700;
+                }
+                li {
+                    display: flex;
+                    margin-bottom: (15);
+                    b {
+                        font-size: vw(29);
+                        color:#999;
+                        letter-spacing: vw(-1.45);
+                        white-space: nowrap;
+                        font-weight: 400;
+                    }
+                    p {
+                        font-size: vw(24);
+                        letter-spacing: vw(-1.2);
+                        color:#333;
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
 
+        h2 {
+            margin:vw(70) 0 0 vw(30);
+            font-size: vw(25);
+            letter-spacing: vw(-1.25);
+            color:#333;
+            font-weight: 700;;
+        }
+        .img_slide_wrap {
+            background-color: #eee;;
+            padding:vw(30) vw(20);
+            overflow-x: auto;
+            margin-top: vw(15);
+            ul {
+                display: flex;
+                width: max-content;
+                padding-right: vw(20);
+                li {
+                    width: vw(200);
+                    
+                    text-align: center;
+                    margin-right: vw(15);                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    img {
+                        width:100%;
+                        height: vw(117);
+                        object-fit: cover;
+                    }
+                    p {
+                        margin-top: vw(10);
+                        font-size: vw(17);
+                        letter-spacing: vw(-1.3);
+                        color:#333;
+                    }
+                }
+            }
+        }
+        .gallery_wrap {
+            display: none;
+            &.on {
+                display: block;
+            }
+        }
     }
 }
 @include desktop {
     .hanuri {
         .__history {
-
+            width: 1200px;
+            margin:0 auto;
+            .img_tit {
+                p {
+                    font-size: 30px;
+                    letter-spacing: -1.5px;
+                }
+            }
         }
     }
 }
