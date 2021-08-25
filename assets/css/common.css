@@ -17690,6 +17690,103 @@ footer.footer .t1:last-child {
   }
 }
 
+.hanuri .__location {
+  padding: 5vw;
+}
+
+.hanuri .__location h2 {
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.20833vw;
+}
+
+.hanuri .__location .map_box {
+  margin-top: 3.33333vw;
+  height: 300px;
+  position: relative;
+}
+
+.hanuri .__location .list_type02 {
+  margin-top: 5vw;
+  margin-bottom: 11.66667vw;
+}
+
+.hanuri .__location .list_type02 li {
+  font-size: 3.66667vw;
+  color: #333;
+  letter-spacing: -0.16667vw;
+  padding-left: 2vw;
+  position: relative;
+  margin-bottom: 1.66667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hanuri .__location .list_type02 li:last-child {
+  margin-bottom: 0;
+}
+
+.hanuri .__location .list_type02 li::before {
+  content: '';
+  display: block;
+  width: 0.83333vw;
+  height: 0.83333vw;
+  background-color: #333;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.66667vw;
+}
+
+.hanuri .__location .list_type02 li b {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hanuri .__location .list_type02 li span {
+  margin-left: 0.83333vw;
+}
+
+@media (min-width: 1200px) {
+  .hanuri .__location {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 100px;
+  }
+  .hanuri .__location h2 {
+    font-size: 25px;
+    letter-spacing: -1.25px;
+  }
+  .hanuri .__location .map_box {
+    margin-top: 20px;
+    height: 667px;
+    position: relative;
+  }
+  .hanuri .__location .list_type02 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding-left: 25px;
+  }
+  .hanuri .__location .list_type02 li {
+    font-size: 22px;
+    letter-spacing: -1px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+  .hanuri .__location .list_type02 li::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    top: 10px;
+  }
+  .hanuri .__location .list_type02 li span {
+    margin-left: 5px;
+  }
+}
+
 body {
   font-size: 3.66667vw;
   -ms-overflow-style: none;

@@ -12,7 +12,93 @@
     
         <div class="hanuri">
             <div class="__location">
-                
+                <h2>서울 본부</h2>
+                <div class="map_box">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1629872599553" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        var $wWidth = window.innerWidth;
+                        var deviceHeight = 0;
+                        if($wWidth > 1200) {
+                            deviceHeight = 667;
+                        } else {
+                            deviceHeight = 300;
+                        }
+
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1629872599553",
+                            "key" : "274ve",
+                            // "mapWidth" : "640",
+                            "mapHeight" : deviceHeight
+                        }).render();
+
+                    </script>
+                </div>
+                <ul class="list_type02">
+                    <li>
+                        <b>주소 :</b><span>서울시 영등포구 당산로27길 16 한우리빌딩 2층</span>
+                    </li>
+                    <li>
+                        <b>전화번호 :</b><span>02-6276-2626</span>
+                    </li>
+                    <li>
+                        <b>대중교통 :</b><span>2·5호선 영등포구청역 1·7번 출구</span>
+                    </li>
+                    <li>
+                        <b>주차 :</b><span>주차장이 협소하여 당산공원 공영주차장 이용</span>
+                    </li>
+                </ul>
+                <h2>부산 교육원</h2>
+                <div class="map_box">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1629873006981" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        var $wWidth = window.innerWidth;
+                        var deviceHeight = 0;
+                        if($wWidth > 1200) {
+                            deviceHeight = 667;
+                        } else {
+                            deviceHeight = 300;
+                        }
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1629873006981",
+                            "key" : "274vo",
+                            // "mapWidth" : "640",
+                            "mapHeight" : deviceHeight
+                        }).render();
+                    </script>
+                </div>
+                <ul class="list_type02">
+                    <li>
+                        <b>주소 :</b><span>부산광역시 부산진구 중앙대로 857 광장빌딩 2층 (범전동 378)</span>
+                    </li>
+                    <li>
+                        <b>전화번호 :</b><span>051-463-6296</span>
+                    </li>
+                    <li>
+                        <b>대중교통 :</b><span>부전역 7번 출구 500M 전방, 도보 10분 소요</span>
+                    </li>
+                    <li>
+                        <b>주차 :</b><span>송상현광장 하차</span>
+                    </li>
+                </ul>
             </div>
         </div>
 </main>

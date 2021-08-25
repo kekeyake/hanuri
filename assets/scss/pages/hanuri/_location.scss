@@ -1,13 +1,90 @@
 .hanuri {
     .__location {
+        padding:vw(30);
+        h2 {
+            font-size: vw(25);
+            font-weight: 700;
+            color:#333;
+            letter-spacing: vw(-1.25);
+        }
+        .map_box {
+            margin-top: vw(20);
+            height: 300px;
+            position: relative;
+            
+        }
+        .list_type02 {
+            margin-top: vw(30);
+            margin-bottom: vw(70);
+            li {
+                font-size: vw(22);
+                color:#333;
+                letter-spacing: vw(-1);
+                padding-left: vw(12);
+                position: relative;
+                margin-bottom: vw(10);
+                display: flex;
 
-
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: vw(5);
+                    height: vw(5);
+                    background-color:#333;
+                    border-radius: 100%;
+                    position: absolute;left: 0;
+                    top:vw(10);
+                }
+                b {
+                    font-weight: 700;
+                    white-space: nowrap;
+                } 
+                span {
+                    margin-left: vw(5);
+                }
+            }
+        }
     }
 }
 @include desktop {
     .hanuri {
         .__location {
-
+            width: 1200px;
+            margin:0 auto;
+            padding:30px 0 100px;
+            h2 {
+                font-size: 25px;
+                letter-spacing: -1.25px;
+            }
+            .map_box {
+                margin-top: 20px;
+                height: 667px;
+                position: relative;                
+            }
+            .list_type02 {
+                margin-top: 30px;
+                margin-bottom: 70px;
+                padding-left: 25px;
+                li {
+                    font-size: 22px;
+                    letter-spacing: -1px;
+                    padding-left: 12px;
+                    margin-bottom: 10px;
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        top:10px;
+                    }
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+            }
         }
     }
 }
