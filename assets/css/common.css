@@ -17319,32 +17319,30 @@ footer.footer .t1:last-child {
 }
 
 .hanuri .__greeting {
-  padding: 3.33333vw 4.16667vw;
+  padding: 9.16667vw 2.5vw;
 }
 
 .hanuri .__greeting h1 {
+  width: 100%;
   font-size: 6.66667vw;
   letter-spacing: -0.5vw;
   color: #000;
   text-align: center;
   font-family: "NanumSquare";
+  margin-bottom: 8vw;
 }
 
 .hanuri .__greeting h1 b {
   font-weight: 700;
 }
 
-.hanuri .__greeting .text_box {
-  margin-top: 8vw;
-}
-
-.hanuri .__greeting .text_box img {
+.hanuri .__greeting img {
   width: 37.5vw;
   float: left;
   margin-right: 3.75vw;
 }
 
-.hanuri .__greeting .text_box p {
+.hanuri .__greeting p {
   font-size: 3.66667vw;
   line-height: 1.6;
   letter-spacing: -0.275vw;
@@ -17352,22 +17350,23 @@ footer.footer .t1:last-child {
   margin-bottom: 5vw;
 }
 
-.hanuri .__greeting .text_box p:last-child {
+.hanuri .__greeting p:last-child {
   margin-bottom: 0;
 }
 
-.hanuri .__greeting .text_box p.t1 {
+.hanuri .__greeting p.t1 {
+  margin-top: 8.33333vw;
   font-size: 4vw;
   text-align: right;
   line-height: 1;
   letter-spacing: -0.3vw;
 }
 
-.hanuri .__greeting .text_box p.t1 b {
+.hanuri .__greeting p.t1 b {
   font-weight: 500;
 }
 
-.hanuri .__greeting .text_box::after {
+.hanuri .__greeting::after {
   display: block;
   content: '';
   clear: both;
@@ -17375,28 +17374,30 @@ footer.footer .t1:last-child {
 
 @media (min-width: 1200px) {
   .hanuri .__greeting {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 50px 0;
   }
   .hanuri .__greeting h1 {
     font-size: 40px;
     letter-spacing: -3px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: auto;
   }
-  .hanuri .__greeting .text_box {
-    margin-top: 48px;
-  }
-  .hanuri .__greeting .text_box img {
+  .hanuri .__greeting img {
     width: 225px;
-    margin-right: 23px;
+    margin-right: 35px;
     margin-bottom: 10px;
   }
-  .hanuri .__greeting .text_box p {
+  .hanuri .__greeting p {
     font-size: 22px;
     letter-spacing: -1.65px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
-  .hanuri .__greeting .text_box p.t1 {
+  .hanuri .__greeting p.t1 {
+    margin-top: 50px;
     font-size: 24px;
     letter-spacing: -1.8px;
   }
