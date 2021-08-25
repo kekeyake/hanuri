@@ -17403,6 +17403,293 @@ footer.footer .t1:last-child {
   }
 }
 
+.hanuri .__purpose {
+  padding: 5.83333vw 0;
+}
+
+.hanuri .__purpose .intro {
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.66667vw;
+  letter-spacing: -0.2vw;
+  margin-bottom: 8.33333vw;
+}
+
+.hanuri .__purpose .intro img {
+  width: 29.5vw;
+}
+
+.hanuri .__purpose .intro .text_box {
+  margin-left: 5vw;
+}
+
+.hanuri .__purpose .intro .text_box .t1 {
+  color: #333;
+  line-height: 1.25;
+}
+
+.hanuri .__purpose .intro .text_box .t1 b {
+  font-weight: 500;
+  font-size: 4vw;
+}
+
+.hanuri .__purpose .intro .text_box .t2 {
+  margin-top: 3.33333vw;
+  font-size: 3.66667vw;
+  line-height: 1.45;
+}
+
+.hanuri .__purpose h2 {
+  text-align: center;
+  font-size: 5.83333vw;
+  font-weight: 700;
+  letter-spacing: -0.43333vw;
+  color: #000;
+  font-family: "NanumSquare";
+}
+
+.hanuri .__purpose .stit {
+  margin-top: 5vw;
+  text-align: center;
+  font-size: 4.16667vw;
+  letter-spacing: -0.31333vw;
+  color: #000;
+}
+
+.hanuri .__purpose h3 {
+  margin-left: 5vw;
+  font-size: 4.16667vw;
+  letter-spacing: -0.20833vw;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2.5vw;
+}
+
+.hanuri .__purpose .ideology_list {
+  width: 66.66667vw;
+  margin: 4.16667vw auto 11.66667vw;
+  font-size: 3.66667vw;
+  color: #fff;
+  letter-spacing: -0.16667vw;
+  font-weight: 700;
+}
+
+.hanuri .__purpose .ideology_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 8.33333vw;
+  border-radius: 25px;
+  margin-bottom: 1.66667vw;
+}
+
+.hanuri .__purpose .ideology_list li:nth-child(1) {
+  background: #f39800;
+}
+
+.hanuri .__purpose .ideology_list li:nth-child(2) {
+  background: #eb6f00;
+}
+
+.hanuri .__purpose .ideology_list li:nth-child(3) {
+  background: #eb6100;
+  margin-bottom: 0;
+}
+
+.hanuri .__purpose .list_type01 {
+  margin-bottom: 11.66667vw;
+  padding: 5vw;
+  background-color: #eee;
+}
+
+.hanuri .__purpose .list_type01 li {
+  font-size: 3.66667vw;
+  color: #333;
+  letter-spacing: -0.16667vw;
+  padding-left: 2vw;
+  position: relative;
+  margin-bottom: 1.66667vw;
+}
+
+.hanuri .__purpose .list_type01 li:last-child {
+  margin-bottom: 0;
+}
+
+.hanuri .__purpose .list_type01 li::before {
+  content: '';
+  display: block;
+  width: 0.83333vw;
+  height: 0.83333vw;
+  background-color: #333;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.66667vw;
+}
+
+.hanuri .__purpose .list_type01 li.point {
+  color: #ee4500;
+  font-weight: 700;
+}
+
+.hanuri .__purpose .list_type01 li em {
+  font-weight: 500;
+}
+
+.hanuri .__purpose .list_type01 li b {
+  font-weight: 700;
+}
+
+.hanuri .__purpose .list_type01 li strong {
+  font-weight: 700;
+  padding-right: 2.5vw;
+  background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/1.25vw;
+}
+
+.hanuri .__purpose .list_type01 li p {
+  font-size: 3vw;
+  line-height: 1.5;
+}
+
+.hanuri .__purpose .__value {
+  margin-bottom: 11.66667vw;
+}
+
+.hanuri .__purpose .__value img {
+  width: 100%;
+}
+
+.hanuri .__purpose .__principles {
+  margin-top: 4.16667vw;
+}
+
+.hanuri .__purpose .__principles img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .hanuri .__purpose {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 35px 0 100px;
+  }
+  .hanuri .__purpose .intro {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    margin-bottom: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .hanuri .__purpose .intro img {
+    width: 177px;
+  }
+  .hanuri .__purpose .intro .text_box {
+    margin-left: 55px;
+  }
+  .hanuri .__purpose .intro .text_box .t1 b {
+    font-size: 24px;
+  }
+  .hanuri .__purpose .intro .text_box .t2 {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .hanuri .__purpose h2 {
+    font-size: 35px;
+    letter-spacing: -2.6;
+  }
+  .hanuri .__purpose .stit {
+    margin-top: 30px;
+    font-size: 25px;
+    letter-spacing: -1.88px;
+  }
+  .hanuri .__purpose h3 {
+    margin-left: 30px;
+    font-size: 25px;
+    letter-spacing: -1.25px;
+    margin-bottom: 15px;
+  }
+  .hanuri .__purpose .ideology_list {
+    width: 400px;
+    margin: 25px auto 70px;
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+  .hanuri .__purpose .ideology_list li {
+    height: 60px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  .hanuri .__purpose .list_type01 {
+    padding: 20px 30px;
+    padding-right: 0;
+    margin-bottom: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hanuri .__purpose .list_type01 li {
+    font-size: 22px;
+    letter-spacing: -1px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+  .hanuri .__purpose .list_type01 li:nth-child(3n + 1) {
+    width: 30%;
+  }
+  .hanuri .__purpose .list_type01 li:nth-child(3n + 2) {
+    width: 33%;
+  }
+  .hanuri .__purpose .list_type01 li:nth-child(3n) {
+    width: 37%;
+  }
+  .hanuri .__purpose .list_type01 li::before {
+    width: 5px;
+    height: 5px;
+    top: 15px;
+  }
+  .hanuri .__purpose .list_type01 li strong {
+    padding-right: 15px;
+    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50%/7.5px;
+  }
+  .hanuri .__purpose .list_type01 li p {
+    font-size: 18px;
+  }
+  .hanuri .__purpose .__value {
+    margin-bottom: 70px;
+  }
+  .hanuri .__purpose .__value img {
+    width: 100%;
+  }
+  .hanuri .__purpose .__principles {
+    margin-top: 25px;
+  }
+  .hanuri .__purpose .__principles img {
+    width: 100%;
+  }
+}
+
 body {
   font-size: 3.66667vw;
   -ms-overflow-style: none;

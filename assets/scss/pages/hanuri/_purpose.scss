@@ -1,12 +1,247 @@
 .hanuri {
     .__purpose {
+        padding:vw(35) 0;
+        .intro {
+            padding:0 vw(30);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: vw(22);
+            letter-spacing: vw(-1.2);
+            margin-bottom: vw(50);
+            img {
+                width: vw(177);
 
+            }
+            .text_box {
+                margin-left: vw(30);
+                .t1 {                                
+                    color:#333;
+                    line-height: 1.25;
+                    b {
+                        font-weight: 500;
+                        font-size: vw(24);
+                    }
+                }
+                .t2 {
+                    margin-top: vw(20);
+                    font-size: vw(22);
+                    line-height: 1.45;
+                }
+            }            
+        }
+        h2 {
+            text-align: center;
+            font-size: vw(35);
+            font-weight: 700;
+            letter-spacing: vw(-2.6);
+            color:#000;
+            font-family: "NanumSquare";
+        }
+        .stit {
+            margin-top: vw(30);
+            text-align: center;
+            font-size: vw(25);
+            letter-spacing: vw(-1.88);
+            color:#000;
+        }
+        h3 {
+            margin-left: vw(30);
+            font-size: vw(25);
+            letter-spacing: vw(-1.25);
+            color:#333;
+            font-weight: 700;
+            margin-bottom: vw(15);
+        }
+        .ideology_list {
+            width: vw(400);
+            margin:vw(25) auto vw(70);
+            font-size: vw(22);
+            color:#fff;
+            letter-spacing: vw(-1);
+            font-weight: 700;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: vw(50);
+                border-radius:25px;
+                margin-bottom: vw(10);
+
+                &:nth-child(1) {
+                    background: #f39800;
+                }
+                &:nth-child(2) {
+                    background: #eb6f00;
+                }
+                &:nth-child(3) {
+                    background: #eb6100;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .list_type01 {
+            margin-bottom: vw(70);
+            padding:vw(30);
+            background-color: #eee;
+            li {
+                font-size: vw(22);
+                color:#333;
+                letter-spacing: vw(-1);
+                padding-left: vw(12);
+                position: relative;
+                margin-bottom: vw(10);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: vw(5);
+                    height: vw(5);
+                    background-color:#333;
+                    border-radius: 100%;
+                    position: absolute;left: 0;
+                    top:vw(10);
+                }
+                &.point {
+                    color:#ee4500;
+                    font-weight: 700;
+                }
+                em {
+                    font-weight: 500;
+                }
+                b {
+                    font-weight: 700;
+                }
+                strong {
+                    font-weight: 700;
+                    padding-right: vw(15);
+                    background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / vw(7.5);
+                }
+                p {
+                    font-size: vw(18);
+                    line-height: 1.5;
+                }
+            }
+        }
+        .__value {
+            img {
+                width: 100%;
+            }
+            margin-bottom: vw(70);
+        }
+        .__principles {
+            margin-top: vw(25);
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 @include desktop {
     .hanuri {
         .__purpose {
+            width: 1200px;
+            margin:0 auto;
+            padding:35px 0 100px;
+            .intro {
+                align-items: flex-start;
+                padding:0;
+                font-size: 22px;
+                letter-spacing: -1.2px;
+                margin-bottom: 50px;
+                justify-content: start;
+                img {
+                    width: 177px;
 
+                }
+                .text_box {
+                    margin-left: 55px;
+                    .t1 {                                
+                        b {
+                            font-size: 24px;
+                        }
+                    }
+                    .t2 {
+                        margin-top: 10px;
+                        font-size: 22px;
+                    }
+                }            
+            }
+            h2 {
+                font-size: 35px;
+                letter-spacing: -2.6;
+            }
+            .stit {
+                margin-top: 30px;
+                font-size: 25px;
+                letter-spacing: -1.88px;
+            }
+            h3 {
+                margin-left: 30px;
+                font-size: 25px;
+                letter-spacing: -1.25px;
+                margin-bottom: 15px;
+            }
+            .ideology_list {
+                width: 400px;
+                margin:25px auto 70px;
+                font-size: 22px;
+                letter-spacing: -1px;
+                li {
+                    height: 60px;
+                    border-radius:25px;
+                    margin-bottom: 10px;
+                }
+            }   
+            .list_type01 {
+                padding:px(10) px(15);
+                padding-right: 0;
+                margin-bottom:70px;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    font-size: px(11);
+                    letter-spacing: px(-0.5);
+                    padding-left: px(6);                    
+                    margin-bottom: px(5);
+                    &:nth-child(3n + 1) {
+                        width: 30%;
+                    }
+                    &:nth-child(3n + 2) {
+                        width: 33%;
+                    }
+                    &:nth-child(3n) {
+                        width: 37%;
+                    }
+                    &::before {
+                        width: px(2.5);
+                        height: px(2.5);
+                        top:px(7.5);
+                    }                                
+                    strong {
+                        padding-right: px(7.5);
+                        background: url(../img/ico_arrow_right.svg) no-repeat 100% 50% / px(3.75);
+                    }
+                    p {
+                        font-size: px(9);
+                    }
+                }
+            }
+            .__value {
+                img {
+                    width: 100%;
+                }
+                margin-bottom: 70px;
+            }
+            .__principles {
+                margin-top: 25px;
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
