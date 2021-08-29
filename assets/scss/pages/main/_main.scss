@@ -51,23 +51,23 @@
         display: block;
         text-align: center;
         width: max-content;
-        height: vw(56);
+        height: 11.83333vw;
         padding:0 vw(20);
         margin:vw(38) auto 0;        
         border-radius: 5px;
         border: 1px solid #000;
-        box-shadow: 0.6px 0.8px 0 1px #000;
+        box-shadow: 1.2px 1.6px 0 2px #000;
         span {
             display: flex;
-            width: max-content;
+            width: auto;
             align-items: center;
             height: 100%;
             letter-spacing: vw(-2);
-            padding-right: vw(42);
-            font-size: vw(22);
+            padding-right: 10vw;
+            font-size: 5.33333vw;
             color:#222;
             font-weight: 700;                    
-            background: url(../img/main/ico_click.svg) no-repeat 100% 100% / vw(33);
+            background: url(../img/main/ico_click.svg) no-repeat 100% 100% / 6.66667vw;
             box-sizing: border-box;
         }
     }

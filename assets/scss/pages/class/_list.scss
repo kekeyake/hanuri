@@ -4,26 +4,48 @@
         padding-bottom: vw(100);
         .__top {
             padding:vw(54) vw(30) vw(52);
-            .notice_swiper {
-                height: vw(40);
-                overflow-y: hidden;
-                margin-bottom: vw(6.5);
-            }
-            .tit {
+            .inner {
                 display: flex;
                 align-items: center;
-                font-size: vw(22);
-                color:#666;
-                letter-spacing: vw(-1.1);
-                span {
+                margin-bottom: vw(6.5);
+                > span {
                     font-size: vw(20);
                     color:#fff;
                     font-weight: 700;
                     letter-spacing: vw(-1);
                     margin-right: vw(13);
-                    padding: vw(6) vw(18.5) vw(5) vw(17);
+                    padding: vw(3) vw(18.5) vw(2) vw(17);
                     border-radius: 5px;
                     background-color: #c70000;
+                    white-space: nowrap;
+                }     
+                .notice_swiper {
+                    width: calc(100% - 10vw);
+                    height: vw(40);
+                    overflow-y: hidden;
+                    text-align: left;
+                    margin-left: 0;
+                }            
+                .tit {
+                    width:100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: vw(22);
+                    color:#666;
+                    letter-spacing: vw(-1.1);  
+                    padding-top: .5vw; 
+                    p {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    a {
+                        width: calc(100% - 1vw);
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;                        
+                    }
                 }
             }
             .status_txt {
@@ -153,7 +175,7 @@
                         }
                     }
                     span {
-                        font-size: vw(17);
+                        font-size: vw(19);
                         font-weight: 700;
                         color:#fff;
                         letter-spacing: vw(-1);
@@ -349,30 +371,43 @@
         .class_list {
             padding-bottom: px(50);
             .__top {
-                padding:px(27) px(15) px(26);
-                .notice_swiper {
-                    height: px(20);
-                    overflow-y: hidden;
+                padding:10px 0 px(26);
+                .inner {
                     margin-bottom: px(10);
-                }
-                .tit {
-                    display: flex;
-                    align-items: center;
-                    font-size: px(11);
-                    color:#666;
-                    letter-spacing: px(-0.5);
-                    margin-bottom: px(9.5);
+                    justify-content: flex-start;
                     span {
                         font-size: px(10);
                         color:#fff;
                         font-weight: 700;
                         letter-spacing: px(-0.5);
                         margin-right: px(6.5);
-                        padding: px(3) px(9.25) px(2.5) px(8.5);
+                        padding: px(1) px(9.25) px(1) px(8.5);
                         border-radius: 5px;
                         background-color: #c70000;
                     }
-                }
+                    .notice_swiper {
+                        width: calc(100% - 80px);
+                        height: px(18);
+                        overflow-y: hidden;   
+                        margin:0;                 
+                    }
+                    .tit {
+                        display: flex;
+                        align-items: center;
+                        font-size: px(11);
+                        color:#666;
+                        letter-spacing: px(-0.5);
+                        margin-bottom: px(9.5);  
+                        padding-top: 1px;  
+                        p {
+                            display: block;
+                            width: 100%;
+                        }
+                        a {
+                            width: 95%;
+                        }                
+                    }
+                }                
                 .status_txt {
                     border-radius: 5px;
                     border: solid 0.5px #999;
@@ -495,7 +530,7 @@
                             }
                         }
                         span {
-                            font-size: px(8.5);
+                            font-size: 19px;
                             font-weight: 700;
                             color:#fff;
                             letter-spacing: px(-0.5);

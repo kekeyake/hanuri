@@ -1,0 +1,312 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="class">
+		<!--@include(class/class_header.html)-->
+        <div class="class_list">
+            <div class="__top">
+                <div class="inner">
+                    <span>공지<!--{{nlist.__ord}}--></span>
+                    <div class="swiper-container notice_swiper">
+                        <div class="swiper-wrapper">
+                            <!--@loop(nlist)--> 
+                            <div class="swiper-slide">                            
+                                <div class="tit">                                
+                                    <p><a href="./class_notice_view.jsp?id={{nlist.id}}&{{list_query}}">{{nlist.subject_conv}}</a><!--@if(nlist.notice_new_block)-->&nbsp;<img src="../html/images/ic_new.gif" width="13" height="11" /><!--/if(nlist.notice_new_block)--></p>
+                                </div>                            
+                            </div>
+                            <!--/loop(nlist)--> 
+                            <!--
+                            <div class="swiper-slide">                            
+                                <div class="tit">
+                                    <span>공지2</span>
+                                    <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                                </div>                            
+                            </div>
+                            <div class="swiper-slide">                            
+                                <div class="tit">
+                                    <span>공지3</span>
+                                    <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                                </div>                            
+                            </div>
+                            <div class="swiper-slide">                            
+                                <div class="tit">
+                                    <span>공지4</span>
+                                    <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                                </div>                            
+                            </div>
+                            <div class="swiper-slide">                            
+                                <div class="tit">
+                                    <span>공지5</span>
+                                    <p>수강 설문 참여하신 분께 복습시간 제공</p>
+                                </div>                            
+                            </div>
+                            -->
+                        </div>
+                    </div>                
+                </div>                
+                <div class="status_txt">
+                    <p>남은기간 <span>{{cuinfo.diff_date}}</span>일 / 미제출과제 <span>{{cuinfo.notrcount}}</span>건</p>
+                </div>
+                <div class="status_info">
+                    <div class="graph_wrap">
+                        <div class="graph_box">                        
+                            <span>권장진도</span>
+                            <div class="bar_wrap">
+                                <span class="gauge_bar" style="width: {{cuinfo.recommend_ratio}}%;"></span>                                
+                            </div>
+                            <em>{{cuinfo.recommend_ratio}}%</em>
+                        </div>
+                        <div class="graph_box">
+                            <span>나의진도</span>
+                            <div class="bar_wrap">
+                                <span class="gauge_bar my" style="width: {{cuinfo.progress_ratio_conv}}%;"></span>                                
+                            </div>
+                            <em>{{cuinfo.progress_ratio_conv}}%</em>
+                        </div>
+                    </div>
+                    <div class="info_txt type1">
+                        <span><!--@if(main_online_block)--><a href="./goal.jsp?{{list_query}}">목표달성 이벤트</a><!--/if(main_online_block)-->
+						<!--@nif(main_online_block)-->
+						<!--@if(cuinfo.recommend_block)-->조금 더 힙내세요!<!--/if(cuinfo.recommend_block)-->
+						<!--@nif(cuinfo.recommend_block)-->진도가 원활합니다<!--/nif(cuinfo.recommend_block)-->
+						<!--/nif(main_online_block)-->
+						</span>
+                    </div>                    
+                </div>
+            </div>
+            <table class="class_tbl">
+                <colgroup>
+                    <col style="width: 12%;">
+                    <col style="width: auto;">
+                    <col style="width: 10%;">
+                    <col style="width: 28%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>차시명</th>
+                        <th>진도</th>
+                        <th>학습</th>
+                    </tr>
+                </thead>
+                <tbody>
+					<!--@loop(clist)-->
+					<!--@nif(clist.type_block)-->
+                    <tr class="no_bg">
+                        <!-- <td></td>
+                        <td>{{clist.subject}}</td>
+                        <td></td>
+                        <td></td> -->
+                        <td colspan="4">{{clist.subject}}</td>
+                    </tr>
+					<!--/nif(clist.type_block)-->
+
+					<!--@if(clist.type_block)-->
+                    <tr>
+                        <td>{{clist.chapter}}</td>
+                        <td>{{clist.lesson_subject}}</td>
+                        <td>{{clist.ratio}}%</td>
+                        <td>
+							<!--@if(clist.online_block)-->
+							<!--@if(clist.open_block)-->
+							<!--@if(clist.complete_yn)--><button type="button" class="btn_review" onclick="javascript:OpenWindow('./viewer.jsp?cuid={{cuinfo.id}}&chapter={{clist.chapter}}', '_VRV_', {{clist.width_conv}}, {{clist.height_conv}});">복습하기</button><!--/if(clist.complete_yn)-->
+							<!--@nif(clist.complete_yn)-->
+								<!--@nif(clist.not_study_block)-->	
+									<!--@if(clist.chapter0_block)-->	
+									<button type="button" class="btn_learning" onclick="javascript:OpenWindow('/data/Contents/gs/ori_h.mp4', '_VRV_', 1280, 720);">학습하기</button>
+									<!--/if(clist.chapter0_block)-->	
+									<!--@nif(clist.chapter0_block)-->	
+									<button type="button" class="btn_learning" onclick="javascript:OpenWindow('./viewer.jsp?cuid={{cuinfo.id}}&chapter={{clist.chapter}}', '_VRV_', {{clist.width_conv}}, {{clist.height_conv}});">학습하기</button>
+									<!--/nif(clist.chapter0_block)-->	
+								<!--/nif(clist.not_study_block)-->
+								<!--@if(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:void(0);">학습하기</button>
+								<!--/if(clist.not_study_block)-->
+							<!--/nif(clist.complete_yn)-->
+							<!--/if(clist.open_block)-->
+
+							<!--@nif(clist.open_block)-->
+								<!--@nif(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:msg('{{clist.msg}}')">학습종료</button>
+								<!--/nif(clist.not_study_block)-->
+								<!--@if(clist.not_study_block)-->
+								<button type="button" class="btn_review" onclick="javascript:void(0);">학습종료</button>
+								<!--/if(clist.not_study_block)-->
+							<!--/nif(clist.open_block)-->
+							<!--/if(clist.online_block)-->
+
+							<!--@if(clist.zoom_block)-->
+							<button type="button" class="btn_learning" onclick="javascript:goZoom();">강의실입장</button>
+							<!--/if(clist.zoom_block)-->
+                        </td>
+                    </tr>
+					<!--/if(clist.type_block)-->
+					<!--/loop(clist)-->
+
+					<!--@nif(clist)-->
+                    <tr>
+                        <td colspan="4">등록된 학습목차가 없습니다</td>
+                    </tr>
+					<!--/nif(clist)-->
+
+<!--
+                    <tr class="no_bg">
+                        <td></td>
+                        <td>독서와 독서지도의 이해</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>독서의 즐거움</td>
+                        <td>70%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>독서 지도의 이해</td>
+                        <td>50%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr class="no_bg">
+                        <td></td>
+                        <td>독서자료 선정</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>독서자료의 이해</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>독서 자료 선정의 이해</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>독서 자료 선정 방법</td>
+                        <td>0%</td>
+                        <td>
+                            <button type="button" class="btn_learning">학습하기</button>
+                        </td>
+                    </tr>
+-->
+                </tbody>
+            </table>
+        </div>
+
+		<form name="form1" method="post" target="sysfrm">
+        <div class="survey_ly __layer" style="display:none;">
+            <p class="tit">첫 학습을 환영합니다.</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <div class="inner">
+                <div class="t1">
+                    <p>
+                        독서지도 전문가 {{SYS_USERNAME}}님을 응원합니다. <br>
+                        즐겁고 유익한 경험이 되도록 한우리도 노력할게요!
+                    </p>
+                    <img src="../assets/img/ico_survey.png" alt="">
+                </div>
+                <p class="q">본 교육과정을 알게 된 경로를 모두 선택해 주세요.</p>
+                <div class="inflow_list">
+                    <button type="button" onclick="javasccript:set_join_motive('01');">인터넷 검색</button>
+                    <button type="button" onclick="javasccript:set_join_motive('43');">유튜브</button>
+                    <button type="button" onclick="javasccript:set_join_motive('26');">지인소개</button>
+                    <button type="button" onclick="javasccript:set_join_motive('23');">한우리센터</button>
+                    <button type="button" onclick="javasccript:set_join_motive('25');">SNS 수강후기</button>
+                    <button type="button" onclick="javasccript:set_join_motive('33');">지역광고</button>
+                    <button type="button" onclick="javasccript:set_join_motive('42');">카카오톡</button>
+                    <button type="button" onclick="javasccript:set_join_motive('17');">아이엠스쿨</button>
+                    <button type="button" onclick="javasccript:set_join_motive('22');">한우리블로그</button>
+                    <button type="button" onclick="javasccript:set_join_motive('31');">TV</button>
+                    <button type="button" onclick="javasccript:set_join_motive('28');">배너광고</button>
+                    <input type="text" name="join_motive" onclick="javasccript:set_join_motive('36');" placeholder="기타입력">
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_next">다음에 하기</button>
+                    <button type="button">확인</button>
+                </div>
+            </div>            
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>
+        </div>
+        <div class="evaluating_courses_ly __layer" style="display:none;">
+            <p class="tit">과목 평가하기</p>
+            <button class="btn_setting_reload" type="button"><img src="../assets/img/ico_reload.svg" alt="설정 다시불러오기"></button>
+            <div class="inner">
+                <div class="teacher_info">
+                    <img src="../assets/img/@teacher_01.png" alt="">
+                    <div class="txt_box">
+                        <p class="t1">독서와 독서지도의 이해</p>
+                        <p class="t2">정은주 강사</p>
+                    </div>
+                </div>
+                <p class="q">과목의 전문성을 평가해 주세요.</p>
+                <div class="point_wrap">
+                    <div class="check_point_box">
+                        <ul class="check_star">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="infoTxt">별점을 선택해 주세요</p>
+                        <p class="pointTxt"></p>
+                    </div>
+                </div>
+                <p class="q">강사의 전달력은 어떠했나요?</p>
+                <div class="point_wrap">
+                    <div class="check_point_box">
+                        <ul class="check_star">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="infoTxt">별점을 선택해 주세요</p>
+                        <p class="pointTxt"></p>
+                    </div>
+                </div>
+                
+                <div class="btn_wrap">
+                    <button type="button" class="btn_next">다음에 하기</button>
+                    <button type="button">확인</button>
+                </div>
+            </div>            
+            <button class="btn_setting_closed" type="button"><img src="../assets/img/ico_x.svg" alt="설정레이어 닫기"></button>            
+        </div>
+		</form>
+		{{form_script}}
+    </div>
+</main>
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->
+
+<script>
+var join_motive_result;
+function goZoom() {
+	window.open('{{cuinfo.zoom_link}}', 'zoomlink', 'left=0, top=0, width=1024, height=800, scrollbars=yes, toolbar=no, menubar=no, location=no, status=no, resizable=yes')
+}
+function msg(msg) {
+	alert(msg);
+}
+function set_join_motive(val) {
+	var f = document.forms['form1'];
+	join_motive_result += val + ",";
+alert(join_motive_result);
+	f['join_motive'].value = join_motive_result;
+}
+</script>

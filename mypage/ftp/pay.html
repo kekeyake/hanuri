@@ -1,0 +1,443 @@
+<!--<div data-include-path="../layout/header.html" id="headers"></div>-->
+
+<main class="main">
+    <div class="mypage __inner">
+
+		<form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit(this);">
+		<input type="hidden" name="mode_val" id="mode_val" value="" />
+		<input type="hidden" name="oid" id="oid" value="" />
+		<input type="hidden" name="pay_price" id="pay_price" value="" />
+		<input type="hidden" name="hanpoint" id="hanpoint" value="" />
+		<input type="hidden" name="department2" id="department2" value="" />
+		<!--@loop(list)-->
+		<input type="hidden" name="r_ori_pay_price_{{list.itemid}}" id="r_ori_pay_price_{{list.itemid}}" value="{{list.item_price}}" />
+		<input type="hidden" name="r_pay_price_{{list.itemid}}" id="r_pay_price_{{list.itemid}}" value="{{list.item_price}}" />
+		<input type="hidden" name="r_prdname_{{list.itemid}}" id="r_prdname_{{list.itemid}}" value="{{list.name_conv}}" />
+		<input type="hidden" name="r_itemid_{{list.itemid}}" id="r_itemid_{{list.itemid}}" value="{{list.id}}" />
+        <div class="tbl_top txt_c">
+            <p>{{list.product_name}}</p>
+        </div>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>결제금액</th>
+                    <td><b class="price"><p id="rpayprice_{{list.itemid}}">{{list.price_conv}}</p></b></td>
+                </tr>
+
+				<!--@if(list.dc_block)-->
+                <tr>
+                    <th>할인정보</th>
+                    <td>{{list.discount_type_conv}} 할인 {{list.dc_wait_price_conv}}</td>
+                </tr>
+				<!--/if(list.dc_block)-->
+
+				<!--@if(is_hanuriteacher_block)-->
+				<!--@if(list.hanpoint_block)-->
+                <tr>
+                    <th>한포인트</th>
+                    <td><!--{{enter_user.enter_center_name}}--><b class="price">{{enter_user.total_hanpoint_conv}}P</b> 중
+						<input type="text" name="hanpoint_{{list.itemid}}" id="hanpoint_{{list.itemid}}" placeholder="천단위입력" class="input" style="width:32%;text-align:right:padding-right:6px;" onclick="this.select();" onblur="checkHanPoint('{{list.itemid}}');" onKeyup="setItem_price('{{list.itemid}}');"/> P 사용
+						<input type="hidden" name="department2_{{list.itemid}}" id="department2_{{list.itemid}}" value="{{enter_user.enter_center_name}}" />
+					</td>
+                </tr>   
+				<!--/if(is_hanuriteacher_block)-->
+				<!--/if(list.hanpoint_block)-->
+
+				<!--@if(list.book_buy_block)-->
+                <tr>
+                    <th>교재</th>
+                    <td>{{list.reg_price_conv}}</td>
+                </tr>
+                <tr>
+                    <th>배송주소</th>
+                    <td>({{list.post_zipcode}}) {{list.new_post_addr}} {{list.post_addr2}}</td>
+                </tr>
+				<!--/if(list.book_buy_block)-->
+
+                <tr>
+                    <th>결제방법</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select" id="method_{{list.itemid}}" name="method_{{list.itemid}}" <!--@nif(list.pay_button_block)--> disabled <!--/nif(list.pay_button_block)-->>
+                                <option value="">선택</option>
+								<!--@loop(methods)-->
+                                <option value="{{methods.id}}">{{methods.name}}</option>
+								<!--/loop(methods)--> 
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn_wrap">            
+            <!--@nif(list.pay_button_block)--><button class="btn pay __stay" type="button" onclick="javascript:void(0);" >할인 대기</button><!--/nif(list.pay_button_block)-->
+			<!--@if(list.pay_button_block)--><button type="button" onclick="goPayment('{{list.itemid}}','{{list.hanpoint_yn}}','{{list.bosu_yn}}');" class="btn pay __ok">결제하기</button><!--/if(list.pay_button_block)-->
+			<button class="btn pay __cancel" onclick="BtnConfirmGo('수강신청을 취소', 'pay_delete.jsp?iid={{list.itemid}}&type={{list.ctype}}');">취소하기</button>
+        </div>
+		<!--/loop(list)-->
+
+		<!--@nif(list)-->
+		<table class="tbl_list">
+		<tr>
+			<td>
+				<div class="no_data">					
+					<span><img src="../assets/img/ico_nodata_pay.svg" alt="" class="__pay"></span>
+					<p>결제 대기중인 과정이 없습니다.</p>
+				</div>				
+			</td>
+		</tr>
+		</table>
+		<!--/nif(list)-->
+
+
+		</form>
+		{{form_script}}
+<!--
+        <div class="tbl_top">
+            <p>{{list.product_name}}</p>
+        </div>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>결제금액</th>
+                    <td><b class="price">425,000원</b></td>
+                </tr>
+                <tr>
+                    <th>할인정보</th>
+                    <td>한우리 회원학부모 30% 할인 114,000원</td>
+                </tr>
+                <tr>
+                    <th>교재</th>
+                    <td>45,000원</td>
+                </tr>
+                <tr>
+                    <th>교재배송<br>주소</th>
+                    <td>서울 도봉구 방학로 148-4 (방학동, 삼성월드빌) 101호</td>
+                </tr>
+                <tr>
+                    <th>결제방법</th>
+                    <td>
+                        <div class="select_box">
+                            <select class="cus_select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn_wrap">
+            <button class="btn __cancel" onclick="BtnConfirmGo('취소', 'waiting_delete.jsp?iid={{list.itemid}}&type={{list.ctype}}');">취소</button>
+            <button class="btn __stay">할인 대기</button>
+        </div>
+
+        <div class="tbl_top">
+            <p>유아독서지도사</p>
+        </div>
+        <table class="tbl_list">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:75%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>결제금액</th>
+                    <td><b class="price">116,000원</b></td>
+                </tr>
+                <tr>
+                    <th>할인정보</th>
+                    <td>독서지도사 수료자 30% 할인</td>
+                </tr>
+                <tr>
+                    <th>한포인트</th>
+                    <td>10,000원 사용</td>
+                </tr>                
+                <tr>
+                    <th>결제방법</th>
+                    <td>카드결제</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn_wrap">
+            <button class="btn __cancel">취소</button>
+            <button class="btn __ok">결제</button>
+        </div>
+-->
+    </div>
+</main>
+
+<script>
+	function checkHanPoint(oid) {
+		var f1 = document.forms['form1'];
+		var pf = document.forms['payform'];
+		var vf = document.forms['va_payform'];
+		var ori_price = $('#r_ori_pay_price_' + oid).val();
+		var op = $('#r_pay_price_' + oid).val();
+		var _hanpoint = '{{enter_user.total_hanpoint}}';
+		var el = $('#hanpoint_' + oid).val();
+		var el2 = $('#department2_' + oid).val();
+		if(parseInt(el) > 0 && parseInt(el) % 1000 != 0) {
+			alert("천원단위의 숫자만 입력하세요. "); 
+			$('#hanpoint_' + oid).val("0"); 
+			pf['MSTR'].value = 0;
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			$('#r_pay_price_' + oid).val(parseInt(ori_price));
+			pf['Prdtprice'].value = parseInt(ori_price);
+			vpf['Prdtprice'].value = parseInt(ori_price);
+			return;
+		}
+		if(parseInt(ori_price) < parseInt(el)) { 
+			//alert("결제금액이 초과되었습니다. "); 
+			$('#hanpoint_' + oid).val("0"); 
+			pf['MSTR'].value = 0;
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			$('#r_pay_price_' + oid).val(parseInt(ori_price));
+			pf['Prdtprice'].value = parseInt(ori_price);
+			vpf['Prdtprice'].value = parseInt(ori_price);
+			return; 
+		}
+		if(parseInt(_hanpoint) < parseInt(el)) { 
+			//alert("보유중이신 한포인트가 초과되었습니다. "); 
+			$('#hanpoint_' + oid).val("0"); 
+			pf['MSTR'].value = 0;
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			$('#r_pay_price_' + oid).val(parseInt(ori_price));
+			pf['Prdtprice'].value = parseInt(ori_price);
+			vpf['Prdtprice'].value = parseInt(ori_price);
+			return; 
+		}
+/*
+		if(parseInt(el.value) >= 1000 && el2.value != "") {
+			if(confirm("한포인트 결제 후 환불 시 사용 당월에만 한포인트 복구가 가능합니다. 사용하시겠습니까? ")) {} else { el.value = "0"; return; }
+		}
+*/
+	}
+	function setItem_price(oid) {
+		var f1 = document.forms['form1'];
+		var pf = document.forms['payform'];
+		var vpf = document.forms['va_payform'];
+		var _hanpoint = '{{enter_user.total_hanpoint}}';
+		var ori_price = $('#r_ori_pay_price_' + oid).val();
+		var op = $('#r_pay_price_' + oid).val();
+		var oh = GetFormValue("form1", "hanpoint_" + oid);
+		var rprice = parseInt(ori_price);
+		if(oh == '' || oh == null || oh == '0') {
+			$('#hanpoint_' + oid).val(""); 
+			pf['MSTR'].value = 0;
+		}
+		if(oh != '' && parseInt(oh) >= 1000) {
+			rprice = parseInt(ori_price) -  parseInt(oh);
+			$('#rpayprice_' + oid).text(number_format(parseInt(rprice)) + "원");
+			$('#method_' + oid).val("3001");
+			$("select[name='method_" + oid + "']").prop("disabled", true);
+		} else {
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			$("select[name='method_" + oid + "']").prop("disabled", false);
+			$('#method_' + oid).val("");
+		}
+		if(parseInt(op) < parseInt(oh)) { 
+			alert("결제금액을 초과하였습니다. 다시 입력해주세요. "); 
+			$('#hanpoint_' + oid).val(""); 
+			pf['MSTR'].value = 0;
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			$('#r_pay_price_' + oid).val(parseInt(ori_price));
+			pf['Prdtprice'].value = parseInt(parseInt(ori_price));
+			vpf['Prdtprice'].value = parseInt(parseInt(ori_price));
+			$("select[name='method_" + oid + "']").prop("disabled", false);
+			$('#method_' + oid).val("");
+			return; 
+		}
+		if(parseInt(_hanpoint) < parseInt(oh)) { 
+			alert("보유중이신 한포인트를 초과하였습니다. "); 
+			$('#hanpoint_' + oid).val(""); 
+			pf['MSTR'].value = 0;
+			$('#rpayprice_' + oid).text(number_format(parseInt(ori_price)) + "원");
+			rprice = parseInt(ori_price);
+			$('#r_pay_price_' + oid).val(parseInt(rprice));
+			pf['Prdtprice'].value = parseInt(rprice);
+			vpf['Prdtprice'].value = parseInt(rprice);
+			$("select[name='method_" + oid + "']").prop("disabled", false);
+			$('#method_' + oid).val("");
+			return; 
+		}
+		$('#r_pay_price_' + oid).val(parseInt(rprice));
+		pf['Prdtprice'].value = parseInt(rprice);
+		vpf['Prdtprice'].value = parseInt(rprice);
+	}
+</script>
+
+<script src="https://pg.mcash.co.kr/dlp/js/npgIF.js"></script> <!-- 필수 -->
+<script src="https://mup.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
+<script language="javascript">
+	try { document.charset = "utf-8";} catch (e) { }
+	function goPayment(oid, hanpoint_yn, bosu_yn) {
+		var f = document.forms['form1'];
+		var pf = document.forms['payform'];
+		var vf = document.forms['va_payform'];
+		f['oid'].value = oid;
+		var pay_method = $('#method_' + oid).val();
+		var op = $('#r_pay_price_' + oid).val();
+		var product_name = $('#r_prdname_' + oid).val();
+		var opid = $('#r_itemid_' + oid).val();
+		if(bosu_yn == 'Y') product_name = '[보수]';
+
+		pf['Prdtprice'].value = parseInt(op);
+		pf['Prdtnm'].value = product_name;
+		pf['Tradeid'].value = opid;
+		pf['MSTR'].value = parseInt(op);
+
+		vf['Prdtprice'].value = parseInt(op);
+		vf['Prdtnm'].value = product_name;
+		vf['Tradeid'].value = opid;
+		vf['MSTR'].value = parseInt(op);
+
+		<!--@if(is_hanuriteacher_block)-->
+		if(hanpoint_yn == 'Y') {
+			var el = $('#hanpoint_' + oid).val();
+			if(parseInt(el) > 0 && parseInt(el) % 1000 != 0) {
+				alert("천원단위의 숫자만 입력하세요. "); 
+				$('#hanpoint_' + oid).val("0");
+				pf['MSTR'].value = 0;
+				return;
+			}
+		}
+		<!--/if(is_hanuriteacher_block)-->
+
+		if(!validate(f)) return;
+
+		//한포인트사용체크
+
+		<!--@if(is_hanuriteacher_block)-->
+		if(hanpoint_yn == 'Y') {
+	/*
+			if(f['department2'].value != "" && (parseInt(el.value) == 0 || el.value == '')) {
+				alert('한포인트 사용금액을 입력해주세요. '); el.focus(); el.select(); return false;
+			}
+	*/
+			if(el != 0 && el != null && el != '' && parseInt(el) > 0) {
+				if(el != 0 && el != null && el != '') {
+					f['pay_price'].value = parseInt(op);
+					f['hanpoint'].value = parseInt(el);
+					f['department2'].value = $('#department2_' + oid).val();
+					pf['MSTR'].value =  parseInt(el);
+					$('#mode_val').val("hanpoint");
+					if(parseInt(el) == parseInt(op)) {
+						if(confirm("한포인트로 수강료 전액을 사용하셨습니다. \n차감 후 자동 승인처리 됩니다. \n결제하시겠습니까? ")) {
+							f.submit();
+							return false;
+						} else {
+							$('#hanpoint_' + oid).val("");
+							pf['MSTR'].value = 0;
+							return false;
+						}
+					}
+				} else {
+					$('#hanpoint_' + oid).val("");
+					pf['MSTR'].value =  0;
+				}
+			}
+		}
+		<!--/if(is_hanuriteacher_block)-->
+
+		if(pay_method != "") {
+			if(pay_method == "3001") {
+				payRequestCard(); 
+			} else if(pay_method == "2601") {
+				payRequest();
+			}
+		} else {
+			alert("결제방법을 선택하세요. ");
+			$('#method_' + oid).focus();
+			return false;
+		}
+	}
+
+	/**
+		결제 요청 함수 (결제창 호출)
+	*/
+	function reqPayment() {
+		var form = document.payform;
+		try { document.charset = form.acceptCharset;} catch (e) { }
+		PAY_REQUEST(form);
+	}
+	function payRequestCard() { //(신카드모듈)
+		//아래와 같이 ext_inc_comm.js에 선언되어 있는 함수를 호출		
+		MCASH_PAYMENT(document.payform);		
+	}		 
+	function payRequest() { //가상계좌
+		//아래와 같이 ext_inc_comm.js에 선언되어 있는 함수를 호출
+		MCASH_PAYMENT(document.va_payform);
+	}
+</script>
+<form name="payform" method="POST">
+<!-- New 카드결제 모듈 -->
+<!-- 필수입력 -->
+<input type="hidden" name="CASH_GB" value="CN" /> <!-- 대표결제수단. 고정 -->
+<input type="hidden" name="VER" value="ALL_NEW" /> <!-- ALL_NEW : 버전설정 고정 -->
+<input type="hidden" name="CN_SVCID" value="190517072477" /> <!-- 서비스아이디 -->
+<input type="hidden" name="PAY_MODE" value="10" /> <!-- 실거래결제 고정 -->
+<input type="hidden" name="Prdtprice" value="" /> <!-- 결제요청금액 최소 100원 -->
+<input type="hidden" name="Prdtnm" value="" /> <!-- 상품명 -->
+<input type="hidden" name="Siteurl" value="{{SYS_HTTPHOST}}" /> <!-- 가맹점 도메인 -->
+<input type="hidden" name="Tradeid" value="" /> <!-- 가맹점 거래번호 -->
+<input type="hidden" name="Okurl" value="https://www.hanuricampus.com/new/main/kg_redirpath.jsp" /> <!-- 성공화면처리URL : 결제완료통보페이지 full Url (예:http://www.mcash.co.kr/okurl.jsp ) -->
+<!-- 선택입력 -->
+<input type="hidden" name="Notiurl" value="https://www.hanuricampus.com/new/main/kg_dbpath.jsp" /> <!-- 결제처리URL : 결제 완료 후, 가맹점측 과금 등 처리할 가맹점측 URL -->
+<input type="hidden" name="CALL_TYPE" value="P" /> <!-- 결제창 호출방식 -->
+<input type="hidden" name="Failurl" value="" /> <!-- 결제 실패 시 사용자에게 보여질 가맹점 측 실패 페이지 -->
+<input type="hidden" name="Closeurl" value="" /> <!-- 닫기버튼 클릭 시 호출되는 가맹점 측 페이지. CALL_TYPE = I 또는 SELF 셋팅 시 필수 -->
+<input type="hidden" name="MSTR" value="" /> <!-- 가맹점콜백변수 //가맹점에서 추가적으로 파라미터가 필요한 경우 사용하며 &,%,?,^ 는 사용불가 ( 예 : MSTR="a=1|b=2|c=3" ) -->
+<input type="hidden" name="Payeremail" value="{{uinfo.email}}" /> <!-- 결제자email -->
+<input type="hidden" name="Userid" value="{{uinfo.id}}" /> <!-- 가맹점결제자ID -->
+<input type="hidden" name="Username" value="{{uinfo.name}}" /> <!-- 가맹점결제자ID -->
+<input type="hidden" name="CN_BILLTYPE" value="10" /> <!-- 매출전표 출력 시 과세/비과세 구분 -->
+<input type="hidden" name="CN_TAXFREE" value="" /> <!-- 비과세 -->
+<input type="hidden" name="CN_TAX" value="" /> <!-- 부과세 - 전체금액의 10%이하로 설정 -->
+<input type="hidden" name="CN_FREEINTEREST" value="" /> <!-- 무이자할부정보 -->
+<input type="hidden" name="CN_POINT" value="" /> <!-- 카드사포인트사용여부 -->
+<input type="hidden" name="Termregno" value="" /> <!-- 하위가맹점사업자번호 -->
+<input type="hidden" name="APP_SCHEME" value="" /> <!-- APP SCHEME -->
+<input type="hidden" name="Cryptyn" value="N" /> <!-- Y: 암호화 사용, N: 암호화 미사용 -->
+<input type="hidden" name="Cryptstring" value="" /> <!-- 암호화 사용 시 암호화된 스트링 -->
+</form>
+
+<!-- 가상계좌 파라미터 -->
+<form name="va_payform" method="POST" accept-charset="euc-kr">
+<input type="hidden" name="CASH_GB" id="CASH_GB" value="VA"> <!-- 결제수단 구분: VA -->
+<input type="hidden" name="Okurl" id="Okurl" value="https://{{SYS_HTTPHOST}}/new/main/va_okurl.jsp"> <!-- 결제 완료 후 사용자에게 보여질 가맹점측 완료 페이지 -->
+<input type="hidden" name="VA_SVCID" id="VA_SVCID" value="140806030001"> <!-- 모빌리언스에서 부여한 서비스ID (12byte 숫자 형식) -->
+<input type="hidden" name="Prdtnm" id="Prdtnm" value="" /> <!-- 상품명 -->
+<input type="hidden" name="Prdtprice" id="Prdtprice" value="{{info.item_price}}" /> <!-- 거래 금액 -->
+<input type="hidden" name="Siteurl" id="Siteurl" value="{{SYS_HTTPHOST}}"> <!-- 가맹점 서버 URL('http://' 제외, 예:'www.test.com') -->
+<input type="hidden" name="PAY_MODE" id="PAY_MODE" value="10"> <!-- 연동시 테스트/실결제 구분 (00: 테스트결제-비과금, 10: 실거래결제-과금) -->
+<input type="hidden" name="Tradeid" id="Tradeid" value=""> <!-- 거래 번호(가맹점 생성) -->
+<input type="hidden" name="LOGO_YN" id="LOGO_YN" value="N"> <!-- 가맹점 로고 사용여부 -->
+<input type="hidden" name="CALL_TYPE" id="CALL_TYPE" value="P"> <!-- 결제창 호출 방식 (P: 팝업-default, SELF: 페이지전환, I: 아이프레임) -->
+<input type="hidden" name="Notiurl" id="Notiurl" value="https://{{SYS_HTTPHOST}}/new/main/va_notiurl.jsp">
+<input type="hidden" name="Closeurl" id="Closeurl" value="">
+<input type="hidden" name="Failurl" id="Failurl" value="">
+<input type="hidden" name="Userid" id="Userid" value="{{uinfo.id}}">
+<input type="hidden" name="Payeremail" id="Payeremail" value="{{uinfo.email}}">
+<input type="hidden" name="MSTR" id="MSTR" value="{{info.id}}" /> <!-- 가맹점 return 값 -->
+<input type="hidden" name="Notiemail" id="Notiemail" value="">
+<input type="hidden" name="INFOAREA_YN" id="INFOAREA_YN" value="Y"> <!-- 결제창 안내문 표시여부 (Y: 표시-default,  N: 미표시) -->
+<input type="hidden" name="FOOTER_YN" id="FOOTER_YN" value="Y"> <!-- 결제창 하단 안내 표시여부 (Y: 표시-default,  N: 미표시) -->
+<input type="hidden" name="HEIGHT" id="HEIGHT" value="">
+<input type="hidden" name="PRDT_HIDDEN" id="PRDT_HIDDEN" value="">
+<input type="hidden" name="Cryptyn" id="Cryptyn" value="N">
+<input type="hidden" name="Cryptstring" id="Cryptstring" size="50" value="">
+<input type="hidden" name="VA_Rcptlimitdt" id="VA_Rcptlimitdt" value="{{va_rcptlimitdt}}">
+<input type="hidden" name="VA_Acctlimitdt" id="VA_Acctlimitdt" value="{{va_acctlimitdt}}">
+<input type="hidden" name="Username" id="Username" value="{{uinfo.name}}">
+</form>
+
+
+<!--<div data-include-path="../layout/footer.html" id="footers"></div>-->

@@ -280,6 +280,12 @@ h1.h1 {
     justify-content: center;
     align-items: center;    
 }
+.all_menu {
+    display: none;
+    &.on {
+        display: none;
+    }
+}
 @include desktop {
     header.header {
         height: px(54);
@@ -434,5 +440,81 @@ h1.h1 {
         &.sticky {
             margin-top: px(32.5);
         }
+    }
+    .all_menu {
+        width: 1000px;
+        padding:40px;
+        position: relative;        
+        justify-content: space-between;        
+        position: fixed;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 990px;
+        background-color: #fff;
+        border-radius:20px;
+        z-index: 300;
+        letter-spacing: -1.2px;
+        &.on {     
+            display: flex;       
+        }
+        .tit {
+            font-size: 22px;            
+            color:#000;
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+        .menu_wrap {
+            width: 160px;
+        }
+        ul {
+            padding-left: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #000;
+            li {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                > a {
+                    font-size: 17px;    
+                    letter-spacing: -1.4px;                                             
+                }
+                > span {
+                    font-size: 17px;   
+                    letter-spacing: -1.4px;                 
+                }
+                div {
+                    margin-top: 5px;
+                    a {
+                        display: block;
+                        line-height: 1.38;
+                        font-size: 16px;
+                        color:#666;
+                        padding-left: 5px;
+                        position: relative;
+                        &::before {
+                            content:'·';
+                            display: inline-block;
+                            
+                        }
+                    }
+                }
+                a:hover {
+                    text-decoration: underline;   
+                }        
+            }
+        }
+        .closed_btn {
+            position: absolute;
+            right: 20px;
+            bottom:20px;
+            display: block;
+            width: 29px;
+            height: 29px;
+            background: url(../img/btn_closed_gray.svg) no-repeat 0 0 / cover;
+
+        }
+
     }
 }

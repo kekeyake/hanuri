@@ -79,7 +79,8 @@
                 color:#fff;
                 font-weight: 700;
                 border-radius: vw(3);
-                margin-bottom: vw(10);                
+                margin-bottom: vw(10);
+                vertical-align: top;
             }
             .course_t {
                 display: inline-block;
@@ -103,7 +104,7 @@
                 line-height: vw(30);
             }
             .t2 {
-                margin-top: vw(6);
+                margin-top: vw(3);
                 font-size: vw(22);
                 letter-spacing: vw(-1.1);
                 line-height: vw(28);
@@ -436,11 +437,15 @@
                 letter-spacing: vw(-1.25);
                 border-radius: vw(3);
                 &.btn_list {
-                    width: 34.5%;
+                    width: 36%;
                     background-color: #666;
+                    & + .btn_list {
+                        width: 36%;
+                        margin:0 1.5%;
+                    }
                 }
                 &.btn_apply {
-                    width: 64.5%;
+                    width: 62%;
                     background-color: #ee5400;
                 }
             }

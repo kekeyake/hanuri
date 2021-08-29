@@ -60,11 +60,22 @@ footer.footer {
             &::after {
                 content: '';
                 display: block;
-                width: 200%;
+                width: 500%;
                 height: 51px;
                 background: #9a9a9a;
                 position: absolute;
-                left:-50%;
+                left:-100%;
+                top:0;
+                z-index: -1;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 500%;
+                height: 51px;
+                background: #9a9a9a;
+                position: absolute;
+                right:-100%;
                 top:0;
                 z-index: -1;
             }

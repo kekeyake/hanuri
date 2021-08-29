@@ -24,8 +24,9 @@
                     position: absolute;
                     right:0;
                     bottom:0;
+                    top:vw(67);
                     width: vw(141);
-                    height: vw(50.5);
+                    height: vw(40.5);
                     background: #666;
                     border-radius: vw(3);
                     color:#fff;
@@ -202,9 +203,9 @@
                 padding-top: px(12);
                 &.__cert {
                     .btn_cert {
-                        top:px(20);
+                        top:66px;
                         width: px(62);
-                        height: px(26);
+                        height: 40px;
                         border-radius: px(1.5);
                         font-size: px(10);
                         letter-spacing: px(-0.5);

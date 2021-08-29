@@ -28,6 +28,7 @@
             color:#fff;
             font-size: vw(20);
             letter-spacing: 0;
+            white-space: nowrap;
             &.new {
                 background: #ee4500;;
                 width: vw(28.5);
@@ -329,7 +330,7 @@
                 li {
                     border-bottom: 1px solid #b6b6b6;
                     a {
-                        display: block;
+                        display: inline-block;
                         padding:px(10) px(15);
                     }
                     p {

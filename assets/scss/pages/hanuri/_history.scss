@@ -29,7 +29,7 @@
                 content:'';
                 display: block;
                 width: vw(2);
-                height: 120%;
+                height: 105%;
                 background-color: #ddd;
                 position: absolute;
                 left:24vw;
@@ -68,10 +68,12 @@
                 }
                 .month {
                     padding-top: vw(5);
+                    width: calc(100% - 10vw);
                 }
                 li {
                     display: flex;
-                    margin-bottom: (15);
+                    margin-bottom: vw(12);
+                    flex-wrap: wrap;
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -81,21 +83,27 @@
                         letter-spacing: vw(-1.45);
                         white-space: nowrap;
                         font-weight: 400;
-                        margin-right: vw(17);
+                        // margin-right: vw(17);
                     }
                     p {
                         font-size: vw(24);
                         letter-spacing: vw(-1.2);
                         color:#333;
                         line-height: 1.3;
+                        width: calc(100% - 8vw);
+                        margin-left: auto;
                         &.point {
                             color:#eb6100;
+                            font-weight: 700;
                         }
                         span {
                             display: block;
                             margin-top: vw(5);
                             font-size: vw(20);
                             word-break: keep-all;
+                        }
+                        & + p {
+                            margin-top: vw(3);
                         }
                     }
                 }
@@ -119,7 +127,7 @@
                 padding-right: vw(20);
                 width: max-content;
                 li {
-                    width: vw(200);
+                    width: vw(240);
                     text-align: center;
                     margin-right: vw(15);                    
                     &:last-child {
@@ -127,14 +135,15 @@
                     }
                     img {
                         width:100%;
-                        height: vw(117);
+                        height: vw(160);
                         object-fit: cover;
                     }
                     p {
                         margin-top: vw(10);
-                        font-size: vw(17);
+                        font-size: vw(22);
                         letter-spacing: vw(-1.3);
                         color:#333;
+                        line-height: 1.2;
                     }
                 }
             }
@@ -293,6 +302,7 @@
                     p {
                         font-size: 45px;
                         padding: 20px 0;
+                        line-height: 1.2;
                     }
                     .btn {
                         &.__closed {

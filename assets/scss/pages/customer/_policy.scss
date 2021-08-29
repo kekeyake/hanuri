@@ -121,17 +121,21 @@
             top:0;
         }
     }
-    a {
+    a.link {
         display: block;
         font-size: vw(22);
         font-weight: 500;
         color:#333;
         letter-spacing: vw(-1);
-        margin-top: vw(32);
-        &:hover {
+        margin-top: vw(32);      
+        &:hover  {
             color:#ee5400;
             text-decoration: underline;
-        }
+        }  
+    }
+    a:hover {
+        color:#ee5400;
+        text-decoration: underline;
     }
 }
 @include desktop {
@@ -260,17 +264,13 @@
                 top:0;
             }
         }
-        a {
+        a.link {
             display: block;
             font-size: px(11);
             font-weight: 500;
             color:#333;
             letter-spacing: px(-0.5);
             margin-top: px(16);
-            &:hover {
-                color:#ee5400;
-                text-decoration: underline;
-            }
         }
     }
 }

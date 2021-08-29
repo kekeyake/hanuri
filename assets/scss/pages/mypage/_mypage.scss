@@ -42,7 +42,13 @@
                         border: px(0.5) solid #777;
                         height: vw(40);
                     }
+                    div {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
                     .i1 {
+                        width: 100%;
                         display: flex;
                         margin-bottom: vw(7.5);
                         &:last-child {
@@ -206,13 +212,26 @@
             }
             &.__stay {
                 background-color: #ccc;
+                &.pay {
+                    width: 50%;
+                    margin: 0;
+                }
             }
             &.__ok {
-                background-color: #ee4500;
+                background-color: #ee4500;                
+            }
+            &.__ok {
+                &.pay {
+                    width: 50%;
+                    margin: 0;
+                }
+                &.test {
+                    width: 30%;
+                    margin: 0;
+                }
             }
         }
         .btn {
-            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -240,6 +259,17 @@
                     background: url(../img/ico_arrow_white.svg) no-repeat 100% 50% / vw(14);
                 }
             }
+            &.__cancel {
+                width: 21.66667vw;
+                height: vw(60);
+                margin:0 1vw;
+                font-size: vw(25);
+                &.pay {
+                    width: 30%;
+                    margin:0;
+                    margin-left: vw(10);
+                }
+            }
         }
         
     }
@@ -256,7 +286,6 @@
         padding:vw(30) vw(30) vw(19);
     }
     > .btn {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -297,6 +326,9 @@
         }
         &.__ok {
             background-color: #ee4500;
+            & + .__cancel {
+                width: vw(540);
+            }
         }
         
     }
@@ -750,7 +782,7 @@
                         font-size: px(11);
                     }
                     div {
-                        width: px(236.5);
+                        width: 100%;
                         .t1 b {
                             color:#ee5400;
                         }
@@ -760,7 +792,13 @@
                             border: px(0.5) solid #777;
                             height: px(20);
                         }
+                        div {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: nowrap;
+                        }
                         .i1 {
+                            width: px(236.5);
                             display: flex;
                             margin-bottom: px(3.75);
                             &:last-child {
@@ -768,7 +806,10 @@
                             }
                             &.__100 {
                                 input {
-                                    width: 100%;
+                                    width: 100%;                                    
+                                }
+                                & + .__100 {
+                                    margin-left: 10px;
                                 }
                             }
                             input {
@@ -925,14 +966,26 @@
                 &.__cancel {
                     width: 297px;
                     background-color: #999;
+                    &.pay {
+                        width: 297px;
+                        margin: 0;
+                    }
                 }
                 &.__stay {
                     width: 297px;
                     background-color: #ccc;
+                    &.pay {
+                        width: 297px;
+                        margin: 0;
+                    }
                 }
                 &.__ok {
                     width: 297px;
                     background-color: #ee4500;
+                    &.pay {
+                        width: 297px;
+                        margin: 0;
+                    }
                 }
             }
             .btn {
@@ -961,6 +1014,17 @@
                     span {
                         padding-right: 0;
                         background: none;
+                    }
+                }
+                &.__cancel {
+                    width: 120px;
+                    height: 51px;
+                    font-size: 22px;
+                    margin:0 5px;
+                    &.pay {
+                        width: 297px;
+                        margin: 0;
+                        margin-left: 10px;
                     }
                 }
             }

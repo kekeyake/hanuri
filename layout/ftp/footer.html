@@ -5,11 +5,11 @@
 <footer class="footer">
     <section class="inner">
         <ul class="foot_list">
-            <li><a href="../hanuri/greeting.jsp">회사소개</a></li>
             <li><a href="../customer/policy.jsp">이용약관</a></li>
             <li><a href="../customer/privacy.jsp">개인정보취급방침</a></li>
             <li><a href="../course/commission.jsp">단체위탁과정</a></li>
-            <li><a href="http://pf.kakao.com/_xdtclu/chat" target="_blank">카카오톡 상담</a></li>
+            <li><a href="http://www.hanuribook.or.kr/index.jsp" target="_blank">한우리독서문화운동본부</a></li>
+            <li><a href="https://www.hanuribook.com/" target="_blank">한우리독서토론논술</a></li>
             <li><a href="https://blog.naver.com/ehanuri" target="_blank">한우리 블로그</a></li>
         </ul>
         <div class="txt_wrap">
@@ -40,7 +40,7 @@
             <li><a href="../member/login.jsp"><span>로그인</span></a></li>
             <li><a href="../member/join.jsp"><span>회원가입</span></a></li>
             <li><a href="../member/info.jsp"><span>로그인정보</span></a></li>
-            <li><a href="#a"><span>이용안내</span></a></li>
+            <li><a href="../customer/support.jsp"><span>학습지원</span></a></li>
         </ul>
 		<!--/nif(login_block)-->
 		<!--@if(login_block)-->
@@ -58,7 +58,7 @@
                     <div>
                         <a href="../leader/reason.jsp">왜 독서지도사인가?</a>
                         <a href="../leader/confidence.jsp">독서지도사는 한우리</a>
-                        <a href="../leader/review.jsp">활동후기</a>
+                        <a href="../leader/review_list.jsp?code=bookteacher">활동후기</a>
                     </div>
                 </li>
                 <li>
@@ -74,7 +74,7 @@
                     <div>
                         <a href="../test/test_info.jsp">시험안내</a>
                         <a href="../test/test_apply_info.jsp">시험접수</a>
-                        <a href="../class/test.jsp">응시결과</a>
+                        <a href="../mypage/test.jsp">응시결과</a>
                         <a href="../test/license.jsp">자격증</a>
                         <a href="../test/supplement.jsp">보수교육</a>
                     </div>
@@ -83,16 +83,16 @@
                     <strong>한우리교사</strong>
                     <div>
                         <a href="../teacher/teacher.jsp">한우리교사안내</a>
-                        <a href="../teacher/process.jsp">입문과정</a>
+                        <a href="../teacher/enter.jsp">입문과정</a>
                     </div>
                 </li>
                 <li>
                     <strong>고객센터</strong>
                     <div>
-                        <a href="../customer/notice.jsp">공지사항</a>
                         <a href="../customer/support.jsp">학습지원</a>
                         <a href="../customer/guide.jsp?code=faq&s_category_id=">이용안내</a>
-                        <a href="../customer/policy.jsp">이용약관</a>
+                        <a href="../customer/notice.jsp">공지사항</a>
+                        <!--a href="../customer/policy.jsp">이용약관</a-->
                     </div>
                 </li>
                 <li>
@@ -122,6 +122,6 @@
 <!--// mobile nav -->
 
 <aside class="consulting">
-    <button><img src="../assets/img/ico_phone.svg" alt=""> 전화 상담</button>
-    <button><img src="../assets/img/ico_kakao_ch.svg" alt=""> 카톡 상담</button>
+    <button><a href="tel:{{telno}}"><img src="../assets/img/ico_phone.svg" alt=""> 전화 상담</a></button>
+    <button><a href="http://pf.kakao.com/_xdtclu/chat"><img src="../assets/img/ico_kakao_ch.svg" alt=""> 카톡 상담</a></button>
 </aside>

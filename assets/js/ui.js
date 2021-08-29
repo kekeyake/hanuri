@@ -424,6 +424,15 @@ $(function () {
             $('#galleryWrap').removeClass('on');
         });
     }
+    $('#allMenuBtn').on('click',function(){
+        $('.bg_dimmed').addClass('on');
+        $('#allMenu').addClass('on');
+    });
+    $('#closedBtnAll').on('click',function(){
+        $('.bg_dimmed').removeClass('on');
+        $('#allMenu').removeClass('on');
+    });
+    
     
 });
 var ww = $(window).width();

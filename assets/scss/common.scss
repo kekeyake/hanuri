@@ -817,6 +817,7 @@ form .btn_cert {
 	margin-right: vw(10);
 	font-size: vw(22);
 	width: max-content;
+	white-space: nowrap;
 	.add_file {
 		display: none !important;
 	}
