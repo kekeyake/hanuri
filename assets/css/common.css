@@ -3082,6 +3082,13 @@ footer.footer .t1:last-child {
     word-break: keep-all;
     margin-top: 5px;
   }
+  .board_list li.no_data {
+    width: 100%;
+    border: 0 solid #000;
+    text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .setting_ly .stit {
     font-size: 22px;
     letter-spacing: -1.1px;
@@ -5844,6 +5851,10 @@ footer.footer .t1:last-child {
   margin-top: 7.5vw;
 }
 
+.course .main_cont.event_banner .inner {
+  padding-top: 0;
+}
+
 @media (min-width: 1200px) {
   .course {
     width: 1200px;
@@ -5851,6 +5862,13 @@ footer.footer .t1:last-child {
   }
   .course .__wrap_top {
     margin-top: 40px;
+  }
+  .course .main_cont.event_banner .inner {
+    padding-top: 0;
+  }
+  .course .main_cont.event_banner .inner .swiper-slide img {
+    width: 590px;
+    height: 400px;
   }
 }
 
@@ -7380,6 +7398,7 @@ footer.footer .t1:last-child {
     margin-bottom: 20px;
   }
   .course.__commission_write h2.tit {
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8738,7 +8757,12 @@ footer.footer .t1:last-child {
   font-size: 3.66667vw;
 }
 
+.class .survey .cont_inner .check_list {
+  width: 100%;
+}
+
 .class .survey .cont_inner .check_list li {
+  width: 100%;
   margin-bottom: 1.66667vw;
 }
 
@@ -8773,9 +8797,11 @@ footer.footer .t1:last-child {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .class .survey .cont_inner .radio_list li {
+  width: 100%;
   margin-right: 3.33333vw;
   margin-bottom: 1.66667vw;
 }
@@ -8793,12 +8819,21 @@ footer.footer .t1:last-child {
   margin-right: 1.66667vw;
 }
 
+.class .survey .cont_inner .radio_list input[type="text"] {
+  border: 1px solid #999;
+  padding: 0 1.66667vw;
+  font-size: 3.66667vw;
+  height: 5.33333vw;
+  margin-left: 1.66667vw;
+}
+
 .class .survey .cont_inner .radio_list input[type="radio"]:checked + span {
   color: #ee4500;
 }
 
 .class .survey .cont_inner .radio_list span {
   font-size: 3.66667vw;
+  white-space: nowrap;
 }
 
 .class .survey .btn_wrap {
@@ -8807,9 +8842,9 @@ footer.footer .t1:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .class .survey .btn_wrap button {
@@ -8835,6 +8870,10 @@ footer.footer .t1:last-child {
 
 .class .survey .btn_wrap button:last-child {
   background-color: #ee5400;
+}
+
+.class .survey .btn_wrap button + .btn {
+  margin-left: 2%;
 }
 
 @media (min-width: 1200px) {
@@ -9014,7 +9053,11 @@ footer.footer .t1:last-child {
     border-radius: 2px;
     font-size: 22px;
   }
+  .class .survey .cont_inner .check_list {
+    width: 100%;
+  }
   .class .survey .cont_inner .check_list li {
+    width: 100%;
     margin-bottom: 10px;
   }
   .class .survey .cont_inner .check_list li label {
@@ -9042,8 +9085,10 @@ footer.footer .t1:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .class .survey .cont_inner .radio_list li {
+    width: 100%;
     margin-right: 20px;
     margin-bottom: 0;
   }
@@ -9057,6 +9102,13 @@ footer.footer .t1:last-child {
   }
   .class .survey .cont_inner .radio_list input {
     margin-right: 10px;
+  }
+  .class .survey .cont_inner .radio_list input[type="text"] {
+    border: 1px solid #999;
+    padding: 0 10px;
+    font-size: 22px;
+    height: 32px;
+    margin-left: 10px;
   }
   .class .survey .cont_inner .radio_list span {
     font-size: 22px;
@@ -10292,6 +10344,17 @@ footer.footer .t1:last-child {
     justify-content: center;
     margin: 31px auto 62px;
     background-color: #ee4500;
+  }
+  .class .__task .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .class .__task .btn_wrap .btn {
+    margin: 31px 10px 62px;
   }
   .class .__task .book_view .__top {
     display: -webkit-box;
@@ -12877,7 +12940,13 @@ footer.footer .t1:last-child {
     font-weight: 700;
     letter-spacing: -1.25px;
     color: #333;
-    padding: 30px 30px 19px;
+    padding: 30px 0 19px;
+  }
+  .mypage h3 + .desc_list {
+    padding: 10px 0;
+  }
+  .mypage h3 + .info_list {
+    padding: 0;
   }
   .mypage > .btn {
     width: 100%;
@@ -13225,7 +13294,7 @@ footer.footer .t1:last-child {
     padding: 18px 30px;
   }
   .mypage .__view .stit p {
-    width: 437px;
+    width: 100%;
     margin-left: 14px;
   }
   .mypage .__view .stit a {
@@ -13324,6 +13393,11 @@ footer.footer .t1:last-child {
   .mypage .__write .inquiry_box input::placeholder {
     color: #ccc;
   }
+  .mypage .__write .inquiry_box input.attachName {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .mypage .__write .inquiry_box textarea {
     width: 100%;
     margin: 0;
@@ -13347,6 +13421,7 @@ footer.footer .t1:last-child {
     color: #ccc;
   }
   .mypage .__write .inquiry_box .attach_file {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -15200,7 +15275,8 @@ footer.footer .t1:last-child {
     margin-top: 40px;
   }
   .main_cont.event_banner .swiper-slide img {
-    width: 100%;
+    width: 590px;
+    height: 380px;
   }
   .main_cont.event_banner .swiper-slide p {
     letter-spacing: -1.7px;
@@ -18204,6 +18280,7 @@ footer.footer .t1:last-child {
   }
   .hanuri .__history .history_wrap .__cont .month {
     padding-top: 5px;
+    width: 100%;
   }
   .hanuri .__history .history_wrap .__cont li {
     margin-bottom: 15px;
@@ -18216,6 +18293,7 @@ footer.footer .t1:last-child {
   .hanuri .__history .history_wrap .__cont li p {
     font-size: 24px;
     letter-spacing: -1.2px;
+    width: calc(100% - 60px);
   }
   .hanuri .__history .history_wrap .__cont li p span {
     margin-top: 5px;
@@ -18382,6 +18460,33 @@ body {
   font-size: 3.66667vw;
   -ms-overflow-style: none;
   overflow-x: hidden;
+  position: relative;
+}
+
+.skip {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.skip a {
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.skip a:focus, #accessibility a:active {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  background-color: #555;
 }
 
 /* common */

@@ -60,7 +60,27 @@ body {
 	font-size: vw(22);
 	-ms-overflow-style: none; 
 	overflow-x: hidden;
+	position: relative;
 }
+
+// .skip a{
+//     position: absolute;
+//     background: rgba(0,0,0,0.7); // 반투명한 배경
+//     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000); //IE8에서 반투명한 배경 적용
+//     width: 100%;
+//     height: 30px;
+//     text-align: center; // text 가로 중앙 정렬
+//     color: #fff;
+//     z-index: 100;
+//     line-height: 30px; // text 세로 중앙 정렬
+//     top: -30px; // 우선 안보이게 감추기
+//     opacity: 0; // 우선 안보이게 감추기
+// }
+.skip {position: absolute; width: 100%; top: 0; left: 0; z-index: 2000;}
+
+.skip a {display:block; width:1px; height:1px; margin-bottom: -1px; overflow: hidden; text-align: center; color: #fff; font-weight: 500;}
+
+.skip a:focus, #accessibility a:active {width:100%; height: auto; padding:10px 0; background-color: #555;}
 // ::-webkit-scrollbar { 
 // 	display: none;
 // }

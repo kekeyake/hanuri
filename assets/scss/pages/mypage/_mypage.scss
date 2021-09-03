@@ -1039,7 +1039,13 @@
             font-weight: 700;
             letter-spacing: px(-0.625);
             color:#333;
-            padding:px(15) px(15) px(9.5);
+            padding:px(15) 0 px(9.5);
+            & + .desc_list {
+                padding:10px 0;
+            }
+            & + .info_list {
+                padding:0;
+            }
         }
         > .btn {
             width: 100%;
@@ -1348,8 +1354,9 @@
                 display: flex;
                 border-bottom: 1px solid #c2c2c2;
                 padding:px(9) px(15);
+
                 p {
-                    width: px(218.5);
+                    width: 100%;
                     margin-left: px(7);
                 }
                 a {
@@ -1430,6 +1437,9 @@
                     &::placeholder {
                         color:#ccc;
                     }
+                    &.attachName {
+                        width: max-content;
+                    }
                 }
                 textarea {
                     width: 100%;
@@ -1445,6 +1455,7 @@
                     }
                 }
                 .attach_file {
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     margin: 0;

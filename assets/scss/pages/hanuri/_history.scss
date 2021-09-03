@@ -245,6 +245,7 @@
                     }
                     .month {
                         padding-top: 5px;
+                        width: 100%;
                     }
                     li {
                         margin-bottom: 15px;
@@ -256,6 +257,7 @@
                         p {
                             font-size: 24px;
                             letter-spacing: -1.2px;
+                            width: calc(100% - 60px);
                             span {
                                 margin-top: 5px;
                                 font-size: 20px;

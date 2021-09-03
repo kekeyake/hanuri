@@ -401,6 +401,13 @@
                 margin:px(15.5) auto px(31);
                 background-color: #ee4500;                           
             }
+            .btn_wrap {
+                display: flex;
+                justify-content: center;
+                .btn {
+                    margin:31px 10px 62px;
+                }
+            }
             .book_view {
                 .__top {
                     display: flex;

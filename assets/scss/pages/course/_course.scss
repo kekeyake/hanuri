@@ -2,6 +2,16 @@
     .__wrap_top {
         margin-top: vw(45);
     }
+    .main_cont.event_banner {
+        .inner {
+            padding-top: 0;
+            .swiper-slide {
+                img {
+            
+                }
+            }
+        }
+    }
 }
 
 @include desktop {
@@ -11,5 +21,16 @@
         .__wrap_top {
             margin-top: px(20);
         }   
+        .main_cont.event_banner {
+            .inner {
+                padding-top: 0;
+                .swiper-slide {
+                    img {
+                        width: 590px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -3,6 +3,16 @@ var $winW, $winH, $isMobile, $headerHeight;
 $(function () {
     $headerHeight = $('.header').innerHeight();
 
+    // $('.skip a').on('focus', function(){
+    //     $(this).stop().animate({"top":0, "opacity":1});
+    // });
+    // $('.skip a').on('click', function(){
+    //     $(this).stop().animate({"top":"-30px", "opacity":0});
+    // });
+    // $('.skip a').on('focusout', function(){
+    //     $(this).stop().animate({"top":"-30px", "opacity":0});
+    // });
+
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 106) {
@@ -199,11 +209,7 @@ $(function () {
         $(this).parent('.tool_layer').removeClass('on');
     });
     
-
-    $('.status_info .info_txt').on('click', function(){
-        $('.bg_dimmed').addClass('on');
-        $('.survey_ly').addClass('on');
-    });
+    
     $('.survey_ly .btn_wrap button').on('click', function(){
         $('.bg_dimmed').removeClass('on');
         $('.__layer').removeClass('on');
@@ -213,10 +219,16 @@ $(function () {
         $(this).toggleClass('on');
     });
 
-    $('.btn_review').on('click', function(){
-        $('.bg_dimmed').addClass('on');
-        $('.evaluating_courses_ly').addClass('on');
-    });
+    // 디자인 구현을 위해 사용된 것
+    // $('.status_info .info_txt').on('click', function(){
+    //     $('.bg_dimmed').addClass('on');
+    //     $('.survey_ly').addClass('on');
+    // });
+    // 작업이 안되어서 일단 막음
+    // $('.class_tbl .btn_review').on('click', function(){
+    //     $('.bg_dimmed').addClass('on');
+    //     $('.evaluating_courses_ly').addClass('on');
+    // });
 
     // $('.list_tab .link').on('click',function(){
     //     var tg = $(this).attr('data-rel');
